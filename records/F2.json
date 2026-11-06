@@ -1,0 +1,1809 @@
+[
+ {
+  "id": "DZR-F2-0001",
+  "alias": "MIL-HDBK-245E Foreword 2",
+  "source": {
+   "docId": "MIL-HDBK-245E",
+   "edition": "E, 2021-06-14, with Change 2, 2023-09-21; validation Notice 1, 2026-07-29",
+   "paragraph": "Foreword 2",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5783737",
+   "passage": "This handbook is for guidance only and cannot be cited as a requirement in any DoD contract.",
+   "passageSHA256": "bc2e648105ce97ee25d097bcaa22dc84234974b5dcfa2f09cd20c3dd48b1b175"
+  },
+  "wording": "The contract set shall not cite MIL-HDBK-245E as a contractual requirement.",
+  "wordingSHA256": "a21c43b57917c8988d93d178a28b3d8a6af04f441d2115129f0f6993385c1e5b",
+  "actor": "The contract set",
+  "condition": "",
+  "verificationIntent": "inspection",
+  "kind": "guidance",
+  "fields": [
+   "sow.references"
+  ],
+  "status": "sample",
+  "notes": "Guidance-only extraction: MIL-HDBK-245E Change 2 cover and Foreword 2 prohibit citing the handbook as a contractual requirement. This proposed wording remains a sample for human review, not an independently binding contractor obligation. Exact passage inspected in the directly downloaded PDF; line-wrap whitespace is removed without changing words or punctuation. This source-use limitation is preserved rather than silently promoting subsequent handbook guidance to mandates. Catalogued guidance only; excluded from every baseline hash.",
+  "binding": false
+ },
+ {
+  "id": "DZR-F2-0002",
+  "alias": "MIL-HDBK-245E Foreword 5",
+  "source": {
+   "docId": "MIL-HDBK-245E",
+   "edition": "E, 2021-06-14, with Change 2, 2023-09-21; validation Notice 1, 2026-07-29",
+   "paragraph": "Foreword 5",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5783737",
+   "passage": "Tasks or Work requirements, should be specified in the SOW. All data requirements regarding delivery, format, and content should be in the Contract Data Requirements List (CDRL) in conjunction with the appropriate Data Item Description (DID) as described in this handbook. Redundancy invites conflict and must be avoided.",
+   "passageSHA256": "8aaf118a50eeb04cb3cd88897de030cc943e9e6379e16ea4b251a6b7e0bba7fc"
+  },
+  "wording": "The contract set shall avoid redundant requirements across the SOW, CDRL, and associated DIDs.",
+  "wordingSHA256": "9298c3533ae282163294decb674909f1710134d8101edaf376459a43e3fec048",
+  "actor": "The contract set",
+  "condition": "",
+  "verificationIntent": "inspection",
+  "kind": "guidance",
+  "fields": [
+   "sow.text",
+   "cdrl.dataRequirements",
+   "cdrl.didReferences"
+  ],
+  "status": "sample",
+  "notes": "Guidance-only extraction: MIL-HDBK-245E Change 2 cover and Foreword 2 prohibit citing the handbook as a contractual requirement. This proposed wording remains a sample for human review, not an independently binding contractor obligation. Exact passage inspected in the directly downloaded PDF; line-wrap whitespace is removed without changing words or punctuation. Only the final must statement is transformed. The preceding should statements provide the context for redundancy, not additional mandatory records. Human review decides whether duplicated text imposes redundant requirements. Catalogued guidance only; excluded from every baseline hash.",
+  "binding": false
+ },
+ {
+  "id": "DZR-F2-0003",
+  "alias": "MIL-HDBK-245E 4.2",
+  "source": {
+   "docId": "MIL-HDBK-245E",
+   "edition": "E, 2021-06-14, with Change 2, 2023-09-21; validation Notice 1, 2026-07-29",
+   "paragraph": "4.2",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5783737",
+   "passage": "The work tasks called out in the SOW must be consistent with appropriation(s) being allocated for that task in the solicitation.",
+   "passageSHA256": "aa8c029ee80591bbc62baee3878d4958b270d424b61d18806230e3eec2d14882"
+  },
+  "wording": "The SOW shall specify work tasks consistent with the appropriations allocated to those tasks in the solicitation.",
+  "wordingSHA256": "58ec7809ba2265f9949b29fca6a5812410f5883e9b7deac4f67d70fea9a1929e",
+  "actor": "The SOW",
+  "condition": "",
+  "verificationIntent": "inspection",
+  "kind": "guidance",
+  "fields": [
+   "sow.tasks",
+   "sow.taskAppropriations"
+  ],
+  "status": "sample",
+  "notes": "Guidance-only extraction: MIL-HDBK-245E Change 2 cover and Foreword 2 prohibit citing the handbook as a contractual requirement. This proposed wording remains a sample for human review, not an independently binding contractor obligation. Exact passage inspected in the directly downloaded PDF; line-wrap whitespace is removed without changing words or punctuation. Data-content consistency obligation; no appropriation amount or expenditure instruction is invented. Catalogued guidance only; excluded from every baseline hash.",
+  "binding": false
+ },
+ {
+  "id": "DZR-F2-0004",
+  "alias": "MIL-HDBK-245E 4.4",
+  "source": {
+   "docId": "MIL-HDBK-245E",
+   "edition": "E, 2021-06-14, with Change 2, 2023-09-21; validation Notice 1, 2026-07-29",
+   "paragraph": "4.4",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5783737",
+   "passage": "The SOW must clearly define the work to be performed, since the language detailing the contractor's effort may be pertinent to legal questions concerning the scope of work.",
+   "passageSHA256": "a3d33527216ffe13b6553b1328059aab12a95945d1b5dcc27d02cf28df575fd2"
+  },
+  "wording": "The SOW shall clearly define the work to be performed.",
+  "wordingSHA256": "71509082bfb077473649ed62cec7772549d1e6d5a36da74727d38f77515285f0",
+  "actor": "The SOW",
+  "condition": "",
+  "verificationIntent": "inspection",
+  "kind": "guidance",
+  "fields": [
+   "sow.tasks"
+  ],
+  "status": "sample",
+  "notes": "Guidance-only extraction: MIL-HDBK-245E Change 2 cover and Foreword 2 prohibit citing the handbook as a contractual requirement. This proposed wording remains a sample for human review, not an independently binding contractor obligation. Exact passage inspected in the directly downloaded PDF; line-wrap whitespace is removed without changing words or punctuation. The source clarity criterion requires human review; no numeric clarity threshold is invented. The source supplies no numerical clarity threshold; human review is required. Catalogued guidance only; excluded from every baseline hash.",
+  "binding": false
+ },
+ {
+  "id": "DZR-F2-0005",
+  "alias": "MIL-HDBK-245E 4.6.3",
+  "source": {
+   "docId": "MIL-HDBK-245E",
+   "edition": "E, 2021-06-14, with Change 2, 2023-09-21; validation Notice 1, 2026-07-29",
+   "paragraph": "4.6.3",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5783737",
+   "passage": "When a standard definition exists, a different definition shall not be used.",
+   "passageSHA256": "ea9cbfdcf9fe8445d682941494f4bad8a7f31605d0a21e4d66115ad0281ba321"
+  },
+  "wording": "The SOW shall not replace an existing standard definition with a different definition.",
+  "wordingSHA256": "a36210f53f44f3d18997ff0628bc800c25267b6b6cb3f5921a7ed8ec9c81ea03",
+  "actor": "The SOW",
+  "condition": "When a standard definition exists.",
+  "verificationIntent": "inspection",
+  "kind": "guidance",
+  "fields": [
+   "sow.definitions"
+  ],
+  "status": "sample",
+  "notes": "Guidance-only extraction: MIL-HDBK-245E Change 2 cover and Foreword 2 prohibit citing the handbook as a contractual requirement. This proposed wording remains a sample for human review, not an independently binding contractor obligation. Exact passage inspected in the directly downloaded PDF; line-wrap whitespace is removed without changing words or punctuation.  Catalogued guidance only; excluded from every baseline hash.",
+  "binding": false
+ },
+ {
+  "id": "DZR-F2-0006",
+  "alias": "MIL-HDBK-245E 4.6.6.a.3",
+  "source": {
+   "docId": "MIL-HDBK-245E",
+   "edition": "E, 2021-06-14, with Change 2, 2023-09-21; validation Notice 1, 2026-07-29",
+   "paragraph": "4.6.6.a.3",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5783737",
+   "passage": "Exclude “how to” requirements since the offeror should be tasked to provide the deliverables under the contract in the most cost-effective manner.",
+   "passageSHA256": "d95929bc41e2523ba01df1aaea11815d498aed7f128a56af5b3a2136265ac75c"
+  },
+  "wording": "The SOW shall exclude requirements prescribing how the contractor performs the work.",
+  "wordingSHA256": "32657b32963ead44bda0716057f3969dbaa5b894db3b7458c3242621aa5b3df4",
+  "actor": "The SOW",
+  "condition": "",
+  "verificationIntent": "inspection",
+  "kind": "guidance",
+  "fields": [
+   "sow.tasks"
+  ],
+  "status": "sample",
+  "notes": "Guidance-only extraction: MIL-HDBK-245E Change 2 cover and Foreword 2 prohibit citing the handbook as a contractual requirement. This proposed wording remains a sample for human review, not an independently binding contractor obligation. Exact passage inspected in the directly downloaded PDF; line-wrap whitespace is removed without changing words or punctuation. Direct exclusion instruction; the following should rationale is not separately converted. Catalogued guidance only; excluded from every baseline hash.",
+  "binding": false
+ },
+ {
+  "id": "DZR-F2-0007",
+  "alias": "MIL-HDBK-245E 4.6.6.a.6",
+  "source": {
+   "docId": "MIL-HDBK-245E",
+   "edition": "E, 2021-06-14, with Change 2, 2023-09-21; validation Notice 1, 2026-07-29",
+   "paragraph": "4.6.6.a.6",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5783737",
+   "passage": "Exclude design control or hardware or software performance parameters because these requirements should be covered in a specification.",
+   "passageSHA256": "b729ae89712c82d9568e379ff98c992b996979b65028571891b77134d610badb"
+  },
+  "wording": "The SOW shall exclude design-control parameters.",
+  "wordingSHA256": "1ac3d13b857d5ae7f1ba83dab2dd3c8726a85276975dacd0264fc05e34371bc7",
+  "actor": "The SOW",
+  "condition": "",
+  "verificationIntent": "inspection",
+  "kind": "guidance",
+  "fields": [
+   "sow.tasks"
+  ],
+  "status": "sample",
+  "notes": "Guidance-only extraction: MIL-HDBK-245E Change 2 cover and Foreword 2 prohibit citing the handbook as a contractual requirement. This proposed wording remains a sample for human review, not an independently binding contractor obligation. Exact passage inspected in the directly downloaded PDF; line-wrap whitespace is removed without changing words or punctuation. Atomic split of the three excluded parameter categories. Catalogued guidance only; excluded from every baseline hash.",
+  "binding": false
+ },
+ {
+  "id": "DZR-F2-0008",
+  "alias": "MIL-HDBK-245E 4.6.6.a.6",
+  "source": {
+   "docId": "MIL-HDBK-245E",
+   "edition": "E, 2021-06-14, with Change 2, 2023-09-21; validation Notice 1, 2026-07-29",
+   "paragraph": "4.6.6.a.6",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5783737",
+   "passage": "Exclude design control or hardware or software performance parameters because these requirements should be covered in a specification.",
+   "passageSHA256": "b729ae89712c82d9568e379ff98c992b996979b65028571891b77134d610badb"
+  },
+  "wording": "The SOW shall exclude hardware-performance parameters.",
+  "wordingSHA256": "a11c1319c2e93f529dffc67aa0ccc56aec97393cd9094c64e4cd51cf273a099f",
+  "actor": "The SOW",
+  "condition": "",
+  "verificationIntent": "inspection",
+  "kind": "guidance",
+  "fields": [
+   "sow.tasks"
+  ],
+  "status": "sample",
+  "notes": "Guidance-only extraction: MIL-HDBK-245E Change 2 cover and Foreword 2 prohibit citing the handbook as a contractual requirement. This proposed wording remains a sample for human review, not an independently binding contractor obligation. Exact passage inspected in the directly downloaded PDF; line-wrap whitespace is removed without changing words or punctuation. Atomic split of the three excluded parameter categories. Catalogued guidance only; excluded from every baseline hash.",
+  "binding": false
+ },
+ {
+  "id": "DZR-F2-0009",
+  "alias": "MIL-HDBK-245E 4.6.6.a.6",
+  "source": {
+   "docId": "MIL-HDBK-245E",
+   "edition": "E, 2021-06-14, with Change 2, 2023-09-21; validation Notice 1, 2026-07-29",
+   "paragraph": "4.6.6.a.6",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5783737",
+   "passage": "Exclude design control or hardware or software performance parameters because these requirements should be covered in a specification.",
+   "passageSHA256": "b729ae89712c82d9568e379ff98c992b996979b65028571891b77134d610badb"
+  },
+  "wording": "The SOW shall exclude software-performance parameters.",
+  "wordingSHA256": "1808c735039062956730587f8aa6c5c0e782834e3bb92e7322399ca8dde0c128",
+  "actor": "The SOW",
+  "condition": "",
+  "verificationIntent": "inspection",
+  "kind": "guidance",
+  "fields": [
+   "sow.tasks"
+  ],
+  "status": "sample",
+  "notes": "Guidance-only extraction: MIL-HDBK-245E Change 2 cover and Foreword 2 prohibit citing the handbook as a contractual requirement. This proposed wording remains a sample for human review, not an independently binding contractor obligation. Exact passage inspected in the directly downloaded PDF; line-wrap whitespace is removed without changing words or punctuation. Atomic split of the three excluded parameter categories. Catalogued guidance only; excluded from every baseline hash.",
+  "binding": false
+ },
+ {
+  "id": "DZR-F2-0010",
+  "alias": "MIL-HDBK-245E 4.6.6.a.8",
+  "source": {
+   "docId": "MIL-HDBK-245E",
+   "edition": "E, 2021-06-14, with Change 2, 2023-09-21; validation Notice 1, 2026-07-29",
+   "paragraph": "4.6.6.a.8",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5783737",
+   "passage": "Ensure SOW is clear of any language for tasks which are inherently Governmental functions.",
+   "passageSHA256": "574cdce39aa62eb850177248ad2a535f8e50fa162cb0e4275cf69b4db7664465"
+  },
+  "wording": "The SOW shall exclude task language assigning inherently Governmental functions.",
+  "wordingSHA256": "727e64dd2c553d15f9150ff23972a4c766de37332d8dbf401dca52c50b9d02c9",
+  "actor": "The SOW",
+  "condition": "",
+  "verificationIntent": "inspection",
+  "kind": "guidance",
+  "fields": [
+   "sow.tasks"
+  ],
+  "status": "sample",
+  "notes": "Guidance-only extraction: MIL-HDBK-245E Change 2 cover and Foreword 2 prohibit citing the handbook as a contractual requirement. This proposed wording remains a sample for human review, not an independently binding contractor obligation. Exact passage inspected in the directly downloaded PDF; line-wrap whitespace is removed without changing words or punctuation. No unsourced definition or automated test of inherently Governmental functions is added. Catalogued guidance only; excluded from every baseline hash.",
+  "binding": false
+ },
+ {
+  "id": "DZR-F2-0011",
+  "alias": "MIL-HDBK-245E 4.6.6.b.1",
+  "source": {
+   "docId": "MIL-HDBK-245E",
+   "edition": "E, 2021-06-14, with Change 2, 2023-09-21; validation Notice 1, 2026-07-29",
+   "paragraph": "4.6.6.b.1",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5783737",
+   "passage": "b. DON’T:\n\n1. Order, describe, or discuss CDRL data.",
+   "passageSHA256": "ee74bf89123b25e0b7d9ddda891e52a11ee66fe987fca8ced32bd16b03de9c82"
+  },
+  "wording": "The SOW shall not order CDRL data.",
+  "wordingSHA256": "ec51bad07752a01b830ee1a19d615ef8a290f1cb668e91cb14e27bf9e369bf15",
+  "actor": "The SOW",
+  "condition": "",
+  "verificationIntent": "inspection",
+  "kind": "guidance",
+  "fields": [
+   "sow.text",
+   "sow.cdrlReferences"
+  ],
+  "status": "sample",
+  "notes": "Guidance-only extraction: MIL-HDBK-245E Change 2 cover and Foreword 2 prohibit citing the handbook as a contractual requirement. This proposed wording remains a sample for human review, not an independently binding contractor obligation. Exact passage inspected in the directly downloaded PDF; line-wrap whitespace is removed without changing words or punctuation. Exact DON’T lead-in plus the exact subordinate item; separated excerpts are joined by a blank line. Atomic split of the three prohibited treatments of CDRL data. Catalogued guidance only; excluded from every baseline hash.",
+  "binding": false
+ },
+ {
+  "id": "DZR-F2-0012",
+  "alias": "MIL-HDBK-245E 4.6.6.b.1",
+  "source": {
+   "docId": "MIL-HDBK-245E",
+   "edition": "E, 2021-06-14, with Change 2, 2023-09-21; validation Notice 1, 2026-07-29",
+   "paragraph": "4.6.6.b.1",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5783737",
+   "passage": "b. DON’T:\n\n1. Order, describe, or discuss CDRL data.",
+   "passageSHA256": "ee74bf89123b25e0b7d9ddda891e52a11ee66fe987fca8ced32bd16b03de9c82"
+  },
+  "wording": "The SOW shall not describe CDRL data.",
+  "wordingSHA256": "778450686359ff94c74bdc8a006e240e23ab8b85604465ea8dafad454cab38b6",
+  "actor": "The SOW",
+  "condition": "",
+  "verificationIntent": "inspection",
+  "kind": "guidance",
+  "fields": [
+   "sow.text",
+   "sow.cdrlReferences"
+  ],
+  "status": "sample",
+  "notes": "Guidance-only extraction: MIL-HDBK-245E Change 2 cover and Foreword 2 prohibit citing the handbook as a contractual requirement. This proposed wording remains a sample for human review, not an independently binding contractor obligation. Exact passage inspected in the directly downloaded PDF; line-wrap whitespace is removed without changing words or punctuation. Exact DON’T lead-in plus the exact subordinate item; separated excerpts are joined by a blank line. Atomic split of the three prohibited treatments of CDRL data. Catalogued guidance only; excluded from every baseline hash.",
+  "binding": false
+ },
+ {
+  "id": "DZR-F2-0013",
+  "alias": "MIL-HDBK-245E 4.6.6.b.1",
+  "source": {
+   "docId": "MIL-HDBK-245E",
+   "edition": "E, 2021-06-14, with Change 2, 2023-09-21; validation Notice 1, 2026-07-29",
+   "paragraph": "4.6.6.b.1",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5783737",
+   "passage": "b. DON’T:\n\n1. Order, describe, or discuss CDRL data.",
+   "passageSHA256": "ee74bf89123b25e0b7d9ddda891e52a11ee66fe987fca8ced32bd16b03de9c82"
+  },
+  "wording": "The SOW shall not discuss CDRL data.",
+  "wordingSHA256": "a74fa67c9d11a64108369367a02148cd013f97e616652d2a03d7067e5fd52e93",
+  "actor": "The SOW",
+  "condition": "",
+  "verificationIntent": "inspection",
+  "kind": "guidance",
+  "fields": [
+   "sow.text",
+   "sow.cdrlReferences"
+  ],
+  "status": "sample",
+  "notes": "Guidance-only extraction: MIL-HDBK-245E Change 2 cover and Foreword 2 prohibit citing the handbook as a contractual requirement. This proposed wording remains a sample for human review, not an independently binding contractor obligation. Exact passage inspected in the directly downloaded PDF; line-wrap whitespace is removed without changing words or punctuation. Exact DON’T lead-in plus the exact subordinate item; separated excerpts are joined by a blank line. Atomic split of the three prohibited treatments of CDRL data. Catalogued guidance only; excluded from every baseline hash.",
+  "binding": false
+ },
+ {
+  "id": "DZR-F2-0014",
+  "alias": "MIL-HDBK-245E 4.6.6.b.2",
+  "source": {
+   "docId": "MIL-HDBK-245E",
+   "edition": "E, 2021-06-14, with Change 2, 2023-09-21; validation Notice 1, 2026-07-29",
+   "paragraph": "4.6.6.b.2",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5783737",
+   "passage": "b. DON’T:\n\n2. Discuss a Data Item Description (DID). Although the text of the SOW should not include the data format and content preparation instructions and/or data delivery requirements, a DID number listed on the CDRL may be cross-referenced in the SOW.",
+   "passageSHA256": "4438c1fc5767ff018a11ee6d212f4c133fd875693ca5174b30c95cf015f72004"
+  },
+  "wording": "The SOW shall not discuss a DID.",
+  "wordingSHA256": "863d26683e7f71d21a221f0394729029a962686fffecf2b4c66dd304e04e5043",
+  "actor": "The SOW",
+  "condition": "When the content is not a cross-reference to a DID number listed on the CDRL.",
+  "verificationIntent": "inspection",
+  "kind": "guidance",
+  "fields": [
+   "sow.text",
+   "sow.didReferences"
+  ],
+  "status": "sample",
+  "notes": "Guidance-only extraction: MIL-HDBK-245E Change 2 cover and Foreword 2 prohibit citing the handbook as a contractual requirement. This proposed wording remains a sample for human review, not an independently binding contractor obligation. Exact passage inspected in the directly downloaded PDF; line-wrap whitespace is removed without changing words or punctuation. Exact DON’T lead-in plus the exact subordinate item; separated excerpts are joined by a blank line. The explicit cross-reference permission is preserved; a DID-number reference is not prohibited. Catalogued guidance only; excluded from every baseline hash.",
+  "binding": false
+ },
+ {
+  "id": "DZR-F2-0015",
+  "alias": "MIL-HDBK-245E 4.6.6.b.3",
+  "source": {
+   "docId": "MIL-HDBK-245E",
+   "edition": "E, 2021-06-14, with Change 2, 2023-09-21; validation Notice 1, 2026-07-29",
+   "paragraph": "4.6.6.b.3",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5783737",
+   "passage": "b. DON’T:\n\n3. Specify technical proposal criteria or evaluation factors.",
+   "passageSHA256": "522e790b675754ec2ba9740ab045bbb653db5d21e737920ef5bf8cce4a40950d"
+  },
+  "wording": "The SOW shall exclude technical proposal criteria.",
+  "wordingSHA256": "1ede14749f0bc31ecbbb397f44db5cafdd9a27e89e451a86ce62919c1914c5c6",
+  "actor": "The SOW",
+  "condition": "",
+  "verificationIntent": "inspection",
+  "kind": "guidance",
+  "fields": [
+   "sow.text"
+  ],
+  "status": "sample",
+  "notes": "Guidance-only extraction: MIL-HDBK-245E Change 2 cover and Foreword 2 prohibit citing the handbook as a contractual requirement. This proposed wording remains a sample for human review, not an independently binding contractor obligation. Exact passage inspected in the directly downloaded PDF; line-wrap whitespace is removed without changing words or punctuation. Exact DON’T lead-in plus the exact subordinate item; separated excerpts are joined by a blank line.  Catalogued guidance only; excluded from every baseline hash.",
+  "binding": false
+ },
+ {
+  "id": "DZR-F2-0016",
+  "alias": "MIL-HDBK-245E 4.6.6.b.3",
+  "source": {
+   "docId": "MIL-HDBK-245E",
+   "edition": "E, 2021-06-14, with Change 2, 2023-09-21; validation Notice 1, 2026-07-29",
+   "paragraph": "4.6.6.b.3",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5783737",
+   "passage": "b. DON’T:\n\n3. Specify technical proposal criteria or evaluation factors.",
+   "passageSHA256": "522e790b675754ec2ba9740ab045bbb653db5d21e737920ef5bf8cce4a40950d"
+  },
+  "wording": "The SOW shall exclude evaluation factors.",
+  "wordingSHA256": "d3a2bcce914152211ea2ee9c7554321da1ed3c2b735d965313c397fc6be121aa",
+  "actor": "The SOW",
+  "condition": "",
+  "verificationIntent": "inspection",
+  "kind": "guidance",
+  "fields": [
+   "sow.text"
+  ],
+  "status": "sample",
+  "notes": "Guidance-only extraction: MIL-HDBK-245E Change 2 cover and Foreword 2 prohibit citing the handbook as a contractual requirement. This proposed wording remains a sample for human review, not an independently binding contractor obligation. Exact passage inspected in the directly downloaded PDF; line-wrap whitespace is removed without changing words or punctuation. Exact DON’T lead-in plus the exact subordinate item; separated excerpts are joined by a blank line.  Catalogued guidance only; excluded from every baseline hash.",
+  "binding": false
+ },
+ {
+  "id": "DZR-F2-0017",
+  "alias": "MIL-HDBK-245E 4.6.6.b.4",
+  "source": {
+   "docId": "MIL-HDBK-245E",
+   "edition": "E, 2021-06-14, with Change 2, 2023-09-21; validation Notice 1, 2026-07-29",
+   "paragraph": "4.6.6.b.4",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5783737",
+   "passage": "b. DON’T:\n\n4. No prescribed funding amounts.",
+   "passageSHA256": "a1b9ea170b39cde7f5dba8aeb6e9798022690571023caf8a4046ceaccc41b63c"
+  },
+  "wording": "The SOW shall exclude prescribed funding amounts.",
+  "wordingSHA256": "ae669b4500c7b706c5b32ae25f5fc948dfb10bfb16f7257a44ffb8ddd3ed99bb",
+  "actor": "The SOW",
+  "condition": "",
+  "verificationIntent": "inspection",
+  "kind": "guidance",
+  "fields": [
+   "sow.text",
+   "sow.taskAppropriations"
+  ],
+  "status": "sample",
+  "notes": "Guidance-only extraction: MIL-HDBK-245E Change 2 cover and Foreword 2 prohibit citing the handbook as a contractual requirement. This proposed wording remains a sample for human review, not an independently binding contractor obligation. Exact passage inspected in the directly downloaded PDF; line-wrap whitespace is removed without changing words or punctuation. Exact DON’T lead-in plus the exact subordinate item; separated excerpts are joined by a blank line. Does not prohibit funding type metadata; source prohibition concerns amounts. Catalogued guidance only; excluded from every baseline hash.",
+  "binding": false
+ },
+ {
+  "id": "DZR-F2-0018",
+  "alias": "MIL-HDBK-245E 4.6.6.b.5",
+  "source": {
+   "docId": "MIL-HDBK-245E",
+   "edition": "E, 2021-06-14, with Change 2, 2023-09-21; validation Notice 1, 2026-07-29",
+   "paragraph": "4.6.6.b.5",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5783737",
+   "passage": "b. DON’T:\n\n5. Specify design control parameters or the performance of hardware.",
+   "passageSHA256": "2a8e3116ecb7c6f04f118eec233d2b32e36d41ece6cf26f50f7788f8033f93d0"
+  },
+  "wording": "The SOW shall exclude design-control parameters.",
+  "wordingSHA256": "1ac3d13b857d5ae7f1ba83dab2dd3c8726a85276975dacd0264fc05e34371bc7",
+  "actor": "The SOW",
+  "condition": "",
+  "verificationIntent": "inspection",
+  "kind": "guidance",
+  "fields": [
+   "sow.tasks"
+  ],
+  "status": "sample",
+  "notes": "Guidance-only extraction: MIL-HDBK-245E Change 2 cover and Foreword 2 prohibit citing the handbook as a contractual requirement. This proposed wording remains a sample for human review, not an independently binding contractor obligation. Exact passage inspected in the directly downloaded PDF; line-wrap whitespace is removed without changing words or punctuation. Exact DON’T lead-in plus the exact subordinate item; separated excerpts are joined by a blank line.  Catalogued guidance only; excluded from every baseline hash.",
+  "binding": false
+ },
+ {
+  "id": "DZR-F2-0019",
+  "alias": "MIL-HDBK-245E 4.6.6.b.5",
+  "source": {
+   "docId": "MIL-HDBK-245E",
+   "edition": "E, 2021-06-14, with Change 2, 2023-09-21; validation Notice 1, 2026-07-29",
+   "paragraph": "4.6.6.b.5",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5783737",
+   "passage": "b. DON’T:\n\n5. Specify design control parameters or the performance of hardware.",
+   "passageSHA256": "2a8e3116ecb7c6f04f118eec233d2b32e36d41ece6cf26f50f7788f8033f93d0"
+  },
+  "wording": "The SOW shall exclude hardware-performance requirements.",
+  "wordingSHA256": "94f27d2b40bb3c04810556332e7275009df3a3ed7b78718dd1c1abcafefc93f3",
+  "actor": "The SOW",
+  "condition": "",
+  "verificationIntent": "inspection",
+  "kind": "guidance",
+  "fields": [
+   "sow.tasks"
+  ],
+  "status": "sample",
+  "notes": "Guidance-only extraction: MIL-HDBK-245E Change 2 cover and Foreword 2 prohibit citing the handbook as a contractual requirement. This proposed wording remains a sample for human review, not an independently binding contractor obligation. Exact passage inspected in the directly downloaded PDF; line-wrap whitespace is removed without changing words or punctuation. Exact DON’T lead-in plus the exact subordinate item; separated excerpts are joined by a blank line.  Catalogued guidance only; excluded from every baseline hash.",
+  "binding": false
+ },
+ {
+  "id": "DZR-F2-0020",
+  "alias": "MIL-HDBK-245E 4.6.6.b.6",
+  "source": {
+   "docId": "MIL-HDBK-245E",
+   "edition": "E, 2021-06-14, with Change 2, 2023-09-21; validation Notice 1, 2026-07-29",
+   "paragraph": "4.6.6.b.6",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5783737",
+   "passage": "b. DON’T:\n\n6. Impose on the contractor a Government format when a contractor format is acceptable.",
+   "passageSHA256": "0e33bd80a518f6e914abe859d56525532487f0f8f856f56677a34c3dfa497cc3"
+  },
+  "wording": "The SOW shall not impose a Government format on the contractor.",
+  "wordingSHA256": "42ed618ae7b254ceb01cc418a03343783c2754f78e5968f2907ed87e9ddba53f",
+  "actor": "The SOW",
+  "condition": "When a contractor format is acceptable.",
+  "verificationIntent": "inspection",
+  "kind": "guidance",
+  "fields": [
+   "sow.formatRequirements"
+  ],
+  "status": "sample",
+  "notes": "Guidance-only extraction: MIL-HDBK-245E Change 2 cover and Foreword 2 prohibit citing the handbook as a contractual requirement. This proposed wording remains a sample for human review, not an independently binding contractor obligation. Exact passage inspected in the directly downloaded PDF; line-wrap whitespace is removed without changing words or punctuation. Exact DON’T lead-in plus the exact subordinate item; separated excerpts are joined by a blank line.  Catalogued guidance only; excluded from every baseline hash.",
+  "binding": false
+ },
+ {
+  "id": "DZR-F2-0021",
+  "alias": "MIL-HDBK-245E 4.6.6.b.7",
+  "source": {
+   "docId": "MIL-HDBK-245E",
+   "edition": "E, 2021-06-14, with Change 2, 2023-09-21; validation Notice 1, 2026-07-29",
+   "paragraph": "4.6.6.b.7",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5783737",
+   "passage": "b. DON’T:\n\n7. Over specify. Specify only what is required and let the contractor establish the best method to fulfill the requirement.",
+   "passageSHA256": "2c01e09efe914fb3c66ad937268e07294f5ee4cd6613636625de9f041c3faaff"
+  },
+  "wording": "The SOW shall exclude requirements beyond the required work.",
+  "wordingSHA256": "8ae1dc608cd855875e9be398ec6520469adcf86070f5ce9ab6609ebb4e5a5fb9",
+  "actor": "The SOW",
+  "condition": "",
+  "verificationIntent": "inspection",
+  "kind": "guidance",
+  "fields": [
+   "sow.tasks"
+  ],
+  "status": "sample",
+  "notes": "Guidance-only extraction: MIL-HDBK-245E Change 2 cover and Foreword 2 prohibit citing the handbook as a contractual requirement. This proposed wording remains a sample for human review, not an independently binding contractor obligation. Exact passage inspected in the directly downloaded PDF; line-wrap whitespace is removed without changing words or punctuation. Exact DON’T lead-in plus the exact subordinate item; separated excerpts are joined by a blank line. Qualitative scope review; the passage does not prescribe a numeric over-specification threshold. Catalogued guidance only; excluded from every baseline hash.",
+  "binding": false
+ },
+ {
+  "id": "DZR-F2-0022",
+  "alias": "MIL-HDBK-245E 4.6.6.b.8",
+  "source": {
+   "docId": "MIL-HDBK-245E",
+   "edition": "E, 2021-06-14, with Change 2, 2023-09-21; validation Notice 1, 2026-07-29",
+   "paragraph": "4.6.6.b.8",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5783737",
+   "passage": "b. DON’T:\n\n8. Invoke in-house management instructions.",
+   "passageSHA256": "dc987c4c01b5c5c081626e8b526b41c423560b911ef21e3a703771b96a55b8c8"
+  },
+  "wording": "The SOW shall not invoke in-house management instructions.",
+  "wordingSHA256": "6a6ff57ba1e0d66f9c80437c3bcb90b8a015dd7fb8f3b480c6b022f67d418788",
+  "actor": "The SOW",
+  "condition": "",
+  "verificationIntent": "inspection",
+  "kind": "guidance",
+  "fields": [
+   "sow.references"
+  ],
+  "status": "sample",
+  "notes": "Guidance-only extraction: MIL-HDBK-245E Change 2 cover and Foreword 2 prohibit citing the handbook as a contractual requirement. This proposed wording remains a sample for human review, not an independently binding contractor obligation. Exact passage inspected in the directly downloaded PDF; line-wrap whitespace is removed without changing words or punctuation. Exact DON’T lead-in plus the exact subordinate item; separated excerpts are joined by a blank line.  Catalogued guidance only; excluded from every baseline hash.",
+  "binding": false
+ },
+ {
+  "id": "DZR-F2-0023",
+  "alias": "MIL-HDBK-245E 4.6.6.b.9",
+  "source": {
+   "docId": "MIL-HDBK-245E",
+   "edition": "E, 2021-06-14, with Change 2, 2023-09-21; validation Notice 1, 2026-07-29",
+   "paragraph": "4.6.6.b.9",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5783737",
+   "passage": "b. DON’T:\n\n9. Use the SOW to establish or amend a specification.",
+   "passageSHA256": "9ba4cb1cb81ac4582d999c0d9c1e7df558a3f73cbc1938eebedf92c5391c7d08"
+  },
+  "wording": "The SOW shall not establish a specification.",
+  "wordingSHA256": "abaf6b621e8a85da9274305c09703ee7040c28a05840317ae6504570217d73b0",
+  "actor": "The SOW",
+  "condition": "",
+  "verificationIntent": "inspection",
+  "kind": "guidance",
+  "fields": [
+   "sow.text",
+   "sow.specificationReferences"
+  ],
+  "status": "sample",
+  "notes": "Guidance-only extraction: MIL-HDBK-245E Change 2 cover and Foreword 2 prohibit citing the handbook as a contractual requirement. This proposed wording remains a sample for human review, not an independently binding contractor obligation. Exact passage inspected in the directly downloaded PDF; line-wrap whitespace is removed without changing words or punctuation. Exact DON’T lead-in plus the exact subordinate item; separated excerpts are joined by a blank line.  Catalogued guidance only; excluded from every baseline hash.",
+  "binding": false
+ },
+ {
+  "id": "DZR-F2-0024",
+  "alias": "MIL-HDBK-245E 4.6.6.b.9",
+  "source": {
+   "docId": "MIL-HDBK-245E",
+   "edition": "E, 2021-06-14, with Change 2, 2023-09-21; validation Notice 1, 2026-07-29",
+   "paragraph": "4.6.6.b.9",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5783737",
+   "passage": "b. DON’T:\n\n9. Use the SOW to establish or amend a specification.",
+   "passageSHA256": "9ba4cb1cb81ac4582d999c0d9c1e7df558a3f73cbc1938eebedf92c5391c7d08"
+  },
+  "wording": "The SOW shall not amend a specification.",
+  "wordingSHA256": "8bd1a147944eb66d2f6021eb98b8e44a7b215bf6064a6842abc9280cc2171881",
+  "actor": "The SOW",
+  "condition": "",
+  "verificationIntent": "inspection",
+  "kind": "guidance",
+  "fields": [
+   "sow.text",
+   "sow.specificationReferences"
+  ],
+  "status": "sample",
+  "notes": "Guidance-only extraction: MIL-HDBK-245E Change 2 cover and Foreword 2 prohibit citing the handbook as a contractual requirement. This proposed wording remains a sample for human review, not an independently binding contractor obligation. Exact passage inspected in the directly downloaded PDF; line-wrap whitespace is removed without changing words or punctuation. Exact DON’T lead-in plus the exact subordinate item; separated excerpts are joined by a blank line.  Catalogued guidance only; excluded from every baseline hash.",
+  "binding": false
+ },
+ {
+  "id": "DZR-F2-0025",
+  "alias": "MIL-HDBK-245E 4.6.6.b.10",
+  "source": {
+   "docId": "MIL-HDBK-245E",
+   "edition": "E, 2021-06-14, with Change 2, 2023-09-21; validation Notice 1, 2026-07-29",
+   "paragraph": "4.6.6.b.10",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5783737",
+   "passage": "b. DON’T:\n\n10. Use vague terms like “as required”, “as needed” or anything requiring judgement. Use language specific to standards.",
+   "passageSHA256": "a9df0282e7ad51357da9d9b28789bacbb098240aceb196a521567e37ff000f83"
+  },
+  "wording": "The SOW shall exclude vague terms requiring interpretation of unspecified work.",
+  "wordingSHA256": "fcdf503eb9bf3754472f3b370bc879189a2ddbf5fa3fdebbe725f48646974909",
+  "actor": "The SOW",
+  "condition": "",
+  "verificationIntent": "inspection",
+  "kind": "guidance",
+  "fields": [
+   "sow.tasks"
+  ],
+  "status": "sample",
+  "notes": "Guidance-only extraction: MIL-HDBK-245E Change 2 cover and Foreword 2 prohibit citing the handbook as a contractual requirement. This proposed wording remains a sample for human review, not an independently binding contractor obligation. Exact passage inspected in the directly downloaded PDF; line-wrap whitespace is removed without changing words or punctuation. Exact DON’T lead-in plus the exact subordinate item; separated excerpts are joined by a blank line. Examples as required and as needed illustrate the prohibition; a source-defined automated vague-term classifier does not exist. Catalogued guidance only; excluded from every baseline hash.",
+  "binding": false
+ },
+ {
+  "id": "DZR-F2-0026",
+  "alias": "MIL-HDBK-245E 4.6.6.b.11",
+  "source": {
+   "docId": "MIL-HDBK-245E",
+   "edition": "E, 2021-06-14, with Change 2, 2023-09-21; validation Notice 1, 2026-07-29",
+   "paragraph": "4.6.6.b.11",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5783737",
+   "passage": "b. DON’T:\n\n11. Discuss the delivery schedule, there are other places in the contract for that information.",
+   "passageSHA256": "6abb32485f080b1097ff3af7534dda7a9f42164704df378ed55c8a36be50ebdd"
+  },
+  "wording": "The SOW shall exclude discussion of the delivery schedule.",
+  "wordingSHA256": "71d0b7f6aed6a9649f43a1b587547cb20a0a6d76c7a7366ae30663c33fb60366",
+  "actor": "The SOW",
+  "condition": "",
+  "verificationIntent": "inspection",
+  "kind": "guidance",
+  "fields": [
+   "sow.text",
+   "cdrl.deliverySchedule"
+  ],
+  "status": "sample",
+  "notes": "Guidance-only extraction: MIL-HDBK-245E Change 2 cover and Foreword 2 prohibit citing the handbook as a contractual requirement. This proposed wording remains a sample for human review, not an independently binding contractor obligation. Exact passage inspected in the directly downloaded PDF; line-wrap whitespace is removed without changing words or punctuation. Exact DON’T lead-in plus the exact subordinate item; separated excerpts are joined by a blank line.  Catalogued guidance only; excluded from every baseline hash.",
+  "binding": false
+ },
+ {
+  "id": "DZR-F2-0027",
+  "alias": "MIL-HDBK-245E 4.9",
+  "source": {
+   "docId": "MIL-HDBK-245E",
+   "edition": "E, 2021-06-14, with Change 2, 2023-09-21; validation Notice 1, 2026-07-29",
+   "paragraph": "4.9",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5783737",
+   "passage": "The SOW, and not the DID, must task the contractor to perform work.",
+   "passageSHA256": "5be72d941803f48787b5494fd6b40d9ef7cde402d202f6845031d2a42b780579"
+  },
+  "wording": "The SOW shall contain the contractor work tasking.",
+  "wordingSHA256": "e988dc5f73a301cab25e1e0faa2dfc00a97ee541df2a3c1479c78f6faaf1c3d7",
+  "actor": "The SOW",
+  "condition": "",
+  "verificationIntent": "inspection",
+  "kind": "guidance",
+  "fields": [
+   "sow.tasks"
+  ],
+  "status": "sample",
+  "notes": "Guidance-only extraction: MIL-HDBK-245E Change 2 cover and Foreword 2 prohibit citing the handbook as a contractual requirement. This proposed wording remains a sample for human review, not an independently binding contractor obligation. Exact passage inspected in the directly downloaded PDF; line-wrap whitespace is removed without changing words or punctuation. Data product responsibility distinction, not a mandate to perform any particular engineering task. Catalogued guidance only; excluded from every baseline hash.",
+  "binding": false
+ },
+ {
+  "id": "DZR-F2-0028",
+  "alias": "MIL-HDBK-245E 4.9",
+  "source": {
+   "docId": "MIL-HDBK-245E",
+   "edition": "E, 2021-06-14, with Change 2, 2023-09-21; validation Notice 1, 2026-07-29",
+   "paragraph": "4.9",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5783737",
+   "passage": "The SOW, and not the DID, must task the contractor to perform work.",
+   "passageSHA256": "5be72d941803f48787b5494fd6b40d9ef7cde402d202f6845031d2a42b780579"
+  },
+  "wording": "The contract set shall not use the DID as the contractor work-tasking document.",
+  "wordingSHA256": "95b8f8604de34f40e9c02ecb6d37dd6f540766bf4e6c8df0b151471c8aaa6eed",
+  "actor": "The contract set",
+  "condition": "",
+  "verificationIntent": "inspection",
+  "kind": "guidance",
+  "fields": [
+   "sow.tasks",
+   "cdrl.didReferences"
+  ],
+  "status": "sample",
+  "notes": "Guidance-only extraction: MIL-HDBK-245E Change 2 cover and Foreword 2 prohibit citing the handbook as a contractual requirement. This proposed wording remains a sample for human review, not an independently binding contractor obligation. Exact passage inspected in the directly downloaded PDF; line-wrap whitespace is removed without changing words or punctuation. Atomic negative component of the source distinction between the SOW and the DID. Catalogued guidance only; excluded from every baseline hash.",
+  "binding": false
+ },
+ {
+  "id": "DZR-F2-0029",
+  "alias": "MIL-HDBK-245E 4.10.d",
+  "source": {
+   "docId": "MIL-HDBK-245E",
+   "edition": "E, 2021-06-14, with Change 2, 2023-09-21; validation Notice 1, 2026-07-29",
+   "paragraph": "4.10.d",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5783737",
+   "passage": "Prepare a bibliography citing the specific portions of all applicable governing instructions, directives, specifications and standards with which the program must comply. Keep these requirements to the absolute minimum and do not include citing’s that direct “how” work is to be performed.",
+   "passageSHA256": "6f4a37ed4f78bd5cef458ddee0d854d2d24e312c2b3a153fa1507310ec90d24a"
+  },
+  "wording": "The SOW bibliography shall exclude citations directing how work is performed.",
+  "wordingSHA256": "3c1f9478bedb6cd7dfc0f72af1ed13f28bdcddffb4827b40063e67c4f90fa778",
+  "actor": "The SOW bibliography",
+  "condition": "",
+  "verificationIntent": "inspection",
+  "kind": "guidance",
+  "fields": [
+   "sow.references"
+  ],
+  "status": "sample",
+  "notes": "Guidance-only extraction: MIL-HDBK-245E Change 2 cover and Foreword 2 prohibit citing the handbook as a contractual requirement. This proposed wording remains a sample for human review, not an independently binding contractor obligation. Exact passage inspected in the directly downloaded PDF; line-wrap whitespace is removed without changing words or punctuation. Only the explicit prohibition is transformed. Source spelling citing’s is retained exactly. Catalogued guidance only; excluded from every baseline hash.",
+  "binding": false
+ },
+ {
+  "id": "DZR-F2-0030",
+  "alias": "MIL-HDBK-245E 5.2.3",
+  "source": {
+   "docId": "MIL-HDBK-245E",
+   "edition": "E, 2021-06-14, with Change 2, 2023-09-21; validation Notice 1, 2026-07-29",
+   "paragraph": "5.2.3",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5783737",
+   "passage": "The requirements that establish the work must be defined in terms of work words and not product words.",
+   "passageSHA256": "2d270ffc4fcc0fbd464054b7122cee325ca1c7840918e0165d783f86709f6716"
+  },
+  "wording": "The SOW shall define non-personal-services work requirements using work words rather than product words.",
+  "wordingSHA256": "aa9641c5a2834f51da3ec77f86ad0fee2096c0438487d3a76116ed69d16cd860",
+  "actor": "The SOW",
+  "condition": "When the SOW specifies non-personal services.",
+  "verificationIntent": "inspection",
+  "kind": "guidance",
+  "fields": [
+   "sow.tasks"
+  ],
+  "status": "sample",
+  "notes": "Guidance-only extraction: MIL-HDBK-245E Change 2 cover and Foreword 2 prohibit citing the handbook as a contractual requirement. This proposed wording remains a sample for human review, not an independently binding contractor obligation. Exact passage inspected in the directly downloaded PDF; line-wrap whitespace is removed without changing words or punctuation.  Catalogued guidance only; excluded from every baseline hash.",
+  "binding": false
+ },
+ {
+  "id": "DZR-F2-0031",
+  "alias": "MIL-HDBK-245E 5.2.3",
+  "source": {
+   "docId": "MIL-HDBK-245E",
+   "edition": "E, 2021-06-14, with Change 2, 2023-09-21; validation Notice 1, 2026-07-29",
+   "paragraph": "5.2.3",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5783737",
+   "passage": "These factors are: (a) the SOW must establish explicitly what work is to be done and require the delivery of a product or result other than periodic progress reports and (b) the contractor's employees must not be supervised or controlled by the Government during the execution of the work and production of the product or result.",
+   "passageSHA256": "00d7f9ab8647942eb06a8d9274a71d4a55e8e14448faefa45ea1089449aec9b3"
+  },
+  "wording": "The SOW shall explicitly identify the work to be performed.",
+  "wordingSHA256": "d7285af67d4487b637cc0a655f53f58169e1d43e0425dec9f795f130c13bfeb9",
+  "actor": "The SOW",
+  "condition": "When the SOW specifies non-personal services.",
+  "verificationIntent": "inspection",
+  "kind": "guidance",
+  "fields": [
+   "sow.tasks"
+  ],
+  "status": "sample",
+  "notes": "Guidance-only extraction: MIL-HDBK-245E Change 2 cover and Foreword 2 prohibit citing the handbook as a contractual requirement. This proposed wording remains a sample for human review, not an independently binding contractor obligation. Exact passage inspected in the directly downloaded PDF; line-wrap whitespace is removed without changing words or punctuation. Only factor (a) constrains the SOW information product. Factor (b) is actual supervision conduct and is not extracted as a data requirement. Catalogued guidance only; excluded from every baseline hash.",
+  "binding": false
+ },
+ {
+  "id": "DZR-F2-0032",
+  "alias": "MIL-HDBK-245E 5.2.3",
+  "source": {
+   "docId": "MIL-HDBK-245E",
+   "edition": "E, 2021-06-14, with Change 2, 2023-09-21; validation Notice 1, 2026-07-29",
+   "paragraph": "5.2.3",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5783737",
+   "passage": "These factors are: (a) the SOW must establish explicitly what work is to be done and require the delivery of a product or result other than periodic progress reports and (b) the contractor's employees must not be supervised or controlled by the Government during the execution of the work and production of the product or result.",
+   "passageSHA256": "00d7f9ab8647942eb06a8d9274a71d4a55e8e14448faefa45ea1089449aec9b3"
+  },
+  "wording": "The SOW shall require delivery of a product or result other than periodic progress reports.",
+  "wordingSHA256": "fd9b233551886b1bd810c73fd543816652443ea8ff8c7b8923276389c3be8ec1",
+  "actor": "The SOW",
+  "condition": "When the SOW specifies non-personal services.",
+  "verificationIntent": "inspection",
+  "kind": "guidance",
+  "fields": [
+   "sow.deliverables"
+  ],
+  "status": "sample",
+  "notes": "Guidance-only extraction: MIL-HDBK-245E Change 2 cover and Foreword 2 prohibit citing the handbook as a contractual requirement. This proposed wording remains a sample for human review, not an independently binding contractor obligation. Exact passage inspected in the directly downloaded PDF; line-wrap whitespace is removed without changing words or punctuation. Atomic split of factor (a); no sample deliverable is created. Catalogued guidance only; excluded from every baseline hash.",
+  "binding": false
+ },
+ {
+  "id": "DZR-F2-0033",
+  "alias": "MIL-HDBK-245E 5.2.3",
+  "source": {
+   "docId": "MIL-HDBK-245E",
+   "edition": "E, 2021-06-14, with Change 2, 2023-09-21; validation Notice 1, 2026-07-29",
+   "paragraph": "5.2.3",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5783737",
+   "passage": "In this regard, the SOW must be explicit, inclusive and comprehensive in prescribing the work requirements.",
+   "passageSHA256": "08c4c32434adc1cc490f7b5d10cdee9f7c8d9874d3a86267a3ebf18ff78d013c"
+  },
+  "wording": "The SOW shall be explicit in prescribing the non-personal-services work requirements.",
+  "wordingSHA256": "4169b4017fd3c8c2521e55fd2f437ace59a2425f921cb039d6bcb7fbdffefa41",
+  "actor": "The SOW",
+  "condition": "When the SOW specifies non-personal services.",
+  "verificationIntent": "inspection",
+  "kind": "guidance",
+  "fields": [
+   "sow.tasks"
+  ],
+  "status": "sample",
+  "notes": "Guidance-only extraction: MIL-HDBK-245E Change 2 cover and Foreword 2 prohibit citing the handbook as a contractual requirement. This proposed wording remains a sample for human review, not an independently binding contractor obligation. Exact passage inspected in the directly downloaded PDF; line-wrap whitespace is removed without changing words or punctuation. Atomic source quality criterion. Source provides no numeric boundary; human review remains necessary. Catalogued guidance only; excluded from every baseline hash.",
+  "binding": false
+ },
+ {
+  "id": "DZR-F2-0034",
+  "alias": "MIL-HDBK-245E 5.2.3",
+  "source": {
+   "docId": "MIL-HDBK-245E",
+   "edition": "E, 2021-06-14, with Change 2, 2023-09-21; validation Notice 1, 2026-07-29",
+   "paragraph": "5.2.3",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5783737",
+   "passage": "In this regard, the SOW must be explicit, inclusive and comprehensive in prescribing the work requirements.",
+   "passageSHA256": "08c4c32434adc1cc490f7b5d10cdee9f7c8d9874d3a86267a3ebf18ff78d013c"
+  },
+  "wording": "The SOW shall be inclusive in prescribing the non-personal-services work requirements.",
+  "wordingSHA256": "7bfc26289991cb65ddd9f4f57b69923987bf4701a627b4574b066917b3d4cc9f",
+  "actor": "The SOW",
+  "condition": "When the SOW specifies non-personal services.",
+  "verificationIntent": "inspection",
+  "kind": "guidance",
+  "fields": [
+   "sow.tasks"
+  ],
+  "status": "sample",
+  "notes": "Guidance-only extraction: MIL-HDBK-245E Change 2 cover and Foreword 2 prohibit citing the handbook as a contractual requirement. This proposed wording remains a sample for human review, not an independently binding contractor obligation. Exact passage inspected in the directly downloaded PDF; line-wrap whitespace is removed without changing words or punctuation. Atomic source quality criterion. Source provides no numeric boundary; human review remains necessary. Catalogued guidance only; excluded from every baseline hash.",
+  "binding": false
+ },
+ {
+  "id": "DZR-F2-0035",
+  "alias": "MIL-HDBK-245E 5.2.3",
+  "source": {
+   "docId": "MIL-HDBK-245E",
+   "edition": "E, 2021-06-14, with Change 2, 2023-09-21; validation Notice 1, 2026-07-29",
+   "paragraph": "5.2.3",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5783737",
+   "passage": "In this regard, the SOW must be explicit, inclusive and comprehensive in prescribing the work requirements.",
+   "passageSHA256": "08c4c32434adc1cc490f7b5d10cdee9f7c8d9874d3a86267a3ebf18ff78d013c"
+  },
+  "wording": "The SOW shall be comprehensive in prescribing the non-personal-services work requirements.",
+  "wordingSHA256": "467dba57d7316026db2ebb814c3945342a891bacb6aa504f00d52a7a728f024f",
+  "actor": "The SOW",
+  "condition": "When the SOW specifies non-personal services.",
+  "verificationIntent": "inspection",
+  "kind": "guidance",
+  "fields": [
+   "sow.tasks"
+  ],
+  "status": "sample",
+  "notes": "Guidance-only extraction: MIL-HDBK-245E Change 2 cover and Foreword 2 prohibit citing the handbook as a contractual requirement. This proposed wording remains a sample for human review, not an independently binding contractor obligation. Exact passage inspected in the directly downloaded PDF; line-wrap whitespace is removed without changing words or punctuation. Atomic source quality criterion. Source provides no numeric boundary; human review remains necessary. Catalogued guidance only; excluded from every baseline hash.",
+  "binding": false
+ },
+ {
+  "id": "DZR-F2-0036",
+  "alias": "MIL-HDBK-245E 5.2.4",
+  "source": {
+   "docId": "MIL-HDBK-245E",
+   "edition": "E, 2021-06-14, with Change 2, 2023-09-21; validation Notice 1, 2026-07-29",
+   "paragraph": "5.2.4",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5783737",
+   "passage": "A frequent problem encountered in defining the tasks in a SOW is the use of non-specific words and phrases such as: “any” - “assist”- “as required”- “as applicable/as necessary” and “as directed.” Do not use any of these words.",
+   "passageSHA256": "c355396ae441682c4577c4d4330fd3f6ac9ef4d963ef2f215239c18f9a115d7b"
+  },
+  "wording": "The SOW shall exclude the term “any” from task definitions.",
+  "wordingSHA256": "d638d44aa6d8741c012bab082a0e555a88c0f70fbb85f89f46af4f20b66d7ef1",
+  "actor": "The SOW",
+  "condition": "",
+  "verificationIntent": "inspection",
+  "kind": "guidance",
+  "fields": [
+   "sow.tasks"
+  ],
+  "status": "sample",
+  "notes": "Guidance-only extraction: MIL-HDBK-245E Change 2 cover and Foreword 2 prohibit citing the handbook as a contractual requirement. This proposed wording remains a sample for human review, not an independently binding contractor obligation. Exact passage inspected in the directly downloaded PDF; line-wrap whitespace is removed without changing words or punctuation. Atomic split of the expressly prohibited terminology list. This retains the guidance wording without claiming universal lexical rejection authority. Catalogued guidance only; excluded from every baseline hash.",
+  "binding": false
+ },
+ {
+  "id": "DZR-F2-0037",
+  "alias": "MIL-HDBK-245E 5.2.4",
+  "source": {
+   "docId": "MIL-HDBK-245E",
+   "edition": "E, 2021-06-14, with Change 2, 2023-09-21; validation Notice 1, 2026-07-29",
+   "paragraph": "5.2.4",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5783737",
+   "passage": "A frequent problem encountered in defining the tasks in a SOW is the use of non-specific words and phrases such as: “any” - “assist”- “as required”- “as applicable/as necessary” and “as directed.” Do not use any of these words.",
+   "passageSHA256": "c355396ae441682c4577c4d4330fd3f6ac9ef4d963ef2f215239c18f9a115d7b"
+  },
+  "wording": "The SOW shall exclude the term “assist” from task definitions.",
+  "wordingSHA256": "9f7556dc7b394a7bad0e3da549f8989d4cdd15b9e0e065c929539b0864fb1e0a",
+  "actor": "The SOW",
+  "condition": "",
+  "verificationIntent": "inspection",
+  "kind": "guidance",
+  "fields": [
+   "sow.tasks"
+  ],
+  "status": "sample",
+  "notes": "Guidance-only extraction: MIL-HDBK-245E Change 2 cover and Foreword 2 prohibit citing the handbook as a contractual requirement. This proposed wording remains a sample for human review, not an independently binding contractor obligation. Exact passage inspected in the directly downloaded PDF; line-wrap whitespace is removed without changing words or punctuation. Atomic split of the expressly prohibited terminology list. This retains the guidance wording without claiming universal lexical rejection authority. Catalogued guidance only; excluded from every baseline hash.",
+  "binding": false
+ },
+ {
+  "id": "DZR-F2-0038",
+  "alias": "MIL-HDBK-245E 5.2.4",
+  "source": {
+   "docId": "MIL-HDBK-245E",
+   "edition": "E, 2021-06-14, with Change 2, 2023-09-21; validation Notice 1, 2026-07-29",
+   "paragraph": "5.2.4",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5783737",
+   "passage": "A frequent problem encountered in defining the tasks in a SOW is the use of non-specific words and phrases such as: “any” - “assist”- “as required”- “as applicable/as necessary” and “as directed.” Do not use any of these words.",
+   "passageSHA256": "c355396ae441682c4577c4d4330fd3f6ac9ef4d963ef2f215239c18f9a115d7b"
+  },
+  "wording": "The SOW shall exclude the term “as required” from task definitions.",
+  "wordingSHA256": "f330e527c53d9e6282696f01930ff85219c76c67d4a48c70890080943a264664",
+  "actor": "The SOW",
+  "condition": "",
+  "verificationIntent": "inspection",
+  "kind": "guidance",
+  "fields": [
+   "sow.tasks"
+  ],
+  "status": "sample",
+  "notes": "Guidance-only extraction: MIL-HDBK-245E Change 2 cover and Foreword 2 prohibit citing the handbook as a contractual requirement. This proposed wording remains a sample for human review, not an independently binding contractor obligation. Exact passage inspected in the directly downloaded PDF; line-wrap whitespace is removed without changing words or punctuation. Atomic split of the expressly prohibited terminology list. This retains the guidance wording without claiming universal lexical rejection authority. Catalogued guidance only; excluded from every baseline hash.",
+  "binding": false
+ },
+ {
+  "id": "DZR-F2-0039",
+  "alias": "MIL-HDBK-245E 5.2.4",
+  "source": {
+   "docId": "MIL-HDBK-245E",
+   "edition": "E, 2021-06-14, with Change 2, 2023-09-21; validation Notice 1, 2026-07-29",
+   "paragraph": "5.2.4",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5783737",
+   "passage": "A frequent problem encountered in defining the tasks in a SOW is the use of non-specific words and phrases such as: “any” - “assist”- “as required”- “as applicable/as necessary” and “as directed.” Do not use any of these words.",
+   "passageSHA256": "c355396ae441682c4577c4d4330fd3f6ac9ef4d963ef2f215239c18f9a115d7b"
+  },
+  "wording": "The SOW shall exclude the term “as applicable” from task definitions.",
+  "wordingSHA256": "3b6d3a0aca7d57b35d2edb3404a88eb45fbd7aac361b60f3cc501476ff9557d7",
+  "actor": "The SOW",
+  "condition": "",
+  "verificationIntent": "inspection",
+  "kind": "guidance",
+  "fields": [
+   "sow.tasks"
+  ],
+  "status": "sample",
+  "notes": "Guidance-only extraction: MIL-HDBK-245E Change 2 cover and Foreword 2 prohibit citing the handbook as a contractual requirement. This proposed wording remains a sample for human review, not an independently binding contractor obligation. Exact passage inspected in the directly downloaded PDF; line-wrap whitespace is removed without changing words or punctuation. Atomic split of the expressly prohibited terminology list. This retains the guidance wording without claiming universal lexical rejection authority. Catalogued guidance only; excluded from every baseline hash.",
+  "binding": false
+ },
+ {
+  "id": "DZR-F2-0040",
+  "alias": "MIL-HDBK-245E 5.2.4",
+  "source": {
+   "docId": "MIL-HDBK-245E",
+   "edition": "E, 2021-06-14, with Change 2, 2023-09-21; validation Notice 1, 2026-07-29",
+   "paragraph": "5.2.4",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5783737",
+   "passage": "A frequent problem encountered in defining the tasks in a SOW is the use of non-specific words and phrases such as: “any” - “assist”- “as required”- “as applicable/as necessary” and “as directed.” Do not use any of these words.",
+   "passageSHA256": "c355396ae441682c4577c4d4330fd3f6ac9ef4d963ef2f215239c18f9a115d7b"
+  },
+  "wording": "The SOW shall exclude the term “as necessary” from task definitions.",
+  "wordingSHA256": "fccf42b33732d08cb7d41d545a4be1707df01de75deeec184b1aa12f795d92cf",
+  "actor": "The SOW",
+  "condition": "",
+  "verificationIntent": "inspection",
+  "kind": "guidance",
+  "fields": [
+   "sow.tasks"
+  ],
+  "status": "sample",
+  "notes": "Guidance-only extraction: MIL-HDBK-245E Change 2 cover and Foreword 2 prohibit citing the handbook as a contractual requirement. This proposed wording remains a sample for human review, not an independently binding contractor obligation. Exact passage inspected in the directly downloaded PDF; line-wrap whitespace is removed without changing words or punctuation. Atomic split of the expressly prohibited terminology list. This retains the guidance wording without claiming universal lexical rejection authority. Catalogued guidance only; excluded from every baseline hash.",
+  "binding": false
+ },
+ {
+  "id": "DZR-F2-0041",
+  "alias": "MIL-HDBK-245E 5.2.4",
+  "source": {
+   "docId": "MIL-HDBK-245E",
+   "edition": "E, 2021-06-14, with Change 2, 2023-09-21; validation Notice 1, 2026-07-29",
+   "paragraph": "5.2.4",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5783737",
+   "passage": "A frequent problem encountered in defining the tasks in a SOW is the use of non-specific words and phrases such as: “any” - “assist”- “as required”- “as applicable/as necessary” and “as directed.” Do not use any of these words.",
+   "passageSHA256": "c355396ae441682c4577c4d4330fd3f6ac9ef4d963ef2f215239c18f9a115d7b"
+  },
+  "wording": "The SOW shall exclude the term “as directed” from task definitions.",
+  "wordingSHA256": "449b41e88c14ec229762065f893be0d8adf2522ad6ac5d51c602a39e3133edb1",
+  "actor": "The SOW",
+  "condition": "",
+  "verificationIntent": "inspection",
+  "kind": "guidance",
+  "fields": [
+   "sow.tasks"
+  ],
+  "status": "sample",
+  "notes": "Guidance-only extraction: MIL-HDBK-245E Change 2 cover and Foreword 2 prohibit citing the handbook as a contractual requirement. This proposed wording remains a sample for human review, not an independently binding contractor obligation. Exact passage inspected in the directly downloaded PDF; line-wrap whitespace is removed without changing words or punctuation. Atomic split of the expressly prohibited terminology list. This retains the guidance wording without claiming universal lexical rejection authority. Catalogued guidance only; excluded from every baseline hash.",
+  "binding": false
+ },
+ {
+  "id": "DZR-F2-0042",
+  "alias": "MIL-HDBK-245E 5.2.4.c",
+  "source": {
+   "docId": "MIL-HDBK-245E",
+   "edition": "E, 2021-06-14, with Change 2, 2023-09-21; validation Notice 1, 2026-07-29",
+   "paragraph": "5.2.4.c",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5783737",
+   "passage": "The SOW must be declarative as to its minimal needs.",
+   "passageSHA256": "6ca2799a288e2c10c181004b545dd2e438026d925fa21a22d58161a8f7435069"
+  },
+  "wording": "The SOW shall state the minimum required work.",
+  "wordingSHA256": "d1ef6de1a47c237d0f18e967e05df1fca1d38428ff751f591a8491cc54b0a2ee",
+  "actor": "The SOW",
+  "condition": "",
+  "verificationIntent": "inspection",
+  "kind": "guidance",
+  "fields": [
+   "sow.tasks"
+  ],
+  "status": "sample",
+  "notes": "Guidance-only extraction: MIL-HDBK-245E Change 2 cover and Foreword 2 prohibit citing the handbook as a contractual requirement. This proposed wording remains a sample for human review, not an independently binding contractor obligation. Exact passage inspected in the directly downloaded PDF; line-wrap whitespace is removed without changing words or punctuation. No substantive minimum work content is fabricated. Catalogued guidance only; excluded from every baseline hash.",
+  "binding": false
+ },
+ {
+  "id": "DZR-F2-0044",
+  "alias": "MIL-HDBK-245E 5.2.4.f",
+  "source": {
+   "docId": "MIL-HDBK-245E",
+   "edition": "E, 2021-06-14, with Change 2, 2023-09-21; validation Notice 1, 2026-07-29",
+   "paragraph": "5.2.4.f",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5783737",
+   "passage": "Only list known requirements.",
+   "passageSHA256": "0f4fd47251ffd3797dad2026f505d2a39068cf1031e0b7b1f20f798385235b78"
+  },
+  "wording": "The SOW shall list only known requirements.",
+  "wordingSHA256": "74f626c98ecd54ee6b2b1acb14aecfd67f9aaa7b539c1adab4ffbf5bbd6f039a",
+  "actor": "The SOW",
+  "condition": "",
+  "verificationIntent": "inspection",
+  "kind": "guidance",
+  "fields": [
+   "sow.tasks"
+  ],
+  "status": "sample",
+  "notes": "Guidance-only extraction: MIL-HDBK-245E Change 2 cover and Foreword 2 prohibit citing the handbook as a contractual requirement. This proposed wording remains a sample for human review, not an independently binding contractor obligation. Exact passage inspected in the directly downloaded PDF; line-wrap whitespace is removed without changing words or punctuation. Direct content restriction; no inferred requirements are added. Catalogued guidance only; excluded from every baseline hash.",
+  "binding": false
+ },
+ {
+  "id": "DZR-F2-0045",
+  "alias": "MIL-HDBK-245E 5.2.5.b",
+  "source": {
+   "docId": "MIL-HDBK-245E",
+   "edition": "E, 2021-06-14, with Change 2, 2023-09-21; validation Notice 1, 2026-07-29",
+   "paragraph": "5.2.5.b",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5783737",
+   "passage": "The SOW must state the minimal needs, even if it means broadening the work limitations to cover anticipated work tasks.",
+   "passageSHA256": "7110a7ed60a82554a058b19b037136014d23da49cafd17b3145a156c84081eb0"
+  },
+  "wording": "The SOW shall state the minimum needs for engineering and technical services.",
+  "wordingSHA256": "4cd358c0433b902c02f510c7c98784d92b8c04e5a48f2620d3befa2727c3f907",
+  "actor": "The SOW",
+  "condition": "When the SOW covers engineering and technical services.",
+  "verificationIntent": "inspection",
+  "kind": "guidance",
+  "fields": [
+   "sow.tasks"
+  ],
+  "status": "sample",
+  "notes": "Guidance-only extraction: MIL-HDBK-245E Change 2 cover and Foreword 2 prohibit citing the handbook as a contractual requirement. This proposed wording remains a sample for human review, not an independently binding contractor obligation. Exact passage inspected in the directly downloaded PDF; line-wrap whitespace is removed without changing words or punctuation. Source is the paragraph discussing overuse of that phrase; no actual engineering tasks are supplied. Catalogued guidance only; excluded from every baseline hash.",
+  "binding": false
+ },
+ {
+  "id": "DZR-F2-0046",
+  "alias": "MIL-HDBK-245E 5.2.6.3.c",
+  "source": {
+   "docId": "MIL-HDBK-245E",
+   "edition": "E, 2021-06-14, with Change 2, 2023-09-21; validation Notice 1, 2026-07-29",
+   "paragraph": "5.2.6.3.c",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5783737",
+   "passage": "When selecting the appropriate word that properly expresses the degree of contractor involvement, the SOW author must define the total nature of the work requirement explicitly.",
+   "passageSHA256": "deaab4bfdf1ba46bdbdbad419632425b426f6710e29e674c5b01a0fa879cca1c"
+  },
+  "wording": "The SOW author shall explicitly define the total nature of the work requirement.",
+  "wordingSHA256": "f96cf3b2fcab2e51606ef9a8be37f0cbe1325f8801b5ff1789146f836b598c20",
+  "actor": "The SOW author",
+  "condition": "When selecting the word expressing the degree of contractor involvement.",
+  "verificationIntent": "inspection",
+  "kind": "guidance",
+  "fields": [
+   "sow.tasks"
+  ],
+  "status": "sample",
+  "notes": "Guidance-only extraction: MIL-HDBK-245E Change 2 cover and Foreword 2 prohibit citing the handbook as a contractual requirement. This proposed wording remains a sample for human review, not an independently binding contractor obligation. Exact passage inspected in the directly downloaded PDF; line-wrap whitespace is removed without changing words or punctuation.  Catalogued guidance only; excluded from every baseline hash.",
+  "binding": false
+ },
+ {
+  "id": "DZR-F2-0047",
+  "alias": "MIL-HDBK-245E 5.2.6.4",
+  "source": {
+   "docId": "MIL-HDBK-245E",
+   "edition": "E, 2021-06-14, with Change 2, 2023-09-21; validation Notice 1, 2026-07-29",
+   "paragraph": "5.2.6.4",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5783737",
+   "passage": "Avoid using “Any,” “Either,” “And/Or,” as these words imply that the contractor can make a choice which may not support the intent of the SOW.",
+   "passageSHA256": "52c209431a22c185d14b0f2afa05a64e72e101bc814860eb189c3b1aa29c0b3e"
+  },
+  "wording": "The SOW shall exclude the term “Any”.",
+  "wordingSHA256": "1291ba1b7c3a1a17eb7ee6d704e014e1f73594057cac701021d901f49b069583",
+  "actor": "The SOW",
+  "condition": "",
+  "verificationIntent": "inspection",
+  "kind": "guidance",
+  "fields": [
+   "sow.tasks"
+  ],
+  "status": "sample",
+  "notes": "Guidance-only extraction: MIL-HDBK-245E Change 2 cover and Foreword 2 prohibit citing the handbook as a contractual requirement. This proposed wording remains a sample for human review, not an independently binding contractor obligation. Exact passage inspected in the directly downloaded PDF; line-wrap whitespace is removed without changing words or punctuation. Source is an avoid instruction in guidance, not a binding statutory prohibition; the ambiguity rationale is retained. Catalogued guidance only; excluded from every baseline hash.",
+  "binding": false
+ },
+ {
+  "id": "DZR-F2-0048",
+  "alias": "MIL-HDBK-245E 5.2.6.4",
+  "source": {
+   "docId": "MIL-HDBK-245E",
+   "edition": "E, 2021-06-14, with Change 2, 2023-09-21; validation Notice 1, 2026-07-29",
+   "paragraph": "5.2.6.4",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5783737",
+   "passage": "Avoid using “Any,” “Either,” “And/Or,” as these words imply that the contractor can make a choice which may not support the intent of the SOW.",
+   "passageSHA256": "52c209431a22c185d14b0f2afa05a64e72e101bc814860eb189c3b1aa29c0b3e"
+  },
+  "wording": "The SOW shall exclude the term “Either”.",
+  "wordingSHA256": "9f8dd31765dae17865afa24fb0024856d1fec3bd3bacc7d7c560891f066666c5",
+  "actor": "The SOW",
+  "condition": "",
+  "verificationIntent": "inspection",
+  "kind": "guidance",
+  "fields": [
+   "sow.tasks"
+  ],
+  "status": "sample",
+  "notes": "Guidance-only extraction: MIL-HDBK-245E Change 2 cover and Foreword 2 prohibit citing the handbook as a contractual requirement. This proposed wording remains a sample for human review, not an independently binding contractor obligation. Exact passage inspected in the directly downloaded PDF; line-wrap whitespace is removed without changing words or punctuation. Source is an avoid instruction in guidance, not a binding statutory prohibition; the ambiguity rationale is retained. Catalogued guidance only; excluded from every baseline hash.",
+  "binding": false
+ },
+ {
+  "id": "DZR-F2-0049",
+  "alias": "MIL-HDBK-245E 5.2.6.4",
+  "source": {
+   "docId": "MIL-HDBK-245E",
+   "edition": "E, 2021-06-14, with Change 2, 2023-09-21; validation Notice 1, 2026-07-29",
+   "paragraph": "5.2.6.4",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5783737",
+   "passage": "Avoid using “Any,” “Either,” “And/Or,” as these words imply that the contractor can make a choice which may not support the intent of the SOW.",
+   "passageSHA256": "52c209431a22c185d14b0f2afa05a64e72e101bc814860eb189c3b1aa29c0b3e"
+  },
+  "wording": "The SOW shall exclude the term “And/Or”.",
+  "wordingSHA256": "4e756fa371211a145e8bcd598741d4daaadf11be55a8803f039d2803c190dea0",
+  "actor": "The SOW",
+  "condition": "",
+  "verificationIntent": "inspection",
+  "kind": "guidance",
+  "fields": [
+   "sow.tasks"
+  ],
+  "status": "sample",
+  "notes": "Guidance-only extraction: MIL-HDBK-245E Change 2 cover and Foreword 2 prohibit citing the handbook as a contractual requirement. This proposed wording remains a sample for human review, not an independently binding contractor obligation. Exact passage inspected in the directly downloaded PDF; line-wrap whitespace is removed without changing words or punctuation. Source is an avoid instruction in guidance, not a binding statutory prohibition; the ambiguity rationale is retained. Catalogued guidance only; excluded from every baseline hash.",
+  "binding": false
+ },
+ {
+  "id": "DZR-F2-0050",
+  "alias": "MIL-HDBK-245E 5.2.6.4",
+  "source": {
+   "docId": "MIL-HDBK-245E",
+   "edition": "E, 2021-06-14, with Change 2, 2023-09-21; validation Notice 1, 2026-07-29",
+   "paragraph": "5.2.6.4",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5783737",
+   "passage": "Refrain from using pronouns; instead, repeat the noun to ensure clarity.",
+   "passageSHA256": "51a83f0b7e0610e93dd0c24a1ce2cffdfc9e7fe2141cbf7fbc8f8ac2c2027ea9"
+  },
+  "wording": "The SOW shall use explicit nouns in place of pronouns.",
+  "wordingSHA256": "c0359d33397e0a74ce23325c9536e2f504c0ddee46daa183ab1c26c19b9e865f",
+  "actor": "The SOW",
+  "condition": "",
+  "verificationIntent": "inspection",
+  "kind": "guidance",
+  "fields": [
+   "sow.tasks"
+  ],
+  "status": "sample",
+  "notes": "Guidance-only extraction: MIL-HDBK-245E Change 2 cover and Foreword 2 prohibit citing the handbook as a contractual requirement. This proposed wording remains a sample for human review, not an independently binding contractor obligation. Exact passage inspected in the directly downloaded PDF; line-wrap whitespace is removed without changing words or punctuation. Single replacement obligation expresses the source prohibition and supplied alternative together. Catalogued guidance only; excluded from every baseline hash.",
+  "binding": false
+ },
+ {
+  "id": "DZR-F2-0051",
+  "alias": "MIL-HDBK-245E A.3",
+  "source": {
+   "docId": "MIL-HDBK-245E",
+   "edition": "E, 2021-06-14, with Change 2, 2023-09-21; validation Notice 1, 2026-07-29",
+   "paragraph": "A.3",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5783737",
+   "passage": "When selecting the key work word that properly expresses contractor's involvement, the SOW writer must define explicitly the total nature of the work requirement in terms of what is to be done.",
+   "passageSHA256": "ad51845b93d2939e58edc183056c879043bb40f4de98a0430b7a5e8225ae6453"
+  },
+  "wording": "The SOW writer shall explicitly define the total nature of the work to be done.",
+  "wordingSHA256": "7d41c844a82fde629f08d9ca1d61b55dab2bace8b587d18e3b44d7771ee07657",
+  "actor": "The SOW writer",
+  "condition": "When selecting the key work word expressing contractor involvement.",
+  "verificationIntent": "inspection",
+  "kind": "guidance",
+  "fields": [
+   "sow.tasks"
+  ],
+  "status": "sample",
+  "notes": "Guidance-only extraction: MIL-HDBK-245E Change 2 cover and Foreword 2 prohibit citing the handbook as a contractual requirement. This proposed wording remains a sample for human review, not an independently binding contractor obligation. Exact passage inspected in the directly downloaded PDF; line-wrap whitespace is removed without changing words or punctuation.  Catalogued guidance only; excluded from every baseline hash.",
+  "binding": false
+ },
+ {
+  "id": "DZR-F2-0052",
+  "alias": "DI-SESS-82177 Requirements §1",
+  "source": {
+   "docId": "DI-SESS-82177",
+   "edition": "Base, 2018-01-18; Notice 1 validation, 2022-12-05",
+   "paragraph": "Requirements §1",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5749976",
+   "passage": "The applicable issue of the documents cited herein, including their approval dates and dates of any applicable amendments, notices, and revisions, shall be as specified in the contract.",
+   "passageSHA256": "549fa95ee28fd854ef56c5a29de96674e25c34b33bf9cd11d2b5da43c8543ef3"
+  },
+  "wording": "The specification-tree preparer shall use the contract-specified issue of each document cited by DI-SESS-82177.",
+  "wordingSHA256": "10e5ca7c8c2d50535ddcf78e004b498a439b40b91f9c8bcaee1821599ed92f66",
+  "actor": "The specification-tree preparer",
+  "condition": "",
+  "verificationIntent": "inspection",
+  "kind": "identifier",
+  "fields": [
+   "specTree.referenceDocuments[].edition"
+  ],
+  "status": "sample",
+  "notes": "Directly inspected the complete official three-page PDF, including all rendered pages. Applies when DI-SESS-82177 is invoked by the contract and the identified content is not tailored out. No universal delivery cadence or interchange-file format is inferred. No specific reference document is actually named in this DID. In particular, the DID contains no invocation of MIL-STD-961. Binding denotes operative-source status; applicability remains conditional on the cited contract and source conditions.",
+  "binding": true
+ },
+ {
+  "id": "DZR-F2-0053",
+  "alias": "DI-SESS-82177 Requirements §3 and §3.1",
+  "source": {
+   "docId": "DI-SESS-82177",
+   "edition": "Base, 2018-01-18; Notice 1 validation, 2022-12-05",
+   "paragraph": "Requirements §3 and §3.1",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5749976",
+   "passage": "The specification tree shall contain the following:\n\n3.1 Title of specification.",
+   "passageSHA256": "43acc04aad13833706909fe48419d37207f23378d32cd0a9f97630bcb19a7078"
+  },
+  "wording": "The specification tree shall identify each specification by title.",
+  "wordingSHA256": "5f49d602facd7e4cb3a3550298159827ab8a46128ceb8dc799df28278e2d0eac",
+  "actor": "The specification tree",
+  "condition": "",
+  "verificationIntent": "inspection",
+  "kind": "identifier",
+  "fields": [
+   "specTree.specificationTitle"
+  ],
+  "status": "sample",
+  "notes": "Directly inspected the complete official three-page PDF, including all rendered pages. Applies when DI-SESS-82177 is invoked by the contract and the identified content is not tailored out. No universal delivery cadence or interchange-file format is inferred. Passage combines the exact governing introductory sentence in §3 and the exact subordinate item, separated by a blank line; the excerpts are noncontiguous where intervening items are omitted.  Binding denotes operative-source status; applicability remains conditional on the cited contract and source conditions.",
+  "binding": true
+ },
+ {
+  "id": "DZR-F2-0054",
+  "alias": "DI-SESS-82177 Requirements §3 and §3.2",
+  "source": {
+   "docId": "DI-SESS-82177",
+   "edition": "Base, 2018-01-18; Notice 1 validation, 2022-12-05",
+   "paragraph": "Requirements §3 and §3.2",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5749976",
+   "passage": "The specification tree shall contain the following:\n\n3.2 Name of Government agency or Original Equipment Manufacturer (OEM) developing the specification.",
+   "passageSHA256": "a8955182fb5c2e20bf09eced20bc3cce7d1e5387624afa01cae38622642a85a5"
+  },
+  "wording": "The specification tree shall identify the Government agency or Original Equipment Manufacturer developing each specification.",
+  "wordingSHA256": "fbbaa197f53b0447a7b9ca571afaa3f87f5b2acec1c5c9f7c455b4840b647a73",
+  "actor": "The specification tree",
+  "condition": "",
+  "verificationIntent": "inspection",
+  "kind": "identifier",
+  "fields": [
+   "specTree.developingOrganization"
+  ],
+  "status": "sample",
+  "notes": "Directly inspected the complete official three-page PDF, including all rendered pages. Applies when DI-SESS-82177 is invoked by the contract and the identified content is not tailored out. No universal delivery cadence or interchange-file format is inferred. Passage combines the exact governing introductory sentence in §3 and the exact subordinate item, separated by a blank line; the excerpts are noncontiguous where intervening items are omitted.  Binding denotes operative-source status; applicability remains conditional on the cited contract and source conditions.",
+  "binding": true
+ },
+ {
+  "id": "DZR-F2-0055",
+  "alias": "DI-SESS-82177 Requirements §3 and §3.3",
+  "source": {
+   "docId": "DI-SESS-82177",
+   "edition": "Base, 2018-01-18; Notice 1 validation, 2022-12-05",
+   "paragraph": "Requirements §3 and §3.3",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5749976",
+   "passage": "The specification tree shall contain the following:\n\n3.3 The Government system specification provided as part of a contract will be at the top of the hierarchical order of the specification tree.",
+   "passageSHA256": "6b5b672af5742d7f870af54926e9c587d0f354ed916019abe23ffdc4d8265a7f"
+  },
+  "wording": "The specification tree shall place the Government system specification at the top of the specification-tree hierarchy.",
+  "wordingSHA256": "88b21e044a92886c335d6fa02651178765f62b6a852aa47546f12ee4f5ce4714",
+  "actor": "The specification tree",
+  "condition": "When a Government system specification is provided as part of the contract.",
+  "verificationIntent": "inspection",
+  "kind": "structure",
+  "fields": [
+   "specTree.specificationId",
+   "specTree.parentSpecificationId",
+   "specTree.isGovernmentSystemSpecification"
+  ],
+  "status": "sample",
+  "notes": "Directly inspected the complete official three-page PDF, including all rendered pages. Applies when DI-SESS-82177 is invoked by the contract and the identified content is not tailored out. No universal delivery cadence or interchange-file format is inferred. Passage combines the exact governing introductory sentence in §3 and the exact subordinate item, separated by a blank line; the excerpts are noncontiguous where intervening items are omitted. The subordinate item uses will; its content is governed by the parent shall-contain sentence in §3. Binding denotes operative-source status; applicability remains conditional on the cited contract and source conditions.",
+  "binding": true
+ },
+ {
+  "id": "DZR-F2-0056",
+  "alias": "DI-SESS-82177 Requirements §3 and §3.4",
+  "source": {
+   "docId": "DI-SESS-82177",
+   "edition": "Base, 2018-01-18; Notice 1 validation, 2022-12-05",
+   "paragraph": "Requirements §3 and §3.4",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5749976",
+   "passage": "The specification tree shall contain the following:\n\n3.4 Identify the SETR event and Baseline each specification pertains to. The SETR events include Systems Requirements Review 2 (SRR-2), System Functional Review (SFR), Software Specification Review (SSR), Preliminary Design Review (PDR), and Critical Design Review (CDR).",
+   "passageSHA256": "dc08b5939e7250808cd8afa56e5972af5a51229081434ce1f9d3334e9afb0045"
+  },
+  "wording": "The specification tree shall identify the SETR event associated with each specification.",
+  "wordingSHA256": "212a1741878b1a6ccf68443e31cf6e1385d5ccb47ecb2944069cb0badbce0d64",
+  "actor": "The specification tree",
+  "condition": "",
+  "verificationIntent": "inspection",
+  "kind": "content",
+  "fields": [
+   "specTree.setrEvent"
+  ],
+  "status": "sample",
+  "notes": "Directly inspected the complete official three-page PDF, including all rendered pages. Applies when DI-SESS-82177 is invoked by the contract and the identified content is not tailored out. No universal delivery cadence or interchange-file format is inferred. Passage combines the exact governing introductory sentence in §3 and the exact subordinate item, separated by a blank line; the excerpts are noncontiguous where intervening items are omitted.  Binding denotes operative-source status; applicability remains conditional on the cited contract and source conditions.",
+  "binding": true
+ },
+ {
+  "id": "DZR-F2-0057",
+  "alias": "DI-SESS-82177 Requirements §3 and §3.4",
+  "source": {
+   "docId": "DI-SESS-82177",
+   "edition": "Base, 2018-01-18; Notice 1 validation, 2022-12-05",
+   "paragraph": "Requirements §3 and §3.4",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5749976",
+   "passage": "The specification tree shall contain the following:\n\n3.4 Identify the SETR event and Baseline each specification pertains to. The SETR events include Systems Requirements Review 2 (SRR-2), System Functional Review (SFR), Software Specification Review (SSR), Preliminary Design Review (PDR), and Critical Design Review (CDR).",
+   "passageSHA256": "dc08b5939e7250808cd8afa56e5972af5a51229081434ce1f9d3334e9afb0045"
+  },
+  "wording": "The specification tree shall identify the baseline associated with each specification.",
+  "wordingSHA256": "8e3356d3a796a06b268246c5c82ded5a666234bab881f10431576c6a5f9d6d32",
+  "actor": "The specification tree",
+  "condition": "",
+  "verificationIntent": "inspection",
+  "kind": "content",
+  "fields": [
+   "specTree.baseline"
+  ],
+  "status": "sample",
+  "notes": "Directly inspected the complete official three-page PDF, including all rendered pages. Applies when DI-SESS-82177 is invoked by the contract and the identified content is not tailored out. No universal delivery cadence or interchange-file format is inferred. Passage combines the exact governing introductory sentence in §3 and the exact subordinate item, separated by a blank line; the excerpts are noncontiguous where intervening items are omitted.  Binding denotes operative-source status; applicability remains conditional on the cited contract and source conditions.",
+  "binding": true
+ },
+ {
+  "id": "DZR-F2-0058",
+  "alias": "DI-SESS-82177 Requirements §3 and §3.4.1",
+  "source": {
+   "docId": "DI-SESS-82177",
+   "edition": "Base, 2018-01-18; Notice 1 validation, 2022-12-05",
+   "paragraph": "Requirements §3 and §3.4.1",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5749976",
+   "passage": "The specification tree shall contain the following:\n\n3.4.1 Identify the specifications for the Requirements Baseline at the completion of SRR-2.",
+   "passageSHA256": "9373229dac309e905e96f13bb398dc662f09e22c9fbb6318e0fc65f7550b2679"
+  },
+  "wording": "The specification tree shall identify the specifications for the Requirements Baseline.",
+  "wordingSHA256": "ed20efabd422c569b8cfd06ce7e3cf1071fdb5dda841a7e802f81902cedb50f1",
+  "actor": "The specification tree",
+  "condition": "At completion of SRR-2.",
+  "verificationIntent": "inspection",
+  "kind": "content",
+  "fields": [
+   "specTree.specificationId",
+   "specTree.baseline",
+   "specTree.setrEvent"
+  ],
+  "status": "sample",
+  "notes": "Directly inspected the complete official three-page PDF, including all rendered pages. Applies when DI-SESS-82177 is invoked by the contract and the identified content is not tailored out. No universal delivery cadence or interchange-file format is inferred. Passage combines the exact governing introductory sentence in §3 and the exact subordinate item, separated by a blank line; the excerpts are noncontiguous where intervening items are omitted.  Binding denotes operative-source status; applicability remains conditional on the cited contract and source conditions.",
+  "binding": true
+ },
+ {
+  "id": "DZR-F2-0059",
+  "alias": "DI-SESS-82177 Requirements §3 and §3.4.2",
+  "source": {
+   "docId": "DI-SESS-82177",
+   "edition": "Base, 2018-01-18; Notice 1 validation, 2022-12-05",
+   "paragraph": "Requirements §3 and §3.4.2",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5749976",
+   "passage": "The specification tree shall contain the following:\n\n3.4.2 Identify the specifications and architecture products for the Functional Baseline at the completion of SFR.",
+   "passageSHA256": "08dde499e1a3820acca77a707be938a6c78219abbfdb4f5472381d4fec7be101"
+  },
+  "wording": "The specification tree shall identify the specifications for the Functional Baseline.",
+  "wordingSHA256": "5235d3cbb0779904fdd6ce15627b5ecb322faeee65d090ef6851f12c212b95e5",
+  "actor": "The specification tree",
+  "condition": "At completion of SFR.",
+  "verificationIntent": "inspection",
+  "kind": "content",
+  "fields": [
+   "specTree.specificationId",
+   "specTree.baseline",
+   "specTree.setrEvent"
+  ],
+  "status": "sample",
+  "notes": "Directly inspected the complete official three-page PDF, including all rendered pages. Applies when DI-SESS-82177 is invoked by the contract and the identified content is not tailored out. No universal delivery cadence or interchange-file format is inferred. Passage combines the exact governing introductory sentence in §3 and the exact subordinate item, separated by a blank line; the excerpts are noncontiguous where intervening items are omitted.  Binding denotes operative-source status; applicability remains conditional on the cited contract and source conditions.",
+  "binding": true
+ },
+ {
+  "id": "DZR-F2-0060",
+  "alias": "DI-SESS-82177 Requirements §3 and §3.4.2",
+  "source": {
+   "docId": "DI-SESS-82177",
+   "edition": "Base, 2018-01-18; Notice 1 validation, 2022-12-05",
+   "paragraph": "Requirements §3 and §3.4.2",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5749976",
+   "passage": "The specification tree shall contain the following:\n\n3.4.2 Identify the specifications and architecture products for the Functional Baseline at the completion of SFR.",
+   "passageSHA256": "08dde499e1a3820acca77a707be938a6c78219abbfdb4f5472381d4fec7be101"
+  },
+  "wording": "The specification tree shall identify the architecture products for the Functional Baseline.",
+  "wordingSHA256": "60c8b040b019f4c6aef535da9556cbe9602074a9c0f82daeabd116973c206dec",
+  "actor": "The specification tree",
+  "condition": "At completion of SFR.",
+  "verificationIntent": "inspection",
+  "kind": "content",
+  "fields": [
+   "specTree.architectureProductId",
+   "specTree.baseline",
+   "specTree.setrEvent"
+  ],
+  "status": "sample",
+  "notes": "Directly inspected the complete official three-page PDF, including all rendered pages. Applies when DI-SESS-82177 is invoked by the contract and the identified content is not tailored out. No universal delivery cadence or interchange-file format is inferred. Passage combines the exact governing introductory sentence in §3 and the exact subordinate item, separated by a blank line; the excerpts are noncontiguous where intervening items are omitted.  Binding denotes operative-source status; applicability remains conditional on the cited contract and source conditions.",
+  "binding": true
+ },
+ {
+  "id": "DZR-F2-0061",
+  "alias": "DI-SESS-82177 Requirements §3 and §3.4.3",
+  "source": {
+   "docId": "DI-SESS-82177",
+   "edition": "Base, 2018-01-18; Notice 1 validation, 2022-12-05",
+   "paragraph": "Requirements §3 and §3.4.3",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5749976",
+   "passage": "The specification tree shall contain the following:\n\n3.4.3 Identify the specifications for the Software portion of the Allocated Baseline upon completion of the SSR.",
+   "passageSHA256": "61c052c117c88522ba3c616c8cbf428d975e8943d53b48f63d4e428ffbafc29b"
+  },
+  "wording": "The specification tree shall identify the specifications for the software portion of the Allocated Baseline.",
+  "wordingSHA256": "8a10a4b3645b7e0cd2610ab76c339ac06eb31b7884f42a235cf60a8eda7dd309",
+  "actor": "The specification tree",
+  "condition": "Upon completion of SSR.",
+  "verificationIntent": "inspection",
+  "kind": "content",
+  "fields": [
+   "specTree.specificationId",
+   "specTree.baseline",
+   "specTree.setrEvent"
+  ],
+  "status": "sample",
+  "notes": "Directly inspected the complete official three-page PDF, including all rendered pages. Applies when DI-SESS-82177 is invoked by the contract and the identified content is not tailored out. No universal delivery cadence or interchange-file format is inferred. Passage combines the exact governing introductory sentence in §3 and the exact subordinate item, separated by a blank line; the excerpts are noncontiguous where intervening items are omitted.  Binding denotes operative-source status; applicability remains conditional on the cited contract and source conditions.",
+  "binding": true
+ },
+ {
+  "id": "DZR-F2-0062",
+  "alias": "DI-SESS-82177 Requirements §3 and §3.4.4",
+  "source": {
+   "docId": "DI-SESS-82177",
+   "edition": "Base, 2018-01-18; Notice 1 validation, 2022-12-05",
+   "paragraph": "Requirements §3 and §3.4.4",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5749976",
+   "passage": "The specification tree shall contain the following:\n\n3.4.4 Identify the specifications for the Allocated Baseline at the completion of PDR.",
+   "passageSHA256": "8c9e1a60a7bb4ed9aec92cc26ce05753947c7d8eac4d0b19091c4405b5a5a4b7"
+  },
+  "wording": "The specification tree shall identify the specifications for the Allocated Baseline.",
+  "wordingSHA256": "0a601617bdaf42b148987259ac0f5d3d5351650e2a045746b225f9debf7f5da7",
+  "actor": "The specification tree",
+  "condition": "At completion of PDR.",
+  "verificationIntent": "inspection",
+  "kind": "content",
+  "fields": [
+   "specTree.specificationId",
+   "specTree.baseline",
+   "specTree.setrEvent"
+  ],
+  "status": "sample",
+  "notes": "Directly inspected the complete official three-page PDF, including all rendered pages. Applies when DI-SESS-82177 is invoked by the contract and the identified content is not tailored out. No universal delivery cadence or interchange-file format is inferred. Passage combines the exact governing introductory sentence in §3 and the exact subordinate item, separated by a blank line; the excerpts are noncontiguous where intervening items are omitted.  Binding denotes operative-source status; applicability remains conditional on the cited contract and source conditions.",
+  "binding": true
+ },
+ {
+  "id": "DZR-F2-0063",
+  "alias": "DI-SESS-82177 Requirements §3 and §3.4.5",
+  "source": {
+   "docId": "DI-SESS-82177",
+   "edition": "Base, 2018-01-18; Notice 1 validation, 2022-12-05",
+   "paragraph": "Requirements §3 and §3.4.5",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5749976",
+   "passage": "The specification tree shall contain the following:\n\n3.4.5 Identify the specifications and drawings for the Product Baseline at the completion of CDR.",
+   "passageSHA256": "6ca52a5b2e15ffc036bf74af0d6eda9d3aeb55220126ce4919d0204d2a07a314"
+  },
+  "wording": "The specification tree shall identify the specifications for the Product Baseline.",
+  "wordingSHA256": "0615c8fe767a76f9c170a7cabd7603414bd6bb30747967e28fbfb4ab7cab17a6",
+  "actor": "The specification tree",
+  "condition": "At completion of CDR.",
+  "verificationIntent": "inspection",
+  "kind": "content",
+  "fields": [
+   "specTree.specificationId",
+   "specTree.baseline",
+   "specTree.setrEvent"
+  ],
+  "status": "sample",
+  "notes": "Directly inspected the complete official three-page PDF, including all rendered pages. Applies when DI-SESS-82177 is invoked by the contract and the identified content is not tailored out. No universal delivery cadence or interchange-file format is inferred. Passage combines the exact governing introductory sentence in §3 and the exact subordinate item, separated by a blank line; the excerpts are noncontiguous where intervening items are omitted.  Binding denotes operative-source status; applicability remains conditional on the cited contract and source conditions.",
+  "binding": true
+ },
+ {
+  "id": "DZR-F2-0064",
+  "alias": "DI-SESS-82177 Requirements §3 and §3.4.5",
+  "source": {
+   "docId": "DI-SESS-82177",
+   "edition": "Base, 2018-01-18; Notice 1 validation, 2022-12-05",
+   "paragraph": "Requirements §3 and §3.4.5",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5749976",
+   "passage": "The specification tree shall contain the following:\n\n3.4.5 Identify the specifications and drawings for the Product Baseline at the completion of CDR.",
+   "passageSHA256": "6ca52a5b2e15ffc036bf74af0d6eda9d3aeb55220126ce4919d0204d2a07a314"
+  },
+  "wording": "The specification tree shall identify the drawings for the Product Baseline.",
+  "wordingSHA256": "714665ebeefec6a2504b6282ad0f8e22f0471642d8a2001cc5d1bc45ad44d5dd",
+  "actor": "The specification tree",
+  "condition": "At completion of CDR.",
+  "verificationIntent": "inspection",
+  "kind": "content",
+  "fields": [
+   "specTree.drawingId",
+   "specTree.baseline",
+   "specTree.setrEvent"
+  ],
+  "status": "sample",
+  "notes": "Directly inspected the complete official three-page PDF, including all rendered pages. Applies when DI-SESS-82177 is invoked by the contract and the identified content is not tailored out. No universal delivery cadence or interchange-file format is inferred. Passage combines the exact governing introductory sentence in §3 and the exact subordinate item, separated by a blank line; the excerpts are noncontiguous where intervening items are omitted.  Binding denotes operative-source status; applicability remains conditional on the cited contract and source conditions.",
+  "binding": true
+ },
+ {
+  "id": "DZR-F2-0065",
+  "alias": "DI-SESS-82177 Requirements §3 and §3.5",
+  "source": {
+   "docId": "DI-SESS-82177",
+   "edition": "Base, 2018-01-18; Notice 1 validation, 2022-12-05",
+   "paragraph": "Requirements §3 and §3.5",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5749976",
+   "passage": "The specification tree shall contain the following:\n\n3.5 Identify other specifications as provided by the Government as Government Furnished Information.",
+   "passageSHA256": "9107b94426f86ba30f5dc755e521bc4f675b61198661ccc85133fcb2ac08659b"
+  },
+  "wording": "The specification tree shall identify other specifications provided as Government Furnished Information.",
+  "wordingSHA256": "ff26b43ed499b5455775e4525e308758b8792622b3b2b3b50ecca2dfa00598a2",
+  "actor": "The specification tree",
+  "condition": "When the Government provides other specifications as Government Furnished Information.",
+  "verificationIntent": "inspection",
+  "kind": "content",
+  "fields": [
+   "specTree.specificationId",
+   "specTree.governmentFurnishedInformation"
+  ],
+  "status": "sample",
+  "notes": "Directly inspected the complete official three-page PDF, including all rendered pages. Applies when DI-SESS-82177 is invoked by the contract and the identified content is not tailored out. No universal delivery cadence or interchange-file format is inferred. Passage combines the exact governing introductory sentence in §3 and the exact subordinate item, separated by a blank line; the excerpts are noncontiguous where intervening items are omitted.  Binding denotes operative-source status; applicability remains conditional on the cited contract and source conditions.",
+  "binding": true
+ },
+ {
+  "id": "DZR-F2-0066",
+  "alias": "DI-SESS-82177 Requirements §3 and §3.6",
+  "source": {
+   "docId": "DI-SESS-82177",
+   "edition": "Base, 2018-01-18; Notice 1 validation, 2022-12-05",
+   "paragraph": "Requirements §3 and §3.6",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5749976",
+   "passage": "The specification tree shall contain the following:\n\n3.6 List of acronyms.",
+   "passageSHA256": "5db2691575772cd276c8d21d0c15f0ad98dfa5e91562dda79b80e6766fc5f1a2"
+  },
+  "wording": "The specification tree shall include a list of acronyms.",
+  "wordingSHA256": "cc367efde77add61fcb57a62ec416fe5a9b19149525319ea508a88fd53c17781",
+  "actor": "The specification tree",
+  "condition": "",
+  "verificationIntent": "inspection",
+  "kind": "content",
+  "fields": [
+   "specTree.acronyms"
+  ],
+  "status": "sample",
+  "notes": "Directly inspected the complete official three-page PDF, including all rendered pages. Applies when DI-SESS-82177 is invoked by the contract and the identified content is not tailored out. No universal delivery cadence or interchange-file format is inferred. Passage combines the exact governing introductory sentence in §3 and the exact subordinate item, separated by a blank line; the excerpts are noncontiguous where intervening items are omitted.  Binding denotes operative-source status; applicability remains conditional on the cited contract and source conditions.",
+  "binding": true
+ },
+ {
+  "id": "DZR-F2-0067",
+  "alias": "MIL-HDBK-245E Figure 6, notional SOW §2.1",
+  "source": {
+   "docId": "MIL-HDBK-245E",
+   "edition": "E with Change 2, 2023-09-21; Notice 1 validation, 2026-07-29",
+   "paragraph": "Figure 6, notional SOW §2.1",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5783737",
+   "passage": "All documents invoked in the requirements section of the SOW must be listed in this section by document number, title, date or by revision letter.",
+   "passageSHA256": "030af590cfd166f934e317d514cf85c3c397d0126fa2519ed56c13b10e3b11fa"
+  },
+  "wording": "The SOW applicable-documents section shall identify every document invoked in the requirements section by document number, title, and date or revision letter.",
+  "wordingSHA256": "739914656f644f6963d84b0ffdc0717151dc6a505e248d4a626c4b5a8b801574",
+  "actor": "The SOW applicable-documents section",
+  "condition": "When the Figure 6 applicable-documents instruction is adopted.",
+  "verificationIntent": "inspection",
+  "kind": "guidance",
+  "fields": [
+   "sow.references"
+  ],
+  "status": "sample",
+  "notes": "Illustrative/template guidance only, not an operative contract clause. MIL-HDBK-245E Foreword 2 says the handbook cannot be cited as a contractual requirement. This record captures a generic F2 data-content obligation stated in the example; no example engineering task or fictional program content is copied. Applies only if the identified instruction is adopted for the SOW/CDRL. The stored passage was directly inspected in the current official PDF. Catalogued guidance only; excluded from every baseline hash.",
+  "binding": false
+ },
+ {
+  "id": "DZR-F2-0068",
+  "alias": "MIL-HDBK-245E Figure 6, notional SOW §2.1",
+  "source": {
+   "docId": "MIL-HDBK-245E",
+   "edition": "E with Change 2, 2023-09-21; Notice 1 validation, 2026-07-29",
+   "paragraph": "Figure 6, notional SOW §2.1",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5783737",
+   "passage": "Also, any document listed in this section must be invoked and selectively tailored to meet minimal needs of the planned procurement in the requirements section.",
+   "passageSHA256": "f9279baac7282763b0d8a662548bb852899a7b13b98dbf2b0d0a4615019b7ea1"
+  },
+  "wording": "The SOW requirements section shall invoke every document listed in the applicable-documents section.",
+  "wordingSHA256": "ad9798ed0ef6a3d94fb29855e0a501e7f0acc469e2650e42adb37ac1f92f807f",
+  "actor": "The SOW requirements section",
+  "condition": "When the Figure 6 applicable-documents instruction is adopted.",
+  "verificationIntent": "inspection",
+  "kind": "guidance",
+  "fields": [
+   "sow.references",
+   "sow.tasks"
+  ],
+  "status": "sample",
+  "notes": "Illustrative/template guidance only, not an operative contract clause. MIL-HDBK-245E Foreword 2 says the handbook cannot be cited as a contractual requirement. This record captures a generic F2 data-content obligation stated in the example; no example engineering task or fictional program content is copied. Applies only if the identified instruction is adopted for the SOW/CDRL. The stored passage was directly inspected in the current official PDF. Catalogued guidance only; excluded from every baseline hash.",
+  "binding": false
+ },
+ {
+  "id": "DZR-F2-0069",
+  "alias": "MIL-HDBK-245E Figure 6, notional SOW §2.1",
+  "source": {
+   "docId": "MIL-HDBK-245E",
+   "edition": "E with Change 2, 2023-09-21; Notice 1 validation, 2026-07-29",
+   "paragraph": "Figure 6, notional SOW §2.1",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5783737",
+   "passage": "Also, any document listed in this section must be invoked and selectively tailored to meet minimal needs of the planned procurement in the requirements section.",
+   "passageSHA256": "f9279baac7282763b0d8a662548bb852899a7b13b98dbf2b0d0a4615019b7ea1"
+  },
+  "wording": "The SOW requirements section shall selectively tailor each listed document to the minimum procurement needs.",
+  "wordingSHA256": "02eeb139cc2f4a35f7384e0c17b84b974bc38d866379bad50f97beb5af662c5c",
+  "actor": "The SOW requirements section",
+  "condition": "When the Figure 6 applicable-documents instruction is adopted.",
+  "verificationIntent": "inspection",
+  "kind": "guidance",
+  "fields": [
+   "sow.referenceTailoring"
+  ],
+  "status": "sample",
+  "notes": "Illustrative/template guidance only, not an operative contract clause. MIL-HDBK-245E Foreword 2 says the handbook cannot be cited as a contractual requirement. This record captures a generic F2 data-content obligation stated in the example; no example engineering task or fictional program content is copied. Applies only if the identified instruction is adopted for the SOW/CDRL. The stored passage was directly inspected in the current official PDF. Catalogued guidance only; excluded from every baseline hash.",
+  "binding": false
+ },
+ {
+  "id": "DZR-F2-0070",
+  "alias": "MIL-HDBK-245E Figure 6, notional SOW §3.7",
+  "source": {
+   "docId": "MIL-HDBK-245E",
+   "edition": "E with Change 2, 2023-09-21; Notice 1 validation, 2026-07-29",
+   "paragraph": "Figure 6, notional SOW §3.7",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5783737",
+   "passage": "The contractor shall include technical data and rights to that data which are described in relation to the technical design and implementation as well as cost, schedule, performance, and risk in this section.",
+   "passageSHA256": "058656f51945888fda53004324576381399a7478dac84c1b2e8c6a378168560f"
+  },
+  "wording": "The SOW data section shall include technical-data descriptions related to technical design, implementation, cost, schedule, performance, and risk.",
+  "wordingSHA256": "d5ab18a4219800bf8f998244ece92cb0ffaad7b90e05a4e635ca41b420b0cfbc",
+  "actor": "The SOW data section",
+  "condition": "When the Figure 6 data-section instruction is adopted.",
+  "verificationIntent": "inspection",
+  "kind": "guidance",
+  "fields": [
+   "sow.technicalDataDescription"
+  ],
+  "status": "sample",
+  "notes": "Illustrative/template guidance only, not an operative contract clause. MIL-HDBK-245E Foreword 2 says the handbook cannot be cited as a contractual requirement. This record captures a generic F2 data-content obligation stated in the example; no example engineering task or fictional program content is copied. Applies only if the identified instruction is adopted for the SOW/CDRL. The stored passage was directly inspected in the current official PDF. Catalogued guidance only; excluded from every baseline hash.",
+  "binding": false
+ },
+ {
+  "id": "DZR-F2-0071",
+  "alias": "MIL-HDBK-245E Figure 6, notional SOW §3.7",
+  "source": {
+   "docId": "MIL-HDBK-245E",
+   "edition": "E with Change 2, 2023-09-21; Notice 1 validation, 2026-07-29",
+   "paragraph": "Figure 6, notional SOW §3.7",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5783737",
+   "passage": "The contractor shall include technical data and rights to that data which are described in relation to the technical design and implementation as well as cost, schedule, performance, and risk in this section.",
+   "passageSHA256": "058656f51945888fda53004324576381399a7478dac84c1b2e8c6a378168560f"
+  },
+  "wording": "The SOW data section shall include the rights to the technical data described in the SOW data section.",
+  "wordingSHA256": "b6d5164a156e38e8bf79573a91f6d6239389ffd0f3dbfd4c30c60eb5e2a430c8",
+  "actor": "The SOW data section",
+  "condition": "When the Figure 6 data-section instruction is adopted.",
+  "verificationIntent": "inspection",
+  "kind": "guidance",
+  "fields": [
+   "sow.technicalDataRights"
+  ],
+  "status": "sample",
+  "notes": "Illustrative/template guidance only, not an operative contract clause. MIL-HDBK-245E Foreword 2 says the handbook cannot be cited as a contractual requirement. This record captures a generic F2 data-content obligation stated in the example; no example engineering task or fictional program content is copied. Applies only if the identified instruction is adopted for the SOW/CDRL. The stored passage was directly inspected in the current official PDF. Catalogued guidance only; excluded from every baseline hash.",
+  "binding": false
+ },
+ {
+  "id": "DZR-F2-0072",
+  "alias": "MIL-HDBK-245E §5.3.5.a, example Section L wording",
+  "source": {
+   "docId": "MIL-HDBK-245E",
+   "edition": "E with Change 2, 2023-09-21; Notice 1 validation, 2026-07-29",
+   "paragraph": "§5.3.5.a, example Section L wording",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5783737",
+   "passage": "Offerors shall use the SOO, together with other applicable portions of this RFP, as the basis for preparing their proposal, including the CWBS, SOW and CDRL.",
+   "passageSHA256": "fe571ededa0d2c9866429dc3d34f2edc542bc243ab71f3db1fe5fbda821acc1f"
+  },
+  "wording": "The offeror shall base the proposed SOW on the SOO and other applicable portions of the RFP.",
+  "wordingSHA256": "2537a47b0fc8ddc29bad61b9cff0ebe76aa842062d305e31bfeee7c708ad3081",
+  "actor": "The offeror",
+  "condition": "When the solicitation adopts the example Section L instruction.",
+  "verificationIntent": "inspection",
+  "kind": "guidance",
+  "fields": [
+   "sow.references"
+  ],
+  "status": "sample",
+  "notes": "Illustrative/template guidance only, not an operative contract clause. MIL-HDBK-245E Foreword 2 says the handbook cannot be cited as a contractual requirement. This record captures a generic F2 data-content obligation stated in the example; no example engineering task or fictional program content is copied. Applies only if the identified instruction is adopted for the SOW/CDRL. The stored passage was directly inspected in the current official PDF. Catalogued guidance only; excluded from every baseline hash.",
+  "binding": false
+ },
+ {
+  "id": "DZR-F2-0073",
+  "alias": "MIL-HDBK-245E §5.3.5.a, example Section L wording",
+  "source": {
+   "docId": "MIL-HDBK-245E",
+   "edition": "E with Change 2, 2023-09-21; Notice 1 validation, 2026-07-29",
+   "paragraph": "§5.3.5.a, example Section L wording",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5783737",
+   "passage": "Offerors shall use the SOO, together with other applicable portions of this RFP, as the basis for preparing their proposal, including the CWBS, SOW and CDRL.",
+   "passageSHA256": "fe571ededa0d2c9866429dc3d34f2edc542bc243ab71f3db1fe5fbda821acc1f"
+  },
+  "wording": "The offeror shall base the proposed CDRL on the SOO and other applicable portions of the RFP.",
+  "wordingSHA256": "548db4c847806c9a7479c2503e5ec161e17cf8e6f62cfa688b7c42b455de8246",
+  "actor": "The offeror",
+  "condition": "When the solicitation adopts the example Section L instruction.",
+  "verificationIntent": "inspection",
+  "kind": "guidance",
+  "fields": [
+   "cdrl.sourceReferences"
+  ],
+  "status": "sample",
+  "notes": "Illustrative/template guidance only, not an operative contract clause. MIL-HDBK-245E Foreword 2 says the handbook cannot be cited as a contractual requirement. This record captures a generic F2 data-content obligation stated in the example; no example engineering task or fictional program content is copied. Applies only if the identified instruction is adopted for the SOW/CDRL. The stored passage was directly inspected in the current official PDF. Catalogued guidance only; excluded from every baseline hash.",
+  "binding": false
+ },
+ {
+  "id": "DZR-F2-0074",
+  "alias": "MIL-HDBK-245E §5.3.5.a, example Section L wording",
+  "source": {
+   "docId": "MIL-HDBK-245E",
+   "edition": "E with Change 2, 2023-09-21; Notice 1 validation, 2026-07-29",
+   "paragraph": "§5.3.5.a, example Section L wording",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5783737",
+   "passage": "The offeror shall use their proposed SOW to prepare a CDRL including appropriately tailored DID references.",
+   "passageSHA256": "b6b7555bb76726f3868dbef9dc0cd326a101c0ec1371453e279c49222da7c0c6"
+  },
+  "wording": "The offeror shall prepare the proposed CDRL using the proposed SOW.",
+  "wordingSHA256": "5b7b1a3a70c88d19c1077b70bc386ddca6a9c7ca9064a64d80d092329397eeae",
+  "actor": "The offeror",
+  "condition": "When the solicitation adopts the example Section L instruction.",
+  "verificationIntent": "inspection",
+  "kind": "guidance",
+  "fields": [
+   "cdrl.sourceReferences",
+   "sow.text"
+  ],
+  "status": "sample",
+  "notes": "Illustrative/template guidance only, not an operative contract clause. MIL-HDBK-245E Foreword 2 says the handbook cannot be cited as a contractual requirement. This record captures a generic F2 data-content obligation stated in the example; no example engineering task or fictional program content is copied. Applies only if the identified instruction is adopted for the SOW/CDRL. The stored passage was directly inspected in the current official PDF. Catalogued guidance only; excluded from every baseline hash.",
+  "binding": false
+ },
+ {
+  "id": "DZR-F2-0075",
+  "alias": "MIL-HDBK-245E §5.3.5.a, example Section L wording",
+  "source": {
+   "docId": "MIL-HDBK-245E",
+   "edition": "E with Change 2, 2023-09-21; Notice 1 validation, 2026-07-29",
+   "paragraph": "§5.3.5.a, example Section L wording",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5783737",
+   "passage": "The offeror shall use their proposed SOW to prepare a CDRL including appropriately tailored DID references.",
+   "passageSHA256": "b6b7555bb76726f3868dbef9dc0cd326a101c0ec1371453e279c49222da7c0c6"
+  },
+  "wording": "The proposed CDRL shall include appropriately tailored DID references.",
+  "wordingSHA256": "34b8b0f80bc2ec3c26e5383195980e58e0c9f113d09b0f946e94d69b63381df8",
+  "actor": "The proposed CDRL",
+  "condition": "When the solicitation adopts the example Section L instruction.",
+  "verificationIntent": "inspection",
+  "kind": "guidance",
+  "fields": [
+   "cdrl.didReferences"
+  ],
+  "status": "sample",
+  "notes": "Illustrative/template guidance only, not an operative contract clause. MIL-HDBK-245E Foreword 2 says the handbook cannot be cited as a contractual requirement. This record captures a generic F2 data-content obligation stated in the example; no example engineering task or fictional program content is copied. Applies only if the identified instruction is adopted for the SOW/CDRL. The stored passage was directly inspected in the current official PDF. Catalogued guidance only; excluded from every baseline hash.",
+  "binding": false
+ }
+]

@@ -1,0 +1,1182 @@
+{
+  "feed": "F8",
+  "name": "Requirement-linked verification evidence and test results",
+  "systemOfRecord": [
+    "The contract-designated original test/inspection report and supporting evidence under DI-NDTI-80809B, when invoked.",
+    "The contract-designated native relational RTVM database under DI-MGMT-82133A, when invoked.",
+    "The contract-designated Software Test Report under DI-IPSC-81440A for the separately invoked software-testing scope."
+  ],
+  "formats": [
+    {
+      "format": "Contractor-selected test/inspection report presentation; selected JSON receiving representation",
+      "spec": "DI-NDTI-80809B, 10.1 permits contractor format. Complete contractual report content/presentation still follows 10.2–10.2.8 as applicable. JSON is a selection for this receiving contract, not a government native schema. The sample is only a partial evidence excerpt.",
+      "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=171334"
+    },
+    {
+      "format": "Electronic relational database plus required package content",
+      "spec": "DI-MGMT-82133A, section 2 and 3. Native manipulable database supports bidirectional requirements traceability and verification tracking. No standalone CSV/JSON substitution is granted. The deterministic snapshot is for hashing and does not replace the native deliverable.",
+      "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5796351"
+    },
+    {
+      "format": "Contractor format unless otherwise specified on the CDRL; paper or permitted alternative-form presentation",
+      "spec": "DI-IPSC-81440A, sections 2–4, only when separately invoked for CSCI/software-system qualification or other contract-identified software-related testing. Alternative-form identity, access/contents and tailoring duties remain. No universal extension, database vendor or encoding is imposed.",
+      "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=195405"
+    }
+  ],
+  "cadence": "No fixed submission interval or event-plus-days deadline appears in the three inspected DIDs. Use the actual contract/CDRL delivery schedule and applicable document issues; do not infer monthly, real-time, or automatic newest-edition requirements. Report/test dates and chronological software-test logs are content, not a delivery cadence. The eight open policy/source gaps prevent a claim of comprehensive policy timing coverage.",
+  "keys": {
+    "primary": [
+      "evidenceId"
+    ],
+    "joins": {
+      "wbs": "wbsId",
+      "requirement": "requirementId"
+    }
+  },
+  "fields": [
+    {
+      "name": "profile",
+      "type": "string",
+      "required": true,
+      "governedBy": [],
+      "description": "Receiving-contract discriminator: exactly one of DI-NDTI-80809B, DI-MGMT-82133A, or DI-IPSC-81440A per payload. This field name is a user-selected transport choice, not a native DID field. Each profile applies only when actually invoked; the optional software profile is not imposed on other reports."
+    },
+    {
+      "name": "completeness",
+      "type": "string",
+      "required": true,
+      "governedBy": [],
+      "description": "Receiving-contract label: complete-delivery or partial-example. A partial-example is retained only for demonstration and cannot be accepted as a complete contractual report or native relational database."
+    },
+    {
+      "name": "report",
+      "type": "object",
+      "required": false,
+      "governedBy": [],
+      "description": "Report/package context, conditionally required for complete delivery of the selected profile. Contains actual invocation, contract/CDRL issue selection and applicability/tailoring decisions in report.invocation, plus the relevant testInspectionReport, rtvm, or softwareTestReport content groups below. Source content retains its native presentation as delivered. The sample contains only a non-operative sampleNotice; no contract invocation is fabricated."
+    },
+    {
+      "name": "evidence",
+      "type": "array<object>",
+      "required": true,
+      "governedBy": [],
+      "description": "User-selected requirement-linked evidence records. Three rows occur only in sample. The row fields below are a receiving-feed representation of actual source content, not a universal native government schema. Complete deliveries include all applicable records, not merely the sample columns."
+    },
+    {
+      "name": "nativeDelivery",
+      "type": "array<object>",
+      "required": false,
+      "governedBy": [
+        "DZR-F8-0024"
+      ],
+      "description": "Conditionally required to preserve the actual native relational-database package for the RTVM and any full report/evidence attachments not completely represented in the semantic payload. Each received file has unique attachmentId, fileName, mediaType, role (relationalDatabase or operativeAttachment), and complete unaltered contentBase64. Base64 is an in-payload preservation choice, not a substitute for the accessible, manipulable relational database required by DZR-F8-0024. A URI or digest alone is not evidence content. Guidance-library documents are catalogued separately, not included as operative attachments. The five listed member names are exhaustive for each nativeDelivery entry: attachmentId, fileName, mediaType, role, contentBase64. Extra raw-file digest, byte-size, modified-time or other metadata fields are rejected by this receiving contract, so a guidance-only native-database change cannot enter the operative digest through derived file metadata."
+    },
+    {
+      "name": "evidenceId",
+      "type": "string",
+      "required": true,
+      "governedBy": [],
+      "description": "Receiving-feed primary identity for an evidence row; unique and nonempty after normalization. Source DIDs do not prescribe this name or syntax. A source test identifier, database record identity, and this receiving identity remain distinguishable."
+    },
+    {
+      "name": "wbsId",
+      "type": "string",
+      "required": true,
+      "governedBy": [],
+      "description": "User-required explicit WBS join for each evidence row. Missing, blank, ambiguous, or unresolved joins reject production acceptance. This is a receiving-feed rule, not a WBS-key mandate attributed to these DIDs."
+    },
+    {
+      "name": "requirementId",
+      "type": "string",
+      "required": true,
+      "governedBy": [],
+      "description": "User-required explicit requirement join for each evidence row. Missing, blank, ambiguous, or unresolved joins reject production acceptance. Map to the actual source requirement identity; the chosen field name and syntax are not imposed by the DIDs."
+    },
+    {
+      "name": "requirementText",
+      "type": "string",
+      "required": true,
+      "governedBy": [],
+      "description": "Receiving-feed preservation of the actual applicable requirement statement alongside its join identity. This user-selected context prevents a baseline that contains only mutable external identifiers. Sample wording is fictional and confined to the three sample rows."
+    },
+    {
+      "name": "method",
+      "type": "string",
+      "required": false,
+      "governedBy": [
+        "DZR-F8-0011",
+        "DZR-F8-0041"
+      ],
+      "description": "Conditionally carries the actual procedure/method designation. For RTVM, use exactly Analysis, Demonstration, Inspection, or Test with the meanings in DI-MGMT-82133A section 3.2.19. The method-field definitions there literally attribute MIL-STD-961E with Change 2; no newer edition is silently substituted. The general test report does not impose that closed machine enum."
+    },
+    {
+      "name": "criteria",
+      "type": "object",
+      "required": false,
+      "governedBy": [
+        "DZR-F8-0005"
+      ],
+      "description": "Applicable test parameters, performance requirements, acceptance/compliance limits and environmental criteria, correlated to contractual requirements. Values, units and context are preserved. This selected object is not a universal scoring or pass/fail formula."
+    },
+    {
+      "name": "recordedData",
+      "type": "object or array<object>",
+      "required": false,
+      "governedBy": [
+        "DZR-F8-0012"
+      ],
+      "description": "Actual recorded results, with units, conditions and data context. Extensive recorded data belongs in an appendix in the complete source report; complete content still enters the canonical evidence payload or an operative attachment. The partial sample is not a claim of full experimental evidence."
+    },
+    {
+      "name": "resultDiscussion",
+      "type": "object or string",
+      "required": false,
+      "governedBy": [
+        "DZR-F8-0013"
+      ],
+      "description": "Achieved-result comparison to objectives/requirements, significance, applicable prior-test comparisons and calculation examples, anomalies/deviations/discrepancies/failures with impacts, causes, proposed corrective actions and design-versus-tested-configuration discrepancies. Complete source scope is retained in the report result group even when a small row excerpt is shown."
+    },
+    {
+      "name": "result",
+      "type": "string",
+      "required": false,
+      "governedBy": [
+        "DZR-F8-0015",
+        "DZR-F8-0020"
+      ],
+      "description": "For the general test report, preserves the stated recommendation/acceptability outcome where applicable; pass or fail is not the same as authentication or all evidence completeness. A failing result can be valid report data. The sample row result is only an illustrative outcome, not a signed certification. Do not map this field onto the RTVM requirement-status, OEM-compliance or Yes/No conformity enums."
+    },
+    {
+      "name": "report.testInspectionReport.coverAndTitle",
+      "type": "object or array<object>",
+      "required": false,
+      "governedBy": [
+        "DZR-F8-0001"
+      ],
+      "description": "Conditional on actual invocation of DI-NDTI-80809B and the source qualifications retained in the acceptance rules. This is a grouped logical content mapping, not prescribed native column names. Source content items: reportDate, reportNumber, contractorName, contractorAddress, cageCode, contractNumber, contractLineItemOrSequenceNumber, testInspectionType, itemIdentification, testInspectionDateOrPeriod, requiringGovernmentActivityName, requiringGovernmentActivityAddress, securityClassification, downgradingInformation, declassifyingInformation. The applicable identification appears on both outside front cover and title page; contractor/Government report number and contract line item/sequence alternatives remain as stated."
+    },
+    {
+      "name": "report.testInspectionReport.contents",
+      "type": "object or array<object>",
+      "required": false,
+      "governedBy": [
+        "DZR-F8-0002"
+      ],
+      "description": "Conditional on actual invocation of DI-NDTI-80809B and the source qualifications retained in the acceptance rules. This is a grouped logical content mapping, not prescribed native column names. Source content items: contentsEntries, illustrationIndex. Preserve section/paragraph/appendix and illustration access/page indexes."
+    },
+    {
+      "name": "report.testInspectionReport.introduction",
+      "type": "object or array<object>",
+      "required": false,
+      "governedBy": [
+        "DZR-F8-0003",
+        "DZR-F8-0004",
+        "DZR-F8-0005"
+      ],
+      "description": "Conditional on actual invocation of DI-NDTI-80809B and the source qualifications retained in the acceptance rules. This is a grouped logical content mapping, not prescribed native column names. Source content items: testInspectionObjectives, contractTaskingReference, itemNomenclature, nationalStockNumber, modelNumber, partNumber, serialNumber, itemType, serialOrLotNumber, engineeringChanges, productionItemSpecification, manufactureDate, testInspectionRequirements, contractualRequirementsCorrelation, testInspectionParameters, performanceRequirements, acceptanceOrComplianceLimits, environmentalCriteria. Preserve objective, tested-item and contractual-requirement content and source alternatives/if-applicable qualifications."
+    },
+    {
+      "name": "report.testInspectionReport.summary",
+      "type": "object or array<object>",
+      "required": false,
+      "governedBy": [
+        "DZR-F8-0006"
+      ],
+      "description": "Conditional on actual invocation of DI-NDTI-80809B and the source qualifications retained in the acceptance rules. This is a grouped logical content mapping, not prescribed native column names. Source content items: summary, correctiveActionsAndSchedules, deviationsDeparturesLimitations, contractRequirementReferences, summaryVisuals. Visuals as appropriate; failure and deviation content when encountered."
+    },
+    {
+      "name": "report.testInspectionReport.references",
+      "type": "object or array<object>",
+      "required": false,
+      "governedBy": [
+        "DZR-F8-0007",
+        "DZR-F8-0008"
+      ],
+      "description": "Conditional on actual invocation of DI-NDTI-80809B and the source qualifications retained in the acceptance rules. This is a grouped logical content mapping, not prescribed native column names. Source content items: referenceDocuments, priorReports, testInspectionPlans, procedureDocuments, priorCertifications, recordFileDesignation, inputParameters, referenceDocumentIssue, referenceApprovalDate, referenceAmendmentNoticeRevisionDates. Use actual contract-specified document issues, approval dates and applicable amendment/notice/revision dates."
+    },
+    {
+      "name": "report.testInspectionReport.equipment",
+      "type": "object or array<object>",
+      "required": false,
+      "governedBy": [
+        "DZR-F8-0009"
+      ],
+      "description": "Conditional on actual invocation of DI-NDTI-80809B and the source qualifications retained in the acceptance rules. This is a grouped logical content mapping, not prescribed native column names. Source content items: testEquipmentIdentification, equipmentNomenclature, equipmentModelNumber, equipmentSerialNumber, equipmentManufacturer, calibrationStatus, accuracyData, equipmentComments. Report identification, calibration status and accuracy; this does not mandate calibration execution."
+    },
+    {
+      "name": "report.testInspectionReport.setup",
+      "type": "object or array<object>",
+      "required": false,
+      "governedBy": [
+        "DZR-F8-0010"
+      ],
+      "description": "Conditional on actual invocation of DI-NDTI-80809B and the source qualifications retained in the acceptance rules. This is a grouped logical content mapping, not prescribed native column names. Source content items: physicalSetup, itemLocationOrOrientation, equipmentLocationOrientationOrSettings, sensorProbeLocationOrientationOrSettings, interconnectionLocationOrOrientation, electricalPowerRequirements, pneumaticRequirements, fluidicRequirements, hydraulicRequirements. Preserve physical location/orientation/settings and power/pneumatic/fluidic/hydraulic context as applicable."
+    },
+    {
+      "name": "report.testInspectionReport.procedures",
+      "type": "object or array<object>",
+      "required": false,
+      "governedBy": [
+        "DZR-F8-0011"
+      ],
+      "description": "Conditional on actual invocation of DI-NDTI-80809B and the source qualifications retained in the acceptance rules. This is a grouped logical content mapping, not prescribed native column names. Source content items: procedureDescription, itemSelectionAndSuitabilityInspection, testInspectionStepSequence, itemOperation, imposedControlConditions. Describe procedures actually used, sequence, operation and imposed controls."
+    },
+    {
+      "name": "report.testInspectionReport.results",
+      "type": "object or array<object>",
+      "required": false,
+      "governedBy": [
+        "DZR-F8-0012",
+        "DZR-F8-0013"
+      ],
+      "description": "Conditional on actual invocation of DI-NDTI-80809B and the source qualifications retained in the acceptance rules. This is a grouped logical content mapping, not prescribed native column names. Source content items: recordedTestInspectionData, recordedDataAppendix, testInspectionResults, resultObjectiveRequirementMatrices, matrixSignificance, priorTestInspectionComparison, calculationExamples, anomaliesDeviationsDiscrepanciesFailures, impacts, causes, proposedCorrectiveActions, designRequirementTestedConfigurationDiscrepancies. Include actual data and full requirement/objective comparisons; report discrepancies rather than suppressing unsuccessful evidence."
+    },
+    {
+      "name": "report.testInspectionReport.conclusions",
+      "type": "object or array<object>",
+      "required": false,
+      "governedBy": [
+        "DZR-F8-0014"
+      ],
+      "description": "Conditional on actual invocation of DI-NDTI-80809B and the source qualifications retained in the acceptance rules. This is a grouped logical content mapping, not prescribed native column names. Source content items: objectiveConclusions, subjectiveConclusions, procedureEffectiveness, testObjectiveSuccessOrFailure, furtherTestInspectionNeed, redesignDevelopmentNeed, procedureTechniqueFacilityImprovementNeed, requirementsAdequacyAndCompleteness. Keep objective and subjective conclusions as distinct categories."
+    },
+    {
+      "name": "report.testInspectionReport.recommendations",
+      "type": "object or array<object>",
+      "required": false,
+      "governedBy": [
+        "DZR-F8-0015"
+      ],
+      "description": "Conditional on actual invocation of DI-NDTI-80809B and the source qualifications retained in the acceptance rules. This is a grouped logical content mapping, not prescribed native column names. Source content items: recommendations, recommendedAcceptability, recommendedAdditionalTestInspection, recommendedRedesign, recommendedProblemResolution, recommendedProcedureFacilityImprovements, recommendedItemDisposition, recommendedDocumentationChanges, recommendedTestingInspectionImprovements. Include applicable item acceptability (pass or fail); recommendations do not themselves mandate corrective engineering execution."
+    },
+    {
+      "name": "report.testInspectionReport.resultsCertification",
+      "type": "object or array<object>",
+      "required": false,
+      "governedBy": [
+        "DZR-F8-0016",
+        "DZR-F8-0017"
+      ],
+      "description": "Conditional on actual invocation of DI-NDTI-80809B and the source qualifications retained in the acceptance rules. This is a grouped logical content mapping, not prescribed native column names. Source content items: resultsAuthenticationStatement, plansProceduresConformanceStatement, resultsTruthAccuracyStatement, performerSignatures, authorizedCertifierSignature, governmentWitnessSignatures. Applicable result certification needs the truth/accuracy and plan/procedure statements plus performer signatures, an authorized contractor certifying representative, AND any Government witnesses. Not an OR signature choice."
+    },
+    {
+      "name": "report.testInspectionReport.priorValidationCertification",
+      "type": "object or array<object>",
+      "required": false,
+      "governedBy": [
+        "DZR-F8-0018",
+        "DZR-F8-0019"
+      ],
+      "description": "Conditional on actual invocation of DI-NDTI-80809B and the source qualifications retained in the acceptance rules. This is a grouped logical content mapping, not prescribed native column names. Source content items: previouslyValidatedRequirementsNotRetested, priorValidationData, priorValidationMethod, authorizedPriorValidationAuthenticatorSignature, priorValidationGovernmentWitnessSignatures. For applicable previously validated requirements not tested/inspected/measured, preserve prior data and method, authorized authenticator and any Government witness; do not invent a new test or performer-signature obligation."
+    },
+    {
+      "name": "report.testInspectionReport.acceptabilityCertification",
+      "type": "object or array<object>",
+      "required": false,
+      "governedBy": [
+        "DZR-F8-0020",
+        "DZR-F8-0021"
+      ],
+      "description": "Conditional on actual invocation of DI-NDTI-80809B and the source qualifications retained in the acceptance rules. This is a grouped logical content mapping, not prescribed native column names. Source content items: itemAcceptabilityAuthentication, itemAcceptabilityPassOrFail, authorizedAcceptabilityAuthenticatorSignature, acceptabilityGovernmentWitnessSignatures. Applicable pass-or-fail authentication needs an authorized representative and any Government witness; failure is not a data-format rejection."
+    },
+    {
+      "name": "report.testInspectionReport.appendices",
+      "type": "object or array<object>",
+      "required": false,
+      "governedBy": [
+        "DZR-F8-0022"
+      ],
+      "description": "Conditional on actual invocation of DI-NDTI-80809B and the source qualifications retained in the acceptance rules. This is a grouped logical content mapping, not prescribed native column names. Source content items: appendixDocumentation, referencedDocumentationNotGovernmentProvided, associatedActivityTestInspectionReports. Preserve required extensive/reference/associated-activity content under the source scope; an external mutable URL alone is not the archived attachment."
+    },
+    {
+      "name": "report.rtvm.applicableSourceIssues",
+      "type": "object or array<object>",
+      "required": false,
+      "governedBy": [
+        "DZR-F8-0023"
+      ],
+      "description": "Conditional on actual invocation of DI-MGMT-82133A and the source qualifications retained in the acceptance rules. This is a grouped logical content mapping, not prescribed native column names. Source content items: applicableSourceIssues. No automatic replacement by a newly published issue; use contract-specified issue selection."
+    },
+    {
+      "name": "report.rtvm.nativeFormat",
+      "type": "object or array<object>",
+      "required": false,
+      "governedBy": [
+        "DZR-F8-0024"
+      ],
+      "description": "Conditional on actual invocation of DI-MGMT-82133A and the source qualifications retained in the acceptance rules. This is a grouped logical content mapping, not prescribed native column names. Source content items: nativeDatabaseFormat, requirementsTraceability, verificationTracking. The actual deliverable is an electronic relational database supporting bidirectional requirements traceability and verification tracking. Standalone JSON, CSV or a flat table does not meet this format."
+    },
+    {
+      "name": "report.rtvm.coverAndChanges",
+      "type": "object or array<object>",
+      "required": false,
+      "governedBy": [
+        "DZR-F8-0025",
+        "DZR-F8-0026"
+      ],
+      "description": "Conditional on actual invocation of DI-MGMT-82133A and the source qualifications retained in the acceptance rules. This is a grouped logical content mapping, not prescribed native column names. Source content items: coverPage, documentTitle, issueDate, revisionDate, contractNumber, contractorIdentity, distributionStatement, exportControlWarning, securityClassification, changeRecord. Cover identification/markings and record of all RTVM changes remain part of the package."
+    },
+    {
+      "name": "report.rtvm.architecture",
+      "type": "object or array<object>",
+      "required": false,
+      "governedBy": [
+        "DZR-F8-0027"
+      ],
+      "description": "Conditional on actual invocation of DI-MGMT-82133A and the source qualifications retained in the acceptance rules. This is a grouped logical content mapping, not prescribed native column names. Source content items: databaseArchitecture, relationships, fieldDefinitions. Detailed database architecture, relationships and field term/acronym definitions accompany the native data."
+    },
+    {
+      "name": "report.rtvm.tierHierarchy",
+      "type": "object or array<object>",
+      "required": false,
+      "governedBy": [
+        "DZR-F8-0028",
+        "DZR-F8-0031"
+      ],
+      "description": "Conditional on actual invocation of DI-MGMT-82133A and the source qualifications retained in the acceptance rules. This is a grouped logical content mapping, not prescribed native column names. Source content items: tier0Uid, tier1Uid, tier2Uid, tier3Uid, tier0RequirementText, tier1RequirementText, tier2RequirementText, tier3RequirementText. Preserve Tier 0 and Tier 1 UIDs/text and required Tier 2/3 UIDs/text with actual parent/derivation relations. Tier 2/3 are conditional. No UID pattern is inferred from source examples."
+    },
+    {
+      "name": "report.rtvm.requirementSource",
+      "type": "object or array<object>",
+      "required": false,
+      "governedBy": [
+        "DZR-F8-0029",
+        "DZR-F8-0030"
+      ],
+      "description": "Conditional on actual invocation of DI-MGMT-82133A and the source qualifications retained in the acceptance rules. This is a grouped logical content mapping, not prescribed native column names. Source content items: sourceDocumentNumber, sourceDocumentTitle, sourceParagraph. Source document number/title and exact source paragraph remain with each requirement statement."
+    },
+    {
+      "name": "report.rtvm.requirementType",
+      "type": "object or array<object>",
+      "required": false,
+      "governedBy": [
+        "DZR-F8-0032"
+      ],
+      "description": "Conditional on actual invocation of DI-MGMT-82133A and the source qualifications retained in the acceptance rules. This is a grouped logical content mapping, not prescribed native column names. Source content items: requirementType. Closed source values: Derived or Decomposed."
+    },
+    {
+      "name": "report.rtvm.requirementAttribute",
+      "type": "object or array<object>",
+      "required": false,
+      "governedBy": [
+        "DZR-F8-0033"
+      ],
+      "description": "Conditional on actual invocation of DI-MGMT-82133A and the source qualifications retained in the acceptance rules. This is a grouped logical content mapping, not prescribed native column names. Source content items: requirementAttribute. Named performance, design, software-functional, interface, physical, environmental and cybersecurity categories are extensible when needed; do not reject legitimate other attributes."
+    },
+    {
+      "name": "report.rtvm.oemCompliance",
+      "type": "object or array<object>",
+      "required": false,
+      "governedBy": [
+        "DZR-F8-0034"
+      ],
+      "description": "Conditional on actual invocation of DI-MGMT-82133A and the source qualifications retained in the acceptance rules. This is a grouped logical content mapping, not prescribed native column names. Source content items: oemCompliance. Closed source values: Compliant, Non-Compliant, Partial Compliant. Not equivalent to approval status or a Yes/No conformity response."
+    },
+    {
+      "name": "report.rtvm.requirementStatus",
+      "type": "object or array<object>",
+      "required": false,
+      "governedBy": [
+        "DZR-F8-0035"
+      ],
+      "description": "Conditional on actual invocation of DI-MGMT-82133A and the source qualifications retained in the acceptance rules. This is a grouped logical content mapping, not prescribed native column names. Source content items: requirementStatus. Closed source values: Approved, Under Review, Needs Revision, Rejected. The separate should recommendation to identify latest revision number is guidance only and excluded from the operative projection."
+    },
+    {
+      "name": "report.rtvm.nonConformanceReferences",
+      "type": "object or array<object>",
+      "required": false,
+      "governedBy": [
+        "DZR-F8-0036",
+        "DZR-F8-0037"
+      ],
+      "description": "Conditional on actual invocation of DI-MGMT-82133A and the source qualifications retained in the acceptance rules. This is a grouped logical content mapping, not prescribed native column names. Source content items: systemTroubleReportNumber, systemTroubleReportTitle, deficiencyReportNumber, deficiencyReportTitle, systemTroubleReportLink, deficiencyReportLink. Only for non-conforming requirements: System Trouble Report and Deficiency Report numbers/titles plus hyperlinks. STR here means System Trouble Report, not Software Test Report."
+    },
+    {
+      "name": "report.rtvm.designAndAllocation",
+      "type": "object or array<object>",
+      "required": false,
+      "governedBy": [
+        "DZR-F8-0038",
+        "DZR-F8-0039",
+        "DZR-F8-0040"
+      ],
+      "description": "Conditional on actual invocation of DI-MGMT-82133A and the source qualifications retained in the acceptance rules. This is a grouped logical content mapping, not prescribed native column names. Source content items: designReference, requirementAllocations, verificationEndProductForm, verificationEndProductMaturity. Record the specific design information, actual system/component/software allocations, and verification end-product form and maturity. This records allocations, not a new engineering-allocation execution duty."
+    },
+    {
+      "name": "report.rtvm.verificationTrace",
+      "type": "object or array<object>",
+      "required": false,
+      "governedBy": [
+        "DZR-F8-0041",
+        "DZR-F8-0042",
+        "DZR-F8-0043",
+        "DZR-F8-0044",
+        "DZR-F8-0045"
+      ],
+      "description": "Conditional on actual invocation of DI-MGMT-82133A and the source qualifications retained in the acceptance rules. This is a grouped logical content mapping, not prescribed native column names. Source content items: verificationMethod, verificationDocumentNumber, verificationDocumentTitle, verificationDocumentDate, verificationDocumentParagraph, verificationProcedureSection, verificationProcedureSteps, otherTests. Method and verification-document number/title/date/paragraph plus procedure section/steps, with prior test names when such tests occurred."
+    },
+    {
+      "name": "report.rtvm.verificationResults",
+      "type": "object or array<object>",
+      "required": false,
+      "governedBy": [
+        "DZR-F8-0046"
+      ],
+      "description": "Conditional on actual invocation of DI-MGMT-82133A and the source qualifications retained in the acceptance rules. This is a grouped logical content mapping, not prescribed native column names. Source content items: verificationResults, conformityResult. Preserve the complete verification result and conformity Yes or No. A No result is valid report content, not an automatic data-delivery rejection."
+    },
+    {
+      "name": "report.rtvm.correctiveActionsAndComments",
+      "type": "object or array<object>",
+      "required": false,
+      "governedBy": [
+        "DZR-F8-0047",
+        "DZR-F8-0048"
+      ],
+      "description": "Conditional on actual invocation of DI-MGMT-82133A and the source qualifications retained in the acceptance rules. This is a grouped logical content mapping, not prescribed native column names. Source content items: correctiveActions, correctiveActionResults, comments. Record actions actually taken and their results; comments as required. No corrective-action execution duty is inferred."
+    },
+    {
+      "name": "report.rtvm.databaseSnapshot",
+      "type": "object",
+      "required": false,
+      "governedBy": [
+        "DZR-F8-0024",
+        "DZR-F8-0026",
+        "DZR-F8-0027",
+        "DZR-F8-0028",
+        "DZR-F8-0031",
+        "DZR-F8-0046"
+      ],
+      "description": "Required receiving-contract baseline representation when the RTVM profile is delivered: a complete, reconciled semantic snapshot of the actual relational database, including every native table/column definition, primary/foreign keys, every record and value, and relationships; associated cover/change/architecture/term content and operative evidence remain included. Tables are represented by tableName, columns, primaryKey, foreignKeys, rows; table rows are complete objects keyed by native column names. This snapshot supports deterministic hashing but is not itself the mandated native database. Raw native delivery is preserved separately and reconciled against it. No requirement-only ID list, selected-column summary, or pointer-only snapshot is complete."
+    },
+    {
+      "name": "report.rtvm.guidanceColumnMap",
+      "type": "array<object>",
+      "required": false,
+      "governedBy": [],
+      "description": "Receiving-contract provenance identifying only native columns devoted exclusively to the nonbinding latest requirement-status revision-number recommendation in section 3.2.14. Each entry identifies tableName and columnName. Their column definitions and row values are omitted from the operative baseline projection; the original native delivery is preserved. A column also serving any operative obligation, primary/foreign key or relationship is not guidance-only and cannot be removed. This map itself is excluded from the baseline. Other handbook/guide catalogue content stays outside the selected payload. Parallel copies of the guidance-only latest-status revision value in other operative JSON groups are not permitted; preserve any such guidance only in the original native database and the separate guidance catalogue. This excludes semantic copies of the recommendation, not identical scalar values serving an independent operative obligation."
+    },
+    {
+      "name": "report.softwareTestReport.presentation",
+      "type": "object or array<object>",
+      "required": false,
+      "governedBy": [
+        "DZR-F8-0049",
+        "DZR-F8-0050",
+        "DZR-F8-0051",
+        "DZR-F8-0052",
+        "DZR-F8-0053"
+      ],
+      "description": "Conditional on actual invocation of DI-IPSC-81440A and the source qualifications retained in the acceptance rules. This is a grouped logical content mapping, not prescribed native column names. Source content items: reportFormat, documentIdentity, itemIdentity, contractNumber, cdrlItemNumber, organizationIdentity, documentDate, revision, securityMarkings, handlingRestrictions, distributionStatement, tableOfContents, pageIdentification, alternativeEntityIdentification, tailoredOutParagraphs. Contractor format unless CDRL specifies otherwise; alternative-form identification, contents pointers/access instructions and indexable entity identities remain required. A tailored-out paragraph retains number/title and exactly This paragraph has been tailored out. Alternative-form notice may be in contents/equivalent only."
+    },
+    {
+      "name": "report.softwareTestReport.scope",
+      "type": "object or array<object>",
+      "required": false,
+      "governedBy": [
+        "DZR-F8-0054",
+        "DZR-F8-0055",
+        "DZR-F8-0056",
+        "DZR-F8-0057"
+      ],
+      "description": "Conditional on actual invocation of DI-IPSC-81440A and the source qualifications retained in the acceptance rules. This is a grouped logical content mapping, not prescribed native column names. Source content items: scopeStructure, systemSoftwareIdentification, systemSoftwareOverview, documentOverview, securityPrivacyConsiderations. Keep Identification, System overview and Document overview structure and all applicable content."
+    },
+    {
+      "name": "report.softwareTestReport.references",
+      "type": "object or array<object>",
+      "required": false,
+      "governedBy": [
+        "DZR-F8-0058"
+      ],
+      "description": "Conditional on actual invocation of DI-IPSC-81440A and the source qualifications retained in the acceptance rules. This is a grouped logical content mapping, not prescribed native column names. Source content items: referencedDocuments. Identify each referenced document and the source of documents unavailable through normal Government stocking activities."
+    },
+    {
+      "name": "report.softwareTestReport.resultsOverview",
+      "type": "object or array<object>",
+      "required": false,
+      "governedBy": [
+        "DZR-F8-0059",
+        "DZR-F8-0060",
+        "DZR-F8-0061",
+        "DZR-F8-0062",
+        "DZR-F8-0063",
+        "DZR-F8-0064"
+      ],
+      "description": "Conditional on actual invocation of DI-IPSC-81440A and the source qualifications retained in the acceptance rules. This is a grouped logical content mapping, not prescribed native column names. Source content items: testOverviewStructure, overallSoftwareAssessment, remainingDeficiencies, deficiencyPerformanceImpact, unmetRequirements, correctiveDesignImpact, recommendedCorrection, testEnvironmentDifferences, testResultEnvironmentImpact, recommendedImprovements. Keep overall assessment, remaining-deficiency and environmental-impact content with appropriate conditions. If no improvements are recommended, the source paragraph says None; this is not a universal result enum."
+    },
+    {
+      "name": "report.softwareTestReport.detailedResults",
+      "type": "object or array<object>",
+      "required": false,
+      "governedBy": [
+        "DZR-F8-0065",
+        "DZR-F8-0066"
+      ],
+      "description": "Conditional on actual invocation of DI-IPSC-81440A and the source qualifications retained in the acceptance rules. This is a grouped logical content mapping, not prescribed native column names. Source content items: testId, detailedTestResultsStructure, testResultsSummary, testCaseCompletionStatus, unexpectedCompletionDetailReferences. Organize by project-unique test identifier (test is a related collection of cases), then report each case completion status; unexpected completion points to details. No closed completion-status enum is invented from source examples."
+    },
+    {
+      "name": "report.softwareTestReport.problems",
+      "type": "object or array<object>",
+      "required": false,
+      "governedBy": [
+        "DZR-F8-0067"
+      ],
+      "description": "Conditional on actual invocation of DI-IPSC-81440A and the source qualifications retained in the acceptance rules. This is a grouped logical content mapping, not prescribed native column names. Source content items: problemTestCaseId, problemDescription, problemProcedureSteps, problemReportReferences, problemBackupData, repeatCount, repeatOutcomes, retestResumePoints. For affected cases preserve problem/step, applicable report and backup references, repeat counts/outcomes and retest resumption points; no instruction to conduct a repeat is inferred."
+    },
+    {
+      "name": "report.softwareTestReport.deviations",
+      "type": "object or array<object>",
+      "required": false,
+      "governedBy": [
+        "DZR-F8-0068"
+      ],
+      "description": "Conditional on actual invocation of DI-IPSC-81440A and the source qualifications retained in the acceptance rules. This is a grouped logical content mapping, not prescribed native column names. Source content items: deviationTestCaseId, deviationDescription, deviationRationale, deviationValidityImpact. For affected cases retain deviation, rationale and impact on test validity."
+    },
+    {
+      "name": "report.softwareTestReport.testLog",
+      "type": "object or array<object>",
+      "required": false,
+      "governedBy": [
+        "DZR-F8-0069"
+      ],
+      "description": "Conditional on actual invocation of DI-IPSC-81440A and the source qualifications retained in the acceptance rules. This is a grouped logical content mapping, not prescribed native column names. Source content items: testLog, testDateTime, testLocation, testConfiguration, activityDateTime, performerIdentity, witnessIdentity. Preserve chronological events, dates/times/locations, applicable configurations, performer and applicable witness identities. No source time-zone or timestamp encoding is invented."
+    },
+    {
+      "name": "report.softwareTestReport.notes",
+      "type": "object or array<object>",
+      "required": false,
+      "governedBy": [
+        "DZR-F8-0070"
+      ],
+      "description": "Conditional on actual invocation of DI-IPSC-81440A and the source qualifications retained in the acceptance rules. This is a grouped logical content mapping, not prescribed native column names. Source content items: reportNotes, acronymsAbbreviations, termDefinitions. Keep explanatory notes, alphabetical acronym/abbreviation meanings and needed definitions."
+    },
+    {
+      "name": "report.softwareTestReport.appendices",
+      "type": "object or array<object>",
+      "required": false,
+      "governedBy": [
+        "DZR-F8-0071"
+      ],
+      "description": "Conditional on actual invocation of DI-IPSC-81440A and the source qualifications retained in the acceptance rules. This is a grouped logical content mapping, not prescribed native column names. Source content items: appendixReferences, appendixLabels. Only when used: alphabetic appendix labels and corresponding applicable main-body references."
+    }
+  ],
+  "markings": "Retain source-required and actual contract-directed report/database classification, distribution, export-control and handling identification in the applicable profile; DZR-F8-0001, DZR-F8-0025 and DZR-F8-0050 are conditional. Public-release status of the DIDs does not establish the classification or release status of delivered test data. DoDI 5230.24, DoDI 5200.48 and DoDM 5200.01 Volume 2 remain uninspected open gaps; no missing marking rules are inferred. The three sample rows are fictional illustrations and do not carry fabricated classification assertions, contract identifiers or signatures.",
+  "acceptance": [
+    {
+      "rule": "Receiving-contract rule, not a source-derived schema: parse one well-formed JSON object with exactly profile, completeness, report, evidence and nativeDelivery as the only permitted top-level names. profile, completeness and evidence are required; report/nativeDelivery are conditional as described. Reject unknown root keys, duplicate object keys before or after normalization, invalid Unicode scalar strings, non-finite numeric values, or malformed Base64.",
+      "severity": "reject",
+      "governedBy": []
+    },
+    {
+      "rule": "Receiving-contract rule: reject missing/blank/duplicate normalized evidenceId and missing, ambiguous or unresolved wbsId or requirementId on any evidence row. Resolve both joins against the actual controlled WBS and requirement records; do not silently create target records. Preserve actual requirementText and all operative context/evidence. Synthetic sample identities do not establish production join resolution.",
+      "severity": "reject",
+      "governedBy": []
+    },
+    {
+      "rule": "Receiving-contract applicability rule: for complete-delivery, identify actual contract/CDRL invocation and issue selection, select the appropriate DID profile, and document applicable content/certification/tailoring decisions. Missing applicability evidence does not authorize assuming that all three profiles bind. Do not accept a partial-example as a complete-delivery.",
+      "severity": "reject",
+      "governedBy": []
+    },
+    {
+      "rule": "Receiving-contract production acceptance requires the actual contractor-selected presentation to be acceptable under the governing contract/CDRL and all applicable source report/package content, cover/title identity, layout/index/access structure, certifications and evidence to be delivered. A JSON evidence-row excerpt, even with valid hashes and resolved joins, is not proof of full report-format compliance or an accepted contractual baseline. A digest may be computed for a rejected or partial payload, but that digest does not change its acceptance status.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F8-0001",
+        "DZR-F8-0002",
+        "DZR-F8-0016",
+        "DZR-F8-0017",
+        "DZR-F8-0018",
+        "DZR-F8-0019",
+        "DZR-F8-0020",
+        "DZR-F8-0021",
+        "DZR-F8-0022",
+        "DZR-F8-0024",
+        "DZR-F8-0049",
+        "DZR-F8-0050",
+        "DZR-F8-0051",
+        "DZR-F8-0052"
+      ]
+    },
+    {
+      "rule": "The sample is an unauthenticated partial DI-NDTI-80809B evidence excerpt. It lacks a complete cover/title page, contents, report sections, certifications/signatures and applicable appendices, and no external WBS/requirement targets were supplied. Retain for demonstration only; it cannot pass production full-report or join acceptance. Its hash demonstrates content integrity, not compliance, authentication or approval.",
+      "severity": "warn",
+      "governedBy": []
+    },
+    {
+      "rule": "When DI-NDTI-80809B is invoked by the applicable contract or CDRL for the test/inspection report, and the information or certification is applicable under 10.2 or 10.2.7. The source applies to engineering (developmental), preliminary qualification, qualification, and acceptance testing; these are applicability contexts, not separate duplicated obligations. The contract line item number or sequence number and security-classification/downgrading/declassifying information retain the source if-applicable qualifications. Required data-product condition: The test/inspection report shall present the report date and number, contractor identity and address with commercial and government entity code, applicable contract identifiers, test/inspection type, tested-item identification, test/inspection date or period, requiring Government activity identity and address, and applicable security-classification information on both the outside front cover and title page.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F8-0001"
+      ]
+    },
+    {
+      "rule": "When DI-NDTI-80809B is invoked by the applicable contract or CDRL for the test/inspection report, and the information or certification is applicable under 10.2 or 10.2.7. The source applies to engineering (developmental), preliminary qualification, qualification, and acceptance testing; these are applicability contexts, not separate duplicated obligations. Required data-product condition: The table of contents shall identify the title and starting page of each major section, paragraph, and appendix, and the page, identifying number, and title of each illustration.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F8-0002"
+      ]
+    },
+    {
+      "rule": "When DI-NDTI-80809B is invoked by the applicable contract or CDRL for the test/inspection report, and the information or certification is applicable under 10.2 or 10.2.7. The source applies to engineering (developmental), preliminary qualification, qualification, and acceptance testing; these are applicability contexts, not separate duplicated obligations. Required data-product condition: The report introduction shall identify the specific test/inspection objectives specified in the contract tasking document.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F8-0003"
+      ]
+    },
+    {
+      "rule": "When DI-NDTI-80809B is invoked by the applicable contract or CDRL for the test/inspection report, and the information or certification is applicable under 10.2 or 10.2.7. The source applies to engineering (developmental), preliminary qualification, qualification, and acceptance testing; these are applicability contexts, not separate duplicated obligations. Production item specification is required only if applicable; the source serial-or-lot alternative is preserved. Required data-product condition: The report introduction shall completely identify the tested/inspected items by nomenclature, national stock number, model number, part number, serial number, item type, serial or lot number, applicable engineering changes, applicable production item specification, and date of manufacture.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F8-0004"
+      ]
+    },
+    {
+      "rule": "When DI-NDTI-80809B is invoked by the applicable contract or CDRL for the test/inspection report, and the information or certification is applicable under 10.2 or 10.2.7. The source applies to engineering (developmental), preliminary qualification, qualification, and acceptance testing; these are applicability contexts, not separate duplicated obligations. Required data-product condition: The report introduction shall completely identify the test/inspection requirements correlated to contractual requirements, including required test/inspection parameters, performance requirements, acceptance or compliance limits, and environmental criteria.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F8-0005"
+      ]
+    },
+    {
+      "rule": "When DI-NDTI-80809B is invoked by the applicable contract or CDRL for the test/inspection report, and the information or certification is applicable under 10.2 or 10.2.7. The source applies to engineering (developmental), preliminary qualification, qualification, and acceptance testing; these are applicability contexts, not separate duplicated obligations. Failure/problem and deviation/departure/limitation content applies when encountered; visual summaries apply as appropriate. Required data-product condition: The test/inspection report shall include a complete summary covering significant results, observations, conclusions and recommendations, proposed corrective actions and schedules for encountered failures or problems, deviations/departures/limitations referenced to contract requirements, and appropriate visual summaries.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F8-0006"
+      ]
+    },
+    {
+      "rule": "When DI-NDTI-80809B is invoked by the applicable contract or CDRL for the test/inspection report, and the information or certification is applicable under 10.2 or 10.2.7. The source applies to engineering (developmental), preliminary qualification, qualification, and acceptance testing; these are applicability contexts, not separate duplicated obligations. Required data-product condition: The test/inspection report shall completely identify referenced documents, including applicable prior reports on the same item, plans and procedures, prior compliance certifications, the contractor's record-file designation, and input parameters used.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F8-0007"
+      ]
+    },
+    {
+      "rule": "When DI-NDTI-80809B is invoked by the applicable contract or CDRL for the test/inspection report, and the information or certification is applicable under 10.2 or 10.2.7. The source applies to engineering (developmental), preliminary qualification, qualification, and acceptance testing; these are applicability contexts, not separate duplicated obligations. Required data-product condition: The report reference-document issues shall match the contract-specified issues, including approval dates and dates of applicable amendments, notices, and revisions.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F8-0008"
+      ]
+    },
+    {
+      "rule": "When DI-NDTI-80809B is invoked by the applicable contract or CDRL for the test/inspection report, and the information or certification is applicable under 10.2 or 10.2.7. The source applies to engineering (developmental), preliminary qualification, qualification, and acceptance testing; these are applicability contexts, not separate duplicated obligations. Required data-product condition: The report body shall completely identify each test-equipment item used, including nomenclature, model number, serial number, manufacturer, calibration status, accuracy data, and applicable comments.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F8-0009"
+      ]
+    },
+    {
+      "rule": "When DI-NDTI-80809B is invoked by the applicable contract or CDRL for the test/inspection report, and the information or certification is applicable under 10.2 or 10.2.7. The source applies to engineering (developmental), preliminary qualification, qualification, and acceptance testing; these are applicability contexts, not separate duplicated obligations. Required data-product condition: The report body shall completely describe the physical test/inspection set-up, including the listed item, equipment/instrumentation, sensor/probe and interconnection location/orientation/settings information and electrical-power, pneumatic, fluidic and hydraulic requirements.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F8-0010"
+      ]
+    },
+    {
+      "rule": "When DI-NDTI-80809B is invoked by the applicable contract or CDRL for the test/inspection report, and the information or certification is applicable under 10.2 or 10.2.7. The source applies to engineering (developmental), preliminary qualification, qualification, and acceptance testing; these are applicability contexts, not separate duplicated obligations. Required data-product condition: The report body shall completely describe the test/inspection procedures used, including suitability-verifying item selection and inspection, the summarized step sequence, item operation during the test/inspection, and any imposed control conditions.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F8-0011"
+      ]
+    },
+    {
+      "rule": "When DI-NDTI-80809B is invoked by the applicable contract or CDRL for the test/inspection report, and the information or certification is applicable under 10.2 or 10.2.7. The source applies to engineering (developmental), preliminary qualification, qualification, and acceptance testing; these are applicability contexts, not separate duplicated obligations. Extensive recorded data is provided in an appendix. Required data-product condition: The report body shall provide the actual recorded test/inspection data, using an appendix when the recorded data is extensive.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F8-0012"
+      ]
+    },
+    {
+      "rule": "When DI-NDTI-80809B is invoked by the applicable contract or CDRL for the test/inspection report, and the information or certification is applicable under 10.2 or 10.2.7. The source applies to engineering (developmental), preliminary qualification, qualification, and acceptance testing; these are applicability contexts, not separate duplicated obligations. Required data-product condition: The report body shall identify all test/inspection results through achieved-result versus objective/requirement matrices, significance and prior-test comparisons, calculation examples, and anomaly/deviation/discrepancy/failure discussion covering impacts, causes, proposed corrective actions, and discrepancies between design requirements and the tested/inspected configuration.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F8-0013"
+      ]
+    },
+    {
+      "rule": "When DI-NDTI-80809B is invoked by the applicable contract or CDRL for the test/inspection report, and the information or certification is applicable under 10.2 or 10.2.7. The source applies to engineering (developmental), preliminary qualification, qualification, and acceptance testing; these are applicability contexts, not separate duplicated obligations. Required data-product condition: The report body shall provide objective and subjective test/inspection conclusions as distinct categories, covering procedure effectiveness, objective success/failure, needs for further or alternative tests/inspections, redesign/development or procedure/technique/facility improvement, and requirements adequacy/completeness.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F8-0014"
+      ]
+    },
+    {
+      "rule": "When DI-NDTI-80809B is invoked by the applicable contract or CDRL for the test/inspection report, and the information or certification is applicable under 10.2 or 10.2.7. The source applies to engineering (developmental), preliminary qualification, qualification, and acceptance testing; these are applicability contexts, not separate duplicated obligations. Required data-product condition: The report body shall provide recommendations appropriate to the results and conclusions covering item acceptability (pass or fail), additional testing/inspection, redesign, problem resolution, procedure/facility improvements, tested-item disposition, documentation changes, and testing/inspection improvements.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F8-0015"
+      ]
+    },
+    {
+      "rule": "When DI-NDTI-80809B is invoked by the applicable contract or CDRL for the test/inspection report, and the information or certification is applicable under 10.2 or 10.2.7. The source applies to engineering (developmental), preliminary qualification, qualification, and acceptance testing; these are applicability contexts, not separate duplicated obligations. Applies when test/inspection-results certification is applicable under 10.2.7. Required data-product condition: The report test/inspection-results authentication shall state that the test/inspection followed applicable plans and procedures and that the results are true and accurate.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F8-0016"
+      ]
+    },
+    {
+      "rule": "When DI-NDTI-80809B is invoked by the applicable contract or CDRL for the test/inspection report, and the information or certification is applicable under 10.2 or 10.2.7. The source applies to engineering (developmental), preliminary qualification, qualification, and acceptance testing; these are applicability contexts, not separate duplicated obligations. Applies when test/inspection-results certification is applicable; Government witness signatures apply to any Government witnesses. Required data-product condition: The report test/inspection-results authentication shall include signatures of the contractor personnel who performed the tests/inspections, an authorized contractor certifying representative, and any Government witnesses.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F8-0017"
+      ]
+    },
+    {
+      "rule": "When DI-NDTI-80809B is invoked by the applicable contract or CDRL for the test/inspection report, and the information or certification is applicable under 10.2 or 10.2.7. The source applies to engineering (developmental), preliminary qualification, qualification, and acceptance testing; these are applicability contexts, not separate duplicated obligations. Applies when prior-validation certification is applicable to requirements not tested/inspected or measured. Required data-product condition: The report prior-validation authentication shall identify the previously validated requirements not tested/inspected or measured and the data and method used for that validation.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F8-0018"
+      ]
+    },
+    {
+      "rule": "When DI-NDTI-80809B is invoked by the applicable contract or CDRL for the test/inspection report, and the information or certification is applicable under 10.2 or 10.2.7. The source applies to engineering (developmental), preliminary qualification, qualification, and acceptance testing; these are applicability contexts, not separate duplicated obligations. Applies when prior-validation certification is applicable; witness signatures apply to any Government witness. Required data-product condition: The report prior-validation authentication shall include the signature of an authorized contractor authenticating representative and any Government witness.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F8-0019"
+      ]
+    },
+    {
+      "rule": "When DI-NDTI-80809B is invoked by the applicable contract or CDRL for the test/inspection report, and the information or certification is applicable under 10.2 or 10.2.7. The source applies to engineering (developmental), preliminary qualification, qualification, and acceptance testing; these are applicability contexts, not separate duplicated obligations. Applies when item-acceptability certification is applicable. Required data-product condition: The report acceptability authentication shall state whether the tested/inspected item passed or failed the item acceptability requirements.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F8-0020"
+      ]
+    },
+    {
+      "rule": "When DI-NDTI-80809B is invoked by the applicable contract or CDRL for the test/inspection report, and the information or certification is applicable under 10.2 or 10.2.7. The source applies to engineering (developmental), preliminary qualification, qualification, and acceptance testing; these are applicability contexts, not separate duplicated obligations. Applies when item-acceptability certification is applicable; witness signatures apply to any Government witness. Required data-product condition: The report acceptability authentication shall include the signature of an authorized contractor authenticating representative and any Government witness.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F8-0021"
+      ]
+    },
+    {
+      "rule": "When DI-NDTI-80809B is invoked by the applicable contract or CDRL for the test/inspection report, and the information or certification is applicable under 10.2 or 10.2.7. The source applies to engineering (developmental), preliminary qualification, qualification, and acceptance testing; these are applicability contexts, not separate duplicated obligations. Applies to material too voluminous for the main report and the referenced or associated-activity documentation identified by 10.2.8. Required data-product condition: The report appendices shall contain detailed test/inspection data, drawings, photographs or other documentation too voluminous for the main body, including referenced documentation not previously provided by the Government and reports from associated activities that performed some testing/inspecting requirements.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F8-0022"
+      ]
+    },
+    {
+      "rule": "When DI-MGMT-82133A is invoked by the applicable contract or CDRL for the Requirements Traceability Verification Matrix. Required data-product condition: The applicable issues of documents cited by DI-MGMT-82133A shall match the contract-specified issues, including approval dates and applicable amendment, notice, and revision dates.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F8-0023"
+      ]
+    },
+    {
+      "rule": "When DI-MGMT-82133A is invoked by the applicable contract or CDRL for the Requirements Traceability Verification Matrix. Required data-product condition: The RTVM shall use an electronic relational database format supporting bidirectional requirements traceability and tracking verification of each requirement.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F8-0024"
+      ]
+    },
+    {
+      "rule": "When DI-MGMT-82133A is invoked by the applicable contract or CDRL for the Requirements Traceability Verification Matrix; the distribution statement is as delineated in the contract; the export-control warning applies only as delineated in the contract and if applicable. Required data-product condition: The RTVM software database files shall contain cover-page identification, issue and revision dates, contract number, contractor name and address, contract-delineated distribution statement, applicable contract-delineated export-control warning, and security classification.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F8-0025"
+      ]
+    },
+    {
+      "rule": "When DI-MGMT-82133A is invoked by the applicable contract or CDRL for the Requirements Traceability Verification Matrix. Required data-product condition: The RTVM software database files shall contain a record-of-change page covering all changes made to the RTVM.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F8-0026"
+      ]
+    },
+    {
+      "rule": "When DI-MGMT-82133A is invoked by the applicable contract or CDRL for the Requirements Traceability Verification Matrix. Required data-product condition: The RTVM software database files shall contain database-architecture description pages detailing the database, relationships, and definitions of terms and acronyms used in database fields.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F8-0027"
+      ]
+    },
+    {
+      "rule": "When DI-MGMT-82133A is invoked by the applicable contract or CDRL for the Requirements Traceability Verification Matrix; Tier 2 and Tier 3 UIDs apply only if required. Required data-product condition: The RTVM database shall record the Tier 0 and Tier 1 UIDs, and the Tier 2 and Tier 3 UIDs when required, for every requirement in the functional and physical system configuration baseline.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F8-0028"
+      ]
+    },
+    {
+      "rule": "When DI-MGMT-82133A is invoked by the applicable contract or CDRL for the Requirements Traceability Verification Matrix; for each specification and source document. Required data-product condition: The RTVM database shall record the source document number and title for each requirement statement.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F8-0029"
+      ]
+    },
+    {
+      "rule": "When DI-MGMT-82133A is invoked by the applicable contract or CDRL for the Requirements Traceability Verification Matrix. Required data-product condition: The RTVM database shall record the specification or source-document paragraph number for each requirement.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F8-0030"
+      ]
+    },
+    {
+      "rule": "When DI-MGMT-82133A is invoked by the applicable contract or CDRL for the Requirements Traceability Verification Matrix; Tier 2 and Tier 3 requirement text applies only if required. Required data-product condition: The RTVM database shall contain Tier 0 and Tier 1 requirement text and, when required, Tier 2 and Tier 3 requirement text in the source-described hierarchy.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F8-0031"
+      ]
+    },
+    {
+      "rule": "When DI-MGMT-82133A is invoked by the applicable contract or CDRL for the Requirements Traceability Verification Matrix. Required data-product condition: The RTVM database shall identify each requirement type as Derived or Decomposed.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F8-0032"
+      ]
+    },
+    {
+      "rule": "When DI-MGMT-82133A is invoked by the applicable contract or CDRL for the Requirements Traceability Verification Matrix; the attribute field may encompass other attributes if needed. Required data-product condition: The RTVM database shall identify each requirement attribute using the named performance, design, software-functional, interface, physical, environmental, or cybersecurity categories, with other attributes permitted when needed.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F8-0033"
+      ]
+    },
+    {
+      "rule": "When DI-MGMT-82133A is invoked by the applicable contract or CDRL for the Requirements Traceability Verification Matrix. Required data-product condition: The RTVM database shall identify OEM requirement compliance as Compliant, Non-Compliant, or Partial Compliant.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F8-0034"
+      ]
+    },
+    {
+      "rule": "When DI-MGMT-82133A is invoked by the applicable contract or CDRL for the Requirements Traceability Verification Matrix. Required data-product condition: The RTVM database shall identify each requirement status as Approved, Under Review, Needs Revision, or Rejected.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F8-0035"
+      ]
+    },
+    {
+      "rule": "When DI-MGMT-82133A is invoked by the applicable contract or CDRL for the Requirements Traceability Verification Matrix; for non-conforming requirements. Required data-product condition: The RTVM database shall record the System Trouble Report and Deficiency Report numbers and titles for each non-conforming requirement.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F8-0036"
+      ]
+    },
+    {
+      "rule": "When DI-MGMT-82133A is invoked by the applicable contract or CDRL for the Requirements Traceability Verification Matrix; for the non-conforming requirements covered by parent 3.2.15. Required data-product condition: The RTVM database shall provide hyperlinks to the System Trouble Report and Deficiency Report databases.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F8-0037"
+      ]
+    },
+    {
+      "rule": "When DI-MGMT-82133A is invoked by the applicable contract or CDRL for the Requirements Traceability Verification Matrix. Required data-product condition: The RTVM database shall record the specific design information associated with each requirement.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F8-0038"
+      ]
+    },
+    {
+      "rule": "When DI-MGMT-82133A is invoked by the applicable contract or CDRL for the Requirements Traceability Verification Matrix. Required data-product condition: The RTVM database shall record the specific system, subsystem, hardware item, component, Computer Software Configuration Item, Computer Software Component, and Computer Software Unit allocation for each requirement.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F8-0039"
+      ]
+    },
+    {
+      "rule": "When DI-MGMT-82133A is invoked by the applicable contract or CDRL for the Requirements Traceability Verification Matrix. Required data-product condition: The RTVM database shall record the form and maturity level of the end product used for verification.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F8-0040"
+      ]
+    },
+    {
+      "rule": "When DI-MGMT-82133A is invoked by the applicable contract or CDRL for the Requirements Traceability Verification Matrix. Required data-product condition: The RTVM database shall record each requirement verification method as Analysis, Demonstration, Inspection, or Test using the source-provided meanings.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F8-0041"
+      ]
+    },
+    {
+      "rule": "When DI-MGMT-82133A is invoked by the applicable contract or CDRL for the Requirements Traceability Verification Matrix. Required data-product condition: The RTVM database shall record the number, title, and date of the verification document containing the verification method.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F8-0042"
+      ]
+    },
+    {
+      "rule": "When DI-MGMT-82133A is invoked by the applicable contract or CDRL for the Requirements Traceability Verification Matrix. Required data-product condition: The RTVM database shall record the verification-document paragraph number providing the verification method.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F8-0043"
+      ]
+    },
+    {
+      "rule": "When DI-MGMT-82133A is invoked by the applicable contract or CDRL for the Requirements Traceability Verification Matrix. Required data-product condition: The RTVM database shall record the verification-procedure section and steps providing the verification method for each requirement.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F8-0044"
+      ]
+    },
+    {
+      "rule": "When DI-MGMT-82133A is invoked by the applicable contract or CDRL for the Requirements Traceability Verification Matrix; for other tests conducted prior to verification of the requirement. Required data-product condition: The RTVM database shall record the names of other tests conducted before requirement verification.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F8-0045"
+      ]
+    },
+    {
+      "rule": "When DI-MGMT-82133A is invoked by the applicable contract or CDRL for the Requirements Traceability Verification Matrix. Required data-product condition: The RTVM database shall record verification results for each requirement, including Yes or No for whether the system under test conformed to the requirement.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F8-0046"
+      ]
+    },
+    {
+      "rule": "When DI-MGMT-82133A is invoked by the applicable contract or CDRL for the Requirements Traceability Verification Matrix; for corrective actions taken. Required data-product condition: The RTVM database shall record all corrective actions taken and the results of the corrective actions.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F8-0047"
+      ]
+    },
+    {
+      "rule": "When DI-MGMT-82133A is invoked by the applicable contract or CDRL for the Requirements Traceability Verification Matrix; as required. Required data-product condition: The RTVM database shall contain explanatory comments as required.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F8-0048"
+      ]
+    },
+    {
+      "rule": "When DI-IPSC-81440A is invoked by the applicable contract or CDRL for reporting CSCI qualification testing, software-system qualification testing, or other contract-identified software-related testing; unless otherwise specified on the CDRL. Required data-product condition: The Software Test Report shall use contractor format unless the CDRL specifies another format.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F8-0049"
+      ]
+    },
+    {
+      "rule": "When DI-IPSC-81440A is invoked by the applicable contract or CDRL for reporting CSCI qualification testing, software-system qualification testing, or other contract-identified software-related testing; identification items apply as applicable; database or other alternative-form data uses external and internal labels or equivalent identification methods. Required data-product condition: The Software Test Report shall provide the applicable document, item, contract, CDRL, organization, date, revision, security/handling, and distribution identification metadata on a title page or, for alternative-form data, on external and internal labels or equivalent identification.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F8-0050"
+      ]
+    },
+    {
+      "rule": "When DI-IPSC-81440A is invoked by the applicable contract or CDRL for reporting CSCI qualification testing, software-system qualification testing, or other contract-identified software-related testing; for database or other alternative-form data, the internal or external contents table uses pointers or access instructions to content or equivalents. Required data-product condition: The Software Test Report shall provide a table of contents identifying each titled paragraph, figure, table, and appendix by number, title, and page number, or by access pointers/instructions in an internal or external contents table for alternative-form data.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F8-0051"
+      ]
+    },
+    {
+      "rule": "When DI-IPSC-81440A is invoked by the applicable contract or CDRL for reporting CSCI qualification testing, software-system qualification testing, or other contract-identified software-related testing; version, volume, and date apply as applicable; database or other alternative-form data uses named or numbered files, screens, or other entities. Required data-product condition: Software Test Report pages shall carry unique page numbers and applicable document number, version, volume, and date, with indexable and accessible entity names or numbers used for database or other alternative-form data.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F8-0052"
+      ]
+    },
+    {
+      "rule": "When DI-IPSC-81440A is invoked by the applicable contract or CDRL for reporting CSCI qualification testing, software-system qualification testing, or other contract-identified software-related testing; if a DID paragraph is tailored out; for database or other alternative-form data, the representation need occur only in the table of contents or equivalent. Required data-product condition: The Software Test Report shall identify each tailored-out paragraph by number and title followed by the exact tailored-out statement specified in section 4.d.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F8-0053"
+      ]
+    },
+    {
+      "rule": "When DI-IPSC-81440A is invoked by the applicable contract or CDRL for reporting CSCI qualification testing, software-system qualification testing, or other contract-identified software-related testing. Required data-product condition: The Software Test Report Scope section shall contain the Identification, System overview, and Document overview paragraphs.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F8-0054"
+      ]
+    },
+    {
+      "rule": "When DI-IPSC-81440A is invoked by the applicable contract or CDRL for reporting CSCI qualification testing, software-system qualification testing, or other contract-identified software-related testing; listed identification details apply as applicable. Required data-product condition: The Software Test Report Identification paragraph shall fully identify the applicable system and software, including applicable identification numbers, titles, abbreviations, version numbers, and release numbers.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F8-0055"
+      ]
+    },
+    {
+      "rule": "When DI-IPSC-81440A is invoked by the applicable contract or CDRL for reporting CSCI qualification testing, software-system qualification testing, or other contract-identified software-related testing. Required data-product condition: The Software Test Report System overview paragraph shall describe system/software purpose and nature, development/operation/maintenance history, sponsor/acquirer/user/developer/support agencies, current and planned operating sites, and relevant documents.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F8-0056"
+      ]
+    },
+    {
+      "rule": "When DI-IPSC-81440A is invoked by the applicable contract or CDRL for reporting CSCI qualification testing, software-system qualification testing, or other contract-identified software-related testing. Required data-product condition: The Software Test Report Document overview paragraph shall summarize report purpose and contents and describe associated security or privacy considerations.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F8-0057"
+      ]
+    },
+    {
+      "rule": "When DI-IPSC-81440A is invoked by the applicable contract or CDRL for reporting CSCI qualification testing, software-system qualification testing, or other contract-identified software-related testing; source identification is additionally required for documents not available through normal Government stocking activities. Required data-product condition: The Software Test Report Referenced documents section shall list the number, title, revision, and date of every referenced document and identify the source of any document unavailable through normal Government stocking activities.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F8-0058"
+      ]
+    },
+    {
+      "rule": "When DI-IPSC-81440A is invoked by the applicable contract or CDRL for reporting CSCI qualification testing, software-system qualification testing, or other contract-identified software-related testing. Required data-product condition: The Software Test Report Overview of test results section shall contain Overall assessment of the software tested, Impact of test environment, and Recommended improvements paragraphs.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F8-0059"
+      ]
+    },
+    {
+      "rule": "When DI-IPSC-81440A is invoked by the applicable contract or CDRL for reporting CSCI qualification testing, software-system qualification testing, or other contract-identified software-related testing. Required data-product condition: The Software Test Report Overall assessment paragraph shall assess the software as demonstrated by the reported test results.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F8-0060"
+      ]
+    },
+    {
+      "rule": "When DI-IPSC-81440A is invoked by the applicable contract or CDRL for reporting CSCI qualification testing, software-system qualification testing, or other contract-identified software-related testing; for remaining deficiencies, limitations, or constraints detected by testing. Required data-product condition: The Software Test Report Overall assessment paragraph shall identify remaining deficiencies, limitations, or constraints detected by the performed testing.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F8-0061"
+      ]
+    },
+    {
+      "rule": "When DI-IPSC-81440A is invoked by the applicable contract or CDRL for reporting CSCI qualification testing, software-system qualification testing, or other contract-identified software-related testing; for each remaining deficiency, limitation, or constraint. Required data-product condition: The Software Test Report Overall assessment paragraph shall describe each remaining deficiency, limitation, or constraint through performance impact and unmet requirements, corrective design impact, and a recommended corrective solution or approach.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F8-0062"
+      ]
+    },
+    {
+      "rule": "When DI-IPSC-81440A is invoked by the applicable contract or CDRL for reporting CSCI qualification testing, software-system qualification testing, or other contract-identified software-related testing. Required data-product condition: The Software Test Report Impact of test environment paragraph shall assess differences between test and operational environments and the effect of the differences on test results.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F8-0063"
+      ]
+    },
+    {
+      "rule": "When DI-IPSC-81440A is invoked by the applicable contract or CDRL for reporting CSCI qualification testing, software-system qualification testing, or other contract-identified software-related testing; if no recommended improvements are provided, the paragraph states None. Required data-product condition: The Software Test Report Recommended improvements paragraph shall provide recommended design, operation, or testing improvements, or state “None” when no improvements are recommended.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F8-0064"
+      ]
+    },
+    {
+      "rule": "When DI-IPSC-81440A is invoked by the applicable contract or CDRL for reporting CSCI qualification testing, software-system qualification testing, or other contract-identified software-related testing; for each test, where test means a related collection of test cases. Required data-product condition: The Software Test Report Detailed test results section shall organize results by project-unique test identifier with the required result-summary, problem, and deviation subparagraphs.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F8-0065"
+      ]
+    },
+    {
+      "rule": "When DI-IPSC-81440A is invoked by the applicable contract or CDRL for reporting CSCI qualification testing, software-system qualification testing, or other contract-identified software-related testing; references to following detail paragraphs apply when completion status is not as expected. Required data-product condition: Each Software Test Report test-summary paragraph shall summarize test results and each associated test-case completion status, with references to detailed problem or deviation paragraphs whenever completion is not as expected.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F8-0066"
+      ]
+    },
+    {
+      "rule": "When DI-IPSC-81440A is invoked by the applicable contract or CDRL for reporting CSCI qualification testing, software-system qualification testing, or other contract-identified software-related testing; for each test case in which one or more problems occurred; associated problem/change-report and backup-data references apply as applicable. Required data-product condition: The Software Test Report Problems encountered paragraph shall organize each affected test case by project-unique identifier with problem descriptions, procedure-step locations, applicable problem/change-report and backup-data references, repeat counts and outcomes, and retest resumption points or steps.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F8-0067"
+      ]
+    },
+    {
+      "rule": "When DI-IPSC-81440A is invoked by the applicable contract or CDRL for reporting CSCI qualification testing, software-system qualification testing, or other contract-identified software-related testing; for each test case in which deviations occurred. Required data-product condition: The Software Test Report Deviations paragraph shall organize each affected test case by project-unique identifier with a deviation description, deviation rationale, and assessment of deviation impact on test-case validity.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F8-0068"
+      ]
+    },
+    {
+      "rule": "When DI-IPSC-81440A is invoked by the applicable contract or CDRL for reporting CSCI qualification testing, software-system qualification testing, or other contract-identified software-related testing; hardware/software identification details and witness identities apply as applicable. Required data-product condition: The Software Test Report Test log shall chronologically record test dates, times, locations, applicable hardware/software configuration identifiers, activity dates and times, performer identities, and applicable witness identities.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F8-0069"
+      ]
+    },
+    {
+      "rule": "When DI-IPSC-81440A is invoked by the applicable contract or CDRL for reporting CSCI qualification testing, software-system qualification testing, or other contract-identified software-related testing. Required data-product condition: The Software Test Report Notes section shall provide general explanatory information, an alphabetical list of used acronyms and abbreviations with meanings, and needed terms and definitions.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F8-0070"
+      ]
+    },
+    {
+      "rule": "When DI-IPSC-81440A is invoked by the applicable contract or CDRL for reporting CSCI qualification testing, software-system qualification testing, or other contract-identified software-related testing; when appendices are used and the main-body reference applies. Required data-product condition: The Software Test Report shall reference each applicable appendix at the corresponding main-body location and label appendices alphabetically.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F8-0071"
+      ]
+    },
+    {
+      "rule": "For actual RTVM delivery, preserve and demonstrate the accessible native relational database and its bidirectional relationships, not just the receiving JSON projection. Reconcile every native operative table/record/value/relationship and package component to databaseSnapshot. A semantic snapshot without the actual database does not meet the native-format requirement.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F8-0024",
+        "DZR-F8-0026",
+        "DZR-F8-0027",
+        "DZR-F8-0028",
+        "DZR-F8-0031",
+        "DZR-F8-0046"
+      ]
+    },
+    {
+      "rule": "Receiving-contract integrity rule: include the complete immutable content of all operative evidence used in the delivered result, including recorded data, applicable source text, limits, configurations, report context, attachments and relational links. Reject pointer-only mutable evidence, missing attachment bytes, incomplete snapshot projections, unknown guidance exclusions, or source-to-projection discrepancies. Hashing only evidenceId/requirementId/WBS keys is not a baseline.",
+      "severity": "reject",
+      "governedBy": []
+    },
+    {
+      "rule": "For the RTVM operative projection, remove only the explicitly mapped guidance-only latest requirement-status revision-number column and its definition/value occurrences; retain the original native files. Reject exclusion of any operative identity, datum, relationship, key, cover revision date or dual-purpose column. A mapped guidance-only column must not participate in an operative key or relationship. This exclusion is a user baseline rule; it does not weaken any DID content obligation.",
+      "severity": "reject",
+      "governedBy": []
+    },
+    {
+      "rule": "Keep the RTVM requirement type, extensible attribute, OEM compliance, requirement status and Yes/No conformity semantics distinct. Rejected, Non-Compliant, Partial Compliant, and No may be legitimate source data; do not require all evidence to pass. No universal compliance score or numeric pass/fail threshold is inferred.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F8-0032",
+        "DZR-F8-0033",
+        "DZR-F8-0034",
+        "DZR-F8-0035",
+        "DZR-F8-0046"
+      ]
+    },
+    {
+      "rule": "For STR presentation, honor actual authorized contract/CDRL tailoring and alternative-form permissions; keep the exact section 4.d tailored-out notice. No optional paragraph may be suppressed merely because its value is inconvenient. Source completion-status illustrations are not an exhaustive enum.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F8-0049",
+        "DZR-F8-0050",
+        "DZR-F8-0051",
+        "DZR-F8-0052",
+        "DZR-F8-0053",
+        "DZR-F8-0066"
+      ]
+    },
+    {
+      "rule": "Eight policy/source gaps remain unresolved: DoDI 5000.89; DoDI 5000.98; current Test and Evaluation Enterprise Guidebook; DoDI 5000.88; DoDM 5010.12; DoDI 5230.24; DoDI 5200.48; DoDM 5200.01 Volume 2. Do not claim policy/marking completeness or infer missing clauses. Stop extraction only for each inaccessible source and retain the source gap until supplied.",
+      "severity": "warn",
+      "governedBy": []
+    },
+    {
+      "rule": "Guidance is catalogued separately and never creates a rejection gate or baseline contribution. This includes SE/engineering guide recommendations, MIL-HDBK-539A framing, the RTVM latest-status revision-number should sentence, and the STR media/encoding should recommendation. Neither the ambiguous printed software-availability denominator nor an invented repaired formula is used.",
+      "severity": "warn",
+      "governedBy": []
+    },
+    {
+      "rule": "Receiving-contract projection safeguard, not a DID mandate: each nativeDelivery entry has exactly attachmentId, fileName, mediaType, role, and contentBase64. Reject additional raw-file digests, byte sizes, timestamps or other derived file metadata. For RTVM, reject parallel copies of the guide-only latest requirement-status revision value outside mapped excluded native columns, including copies in report.rtvm.requirementStatus. This semantic exclusion does not remove mandatory cover revision dates, dual-purpose fields, or independent operative data merely because a value is identical. Preserve the full original native database unchanged.",
+      "severity": "reject",
+      "governedBy": []
+    }
+  ],
+  "canonicalForm": "The selected receiving payload is a JSON object with only profile, completeness, report, evidence and nativeDelivery as root keys. Hash the complete operative projection of this payload; this is a delivered-data baseline, not a hash of the requirement catalogue, IDs alone, a schema, or this C document. In the displayed partial DI-NDTI-80809B sample the projection is the entire parsed sample object, with no omitted field or evidence row. The displayed baselineHash is for that sample only, not a real delivery or the 71-record requirement catalogue. Production drops compute a new baseline from their complete actual payload and applicable context.\nFor DI-NDTI-80809B and DI-IPSC-81440A, preserve all delivered report/identity/issue/applicability/tailoring context, requirement text and trace identities, conditions/criteria/units, results and discussions, chronological logs, signatures/certifications when applicable, and actual operative attachment bytes. If any operative content is not fully represented as semantic JSON, retain it in nativeDelivery.contentBase64; filenames, URLs and digests alone are insufficient. Source DIDs do not prescribe this selected serialization.\nFor DI-MGMT-82133A, first preserve the complete actual accessible native relational-database delivery. Reconcile report.rtvm.databaseSnapshot to every actual native table, column definition/type, record identity and value, primary/foreign key and relationship, with cover, change history, architecture/term descriptions and operative verification evidence also present. The snapshot's tables array contains tableName, columns, primaryKey, foreignKeys and rows, with each row containing all native columns. There is no sampled-record or selected-operative-column projection. Only columns mapped by report.rtvm.guidanceColumnMap exclusively to the nonbinding latest requirement-status revision-number recommendation are omitted from table column definitions and from every row; omit guidanceColumnMap itself from the hash. A key, relationship, cover revision date, operative or dual-purpose column cannot be excluded. Original database bytes remain retained unchanged but, for nativeDelivery entries with role relationalDatabase, omit contentBase64 from the canonical projection so guidance-only values in the physical file do not enter the operative baseline. Only attachmentId, fileName, mediaType and role remain for these entries, while the complete reconciled operative snapshot supplies the content. Each nativeDelivery entry has exactly these four fields plus contentBase64 before projection; reject added raw-file hashes, byte sizes, timestamps or other metadata so excluded guidance values cannot leak through derived file metadata. Reject parallel semantic copies of guide-only latest-status revision values elsewhere in operative JSON, including report.rtvm.requirementStatus; preserve independently operative cover revision dates and dual-purpose values. These are selected receiving-contract projection rules, not additional DID obligations. Other operative attachments remain fully included. The receiving projection never substitutes for required native-database delivery. Handbook/guide library documents and guidance catalogue fields stay outside the payload and hash.\nCanonical parsing rejects duplicate JSON member names, non-finite numbers, invalid Unicode scalar sequences and normalization collisions. Apply Unicode NFC to every object key and string value, then trim leading/trailing Unicode White_Space and collapse each internal run to one U+0020. White_Space is U+0009–000D, U+0020, U+0085, U+00A0, U+1680, U+2000–200A, U+2028–2029, U+202F, U+205F, U+3000. Boolean and null remain JSON true/false/null. Parse numeric tokens as exact base-10 values, not binary floating-point; emit finite numbers without exponent, leading plus, redundant leading zeros or fractional trailing zeros; emit every signed zero as 0. Preserve decimal value exactly.\nSort object keys by Unicode scalar code-point order after normalization. Sort evidence records by normalized evidenceId in that same order; duplicate evidenceId rejects. Sort nativeDelivery entries by normalized attachmentId; duplicates reject. For RTVM, sort databaseSnapshot.tables by normalized tableName; duplicates reject, and sort each table's rows by its complete canonical serialized row text in code-point order, preserving the multiplicity of identical rows. Do not sort chronological logs, source-ordered steps, change histories, key-column lists, or any other arrays: preserve their supplied semantic order. Canonicalize row objects before comparing row texts. Schema/relationship definitions and all non-guidance record data remain in the projection.\nSerialize compact JSON with no whitespace outside strings. Emit quote as backslash-quote, backslash as two backslashes, remaining U+0000–001F control characters as lowercase four-digit Unicode escapes, and all other Unicode scalar characters literally; do not escape forward slash or non-ASCII text. Encode the resulting JSON as UTF-8 without BOM, after the task-wide final NFC/trim/Unicode-whitespace-collapse normalization. Compute SHA-256 and express 64 lowercase hexadecimal digits. The sample has no guidance-only field or native database exclusion. Changing any sample requirement text, join, criteria, recorded result, discussion, outcome or context changes the hashed content. This integrity digest proves neither factual truth, authorized applicability, acceptance nor signature authenticity.",
+  "baselineHash": "4869bd02be11b8a7c8dbb5cf9030e55faacb523f647e9399dce53b8f4640be06",
+  "mil-hdbk-539a": [
+    {
+      "section": "4.8.2.1.3",
+      "concept": "authoritative source of truth",
+      "howThisFeedServesIt": "Preserves source evidence, applicable requirement context and native record identity so the controlled source remains authoritative. Handbook framing is nonbinding and contributes no rejection rule or baseline requirement."
+    },
+    {
+      "section": "4.8.2.3",
+      "concept": "digital thread",
+      "howThisFeedServesIt": "Links requirement, WBS context, verification procedure and result evidence with traceable relationships; a hash records content identity rather than certifying technical compliance. Framework guidance is excluded from the operative baseline."
+    },
+    {
+      "section": "4.8.3",
+      "concept": "digital system model",
+      "howThisFeedServesIt": "Provides recorded test/verification feedback for engineering evaluation while retaining actual observed outcomes and configuration context. No automatic model update, performance score or guide-derived mandate is inferred."
+    }
+  ],
+  "sample": "{\n  \"profile\": \"DI-NDTI-80809B\",\n  \"completeness\": \"partial-example\",\n  \"report\": {\n    \"sampleNotice\": \"Illustrative partial evidence excerpt only; no contractual invocation, signatures, complete report, or production join resolution is claimed.\"\n  },\n  \"evidence\": [\n    {\n      \"evidenceId\": \"HALCYON-EV-001\",\n      \"wbsId\": \"HALCYON-WBS-1.1\",\n      \"requirementId\": \"HALCYON-REQ-001\",\n      \"requirementText\": \"The HALCYON control unit shall acknowledge a valid command within 250 milliseconds.\",\n      \"method\": \"Test\",\n      \"criteria\": {\n        \"limit\": 250,\n        \"operator\": \"less than or equal to\",\n        \"unit\": \"ms\",\n        \"condition\": \"Valid command received during nominal operation.\"\n      },\n      \"recordedData\": {\n        \"observations\": [\n          228,\n          231,\n          230\n        ],\n        \"unit\": \"ms\",\n        \"condition\": \"Three nominal-operation command trials.\"\n      },\n      \"resultDiscussion\": \"All three observed acknowledgement times were within the stated limit. This illustrative excerpt contains no authenticated test record.\",\n      \"result\": \"pass\"\n    },\n    {\n      \"evidenceId\": \"HALCYON-EV-002\",\n      \"wbsId\": \"HALCYON-WBS-1.2\",\n      \"requirementId\": \"HALCYON-REQ-002\",\n      \"requirementText\": \"The HALCYON power module shall support the standby load for at least 10 minutes after loss of primary power.\",\n      \"method\": \"Test\",\n      \"criteria\": {\n        \"limit\": 10,\n        \"operator\": \"greater than or equal to\",\n        \"unit\": \"min\",\n        \"condition\": \"Primary power removed with standby load connected.\"\n      },\n      \"recordedData\": {\n        \"observations\": [\n          8.5\n        ],\n        \"unit\": \"min\",\n        \"condition\": \"Observed standby support ended before the stated duration.\"\n      },\n      \"resultDiscussion\": \"The observed duration did not meet the stated requirement. The failure remains in the evidence; no corrective action or item acceptance is certified.\",\n      \"result\": \"fail\"\n    },\n    {\n      \"evidenceId\": \"HALCYON-EV-003\",\n      \"wbsId\": \"HALCYON-WBS-1.3\",\n      \"requirementId\": \"HALCYON-REQ-003\",\n      \"requirementText\": \"The HALCYON equipment label shall display the equipment identifier and revision legibly.\",\n      \"method\": \"Inspection\",\n      \"criteria\": {\n        \"requiredMarkings\": [\n          \"equipment identifier\",\n          \"revision\"\n        ],\n        \"condition\": \"Label viewed in the stated inspection setup.\"\n      },\n      \"recordedData\": {\n        \"equipmentIdentifierLegible\": true,\n        \"revisionLegible\": true,\n        \"observation\": \"Both required label elements were present and legible in the illustrative inspection.\"\n      },\n      \"resultDiscussion\": \"The observed label matched both stated criteria. This row outcome is not a signed item-acceptability statement.\",\n      \"result\": \"pass\"\n    }\n  ],\n  \"nativeDelivery\": []\n}"
+}

@@ -1,0 +1,367 @@
+{
+  "batch": 1,
+  "asOf": "2026-11-06",
+  "program": "HALCYON",
+  "complete": false,
+  "revisionResolution": {
+    "document": "MIL-STD-961",
+    "current": "Revision E, Change 5, 2025-11-25",
+    "officialRecord": "https://quicksearch.dla.mil/qsDocDetails.aspx?ident_number=36063",
+    "officialPdf": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5797612",
+    "evidence": "ASSIST active record and revision history plus directly inspected PDF cover agree.",
+    "conflictingLocalEntry": {
+      "path": "packet/Projects/dayzero-thread/dataset/standards-practice/mil-std-961f/meta.json",
+      "status": "Unacquired catalog placeholder; bytes=0; original_filename, sha256, ingested empty; directory contains metadata only.",
+      "action": "No repository files changed."
+    }
+  },
+  "priorBatchLocalCopies": {
+    "savedPdfs": [
+      "DI-IPSC-81431A",
+      "MIL-HDBK-539A Change 1"
+    ],
+    "inspectionQualification": "Saved locally is not synonymous with fully reviewed. SSS pages 1,2,3,10 were visually inspected in Batch0; all eleven pages were visually inspected in Batch1. Other Batch0 sources were inspected through official web/PDF text or delegated in-memory reads; the two-file line was not a complete source-access log."
+  },
+  "directPdfInspected": [
+    {
+      "id": "DI-IPSC-81431A",
+      "file": "packet/pdfs/DI-IPSC-81431A.pdf",
+      "method": "All11 complete scanned pages rendered and visually inspected; passages transcribed and independently reviewed.",
+      "extractionScope": "Electronic/database requirements baseline content; paginated-document-only alternatives deferred to F2.",
+      "deliveredSourceCopy": "packet/halcyon-batch-1/sources/DI-IPSC-81431A.pdf",
+      "bytes": 683681
+    },
+    {
+      "id": "DI-MGMT-82133A",
+      "file": "packet/pdfs/DI-MGMT-82133A.pdf",
+      "method": "All4 complete PDF pages rendered and visually inspected; text comparison and exact governing lead-in review.",
+      "extractionScope": "RTVM data contents and structure, including F1/F8 cross-use verification metadata. Engineering allocation conduct excluded.",
+      "deliveredSourceCopy": "packet/halcyon-batch-1/sources/DI-MGMT-82133A.pdf",
+      "bytes": 177071
+    },
+    {
+      "id": "MIL-STD-961E Change5",
+      "file": "packet/pdfs/MIL-STD-961E-change5.pdf",
+      "method": "FullPDF downloaded/text extracted; cover and PDFpages28–31,53 visually inspected.",
+      "extractionScope": "Conditional baseline specification text and identifier rules; complete publication package/layout deferred to F2.",
+      "deliveredSourceCopy": "packet/halcyon-batch-1/sources/MIL-STD-961E-change5.pdf",
+      "bytes": 7271979
+    },
+    {
+      "id": "MIL-HDBK-539A Change1",
+      "file": "packet/pdfs/MIL-HDBK-539A-change1.pdf",
+      "method": "FullPDF downloaded/text extracted; cited framework sections inspected.",
+      "extractionScope": "Framework mappings only, not binding extracted requirements.",
+      "deliveredSourceCopy": "packet/halcyon-batch-1/sources/MIL-HDBK-539A-change1.pdf",
+      "bytes": 5455512
+    },
+    {
+      "id": "MIL-HDBK-520A",
+      "file": "tmp/pdfs/MIL-HDBK-520A.pdf",
+      "method": "Full PDF downloaded and text extracted; all shall/must/prohibit candidates located and context inspected; rendered PDF pages 11 and 19 directly viewed. Relevant sections 10.1-10.3 contain should guidance, not mandatory shall/must export fields. Three guidance candidates only.",
+      "deliveredSourceCopy": "packet/halcyon-batch-1/sources/MIL-HDBK-520A.pdf",
+      "bytes": 408426
+    },
+    {
+      "id": "Systems Engineering Guidebook September 2026",
+      "file": "tmp/pdfs/SE-Guidebook-2026.pdf",
+      "method": "Full PDF downloaded and text extracted; all shall/must/prohibit candidates scanned; relevant full paragraphs inspected. No binding F1 data-export obligation admitted. Architecture trace/control clauses in 6.2.3 constrain architectural model rather than F1 export; 7.18 R&M solicitation content belongs F2; other occurrences engineering conduct or other products.",
+      "deliveredSourceCopy": "packet/halcyon-batch-1/sources/SE-Guidebook-2026.pdf",
+      "bytes": 6163628
+    },
+    {
+      "id": "SEP Outline v4.1 May2023",
+      "file": "tmp/pdfs/SEP-Outline-4-1.pdf",
+      "method": "Full PDF downloaded and text extracted; all shall/must/prohibit candidates scanned and context inspected. Four must occurrences concern certification conduct, F6 risk-tool access, and software sustainment; none is F1 data-content obligation. 2.1 traceability table is template guidance.",
+      "deliveredSourceCopy": "packet/halcyon-batch-1/sources/SEP-Outline-4-1.pdf",
+      "bytes": 2046025
+    }
+  ],
+  "indexedOnlyOrBlocked": [
+    {
+      "id": "DoDI5000.88",
+      "url": "https://www.esd.whs.mil/Portals/54/Documents/DD/issuances/dodi/500088p.PDF",
+      "result": "403 in direct shell and web open, including official versioned URL. Do not count indexed text as directly inspected."
+    },
+    {
+      "id": "DoDM5010.12",
+      "url": "https://www.esd.whs.mil/Portals/54/Documents/DD/issuances/dodm/501012p.pdf",
+      "result": "403 in direct shell and web open."
+    },
+    {
+      "id": "DoDI5230.24",
+      "url": "https://www.esd.whs.mil/Portals/54/Documents/DD/issuances/dodi/523024p.pdf",
+      "result": "403 in direct shell and web open, including previously observed versioned URL."
+    },
+    {
+      "id": "DoDI5200.48",
+      "url": "https://www.esd.whs.mil/Portals/54/Documents/DD/issuances/dodi/520048p.PDF",
+      "result": "403 in direct shell and web open."
+    },
+    {
+      "id": "DoDM5200.01Volume2",
+      "url": "https://www.esd.whs.mil/Portals/54/Documents/DD/issuances/dodm/520001m_vol2.pdf",
+      "result": "403 in direct shell and web open."
+    }
+  ],
+  "coverageCaveat": "Unknown coverage in inaccessible documents is not zero obligations. No excerpt assembled solely from summaries was promoted to a sourced record. Thus unsourced count can be zero while extraction coverage is incomplete.",
+  "counts": {
+    "records": 230,
+    "recordsWithInspectedPassages": 230,
+    "recordsUnsourced": 0,
+    "guidanceOnly": 3,
+    "bySource": {
+      "DI-IPSC-81431A": 119,
+      "DI-MGMT-82133A": 55,
+      "MIL-STD-961": 53,
+      "MIL-HDBK-520": 3
+    },
+    "operativeRecords": 227,
+    "guidanceRecords": 3,
+    "recordsWithExplicitBinding": 230,
+    "bindingTrue": 227,
+    "bindingFalse": 3
+  },
+  "scopeAudits": {
+    "sss": {
+      "source": "DI-IPSC-81431A",
+      "reviewer": "f1_rtvm",
+      "pages_visually_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "candidates_reviewed": 119,
+      "changes": [
+        {
+          "candidate": 57,
+          "type": "transcription",
+          "paragraph": "Document outline §3.3.x",
+          "before": "This paragraph (beginning with 3.3.2) shall identify a system external interface by project-unique identifier, shall briefly identify the interfacing entities, and shall be divided into subparagraphs as needed to state the requirements imposed on the system to achieve the interface. Interface characteristics of the other entities involved in the interface shall be stated as assumptions or as “When [the entity not covered] does this, the system shall…,” not as requirements on the other entities.",
+          "after": "This paragraph (beginning with 3.3.2) shall identify a system external interface by project-unique identifier, shall briefly identify the interfacing entities, and shall be divided into subparagraphs as needed to state the requirements imposed on the system to achieve the interface. Interface characteristics of the other entities involved in the interface shall be stated as assumptions or as “When [the entity not covered] does this, the system shall....,” not as requirements on the other entities."
+        },
+        {
+          "candidate": 58,
+          "type": "transcription",
+          "paragraph": "Document outline §3.3.x",
+          "before": "This paragraph (beginning with 3.3.2) shall identify a system external interface by project-unique identifier, shall briefly identify the interfacing entities, and shall be divided into subparagraphs as needed to state the requirements imposed on the system to achieve the interface. Interface characteristics of the other entities involved in the interface shall be stated as assumptions or as “When [the entity not covered] does this, the system shall…,” not as requirements on the other entities.",
+          "after": "This paragraph (beginning with 3.3.2) shall identify a system external interface by project-unique identifier, shall briefly identify the interfacing entities, and shall be divided into subparagraphs as needed to state the requirements imposed on the system to achieve the interface. Interface characteristics of the other entities involved in the interface shall be stated as assumptions or as “When [the entity not covered] does this, the system shall....,” not as requirements on the other entities."
+        },
+        {
+          "candidate": 59,
+          "type": "transcription",
+          "paragraph": "Document outline §3.3.x",
+          "before": "This paragraph (beginning with 3.3.2) shall identify a system external interface by project-unique identifier, shall briefly identify the interfacing entities, and shall be divided into subparagraphs as needed to state the requirements imposed on the system to achieve the interface. Interface characteristics of the other entities involved in the interface shall be stated as assumptions or as “When [the entity not covered] does this, the system shall…,” not as requirements on the other entities.",
+          "after": "This paragraph (beginning with 3.3.2) shall identify a system external interface by project-unique identifier, shall briefly identify the interfacing entities, and shall be divided into subparagraphs as needed to state the requirements imposed on the system to achieve the interface. Interface characteristics of the other entities involved in the interface shall be stated as assumptions or as “When [the entity not covered] does this, the system shall....,” not as requirements on the other entities."
+        },
+        {
+          "candidate": 60,
+          "type": "transcription",
+          "paragraph": "Document outline §3.3.x",
+          "before": "This paragraph (beginning with 3.3.2) shall identify a system external interface by project-unique identifier, shall briefly identify the interfacing entities, and shall be divided into subparagraphs as needed to state the requirements imposed on the system to achieve the interface. Interface characteristics of the other entities involved in the interface shall be stated as assumptions or as “When [the entity not covered] does this, the system shall…,” not as requirements on the other entities.",
+          "after": "This paragraph (beginning with 3.3.2) shall identify a system external interface by project-unique identifier, shall briefly identify the interfacing entities, and shall be divided into subparagraphs as needed to state the requirements imposed on the system to achieve the interface. Interface characteristics of the other entities involved in the interface shall be stated as assumptions or as “When [the entity not covered] does this, the system shall....,” not as requirements on the other entities."
+        },
+        {
+          "candidate": 61,
+          "type": "transcription",
+          "paragraph": "Document outline §3.3.x",
+          "before": "This paragraph (beginning with 3.3.2) shall identify a system external interface by project-unique identifier, shall briefly identify the interfacing entities, and shall be divided into subparagraphs as needed to state the requirements imposed on the system to achieve the interface. Interface characteristics of the other entities involved in the interface shall be stated as assumptions or as “When [the entity not covered] does this, the system shall…,” not as requirements on the other entities.",
+          "after": "This paragraph (beginning with 3.3.2) shall identify a system external interface by project-unique identifier, shall briefly identify the interfacing entities, and shall be divided into subparagraphs as needed to state the requirements imposed on the system to achieve the interface. Interface characteristics of the other entities involved in the interface shall be stated as assumptions or as “When [the entity not covered] does this, the system shall....,” not as requirements on the other entities."
+        },
+        {
+          "candidate": 65,
+          "type": "transcription",
+          "paragraph": "Document outline §3.3.x introductory sentence and item d",
+          "before": "The requirements shall include the following, as applicable, presented in any order suited to the requirements, and shall note any differences in these characteristics from the point of view of the interfacing entities (such as different expectations about the size, frequency, or other characteristics of data elements):\n\nd. Required characteristics of data element assemblies (records, messages, files, arrays, displays, reports, etc.) that the system must provide, store, send, access, receive, etc. such as:",
+          "after": "The requirements shall include the following, as applicable, presented in any order suited to the requirements, and shall note any differences in these characteristics from the point of view of the interfacing entities (such as different expectations about the size, frequency, or other characteristics of data elements):\n\nd. Required characteristics of data element assemblies (records, messages, files, arrays, displays, reports, etc.) that the system must provide, store, send, access, receive, etc., such as:"
+        },
+        {
+          "candidate": 111,
+          "type": "scope correction",
+          "detail": "Included exact §5.a Note and preserved the permitted alternative endpoints for derived requirements."
+        },
+        {
+          "candidate": 59,
+          "type": "scope correction",
+          "detail": "Restored the source as-needed condition for interface subsections."
+        },
+        {
+          "candidate": 95,
+          "type": "editorial",
+          "detail": "Removed duplicate applicable in wording only."
+        }
+      ],
+      "remaining_review_notes": [
+        "Records 16–17 select the electronic/database branch of Requirements §§4.b–4.c. The paper-only TOC/page-number/display obligations are not independently emitted. This is acceptable only if the audit explicitly limits F1 to a database/export product; it is not a complete extraction for a paginated SSS.",
+        "Records 19 and 98 cite only the introductory sentence but normalize the following subordinate headings. The full relevant pages were inspected; adding heading excerpts would improve record-self-contained provenance.",
+        "Record 61 says shall avoid imposing requirements. For a crisper prohibition, shall not impose requirements is preferable and preserves source force.",
+        "Several compound metadata sets (identity, reference metadata, hardware characteristics) remain combined under one identify/include predicate. No independent obligations were found omitted by those groupings, but stricter field-level atomization could split them without adding requirements.",
+        "The detailed sublists in §3.3.x.c–g are introduced with such as. They are illustrative characteristics, not individually mandatory fields; preserving the top-level inclusion and applicability conditions avoids inventing requirements."
+      ],
+      "wording_single_shall": true
+    },
+    "rtvm": {
+      "source": "DI-MGMT-82133A",
+      "edition": "2025-07-29",
+      "pages_inspected": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "direct_full_document": true,
+      "candidate_records": 55,
+      "unsourced_candidates": 0,
+      "in_scope_paragraphs": [
+        "1",
+        "2",
+        "3 (lead-in)",
+        "3.1 (lead-in)",
+        "3.1.1",
+        "3.1.2",
+        "3.1.3",
+        "3.2.1",
+        "3.2.2",
+        "3.2.3",
+        "3.2.4",
+        "3.2.5",
+        "3.2.6",
+        "3.2.7",
+        "3.2.8",
+        "3.2.9",
+        "3.2.10",
+        "3.2.11",
+        "3.2.12",
+        "3.2.13",
+        "3.2.14",
+        "3.2.15",
+        "3.2.16",
+        "3.2.17",
+        "3.2.18",
+        "3.2.19",
+        "3.2.20",
+        "3.2.21",
+        "3.2.22",
+        "3.2.23",
+        "3.2.24",
+        "3.2.25",
+        "3.2.26",
+        "3.2.15.1"
+      ],
+      "excluded": [
+        {
+          "paragraph": "3.2.8",
+          "text": "They define what the system or specific features within the system must do to satisfy the Tier 1 objectives.",
+          "reason": "Descriptive system-behavior explanation, not an additional data-product obligation; field presence is included via parent §3."
+        },
+        {
+          "paragraph": "3.2.14 sentence 2",
+          "text": "The status should identify the latest revision number.",
+          "reason": "Should is advisory, not extracted as mandatory."
+        },
+        {
+          "paragraph": "3.2.17 sentence 2",
+          "text": "System level requirements shall be allocated to all Configuration Items defined for the system.",
+          "reason": "Engineering allocation conduct, excluded under user scope; the data recording obligation in sentence 1 is retained. Parent should review this boundary."
+        },
+        {
+          "paragraph": "3.2.19.1–3.2.19.4",
+          "reason": "Verification-method definitions, no new shall/must/prohibition. Historical reference to MIL-STD-961E Change2 preserved."
+        }
+      ],
+      "scope_notes": [
+        "Native format is an electronic relational database; CSV transport requires an explicit local-adapter distinction.",
+        "All §3.2 field entries inherit §3 content shall. Atomic records include source parent lead-ins and actual subordinate passage, not fabricated joined sentences.",
+        "Conditional Tier2/Tier3 requirements and comments retain applicability conditions; no mandatory latest revision number is inferred from should."
+      ]
+    },
+    "mil961": {
+      "source": {
+        "id": "MIL-STD-961E with Change 5",
+        "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5797612",
+        "assist": "https://quicksearch.dla.mil/qsDocDetails.aspx?ident_number=36063",
+        "current_status": "Active",
+        "revision": "E Change 5",
+        "date": "2025-11-25"
+      },
+      "pdf_opened_directly": true,
+      "local_pdf": "tmp/pdfs/MIL-STD-961E-change5.pdf",
+      "visual_pages_reviewed": [
+        1,
+        28,
+        29,
+        30,
+        31,
+        53
+      ],
+      "printed_pages_reviewed": [
+        "cover",
+        "10",
+        "11",
+        "12",
+        "13",
+        "35"
+      ],
+      "candidate_count": 53,
+      "scope": "F1 row-level requirement text and source identifiers only, conditional on originating in a specification governed by this edition. This is not a complete extraction of all specification-document obligations.",
+      "deferred_to_F2": [
+        "4.2-4.5 specification scope, prohibited administrative content, rights, marking and release packaging",
+        "4.6.2/4.6.3 table and figure abbreviation/acronym footnotes",
+        "4.6.6.g figure/table reference phrases",
+        "4.9 listing layout and bullet prohibition",
+        "4.10 capitalization and presentation of paragraph headings",
+        "4.11-4.17 page identifiers, page numbers, table/figure layout, footnotes, foldouts, definition presentation",
+        "4.18-4.20 cross-reference presentation, source-publication reference governance, approved PDF delivery",
+        "5.2-5.7 drafts, marking, cover, publication metadata and sectional arrangement",
+        "5.8 heading and5.8.1-5.8.10 specification category/content selection rules",
+        "5.9-5.19 verification-section, notes, appendices, changes and notices packaging"
+      ],
+      "excluded_nonmandatory": [
+        "5.8.b uses should for cross-reference to verification",
+        "4.8.2 dual dimensions is may/should guidance",
+        "Appendix A expressly guidance only at A.1.1; figures are illustrative examples rather than actual program obligations"
+      ],
+      "inclusion_rules": [
+        "An imperative under an explicit governing shall is included only with that binding parent text retained in its source passage; candidate21 now contains the parent4.6.6 lead-in and full4.6.6.a.",
+        "Source conditions and exceptions are represented explicitly; possible/practicable qualifiers are not erased or turned into unconditional rejection rules.",
+        "If-possible several-alternative and paragraph-start branches are separate candidates52 and53. The undefined count several remains visible as a human-review limitation.",
+        "The specific-test-procedure imperative exception to4.6.6.h is preserved in both passage and applicability condition.",
+        "4.6.6.b only-when reference clarification is rendered as a conditional prohibition, rather than strengthened into an unconditional reference-field requirement."
+      ],
+      "open_dependencies": "Government invocation of ASME Y14.38, IEEE260.1, IEEE/ASTM SI10, and GPO Style Manual is recorded without extracting their underlying clauses. SDO metadata verification needed if retained in final corpus.",
+      "local_repo_discrepancy": {
+        "file": "packet/Projects/dayzero-thread/dataset/standards-practice/mil-std-961f/meta.json",
+        "claimed_id": "MIL-STD-961F",
+        "bytes": 0,
+        "original_filename": "",
+        "sha256": "",
+        "ingested": "",
+        "directory_contains": [
+          "meta.json"
+        ],
+        "index_status": "to acquire",
+        "conclusion": "Unacquired metadata placeholder, not a verified F document. Official ASSIST E Change5 controls current-edition citation; no repository edits performed."
+      }
+    }
+  },
+  "hashes": "Every digest in these outputs was computed with the requested normalization. Passage hash identifies the stored excerpt, sometimes explicitly assembled from noncontiguous governing lead-in plus a list item; it is not a PDF byte hash.",
+  "recordIdPolicy": "DZR-F1 sequence allocated once for this delivery. These identifiers are opaque and must not be reused. Later corrected wording retains identity with a new wording digest unless the obligation itself splits or is replaced.",
+  "classificationRevision": {
+    "revision": "rev2",
+    "authority": "Explicit user instruction to classify all F1 records and retain MIL-HDBK-520A as guidance.",
+    "scope": "Revision copy only; 230 existing records retained with their original IDs, source metadata, verbatim passages, wording and computed passage/wording hashes.",
+    "operative": "The 227 non-handbook records now carry binding=true. This flag retains each existing applicability/invocation condition; it does not make a conditional source a universal contractor obligation.",
+    "guidance": "DZR-F1-0228, DZR-F1-0229 and DZR-F1-0230 now carry binding=false and kind=guidance. The existing sourceDocId MIL-HDBK-520 and its explicit Revision A edition remain unchanged.",
+    "kindPolicy": "Existing legitimate kind categories remain unchanged for the other 227 records.",
+    "verification": "All 230 passage hashes and all 230 wording hashes were independently recomputed using NFC, trim, Unicode-whitespace collapse and UTF-8 SHA-256; every stored hash matched and remained unchanged.",
+    "remainingContractIssue": "F1-data-contract.json is unchanged. Its guidance-only field slots remain present and its canonicalization rule still lacks an explicit guidance-only exclusion. This classification revision does not claim that the contract baseline issue is fixed."
+  }
+}

@@ -1,0 +1,914 @@
+{
+  "feed": "F9",
+  "name": "Configuration status accounting and change-control records",
+  "systemOfRecord": [
+    "The actual contract-designated configuration-management or PLM source for the invoked profile.",
+    "The received controlled CSA,ASDP,ECP,RFV or NOR delivery and its operative source context; a receiving copy or hash does not itself create authority."
+  ],
+  "formats": [
+    {
+      "format": "CSA contractor format; this receiving contract chooses JSON for the illustrative CSA excerpt only.",
+      "spec": "DI-SESS-81253E section2; complete applicable content remains required.",
+      "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5767292"
+    },
+    {
+      "format": "ASDP Microsoft Excel and the actual contract-attached DOAM template; English data.",
+      "spec": "DI-SESS-82333B sections2 and3.15. Missing contract template remains an open gap; no generic JSON or CSV substitution.",
+      "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5778810"
+    },
+    {
+      "format": "ECP: DD1692,Acquirer IDE schema,or Supplier preferred format.",
+      "spec": "DI-SESS-80639E sections2–3; all DD1692-required content applies to every alternative. Form/instructions uninspected.",
+      "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5763543"
+    },
+    {
+      "format": "RFV: DD1694,Acquirer IDE schema,or Supplier preferred format.",
+      "spec": "DI-SESS-80640E sections2–3; all DD1694-required content applies to every alternative. Form/instructions uninspected.",
+      "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5763544"
+    },
+    {
+      "format": "NOR: DD1695,Acquirer IDE schema,or Supplier preferred format.",
+      "spec": "DI-SESS-80642E sections2–3; all DD1695-required content applies to every alternative. Form/instructions uninspected.",
+      "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5763545"
+    }
+  ],
+  "cadence": "As required by the actual contract/CDRL. The inspected DIDs establish no universal periodic submission cadence, real-time refresh interval or automatic change-approval timing.",
+  "keys": {
+    "primary": [
+      "recordId"
+    ],
+    "joins": {
+      "wbs": "wbsId",
+      "requirement": "requirementId"
+    }
+  },
+  "fields": [
+    {
+      "name": "profile",
+      "type": "string",
+      "required": true,
+      "governedBy": [
+        "DZR-F9-0001",
+        "DZR-F9-0002",
+        "DZR-F9-0003",
+        "DZR-F9-0004",
+        "DZR-F9-0005",
+        "DZR-F9-0006",
+        "DZR-F9-0007",
+        "DZR-F9-0008",
+        "DZR-F9-0009",
+        "DZR-F9-0010",
+        "DZR-F9-0011",
+        "DZR-F9-0012",
+        "DZR-F9-0013",
+        "DZR-F9-0014",
+        "DZR-F9-0015",
+        "DZR-F9-0016",
+        "DZR-F9-0017",
+        "DZR-F9-0018",
+        "DZR-F9-0019",
+        "DZR-F9-0020",
+        "DZR-F9-0021",
+        "DZR-F9-0022",
+        "DZR-F9-0023",
+        "DZR-F9-0024",
+        "DZR-F9-0025",
+        "DZR-F9-0026",
+        "DZR-F9-0027",
+        "DZR-F9-0028",
+        "DZR-F9-0029",
+        "DZR-F9-0030",
+        "DZR-F9-0031",
+        "DZR-F9-0032",
+        "DZR-F9-0033",
+        "DZR-F9-0034",
+        "DZR-F9-0035",
+        "DZR-F9-0036",
+        "DZR-F9-0037",
+        "DZR-F9-0038"
+      ],
+      "description": "Receiving choice: exactly one invoked DID profile per payload: DI-SESS-81253E, DI-SESS-82333B, DI-SESS-80639E, DI-SESS-80640E, DI-SESS-80642E. Multiple profiles use separate payloads; profile-specific duties do not automatically migrate between profiles. The profile value alone is not evidence of contractual invocation."
+    },
+    {
+      "name": "completeness",
+      "type": "string",
+      "required": true,
+      "governedBy": [],
+      "description": "Receiving choice: complete or partial-example. Only complete may be considered for acceptance after all source and receiver checks pass. The sample is partial-example and cannot be accepted as a complete CSA, ASDP, ECP, RFV or NOR deliverable."
+    },
+    {
+      "name": "context",
+      "type": "object",
+      "required": true,
+      "governedBy": [
+        "DZR-F9-0001",
+        "DZR-F9-0013",
+        "DZR-F9-0029",
+        "DZR-F9-0032",
+        "DZR-F9-0036"
+      ],
+      "description": "Received operative context, including actual contract/CDRL invocation evidence and applicable source issues. Other received operative context needed to interpret the selected profile remains in this object and is hashed; it is not replaced by a digest or identifier. No guide catalogue is permitted here. The sample declares illustration only and provides no actual contractual invocation."
+    },
+    {
+      "name": "records",
+      "type": "array<object>",
+      "required": true,
+      "governedBy": [
+        "DZR-F9-0001",
+        "DZR-F9-0002",
+        "DZR-F9-0003",
+        "DZR-F9-0004",
+        "DZR-F9-0005",
+        "DZR-F9-0006",
+        "DZR-F9-0007",
+        "DZR-F9-0008",
+        "DZR-F9-0009",
+        "DZR-F9-0010",
+        "DZR-F9-0011",
+        "DZR-F9-0012",
+        "DZR-F9-0013",
+        "DZR-F9-0014",
+        "DZR-F9-0015",
+        "DZR-F9-0016",
+        "DZR-F9-0017",
+        "DZR-F9-0018",
+        "DZR-F9-0019",
+        "DZR-F9-0020",
+        "DZR-F9-0021",
+        "DZR-F9-0022",
+        "DZR-F9-0023",
+        "DZR-F9-0024",
+        "DZR-F9-0025",
+        "DZR-F9-0026",
+        "DZR-F9-0027",
+        "DZR-F9-0028",
+        "DZR-F9-0029",
+        "DZR-F9-0030",
+        "DZR-F9-0031",
+        "DZR-F9-0032",
+        "DZR-F9-0033",
+        "DZR-F9-0034",
+        "DZR-F9-0035",
+        "DZR-F9-0036",
+        "DZR-F9-0037",
+        "DZR-F9-0038"
+      ],
+      "description": "Received operative records. Each record has exactly recordId,wbsId,requirementId,recordType,content. Content uses the coherent fieldsets below; the receiver shape is not a government schema. All applicable source content must be covered across context, records and nativeDelivery before complete acceptance; selecting only a few rows does not waive the remaining source lists."
+    },
+    {
+      "name": "nativeDelivery",
+      "type": "object",
+      "required": true,
+      "governedBy": [
+        "DZR-F9-0002",
+        "DZR-F9-0014",
+        "DZR-F9-0030",
+        "DZR-F9-0031",
+        "DZR-F9-0033",
+        "DZR-F9-0034",
+        "DZR-F9-0037",
+        "DZR-F9-0038"
+      ],
+      "description": "Object containing format and attachments. Format identifies the actual source-permitted delivery choice. Attachments is the ordered list of native files actually delivered, each with fileName,mediaType,contentBase64 containing the complete bytes. No identifiers or external links substitute for bytes of a file actually delivered. The sample has an empty attachment list. A source-permitted reference to an undelivered document remains a reference; this contract does not demand bytes absent a source or actual delivery requirement."
+    },
+    {
+      "name": "recordId",
+      "type": "string",
+      "required": true,
+      "governedBy": [],
+      "description": "Receiving primary key inside each records element. Nonempty, stable within the receiving feed and unique after canonical text normalization. No DID identifier format is invented. Record identity does not replace the source-specific identifiers or received content."
+    },
+    {
+      "name": "wbsId",
+      "type": "string",
+      "required": true,
+      "governedBy": [
+        "DZR-F9-0019"
+      ],
+      "description": "Required receiving join on every record, by user instruction; resolves to the receiving WBS registry. ASDP section3.6.1(a)(6) also expressly requires the associated WBS ID in delivered-item information. Other profiles do not independently impose this field. Example values remain unresolved illustrative references and cannot pass complete acceptance."
+    },
+    {
+      "name": "requirementId",
+      "type": "string",
+      "required": true,
+      "governedBy": [],
+      "description": "Required receiving join on every record, by user instruction; resolves to the receiving requirement registry. This field is not presented as a universal DID column. Example values are illustrative and do not establish an actual requirement trace."
+    },
+    {
+      "name": "recordType",
+      "type": "string",
+      "required": true,
+      "governedBy": [],
+      "description": "Receiving discriminator for a coherent content set, such as artifact-inventory, parts-configuration, engineering-change, variance, audit-action, document-role, file-version, critical-item, change-deliverable or profile-metadata. These are receiving labels, not source-mandated status codes. No engineering approval is implied by the label."
+    },
+    {
+      "name": "content",
+      "type": "object",
+      "required": true,
+      "governedBy": [
+        "DZR-F9-0001",
+        "DZR-F9-0002",
+        "DZR-F9-0003",
+        "DZR-F9-0004",
+        "DZR-F9-0005",
+        "DZR-F9-0006",
+        "DZR-F9-0007",
+        "DZR-F9-0008",
+        "DZR-F9-0009",
+        "DZR-F9-0010",
+        "DZR-F9-0011",
+        "DZR-F9-0012",
+        "DZR-F9-0013",
+        "DZR-F9-0014",
+        "DZR-F9-0015",
+        "DZR-F9-0016",
+        "DZR-F9-0017",
+        "DZR-F9-0018",
+        "DZR-F9-0019",
+        "DZR-F9-0020",
+        "DZR-F9-0021",
+        "DZR-F9-0022",
+        "DZR-F9-0023",
+        "DZR-F9-0024",
+        "DZR-F9-0025",
+        "DZR-F9-0026",
+        "DZR-F9-0027",
+        "DZR-F9-0028",
+        "DZR-F9-0029",
+        "DZR-F9-0030",
+        "DZR-F9-0031",
+        "DZR-F9-0032",
+        "DZR-F9-0033",
+        "DZR-F9-0034",
+        "DZR-F9-0035",
+        "DZR-F9-0036",
+        "DZR-F9-0037",
+        "DZR-F9-0038"
+      ],
+      "description": "All operative information received for the record, using the conditional fieldsets below and preserving additional actual source-required data within the appropriate fieldset. Values and nested arrays are hashed in full. No handbook guidance, invented sample extension, readiness score or assumed approval is admitted into the operative payload."
+    },
+    {
+      "name": "context.invocation",
+      "type": "object",
+      "required": true,
+      "governedBy": [
+        "DZR-F9-0001",
+        "DZR-F9-0002",
+        "DZR-F9-0003",
+        "DZR-F9-0004",
+        "DZR-F9-0005",
+        "DZR-F9-0006",
+        "DZR-F9-0007",
+        "DZR-F9-0008",
+        "DZR-F9-0009",
+        "DZR-F9-0010",
+        "DZR-F9-0011",
+        "DZR-F9-0012",
+        "DZR-F9-0013",
+        "DZR-F9-0014",
+        "DZR-F9-0015",
+        "DZR-F9-0016",
+        "DZR-F9-0017",
+        "DZR-F9-0018",
+        "DZR-F9-0019",
+        "DZR-F9-0020",
+        "DZR-F9-0021",
+        "DZR-F9-0022",
+        "DZR-F9-0023",
+        "DZR-F9-0024",
+        "DZR-F9-0025",
+        "DZR-F9-0026",
+        "DZR-F9-0027",
+        "DZR-F9-0028",
+        "DZR-F9-0029",
+        "DZR-F9-0030",
+        "DZR-F9-0031",
+        "DZR-F9-0032",
+        "DZR-F9-0033",
+        "DZR-F9-0034",
+        "DZR-F9-0035",
+        "DZR-F9-0036",
+        "DZR-F9-0037",
+        "DZR-F9-0038"
+      ],
+      "description": "For complete acceptance, identifies resolvable evidence of actual invocation of the selected DID and the applicable contract/CDRL scope. This receiver evidence gate prevents treating an operative DID as universally applicable. No real contract number or approval is fabricated in the sample."
+    },
+    {
+      "name": "context.applicableSourceIssues",
+      "type": "array<object>",
+      "required": false,
+      "governedBy": [
+        "DZR-F9-0001",
+        "DZR-F9-0013",
+        "DZR-F9-0029",
+        "DZR-F9-0032",
+        "DZR-F9-0036"
+      ],
+      "description": "Conditional: retain contract-specified issues of cited documents, including approval and applicable amendment,notice,revision dates. No automatic substitution of current editions. The exact applicable issue and invocation are unresolved for the illustrative sample."
+    },
+    {
+      "name": "context.language",
+      "type": "string",
+      "required": false,
+      "governedBy": [
+        "DZR-F9-0015"
+      ],
+      "description": "ASDP profile: all data must be English. Other profiles do not acquire an English-only rule from ASDP. This logical field records language context; the actual content must also satisfy the invoked rule."
+    },
+    {
+      "name": "nativeDelivery.format",
+      "type": "string",
+      "required": true,
+      "governedBy": [
+        "DZR-F9-0002",
+        "DZR-F9-0014",
+        "DZR-F9-0030",
+        "DZR-F9-0033",
+        "DZR-F9-0037"
+      ],
+      "description": "CSA: contractor format. ASDP: Microsoft Excel and the actual contract-attached DOAM template. ECP/RFV/NOR: the named DD form, the Acquirer IDE schema, or Supplier preferred format; the form-required content remains mandatory for every alternative. JSON in the sample is a contractor-selected representation for the CSA profile only."
+    },
+    {
+      "name": "nativeDelivery.attachments",
+      "type": "array<object>",
+      "required": true,
+      "governedBy": [
+        "DZR-F9-0014",
+        "DZR-F9-0031",
+        "DZR-F9-0034",
+        "DZR-F9-0038"
+      ],
+      "description": "Ordered native files actually received; each entry contains the exact decoded file bytes represented in canonical padded RFC4648 base64. A received Excel workbook is included in full. Native attachments contain operative delivery data only, never guide-catalogue material. An empty list is valid only when no attachment is actually delivered; it cannot satisfy a profile that requires a missing native delivery."
+    },
+    {
+      "name": "content.artifactInventory",
+      "type": "object|array<object>",
+      "required": false,
+      "governedBy": [
+        "DZR-F9-0003",
+        "DZR-F9-0016"
+      ],
+      "description": "Conditional artifact inventory. Both profiles list project-generated specifications,design data/associated lists,software/firmware,supporting documents with identifier,title,revision,NHA and change history. CSA additionally includes related specifications for design data/software/firmware/supporting documents, not the specification category. ASDP additionally requires submitted status for each digital file and CAGE code plus the referenced/related part-system part number for supporting documents. Preserve category-specific fields; do not impose every field on every category."
+    },
+    {
+      "name": "content.specialIdentifiers",
+      "type": "object|array<object>",
+      "required": false,
+      "governedBy": [
+        "DZR-F9-0004",
+        "DZR-F9-0017"
+      ],
+      "description": "Conditional list of special tag identifiers used for parts,assemblies and software within each product. No invented identifier syntax or universal code set."
+    },
+    {
+      "name": "content.partsConfiguration",
+      "type": "object|array<object>",
+      "required": false,
+      "governedBy": [
+        "DZR-F9-0005",
+        "DZR-F9-0018",
+        "DZR-F9-0019"
+      ],
+      "description": "Conditional IPL information: all installed parts in each serial-numbered product/end-item as delivered and as changed by maintenance/modification. ASDP delivered-item information additionally retains the complete section3.6.1(a)(1–21) fieldset: part number/revision,MDS,part name,nomenclature,serial/lot identifiers,WBS ID,conditional manufacturer/manufacture/installation/DD250 dates,vendor and conditional manufacturing CAGE,NHA part/CAGE/serial,applicable Airworthiness Directive/Service Bulletin IDs,applicable software part/revision per serial-number-controlled unit,CPIN,applicable Technical Manual/Order IDs and revisions,CSI Y/N marker,NSN,warranty identifier,drawing/model and direct-specification/equivalent trace,and part location. Manufacturer/manufacture date apply for CSI,SCI,or both and age/date-managed life-limited items. The literal later branch If not a CSI or age or date managed life limited item omits SCI; installation date applies if available, otherwise DD250 date. Preserve both branches without silently repairing the omission. Manufacturing CAGE applies only if different from vendor CAGE. A generic CSA IPL does not automatically acquire the ASDP-only fieldset."
+    },
+    {
+      "name": "content.engineeringChanges",
+      "type": "object|array<object>",
+      "required": false,
+      "governedBy": [
+        "DZR-F9-0006",
+        "DZR-F9-0020"
+      ],
+      "description": "Conditional CSA change information: engineering changes,implementation activities,reasons,justification or a justification reference,and effectivity. ASDP additionally names ECP ID and effective date. Effective date and effectivity are distinct. A reference is permitted by the source: retain the exact received reference without requiring otherwise-undelivered referenced bytes. Reporting an engineering change is not proof of ECP approval or execution authority."
+    },
+    {
+      "name": "content.variances",
+      "type": "object|array<object>",
+      "required": false,
+      "governedBy": [
+        "DZR-F9-0007",
+        "DZR-F9-0021"
+      ],
+      "description": "Conditional CSA variation information: CSA includes variances and activities related to obtaining CSA consideration; ASDP includes variance information and status for the applicable item. A variance inventory row is not a complete RFV form and does not imply acceptance of a nonconformance. The RFV profile is separately governed by content.changeDeliverable."
+    },
+    {
+      "name": "content.configurationAuditActions",
+      "type": "object|array<object>",
+      "required": false,
+      "governedBy": [
+        "DZR-F9-0008",
+        "DZR-F9-0022"
+      ],
+      "description": "Conditional configuration-audit action items and closeout dates. No closure approval,signature workflow or successful audit is inferred."
+    },
+    {
+      "name": "content.documentResponsibilityOrganizations",
+      "type": "object|array<object>",
+      "required": false,
+      "governedBy": [
+        "DZR-F9-0009",
+        "DZR-F9-0023"
+      ],
+      "description": "Conditional organizations performing Current Document Change Authority,Application Activity,and Document Custodian roles for each project document. No real organization names are invented in the sample."
+    },
+    {
+      "name": "content.fileVersions",
+      "type": "object|array<object>",
+      "required": false,
+      "governedBy": [
+        "DZR-F9-0010",
+        "DZR-F9-0011",
+        "DZR-F9-0016",
+        "DZR-F9-0024"
+      ],
+      "description": "CSA identifies each digital file through a unique identifier indicating version and submitted status within the identifier itself; adjacent version/status fields alone do not establish that identifier requirement. No particular identifier syntax is imposed. CSA and ASDP identify an altered/annotated/redlined version distinct from the originally submitted file version; ASDP inventory also reflects submitted status. Submitted does not mean approved,accepted or released. File version,baseline approval,and hash are distinct concepts."
+    },
+    {
+      "name": "content.criticalItems",
+      "type": "object|array<object>",
+      "required": false,
+      "governedBy": [
+        "DZR-F9-0012",
+        "DZR-F9-0019",
+        "DZR-F9-0025"
+      ],
+      "description": "Conditional critical-item identification using the exact invoked source definitions. CSA identifies CSI; ASDP identifies CSI,SCI or both. ASDP IPL marks Y for an item determined CSI and N otherwise; no separate SCI Y/N enum is invented. Preserve the original critical-characteristic/unsafe-condition and catastrophic-or-critical mishap definitions."
+    },
+    {
+      "name": "content.markings",
+      "type": "object",
+      "required": false,
+      "governedBy": [
+        "DZR-F9-0026",
+        "DZR-F9-0027"
+      ],
+      "description": "ASDP only when applicable/necessary: Distribution Statement under DoDI5230.24 Enclosure4, classification under DoDM5200.01 Volume2 or applicable CUI markings under DoDI5200.48. Referenced issuances are open gaps; actual selection and compliance cannot be claimed from the DID reference alone. Other profile/contract markings remain actual received operative context, without invented policy rules."
+    },
+    {
+      "name": "content.doam",
+      "type": "object",
+      "required": false,
+      "governedBy": [
+        "DZR-F9-0014",
+        "DZR-F9-0028"
+      ],
+      "description": "ASDP conditional template identity and delivered-template context. The actual DOAM Specification/template attached to the contract is missing, so no workbook layout or encoding is invented and complete ASDP acceptance remains blocked. Source3.15 visibly prints Any field that is not applicable shall be marked “NA.” including a full stop inside the quotation marks; retain that exact source wording and defer operational encoding to the actual applicable template. The receiving object does not substitute for required Excel."
+    },
+    {
+      "name": "content.changeDeliverable",
+      "type": "object",
+      "required": false,
+      "governedBy": [
+        "DZR-F9-0029",
+        "DZR-F9-0030",
+        "DZR-F9-0031",
+        "DZR-F9-0032",
+        "DZR-F9-0033",
+        "DZR-F9-0034",
+        "DZR-F9-0035",
+        "DZR-F9-0036",
+        "DZR-F9-0037",
+        "DZR-F9-0038"
+      ],
+      "description": "Conditional ECP,RFV,or NOR content, not a CSA inventory shorthand. Every allowed format still contains all information required by DD1692,DD1694,or DD1695 respectively. The forms and completion instructions are inaccessible, so no form fields/status/signature rules are fabricated and form-content completeness cannot be accepted until inspected. RFV pre-production and post-production contexts share one cost-reduction requirement, with the reduction value enclosed in parentheses; the Acquirer-caused/induced nonconformance exception removes the reduction requirement. No amount,currency,formula or form-field label is invented."
+    }
+  ],
+  "markings": "Retain actual contract/profile markings as operative received data. For ASDP, applicable/necessary distribution marking invokes DoDI5230.24 Enclosure4; applicable classification invokes DoDM5200.01 Volume2, or applicable CUI invokes DoDI5200.48. These three user-held issuances remain open gaps, so the DID reference does not establish marking compliance. No marking is inferred from a hash or from submitted status. The sample contains fictional, unclassified illustrative content only.",
+  "acceptance": [
+    {
+      "rule": "Receiving gate: accept only completeness=complete. Reject partial-example as a complete submission regardless of whether individual illustrative fields happen to be well formed. No sample hash represents an accepted baseline.",
+      "severity": "reject",
+      "governedBy": []
+    },
+    {
+      "rule": "Receiving gate: profile must identify exactly one permitted DID and context.invocation must resolve to evidence of actual contractual/CDRL invocation and applicable scope. No invocation evidence means no complete acceptance.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F9-0001",
+        "DZR-F9-0002",
+        "DZR-F9-0003",
+        "DZR-F9-0004",
+        "DZR-F9-0005",
+        "DZR-F9-0006",
+        "DZR-F9-0007",
+        "DZR-F9-0008",
+        "DZR-F9-0009",
+        "DZR-F9-0010",
+        "DZR-F9-0011",
+        "DZR-F9-0012",
+        "DZR-F9-0013",
+        "DZR-F9-0014",
+        "DZR-F9-0015",
+        "DZR-F9-0016",
+        "DZR-F9-0017",
+        "DZR-F9-0018",
+        "DZR-F9-0019",
+        "DZR-F9-0020",
+        "DZR-F9-0021",
+        "DZR-F9-0022",
+        "DZR-F9-0023",
+        "DZR-F9-0024",
+        "DZR-F9-0025",
+        "DZR-F9-0026",
+        "DZR-F9-0027",
+        "DZR-F9-0028",
+        "DZR-F9-0029",
+        "DZR-F9-0030",
+        "DZR-F9-0031",
+        "DZR-F9-0032",
+        "DZR-F9-0033",
+        "DZR-F9-0034",
+        "DZR-F9-0035",
+        "DZR-F9-0036",
+        "DZR-F9-0037",
+        "DZR-F9-0038"
+      ]
+    },
+    {
+      "rule": "Receiving gate: require the five root keys profile,completeness,context,records,nativeDelivery and reject unknown root keys. Each record has exactly recordId,wbsId,requirementId,recordType,content. Every recordId is nonempty and unique after canonical text normalization; both joins are nonempty and resolve in the receiving WBS and requirement registries. This is the user-selected receiving contract, not a universal DID schema.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F9-0019"
+      ]
+    },
+    {
+      "rule": "Receiving gate: preserve all applicable source-required content across context,records and actual native delivery. An extracted inventory excerpt cannot stand in for the complete report. Retain complete received nested content and actual delivered file bytes; record IDs,counts and references alone are insufficient substitutes for delivered data.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F9-0001",
+        "DZR-F9-0002",
+        "DZR-F9-0003",
+        "DZR-F9-0004",
+        "DZR-F9-0005",
+        "DZR-F9-0006",
+        "DZR-F9-0007",
+        "DZR-F9-0008",
+        "DZR-F9-0009",
+        "DZR-F9-0010",
+        "DZR-F9-0011",
+        "DZR-F9-0012",
+        "DZR-F9-0013",
+        "DZR-F9-0014",
+        "DZR-F9-0015",
+        "DZR-F9-0016",
+        "DZR-F9-0017",
+        "DZR-F9-0018",
+        "DZR-F9-0019",
+        "DZR-F9-0020",
+        "DZR-F9-0021",
+        "DZR-F9-0022",
+        "DZR-F9-0023",
+        "DZR-F9-0024",
+        "DZR-F9-0025",
+        "DZR-F9-0026",
+        "DZR-F9-0027",
+        "DZR-F9-0028",
+        "DZR-F9-0029",
+        "DZR-F9-0030",
+        "DZR-F9-0031",
+        "DZR-F9-0032",
+        "DZR-F9-0033",
+        "DZR-F9-0034",
+        "DZR-F9-0035",
+        "DZR-F9-0036",
+        "DZR-F9-0037",
+        "DZR-F9-0038"
+      ]
+    },
+    {
+      "rule": "For the ASDP profile, require actual Microsoft Excel delivery and the exact contract-attached DOAM Specification/template before complete acceptance. A logical JSON record or invented spreadsheet cannot satisfy that delivery/template rule. The missing actual template is an unresolved gap, not a waived requirement.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F9-0014"
+      ]
+    },
+    {
+      "rule": "For ECP,RFV and NOR profiles, every allowed format must contain all information required by the respective DD form. Complete acceptance is blocked until the applicable DD1692/DD1694/DD1695 form and completion instructions can be inspected and content completeness checked; six inaccessible form/instruction PDFs remain open gaps.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F9-0031",
+        "DZR-F9-0034",
+        "DZR-F9-0038"
+      ]
+    },
+    {
+      "rule": "When ASDP distribution,classification or CUI markings are applicable, do not accept a claim of marking compliance until the governing DoDI5230.24,DoDM5200.01 Volume2 and/or DoDI5200.48 provisions can be inspected. Preserve each clause’s necessary/applicable conditions; no default marking or automatic nonapplicability is inferred.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F9-0026",
+        "DZR-F9-0027"
+      ]
+    },
+    {
+      "rule": "Receiving gate: guidance catalogues,handbook-only fields and inferred engineering-execution duties are excluded from the operative payload and baseline. Do not drop such material silently during hashing; reject it as an operative input and retain guidance in the separate governing-document catalogue only.",
+      "severity": "reject",
+      "governedBy": []
+    },
+    {
+      "rule": "Receiving gate: reject duplicate JSON object keys,normalization-colliding keys,invalid Unicode,nonfinite numbers,ambiguous numbers,malformed base64,or unknown root/record wrapper keys before hashing. Preserve all admitted nested operative values; never silently project away received source-required fields.",
+      "severity": "reject",
+      "governedBy": []
+    },
+    {
+      "rule": "For delivered native attachments, require complete actual bytes. A source-permitted justification reference to an undelivered document remains a reference and does not by itself impose full external-document capture. The digest identifies the received snapshot; it cannot attest to later changes behind a mutable external reference.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F9-0006",
+        "DZR-F9-0020"
+      ]
+    },
+    {
+      "rule": "For the ASDP not-applicable-field rule, preserve the exact printed NA. quotation and keep the contract-template encoding unresolved until the template is supplied. Do not invent a replacement null,blank,zero or alternative token and claim compliance.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F9-0028"
+      ]
+    },
+    {
+      "rule": "Apply only to profile DI-SESS-81253E and only within the source condition: When DI-SESS-81253E is invoked by the applicable contract or CDRL. Verify the complete coherent obligation: The applicable issues of documents cited by DI-SESS-81253E shall match the contract-specified issues, including approval dates and applicable amendment, notice, and revision dates.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F9-0001"
+      ]
+    },
+    {
+      "rule": "Apply only to profile DI-SESS-81253E and only within the source condition: When DI-SESS-81253E is invoked by the applicable contract or CDRL. Verify the complete coherent obligation: The CSA Information shall use the contractor format.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F9-0002"
+      ]
+    },
+    {
+      "rule": "Apply only to profile DI-SESS-81253E and only within the source condition: When DI-SESS-81253E is invoked by the applicable contract or CDRL; related specifications are expressly included for engineering design data/associated lists, software/firmware, and supporting documents; section 3(a) does not add the related-specifications field to the specification inventory. Verify the complete coherent obligation: The CSA Information shall list project-generated specifications, engineering design data and associated lists, software and firmware, and supporting documents with unique identifier, title, revision, Next Higher Assembly, and change history from initial release, including related specifications for engineering design data, software, firmware, and supporting documents.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F9-0003"
+      ]
+    },
+    {
+      "rule": "Apply only to profile DI-SESS-81253E and only within the source condition: When DI-SESS-81253E is invoked by the applicable contract or CDRL. Verify the complete coherent obligation: The CSA Information shall identify special identifiers used to tag parts, assemblies, and software within each product.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F9-0004"
+      ]
+    },
+    {
+      "rule": "Apply only to profile DI-SESS-81253E and only within the source condition: When DI-SESS-81253E is invoked by the applicable contract or CDRL. Verify the complete coherent obligation: The CSA Information shall identify an Indentured Parts List covering all parts installed in each serial-numbered product or end-item as delivered and as changed through maintenance and modification.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F9-0005"
+      ]
+    },
+    {
+      "rule": "Apply only to profile DI-SESS-81253E and only within the source condition: When DI-SESS-81253E is invoked by the applicable contract or CDRL. Verify the complete coherent obligation: The CSA Information shall identify engineering changes and implementation activities, including change reasons, justification or a justification reference, and change effectivity.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F9-0006"
+      ]
+    },
+    {
+      "rule": "Apply only to profile DI-SESS-81253E and only within the source condition: When DI-SESS-81253E is invoked by the applicable contract or CDRL. Verify the complete coherent obligation: The CSA Information shall identify variances and activities related to obtaining CSA consideration.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F9-0007"
+      ]
+    },
+    {
+      "rule": "Apply only to profile DI-SESS-81253E and only within the source condition: When DI-SESS-81253E is invoked by the applicable contract or CDRL. Verify the complete coherent obligation: The CSA Information shall identify configuration-audit action items and closeout dates.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F9-0008"
+      ]
+    },
+    {
+      "rule": "Apply only to profile DI-SESS-81253E and only within the source condition: When DI-SESS-81253E is invoked by the applicable contract or CDRL. Verify the complete coherent obligation: The CSA Information shall identify the organizations performing Current Document Change Authority, Application Activity, and Document Custodian roles for each project document.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F9-0009"
+      ]
+    },
+    {
+      "rule": "Apply only to profile DI-SESS-81253E and only within the source condition: When DI-SESS-81253E is invoked by the applicable contract or CDRL; for each digital file. Verify the complete coherent obligation: The CSA Information shall identify a unique identifier indicating the file version number and submitted status for each digital file.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F9-0010"
+      ]
+    },
+    {
+      "rule": "Apply only to profile DI-SESS-81253E and only within the source condition: When DI-SESS-81253E is invoked by the applicable contract or CDRL; for an annotated or redlined file. Verify the complete coherent obligation: The CSA Information shall identify an altered file version number distinct from the originally submitted version for an annotated or redlined file.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F9-0011"
+      ]
+    },
+    {
+      "rule": "Apply only to profile DI-SESS-81253E and only within the source condition: When DI-SESS-81253E is invoked by the applicable contract or CDRL; for a component, assembly, sub-assembly, or process with one or more critical characteristics capable of causing an unsafe condition when not compliant with design data or quality requirements. Verify the complete coherent obligation: The CSA Information shall identify any Critical Safety Item using the Critical Safety Item definition in section 3(m).",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F9-0012"
+      ]
+    },
+    {
+      "rule": "Apply only to profile DI-SESS-82333B and only within the source condition: When DI-SESS-82333B is invoked by the applicable contract or CDRL. Verify the complete coherent obligation: The applicable issues of documents cited by DI-SESS-82333B shall match the contract-specified issues, including approval dates and applicable amendment, notice, and revision dates.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F9-0013"
+      ]
+    },
+    {
+      "rule": "Apply only to profile DI-SESS-82333B and only within the source condition: When DI-SESS-82333B is invoked by the applicable contract or CDRL; the actual DOAM Specification and template attached to the applicable contract govern the layout; that contract-specific template was not provided and remains an open gap. Verify the complete coherent obligation: The ASDP CSA Information and DOAM listing shall use Microsoft Excel format conforming to the contract-attached DOAM template for PLM ingestion and tracing to the lowest applicable end-item component.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F9-0014"
+      ]
+    },
+    {
+      "rule": "Apply only to profile DI-SESS-82333B and only within the source condition: When DI-SESS-82333B is invoked by the applicable contract or CDRL. Verify the complete coherent obligation: All ASDP CSA data shall use the English language.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F9-0015"
+      ]
+    },
+    {
+      "rule": "Apply only to profile DI-SESS-82333B and only within the source condition: When DI-SESS-82333B is invoked by the applicable contract or CDRL; the CAGE code and referenced/related part-system part number are additional fields for supporting documents in 3.4; submitted status applies to each digital file. Verify the complete coherent obligation: The ASDP CSA Information shall list project-generated specifications, Engineering Design Data and Associated Lists, software and firmware, and supporting documents with unique identifier, title, revision, Next Higher Assembly, change history from initial release, and submitted status for each digital file, adding CAGE code and the referenced or related part/system part number for supporting documents.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F9-0016"
+      ]
+    },
+    {
+      "rule": "Apply only to profile DI-SESS-82333B and only within the source condition: When DI-SESS-82333B is invoked by the applicable contract or CDRL. Verify the complete coherent obligation: The ASDP CSA Information shall list special identifiers used to tag parts, assemblies, and software within each product.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F9-0017"
+      ]
+    },
+    {
+      "rule": "Apply only to profile DI-SESS-82333B and only within the source condition: When DI-SESS-82333B is invoked by the applicable contract or CDRL. Verify the complete coherent obligation: The ASDP Indentured Parts List shall list all parts installed in each serial-numbered product or end-item as delivered and as changed through maintenance and modification.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F9-0018"
+      ]
+    },
+    {
+      "rule": "Apply only to profile DI-SESS-82333B and only within the source condition: When DI-SESS-82333B is invoked by the applicable contract or CDRL; for each assembly, subassembly, part, or component installed in the end item at delivery to the Government; manufacturer and manufacture date apply to CSI, SCI, or both, and to any age/date-managed life-limited item; preserve the exact later branch \"If not a CSI or age or date managed life limited item\" for installation date if available, followed by DD Form 250 date if installation date is unavailable; manufacturing CAGE applies if different from vendor CAGE; Airworthiness Directives and Service Bulletins apply if applicable; software part number/revision applies as applicable to each serial-number-controlled unit; CSI marking is Y if determined CSI and N otherwise; the source NA-field rule remains applicable. Verify the complete coherent obligation: The ASDP Indentured Parts List shall provide the delivered-item identification and traceability fieldset in section 3.6.1(a), covering part number and revision, mission/design and item names, serial and lot identifiers, WBS link, conditional manufacture or installation/receiving dates, vendor/manufacturer and next-higher-assembly identifiers, applicable directives and software/manual references, CSI marking, stock and warranty identifiers, drawing/specification trace, and part locations.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F9-0019"
+      ]
+    },
+    {
+      "rule": "Apply only to profile DI-SESS-82333B and only within the source condition: When DI-SESS-82333B is invoked by the applicable contract or CDRL. Verify the complete coherent obligation: The ASDP CSA Information shall list engineering changes and implementation activities with change reasons, ECP identifier, justification or justification reference, effective date, and applicable effectivity.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F9-0020"
+      ]
+    },
+    {
+      "rule": "Apply only to profile DI-SESS-82333B and only within the source condition: When DI-SESS-82333B is invoked by the applicable contract or CDRL. Verify the complete coherent obligation: The ASDP CSA Information shall list variance information and status for the item covered by the CSA.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F9-0021"
+      ]
+    },
+    {
+      "rule": "Apply only to profile DI-SESS-82333B and only within the source condition: When DI-SESS-82333B is invoked by the applicable contract or CDRL. Verify the complete coherent obligation: The ASDP CSA Information shall identify configuration-audit action items and closeout dates.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F9-0022"
+      ]
+    },
+    {
+      "rule": "Apply only to profile DI-SESS-82333B and only within the source condition: When DI-SESS-82333B is invoked by the applicable contract or CDRL. Verify the complete coherent obligation: The ASDP CSA Information shall identify the organizations performing Current Document Change Authority, Application Activity, and Document Custodian roles for each project document.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F9-0023"
+      ]
+    },
+    {
+      "rule": "Apply only to profile DI-SESS-82333B and only within the source condition: When DI-SESS-82333B is invoked by the applicable contract or CDRL; for an annotated or redlined file. Verify the complete coherent obligation: The ASDP CSA Information shall list an altered file version number distinct from the originally submitted version for an annotated or redlined file.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F9-0024"
+      ]
+    },
+    {
+      "rule": "Apply only to profile DI-SESS-82333B and only within the source condition: When DI-SESS-82333B is invoked by the applicable contract or CDRL; CSI covers a component, assembly, sub-assembly, or process with critical characteristics capable of causing an unsafe condition when noncompliant with design data or quality requirements; SCI covers a component, assembly, sub-assembly, or process associated with a function resulting in a catastrophic- or critical-severity mishap. Verify the complete coherent obligation: The ASDP CSA Information shall list any Critical Safety Item, Safety Critical Item, or item meeting both classifications according to the definitions in section 3.12.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F9-0025"
+      ]
+    },
+    {
+      "rule": "Apply only to profile DI-SESS-82333B and only within the source condition: When DI-SESS-82333B is invoked by the applicable contract or CDRL; as necessary and applicable. Verify the complete coherent obligation: The ASDP CSA Information shall include the applicable Distribution Statement required by DoDI 5230.24 Enclosure 4.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F9-0026"
+      ]
+    },
+    {
+      "rule": "Apply only to profile DI-SESS-82333B and only within the source condition: When DI-SESS-82333B is invoked by the applicable contract or CDRL; classification marking applies as necessary; CUI markings apply when applicable. Verify the complete coherent obligation: The ASDP CSA Information shall include applicable classification markings under DoDM 5200.01 Volume 2 or applicable CUI markings under DoDI 5200.48.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F9-0027"
+      ]
+    },
+    {
+      "rule": "Apply only to profile DI-SESS-82333B and only within the source condition: When DI-SESS-82333B is invoked by the applicable contract or CDRL; when a field is not applicable. Verify the complete coherent obligation: The ASDP CSA Information shall mark every non-applicable field using the source-prescribed not-applicable marker in section 3.15.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F9-0028"
+      ]
+    },
+    {
+      "rule": "Apply only to profile DI-SESS-80639E and only within the source condition: When DI-SESS-80639E is invoked by the applicable contract or CDRL for the required data deliverable. Verify the complete coherent obligation: The applicable issues of documents cited by DI-SESS-80639E shall match the contract-specified issues, including approval dates and applicable amendment, notice, and revision dates.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F9-0029"
+      ]
+    },
+    {
+      "rule": "Apply only to profile DI-SESS-80639E and only within the source condition: When DI-SESS-80639E is invoked by the applicable contract or CDRL for the required data deliverable. Verify the complete coherent obligation: The Engineering Change Proposal shall use DD Form 1692, the schema required by the Acquirer’s Integrated Digital Environment, or the Supplier’s preferred format.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F9-0030"
+      ]
+    },
+    {
+      "rule": "Apply only to profile DI-SESS-80639E and only within the source condition: When DI-SESS-80639E is invoked by the applicable contract or CDRL for the required data deliverable. Verify the complete coherent obligation: The Engineering Change Proposal shall contain all information required by DD Form 1692.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F9-0031"
+      ]
+    },
+    {
+      "rule": "Apply only to profile DI-SESS-80640E and only within the source condition: When DI-SESS-80640E is invoked by the applicable contract or CDRL for the required data deliverable. Verify the complete coherent obligation: The applicable issues of documents cited by DI-SESS-80640E shall match the contract-specified issues, including approval dates and applicable amendment, notice, and revision dates.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F9-0032"
+      ]
+    },
+    {
+      "rule": "Apply only to profile DI-SESS-80640E and only within the source condition: When DI-SESS-80640E is invoked by the applicable contract or CDRL for the required data deliverable. Verify the complete coherent obligation: The Request for Variance shall use DD Form 1694, the schema required by the Acquirer’s Integrated Digital Environment, or the Supplier’s preferred format.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F9-0033"
+      ]
+    },
+    {
+      "rule": "Apply only to profile DI-SESS-80640E and only within the source condition: When DI-SESS-80640E is invoked by the applicable contract or CDRL for the required data deliverable. Verify the complete coherent obligation: The Request for Variance shall contain all information required by DD Form 1694.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F9-0034"
+      ]
+    },
+    {
+      "rule": "Apply only to profile DI-SESS-80640E and only within the source condition: When DI-SESS-80640E is invoked by the applicable contract or CDRL for the required data deliverable. For a proposed pre-production departure from approved product definition information or a product found nonconforming after production; a reduction in cost is not required when the nonconformance is induced or caused by the Acquirer. Verify the complete coherent obligation: The Request for Variance shall identify a variance resulting in a reduction in cost, with the reduction value enclosed in parentheses.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F9-0035"
+      ]
+    },
+    {
+      "rule": "Apply only to profile DI-SESS-80642E and only within the source condition: When DI-SESS-80642E is invoked by the applicable contract or CDRL for the required data deliverable. Verify the complete coherent obligation: The applicable issues of documents cited by DI-SESS-80642E shall match the contract-specified issues, including approval dates and applicable amendment, notice, and revision dates.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F9-0036"
+      ]
+    },
+    {
+      "rule": "Apply only to profile DI-SESS-80642E and only within the source condition: When DI-SESS-80642E is invoked by the applicable contract or CDRL for the required data deliverable. Verify the complete coherent obligation: The Notice of Revision shall use DD Form 1695, the schema required by the Acquirer’s Integrated Digital Environment, or the Supplier’s preferred format.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F9-0037"
+      ]
+    },
+    {
+      "rule": "Apply only to profile DI-SESS-80642E and only within the source condition: When DI-SESS-80642E is invoked by the applicable contract or CDRL for the required data deliverable. Verify the complete coherent obligation: The Notice of Revision shall contain all information required by DD Form 1695.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F9-0038"
+      ]
+    }
+  ],
+  "canonicalForm": "The canonical input is the entire receiving payload object with exactly profile,completeness,context,records,nativeDelivery; do not hash only IDs,counts or selected fields. Each record has exactly recordId,wbsId,requirementId,recordType,content. Unknown root/record wrapper keys are rejected before acceptance; all admitted operative nested context/content/native-delivery values are included recursively. Guide catalogues and handbook-only content are outside the payload and hash, not silently filtered from an otherwise accepted payload. Parse JSON with duplicate-key rejection and exact base-10 numbers (no binary floating-point rounding); reject nonfinite numbers and invalid Unicode/surrogates. For every string and object key apply NFC, then collapse each run of Unicode White_Space to one U+0020 and trim boundary U+0020. White_Space means U+0009–000D,U+0020,U+0085,U+00A0,U+1680,U+2000–200A,U+2028,U+2029,U+202F,U+205F,U+3000; reject object-key collisions after normalization. Preserve case and punctuation, including source status tokens. Sort root records by normalized recordId in Unicode code-point order; reject duplicate normalized recordIds. Preserve every other array order. Sort each object by normalized keys in Unicode code-point order. Serialize JSON with no insignificant spaces, UTF-8 Unicode characters unescaped except quotation mark,backslash,and control characters; use the standard short JSON escapes for backspace,tab,line feed,form feed,carriage return and lowercase four-digit Unicode escapes for other U+0000–001F controls. Serialize true,false,null in lowercase. Serialize finite numbers exactly in ordinary decimal notation without exponent,leading plus or unnecessary leading zeros; remove fractional trailing zeros and the decimal point if unused, and render every numeric zero as 0. Strings containing version-like digits remain strings. Native attachments include fileName,mediaType,contentBase64 for the complete bytes actually delivered. Validate original contentBase64 strings as strict RFC4648 base64 before any text normalization, rejecting embedded or boundary whitespace; decode and re-encode with canonical padding before hashing. The represented native bytes are never text-normalized. Preserve attachment array order. Actual delivered native bytes are included; a permitted justification reference to an undelivered document remains the received reference and does not impose capture of an external document. Finally apply the task-wide NFC,trim,and Unicode White_Space-collapse rule to the complete serialized JSON text, using the same explicit White_Space set, then encode UTF-8 and compute SHA-256 over the complete bytes; emit lowercase64hex. This final normalization is idempotent after the recursive string/key normalization and compact serialization above. baselineHash below is the computed digest of the three-row partial sample only, not an accepted production baseline. A production baseline requires complete actual content and all applicable acceptance checks. No readiness score, approval, or authority is inferred from a digest.",
+  "baselineHash": "f9e2d487fb6d544be4cecd52f1dd7b4d470c72b458bbe36f127752e2514a4307",
+  "mil-hdbk-539a": [
+    {
+      "section": "4.8.2.1.3",
+      "concept": "authoritative source of truth",
+      "howThisFeedServesIt": "Preserves traceable received configuration/change records and source context; a digest does not manufacture authority. Nonbinding framing only. Source: https://quicksearch.dla.mil/WMX/Default.aspx?token=5801571 . Guidance is excluded from the operative payload and baseline hash."
+    },
+    {
+      "section": "4.8.2.3",
+      "concept": "digital thread",
+      "howThisFeedServesIt": "Links received configuration information, applicable changes and source records so stakeholders can follow the trace. No integration or live-update mandate is inferred. Source: https://quicksearch.dla.mil/WMX/Default.aspx?token=5801571 . Guidance is excluded from the operative payload and baseline hash."
+    },
+    {
+      "section": "5.2.8.2-5.2.8.3; 5.2.8.8",
+      "concept": "authoritative source of truth",
+      "howThisFeedServesIt": "Keeps CM context, baseline approval and file-set version concepts distinguishable without adding handbook-only mandatory fields or rejection gates. Source: https://quicksearch.dla.mil/WMX/Default.aspx?token=5801571 . Guidance is excluded from the operative payload and baseline hash."
+    }
+  ],
+  "sample": "{\n  \"profile\": \"DI-SESS-81253E\",\n  \"completeness\": \"partial-example\",\n  \"context\": {\n    \"invocation\": {\n      \"status\": \"illustrative-only; no actual contract/CDRL invocation supplied\"\n    },\n    \"joinValidation\": \"not validated; illustrative references only\",\n    \"scope\": \"Three partial CSA inventory records; not a complete deliverable.\"\n  },\n  \"records\": [\n    {\n      \"recordId\": \"HALCYON-CSA-001\",\n      \"wbsId\": \"HALCYON-WBS-001\",\n      \"requirementId\": \"HALCYON-REQ-001\",\n      \"recordType\": \"artifact-inventory\",\n      \"content\": {\n        \"artifactInventory\": {\n          \"artifactCategory\": \"specification\",\n          \"uniqueIdentifier\": \"HALCYON-SPEC-001\",\n          \"title\": \"HALCYON interface specification\",\n          \"revision\": \"A\",\n          \"nextHigherAssembly\": \"HALCYON-ASSEMBLY-001\",\n          \"changeHistory\": [\n            {\n              \"revision\": \"A\",\n              \"description\": \"Initial release\"\n            }\n          ]\n        },\n        \"fileVersions\": {\n          \"digitalFileIdentifier\": \"HALCYON-SPEC-001-A-SUBMITTED\",\n          \"fileVersion\": \"A\",\n          \"submittedStatus\": \"submitted\"\n        }\n      }\n    },\n    {\n      \"recordId\": \"HALCYON-CSA-002\",\n      \"wbsId\": \"HALCYON-WBS-001\",\n      \"requirementId\": \"HALCYON-REQ-002\",\n      \"recordType\": \"engineering-change\",\n      \"content\": {\n        \"engineeringChanges\": {\n          \"description\": \"Update the interface-document labels.\",\n          \"implementationActivities\": [\n            \"Prepare the corresponding specification revision and configuration record.\"\n          ],\n          \"changeReason\": \"Align the labels across the interface documentation.\",\n          \"changeJustificationOrReference\": {\n            \"kind\": \"text\",\n            \"value\": \"Consistent labels improve the trace between the interface description and configuration record.\"\n          },\n          \"effectivity\": \"HALCYON configuration revision B\"\n        }\n      }\n    },\n    {\n      \"recordId\": \"HALCYON-CSA-003\",\n      \"wbsId\": \"HALCYON-WBS-001\",\n      \"requirementId\": \"HALCYON-REQ-003\",\n      \"recordType\": \"variance\",\n      \"content\": {\n        \"variances\": {\n          \"description\": \"Record a temporary difference in the interface-document label.\",\n          \"csaConsiderationActivities\": [\n            \"Prepare the supporting rationale for CSA consideration.\"\n          ]\n        }\n      }\n    }\n  ],\n  \"nativeDelivery\": {\n    \"format\": \"Contractor-selected JSON representation for DI-SESS-81253E; partial illustration only.\",\n    \"attachments\": []\n  }\n}"
+}

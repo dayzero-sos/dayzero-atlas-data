@@ -1,0 +1,716 @@
+{
+  "feed": "F3",
+  "name": "Integrated Master Schedule — task-row CSV",
+  "systemOfRecord": [
+    "The contractor schedule tool that produces the authoritative native schedule"
+  ],
+  "formats": [
+    {
+      "format": "IMS CSV",
+      "spec": "Task-requested CSV exchange with explicit field mappings to DI-MGMT-81861C and the SPD v1.0 FFS/DEI. This CSV is not the complete native schedule or native SPD ZIP submission.",
+      "url": "https://www.acq.osd.mil/asda/dpc/api/ipm/docs/20200312%20schedule%20performance%20dataset%20-%20ffs.pdf"
+    }
+  ],
+  "cadence": "Under invoked DI-MGMT-81861C §1.8.1 https://quicksearch.dla.mil/WMX/Default.aspx?token=5773808: at least monthly; frequency specified in CDRL; same accounting period; after close and no later than sixteen business days after accounting-period end. Apply actual contract/CDRL applicability and tailoring; no universal cadence is inferred for a non-invoked CSV export.",
+  "keys": {
+    "primary": [
+      "TaskID"
+    ],
+    "joins": {
+      "wbs": "WBSElementID",
+      "requirement": "requirementId"
+    }
+  },
+  "fields": [
+    {
+      "name": "ProgramName",
+      "type": "string",
+      "required": true,
+      "governedBy": [
+        "DZR-F3-0032"
+      ],
+      "description": "DatasetMetadata.ProgramName; DID §2.2.3 https://quicksearch.dla.mil/WMX/Default.aspx?token=5773808. The CSV repeats dataset metadata on each task row. HALCYON appears only in the three sample rows."
+    },
+    {
+      "name": "SecurityMarking",
+      "type": "string",
+      "required": true,
+      "governedBy": [
+        "DZR-F3-0089",
+        "DZR-F3-0090"
+      ],
+      "description": "DatasetMetadata.SecurityMarking; FFS §2.2.1 https://www.acq.osd.mil/asda/dpc/api/ipm/docs/20200312%20schedule%20performance%20dataset%20-%20ffs.pdf. Required native field. DEI §2.1.1 https://www.acq.osd.mil/asda/dpc/api/ipm/docs/20200312%20schedule%20performance%20dataset%20-%20dei.pdf specifies UNCLASSIFIED or an UNCLASSIFIED// prefix for unclassified data. This does not resolve inaccessible marking issuances."
+    },
+    {
+      "name": "DistributionStatement",
+      "type": "string|null",
+      "required": false,
+      "governedBy": [
+        "DZR-F3-0089"
+      ],
+      "description": "DatasetMetadata.DistributionStatement; FFS §2.2.1 and DEI §2.1.1 https://www.acq.osd.mil/asda/dpc/api/ipm/docs/20200312%20schedule%20performance%20dataset%20-%20dei.pdf. Supply when applicable; null does not establish public-release permission."
+    },
+    {
+      "name": "ReportingPeriodEndDate",
+      "type": "date",
+      "required": true,
+      "governedBy": [
+        "DZR-F3-0004",
+        "DZR-F3-0017",
+        "DZR-F3-0034",
+        "DZR-F3-0090"
+      ],
+      "description": "DatasetMetadata.ReportingPeriodEndDate; DEI §2.1.1 https://www.acq.osd.mil/asda/dpc/api/ipm/docs/20200312%20schedule%20performance%20dataset%20-%20dei.pdf. yyyy-mm-dd, current reporting-period end, distinct from schedule StatusDate."
+    },
+    {
+      "name": "StatusDate",
+      "type": "date",
+      "required": true,
+      "governedBy": [
+        "DZR-F3-0039",
+        "DZR-F3-0040",
+        "DZR-F3-0041",
+        "DZR-F3-0090"
+      ],
+      "description": "ProjectScheduleData.StatusDate; FFS §2.2.3 and DEI §2.1.3 https://www.acq.osd.mil/asda/dpc/api/ipm/docs/20200312%20schedule%20performance%20dataset%20-%20dei.pdf. Schedule data date in yyyy-mm-dd."
+    },
+    {
+      "name": "DurationUnitsID",
+      "type": "string",
+      "required": true,
+      "governedBy": [
+        "DZR-F3-0089",
+        "DZR-F3-0090",
+        "DZR-F3-0092"
+      ],
+      "description": "ProjectScheduleData.DurationUnitsID; FFS §§2.2.3,2.4.2 https://www.acq.osd.mil/asda/dpc/api/ipm/docs/20200312%20schedule%20performance%20dataset%20-%20ffs.pdf. DAYS or HOURS. Working-time durations retain their source calendar; they are not elapsed date subtraction."
+    },
+    {
+      "name": "TaskID",
+      "type": "string",
+      "required": true,
+      "governedBy": [
+        "DZR-F3-0091",
+        "DZR-F3-0094",
+        "DZR-F3-0141"
+      ],
+      "description": "Tasks.ID joined to TaskScheduleData.TaskID; FFS §§2.2.9–2.2.10 https://www.acq.osd.mil/asda/dpc/api/ipm/docs/20200312%20schedule%20performance%20dataset%20-%20ffs.pdf. Persistent unique identifier within one schedule. Do not derive from a mutable row number."
+    },
+    {
+      "name": "TaskName",
+      "type": "string",
+      "required": true,
+      "governedBy": [
+        "DZR-F3-0045",
+        "DZR-F3-0046",
+        "DZR-F3-0047",
+        "DZR-F3-0048",
+        "DZR-F3-0049",
+        "DZR-F3-0090"
+      ],
+      "description": "Tasks.Name; DID §2.4.2.3 https://quicksearch.dla.mil/WMX/Default.aspx?token=5773808. Concise, unique name reflecting scope, output and schedule architecture."
+    },
+    {
+      "name": "TaskTypeID",
+      "type": "string",
+      "required": true,
+      "governedBy": [
+        "DZR-F3-0089",
+        "DZR-F3-0090",
+        "DZR-F3-0092"
+      ],
+      "description": "Tasks.TaskTypeID; FFS §§2.2.9,2.4.3 https://www.acq.osd.mil/asda/dpc/api/ipm/docs/20200312%20schedule%20performance%20dataset%20-%20ffs.pdf. ACTIVITY, MILESTONE, SUMMARY or HAMMOCK."
+    },
+    {
+      "name": "TaskPlanningLevelID",
+      "type": "string|null",
+      "required": false,
+      "governedBy": [
+        "DZR-F3-0109"
+      ],
+      "description": "Tasks.TaskPlanningLevelID; FFS §§2.2.9,2.4.5 https://www.acq.osd.mil/asda/dpc/api/ipm/docs/20200312%20schedule%20performance%20dataset%20-%20ffs.pdf. Nonnull for ACTIVITY; preserve native enumeration. required=false means not unconditional, not that this condition can be ignored."
+    },
+    {
+      "name": "WBSElementID",
+      "type": "string",
+      "required": true,
+      "governedBy": [],
+      "description": "User-required WBS join on every row. Native Tasks.WBSElementID is nullable and applicable-context dependent (FFS §2.2.9; DEI §2.1.9 https://www.acq.osd.mil/asda/dpc/api/ipm/docs/20200312%20schedule%20performance%20dataset%20-%20dei.pdf). Use the associated MIL-STD-881F WBS identifier; validate against the separately supplied WBS. MIL-STD-881F §3.2.5.3 is not claimed to impose this all-rows rule."
+    },
+    {
+      "name": "requirementId",
+      "type": "string",
+      "required": true,
+      "governedBy": [],
+      "description": "User-required requirement-record join on every row. This is a CSV trace column, not an invented property of native SPD Tasks.json. Native import must preserve an authorized custom-field/trace mapping separately; FFS §4.1 https://www.acq.osd.mil/asda/dpc/api/ipm/docs/20200312%20schedule%20performance%20dataset%20-%20ffs.pdf prohibits undefined native JSON properties. No regulatory source mandates this user-selected join."
+    },
+    {
+      "name": "ControlAccountID",
+      "type": "string|null",
+      "required": false,
+      "governedBy": [
+        "DZR-F3-0052",
+        "DZR-F3-0053",
+        "DZR-F3-0054",
+        "DZR-F3-0055"
+      ],
+      "description": "Tasks.ControlAccountID; DID §§2.4.2.6.1–2.4.2.6.2 https://quicksearch.dla.mil/WMX/Default.aspx?token=5773808. Discrete tasks/activities and work/planning packages must trace to a control account under the invoked DID; reconcile applicable associations with CPD."
+    },
+    {
+      "name": "WorkPackageID",
+      "type": "string|null",
+      "required": false,
+      "governedBy": [
+        "DZR-F3-0056",
+        "DZR-F3-0057"
+      ],
+      "description": "Tasks.WorkPackageID; DEI §2.1.9 https://www.acq.osd.mil/asda/dpc/api/ipm/docs/20200312%20schedule%20performance%20dataset%20-%20dei.pdf. Work/planning-package association when applicable; native nullable field."
+    },
+    {
+      "name": "SOWReference",
+      "type": "string|null",
+      "required": false,
+      "governedBy": [
+        "DZR-F3-0042"
+      ],
+      "description": "Tasks.SOWReference; DID §2.4.2.1 https://quicksearch.dla.mil/WMX/Default.aspx?token=5773808. SOW or IMP references are required in both native schedule and SPD when used for vertical integration; this column carries a SOW reference when used."
+    },
+    {
+      "name": "EarnedValueTechniqueID",
+      "type": "string|null",
+      "required": false,
+      "governedBy": [
+        "DZR-F3-0064",
+        "DZR-F3-0142"
+      ],
+      "description": "Tasks.EarnedValueTechniqueID; DID §2.4.2.9 https://quicksearch.dla.mil/WMX/Default.aspx?token=5773808; FFS §2.4.6 and DEI §2.1.9 https://www.acq.osd.mil/asda/dpc/api/ipm/docs/20200312%20schedule%20performance%20dataset%20-%20dei.pdf. Preserve conditional planning-package prohibition and its LOE/apportioned-effort exception."
+    },
+    {
+      "name": "CalendarID",
+      "type": "string",
+      "required": true,
+      "governedBy": [
+        "DZR-F3-0038",
+        "DZR-F3-0090",
+        "DZR-F3-0092",
+        "DZR-F3-0105"
+      ],
+      "description": "TaskScheduleData.CalendarID; FFS §§2.2.6–2.2.10 https://www.acq.osd.mil/asda/dpc/api/ipm/docs/20200312%20schedule%20performance%20dataset%20-%20ffs.pdf. Resolves to the source schedule calendar, workshifts and applicable exceptions. This row extract does not replace those supporting data."
+    },
+    {
+      "name": "CurrentDuration",
+      "type": "number",
+      "required": true,
+      "governedBy": [
+        "DZR-F3-0050",
+        "DZR-F3-0089",
+        "DZR-F3-0090"
+      ],
+      "description": "TaskScheduleData.CurrentDuration; FFS §2.2.10 https://www.acq.osd.mil/asda/dpc/api/ipm/docs/20200312%20schedule%20performance%20dataset%20-%20ffs.pdf. Current total span of working time."
+    },
+    {
+      "name": "CurrentStartDate",
+      "type": "date",
+      "required": true,
+      "governedBy": [
+        "DZR-F3-0040",
+        "DZR-F3-0143",
+        "DZR-F3-0089",
+        "DZR-F3-0090"
+      ],
+      "description": "TaskScheduleData.CurrentStartDate; FFS §2.2.10 https://www.acq.osd.mil/asda/dpc/api/ipm/docs/20200312%20schedule%20performance%20dataset%20-%20ffs.pdf. Current start comparable with the applicable baseline start."
+    },
+    {
+      "name": "CurrentFinishDate",
+      "type": "date",
+      "required": true,
+      "governedBy": [
+        "DZR-F3-0041",
+        "DZR-F3-0144",
+        "DZR-F3-0089",
+        "DZR-F3-0090"
+      ],
+      "description": "TaskScheduleData.CurrentFinishDate; FFS §2.2.10 https://www.acq.osd.mil/asda/dpc/api/ipm/docs/20200312%20schedule%20performance%20dataset%20-%20ffs.pdf. Current finish comparable with the applicable baseline finish."
+    },
+    {
+      "name": "EarlyStartDate",
+      "type": "date",
+      "required": true,
+      "governedBy": [
+        "DZR-F3-0089",
+        "DZR-F3-0090"
+      ],
+      "description": "TaskScheduleData.EarlyStartDate; FFS §2.2.10 https://www.acq.osd.mil/asda/dpc/api/ipm/docs/20200312%20schedule%20performance%20dataset%20-%20ffs.pdf. Calculated early start in source schedule."
+    },
+    {
+      "name": "EarlyFinishDate",
+      "type": "date",
+      "required": true,
+      "governedBy": [
+        "DZR-F3-0089",
+        "DZR-F3-0090"
+      ],
+      "description": "TaskScheduleData.EarlyFinishDate; FFS §2.2.10 https://www.acq.osd.mil/asda/dpc/api/ipm/docs/20200312%20schedule%20performance%20dataset%20-%20ffs.pdf. Calculated early finish in source schedule."
+    },
+    {
+      "name": "LateStartDate",
+      "type": "date",
+      "required": true,
+      "governedBy": [
+        "DZR-F3-0089",
+        "DZR-F3-0090"
+      ],
+      "description": "TaskScheduleData.LateStartDate; FFS §2.2.10 https://www.acq.osd.mil/asda/dpc/api/ipm/docs/20200312%20schedule%20performance%20dataset%20-%20ffs.pdf. Calculated late start in source schedule."
+    },
+    {
+      "name": "LateFinishDate",
+      "type": "date",
+      "required": true,
+      "governedBy": [
+        "DZR-F3-0089",
+        "DZR-F3-0090"
+      ],
+      "description": "TaskScheduleData.LateFinishDate; FFS §2.2.10 https://www.acq.osd.mil/asda/dpc/api/ipm/docs/20200312%20schedule%20performance%20dataset%20-%20ffs.pdf. Calculated late finish in source schedule."
+    },
+    {
+      "name": "FreeFloatDuration",
+      "type": "number",
+      "required": true,
+      "governedBy": [
+        "DZR-F3-0066",
+        "DZR-F3-0089",
+        "DZR-F3-0090"
+      ],
+      "description": "TaskScheduleData.FreeFloatDuration; FFS §2.2.10 https://www.acq.osd.mil/asda/dpc/api/ipm/docs/20200312%20schedule%20performance%20dataset%20-%20ffs.pdf. Free float/slack; retain source calendar and units."
+    },
+    {
+      "name": "TotalFloatDuration",
+      "type": "number",
+      "required": true,
+      "governedBy": [
+        "DZR-F3-0065",
+        "DZR-F3-0089",
+        "DZR-F3-0090"
+      ],
+      "description": "TaskScheduleData.TotalFloatDuration; FFS §2.2.10 https://www.acq.osd.mil/asda/dpc/api/ipm/docs/20200312%20schedule%20performance%20dataset%20-%20ffs.pdf. Total float/slack; retain source calendar and units."
+    },
+    {
+      "name": "OnCriticalPath",
+      "type": "boolean",
+      "required": true,
+      "governedBy": [
+        "DZR-F3-0069",
+        "DZR-F3-0089",
+        "DZR-F3-0090"
+      ],
+      "description": "TaskScheduleData.OnCriticalPath; FFS §2.2.10 https://www.acq.osd.mil/asda/dpc/api/ipm/docs/20200312%20schedule%20performance%20dataset%20-%20ffs.pdf. Native nonnullable critical-path flag."
+    },
+    {
+      "name": "OnDrivingPath",
+      "type": "boolean|null",
+      "required": false,
+      "governedBy": [
+        "DZR-F3-0067",
+        "DZR-F3-0068",
+        "DZR-F3-0089",
+        "DZR-F3-0090"
+      ],
+      "description": "TaskScheduleData.OnDrivingPath; FFS §2.2.10 https://www.acq.osd.mil/asda/dpc/api/ipm/docs/20200312%20schedule%20performance%20dataset%20-%20ffs.pdf. Native nullable flag; invoked DID requires identification of driving paths to the directed or default next event."
+    },
+    {
+      "name": "BaselineDuration",
+      "type": "number|null",
+      "required": false,
+      "governedBy": [
+        "DZR-F3-0113",
+        "DZR-F3-0089",
+        "DZR-F3-0090"
+      ],
+      "description": "TaskScheduleData.BaselineDuration; FFS §2.2.10 https://www.acq.osd.mil/asda/dpc/api/ipm/docs/20200312%20schedule%20performance%20dataset%20-%20ffs.pdf. Conditional five-field baseline bundle."
+    },
+    {
+      "name": "BaselineStartDate",
+      "type": "date|null",
+      "required": false,
+      "governedBy": [
+        "DZR-F3-0051",
+        "DZR-F3-0113",
+        "DZR-F3-0143",
+        "DZR-F3-0089",
+        "DZR-F3-0090"
+      ],
+      "description": "TaskScheduleData.BaselineStartDate; FFS §2.2.10 https://www.acq.osd.mil/asda/dpc/api/ipm/docs/20200312%20schedule%20performance%20dataset%20-%20ffs.pdf. Required for items within the performance measurement baseline when the DID applies; otherwise conditional bundle."
+    },
+    {
+      "name": "BaselineFinishDate",
+      "type": "date|null",
+      "required": false,
+      "governedBy": [
+        "DZR-F3-0051",
+        "DZR-F3-0113",
+        "DZR-F3-0144",
+        "DZR-F3-0089",
+        "DZR-F3-0090"
+      ],
+      "description": "TaskScheduleData.BaselineFinishDate; FFS §2.2.10 https://www.acq.osd.mil/asda/dpc/api/ipm/docs/20200312%20schedule%20performance%20dataset%20-%20ffs.pdf. Required for items within the performance measurement baseline when the DID applies; otherwise conditional bundle."
+    },
+    {
+      "name": "StartVarianceDuration",
+      "type": "number|null",
+      "required": false,
+      "governedBy": [
+        "DZR-F3-0113",
+        "DZR-F3-0089",
+        "DZR-F3-0090"
+      ],
+      "description": "TaskScheduleData.StartVarianceDuration; FFS §2.2.10 https://www.acq.osd.mil/asda/dpc/api/ipm/docs/20200312%20schedule%20performance%20dataset%20-%20ffs.pdf. Current-versus-baseline start variance in reported working-time units; conditional baseline bundle."
+    },
+    {
+      "name": "FinishVarianceDuration",
+      "type": "number|null",
+      "required": false,
+      "governedBy": [
+        "DZR-F3-0113",
+        "DZR-F3-0089",
+        "DZR-F3-0090"
+      ],
+      "description": "TaskScheduleData.FinishVarianceDuration; FFS §2.2.10 https://www.acq.osd.mil/asda/dpc/api/ipm/docs/20200312%20schedule%20performance%20dataset%20-%20ffs.pdf. Current-versus-baseline finish variance in reported working-time units; conditional baseline bundle."
+    },
+    {
+      "name": "CalculatedPercentComplete",
+      "type": "number",
+      "required": true,
+      "governedBy": [
+        "DZR-F3-0060",
+        "DZR-F3-0062",
+        "DZR-F3-0089",
+        "DZR-F3-0090"
+      ],
+      "description": "TaskScheduleData.CalculatedPercentComplete; FFS §2.2.10 https://www.acq.osd.mil/asda/dpc/api/ipm/docs/20200312%20schedule%20performance%20dataset%20-%20ffs.pdf. Time-based fraction, e.g. 1 represents complete; not a whole-number percent."
+    },
+    {
+      "name": "PhysicalPercentComplete",
+      "type": "number|null",
+      "required": false,
+      "governedBy": [
+        "DZR-F3-0061",
+        "DZR-F3-0063",
+        "DZR-F3-0089",
+        "DZR-F3-0090"
+      ],
+      "description": "TaskScheduleData.PhysicalPercentComplete; FFS §2.2.10 https://www.acq.osd.mil/asda/dpc/api/ipm/docs/20200312%20schedule%20performance%20dataset%20-%20ffs.pdf. Optional/applicable scope-accomplishment fraction, distinct from time-based completion."
+    },
+    {
+      "name": "RemainingDuration",
+      "type": "number",
+      "required": true,
+      "governedBy": [
+        "DZR-F3-0039",
+        "DZR-F3-0089",
+        "DZR-F3-0090"
+      ],
+      "description": "TaskScheduleData.RemainingDuration; FFS §2.2.10 https://www.acq.osd.mil/asda/dpc/api/ipm/docs/20200312%20schedule%20performance%20dataset%20-%20ffs.pdf. Accurate remaining working duration with respect to StatusDate."
+    },
+    {
+      "name": "ActualStartDate",
+      "type": "date|null",
+      "required": false,
+      "governedBy": [
+        "DZR-F3-0089",
+        "DZR-F3-0090"
+      ],
+      "description": "TaskScheduleData.ActualStartDate; FFS §2.2.10 https://www.acq.osd.mil/asda/dpc/api/ipm/docs/20200312%20schedule%20performance%20dataset%20-%20ffs.pdf. Conditionally required once the task has started: DEI §2.1.10 https://www.acq.osd.mil/asda/dpc/api/ipm/docs/20200312%20schedule%20performance%20dataset%20-%20dei.pdf."
+    },
+    {
+      "name": "ActualFinishDate",
+      "type": "date|null",
+      "required": false,
+      "governedBy": [
+        "DZR-F3-0089",
+        "DZR-F3-0090"
+      ],
+      "description": "TaskScheduleData.ActualFinishDate; FFS §2.2.10 https://www.acq.osd.mil/asda/dpc/api/ipm/docs/20200312%20schedule%20performance%20dataset%20-%20ffs.pdf. Conditionally required once the task has finished: DEI §2.1.10 https://www.acq.osd.mil/asda/dpc/api/ipm/docs/20200312%20schedule%20performance%20dataset%20-%20dei.pdf."
+    },
+    {
+      "name": "Predecessors",
+      "type": "array",
+      "required": true,
+      "governedBy": [
+        "DZR-F3-0091",
+        "DZR-F3-0092",
+        "DZR-F3-0044",
+        "DZR-F3-0074",
+        "DZR-F3-0075"
+      ],
+      "description": "CSV cell containing a JSON array of native TaskRelationships records for which SuccessorTaskID equals this TaskID. Empty array means no predecessor. Fields are PredecessorTaskID, SuccessorTaskID, RelationshipTypeID, LagDuration, LagCalendarID; FFS §2.2.14 https://www.acq.osd.mil/asda/dpc/api/ipm/docs/20200312%20schedule%20performance%20dataset%20-%20ffs.pdf. Preserve typed relationship and signed lag; this CSV arrangement is the requested contract choice, not the government package format. Complete native delivery also retains each required lag justification."
+    },
+    {
+      "name": "OutlineLevel",
+      "type": "integer|null",
+      "required": false,
+      "governedBy": [
+        "DZR-F3-0100",
+        "DZR-F3-0101",
+        "DZR-F3-0102",
+        "DZR-F3-0116",
+        "DZR-F3-0117"
+      ],
+      "description": "TaskOutlineStructure.Level when an outline exists; FFS §§2.1.7,2.2.15 https://www.acq.osd.mil/asda/dpc/api/ipm/docs/20200312%20schedule%20performance%20dataset%20-%20ffs.pdf. Starts at 1; hierarchy constraints apply. Null if no outline is reported."
+    },
+    {
+      "name": "ParentTaskID",
+      "type": "string|null",
+      "required": false,
+      "governedBy": [
+        "DZR-F3-0118",
+        "DZR-F3-0119",
+        "DZR-F3-0120"
+      ],
+      "description": "TaskOutlineStructure.ParentTaskID; FFS §2.2.15 https://www.acq.osd.mil/asda/dpc/api/ipm/docs/20200312%20schedule%20performance%20dataset%20-%20ffs.pdf. Null for level 1; otherwise the task ID of the corresponding SUMMARY parent."
+    },
+    {
+      "name": "OutlineSequence",
+      "type": "integer|null",
+      "required": false,
+      "governedBy": [
+        "DZR-F3-0100",
+        "DZR-F3-0101"
+      ],
+      "description": "CSV preservation of original TaskOutlineStructure record position, 1-based. Contract-defined transport field; not a new native SPD property. Required with reported outline rows, because native sequence is meaningful under FFS §§2.1.7,2.2.15 https://www.acq.osd.mil/asda/dpc/api/ipm/docs/20200312%20schedule%20performance%20dataset%20-%20ffs.pdf."
+    }
+  ],
+  "markings": "Carry DatasetMetadata.SecurityMarking and applicable DistributionStatement as repeated CSV columns and retain them with the received feed. FFS §2.2.1 https://www.acq.osd.mil/asda/dpc/api/ipm/docs/20200312%20schedule%20performance%20dataset%20-%20ffs.pdf and DEI §2.1.1 https://www.acq.osd.mil/asda/dpc/api/ipm/docs/20200312%20schedule%20performance%20dataset%20-%20dei.pdf. Retain any company proprietary disclosure as required by DID §§1.7–1.7.1 https://quicksearch.dla.mil/WMX/Default.aspx?token=5773808 in the full submission. No CUI/classification/distribution policy is reconstructed from inaccessible issuances; UNCLASSIFIED does not itself authorize public release.",
+  "acceptance": [
+    {
+      "rule": "Treat this as one schedule task-row CSV extract. Reject missing required fields, type mismatches, duplicate headers or duplicate TaskID values (compare native string identifiers case-insensitively). Preserve source ID spelling. The CSV layout and strengthened user-required joins are task choices, not an additional government standard.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F3-0089",
+        "DZR-F3-0090",
+        "DZR-F3-0091",
+        "DZR-F3-0094"
+      ]
+    },
+    {
+      "rule": "Reject every task row missing WBSElementID or requirementId. Reject unresolved joins when the corresponding WBS/requirement baseline is supplied; otherwise keep the unresolved join review open. These two mandatory joins are user requirements, not inferred native SPD mandates.",
+      "severity": "reject",
+      "governedBy": []
+    },
+    {
+      "rule": "Reject mixing different ProgramName, SecurityMarking, DistributionStatement, ReportingPeriodEndDate, StatusDate or DurationUnitsID values within this single-schedule CSV snapshot. Repetition is a CSV contract choice.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F3-0004",
+        "DZR-F3-0017",
+        "DZR-F3-0034"
+      ]
+    },
+    {
+      "rule": "Reject a changed task identifier for the same continuing source task across submissions; preserve identity separately from task name and row order.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F3-0141"
+      ]
+    },
+    {
+      "rule": "Reject ACTIVITY rows with a null TaskPlanningLevelID; validate TaskTypeID, planning level, earned-value technique and relationship enums against FFS §§2.4.3–2.4.8 https://www.acq.osd.mil/asda/dpc/api/ipm/docs/20200312%20schedule%20performance%20dataset%20-%20ffs.pdf.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F3-0089",
+        "DZR-F3-0092",
+        "DZR-F3-0109"
+      ]
+    },
+    {
+      "rule": "Reject a partially populated baseline bundle: BaselineDuration, BaselineStartDate, BaselineFinishDate, StartVarianceDuration and FinishVarianceDuration must be all null or all nonnull. Under invoked DID C, items within the performance measurement baseline require baseline dates. Applicable current/baseline date pairs must be comparable.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F3-0113",
+        "DZR-F3-0051",
+        "DZR-F3-0143",
+        "DZR-F3-0144"
+      ]
+    },
+    {
+      "rule": "Reject a missing ActualStartDate when the task has started or missing ActualFinishDate when the task has finished (DEI §2.1.10 https://www.acq.osd.mil/asda/dpc/api/ipm/docs/20200312%20schedule%20performance%20dataset%20-%20dei.pdf). The source gives explicit conditional requiredness; these field definitions are retained here without inventing additional B shall/must records.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F3-0089"
+      ]
+    },
+    {
+      "rule": "Reject unresolved nonnull task/calendar references when supporting native schedule data are supplied. Preserve predecessor/successor IDs, relationship type, signed lag and lag calendar. Do not recompute working durations by subtracting calendar dates. Each source calendar needs a workshift; workshift/exception hours obey their source constraints.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F3-0092",
+        "DZR-F3-0105",
+        "DZR-F3-0106",
+        "DZR-F3-0107",
+        "DZR-F3-0108",
+        "DZR-F3-0038",
+        "DZR-F3-0074",
+        "DZR-F3-0075"
+      ]
+    },
+    {
+      "rule": "When summary tasks exist, reject a missing outline. When an outline is provided, reject missing/duplicate/gapped OutlineSequence positions, a first level other than 1, subsequent levels below 1 or jumps greater than 1, a nonnull root parent, a wrong nearest preceding lower-level parent, or a parent that is not SUMMARY. Preserve original sequence before sorting rows for hashing. Sequence-column mechanics are the CSV contract choice.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F3-0100",
+        "DZR-F3-0101",
+        "DZR-F3-0102",
+        "DZR-F3-0112",
+        "DZR-F3-0116",
+        "DZR-F3-0117",
+        "DZR-F3-0118",
+        "DZR-F3-0119",
+        "DZR-F3-0120",
+        "DZR-F3-0145"
+      ]
+    },
+    {
+      "rule": "For planning packages or summary-level planning packages, reject use of EarnedValueTechniqueID except to identify level of effort or apportioned effort. Null or omitted is unused; do not require deletion of a nullable native property.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F3-0142"
+      ]
+    },
+    {
+      "rule": "When the applicable contract/CDRL invokes DID C, check the full delivery for native schedule plus SPD, dictionary, common metadata, significant external dependencies, control-account/CPD trace, paths, applied constraints and justifications, custom fields and conditionally required resource loading. Reject a CSV-only delivery offered as the complete DID submission. The three sample rows illustrate only this task-row extract and do not demonstrate a complete DID/CDRL submission.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F3-0007",
+        "DZR-F3-0008",
+        "DZR-F3-0009",
+        "DZR-F3-0010",
+        "DZR-F3-0011",
+        "DZR-F3-0022",
+        "DZR-F3-0023",
+        "DZR-F3-0024",
+        "DZR-F3-0025",
+        "DZR-F3-0026",
+        "DZR-F3-0027",
+        "DZR-F3-0028",
+        "DZR-F3-0029",
+        "DZR-F3-0030",
+        "DZR-F3-0031",
+        "DZR-F3-0032",
+        "DZR-F3-0033",
+        "DZR-F3-0034",
+        "DZR-F3-0035",
+        "DZR-F3-0036",
+        "DZR-F3-0037",
+        "DZR-F3-0042",
+        "DZR-F3-0052",
+        "DZR-F3-0053",
+        "DZR-F3-0054",
+        "DZR-F3-0055",
+        "DZR-F3-0056",
+        "DZR-F3-0057",
+        "DZR-F3-0058",
+        "DZR-F3-0067",
+        "DZR-F3-0068",
+        "DZR-F3-0069",
+        "DZR-F3-0071",
+        "DZR-F3-0072",
+        "DZR-F3-0075",
+        "DZR-F3-0076",
+        "DZR-F3-0077",
+        "DZR-F3-0080",
+        "DZR-F3-0081",
+        "DZR-F3-0082",
+        "DZR-F3-0086",
+        "DZR-F3-0087",
+        "DZR-F3-0088"
+      ]
+    },
+    {
+      "rule": "For an invoked native SPD package, apply its native constraints in addition to this CSV projection: UTF-8 ZIP entries; DEFLATE if compressed; no encrypted entries; required FileType.txt value; exact table/field names; no duplicate or undeclared properties; correct nullable values and primitive types. requirementId and OutlineSequence are not silently injected into native SPD JSON tables.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F3-0121",
+        "DZR-F3-0122",
+        "DZR-F3-0123",
+        "DZR-F3-0124",
+        "DZR-F3-0125",
+        "DZR-F3-0126",
+        "DZR-F3-0127",
+        "DZR-F3-0128",
+        "DZR-F3-0129",
+        "DZR-F3-0130",
+        "DZR-F3-0131",
+        "DZR-F3-0132",
+        "DZR-F3-0133",
+        "DZR-F3-0134",
+        "DZR-F3-0135",
+        "DZR-F3-0136",
+        "DZR-F3-0137",
+        "DZR-F3-0138",
+        "DZR-F3-0139"
+      ]
+    },
+    {
+      "rule": "For an invoked DID delivery, check at least monthly cadence, the specified CDRL frequency, common accounting period, and delivery after accounting-period close no later than sixteen business days after its end; check initial/changed/requested dictionary delivery. Incremental submissions remain non-authoritative until final submission and signature.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F3-0012",
+        "DZR-F3-0015",
+        "DZR-F3-0016",
+        "DZR-F3-0017",
+        "DZR-F3-0018",
+        "DZR-F3-0019",
+        "DZR-F3-0020",
+        "DZR-F3-0083",
+        "DZR-F3-0084",
+        "DZR-F3-0085"
+      ]
+    },
+    {
+      "rule": "Reject classified material destined for EVM-CR, as DID C §1.5 https://quicksearch.dla.mil/WMX/Default.aspx?token=5773808 prohibits it. Presence of UNCLASSIFIED alone is not a release or CUI determination.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F3-0006"
+      ]
+    },
+    {
+      "rule": "Keep policy/marking completeness unresolved while DoDI 5000.88, DoDM 5010.12, DoDI 5230.24, DoDI 5200.48, DoDM 5200.01 Vol 2 and the separately invoked Vol 4 are open gaps. No clauses were extracted from these inaccessible sources; passing available checks is not complete compliance evidence.",
+      "severity": "warn",
+      "governedBy": []
+    },
+    {
+      "rule": "Catalogue all kind=guidance or binding=false material separately. It neither independently rejects this feed nor enters baseline content. Apply this exclusion to later feeds as well.",
+      "severity": "warn",
+      "governedBy": []
+    }
+  ],
+  "canonicalForm": "Baseline only the received operative feed data and user-required identity/trace/marking columns, never the B catalogue itself. Exclude all records with binding=false or kind=guidance and any field/content justified solely by guidance; their catalogue hashes are not baseline inputs. This applies to F3 and every later batch. For this single-schedule CSV, parse one row per TaskID using the declared fields/types: empty cell -> null; booleans true/false; dates yyyy-mm-dd as strings; integer/number cells as exact decimal numbers; Predecessors as its JSON array. Reject unknown CSV columns rather than silently dropping data. Include every declared field, filling absent optional cells with null. Normalize every string to NFC, trim and collapse Unicode whitespace to one ASCII space; preserve identifier case in content. Before row sorting, preserve any original outline position in OutlineSequence; sort predecessor records by (PredecessorTaskID,SuccessorTaskID,RelationshipTypeID), preserving all relationship fields. Sort task rows by case-insensitive TaskID with original spelling as tie-breaker (duplicates rejected). Serialize the array as UTF-8 JSON with lexicographically sorted object keys, no insignificant whitespace, literal Unicode, JSON null/booleans, exact decimal numbers without exponent or insignificant trailing fractional zeros, and no final newline. Apply the task-wide NFC/trim/whitespace-collapse rule to that serialized text and compute lowercase SHA-256. The displayed hash is for exactly the three illustrative C.sample CSV rows after this process; it is not a claim of a complete native DID delivery. A complete native schedule baseline must also cover operative calendar, relationship, constraint, metadata, dictionary and other delivered data, using their declared order/key semantics; that broader file is not fabricated here.",
+  "baselineHash": "459e69691092fa59ebae54564f86aeb07249e1d193c7ba01a9db906274483066",
+  "mil-hdbk-539a": [
+    {
+      "section": "3.2.9",
+      "concept": "authoritative source of truth",
+      "howThisFeedServesIt": "Retains source task identities, status date and the received schedule version; hash comparison identifies a changed export without declaring an unsigned draft authoritative. Framework source: https://quicksearch.dla.mil/WMX/Default.aspx?token=5801571 §3.2.9."
+    },
+    {
+      "section": "4.8.2.1; 4.8.2.1.1",
+      "concept": "digital system model",
+      "howThisFeedServesIt": "Provides the program-management schedule domain with links to WBS and requirements. Framework source: https://quicksearch.dla.mil/WMX/Default.aspx?token=5801571 §§4.8.2.1–4.8.2.1.1."
+    },
+    {
+      "section": "4.8.2.3",
+      "concept": "digital thread",
+      "howThisFeedServesIt": "Uses explicit joins to trace the schedule tasks to the corresponding requirements and work breakdown structure. These joins are task choices supporting the framework, not handbook mandates. Source: https://quicksearch.dla.mil/WMX/Default.aspx?token=5801571 §4.8.2.3."
+    },
+    {
+      "section": "4.8.2.4",
+      "concept": "stakeholder view",
+      "howThisFeedServesIt": "Supports time-specific schedule views without losing task identifiers, source dates or hierarchy order. Source: https://quicksearch.dla.mil/WMX/Default.aspx?token=5801571 §4.8.2.4."
+    },
+    {
+      "section": "5.2.4.8; 5.2.8.8",
+      "concept": "authoritative source of truth",
+      "howThisFeedServesIt": "Keeps field meanings and version identity explicit when comparing schedule drops. Handbook guidance is catalogued, not included in the feed hash. Source: https://quicksearch.dla.mil/WMX/Default.aspx?token=5801571 §§5.2.4.8,5.2.8.8."
+    }
+  ],
+  "sample": "ProgramName,SecurityMarking,DistributionStatement,ReportingPeriodEndDate,StatusDate,DurationUnitsID,TaskID,TaskName,TaskTypeID,TaskPlanningLevelID,WBSElementID,requirementId,ControlAccountID,WorkPackageID,SOWReference,EarnedValueTechniqueID,CalendarID,CurrentDuration,CurrentStartDate,CurrentFinishDate,EarlyStartDate,EarlyFinishDate,LateStartDate,LateFinishDate,FreeFloatDuration,TotalFloatDuration,OnCriticalPath,OnDrivingPath,BaselineDuration,BaselineStartDate,BaselineFinishDate,StartVarianceDuration,FinishVarianceDuration,CalculatedPercentComplete,PhysicalPercentComplete,RemainingDuration,ActualStartDate,ActualFinishDate,Predecessors,OutlineLevel,ParentTaskID,OutlineSequence\nHALCYON,UNCLASSIFIED,,2026-10-30,2026-10-30,DAYS,HALCYON-T001,HALCYON requirements review package,ACTIVITY,ACTIVITY,1.1,HALCYON-REQ-001,HALCYON-CA-01,HALCYON-WP-01,,FIXED_0_100,HALCYON-CAL-01,5,2026-11-02,2026-11-06,2026-11-02,2026-11-06,2026-11-02,2026-11-06,0,0,true,true,5,2026-11-02,2026-11-06,0,0,0,,5,,,[],,,\nHALCYON,UNCLASSIFIED,,2026-10-30,2026-10-30,DAYS,HALCYON-T002,HALCYON architecture review package,ACTIVITY,ACTIVITY,1.2,HALCYON-REQ-002,HALCYON-CA-01,HALCYON-WP-02,,FIXED_0_100,HALCYON-CAL-01,5,2026-11-09,2026-11-13,2026-11-09,2026-11-13,2026-11-09,2026-11-13,0,0,true,true,5,2026-11-09,2026-11-13,0,0,0,,5,,,\"[{\"\"PredecessorTaskID\"\":\"\"HALCYON-T001\"\",\"\"SuccessorTaskID\"\":\"\"HALCYON-T002\"\",\"\"RelationshipTypeID\"\":\"\"FINISH_TO_START\"\",\"\"LagDuration\"\":0,\"\"LagCalendarID\"\":null}]\",,,\nHALCYON,UNCLASSIFIED,,2026-10-30,2026-10-30,DAYS,HALCYON-T003,HALCYON verification planning package,ACTIVITY,ACTIVITY,1.3,HALCYON-REQ-003,HALCYON-CA-01,HALCYON-WP-03,,FIXED_0_100,HALCYON-CAL-01,5,2026-11-16,2026-11-20,2026-11-16,2026-11-20,2026-11-16,2026-11-20,0,0,true,true,5,2026-11-16,2026-11-20,0,0,0,,5,,,\"[{\"\"PredecessorTaskID\"\":\"\"HALCYON-T002\"\",\"\"SuccessorTaskID\"\":\"\"HALCYON-T003\"\",\"\"RelationshipTypeID\"\":\"\"FINISH_TO_START\"\",\"\"LagDuration\"\":0,\"\"LagCalendarID\"\":null}]\",,,\n"
+}

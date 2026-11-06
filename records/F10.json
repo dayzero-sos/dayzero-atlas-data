@@ -1,0 +1,2095 @@
+[
+ {
+  "id": "DZR-F10-0001",
+  "alias": "DI-MGMT-81861C §1.3.1",
+  "source": {
+   "docId": "DI-MGMT-81861C",
+   "edition": "Revision C, 30 August 2021",
+   "paragraph": "1.3.1",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5773808",
+   "passage": "Data reported shall reflect all negotiated contract work and include the total scope of Authorized Unpriced Work (AUW) efforts.",
+   "passageSHA256": "4b6286e3e5387b6c6b98cbbf78dc3f34ceafea6a5ca303c82a9675c4afa415bf"
+  },
+  "wording": "The IPMDAR shall reflect all negotiated contract work and the total scope of Authorized Unpriced Work efforts.",
+  "wordingSHA256": "bfefc104dcb8b7b52eee42947cc6835508a65b3215c9929230f0ea9164350047",
+  "actor": "The IPMDAR",
+  "condition": "When DI-MGMT-81861C is invoked by the contract and CPD-derived staffing data or the associated staffing narrative is delivered",
+  "verificationIntent": "inspection",
+  "kind": "content",
+  "binding": true,
+  "fields": [
+   "scope"
+  ],
+  "status": "sample",
+  "notes": "F10 scope: source responsibilities, organizational mapping or staffing data; not a claim to reproduce or accept the entire IPMDAR. Binding only under the recorded contract invocation and tailoring."
+ },
+ {
+  "id": "DZR-F10-0002",
+  "alias": "DI-MGMT-81861C §1.3.2",
+  "source": {
+   "docId": "DI-MGMT-81861C",
+   "edition": "Revision C, 30 August 2021",
+   "paragraph": "1.3.2",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5773808",
+   "passage": "Data reported shall reflect the output of the contractor's Earned Value Management System (EVMS).",
+   "passageSHA256": "7a0b0f99648a23f2db00b9a5818ecc625220733ec224b30a77be8b879aece8c8"
+  },
+  "wording": "The IPMDAR shall reflect the output of the contractor's Earned Value Management System.",
+  "wordingSHA256": "bf3406ac1abf875ff8b579a18dd1c7c6022a088b8999f8f1feeee7a951b02134",
+  "actor": "The IPMDAR",
+  "condition": "When DI-MGMT-81861C is invoked by the contract and CPD-derived staffing data or the associated staffing narrative is delivered",
+  "verificationIntent": "inspection",
+  "kind": "content",
+  "binding": true,
+  "fields": [
+   "sourceEvidence"
+  ],
+  "status": "sample",
+  "notes": "F10 scope: source responsibilities, organizational mapping or staffing data; not a claim to reproduce or accept the entire IPMDAR. Binding only under the recorded contract invocation and tailoring."
+ },
+ {
+  "id": "DZR-F10-0003",
+  "alias": "DI-MGMT-81861C §1.3.3",
+  "source": {
+   "docId": "DI-MGMT-81861C",
+   "edition": "Revision C, 30 August 2021",
+   "paragraph": "1.3.3",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5773808",
+   "passage": "Data reported in the CPD, Schedule, and Performance Narrative Report shall be as of the same reporting period.",
+   "passageSHA256": "649b819d9eec4c63300cf65348f297ccee104c91210741a481893593c31ed3b8"
+  },
+  "wording": "The IPMDAR shall use the same reporting period for the CPD, Schedule and Performance Narrative Report.",
+  "wordingSHA256": "22af97f3d08830e0548aca7e851593021a4101ede85a5a5de6e1bbe9a52342fa",
+  "actor": "The IPMDAR",
+  "condition": "When DI-MGMT-81861C is invoked by the contract and CPD-derived staffing data or the associated staffing narrative is delivered",
+  "verificationIntent": "inspection",
+  "kind": "currency",
+  "binding": true,
+  "fields": [
+   "reportingPeriodId"
+  ],
+  "status": "sample",
+  "notes": "F10 scope: source responsibilities, organizational mapping or staffing data; not a claim to reproduce or accept the entire IPMDAR. Binding only under the recorded contract invocation and tailoring."
+ },
+ {
+  "id": "DZR-F10-0004",
+  "alias": "DI-MGMT-81861C §1.5",
+  "source": {
+   "docId": "DI-MGMT-81861C",
+   "edition": "Revision C, 30 August 2021",
+   "paragraph": "1.5",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5773808",
+   "passage": "No classified material shall be provided to the EVM-CR.",
+   "passageSHA256": "c8982aebf399b3c935019cc4b8ca4a697465a858493f26613bb52a07196aa964"
+  },
+  "wording": "The contractor shall exclude classified material from submissions to the EVM-CR.",
+  "wordingSHA256": "078b29f5c9888f46c757177544c9b06181548aff1de13d2fcd6c61221fe34304",
+  "actor": "The contractor",
+  "condition": "When DI-MGMT-81861C is invoked by the contract and CPD-derived staffing data or the associated staffing narrative is delivered",
+  "verificationIntent": "inspection",
+  "kind": "marking",
+  "binding": true,
+  "fields": [
+   "securityMarking"
+  ],
+  "status": "sample",
+  "notes": "F10 scope: source responsibilities, organizational mapping or staffing data; not a claim to reproduce or accept the entire IPMDAR. Binding only under the recorded contract invocation and tailoring."
+ },
+ {
+  "id": "DZR-F10-0005",
+  "alias": "DI-MGMT-81861C §1.6.1",
+  "source": {
+   "docId": "DI-MGMT-81861C",
+   "edition": "Revision C, 30 August 2021",
+   "paragraph": "1.6.1",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5773808",
+   "passage": "The CPD shall be formatted in accordance with the applicable DoD-approved FFS and DEI.4",
+   "passageSHA256": "5fe20521e82dcc4d30fb21919d2d5a70fa0069d00dece83919a03524052527d8"
+  },
+  "wording": "The CPD shall conform to the applicable DoD-approved File Format Specification and Data Exchange Instructions.",
+  "wordingSHA256": "4a77862e021b68a6ac50f2b6eef0cefc276e789a1cedcf77a730b58639ec90b6",
+  "actor": "The CPD",
+  "condition": "When DI-MGMT-81861C is invoked by the contract and CPD-derived staffing data or the associated staffing narrative is delivered",
+  "verificationIntent": "inspection",
+  "kind": "structure",
+  "binding": true,
+  "fields": [
+   "sourceEvidence"
+  ],
+  "status": "sample",
+  "notes": "F10 scope: source responsibilities, organizational mapping or staffing data; not a claim to reproduce or accept the entire IPMDAR. Binding only under the recorded contract invocation and tailoring."
+ },
+ {
+  "id": "DZR-F10-0006",
+  "alias": "DI-MGMT-81861C §1.6.3",
+  "source": {
+   "docId": "DI-MGMT-81861C",
+   "edition": "Revision C, 30 August 2021",
+   "paragraph": "1.6.3",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5773808",
+   "passage": "The Performance Narrative Report (Executive Summary and Detailed Analysis) shall be provided electronically in the contractor’s human-readable file structure (e.g., DOCX, PDF), containing searchable text.",
+   "passageSHA256": "963848e7317339ee9ddcd3aa1b7683264009435cd6bdd1732a4d50cadbd7b823"
+  },
+  "wording": "The contractor shall deliver the Performance Narrative Report electronically in a human-readable contractor file structure containing searchable text.",
+  "wordingSHA256": "e63afc9f7f6c0718707beafd4fd7c8d4f99994328069a8441211c5cb1a124268",
+  "actor": "The contractor",
+  "condition": "When DI-MGMT-81861C is invoked by the contract and CPD-derived staffing data or the associated staffing narrative is delivered",
+  "verificationIntent": "inspection",
+  "kind": "delivery",
+  "binding": true,
+  "fields": [
+   "staffingNarrative"
+  ],
+  "status": "sample",
+  "notes": "F10 scope: source responsibilities, organizational mapping or staffing data; not a claim to reproduce or accept the entire IPMDAR. Binding only under the recorded contract invocation and tailoring."
+ },
+ {
+  "id": "DZR-F10-0007",
+  "alias": "DI-MGMT-81861C §1.7",
+  "source": {
+   "docId": "DI-MGMT-81861C",
+   "edition": "Revision C, 30 August 2021",
+   "paragraph": "1.7",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5773808",
+   "passage": "The contractor’s program manager or designee shall sign the final Performance Narrative Report or a separate signature page to note the completion of the data submission. This signature confirms the information reported in all of the provided components is authoritative and used by the contractor to manage the program. Electronic signatures are acceptable.",
+   "passageSHA256": "bcbe5d8e5330eafd46b9b504b0b5dd023d344b314dab1bcc34874e6de19bb21c"
+  },
+  "wording": "The contractor's program manager or designee shall sign the final Performance Narrative Report or a separate signature page to confirm completion of the data submission and that the information in all submitted components is authoritative and used by the contractor to manage the program.",
+  "wordingSHA256": "5ddb942bd903613b6630e8131c14a4da319e48fc431fd9e7723e8f98af8c7968",
+  "actor": "The contractor's program manager or designee",
+  "condition": "When DI-MGMT-81861C is invoked by the contract and CPD-derived staffing data or the associated staffing narrative is delivered",
+  "verificationIntent": "inspection",
+  "kind": "delivery",
+  "binding": true,
+  "fields": [
+   "approval"
+  ],
+  "status": "sample",
+  "notes": "F10 scope: source responsibilities, organizational mapping or staffing data; not a claim to reproduce or accept the entire IPMDAR. Binding only under the recorded contract invocation and tailoring."
+ },
+ {
+  "id": "DZR-F10-0008",
+  "alias": "DI-MGMT-81861C §1.7.1",
+  "source": {
+   "docId": "DI-MGMT-81861C",
+   "edition": "Revision C, 30 August 2021",
+   "paragraph": "1.7.1",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5773808",
+   "passage": "A company proprietary disclosure statement is required and shall be provided as part of the Performance Narrative Report submission or separate signature page and shall be notated in the CPD and SPD files. (Refer to CPD FFS 2.2.2 and SPD FFS 2.2.1)",
+   "passageSHA256": "68bcd0de9bc4158f04de585071718b27644d9c52b7a4850e78b709a39b4828bf"
+  },
+  "wording": "The contractor shall provide the company proprietary disclosure statement in the Performance Narrative Report submission or separate signature page and record the statement in the CPD and SPD files.",
+  "wordingSHA256": "c7fe0c2b3c0046347449128740904a102b186f81728d811efee9b4d3ffa77e80",
+  "actor": "The contractor",
+  "condition": "When DI-MGMT-81861C is invoked by the contract and CPD-derived staffing data or the associated staffing narrative is delivered",
+  "verificationIntent": "inspection",
+  "kind": "marking",
+  "binding": true,
+  "fields": [
+   "proprietaryDisclosure"
+  ],
+  "status": "sample",
+  "notes": "Exact sentence continued from PDF page 2 to page 3; intervening page footnotes, footer and next-page document header are excluded. Source condition and final CPD/SPD notation duty retained. This source does not itself resolve the held marking-issuance gaps."
+ },
+ {
+  "id": "DZR-F10-0009",
+  "alias": "DI-MGMT-81861C §1.8.1",
+  "source": {
+   "docId": "DI-MGMT-81861C",
+   "edition": "Revision C, 30 August 2021",
+   "paragraph": "1.8.1",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5773808",
+   "passage": "IPMDAR data shall be required at least monthly. The reporting frequency shall be specified in the Contract Data Requirements List (CDRL).",
+   "passageSHA256": "69da81cd8039153e0d2abc2236a3507fc77d1ba9a923dc10ac8f1431725505ca"
+  },
+  "wording": "The CDRL shall specify an IPMDAR reporting frequency of at least monthly.",
+  "wordingSHA256": "c81626f78363dc77685f1b1f75bb6ed188360acee2be67848b05de183f53d3f5",
+  "actor": "The CDRL",
+  "condition": "When DI-MGMT-81861C is invoked by the contract and CPD-derived staffing data or the associated staffing narrative is delivered",
+  "verificationIntent": "inspection",
+  "kind": "delivery",
+  "binding": true,
+  "fields": [
+   "invocation.reportingFrequency"
+  ],
+  "status": "sample",
+  "notes": "F10 scope: source responsibilities, organizational mapping or staffing data; not a claim to reproduce or accept the entire IPMDAR. Binding only under the recorded contract invocation and tailoring."
+ },
+ {
+  "id": "DZR-F10-0010",
+  "alias": "DI-MGMT-81861C §1.8.1",
+  "source": {
+   "docId": "DI-MGMT-81861C",
+   "edition": "Revision C, 30 August 2021",
+   "paragraph": "1.8.1",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5773808",
+   "passage": "All reports shall reflect data from the same accounting period and shall be provided at any time after the close of the contractor’s accounting period, but no later than sixteen (16) business days after the contractor’s accounting period end date.",
+   "passageSHA256": "0e921134353e1a78ed97b12c852ad3a9ab62fbb2ffb045eb3869b5e90d417a88"
+  },
+  "wording": "The contractor shall deliver IPMDAR reports for the same accounting period after period close and no later than sixteen business days after the accounting period end date.",
+  "wordingSHA256": "7e121817030a1c082614ecf2a5b2ea30524a88ae1b8177a1e623f3feb19e151f",
+  "actor": "The contractor",
+  "condition": "When DI-MGMT-81861C is invoked by the contract and CPD-derived staffing data or the associated staffing narrative is delivered",
+  "verificationIntent": "inspection",
+  "kind": "delivery",
+  "binding": true,
+  "fields": [
+   "reportingPeriodId",
+   "delivery"
+  ],
+  "status": "sample",
+  "notes": "F10 scope: source responsibilities, organizational mapping or staffing data; not a claim to reproduce or accept the entire IPMDAR. Binding only under the recorded contract invocation and tailoring."
+ },
+ {
+  "id": "DZR-F10-0011",
+  "alias": "DI-MGMT-81861C §2.1",
+  "source": {
+   "docId": "DI-MGMT-81861C",
+   "edition": "Revision C, 30 August 2021",
+   "paragraph": "2.1",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5773808",
+   "passage": "The IPMDAR shall be provided to the ADA EVM-CR.",
+   "passageSHA256": "b131572fafdcf86c246a9a3af3ae8e2823656828b199200b9af2f606290b9d07"
+  },
+  "wording": "The contractor shall deliver the IPMDAR to the ADA EVM-CR.",
+  "wordingSHA256": "41c6f6f8e57db26cd88b2a54e93e8742fb479ffe7b4a90d186777ce60da6e9be",
+  "actor": "The contractor",
+  "condition": "When DI-MGMT-81861C is invoked by the contract and CPD-derived staffing data or the associated staffing narrative is delivered",
+  "verificationIntent": "inspection",
+  "kind": "delivery",
+  "binding": true,
+  "fields": [
+   "delivery"
+  ],
+  "status": "sample",
+  "notes": "F10 scope: source responsibilities, organizational mapping or staffing data; not a claim to reproduce or accept the entire IPMDAR. Binding only under the recorded contract invocation and tailoring."
+ },
+ {
+  "id": "DZR-F10-0012",
+  "alias": "DI-MGMT-81861C §2.2–2.2.4",
+  "source": {
+   "docId": "DI-MGMT-81861C",
+   "edition": "Revision C, 30 August 2021",
+   "paragraph": "2.2–2.2.4",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5773808",
+   "passage": "This section shall provide information for metadata fields that are common across the datasets. (Refer to CPD FFS 2.2.2 and SPD FFS 2.2.1) 2.2.1 Contractor. Provide the reporting contractor’s name, division (if applicable), facility location, mailing address, and Commercial and Government Entity (CAGE) or Data Universal Numbering System (DUNS) code. 2.2.2 Contract. Provide the contract name (e.g., Low Rate Initial Production (LRIP) Lots 1-4), contract number, contract type, and applicable effort name (e.g., LRIP 1, Contract Line Item Number 1, Task 1). Effort name shall refer to the subdivision of reporting below the contract level. 2.2.3 Program. Provide the program name, or enter the type, model, and series or other military designation of the prime item or items purchased on the contract. The program phase (e.g., development, production) shall also be provided. 2.2.4 Report Period. Identify the current period covered by the reported data.",
+   "passageSHA256": "409a185b6eaf5e4fc15887a8cff5c8278ff33deacd5ac75d43fbff7623a6019b"
+  },
+  "wording": "The IPMDAR common heading shall contain reporting-contractor identity and location, applicable contract and effort identity and type, program identity and phase, and the current reporting period.",
+  "wordingSHA256": "28ef8654b8f138c5f10f1755e509f9501f57795deb7c6d83c3a95acf5b799eb4",
+  "actor": "The IPMDAR common heading",
+  "condition": "When DI-MGMT-81861C is invoked by the contract and CPD-derived staffing data or the associated staffing narrative is delivered",
+  "verificationIntent": "inspection",
+  "kind": "identifier",
+  "binding": true,
+  "fields": [
+   "sourceMetadata"
+  ],
+  "status": "sample",
+  "notes": "One common-heading field-set obligation under §2.2; field meanings and conditional division/effort details are retained in the verbatim passage. No real identity values are populated in the sample."
+ },
+ {
+  "id": "DZR-F10-0013",
+  "alias": "DI-MGMT-81861C §2.3.2",
+  "source": {
+   "docId": "DI-MGMT-81861C",
+   "edition": "Revision C, 30 August 2021",
+   "paragraph": "2.3.2",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5773808",
+   "passage": "The data provided in the CPD shall be reported in both dollars and hours unless tailored in the CDRL.",
+   "passageSHA256": "744145ff245b56856c86048cab16e5d91d6ad0528f684610c247354e86f1ebcf"
+  },
+  "wording": "The CPD shall report performance data in dollars and hours.",
+  "wordingSHA256": "93eab35f6b5e94519c0f2f88231f9c29750d3c72ae5065a2b4ca8f2010d6abac",
+  "actor": "The CPD",
+  "condition": "When DI-MGMT-81861C is invoked by the contract and CPD-derived staffing data or the associated staffing narrative is delivered and the CDRL has not tailored the dollars-and-hours requirement",
+  "verificationIntent": "inspection",
+  "kind": "content",
+  "binding": true,
+  "fields": [
+   "staffingHours",
+   "sourceEvidence"
+  ],
+  "status": "sample",
+  "notes": "F10 scope: source responsibilities, organizational mapping or staffing data; not a claim to reproduce or accept the entire IPMDAR. Binding only under the recorded contract invocation and tailoring."
+ },
+ {
+  "id": "DZR-F10-0014",
+  "alias": "DI-MGMT-81861C §2.3.2.1–2.3.2.1.2",
+  "source": {
+   "docId": "DI-MGMT-81861C",
+   "edition": "Revision C, 30 August 2021",
+   "paragraph": "2.3.2.1–2.3.2.1.2",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5773808",
+   "passage": "The following items shall be represented in the CPD structures. These structures are encoded as tables as described in the DEI. 2.3.2.1.1 Work Breakdown Structure (WBS). Provide the contractor’s WBS. (Refer to CPD FFS 2.2.10) 2.3.2.1.2 Organizational Structure. Provide the organizational categories that reflect the contractor’s internal management structure. Organizational categories can reflect different organization types, such as functional or Integrated Product Team (IPT), and can be arranged in a hierarchical structure. (Refer to CPD FFS 2.2.11)",
+   "passageSHA256": "3344489ae6285c3c336207adcc006ebfa44a7e160a2842a0c4850deb39d2304e"
+  },
+  "wording": "The CPD structures shall contain the contractor's WBS and organizational categories representing the contractor's internal management structure.",
+  "wordingSHA256": "91a9ce8807e72ae411a571d7bc21795e710dc8f2d42223ab3bbc3807fa665fce",
+  "actor": "The CPD structures",
+  "condition": "When DI-MGMT-81861C is invoked by the contract and CPD-derived staffing data or the associated staffing narrative is delivered",
+  "verificationIntent": "inspection",
+  "kind": "structure",
+  "binding": true,
+  "fields": [
+   "wbs",
+   "organizations"
+  ],
+  "status": "sample",
+  "notes": "F10 scope: source responsibilities, organizational mapping or staffing data; not a claim to reproduce or accept the entire IPMDAR. Binding only under the recorded contract invocation and tailoring."
+ },
+ {
+  "id": "DZR-F10-0015",
+  "alias": "DI-MGMT-81861C §2.3.2.1.3.1",
+  "source": {
+   "docId": "DI-MGMT-81861C",
+   "edition": "Revision C, 30 August 2021",
+   "paragraph": "2.3.2.1.3.1",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5773808",
+   "passage": "Provide the list of control accounts established at the intersection of the WBS and organizational structure. Control accounts shall be traceable to the WBS and organizational structure, such that each control account is associated with a single WBS element and a single organizational structure element. (Refer to CPD FFS 2.2.12)",
+   "passageSHA256": "3d770e3717b4897516e2a8e6ab3f05beb722a7db38da30e8578575b019ad9d7d"
+  },
+  "wording": "The CPD shall associate each control account with exactly one WBS element and exactly one organizational structure element.",
+  "wordingSHA256": "a5c9f051f05944cd75048967d6fad95e4a81447841654d82bea596c0f11f8147",
+  "actor": "The CPD",
+  "condition": "When DI-MGMT-81861C is invoked by the contract and CPD-derived staffing data or the associated staffing narrative is delivered",
+  "verificationIntent": "inspection",
+  "kind": "structure",
+  "binding": true,
+  "fields": [
+   "controlAccounts"
+  ],
+  "status": "sample",
+  "notes": "F10 scope: source responsibilities, organizational mapping or staffing data; not a claim to reproduce or accept the entire IPMDAR. Binding only under the recorded contract invocation and tailoring."
+ },
+ {
+  "id": "DZR-F10-0016",
+  "alias": "DI-MGMT-81861C §2.3.2.1.4",
+  "source": {
+   "docId": "DI-MGMT-81861C",
+   "edition": "Revision C, 30 August 2021",
+   "paragraph": "2.3.2.1.4",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5773808",
+   "passage": "If work package data is required by the CDRL, work packages shall be traceable to the associated control accounts. A work package is the point at which work is planned, progress is measured, and earned value is computed. (Refer to CPD FFS 2.2.15)",
+   "passageSHA256": "65bd8f92fdf578fe565e88c8cd5dce98a88e14028fb29413923c4da4d9047960"
+  },
+  "wording": "The CPD shall trace each reported work package to the associated control account.",
+  "wordingSHA256": "eb1c3c94b3aedd601216408df9a43a710e3e76541ae6ed2d9701f3fa07abcd11",
+  "actor": "The CPD",
+  "condition": "When DI-MGMT-81861C is invoked by the contract and CPD-derived staffing data or the associated staffing narrative is delivered and the CDRL requires work-package data",
+  "verificationIntent": "inspection",
+  "kind": "structure",
+  "binding": true,
+  "fields": [
+   "workPackages"
+  ],
+  "status": "sample",
+  "notes": "F10 scope: source responsibilities, organizational mapping or staffing data; not a claim to reproduce or accept the entire IPMDAR. Binding only under the recorded contract invocation and tailoring."
+ },
+ {
+  "id": "DZR-F10-0017",
+  "alias": "DI-MGMT-81861C §2.3.2.1.5",
+  "source": {
+   "docId": "DI-MGMT-81861C",
+   "edition": "Revision C, 30 August 2021",
+   "paragraph": "2.3.2.1.5",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5773808",
+   "passage": "Efforts being conducted by major subcontractors shall be clearly marked as such in the organizational structure. Subcontractors with an EVM flow down requirement shall be considered major subcontractors. (Refer to CPD FFS 2.2.9)",
+   "passageSHA256": "c5993706337cdfe2458bd6f924dddda756b8e0574472f0e67a0ae413a151031b"
+  },
+  "wording": "The CPD organizational structure shall clearly identify major-subcontractor efforts, including subcontractors with an EVM flow-down requirement.",
+  "wordingSHA256": "7b800eceb70f2c3ca70ba924ac9e9d381cc8c4b900675d81eb3fde95cdc4e4ad",
+  "actor": "The CPD organizational structure",
+  "condition": "When DI-MGMT-81861C is invoked by the contract and CPD-derived staffing data or the associated staffing narrative is delivered",
+  "verificationIntent": "inspection",
+  "kind": "identifier",
+  "binding": true,
+  "fields": [
+   "organizations",
+   "subcontractors"
+  ],
+  "status": "sample",
+  "notes": "F10 scope: source responsibilities, organizational mapping or staffing data; not a claim to reproduce or accept the entire IPMDAR. Binding only under the recorded contract invocation and tailoring."
+ },
+ {
+  "id": "DZR-F10-0018",
+  "alias": "DI-MGMT-81861C §2.3.2.1.6",
+  "source": {
+   "docId": "DI-MGMT-81861C",
+   "edition": "Revision C, 30 August 2021",
+   "paragraph": "2.3.2.1.6",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5773808",
+   "passage": "Provide the list of reporting periods for which detail data is reported. The reporting calendar shall span the time-phasing of the entire baseline and forecast. Accounting period start and end dates and working hours shall be included. (Refer to CPD FFS 2.2.18)",
+   "passageSHA256": "1d1aa0c7a70d97457144ec8fa5ae2d84a838b4376343a7b2acc077af755aab6b"
+  },
+  "wording": "The CPD reporting calendar shall span the entire baseline and forecast with accounting-period start dates, end dates and working hours.",
+  "wordingSHA256": "68affaebc4ab5d77a9e7c6c897302fbfcebcf01432c2ad09a7c6961504c3330e",
+  "actor": "The CPD reporting calendar",
+  "condition": "When DI-MGMT-81861C is invoked by the contract and CPD-derived staffing data or the associated staffing narrative is delivered",
+  "verificationIntent": "inspection",
+  "kind": "content",
+  "binding": true,
+  "fields": [
+   "reportingCalendar"
+  ],
+  "status": "sample",
+  "notes": "F10 scope: source responsibilities, organizational mapping or staffing data; not a claim to reproduce or accept the entire IPMDAR. Binding only under the recorded contract invocation and tailoring."
+ },
+ {
+  "id": "DZR-F10-0019",
+  "alias": "DI-MGMT-81861C §2.3.2.1.7",
+  "source": {
+   "docId": "DI-MGMT-81861C",
+   "edition": "Revision C, 30 August 2021",
+   "paragraph": "2.3.2.1.7",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5773808",
+   "passage": "If planning package data is required by the CDRL, it shall be identified separately from work packages in the appropriate structure. A planning package is a logical aggregation of future work within a control account that cannot yet be planned in detail at the work package or task level. (Refer to CPD FFS 2.2.15)",
+   "passageSHA256": "65d74cedc9dc0b947c36ed0a390e35818f87e5f42e803474af847c1905673910"
+  },
+  "wording": "The CPD shall identify planning packages separately from work packages in the appropriate structure.",
+  "wordingSHA256": "6b01b31f10b4ee3c7cc6f3afee7997477124cd73ce54cc374c01bd508aac740b",
+  "actor": "The CPD",
+  "condition": "When DI-MGMT-81861C is invoked by the contract and CPD-derived staffing data or the associated staffing narrative is delivered and the CDRL requires planning-package data",
+  "verificationIntent": "inspection",
+  "kind": "identifier",
+  "binding": true,
+  "fields": [
+   "workPackages"
+  ],
+  "status": "sample",
+  "notes": "F10 scope: source responsibilities, organizational mapping or staffing data; not a claim to reproduce or accept the entire IPMDAR. Binding only under the recorded contract invocation and tailoring."
+ },
+ {
+  "id": "DZR-F10-0020",
+  "alias": "DI-MGMT-81861C §2.3.2.1.8",
+  "source": {
+   "docId": "DI-MGMT-81861C",
+   "edition": "Revision C, 30 August 2021",
+   "paragraph": "2.3.2.1.8",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5773808",
+   "passage": "The following items shall be represented in the CPD structures. These structures are encoded as tables as described in the DEI.\nIf applicable, identify summary level planning packages separately from control accounts. SLPPs are aggregations of work for far-term efforts that are not yet able to be identified at the control account level, but are traceable to WBS and organizational structure elements. (Refer to CPD FFS 2.2.12)",
+   "passageSHA256": "b50527d4fff6c72d86ac8fea379c5aa5b13f78f51a076d1796977a7c1f134759"
+  },
+  "wording": "The CPD shall identify summary level planning packages separately from control accounts while retaining traceability to WBS and organizational structure elements.",
+  "wordingSHA256": "5ad8f5d15eeba53f9caf2cf10444c88c1bb0e210baa5052d90a458451a74fc99",
+  "actor": "The CPD",
+  "condition": "When DI-MGMT-81861C is invoked by the contract and CPD-derived staffing data or the associated staffing narrative is delivered and summary level planning packages are applicable",
+  "verificationIntent": "inspection",
+  "kind": "identifier",
+  "binding": true,
+  "fields": [
+   "controlAccounts"
+  ],
+  "status": "sample",
+  "notes": "The obligation inherits the parent §2.3.2.1 shall. Two separately located verbatim spans from PDF pages 5 and 6 are joined with a newline: the parent structure duty and the §2.3.2.1.8 SLPP item. Applied only when SLPPs exist; no separate record per package."
+ },
+ {
+  "id": "DZR-F10-0021",
+  "alias": "DI-MGMT-81861C §2.3.2.3",
+  "source": {
+   "docId": "DI-MGMT-81861C",
+   "edition": "Revision C, 30 August 2021",
+   "paragraph": "2.3.2.3",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5773808",
+   "passage": "Detail data shall be comprised of the BCWS, BCWP, ACWP, and Estimate to Complete (ETC), reported by control account unless reporting by work package level is specified in the CDRL. Detail Data shall be identified by Element of Cost (EOC), and shall consist of Labor, Material, Other Direct, and Subcontractor costs. Detail Data is reported as both cumulative-to-date and time-phased-to-complete data.",
+   "passageSHA256": "52bf1f1ef892292e719de7d8de5c0d903ab1c81fe8c65bc8da4627011437fe1f"
+  },
+  "wording": "The CPD detail data shall report BCWS, BCWP, ACWP and ETC at the control-account level, or at the CDRL-specified work-package level, by Labor, Material, Other Direct and Subcontractor elements of cost.",
+  "wordingSHA256": "dcfba4e07c5c7ced3bdfe0479dd0aff2158280b6eff371b57f420ab3e4868ff0",
+  "actor": "The CPD detail data",
+  "condition": "When DI-MGMT-81861C is invoked by the contract and CPD-derived staffing data or the associated staffing narrative is delivered",
+  "verificationIntent": "inspection",
+  "kind": "content",
+  "binding": true,
+  "fields": [
+   "staffingHours",
+   "sourceEvidence"
+  ],
+  "status": "sample",
+  "notes": "Grouping preserves one coherent detail-data grain/content obligation. F10 projects the relevant hours; the supporting native CPD retains the full delivered payload and is not reduced to hours-only for a complete-CPD claim."
+ },
+ {
+  "id": "DZR-F10-0022",
+  "alias": "DI-MGMT-81861C §2.3.2.3.1",
+  "source": {
+   "docId": "DI-MGMT-81861C",
+   "edition": "Revision C, 30 August 2021",
+   "paragraph": "2.3.2.3.1",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5773808",
+   "passage": "Cumulative-to-date values shall be provided for BCWS, BCWP, and ACWP. (Refer to CPD FFS 2.2.19, 2.2.20, and 2.2.21)",
+   "passageSHA256": "7ea7c095c0905df0c792a4735074810283299f67b62a032ed40bb703786613f6"
+  },
+  "wording": "The CPD shall provide cumulative-to-date BCWS, BCWP and ACWP values.",
+  "wordingSHA256": "fb18c58d516dcbb258e7ede042471c857220aecb94d1ddb7f54d092522f195ad",
+  "actor": "The CPD",
+  "condition": "When DI-MGMT-81861C is invoked by the contract and CPD-derived staffing data or the associated staffing narrative is delivered",
+  "verificationIntent": "inspection",
+  "kind": "content",
+  "binding": true,
+  "fields": [
+   "staffingHours",
+   "sourceEvidence"
+  ],
+  "status": "sample",
+  "notes": "F10 scope: source responsibilities, organizational mapping or staffing data; not a claim to reproduce or accept the entire IPMDAR. Binding only under the recorded contract invocation and tailoring."
+ },
+ {
+  "id": "DZR-F10-0023",
+  "alias": "DI-MGMT-81861C §2.3.2.3.2",
+  "source": {
+   "docId": "DI-MGMT-81861C",
+   "edition": "Revision C, 30 August 2021",
+   "paragraph": "2.3.2.3.2",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5773808",
+   "passage": "To-complete data shall be provided for both BCWS and ETC as time-phased non-cumulative values. BCWS values shall be time-phased by reporting period starting with the next consecutive reporting period and continue through the end of the Baseline Completion Date. ETC values shall be time-phased by reporting period starting with the next consecutive reporting period and continuing through the end of the Forecast Completion Date. (Refer to CPD FFS 2.2.22 and 2.2.23)",
+   "passageSHA256": "4c1d70132fdfee770121ae94791ffed714b2d731e3184462abdfbf699dce78ea"
+  },
+  "wording": "The CPD shall provide non-cumulative BCWS and ETC values by reporting period from the next consecutive period through the Baseline Completion Date for BCWS and through the Forecast Completion Date for ETC.",
+  "wordingSHA256": "36db5dff6979af286b0ab8af4905ebe427f7c34343dd669fb7dc4664d1ebc2b0",
+  "actor": "The CPD",
+  "condition": "When DI-MGMT-81861C is invoked by the contract and CPD-derived staffing data or the associated staffing narrative is delivered",
+  "verificationIntent": "inspection",
+  "kind": "currency",
+  "binding": true,
+  "fields": [
+   "staffingHours",
+   "reportingCalendar"
+  ],
+  "status": "sample",
+  "notes": "F10 scope: source responsibilities, organizational mapping or staffing data; not a claim to reproduce or accept the entire IPMDAR. Binding only under the recorded contract invocation and tailoring."
+ },
+ {
+  "id": "DZR-F10-0024",
+  "alias": "DI-MGMT-81861C §2.5",
+  "source": {
+   "docId": "DI-MGMT-81861C",
+   "edition": "Revision C, 30 August 2021",
+   "paragraph": "2.5",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5773808",
+   "passage": "The Executive Summary and the Detailed Analysis shall reflect both dollars and hours where applicable or as specified in the CDRL.",
+   "passageSHA256": "5c4371bff4531477db2de8c3752fd747d88eed1b693e0b806d42e6f92b571428"
+  },
+  "wording": "The Performance Narrative Report shall reflect dollars and hours where applicable or as specified in the CDRL.",
+  "wordingSHA256": "2cf0c34018bf4c8bb14f373ad715237f212fa33ffdedce87a99507df4c55e6e2",
+  "actor": "The Performance Narrative Report",
+  "condition": "When DI-MGMT-81861C is invoked by the contract and CPD-derived staffing data or the associated staffing narrative is delivered and dollars or hours are applicable or specified in the CDRL",
+  "verificationIntent": "inspection",
+  "kind": "content",
+  "binding": true,
+  "fields": [
+   "staffingNarrative"
+  ],
+  "status": "sample",
+  "notes": "F10 scope: source responsibilities, organizational mapping or staffing data; not a claim to reproduce or accept the entire IPMDAR. Binding only under the recorded contract invocation and tailoring."
+ },
+ {
+  "id": "DZR-F10-0025",
+  "alias": "DI-MGMT-81861C §2.5.1.1",
+  "source": {
+   "docId": "DI-MGMT-81861C",
+   "edition": "Revision C, 30 August 2021",
+   "paragraph": "2.5.1.1",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5773808",
+   "passage": "The Detailed Analysis shall be delivered no later than the final delivery date as specified in the CDRL.",
+   "passageSHA256": "de27e57b21c10e00a746d44972cb55f18b2ab60fe8481f8f577cdb936217d417"
+  },
+  "wording": "The contractor shall deliver the Detailed Analysis no later than the final delivery date specified in the CDRL.",
+  "wordingSHA256": "b5343529a59bf220f33a70ffc693ce24975efb8e6b1fa90640b52259c2df5648",
+  "actor": "The contractor",
+  "condition": "When DI-MGMT-81861C is invoked by the contract and CPD-derived staffing data or the associated staffing narrative is delivered and incremental delivery applies",
+  "verificationIntent": "inspection",
+  "kind": "delivery",
+  "binding": true,
+  "fields": [
+   "delivery"
+  ],
+  "status": "sample",
+  "notes": "F10 scope: source responsibilities, organizational mapping or staffing data; not a claim to reproduce or accept the entire IPMDAR. Binding only under the recorded contract invocation and tailoring."
+ },
+ {
+  "id": "DZR-F10-0026",
+  "alias": "DI-MGMT-81861C §2.5.3; Table 2.2, Staffing Changes row and table note",
+  "source": {
+   "docId": "DI-MGMT-81861C",
+   "edition": "Revision C, 30 August 2021",
+   "paragraph": "2.5.3; Table 2.2, Staffing Changes row and table note",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5773808",
+   "passage": "The Detailed Analysis section for the Performance Narrative Report shall address items included in the Detailed Analysis Table, following Section 2.4.3.5.\nMajor changes to staffing (reported by organization) and reasons for changes, major risks in staffing projections with explanation of impact(s)\nBlock 16 of the CDRL shall identify any additional tailored in items listed in this table. The frequency for each item shall be annotated in Block 16 of the CDRL and may be identified with a periodicity that meets management needs.",
+   "passageSHA256": "8c302ba7ed789f67cd535a9fa348f41268547f1ade8cef4afa9559561b5b583b"
+  },
+  "wording": "The staffing-change narrative shall identify major staffing changes by organization, reasons for the changes, major risks in staffing projections and the impacts of the risks.",
+  "wordingSHA256": "c9e7b6b05004fa0e981a5b531f5484126ea34eca768fbd5fe997d6efad485c46",
+  "actor": "The staffing-change narrative",
+  "condition": "When DI-MGMT-81861C is invoked by the contract and CPD-derived staffing data or the associated staffing narrative is delivered and CDRL Block 16 includes the Staffing Changes item",
+  "verificationIntent": "inspection",
+  "kind": "content",
+  "binding": true,
+  "fields": [
+   "staffingNarrative"
+  ],
+  "status": "sample",
+  "notes": "Composite of three separately located verbatim spans: PDF page 11 governing §2.5.3 sentence, page 14 Staffing Changes row, and page 14 table note, separated by newlines. Intervening rows are not asserted to be contiguous. Conditional tailorable item, not universally required by Revision C; one coherent staffing-change obligation. Source cross-reference to Section 2.4.3.5 is retained, not silently corrected."
+ },
+ {
+  "id": "DZR-F10-0027",
+  "alias": "DI-MGMT-81861C §Table 2.2, table note",
+  "source": {
+   "docId": "DI-MGMT-81861C",
+   "edition": "Revision C, 30 August 2021",
+   "paragraph": "Table 2.2, table note",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5773808",
+   "passage": "Block 16 of the CDRL shall identify any additional tailored in items listed in this table. The frequency for each item shall be annotated in Block 16 of the CDRL and may be identified with a periodicity that meets management needs.",
+   "passageSHA256": "311be66cd38c121173d03f5211450cddde9347f9ee2987790a32f46fac907e19"
+  },
+  "wording": "CDRL Block 16 shall identify the selected additional Table 2.2 items and the reporting frequency for each selected item.",
+  "wordingSHA256": "d4d219757cfffbf9550b95ae15011fa9114e55f974c0ac926062095e58598559",
+  "actor": "CDRL Block 16",
+  "condition": "When DI-MGMT-81861C is invoked by the contract and CPD-derived staffing data or the associated staffing narrative is delivered and additional Table 2.2 items are tailored in",
+  "verificationIntent": "inspection",
+  "kind": "delivery",
+  "binding": true,
+  "fields": [
+   "invocation.tailoredItems"
+  ],
+  "status": "sample",
+  "notes": "F10 scope: source responsibilities, organizational mapping or staffing data; not a claim to reproduce or accept the entire IPMDAR. Binding only under the recorded contract invocation and tailoring."
+ },
+ {
+  "id": "DZR-F10-0028",
+  "alias": "IPMDAR-CPD-FFS §2.1.1",
+  "source": {
+   "docId": "IPMDAR-CPD-FFS",
+   "edition": "Version 1.0, 12 March 2020",
+   "paragraph": "2.1.1",
+   "url": "https://www.acq.osd.mil/asda/dpc/api/ipm/docs/20200312%20Contract%20Performance%20Dataset%20-%20FFS.pdf",
+   "passage": "Each field value must be consistent with the data type of the corresponding field.",
+   "passageSHA256": "75ec144580689f0d43243938cf6eb256ab9bb995f34e0427816a4d7f74a9c987"
+  },
+  "wording": "The CPD shall encode each field value using the primitive data type specified for the field.",
+  "wordingSHA256": "b8619f75e939e867116e791d980f578065327e37743c7c4cc920a7c364035bb6",
+  "actor": "The CPD",
+  "condition": "When a native IPMDAR CPD Version 1.0 is supplied as operative staffing evidence under the recorded contract invocation",
+  "verificationIntent": "inspection",
+  "kind": "structure",
+  "binding": true,
+  "fields": [
+   "sourceEvidence"
+  ],
+  "status": "sample",
+  "notes": "F10 scope: source responsibilities, organizational mapping or staffing data; not a claim to reproduce or accept the entire IPMDAR. Binding only under the recorded contract invocation and tailoring."
+ },
+ {
+  "id": "DZR-F10-0029",
+  "alias": "IPMDAR-CPD-FFS §2.1.2",
+  "source": {
+   "docId": "IPMDAR-CPD-FFS",
+   "edition": "Version 1.0, 12 March 2020",
+   "paragraph": "2.1.2",
+   "url": "https://www.acq.osd.mil/asda/dpc/api/ipm/docs/20200312%20Contract%20Performance%20Dataset%20-%20FFS.pdf",
+   "passage": "Records may omit values for fields that are nullable but must include values for fields that are not nullable. Unless otherwise noted, omitted field values may be interpreted as null, undefined, or “not applicable”. All of these interpretations are considered equivalent.",
+   "passageSHA256": "2f779e062f49ecd6c94d7e542ded7947caf1fbb4284f567f38084cc0f6298f46"
+  },
+  "wording": "The CPD shall include values for all non-nullable fields.",
+  "wordingSHA256": "ee43ea837c2280b04c258bb43ddf489f926b43411037442f145ba26d7edb02eb",
+  "actor": "The CPD",
+  "condition": "When a native IPMDAR CPD Version 1.0 is supplied as operative staffing evidence under the recorded contract invocation",
+  "verificationIntent": "inspection",
+  "kind": "structure",
+  "binding": true,
+  "fields": [
+   "sourceEvidence"
+  ],
+  "status": "sample",
+  "notes": "F10 scope: source responsibilities, organizational mapping or staffing data; not a claim to reproduce or accept the entire IPMDAR. Binding only under the recorded contract invocation and tailoring."
+ },
+ {
+  "id": "DZR-F10-0030",
+  "alias": "IPMDAR-CPD-FFS §2.1.3, primary keys",
+  "source": {
+   "docId": "IPMDAR-CPD-FFS",
+   "edition": "Version 1.0, 12 March 2020",
+   "paragraph": "2.1.3, primary keys",
+   "url": "https://www.acq.osd.mil/asda/dpc/api/ipm/docs/20200312%20Contract%20Performance%20Dataset%20-%20FFS.pdf",
+   "passage": "A primary key constraint defines a collection of fields for a table such that the corresponding field values uniquely identify each record. No two records may have the same collection of corresponding field values.",
+   "passageSHA256": "5083b39c33ca1455eb7dc1d6f40d1a15aa170e8d19366327f0c0c9875b3a3ab6"
+  },
+  "wording": "The CPD shall contain no duplicate primary-key value collections within a table.",
+  "wordingSHA256": "376c7f32b33609d8965c094b2f961fb538aff9a16b4d831c97e834a70181a29e",
+  "actor": "The CPD",
+  "condition": "When a native IPMDAR CPD Version 1.0 is supplied as operative staffing evidence under the recorded contract invocation",
+  "verificationIntent": "inspection",
+  "kind": "identifier",
+  "binding": true,
+  "fields": [
+   "sourceEvidence"
+  ],
+  "status": "sample",
+  "notes": "F10 scope: source responsibilities, organizational mapping or staffing data; not a claim to reproduce or accept the entire IPMDAR. Binding only under the recorded contract invocation and tailoring."
+ },
+ {
+  "id": "DZR-F10-0031",
+  "alias": "IPMDAR-CPD-FFS §2.1.3, foreign keys",
+  "source": {
+   "docId": "IPMDAR-CPD-FFS",
+   "edition": "Version 1.0, 12 March 2020",
+   "paragraph": "2.1.3, foreign keys",
+   "url": "https://www.acq.osd.mil/asda/dpc/api/ipm/docs/20200312%20Contract%20Performance%20Dataset%20-%20FFS.pdf",
+   "passage": "A foreign key constraint defines a correspondence between a field in one table and a field in another table such that the field value for each record in the former must match the field value for some record in the latter.",
+   "passageSHA256": "eb0041ef99cb02b5f5dd029aa07079b8e506a1b78a91e831b9f0d28cfd7501d9"
+  },
+  "wording": "The CPD shall resolve each non-null foreign-key field value to a corresponding record in the referenced table.",
+  "wordingSHA256": "c81806799654a0e73e04508cca298fcbf945a4268ef6c1a6d6a1ba374898ef24",
+  "actor": "The CPD",
+  "condition": "When a native IPMDAR CPD Version 1.0 is supplied as operative staffing evidence under the recorded contract invocation",
+  "verificationIntent": "inspection",
+  "kind": "identifier",
+  "binding": true,
+  "fields": [
+   "sourceEvidence"
+  ],
+  "status": "sample",
+  "notes": "Read with nullable-field rules in §2.1.2 and the table-specific nullability: valid null roots and inactive conditional foreign-key fields are permitted. String key comparisons are case-insensitive under §2.1.6."
+ },
+ {
+  "id": "DZR-F10-0032",
+  "alias": "IPMDAR-CPD-FFS §2.1.6, character restrictions",
+  "source": {
+   "docId": "IPMDAR-CPD-FFS",
+   "edition": "Version 1.0, 12 March 2020",
+   "paragraph": "2.1.6, character restrictions",
+   "url": "https://www.acq.osd.mil/asda/dpc/api/ipm/docs/20200312%20Contract%20Performance%20Dataset%20-%20FFS.pdf",
+   "passage": "The following control characters are prohibited in all string values: (U+0000–U+0008), (U+000B– U+000C), (U+000E–U+001F), (U+007F). String values used as ID’s are further limited to a character set representing common printable characters (U+0020–U+007E).",
+   "passageSHA256": "725c4e9c181044263529dcedb14655e60344abecdd393d1b0e44bad1a272f3c4"
+  },
+  "wording": "The CPD shall exclude U+0000–U+0008, U+000B–U+000C, U+000E–U+001F and U+007F from string values and limit identifier strings to U+0020–U+007E.",
+  "wordingSHA256": "2b25c25bbec50cdc99631ffc4fb9721aa49b20a69cc08a1e977fc254ddfeddf2",
+  "actor": "The CPD",
+  "condition": "When a native IPMDAR CPD Version 1.0 is supplied as operative staffing evidence under the recorded contract invocation",
+  "verificationIntent": "inspection",
+  "kind": "identifier",
+  "binding": true,
+  "fields": [
+   "sourceEvidence"
+  ],
+  "status": "sample",
+  "notes": "F10 scope: source responsibilities, organizational mapping or staffing data; not a claim to reproduce or accept the entire IPMDAR. Binding only under the recorded contract invocation and tailoring."
+ },
+ {
+  "id": "DZR-F10-0033",
+  "alias": "IPMDAR-CPD-FFS §2.1.6, whitespace",
+  "source": {
+   "docId": "IPMDAR-CPD-FFS",
+   "edition": "Version 1.0, 12 March 2020",
+   "paragraph": "2.1.6, whitespace",
+   "url": "https://www.acq.osd.mil/asda/dpc/api/ipm/docs/20200312%20Contract%20Performance%20Dataset%20-%20FFS.pdf",
+   "passage": "Most string values must have normalized whitespace. A string value with normalized whitespace cannot begin or end with whitespace characters, cannot contain any whitespace characters other than the space character (U+0020), and cannot contain any sequence of two or more contiguous space characters. Normalized whitespace is not required for string values used for remarks or other expository text.",
+   "passageSHA256": "9c5e0f25626760cb49c322c30b003ae41fb780d12dc45338c5c91bb21053c925"
+  },
+  "wording": "The CPD shall normalize String and StringID whitespace to single U+0020 spaces between text with no leading or trailing whitespace, except for remarks and other expository Text values.",
+  "wordingSHA256": "5961b7a33c7f60d899bfe29c5637abed9522aecac136b3e43faa4a4f204517af",
+  "actor": "The CPD",
+  "condition": "When a native IPMDAR CPD Version 1.0 is supplied as operative staffing evidence under the recorded contract invocation",
+  "verificationIntent": "inspection",
+  "kind": "structure",
+  "binding": true,
+  "fields": [
+   "sourceEvidence"
+  ],
+  "status": "sample",
+  "notes": "F10 scope: source responsibilities, organizational mapping or staffing data; not a claim to reproduce or accept the entire IPMDAR. Binding only under the recorded contract invocation and tailoring."
+ },
+ {
+  "id": "DZR-F10-0034",
+  "alias": "IPMDAR-CPD-FFS §2.1.6, required strings",
+  "source": {
+   "docId": "IPMDAR-CPD-FFS",
+   "edition": "Version 1.0, 12 March 2020",
+   "paragraph": "2.1.6, required strings",
+   "url": "https://www.acq.osd.mil/asda/dpc/api/ipm/docs/20200312%20Contract%20Performance%20Dataset%20-%20FFS.pdf",
+   "passage": "Empty string values are interpreted as equivalent to null values for fields with a string data type. Records must include non-empty string values for string fields that cannot be null.",
+   "passageSHA256": "8e4a97d382a8f437c4399f85d46b531b4c1049d4f7e80992d8de3d9a50eac543"
+  },
+  "wording": "The CPD shall provide non-empty string values for string fields that cannot be null.",
+  "wordingSHA256": "2a8faa3cc90f7eae5bdaf45fc0949f2a1ec4d8be901bc469c66c241fa1f7e773",
+  "actor": "The CPD",
+  "condition": "When a native IPMDAR CPD Version 1.0 is supplied as operative staffing evidence under the recorded contract invocation",
+  "verificationIntent": "inspection",
+  "kind": "content",
+  "binding": true,
+  "fields": [
+   "sourceEvidence"
+  ],
+  "status": "sample",
+  "notes": "F10 scope: source responsibilities, organizational mapping or staffing data; not a claim to reproduce or accept the entire IPMDAR. Binding only under the recorded contract invocation and tailoring."
+ },
+ {
+  "id": "DZR-F10-0035",
+  "alias": "IPMDAR-CPD-FFS §2.1.7",
+  "source": {
+   "docId": "IPMDAR-CPD-FFS",
+   "edition": "Version 1.0, 12 March 2020",
+   "paragraph": "2.1.7",
+   "url": "https://www.acq.osd.mil/asda/dpc/api/ipm/docs/20200312%20Contract%20Performance%20Dataset%20-%20FFS.pdf",
+   "passage": "The hierarchical structure of the WBS and OBS is determined based on the level and sequence of the elements reported. Specifically, elements must be sorted in a manner consistent with a depth-first search of the element hierarchy, such that the parent element of a given element must be the nearest preceding element with a reported level less than that of the given element. Each element that succeeds another must have a level that is no more than 1 greater than the level of the preceding element. The minimum level is 1.",
+   "passageSHA256": "87adc4d9ecf966d3646085e2af4d419a836b3f501819487324d59b45912d88be"
+  },
+  "wording": "The CPD shall order WBS and OBS elements in depth-first hierarchy order, with each parent the nearest preceding lower-level element, a minimum level of one and a level increase no greater than one between consecutive elements.",
+  "wordingSHA256": "2aa693724a34e99e66d784e5263ccdb869e55011e4c1531cce8c055d53c47054",
+  "actor": "The CPD",
+  "condition": "When a native IPMDAR CPD Version 1.0 is supplied as operative staffing evidence under the recorded contract invocation",
+  "verificationIntent": "inspection",
+  "kind": "structure",
+  "binding": true,
+  "fields": [
+   "wbs",
+   "organizations"
+  ],
+  "status": "sample",
+  "notes": "F10 scope: source responsibilities, organizational mapping or staffing data; not a claim to reproduce or accept the entire IPMDAR. Binding only under the recorded contract invocation and tailoring."
+ },
+ {
+  "id": "DZR-F10-0036",
+  "alias": "IPMDAR-CPD-FFS §2.2.10 and 2.2.11, identical hierarchy constraints",
+  "source": {
+   "docId": "IPMDAR-CPD-FFS",
+   "edition": "Version 1.0, 12 March 2020",
+   "paragraph": "2.2.10 and 2.2.11, identical hierarchy constraints",
+   "url": "https://www.acq.osd.mil/asda/dpc/api/ipm/docs/20200312%20Contract%20Performance%20Dataset%20-%20FFS.pdf",
+   "passage": "The first record must have Level equal to 1. All other records must have Level greater than 1. The first record must have a null ParentID. All other records must have a ParentID equal to the ID of the parent record determined by the hierarchical structure.",
+   "passageSHA256": "2d27f5fb71ce872404b93564dc0251c7737c76735c096254a12a53bc5c840ecc"
+  },
+  "wording": "Each CPD WBS or OBS table shall start with one Level 1 record having null ParentID and assign every subsequent record a Level greater than one and the ParentID of the parent determined by hierarchy order.",
+  "wordingSHA256": "59c2537c6b9a96ff878a8e5eb667b9abdd12fff44e6fab50e2d3aa40cd76368f",
+  "actor": "Each CPD WBS or OBS table",
+  "condition": "When a native IPMDAR CPD Version 1.0 is supplied as operative staffing evidence under the recorded contract invocation",
+  "verificationIntent": "inspection",
+  "kind": "structure",
+  "binding": true,
+  "fields": [
+   "wbs",
+   "organizations"
+  ],
+  "status": "sample",
+  "notes": "The exact same source constraint appears in both WBS and OBS tables on PDF p11; retained as one shared obligation rather than duplicated by structure type."
+ },
+ {
+  "id": "DZR-F10-0037",
+  "alias": "IPMDAR-CPD-FFS §2.2.12",
+  "source": {
+   "docId": "IPMDAR-CPD-FFS",
+   "edition": "Version 1.0, 12 March 2020",
+   "paragraph": "2.2.12",
+   "url": "https://www.acq.osd.mil/asda/dpc/api/ipm/docs/20200312%20Contract%20Performance%20Dataset%20-%20FFS.pdf",
+   "passage": "WBSElementID and OBSElementID must each refer to an element with no child elements (i.e. a terminal or leaf node in the respective hierarchical structure).",
+   "passageSHA256": "951b40c93e58db0ece65bf256e8274b5bacfdba43ca1117247bc214155d54a29"
+  },
+  "wording": "The CPD shall map each control-account WBSElementID and OBSElementID to terminal elements in the respective WBS and OBS hierarchies.",
+  "wordingSHA256": "560e549f20494e145a130cf2e082c79be9b48d1b49a7d80e6bba743a0b460031",
+  "actor": "The CPD",
+  "condition": "When a native IPMDAR CPD Version 1.0 is supplied as operative staffing evidence under the recorded contract invocation",
+  "verificationIntent": "inspection",
+  "kind": "structure",
+  "binding": true,
+  "fields": [
+   "controlAccounts"
+  ],
+  "status": "sample",
+  "notes": "F10 scope: source responsibilities, organizational mapping or staffing data; not a claim to reproduce or accept the entire IPMDAR. Binding only under the recorded contract invocation and tailoring."
+ },
+ {
+  "id": "DZR-F10-0038",
+  "alias": "IPMDAR-CPD-FFS §2.2.18",
+  "source": {
+   "docId": "IPMDAR-CPD-FFS",
+   "edition": "Version 1.0, 12 March 2020",
+   "paragraph": "2.2.18",
+   "url": "https://www.acq.osd.mil/asda/dpc/api/ipm/docs/20200312%20Contract%20Performance%20Dataset%20-%20FFS.pdf",
+   "passage": "Order of records is significant. Records must have contiguous, sequential ID values starting at 1 (i.e. 1, 2, 3, etc.). StartDate must be 1 day later than EndDate of the previous record, if any, and on or before EndDate of the current record. WorkHours must be greater than or equal to 0.",
+   "passageSHA256": "ed5e992793a70ce6e895c73913fb6b6cfda900ec1c7230b04054c6dfadfb36ae"
+  },
+  "wording": "The CPD reporting calendar shall use contiguous sequential IDs starting at one, contiguous non-overlapping inclusive date ranges and nonnegative working hours.",
+  "wordingSHA256": "7c4244b33d7bfafd3be1d9a4cfec366bebe814ffa0e53e516050e31172fbcfd4",
+  "actor": "The CPD reporting calendar",
+  "condition": "When a native IPMDAR CPD Version 1.0 is supplied as operative staffing evidence under the recorded contract invocation",
+  "verificationIntent": "inspection",
+  "kind": "structure",
+  "binding": true,
+  "fields": [
+   "reportingCalendar"
+  ],
+  "status": "sample",
+  "notes": "Source use constraint says WorkHours whereas the table field is WorkingHours; retained verbatim and interpreted as the displayed WorkingHours field. IDs, date adjacency, date order and hours bounds are one calendar-validity obligation."
+ },
+ {
+  "id": "DZR-F10-0039",
+  "alias": "IPMDAR-CPD-FFS §2.2.22 and 2.2.23, control-account/work-package selection",
+  "source": {
+   "docId": "IPMDAR-CPD-FFS",
+   "edition": "Version 1.0, 12 March 2020",
+   "paragraph": "2.2.22 and 2.2.23, control-account/work-package selection",
+   "url": "https://www.acq.osd.mil/asda/dpc/api/ipm/docs/20200312%20Contract%20Performance%20Dataset%20-%20FFS.pdf",
+   "passage": "If BCWS_ToComplete_ByWorkPackage has a value of true, WorkPackageID must not be null and ControlAccountID must be null; otherwise, ControlAccountID must not be null and WorkPackageID must be null.\nIf EST_ToComplete_ByWorkPackage has a value of true, WorkPackageID must not be null and ControlAccountID must be null; otherwise, ControlAccountID must not be null and WorkPackageID must be null.",
+   "passageSHA256": "766bca8c139ba199b3531ca63e375188b57c3d6fb8fff626a291c51192e340d2"
+  },
+  "wording": "The CPD BCWS_ToComplete and EST_ToComplete tables shall populate only WorkPackageID when the corresponding table-specific ByWorkPackage flag is true and only ControlAccountID when the flag is false.",
+  "wordingSHA256": "742ac44228f68779b3df5fd45760a669df514058da8299ab9b0604905bddf13e",
+  "actor": "The CPD BCWS_ToComplete and EST_ToComplete tables",
+  "condition": "When a native IPMDAR CPD Version 1.0 is supplied as operative staffing evidence under the recorded contract invocation",
+  "verificationIntent": "inspection",
+  "kind": "identifier",
+  "binding": true,
+  "fields": [
+   "staffingHours",
+   "sourceEvidence"
+  ],
+  "status": "sample",
+  "notes": "One metric-grain selection obligation shared by the two future-metric tables; exact source spans from FFS PDF pages 19 and 20 are joined with a newline. Each table uses its own configuration flag."
+ },
+ {
+  "id": "DZR-F10-0041",
+  "alias": "IPMDAR-CPD-FFS §2.2.22 and 2.2.23, future reporting periods",
+  "source": {
+   "docId": "IPMDAR-CPD-FFS",
+   "edition": "Version 1.0, 12 March 2020",
+   "paragraph": "2.2.22 and 2.2.23, future reporting periods",
+   "url": "https://www.acq.osd.mil/asda/dpc/api/ipm/docs/20200312%20Contract%20Performance%20Dataset%20-%20FFS.pdf",
+   "passage": "ReportingPeriodID must have a value that is greater than the value of ReportingPeriodID in DatasetMetadata.",
+   "passageSHA256": "d0d856149fb759c1aaba97e301cc10141fe6bde9d22bcf8ed803ef8aa7dd1db4"
+  },
+  "wording": "The CPD BCWS_ToComplete and EST_ToComplete tables shall reference only reporting periods after the current DatasetMetadata.ReportingPeriodID.",
+  "wordingSHA256": "c41e1a8012f565e4ea8b1d066dbf03f795f8ae45903b103e3312172361de8f82",
+  "actor": "The CPD BCWS_ToComplete and EST_ToComplete tables",
+  "condition": "When a native IPMDAR CPD Version 1.0 is supplied as operative staffing evidence under the recorded contract invocation",
+  "verificationIntent": "inspection",
+  "kind": "currency",
+  "binding": true,
+  "fields": [
+   "staffingHours"
+  ],
+  "status": "sample",
+  "notes": "Identical temporal restriction repeated across the baseline and estimate tables; catalogued once."
+ },
+ {
+  "id": "DZR-F10-0042",
+  "alias": "IPMDAR-CPD-FFS §3.1, encoding and protection",
+  "source": {
+   "docId": "IPMDAR-CPD-FFS",
+   "edition": "Version 1.0, 12 March 2020",
+   "paragraph": "3.1, encoding and protection",
+   "url": "https://www.acq.osd.mil/asda/dpc/api/ipm/docs/20200312%20Contract%20Performance%20Dataset%20-%20FFS.pdf",
+   "passage": "Text file entries must be encoded in UTF-8. Compressed file entries must be compressed using the DEFLATE compression method. File entries must not be encrypted.",
+   "passageSHA256": "4908b7eec3669f0acd7efbbce6cd6efefc8178ed87ea4c6a8f666d6e2d5b7036"
+  },
+  "wording": "The CPD ZIP package shall contain unencrypted UTF-8 text entries with DEFLATE used for compressed entries.",
+  "wordingSHA256": "5a99bef4c8ff5d392887e8697626f7e0c9bca744b49669a59a0f109f19498f21",
+  "actor": "The CPD ZIP package",
+  "condition": "When a native IPMDAR CPD Version 1.0 is supplied as operative staffing evidence under the recorded contract invocation",
+  "verificationIntent": "inspection",
+  "kind": "structure",
+  "binding": true,
+  "fields": [
+   "sourceEvidence"
+  ],
+  "status": "sample",
+  "notes": "F10 scope: source responsibilities, organizational mapping or staffing data; not a claim to reproduce or accept the entire IPMDAR. Binding only under the recorded contract invocation and tailoring."
+ },
+ {
+  "id": "DZR-F10-0043",
+  "alias": "IPMDAR-CPD-FFS §3.1, required file entry",
+  "source": {
+   "docId": "IPMDAR-CPD-FFS",
+   "edition": "Version 1.0, 12 March 2020",
+   "paragraph": "3.1, required file entry",
+   "url": "https://www.acq.osd.mil/asda/dpc/api/ipm/docs/20200312%20Contract%20Performance%20Dataset%20-%20FFS.pdf",
+   "passage": "The file entry for a table may be omitted if the table has no records. The file entry for a singleton may be omitted if all its fields are null. The file entry for type/version information must always be included.",
+   "passageSHA256": "81afab34c3900d693dace5004119cae8d9fa172b871c2c1bc56e18ae44f21a8f"
+  },
+  "wording": "The CPD ZIP package shall include the type/version entry and every table entry except a table with no records or a singleton with all fields null.",
+  "wordingSHA256": "3e7b6f126f7775a09e6ec0b5102588271dd0b1878df7ad6745235dd7e080e158",
+  "actor": "The CPD ZIP package",
+  "condition": "When a native IPMDAR CPD Version 1.0 is supplied as operative staffing evidence under the recorded contract invocation",
+  "verificationIntent": "inspection",
+  "kind": "structure",
+  "binding": true,
+  "fields": [
+   "sourceEvidence"
+  ],
+  "status": "sample",
+  "notes": "F10 scope: source responsibilities, organizational mapping or staffing data; not a claim to reproduce or accept the entire IPMDAR. Binding only under the recorded contract invocation and tailoring."
+ },
+ {
+  "id": "DZR-F10-0044",
+  "alias": "IPMDAR-CPD-FFS §3.3",
+  "source": {
+   "docId": "IPMDAR-CPD-FFS",
+   "edition": "Version 1.0, 12 March 2020",
+   "paragraph": "3.3",
+   "url": "https://www.acq.osd.mil/asda/dpc/api/ipm/docs/20200312%20Contract%20Performance%20Dataset%20-%20FFS.pdf",
+   "passage": "The ‘FileType.txt’ file entry specifies the type and version of the IPMDAR Contract Performance Dataset file. This file entry must contain the following exact text string (excluding quotation marks): “IPMDAR_CONTRACT_PERFORMANCE_DATASET/1.0”.",
+   "passageSHA256": "437f66f2f29c73177e3cd3ea38097d862fe3aaea78b6fed1dee16973df3b794f"
+  },
+  "wording": "The CPD FileType.txt entry shall contain exactly IPMDAR_CONTRACT_PERFORMANCE_DATASET/1.0.",
+  "wordingSHA256": "eb50f86192adb90045797f16e2bc2c7a9037d47df484a6c1c8a3cb6ccde95eaf",
+  "actor": "The CPD FileType.txt entry",
+  "condition": "When a native IPMDAR CPD Version 1.0 is supplied as operative staffing evidence under the recorded contract invocation",
+  "verificationIntent": "inspection",
+  "kind": "identifier",
+  "binding": true,
+  "fields": [
+   "sourceEvidence"
+  ],
+  "status": "sample",
+  "notes": "F10 scope: source responsibilities, organizational mapping or staffing data; not a claim to reproduce or accept the entire IPMDAR. Binding only under the recorded contract invocation and tailoring."
+ },
+ {
+  "id": "DZR-F10-0045",
+  "alias": "IPMDAR-CPD-FFS §4.1, field names and types",
+  "source": {
+   "docId": "IPMDAR-CPD-FFS",
+   "edition": "Version 1.0, 12 March 2020",
+   "paragraph": "4.1, field names and types",
+   "url": "https://www.acq.osd.mil/asda/dpc/api/ipm/docs/20200312%20Contract%20Performance%20Dataset%20-%20FFS.pdf",
+   "passage": "The name of each pair must exactly match the name of the corresponding field, and the value of each pair must follow the conventions below for representing the corresponding primitive data type in JSON. Names must be unique within the scope of each object and each name must correspond to a field defined for the table.",
+   "passageSHA256": "498ceafb88ded63748d74facec6da4b3b1d2bfea2c701e4feca8771dd7fa257f"
+  },
+  "wording": "The CPD JSON records shall use unique field names defined for the corresponding table and values conforming to the specified primitive-type JSON representation.",
+  "wordingSHA256": "ea1ba000d9b2d03e83e75bcd0280a166b966a77bb8704f12374401dfea32a11f",
+  "actor": "The CPD JSON records",
+  "condition": "When a native IPMDAR CPD Version 1.0 is supplied as operative staffing evidence under the recorded contract invocation",
+  "verificationIntent": "inspection",
+  "kind": "structure",
+  "binding": true,
+  "fields": [
+   "sourceEvidence"
+  ],
+  "status": "sample",
+  "notes": "F10 scope: source responsibilities, organizational mapping or staffing data; not a claim to reproduce or accept the entire IPMDAR. Binding only under the recorded contract invocation and tailoring."
+ },
+ {
+  "id": "DZR-F10-0046",
+  "alias": "IPMDAR-CPD-FFS §4.1, JSON null representation",
+  "source": {
+   "docId": "IPMDAR-CPD-FFS",
+   "edition": "Version 1.0, 12 March 2020",
+   "paragraph": "4.1, JSON null representation",
+   "url": "https://www.acq.osd.mil/asda/dpc/api/ipm/docs/20200312%20Contract%20Performance%20Dataset%20-%20FFS.pdf",
+   "passage": "Objects must include name/value pairs for fields that are not null, and these pairs must not have a JSON value of null or an empty JSON string value. Conversely, objects may or may not include name/value pairs for fields that are null. If included, these pairs must have a JSON value of null or an empty JSON string value. Only pairs for fields with a primitive data type of String, StringID, or Text may have an empty JSON string value.",
+   "passageSHA256": "b5327926092a4def91266e03aa2390966d9aef2c2db94eb270488ed33aaed49b"
+  },
+  "wording": "The CPD JSON records shall include non-null fields with non-null and non-empty values and represent included null fields as null or, for String, StringID and Text only, an empty string.",
+  "wordingSHA256": "73fe07138ecce1eac9d94a8e304ab37cd9812afa202d2711aebe64443dc7d9e0",
+  "actor": "The CPD JSON records",
+  "condition": "When a native IPMDAR CPD Version 1.0 is supplied as operative staffing evidence under the recorded contract invocation",
+  "verificationIntent": "inspection",
+  "kind": "structure",
+  "binding": true,
+  "fields": [
+   "sourceEvidence"
+  ],
+  "status": "sample",
+  "notes": "F10 scope: source responsibilities, organizational mapping or staffing data; not a claim to reproduce or accept the entire IPMDAR. Binding only under the recorded contract invocation and tailoring."
+ },
+ {
+  "id": "DZR-F10-0047",
+  "alias": "IPMDAR-CPD-DEI §2.1.18, Use Notes",
+  "source": {
+   "docId": "IPMDAR-CPD-DEI",
+   "edition": "Version 1.0, 12 March 2020",
+   "paragraph": "2.1.18, Use Notes",
+   "url": "https://www.acq.osd.mil/asda/dpc/api/ipm/docs/20200312%20contract%20performance%20dataset%20-%20dei.pdf",
+   "passage": "Order of reporting periods is significant. Date ranges for sequential reporting periods must be exclusive and contiguous. Do not include reporting periods unless they have associated cost data and/or they overlap with the contractual period of performance, as defined by the applicable start and end dates in ContractData.",
+   "passageSHA256": "de7cca340c90bee2425576d3d8d258e2646df936928dcf5b0c7964930d73986a"
+  },
+  "wording": "The CPD reporting calendar shall include only periods with associated cost data or overlap with the contractual period of performance, using non-overlapping and contiguous date ranges.",
+  "wordingSHA256": "f5b456ba8f63a396a3daaffd516691c0f712b8c0f30773554eef589a34e36113",
+  "actor": "The CPD reporting calendar",
+  "condition": "When a native IPMDAR CPD Version 1.0 is supplied as operative staffing evidence under the recorded contract invocation",
+  "verificationIntent": "inspection",
+  "kind": "structure",
+  "binding": true,
+  "fields": [
+   "reportingCalendar"
+  ],
+  "status": "sample",
+  "notes": "The source term exclusive describes non-overlapping reporting periods. Read with FFS §2.2.18: StartDate is on or before EndDate and each next StartDate is one day after the previous EndDate. The two sources are consistent; no new interpretation gap is created."
+ },
+ {
+  "id": "DZR-F10-0048",
+  "alias": "IPMDAR-CPD-DEI §2.1.19–2.1.21, repeated summability constraint",
+  "source": {
+   "docId": "IPMDAR-CPD-DEI",
+   "edition": "Version 1.0, 12 March 2020",
+   "paragraph": "2.1.19–2.1.21, repeated summability constraint",
+   "url": "https://www.acq.osd.mil/asda/dpc/api/ipm/docs/20200312%20contract%20performance%20dataset%20-%20dei.pdf",
+   "passage": "Reported values must sum across each of the dimensions reported. In particular, values reported at the work package level must sum to values at the control account level, and time-phased values must sum to values that are cumulative to date with respect to the current reporting period, as defined in the metadata. Values that are not time-phased must be cumulative to date.",
+   "passageSHA256": "e1c1db45e2f2f94e07372966cb875581b4ab042095c7b34def65fb75bf2297ca"
+  },
+  "wording": "The CPD to-date metrics shall reconcile work-package sums to control-account values and time-phased sums to cumulative-to-date totals at the current reporting period, with unphased values reported as cumulative-to-date values.",
+  "wordingSHA256": "60b54466f0792a35aafde53d079bd42fe19db6c62956df4ae98f0623b4cebdce",
+  "actor": "The CPD to-date metrics",
+  "condition": "When a native IPMDAR CPD Version 1.0 is supplied as operative staffing evidence under the recorded contract invocation",
+  "verificationIntent": "inspection",
+  "kind": "content",
+  "binding": true,
+  "fields": [
+   "staffingHours",
+   "sourceEvidence"
+  ],
+  "status": "sample",
+  "notes": "Same summability duty repeated in three to-date metric tables; one obligation, not one per metric, period, WBS or organization. Source definitions and configuration flags govern each table."
+ },
+ {
+  "id": "DZR-F10-0049",
+  "alias": "IPMDAR-CPD-DEI §2.1.22–2.1.23, repeated summability constraint",
+  "source": {
+   "docId": "IPMDAR-CPD-DEI",
+   "edition": "Version 1.0, 12 March 2020",
+   "paragraph": "2.1.22–2.1.23, repeated summability constraint",
+   "url": "https://www.acq.osd.mil/asda/dpc/api/ipm/docs/20200312%20contract%20performance%20dataset%20-%20dei.pdf",
+   "passage": "Reported values must sum across each of the dimensions reported. In particular, values reported at the work package level must sum to values at the control account level, and time-phased values must sum to values that are cumulative to completion.",
+   "passageSHA256": "d30972e0d5a32ceb6f091511a49058f6effbe3d2cfaf1f1a6303d3e79e134797"
+  },
+  "wording": "The CPD to-complete metrics shall sum across reported dimensions, with work-package values reconciling to control-account values and time-phased values reconciling to cumulative-to-completion values.",
+  "wordingSHA256": "397382985c6e1c3e2f77a6f1ffa87328e7d98af5b69b240383cf70bff506756d",
+  "actor": "The CPD to-complete metrics",
+  "condition": "When a native IPMDAR CPD Version 1.0 is supplied as operative staffing evidence under the recorded contract invocation",
+  "verificationIntent": "inspection",
+  "kind": "content",
+  "binding": true,
+  "fields": [
+   "staffingHours",
+   "sourceEvidence"
+  ],
+  "status": "sample",
+  "notes": "Identical obligation in baseline and estimate tables; catalogued once. Zero-only row omission is should guidance, not made a mandatory baseline obligation."
+ },
+ {
+  "id": "DZR-F10-0050",
+  "alias": "IPMDAR-CPD-FFS §2.2.19–2.2.21, control-account/work-package selection",
+  "source": {
+   "docId": "IPMDAR-CPD-FFS",
+   "edition": "Version 1.0, 12 March 2020",
+   "paragraph": "2.2.19–2.2.21, control-account/work-package selection",
+   "url": "https://www.acq.osd.mil/asda/dpc/api/ipm/docs/20200312%20Contract%20Performance%20Dataset%20-%20FFS.pdf",
+   "passage": "If BCWS_ToDate_ByWorkPackage has a value of true, WorkPackageID must not be null and ControlAccountID must be null; otherwise, ControlAccountID must not be null and WorkPackageID must be null.\nIf BCWP_ToDate_ByWorkPackage has a value of true, WorkPackageID must not be null and ControlAccountID must be null; otherwise, ControlAccountID must not be null and WorkPackageID must be null.\nIf ACWP_ToDate_ByWorkPackage has a value of true, WorkPackageID must not be null and ControlAccountID must be null; otherwise, ControlAccountID must not be null and WorkPackageID must be null.",
+   "passageSHA256": "87db4a12021f3f76f67836aa04ad1caa05b6e9db37596c328ea5d327a5e2b1a6"
+  },
+  "wording": "The CPD BCWS_ToDate, BCWP_ToDate and ACWP_ToDate tables shall populate only WorkPackageID when the corresponding table-specific ByWorkPackage flag is true and only ControlAccountID when the flag is false.",
+  "wordingSHA256": "47fa56454ad7bdeee2cbc9e7168165c2e565bb0413346fab1435b6094bf67eeb",
+  "actor": "The CPD BCWS_ToDate, BCWP_ToDate and ACWP_ToDate tables",
+  "condition": "When a native IPMDAR CPD Version 1.0 is supplied as operative staffing evidence under the recorded contract invocation",
+  "verificationIntent": "inspection",
+  "kind": "identifier",
+  "binding": true,
+  "fields": [
+   "staffingHours",
+   "sourceEvidence"
+  ],
+  "status": "sample",
+  "notes": "Three separately located verbatim table constraints from PDF pages 16–18 joined with newlines, grouped as one metric-grain obligation. Respective flags are BCWS_ToDate_ByWorkPackage, BCWP_ToDate_ByWorkPackage and ACWP_ToDate_ByWorkPackage."
+ },
+ {
+  "id": "DZR-F10-0051",
+  "alias": "IPMDAR-CPD-FFS §2.2.19–2.2.21, repeated historical reporting-period switch",
+  "source": {
+   "docId": "IPMDAR-CPD-FFS",
+   "edition": "Version 1.0, 12 March 2020",
+   "paragraph": "2.2.19–2.2.21, repeated historical reporting-period switch",
+   "url": "https://www.acq.osd.mil/asda/dpc/api/ipm/docs/20200312%20Contract%20Performance%20Dataset%20-%20FFS.pdf",
+   "passage": "If ToDate_TimePhased has a value of true, ReportingPeriodID must not be null; otherwise, ReportingPeriodID must be null.",
+   "passageSHA256": "8931d8ca91ebf9cfc9b8ec23b363511cf680866b643a8b03bf0a446675d51e8e"
+  },
+  "wording": "The CPD to-date metric tables shall provide a non-null ReportingPeriodID when ToDate_TimePhased is true and a null ReportingPeriodID when ToDate_TimePhased is false.",
+  "wordingSHA256": "5ea9e6703632ddf48f6fb94e164abb2a8a4ac2b065e84c14d599235ac51dd7df",
+  "actor": "The CPD to-date metric tables",
+  "condition": "When a native IPMDAR CPD Version 1.0 is supplied as operative staffing evidence under the recorded contract invocation",
+  "verificationIntent": "inspection",
+  "kind": "identifier",
+  "binding": true,
+  "fields": [
+   "staffingHours",
+   "sourceEvidence"
+  ],
+  "status": "sample",
+  "notes": "Identical condition in all three to-date metric tables; one obligation, not multiplied by metric."
+ },
+ {
+  "id": "DZR-F10-0052",
+  "alias": "IPMDAR-CPD-FFS §2.2.19–2.2.21, repeated historical period limit",
+  "source": {
+   "docId": "IPMDAR-CPD-FFS",
+   "edition": "Version 1.0, 12 March 2020",
+   "paragraph": "2.2.19–2.2.21, repeated historical period limit",
+   "url": "https://www.acq.osd.mil/asda/dpc/api/ipm/docs/20200312%20Contract%20Performance%20Dataset%20-%20FFS.pdf",
+   "passage": "If not null, ReportingPeriodID must have a value that is less than or equal to the value of ReportingPeriodID in DatasetMetadata.",
+   "passageSHA256": "35e5f210f3387d5d5661a50ccc98e3d1943dc4c4797694fa2495479f6a24060f"
+  },
+  "wording": "The CPD to-date metric tables shall restrict each non-null ReportingPeriodID to the current or an earlier DatasetMetadata.ReportingPeriodID.",
+  "wordingSHA256": "8ddeb0783c59d30dd268406741818d5f5ac0f18208a0ae046cd905b37d083acb",
+  "actor": "The CPD to-date metric tables",
+  "condition": "When a native IPMDAR CPD Version 1.0 is supplied as operative staffing evidence under the recorded contract invocation",
+  "verificationIntent": "inspection",
+  "kind": "currency",
+  "binding": true,
+  "fields": [
+   "staffingHours"
+  ],
+  "status": "sample",
+  "notes": "Identical restriction in all three to-date metric tables; one obligation."
+ },
+ {
+  "id": "DZR-F10-0053",
+  "alias": "DI-MGMT-81861C §2.5.3; Table 2.2, Major Subcontractors/Supplier Changes row and table note",
+  "source": {
+   "docId": "DI-MGMT-81861C",
+   "edition": "Revision C, 30 August 2021",
+   "paragraph": "2.5.3; Table 2.2, Major Subcontractors/Supplier Changes row and table note",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5773808",
+   "passage": "The Detailed Analysis section for the Performance Narrative Report shall address items included in the Detailed Analysis Table, following Section 2.4.3.5.\nIdentification of major subcontractors with EVM flowdown requirements to include those not yet definitized\nBlock 16 of the CDRL shall identify any additional tailored in items listed in this table. The frequency for each item shall be annotated in Block 16 of the CDRL and may be identified with a periodicity that meets management needs.",
+   "passageSHA256": "aaebe2238ecd34466f0d17a4b6109cd29544c3888a26bf738d097373562ea2d3"
+  },
+  "wording": "The major-subcontractor change narrative shall identify major subcontractors with EVM flow-down requirements, including subcontractors not yet definitized.",
+  "wordingSHA256": "c7ed551e034dca2d05fee8423f554615c99109d94ddc28dfcb3970e6bf78edaf",
+  "actor": "The major-subcontractor change narrative",
+  "condition": "When DI-MGMT-81861C is invoked by the contract and CPD-derived staffing data or the associated staffing narrative is delivered and CDRL Block 16 includes the Major Subcontractors/Supplier Changes item",
+  "verificationIntent": "inspection",
+  "kind": "content",
+  "binding": true,
+  "fields": [
+   "staffingNarrative",
+   "subcontractors"
+  ],
+  "status": "sample",
+  "notes": "Three distinct verbatim spans from PDF pages 11 and 14 joined with newlines: governing sentence, visually inspected description cell, and table note. The row title is retained in the locator, not interleaved into the description cell. Conditional roster/narrative data product; no contracting-conduct obligation."
+ },
+ {
+  "id": "DZR-F10-0054",
+  "alias": "DI-MGMT-81861C §2.3.2.5.4",
+  "source": {
+   "docId": "DI-MGMT-81861C",
+   "edition": "Revision C, 30 August 2021",
+   "paragraph": "2.3.2.5.4",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5773808",
+   "passage": "The values provided shall represent cumulative adjustments for all previous and current reprogramming adjustments, in hours or dollars or both. If a reprogramming adjustment has occurred, it must be reported in all future reports.",
+   "passageSHA256": "e67ba2415f24488f503dd674903432d4e3c5dcec02335a9d31c4b967f4e3b1c9"
+  },
+  "wording": "The CPD shall report cumulative adjustments for all previous and current reprogramming adjustments in hours, dollars or both in every report after reprogramming.",
+  "wordingSHA256": "024ea3304f81edc37c1b8a649326b2edddaa02c1a785a3491200e7905897e210",
+  "actor": "The CPD",
+  "condition": "When DI-MGMT-81861C is invoked by the contract and CPD-derived staffing data or the associated staffing narrative is delivered and a reprogramming adjustment has occurred",
+  "verificationIntent": "inspection",
+  "kind": "currency",
+  "binding": true,
+  "fields": [
+   "staffingHours",
+   "sourceEvidence"
+  ],
+  "status": "sample",
+  "notes": "F10 scope: source responsibilities, organizational mapping or staffing data; not a claim to reproduce or accept the entire IPMDAR. Binding only under the recorded contract invocation and tailoring."
+ },
+ {
+  "id": "DZR-F10-0055",
+  "alias": "DI-MGMT-81861C §2.3.2.5.5",
+  "source": {
+   "docId": "DI-MGMT-81861C",
+   "edition": "Revision C, 30 August 2021",
+   "paragraph": "2.3.2.5.5",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5773808",
+   "passage": "Formal reprogramming can require more than one month to implement. During formal reprogramming, reporting shall continue, at a minimum, to include ACWP, and the latest reported cumulative BCWS and BCWP will be maintained until the OTB/OTS is implemented.",
+   "passageSHA256": "0bc5b938ed28d83670a937e33a09447731cad11d728fa76c1974c9ce76ad09bf"
+  },
+  "wording": "The CPD shall continue reporting at least ACWP during formal reprogramming.",
+  "wordingSHA256": "0381524850b8950d327ab8d15a0c61a20bfcfed1f251016119c03d858d6b29f0",
+  "actor": "The CPD",
+  "condition": "When DI-MGMT-81861C is invoked by the contract and CPD-derived staffing data or the associated staffing narrative is delivered and formal reprogramming is in progress",
+  "verificationIntent": "inspection",
+  "kind": "currency",
+  "binding": true,
+  "fields": [
+   "staffingHours",
+   "sourceEvidence"
+  ],
+  "status": "sample",
+  "notes": "The explicit shall concerns continued reporting with ACWP as a minimum. The separate will statement about retaining the latest cumulative BCWS/BCWP until OTB/OTS implementation is preserved in the passage as context, not added as an independent mandatory record under the requested literal-modal extraction rule."
+ },
+ {
+  "id": "DZR-F10-0056",
+  "alias": "DI-MGMT-81861C §1.4.1, footnote 1",
+  "source": {
+   "docId": "DI-MGMT-81861C",
+   "edition": "Revision C, 30 August 2021",
+   "paragraph": "1.4.1, footnote 1",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5773808",
+   "passage": "1 In the event that the Direct Reporting Contractor is a contractor other than the prime, the Direct Reporting Contractor will additionally report to the prime. Subcontractor data shall be provided to the prime in a manner that supports the contractor’s submission to the Government.",
+   "passageSHA256": "0dd83d8071565b23101ef3b44b7bd99eea93c97cca9238d0caede46476ff34c9"
+  },
+  "wording": "The subcontractor shall provide data to the prime in a manner supporting the prime contractor submission to the Government.",
+  "wordingSHA256": "44a7a38394603ab7581e1c532d4e4805d27347b8b78c322c033e64461157500a",
+  "actor": "The subcontractor",
+  "condition": "When DI-MGMT-81861C is invoked by the contract and CPD-derived staffing data or the associated staffing narrative is delivered and the supplier is a subcontractor reporting data to the prime",
+  "verificationIntent": "inspection",
+  "kind": "delivery",
+  "binding": true,
+  "fields": [
+   "delivery"
+  ],
+  "status": "sample",
+  "notes": "Full footnote 1 at the bottom of PDF page 1. The extracted shall concerns subcontractor data delivery; descriptive reporting-to-prime text is retained as source context."
+ },
+ {
+  "id": "DZR-F10-0101",
+  "alias": "DI-MGMT-81797 §2, Format; PDF page 1",
+  "source": {
+   "docId": "DI-MGMT-81797",
+   "edition": "Base, 8 December 2009; validated by Notice 3, 17 September 2024",
+   "paragraph": "§2, Format; PDF page 1",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=4820183",
+   "passage": "The Program Management Plan shall be in contractor format and shall be unclassified.",
+   "passageSHA256": "9c1c68164f7a65e36f7e71e5e2b9711dde2225d4f31d2ad33ba87171e8b0f700"
+  },
+  "wording": "The Program Management Plan shall use contractor format.",
+  "wordingSHA256": "a5d7bce5010c6722ed9abc6bc09a53f9e524a53ed0686a49504cffddcb640811",
+  "actor": "The Program Management Plan",
+  "condition": "When the applicable contract/CDRL invokes DI-MGMT-81797 for the Program Management Plan; this is a conditional data-deliverable requirement, not an automatically applicable legal obligation.",
+  "verificationIntent": "inspection",
+  "kind": "structure",
+  "binding": true,
+  "fields": [
+   "nativeFormat"
+  ],
+  "status": "sample",
+  "notes": "One consecutive source span from PDF page 1; source line wrapping is normalized to spaces. The source does not prescribe JSON, a spreadsheet, a RACI matrix, or a standard table layout. The separate unclassified restriction from the same sentence is DZR-F10-0102."
+ },
+ {
+  "id": "DZR-F10-0102",
+  "alias": "DI-MGMT-81797 §2, Format; PDF page 1",
+  "source": {
+   "docId": "DI-MGMT-81797",
+   "edition": "Base, 8 December 2009; validated by Notice 3, 17 September 2024",
+   "paragraph": "§2, Format; PDF page 1",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=4820183",
+   "passage": "The Program Management Plan shall be in contractor format and shall be unclassified.",
+   "passageSHA256": "9c1c68164f7a65e36f7e71e5e2b9711dde2225d4f31d2ad33ba87171e8b0f700"
+  },
+  "wording": "The Program Management Plan shall be unclassified.",
+  "wordingSHA256": "2b20b32e87e50dbf55083f384b4d655f828e7286f6511b32630bd42adf2cc951",
+  "actor": "The Program Management Plan",
+  "condition": "When the applicable contract/CDRL invokes DI-MGMT-81797 for the Program Management Plan; this is a conditional data-deliverable requirement, not an automatically applicable legal obligation.",
+  "verificationIntent": "inspection",
+  "kind": "marking",
+  "binding": true,
+  "fields": [
+   "classification"
+  ],
+  "status": "sample",
+  "notes": "One consecutive source span from PDF page 1; source line wrapping is normalized to spaces. Unclassified is the exact source limitation; this clause does not establish public release or resolve CUI handling. The separate contractor-format duty is DZR-F10-0101."
+ },
+ {
+  "id": "DZR-F10-0103",
+  "alias": "DI-MGMT-81797 §3, Content, first sentence; PDF page 1",
+  "source": {
+   "docId": "DI-MGMT-81797",
+   "edition": "Base, 8 December 2009; validated by Notice 3, 17 September 2024",
+   "paragraph": "§3, Content, first sentence; PDF page 1",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=4820183",
+   "passage": "The Program Management Plan shall be an integrated document showing technical, cost and schedule data to a common base, the contract work breakdown structure (CWBS) or it’s planning equivalent.",
+   "passageSHA256": "6f43b1a5765533e9358785ca3aa8d015b614c0be3ae9b31ff9e0eb6ec70bf759"
+  },
+  "wording": "The Program Management Plan shall integrate technical, cost, and schedule data using the contract work breakdown structure or the planning equivalent of the contract work breakdown structure as a common base.",
+  "wordingSHA256": "02d3338845fd0b8a38c2d2c9c5fa263d26c107c76694490d9d1c9f5c84732ede",
+  "actor": "The Program Management Plan",
+  "condition": "When the applicable contract/CDRL invokes DI-MGMT-81797 for the Program Management Plan; this is a conditional data-deliverable requirement, not an automatically applicable legal obligation. The source expressly permits the CWBS or the planning equivalent as the common base.",
+  "verificationIntent": "inspection",
+  "kind": "structure",
+  "binding": true,
+  "fields": [
+   "commonBase",
+   "technicalData",
+   "costData",
+   "scheduleData"
+  ],
+  "status": "sample",
+  "notes": "One consecutive source span from PDF page 1; source line wrapping is normalized to spaces. Whole-plan integration structure governs this F10 content subset; the subset is not a complete Program Management Plan. The source text retains the printed “it’s”; the unsupported apostrophe text-layer glyph was transcribed as U+2019 after visual inspection, without correcting the source grammar. No individual staffing-to-WBS allocation matrix or quantity is prescribed here."
+ },
+ {
+  "id": "DZR-F10-0104",
+  "alias": "DI-MGMT-81797 §3, Content, second sentence; PDF page 1",
+  "source": {
+   "docId": "DI-MGMT-81797",
+   "edition": "Base, 8 December 2009; validated by Notice 3, 17 September 2024",
+   "paragraph": "§3, Content, second sentence; PDF page 1",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=4820183",
+   "passage": "It shall also provide information on the contractor’s organization, practices and techniques to be used in managing the program and, if applicable, subcontractors.",
+   "passageSHA256": "4d39f553513baa3fc16a2fa13dee5ee5ddf5a5383cfb41b21a009a20f81b2dbe"
+  },
+  "wording": "The Program Management Plan shall provide information on the contractor organization and on the practices and techniques to be used in managing the program and, if applicable, subcontractors.",
+  "wordingSHA256": "f52a6523c4765e34890f099e0b67f9a6469a47cf1e73e643c6efb4d572dac6ca",
+  "actor": "The Program Management Plan",
+  "condition": "When the applicable contract/CDRL invokes DI-MGMT-81797 for the Program Management Plan; this is a conditional data-deliverable requirement, not an automatically applicable legal obligation. Subcontractor management information applies only if subcontractors are applicable, as stated in the source.",
+  "verificationIntent": "inspection",
+  "kind": "content",
+  "binding": true,
+  "fields": [
+   "organization",
+   "managementPractices",
+   "managementTechniques",
+   "subcontractorManagement"
+  ],
+  "status": "sample",
+  "notes": "One consecutive source span from PDF page 1; source line wrapping is normalized to spaces. The information-set obligation is grouped; no separate engineering execution obligation or repeated obligation per organization/person is created. The source pronoun refers to the Program Management Plan in the immediately preceding sentence. The unsupported apostrophe text-layer glyph in “contractor’s” was transcribed as U+2019 after visual inspection."
+ },
+ {
+  "id": "DZR-F10-0105",
+  "alias": "DI-MGMT-81797 §3 list parent; §3(b); PDF page 1",
+  "source": {
+   "docId": "DI-MGMT-81797",
+   "edition": "Base, 8 December 2009; validated by Notice 3, 17 September 2024",
+   "paragraph": "§3 list parent; §3(b); PDF page 1",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=4820183",
+   "passage": "The plan shall specifically contain the following:\n\nb. Indication of the relationship of the plan to the CWBS: This shall include a description of each element and the cost associated with each element.",
+   "passageSHA256": "f08aedbf708fbdd5c9f6f956943533abb785c1c3751cb8c44487457c9ca5b3fa"
+  },
+  "wording": "The Program Management Plan shall indicate the relationship of the plan to the CWBS, including a description of each CWBS element and the cost associated with each CWBS element.",
+  "wordingSHA256": "7ea9a40cab538eb7dd2909f46a15e156f98d6fbf5b339ae590a4b25e9957efe8",
+  "actor": "The Program Management Plan",
+  "condition": "When the applicable contract/CDRL invokes DI-MGMT-81797 for the Program Management Plan; this is a conditional data-deliverable requirement, not an automatically applicable legal obligation. Section 3 permits a planning equivalent as the integrated common base, while §3(b) expressly names the CWBS; no additional exemption or mapping rule is specified in the inspected source.",
+  "verificationIntent": "inspection",
+  "kind": "content",
+  "binding": true,
+  "fields": [
+   "cwbsRelationship",
+   "cwbsElementDescription",
+   "cwbsElementCost"
+  ],
+  "status": "sample",
+  "notes": "Composite quotation: separate verbatim source spans are separated by blank lines; span 1 is on PDF page 1; span 2 is on PDF page 1. No continuous passage across omitted content is asserted. One coherent CWBS relationship fieldset, not a new requirement per element. Element cost is retained as explicit context in the source fieldset, without expanding into the separate cost-chart obligation in §3(e). No arbitrary WBS depth, code syntax, or RACI allocation is imposed."
+ },
+ {
+  "id": "DZR-F10-0106",
+  "alias": "DI-MGMT-81797 §3 list parent, PDF page 1; §3(g)(1)–(2), PDF page 2",
+  "source": {
+   "docId": "DI-MGMT-81797",
+   "edition": "Base, 8 December 2009; validated by Notice 3, 17 September 2024",
+   "paragraph": "§3 list parent, PDF page 1; §3(g)(1)–(2), PDF page 2",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=4820183",
+   "passage": "The plan shall specifically contain the following:\n\ng. Organization data including: (1) Program organization chart: A chart showing the structure of the program organization by title and name. Identify the program office, support contractors, and major subcontractors. (2) Program/functional organization relationship chart: A chart showing the relationship of the program functions to the functional organizations indicating lines of authority and communications.",
+   "passageSHA256": "abf12b290078bfe3cbc4bbbf8e21efd21a2e6eea8d101e91cf79f805f3eaaa96"
+  },
+  "wording": "The Program Management Plan shall contain organization data comprising a program organization chart showing the program organization structure by title and name and identifying the program office, support contractors, and major subcontractors, together with a program/functional organization relationship chart showing the relationship of program functions to functional organizations and indicating lines of authority and communications.",
+  "wordingSHA256": "620e4b2a993f88f7588438ad2b29c22287c403461e747bef5b5157c0cdcc8d2c",
+  "actor": "The Program Management Plan",
+  "condition": "When the applicable contract/CDRL invokes DI-MGMT-81797 for the Program Management Plan; this is a conditional data-deliverable requirement, not an automatically applicable legal obligation.",
+  "verificationIntent": "inspection",
+  "kind": "content",
+  "binding": true,
+  "fields": [
+   "programOrganizationChart",
+   "organizationTitle",
+   "organizationName",
+   "programOffice",
+   "supportContractors",
+   "majorSubcontractors",
+   "functionalOrganizationRelationshipChart",
+   "programFunctions",
+   "functionalOrganizations",
+   "authorityLines",
+   "communicationLines"
+  ],
+  "status": "sample",
+  "notes": "Composite quotation: separate verbatim source spans are separated by blank lines; span 1 is on PDF page 1; span 2 is on PDF page 2. No continuous passage across omitted content is asserted. The two explicitly required charts form one coherent organization-data fieldset under §3(g); both chart distinctions are preserved. No requirement is multiplied by title, person, organization, function, or WBS element. Neither R/A/C/I labels nor hours/FTE/headcount are prescribed. The program organization chart is not silently converted to a resource-loaded schedule."
+ },
+ {
+  "id": "DZR-F10-0201",
+  "alias": "DI-SESS-82538 §1; PDF page 1",
+  "source": {
+   "docId": "DI-SESS-82538",
+   "edition": "Base, 4 May 2026",
+   "paragraph": "§1; PDF page 1",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5800888",
+   "passage": "The applicable issue of the documents cited herein, including their approval dates and dates of any applicable amendments, notices, and revisions, shall be as specified in the contract.",
+   "passageSHA256": "549fa95ee28fd854ef56c5a29de96674e25c34b33bf9cd11d2b5da43c8543ef3"
+  },
+  "wording": "The DEMP reference-document issues, including approval dates and dates of applicable amendments, notices, and revisions, shall match the issues specified in the contract.",
+  "wordingSHA256": "37aa4ec027d7207348e9b01d19f04692f499c499b4541721a603c0ef9a716d73",
+  "actor": "The DEMP reference-document issues",
+  "condition": "When the applicable contract/CDRL invokes DI-SESS-82538 for the applicable plan and the quoted requirement remains after contract-authorized tailoring; this is a conditional data-deliverable obligation, not a universal requirement for every contractor or every F10 row.",
+  "verificationIntent": "inspection",
+  "kind": "currency",
+  "binding": true,
+  "fields": [
+   "referenceDocumentIssues"
+  ],
+  "status": "sample",
+  "notes": "F10 organization/staffing subset; this record does not establish complete-plan compliance. Source line wrapping is normalized to spaces. "
+ },
+ {
+  "id": "DZR-F10-0202",
+  "alias": "DI-SESS-82538 §2, first sentence and definitions; PDF page 1",
+  "source": {
+   "docId": "DI-SESS-82538",
+   "edition": "Base, 4 May 2026",
+   "paragraph": "§2, first sentence and definitions; PDF page 1",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5800888",
+   "passage": "The delivered DEMP shall include a document and model in a format mutually agreed upon by the government and contractor to ensure government access and review. The term “document” in this DID means a medium that follows a natural language. The term “model” in this DID means a medium that follows a formal language such as SysML.",
+   "passageSHA256": "0dd9f6184fd55a19c205649f0fa9d1a64792edba6da17acf7346a8c4660ede93"
+  },
+  "wording": "The delivered DEMP shall include a natural-language document and a formal-language model in a format mutually agreed upon by the government and contractor to ensure government access and review.",
+  "wordingSHA256": "cf4ae61ee77206570f89f1b436fa72642f0913fb36585247245078c7efb30554",
+  "actor": "The delivered DEMP",
+  "condition": "When the applicable contract/CDRL invokes DI-SESS-82538 for the applicable plan and the quoted requirement remains after contract-authorized tailoring; this is a conditional data-deliverable obligation, not a universal requirement for every contractor or every F10 row.",
+  "verificationIntent": "inspection",
+  "kind": "structure",
+  "binding": true,
+  "fields": [
+   "document",
+   "model",
+   "agreedFormat"
+  ],
+  "status": "sample",
+  "notes": "F10 organization/staffing subset; this record does not establish complete-plan compliance. Source line wrapping is normalized to spaces. Both document and model are required by the source; SysML is an example, not the only permitted formal language. A standalone CSV or JSON roles table is not sufficient evidence of both native deliverables."
+ },
+ {
+  "id": "DZR-F10-0203",
+  "alias": "DI-SESS-82538 §2, tailoring sentence; PDF page 1",
+  "source": {
+   "docId": "DI-SESS-82538",
+   "edition": "Base, 4 May 2026",
+   "paragraph": "§2, tailoring sentence; PDF page 1",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5800888",
+   "passage": "If requirements are tailored out of this DID, the resulting description shall contain a corresponding placeholder appended with “This content has been tailored out.”",
+   "passageSHA256": "ada841da0b5d3292c808c0e2f09fa22fb23cbdc383362bc35f6e81cc34fe92eb"
+  },
+  "wording": "The DEMP description shall contain a corresponding placeholder appended with the exact tailored-out statement prescribed in DI-SESS-82538 §2.",
+  "wordingSHA256": "5bb72680b3dd06ab7e5e396d3d2018cbf6abdb05d2c0fc07acbbbc5a1a3d946e",
+  "actor": "The DEMP description",
+  "condition": "When the applicable contract/CDRL invokes DI-SESS-82538 for the applicable plan and the quoted requirement remains after contract-authorized tailoring; this is a conditional data-deliverable obligation, not a universal requirement for every contractor or every F10 row. Applies when requirements are tailored out of DI-SESS-82538.",
+  "verificationIntent": "inspection",
+  "kind": "structure",
+  "binding": true,
+  "fields": [
+   "tailoringPlaceholders"
+  ],
+  "status": "sample",
+  "notes": "F10 organization/staffing subset; this record does not establish complete-plan compliance. Source line wrapping is normalized to spaces. The exact required text is preserved in source.passage; this record does not grant independent authority to tailor requirements out."
+ },
+ {
+  "id": "DZR-F10-0204",
+  "alias": "DI-SESS-82538 §3.1.2; PDF page 2",
+  "source": {
+   "docId": "DI-SESS-82538",
+   "edition": "Base, 4 May 2026",
+   "paragraph": "§3.1.2; PDF page 2",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5800888",
+   "passage": "This subsection shall define and describe the approach to maintaining and updating the DEMP.",
+   "passageSHA256": "39b01ac4feef68d4998311a389513e0fc73b29b20041c88f538b9537a7f47ca8"
+  },
+  "wording": "The DEMP Configuration Management subsection shall define and describe the approach to maintaining and updating the DEMP.",
+  "wordingSHA256": "f6085f06fcb0609caa9781006bccc5ad014e6bc4c166fc5c1df9b6e3ad6d5f00",
+  "actor": "The DEMP Configuration Management subsection",
+  "condition": "When the applicable contract/CDRL invokes DI-SESS-82538 for the applicable plan and the quoted requirement remains after contract-authorized tailoring; this is a conditional data-deliverable obligation, not a universal requirement for every contractor or every F10 row.",
+  "verificationIntent": "inspection",
+  "kind": "currency",
+  "binding": true,
+  "fields": [
+   "maintenanceUpdateApproach"
+  ],
+  "status": "sample",
+  "notes": "F10 organization/staffing subset; this record does not establish complete-plan compliance. Source line wrapping is normalized to spaces. The source requires a described maintenance/update approach, not a fixed reporting interval."
+ },
+ {
+  "id": "DZR-F10-0205",
+  "alias": "DI-SESS-82538 §3.1.3; PDF page 2",
+  "source": {
+   "docId": "DI-SESS-82538",
+   "edition": "Base, 4 May 2026",
+   "paragraph": "§3.1.3; PDF page 2",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5800888",
+   "passage": "This subsection shall define and describe the assumptions and constraints for DE implementation, such as budget, resources, tools, stakeholder access, framework, and technology.",
+   "passageSHA256": "a11ff675ba087dd9936601389f3fdf60a49bc8c8de0307325c81ec9fe5a0db3d"
+  },
+  "wording": "The DEMP Assumptions and Constraints subsection shall define and describe the assumptions and constraints for DE implementation.",
+  "wordingSHA256": "81e1103556a01ef208efa50691b5c15a197744be2b5782a9dbe3d377a73db8ed",
+  "actor": "The DEMP Assumptions and Constraints subsection",
+  "condition": "When the applicable contract/CDRL invokes DI-SESS-82538 for the applicable plan and the quoted requirement remains after contract-authorized tailoring; this is a conditional data-deliverable obligation, not a universal requirement for every contractor or every F10 row.",
+  "verificationIntent": "inspection",
+  "kind": "content",
+  "binding": true,
+  "fields": [
+   "deImplementationAssumptions",
+   "deImplementationConstraints"
+  ],
+  "status": "sample",
+  "notes": "F10 organization/staffing subset; this record does not establish complete-plan compliance. Source line wrapping is normalized to spaces. Budget, resources, tools, stakeholder access, framework, and technology are source examples introduced by “such as”; no mandatory separate field for each example is invented."
+ },
+ {
+  "id": "DZR-F10-0206",
+  "alias": "DI-SESS-82538 §3.3; PDF page 3",
+  "source": {
+   "docId": "DI-SESS-82538",
+   "edition": "Base, 4 May 2026",
+   "paragraph": "§3.3; PDF page 3",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5800888",
+   "passage": "This subsection shall define and describe the comprehensive plan to develop and provide training for all stakeholders, including training on all tools, methods, procedures, use cases, and management processes.",
+   "passageSHA256": "4e86249b0c943743d355592900fe0a30b1e712726f0ca73c76c21adbce862427"
+  },
+  "wording": "The DEMP Training subsection shall define and describe a comprehensive plan to develop and provide training for all stakeholders, including training on all tools, methods, procedures, use cases, and management processes.",
+  "wordingSHA256": "b9607491b493310a3d0605825a54cfcbd797a27b16d28e488898d3cd337adf75",
+  "actor": "The DEMP Training subsection",
+  "condition": "When the applicable contract/CDRL invokes DI-SESS-82538 for the applicable plan and the quoted requirement remains after contract-authorized tailoring; this is a conditional data-deliverable obligation, not a universal requirement for every contractor or every F10 row.",
+  "verificationIntent": "inspection",
+  "kind": "content",
+  "binding": true,
+  "fields": [
+   "stakeholderTrainingPlan"
+  ],
+  "status": "sample",
+  "notes": "F10 organization/staffing subset; this record does not establish complete-plan compliance. Source line wrapping is normalized to spaces. This is a plan-content obligation; this record does not separately order execution or certification of training."
+ },
+ {
+  "id": "DZR-F10-0207",
+  "alias": "DI-SESS-82538 §3.6, first sentence; PDF page 3",
+  "source": {
+   "docId": "DI-SESS-82538",
+   "edition": "Base, 4 May 2026",
+   "paragraph": "§3.6, first sentence; PDF page 3",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5800888",
+   "passage": "This section shall identify and describe the DE-specific roles and responsibilities of internal and external stakeholders and team members using a Responsible, Accountable, Consulted, Informed (RACI) matrix.",
+   "passageSHA256": "6125ebd1355c13b81397fa76bd9b3d9a99351a4a0d2331986721487a8994a4ea"
+  },
+  "wording": "The DEMP Roles and Responsibilities section shall identify and describe the DE-specific roles and responsibilities of internal and external stakeholders and team members using a Responsible, Accountable, Consulted, Informed (RACI) matrix.",
+  "wordingSHA256": "242e967c9d4a1a68567fbc91e19ed81e7207961ee377803ef9c91f6d3a4a6bf0",
+  "actor": "The DEMP Roles and Responsibilities section",
+  "condition": "When the applicable contract/CDRL invokes DI-SESS-82538 for the applicable plan and the quoted requirement remains after contract-authorized tailoring; this is a conditional data-deliverable obligation, not a universal requirement for every contractor or every F10 row.",
+  "verificationIntent": "inspection",
+  "kind": "content",
+  "binding": true,
+  "fields": [
+   "deRaciMatrix",
+   "deStakeholderRoles",
+   "deStakeholderResponsibilities"
+  ],
+  "status": "sample",
+  "notes": "F10 organization/staffing subset; this record does not establish complete-plan compliance. Source line wrapping is normalized to spaces. The source explicitly mandates a DE-specific RACI matrix. It does not prescribe matrix axes, machine-readable keys, a WBS link, exactly one Accountable assignment, individual names, hours, or FTE quantities."
+ },
+ {
+  "id": "DZR-F10-0208",
+  "alias": "DI-SESS-82538 §3.6, second sentence; PDF page 3",
+  "source": {
+   "docId": "DI-SESS-82538",
+   "edition": "Base, 4 May 2026",
+   "paragraph": "§3.6, second sentence; PDF page 3",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5800888",
+   "passage": "These roles shall be included in the program's organization chart and allocated resources in the program's Integrated Master Schedule (IMS).",
+   "passageSHA256": "2294703fb51266b196436dfe7df997c6ef502cab9a61278d181708acb985f4fb"
+  },
+  "wording": "The DE-specific roles shall be included in the program's organization chart and allocated resources in the program's Integrated Master Schedule (IMS).",
+  "wordingSHA256": "42da1b17284baa345a8d5951ae598b5259a227b82a58433b615fb16de5837ff4",
+  "actor": "The DE-specific roles",
+  "condition": "When the applicable contract/CDRL invokes DI-SESS-82538 for the applicable plan and the quoted requirement remains after contract-authorized tailoring; this is a conditional data-deliverable obligation, not a universal requirement for every contractor or every F10 row.",
+  "verificationIntent": "inspection",
+  "kind": "content",
+  "binding": true,
+  "fields": [
+   "organizationChartRoleLinks",
+   "imsRoleResourceAllocations"
+  ],
+  "status": "sample",
+  "notes": "F10 organization/staffing subset; this record does not establish complete-plan compliance. Source line wrapping is normalized to spaces. The antecedent is the DE-specific roles in the immediately preceding sentence. Both organization-chart inclusion and IMS resource allocation are retained as one coherent role-linkage obligation; no per-role requirement multiplication or numeric allocation rule is introduced."
+ },
+ {
+  "id": "DZR-F10-0209",
+  "alias": "DI-MGMT-80004A §2, opening sentence; PDF page 1",
+  "source": {
+   "docId": "DI-MGMT-80004A",
+   "edition": "Revision A, 30 October 2006",
+   "paragraph": "§2, opening sentence; PDF page 1",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=148563",
+   "passage": "The plan shall be in a format that the contractor devises and conforms to the following:",
+   "passageSHA256": "72998d763e8a6f689ada381cef0f8081b9e6f4488ce64234bed361156061507a"
+  },
+  "wording": "The Management Plan shall use a contractor-devised format conforming to the applicable DI-MGMT-80004A §2 requirements.",
+  "wordingSHA256": "2f33796e36f2a5234c3653549167b764b9fc31eacac02d617790dd3ea315f7ad",
+  "actor": "The Management Plan",
+  "condition": "When the applicable contract/CDRL invokes DI-MGMT-80004A for the applicable plan and the quoted requirement remains after contract-authorized tailoring; this is a conditional data-deliverable obligation, not a universal requirement for every contractor or every F10 row.",
+  "verificationIntent": "inspection",
+  "kind": "structure",
+  "binding": true,
+  "fields": [
+   "nativeFormat"
+  ],
+  "status": "sample",
+  "notes": "F10 organization/staffing subset; this record does not establish complete-plan compliance. Source line wrapping is normalized to spaces. The DID prescribes no file extension or table schema. Subsequent format constraints still apply; contractor format does not override those constraints."
+ },
+ {
+  "id": "DZR-F10-0210",
+  "alias": "DI-MGMT-80004A §2(a); PDF page 1",
+  "source": {
+   "docId": "DI-MGMT-80004A",
+   "edition": "Revision A, 30 October 2006",
+   "paragraph": "§2(a); PDF page 1",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=148563",
+   "passage": "The plan shall be identified with the preparing office or contractors title, the identifying numbers or designation of the Contract/Procurement Request, the identify and/or nomenclature of the system/component/program/project, the security classification and the Government activity issuing the controlling contract.",
+   "passageSHA256": "463c508bee3f5050ab80ed9589ba026fc7b16070cc8129b7383c0da1f55de199"
+  },
+  "wording": "The Management Plan shall identify the preparing office or contractor title, the identifying numbers or designation of the Contract/Procurement Request, the identity and/or nomenclature of the system/component/program/project, the security classification, and the Government activity issuing the controlling contract.",
+  "wordingSHA256": "7df5252981453b7929d09600ebd9bb6911659cf15b1254fe5a8d098bf224665f",
+  "actor": "The Management Plan",
+  "condition": "When the applicable contract/CDRL invokes DI-MGMT-80004A for the applicable plan and the quoted requirement remains after contract-authorized tailoring; this is a conditional data-deliverable obligation, not a universal requirement for every contractor or every F10 row.",
+  "verificationIntent": "inspection",
+  "kind": "identifier",
+  "binding": true,
+  "fields": [
+   "preparingOfficeOrContractorTitle",
+   "contractOrProcurementRequestIdentification",
+   "systemComponentProgramProjectIdentification",
+   "securityClassification",
+   "issuingGovernmentActivity"
+  ],
+  "status": "sample",
+  "notes": "F10 organization/staffing subset; this record does not establish complete-plan compliance. Source line wrapping is normalized to spaces. The literal source uses “contractors title” and “identify and/or nomenclature”; source.passage preserves those forms. The normalized wording uses “identity” for the evident noun. Classification identification is not evidence of release authorization or compliance with unopened marking issuances."
+ },
+ {
+  "id": "DZR-F10-0211",
+  "alias": "DI-MGMT-80004A §2(c), page numbering and binding sentence; PDF page 1",
+  "source": {
+   "docId": "DI-MGMT-80004A",
+   "edition": "Revision A, 30 October 2006",
+   "paragraph": "§2(c), page numbering and binding sentence; PDF page 1",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=148563",
+   "passage": "The pages shall be sequentially numbered and security bound together.",
+   "passageSHA256": "5d95b8010a128bdcac3ccab7dab92df6c52e2fef052296779b071ff8a5ee2926"
+  },
+  "wording": "The Management Plan pages shall be sequentially numbered and bound together as prescribed by DI-MGMT-80004A §2(c).",
+  "wordingSHA256": "dd60399804e3711c203858802a1bb3232034a2ce866f0215847cea9d35bc5a9c",
+  "actor": "The Management Plan pages",
+  "condition": "When the applicable contract/CDRL invokes DI-MGMT-80004A for the applicable plan and the quoted requirement remains after contract-authorized tailoring; this is a conditional data-deliverable obligation, not a universal requirement for every contractor or every F10 row.",
+  "verificationIntent": "inspection",
+  "kind": "structure",
+  "binding": true,
+  "fields": [
+   "pageSequence",
+   "binding"
+  ],
+  "status": "sample",
+  "notes": "F10 organization/staffing subset; this record does not establish complete-plan compliance. Source line wrapping is normalized to spaces. The printed source says “security bound together”; the apparent typo is not silently changed to “securely” in the quote. The actual invocation must resolve the intended binding treatment, particularly for electronic delivery. Paper sizes and fold-outs are permissions, not mandatory formats."
+ },
+ {
+  "id": "DZR-F10-0212",
+  "alias": "DI-MGMT-80004A §2(c), attachments sentence; PDF page 1",
+  "source": {
+   "docId": "DI-MGMT-80004A",
+   "edition": "Revision A, 30 October 2006",
+   "paragraph": "§2(c), attachments sentence; PDF page 1",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=148563",
+   "passage": "All attachments shall be identified and referenced in the text.",
+   "passageSHA256": "ee01e831374c817e982d54eaf7f5136ffa0a61871685a89207b0999e763ffac8"
+  },
+  "wording": "All Management Plan attachments shall be identified and referenced in the Management Plan text.",
+  "wordingSHA256": "ce648696f0bc1b2f8e67e26addc55d4e0c28204aada591a79d476a38b5f65879",
+  "actor": "All Management Plan attachments",
+  "condition": "When the applicable contract/CDRL invokes DI-MGMT-80004A for the applicable plan and the quoted requirement remains after contract-authorized tailoring; this is a conditional data-deliverable obligation, not a universal requirement for every contractor or every F10 row. Applies to attachments present in the plan.",
+  "verificationIntent": "inspection",
+  "kind": "identifier",
+  "binding": true,
+  "fields": [
+   "attachmentIdentifiers",
+   "attachmentTextReferences"
+  ],
+  "status": "sample",
+  "notes": "F10 organization/staffing subset; this record does not establish complete-plan compliance. Source line wrapping is normalized to spaces. "
+ },
+ {
+  "id": "DZR-F10-0213",
+  "alias": "DI-MGMT-80004A §2(c), section and paragraph numbering sentence; PDF page 1",
+  "source": {
+   "docId": "DI-MGMT-80004A",
+   "edition": "Revision A, 30 October 2006",
+   "paragraph": "§2(c), section and paragraph numbering sentence; PDF page 1",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=148563",
+   "passage": "Each section and paragraph shall be numbered.",
+   "passageSHA256": "7e81cbe481547688575516f01d5a1abef90fb61289a4283c630165a516e6a2e7"
+  },
+  "wording": "Each Management Plan section and paragraph shall be numbered.",
+  "wordingSHA256": "290b62a85e3164e2a854880ab1760d6bc3198920e7478d4d10b27ce00d36d7e1",
+  "actor": "Each Management Plan section and paragraph",
+  "condition": "When the applicable contract/CDRL invokes DI-MGMT-80004A for the applicable plan and the quoted requirement remains after contract-authorized tailoring; this is a conditional data-deliverable obligation, not a universal requirement for every contractor or every F10 row.",
+  "verificationIntent": "inspection",
+  "kind": "structure",
+  "binding": true,
+  "fields": [
+   "sectionNumbers",
+   "paragraphNumbers"
+  ],
+  "status": "sample",
+  "notes": "F10 organization/staffing subset; this record does not establish complete-plan compliance. Source line wrapping is normalized to spaces. "
+ },
+ {
+  "id": "DZR-F10-0214",
+  "alias": "DI-MGMT-80004A §2(d), first sentence; PDF pages 1–2",
+  "source": {
+   "docId": "DI-MGMT-80004A",
+   "edition": "Revision A, 30 October 2006",
+   "paragraph": "§2(d), first sentence; PDF pages 1–2",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=148563",
+   "passage": "Plans of more than 30 pages in length shall contain a table of contents.",
+   "passageSHA256": "063bcf69c1fd3bdeef435f4791b7117638caeafb88da61f914b8dc479f57c214"
+  },
+  "wording": "The Management Plan shall contain a table of contents.",
+  "wordingSHA256": "76a4be97c2305766a7260558966b4d4db4c176974eaca9a7708e625ee902e290",
+  "actor": "The Management Plan",
+  "condition": "When the applicable contract/CDRL invokes DI-MGMT-80004A for the applicable plan and the quoted requirement remains after contract-authorized tailoring; this is a conditional data-deliverable obligation, not a universal requirement for every contractor or every F10 row. Applies when the Management Plan exceeds 30 pages.",
+  "verificationIntent": "inspection",
+  "kind": "structure",
+  "binding": true,
+  "fields": [
+   "tableOfContents"
+  ],
+  "status": "sample",
+  "notes": "F10 organization/staffing subset; this record does not establish complete-plan compliance. Source line wrapping is normalized to spaces. One sentence spans PDF pages 1–2; the page header/footer are omitted, without omitting any sentence content."
+ },
+ {
+  "id": "DZR-F10-0215",
+  "alias": "DI-MGMT-80004A §2(d), second sentence; PDF page 2",
+  "source": {
+   "docId": "DI-MGMT-80004A",
+   "edition": "Revision A, 30 October 2006",
+   "paragraph": "§2(d), second sentence; PDF page 2",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=148563",
+   "passage": "Plans more than 120 pages in length shall also include an Index.",
+   "passageSHA256": "22bf8d741448999bef4340255af5de5d2cf1fa390fc043857236cc0b642a0eea"
+  },
+  "wording": "The Management Plan shall include an index.",
+  "wordingSHA256": "3dd53daacb77b6b969cf7d90a8e167a7d29418366283bcf75b9b2ba5318b1566",
+  "actor": "The Management Plan",
+  "condition": "When the applicable contract/CDRL invokes DI-MGMT-80004A for the applicable plan and the quoted requirement remains after contract-authorized tailoring; this is a conditional data-deliverable obligation, not a universal requirement for every contractor or every F10 row. Applies when the Management Plan exceeds 120 pages, in addition to the table-of-contents requirement.",
+  "verificationIntent": "inspection",
+  "kind": "structure",
+  "binding": true,
+  "fields": [
+   "index"
+  ],
+  "status": "sample",
+  "notes": "F10 organization/staffing subset; this record does not establish complete-plan compliance. Source line wrapping is normalized to spaces. "
+ },
+ {
+  "id": "DZR-F10-0216",
+  "alias": "DI-MGMT-80004A §2(e); PDF page 2",
+  "source": {
+   "docId": "DI-MGMT-80004A",
+   "edition": "Revision A, 30 October 2006",
+   "paragraph": "§2(e); PDF page 2",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=148563",
+   "passage": "The document shall be legible and reproducible.",
+   "passageSHA256": "7b693993a4c291c63228af99af5b529635a7ca765993cde8a76e52141c80cd63"
+  },
+  "wording": "The Management Plan shall be legible and reproducible.",
+  "wordingSHA256": "c3c91829be9dc7575a2db1672a52aa3f14070a766e2cc2ca16407cb09d2b54bc",
+  "actor": "The Management Plan",
+  "condition": "When the applicable contract/CDRL invokes DI-MGMT-80004A for the applicable plan and the quoted requirement remains after contract-authorized tailoring; this is a conditional data-deliverable obligation, not a universal requirement for every contractor or every F10 row.",
+  "verificationIntent": "inspection",
+  "kind": "structure",
+  "binding": true,
+  "fields": [
+   "legibility",
+   "reproducibility"
+  ],
+  "status": "sample",
+  "notes": "F10 organization/staffing subset; this record does not establish complete-plan compliance. Source line wrapping is normalized to spaces. "
+ },
+ {
+  "id": "DZR-F10-0217",
+  "alias": "DI-MGMT-80004A §3.3; PDF page 2",
+  "source": {
+   "docId": "DI-MGMT-80004A",
+   "edition": "Revision A, 30 October 2006",
+   "paragraph": "§3.3; PDF page 2",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=148563",
+   "passage": "The plan shall present an organizational chart and supporting narrative portraying the contractor’s business (corporate) structure. It shall describe the functional relationships and responsibilities among the organizational elements that will participate in the accomplishment of the contractual commitments.",
+   "passageSHA256": "ae757a4153d7f8628e8b96528395258cd47f78d289d5d7746e92a8f68d6a93b6"
+  },
+  "wording": "The Management Plan shall present an organizational chart and supporting narrative portraying the contractor business structure and describing functional relationships and responsibilities among organizational elements participating in accomplishment of the contractual commitments.",
+  "wordingSHA256": "e5b7f92d02df97ad7a2b7c6387b571c4b05670f683fffb8efa6a1aa3dc15ff35",
+  "actor": "The Management Plan",
+  "condition": "When the applicable contract/CDRL invokes DI-MGMT-80004A for the applicable plan and the quoted requirement remains after contract-authorized tailoring; this is a conditional data-deliverable obligation, not a universal requirement for every contractor or every F10 row.",
+  "verificationIntent": "inspection",
+  "kind": "content",
+  "binding": true,
+  "fields": [
+   "corporateOrganizationChart",
+   "corporateOrganizationNarrative",
+   "corporateFunctionalRelationships",
+   "corporateResponsibilities"
+  ],
+  "status": "sample",
+  "notes": "F10 organization/staffing subset; this record does not establish complete-plan compliance. Source line wrapping is normalized to spaces. The chart and supporting narrative with relationship/responsibility content form one coherent corporate-organization information set. No engineering execution duty is inferred."
+ },
+ {
+  "id": "DZR-F10-0218",
+  "alias": "DI-MGMT-80004A §3.4; PDF page 3",
+  "source": {
+   "docId": "DI-MGMT-80004A",
+   "edition": "Revision A, 30 October 2006",
+   "paragraph": "§3.4; PDF page 3",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=148563",
+   "passage": "The plan shall present an organizational chart and supporting narrative describing the management office the contractor establishes to manage the contractual commitments. The plan shall define the direct lines of control, responsibilities, functional relationships, and authority between the management office and the contractor’s other organizational elements. The plan shall also describe all interfaces between the contractor and the Government and between the contractor and other contractors which are necessary and pertinent to the accomplishment of contractual tasks, projects and programs.",
+   "passageSHA256": "c4643a94d23358da4c341201e6fe13106dd1a8f5690128405fba588968b58e12"
+  },
+  "wording": "The Management Plan shall present the management-office organizational chart and supporting narrative, including direct lines of control, responsibilities, functional relationships, and authority between the management office and other contractor organizational elements, and all contractor-to-Government and contractor-to-other-contractor interfaces necessary and pertinent to accomplishment of contractual tasks, projects, and programs.",
+  "wordingSHA256": "f679cdce9e797fdbc0c0ac7c0d4957c65b7faafce7b97fa315e796d9e9d4e076",
+  "actor": "The Management Plan",
+  "condition": "When the applicable contract/CDRL invokes DI-MGMT-80004A for the applicable plan and the quoted requirement remains after contract-authorized tailoring; this is a conditional data-deliverable obligation, not a universal requirement for every contractor or every F10 row.",
+  "verificationIntent": "inspection",
+  "kind": "content",
+  "binding": true,
+  "fields": [
+   "managementOfficeOrganizationChart",
+   "managementOfficeNarrative",
+   "controlLines",
+   "responsibilities",
+   "functionalRelationships",
+   "authority",
+   "governmentInterfaces",
+   "otherContractorInterfaces"
+  ],
+  "status": "sample",
+  "notes": "F10 organization/staffing subset; this record does not establish complete-plan compliance. Source line wrapping is normalized to spaces. One coherent management-office organization/interface fieldset preserves every source component and the necessary-and-pertinent interface qualifier. Corporate organization in §3.3 is distinct from the program management office in §3.4."
+ },
+ {
+  "id": "DZR-F10-0219",
+  "alias": "DI-MGMT-80004A §3.6(a); PDF page 3",
+  "source": {
+   "docId": "DI-MGMT-80004A",
+   "edition": "Revision A, 30 October 2006",
+   "paragraph": "§3.6(a); PDF page 3",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=148563",
+   "passage": "The plan shall list the personnel staffing of the contractor’s management office that directs the contractual tasks, projects, and programs and assist in completing the contract. The listing shall include the education, training, skills, experience, and security clearance that personnel require to fill each such position and shall state the identity, background, and work experience of the personnel assigned to fill these positions.",
+   "passageSHA256": "0fa0fb49d362de505d1d58aacf6c194046aebcca49e12e2e55d3dbd0fef06116"
+  },
+  "wording": "The Management Plan shall list the staffing of the contractor management office directing contractual tasks, projects, and programs and assisting contract completion, including required education, training, skills, experience, and security clearance for each position and the identity, background, and work experience of assigned personnel.",
+  "wordingSHA256": "4eee824b56ea7ff0a09f4036aeba833db366423f036a487f4b0dc6b69995b19c",
+  "actor": "The Management Plan",
+  "condition": "When the applicable contract/CDRL invokes DI-MGMT-80004A for the applicable plan and the quoted requirement remains after contract-authorized tailoring; this is a conditional data-deliverable obligation, not a universal requirement for every contractor or every F10 row.",
+  "verificationIntent": "inspection",
+  "kind": "content",
+  "binding": true,
+  "fields": [
+   "managementOfficeStaffing",
+   "positionEducation",
+   "positionTraining",
+   "positionSkills",
+   "positionExperience",
+   "positionClearance",
+   "assignedPersonnelIdentity",
+   "assignedPersonnelBackground",
+   "assignedPersonnelWorkExperience"
+  ],
+  "status": "sample",
+  "notes": "F10 organization/staffing subset; this record does not establish complete-plan compliance. Source line wrapping is normalized to spaces. The position requirements and assigned-person attributes remain distinct. The grouped roster information set is not multiplied per person or attribute, and does not command hiring or security-clearance adjudication."
+ },
+ {
+  "id": "DZR-F10-0220",
+  "alias": "DI-MGMT-80004A §3.6(b), first sentence; PDF page 3",
+  "source": {
+   "docId": "DI-MGMT-80004A",
+   "edition": "Revision A, 30 October 2006",
+   "paragraph": "§3.6(b), first sentence; PDF page 3",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=148563",
+   "passage": "The plan shall also describe the staffing required for proper accomplishment of each contractual task by skill type, skill level, number of personnel, and security clearance.",
+   "passageSHA256": "8f39db2828c2e94e3b78c1cb3d1415753ebe1e2fb79920c833ff256bab761342"
+  },
+  "wording": "The Management Plan shall describe the staffing required for proper accomplishment of each contractual task by skill type, skill level, number of personnel, and security clearance.",
+  "wordingSHA256": "1d44cd71f1733ab366fd4d2bddd969ce4a4b1df465cf924b15d7e28913f05e07",
+  "actor": "The Management Plan",
+  "condition": "When the applicable contract/CDRL invokes DI-MGMT-80004A for the applicable plan and the quoted requirement remains after contract-authorized tailoring; this is a conditional data-deliverable obligation, not a universal requirement for every contractor or every F10 row.",
+  "verificationIntent": "inspection",
+  "kind": "content",
+  "binding": true,
+  "fields": [
+   "contractualTask",
+   "skillType",
+   "skillLevel",
+   "requiredPersonnelCount",
+   "requiredSecurityClearance"
+  ],
+  "status": "sample",
+  "notes": "F10 organization/staffing subset; this record does not establish complete-plan compliance. Source line wrapping is normalized to spaces. The source calls for number of personnel, not FTE or hours, and relates staffing to contractual tasks, not an expressly named WBS identifier. Task-to-WBS mapping is a separately selected receiver/contract mapping, not a clause invented here."
+ },
+ {
+  "id": "DZR-F10-0221",
+  "alias": "DI-MGMT-80004A §3.6(b), second sentence; PDF page 3",
+  "source": {
+   "docId": "DI-MGMT-80004A",
+   "edition": "Revision A, 30 October 2006",
+   "paragraph": "§3.6(b), second sentence; PDF page 3",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=148563",
+   "passage": "When submitted as part of a proposal, the plan shall state how many such personnel are currently available and how many new hires are required to staff fully to accomplish each task as scheduled.",
+   "passageSHA256": "ab37d8550eedb871a63f44bd3439efd958412f7ba8a784a3f737f99f562a2d28"
+  },
+  "wording": "The Management Plan shall state the number of currently available personnel and the number of new hires required for full staffing to accomplish each contractual task as scheduled.",
+  "wordingSHA256": "3aae62d23332fa01594962bed825e18dbf163ac1b29811778ab0f00bb88a0204",
+  "actor": "The Management Plan",
+  "condition": "When the applicable contract/CDRL invokes DI-MGMT-80004A for the applicable plan and the quoted requirement remains after contract-authorized tailoring; this is a conditional data-deliverable obligation, not a universal requirement for every contractor or every F10 row. Applies when the Management Plan is submitted as part of a proposal; the personnel categories are the task staffing categories in the preceding sentence.",
+  "verificationIntent": "inspection",
+  "kind": "content",
+  "binding": true,
+  "fields": [
+   "availablePersonnelCount",
+   "requiredNewHireCount"
+  ],
+  "status": "sample",
+  "notes": "F10 organization/staffing subset; this record does not establish complete-plan compliance. Source line wrapping is normalized to spaces. This is a proposal staffing disclosure, not a mandate to hire or a recurring headcount-report schedule."
+ },
+ {
+  "id": "DZR-F10-0222",
+  "alias": "DI-SESS-82538 §3.5, second sentence; PDF page 3",
+  "source": {
+   "docId": "DI-SESS-82538",
+   "edition": "Base, 4 May 2026",
+   "paragraph": "§3.5, second sentence; PDF page 3",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5800888",
+   "passage": "This section shall describe the hardware, software, networks (including cloud services), tools and workforce.",
+   "passageSHA256": "d9c76815508b4a3774d8a0618df6ce61a6e3df7fe7d26ba1afbb3a01bdc1e423"
+  },
+  "wording": "The DEMP Digital Environment/Ecosystem section shall describe the hardware, software, networks including cloud services, tools, and workforce.",
+  "wordingSHA256": "04bbd2cc8531c0704fac4cf16a8562feed59ee4fab65e3cf482b0d96a5eedfd6",
+  "actor": "The DEMP Digital Environment/Ecosystem section",
+  "condition": "When the applicable contract/CDRL invokes DI-SESS-82538 for the applicable plan and the quoted requirement remains after contract-authorized tailoring; this is a conditional data-deliverable obligation, not a universal requirement for every contractor or every F10 row.",
+  "verificationIntent": "inspection",
+  "kind": "content",
+  "binding": true,
+  "fields": [
+   "digitalEnvironmentHardware",
+   "digitalEnvironmentSoftware",
+   "digitalEnvironmentNetworks",
+   "digitalEnvironmentTools",
+   "digitalEnvironmentWorkforce"
+  ],
+  "status": "sample",
+  "notes": "F10 organization/staffing subset; this record does not establish complete-plan compliance. Source line wrapping is normalized to spaces. The complete environment/workforce information set is retained because workforce is directly within F10 scope. No per-tool or per-worker obligation is created. Broader infrastructure/architecture and digital-collaboration descriptions in the neighboring sentences are outside this F10 subset."
+ },
+ {
+  "id": "DZR-F10-0223",
+  "alias": "DI-MGMT-80004A §3.7(c); PDF page 4",
+  "source": {
+   "docId": "DI-MGMT-80004A",
+   "edition": "Revision A, 30 October 2006",
+   "paragraph": "§3.7(c); PDF page 4",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=148563",
+   "passage": "The plan shall describe the management methods the contractor will employ to ensure meeting all preparations, format, and submittal requirements established by the CDRL (DD Form 1423) for data to be delivered to the Government.",
+   "passageSHA256": "7ec50821bd9d45c45bd4ac0c9cee1b7c77a484edf7b0166a51b0fa18321cb863"
+  },
+  "wording": "The Management Plan shall describe the contractor management methods for meeting all preparations, format, and submittal requirements established by the CDRL (DD Form 1423) for data delivered to the Government.",
+  "wordingSHA256": "0a6963a8bb8fc8b9a5a69bb56813f215cbbda8f13a9d3f2781f2d1344ba9cb87",
+  "actor": "The Management Plan",
+  "condition": "When the applicable contract/CDRL invokes DI-MGMT-80004A for the applicable plan and the quoted requirement remains after contract-authorized tailoring; this is a conditional data-deliverable obligation, not a universal requirement for every contractor or every F10 row.",
+  "verificationIntent": "inspection",
+  "kind": "content",
+  "binding": true,
+  "fields": [
+   "dataDeliveryManagementMethods",
+   "applicableCdrlRequirements"
+  ],
+  "status": "sample",
+  "notes": "F10 organization/staffing subset; this record does not establish complete-plan compliance. Source line wrapping is normalized to spaces. This is a description of data-delivery management methods. The actual CDRL supplies the applicable preparation, format, and submittal requirements; no fixed cadence or unopened DD Form 1423 fields are invented."
+ }
+]

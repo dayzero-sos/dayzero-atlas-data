@@ -1,0 +1,1521 @@
+{
+  "feed": "F6",
+  "name": "Risk, issue and opportunity register",
+  "systemOfRecord": [
+    "Actual program-designated risk/issue/opportunity register and controlled risk-report repository; confirm the owner, source system and contract invocation from received context. No specific implementation or real program is asserted."
+  ],
+  "formats": [
+    {
+      "format": "Generic Risk Management Status Report in contractor format, presented electronically in MS Word version 2003-2007. The example is a partial native Word 2003 WordprocessingML XML table.",
+      "spec": "DI-MGMT-81809 Requirements 1-3; actual title-page, progress, narrative and five-by-five-matrix content remains necessary when invoked.",
+      "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5098433"
+    },
+    {
+      "format": "Supply Chain Risk Register in Government-directed electronic format to the fullest extent possible; if none is identified, contractor Microsoft Excel .xlsx format is acceptable.",
+      "spec": "DI-MGMT-82255A Requirements 2-3, specialized supply-chain-only branch. The Word example does not implement this delivery format.",
+      "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5781165"
+    },
+    {
+      "format": "Actual SCRM Plan register-process and register-content sections, retained in their applicable native plan artifact. No sample plan artifact is supplied.",
+      "spec": "DI-MGMT-82256A Requirements 2 and 3.4f-h: Government-directed electronic format where identified; absent that, contractor Microsoft Word .docx is acceptable. Only the inspected register-related clauses are represented here.",
+      "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5781166"
+    },
+    {
+      "format": "Optional combined risk/issue/opportunity register selected by the receiver; no operative generic issue/opportunity native format was established in this batch.",
+      "spec": "2023 RIO Guide 1.1, 2.3.4, 2.6 and 3 are nonbinding guidance and do not replace a specifically invoked DID format or the expressly cited January 2017 guide.",
+      "url": "https://www.cto.mil/wp-content/uploads/2024/05/RIO-2023-2-2.pdf"
+    }
+  ],
+  "cadence": "No universal generic register submission interval is imposed by the inspected DI-MGMT-81809; actual cadence is set by the contract/CDRL. Its title page identifies task-inclusive reporting dates and the report documents progress. DI-MGMT-82255A requires a reporting-period date and current status for each supply-chain risk but does not prescribe a universal refresh interval. DI-MGMT-82256A 3.4f(5) and 3.4h(2) require plan sections to describe quarterly reporting processes to the Government Product Support Manager or Program Manager; these are plan-content obligations, not automatically independent generic-register delivery deadlines. Guide recommendations for regular updates remain nonbinding and do not create a baseline refresh requirement.",
+  "keys": {
+    "primary": [
+      "entryId"
+    ],
+    "joins": {
+      "wbs": "wbsId",
+      "requirement": "requirementId"
+    }
+  },
+  "fields": [
+    {
+      "name": "entryId",
+      "type": "string",
+      "required": true,
+      "governedBy": [
+        "DZR-F6-0044",
+        "DZR-F6-0082"
+      ],
+      "description": "User-selected primary key, unique across the received combined register. For the applicable Supply Chain Risk Register it carries the source unique risk identifier; DI-MGMT-82255A does not prescribe this column spelling or the sample identifier syntax. DI-MGMT-82256A only requires the plan section to specify register identifier content. No separate invented source identifier is required. A nonempty key is a receiver choice for all three entry types; risk, issue and opportunity are not all operative DID categories."
+    },
+    {
+      "name": "entryType",
+      "type": "string",
+      "required": true,
+      "governedBy": [],
+      "description": "Receiver-selected discriminator with exact values risk, issue, opportunity. The 2023 RIO Guide describes these concepts in 1.1 and permits a combined register in 2.3.4; it does not prescribe a mandatory enum or format. No operative generic issue/opportunity-register source was found in this batch. Issue and opportunity entries are guidance-only for the displayed baseline and are excluded in full. https://www.cto.mil/wp-content/uploads/2024/05/RIO-2023-2-2.pdf"
+    },
+    {
+      "name": "wbsId",
+      "type": "string",
+      "required": true,
+      "governedBy": [],
+      "description": "Explicit user-required WBS join key; resolve to an actual received WBS identifier. Presence and resolution are receiver requirements, not prescribed native columns in the inspected DIDs. The 2023 guide Table 2-4 illustrates WBS/IMS linkage as nonbinding guidance. The sample supplies identifiers only, without fabricating the external WBS records. https://www.cto.mil/wp-content/uploads/2024/05/RIO-2023-2-2.pdf"
+    },
+    {
+      "name": "requirementId",
+      "type": "string",
+      "required": true,
+      "governedBy": [],
+      "description": "Explicit user-required requirement join key; resolve to an actual received requirement record. The inspected DIDs do not prescribe this column. Reject missing or unresolved joins; sample identifiers alone do not prove external resolution. These trace keys are included in the operative risk projection by the user-selected contract, independently of guidance."
+    },
+    {
+      "name": "reportFormat",
+      "type": "string|null",
+      "required": false,
+      "governedBy": [
+        "DZR-F6-0001"
+      ],
+      "description": "Conditional semantic field for this receiver; this spelling and machine type are not a prescribed native DID schema. Required only under the actual source invocation, source actor and conditions; required=false does not waive applicable source content. The contractor chooses the Risk Management Status Report layout under the invoked generic DID, subject to its required title-page, narrative, matrix and MS Word media content. This is not permission to substitute CSV or plain JSON for its native delivery. Sources: DI-MGMT-81809 1; PDF 1 (https://quicksearch.dla.mil/WMX/Default.aspx?token=5098433)."
+    },
+    {
+      "name": "contractorName",
+      "type": "string|null",
+      "required": false,
+      "governedBy": [
+        "DZR-F6-0002",
+        "DZR-F6-0029"
+      ],
+      "description": "Conditional semantic field for this receiver; this spelling and machine type are not a prescribed native DID schema. Required only under the actual source invocation, source actor and conditions; required=false does not waive applicable source content. Retain the corresponding actual report, register or plan-section content without inventing sample metadata, fixed enums, encodings or additional applicability. Sources: DI-MGMT-81809 2(a); PDF 1 (https://quicksearch.dla.mil/WMX/Default.aspx?token=5098433); DI-MGMT-82255A 3.1(a); PDF 1 (https://quicksearch.dla.mil/WMX/Default.aspx?token=5781165)."
+    },
+    {
+      "name": "contractNumber",
+      "type": "string|null",
+      "required": false,
+      "governedBy": [
+        "DZR-F6-0003",
+        "DZR-F6-0030"
+      ],
+      "description": "Conditional semantic field for this receiver; this spelling and machine type are not a prescribed native DID schema. Required only under the actual source invocation, source actor and conditions; required=false does not waive applicable source content. Retain the corresponding actual report, register or plan-section content without inventing sample metadata, fixed enums, encodings or additional applicability. Sources: DI-MGMT-81809 2(b); PDF 1 (https://quicksearch.dla.mil/WMX/Default.aspx?token=5098433); DI-MGMT-82255A 3.1(b); PDF 1 (https://quicksearch.dla.mil/WMX/Default.aspx?token=5781165)."
+    },
+    {
+      "name": "awardDates",
+      "type": "array of strings|null",
+      "required": false,
+      "governedBy": [
+        "DZR-F6-0004"
+      ],
+      "description": "Conditional semantic field for this receiver; this spelling and machine type are not a prescribed native DID schema. Required only under the actual source invocation, source actor and conditions; required=false does not waive applicable source content. Generic title-page award-date information includes the latest modification. The selected array-of-strings representation preserves actual received date information without inventing a government-mandated date encoding. Sources: DI-MGMT-81809 2(b); PDF 1 (https://quicksearch.dla.mil/WMX/Default.aspx?token=5098433)."
+    },
+    {
+      "name": "reportingTaskDates",
+      "type": "array of strings|null",
+      "required": false,
+      "governedBy": [
+        "DZR-F6-0005"
+      ],
+      "description": "Conditional semantic field for this receiver; this spelling and machine type are not a prescribed native DID schema. Required only under the actual source invocation, source actor and conditions; required=false does not waive applicable source content. Generic report title-page task-inclusive dates for the reporting period. These identify the reporting coverage; they do not prescribe a recurring submission interval. Sources: DI-MGMT-81809 2(c); PDF 1 (https://quicksearch.dla.mil/WMX/Default.aspx?token=5098433)."
+    },
+    {
+      "name": "riskIdentificationProgress",
+      "type": "string|null",
+      "required": false,
+      "governedBy": [
+        "DZR-F6-0006"
+      ],
+      "description": "Conditional semantic field for this receiver; this spelling and machine type are not a prescribed native DID schema. Required only under the actual source invocation, source actor and conditions; required=false does not waive applicable source content. Retain the corresponding actual report, register or plan-section content without inventing sample metadata, fixed enums, encodings or additional applicability. Sources: DI-MGMT-81809 2.1; PDF 1 (https://quicksearch.dla.mil/WMX/Default.aspx?token=5098433)."
+    },
+    {
+      "name": "riskAnalysisProgress",
+      "type": "string|null",
+      "required": false,
+      "governedBy": [
+        "DZR-F6-0007"
+      ],
+      "description": "Conditional semantic field for this receiver; this spelling and machine type are not a prescribed native DID schema. Required only under the actual source invocation, source actor and conditions; required=false does not waive applicable source content. Retain the corresponding actual report, register or plan-section content without inventing sample metadata, fixed enums, encodings or additional applicability. Sources: DI-MGMT-81809 2.1; PDF 1 (https://quicksearch.dla.mil/WMX/Default.aspx?token=5098433)."
+    },
+    {
+      "name": "mitigationImplementationProgress",
+      "type": "string|null",
+      "required": false,
+      "governedBy": [
+        "DZR-F6-0008"
+      ],
+      "description": "Conditional semantic field for this receiver; this spelling and machine type are not a prescribed native DID schema. Required only under the actual source invocation, source actor and conditions; required=false does not waive applicable source content. Retain the corresponding actual report, register or plan-section content without inventing sample metadata, fixed enums, encodings or additional applicability. Sources: DI-MGMT-81809 2.1; PDF 1 (https://quicksearch.dla.mil/WMX/Default.aspx?token=5098433)."
+    },
+    {
+      "name": "riskTrackingProgress",
+      "type": "string|null",
+      "required": false,
+      "governedBy": [
+        "DZR-F6-0009"
+      ],
+      "description": "Conditional semantic field for this receiver; this spelling and machine type are not a prescribed native DID schema. Required only under the actual source invocation, source actor and conditions; required=false does not waive applicable source content. Retain the corresponding actual report, register or plan-section content without inventing sample metadata, fixed enums, encodings or additional applicability. Sources: DI-MGMT-81809 2.1; PDF 1 (https://quicksearch.dla.mil/WMX/Default.aspx?token=5098433)."
+    },
+    {
+      "name": "performanceConsequenceAssessmentEfforts",
+      "type": "string|null",
+      "required": false,
+      "governedBy": [
+        "DZR-F6-0010"
+      ],
+      "description": "Conditional semantic field for this receiver; this spelling and machine type are not a prescribed native DID schema. Required only under the actual source invocation, source actor and conditions; required=false does not waive applicable source content. Retain the corresponding actual report, register or plan-section content without inventing sample metadata, fixed enums, encodings or additional applicability. Sources: DI-MGMT-81809 2.2; PDF 1 (https://quicksearch.dla.mil/WMX/Default.aspx?token=5098433)."
+    },
+    {
+      "name": "scheduleConsequenceAssessmentEfforts",
+      "type": "string|null",
+      "required": false,
+      "governedBy": [
+        "DZR-F6-0011"
+      ],
+      "description": "Conditional semantic field for this receiver; this spelling and machine type are not a prescribed native DID schema. Required only under the actual source invocation, source actor and conditions; required=false does not waive applicable source content. Retain the corresponding actual report, register or plan-section content without inventing sample metadata, fixed enums, encodings or additional applicability. Sources: DI-MGMT-81809 2.2; PDF 1 (https://quicksearch.dla.mil/WMX/Default.aspx?token=5098433)."
+    },
+    {
+      "name": "costConsequenceAssessmentEfforts",
+      "type": "string|null",
+      "required": false,
+      "governedBy": [
+        "DZR-F6-0012"
+      ],
+      "description": "Conditional semantic field for this receiver; this spelling and machine type are not a prescribed native DID schema. Required only under the actual source invocation, source actor and conditions; required=false does not waive applicable source content. Retain the corresponding actual report, register or plan-section content without inventing sample metadata, fixed enums, encodings or additional applicability. Sources: DI-MGMT-81809 2.2; PDF 1 (https://quicksearch.dla.mil/WMX/Default.aspx?token=5098433)."
+    },
+    {
+      "name": "mitigationImplementationProjection",
+      "type": "string|null",
+      "required": false,
+      "governedBy": [
+        "DZR-F6-0013"
+      ],
+      "description": "Conditional semantic field for this receiver; this spelling and machine type are not a prescribed native DID schema. Required only under the actual source invocation, source actor and conditions; required=false does not waive applicable source content. Retain the corresponding actual report, register or plan-section content without inventing sample metadata, fixed enums, encodings or additional applicability. Sources: DI-MGMT-81809 2.2; PDF 1 (https://quicksearch.dla.mil/WMX/Default.aspx?token=5098433)."
+    },
+    {
+      "name": "riskMatrix",
+      "type": "object or received artifact|null",
+      "required": false,
+      "governedBy": [
+        "DZR-F6-0014",
+        "DZR-F6-0015",
+        "DZR-F6-0016"
+      ],
+      "description": "Conditional semantic field for this receiver; this spelling and machine type are not a prescribed native DID schema. Required only under the actual source invocation, source actor and conditions; required=false does not waive applicable source content. Complete generic reports need an actual five-by-five matrix with vertical Likelihood and horizontal Consequence axes and source-prescribed color labels. Retain the received matrix and classification basis. The illustrative entry table does not contain this complete matrix. The inspected DID does not supply cell-by-cell thresholds or an L-times-C formula. Sources: DI-MGMT-81809 2.3; PDF 1 (https://quicksearch.dla.mil/WMX/Default.aspx?token=5098433); DI-MGMT-81809 2.3; PDF 1 (https://quicksearch.dla.mil/WMX/Default.aspx?token=5098433); DI-MGMT-81809 2.3; PDF 1 (https://quicksearch.dla.mil/WMX/Default.aspx?token=5098433)."
+    },
+    {
+      "name": "likelihoodAxisLabel",
+      "type": "string|null",
+      "required": false,
+      "governedBy": [
+        "DZR-F6-0015"
+      ],
+      "description": "Conditional semantic field for this receiver; this spelling and machine type are not a prescribed native DID schema. Required only under the actual source invocation, source actor and conditions; required=false does not waive applicable source content. The generic report matrix uses the label Likelihood on its vertical axis. This label is separate from an occurrence probability or ordinal likelihood rating. A table cell containing the label does not constitute a complete matrix. Sources: DI-MGMT-81809 2.3; PDF 1 (https://quicksearch.dla.mil/WMX/Default.aspx?token=5098433)."
+    },
+    {
+      "name": "consequenceAxisLabel",
+      "type": "string|null",
+      "required": false,
+      "governedBy": [
+        "DZR-F6-0016"
+      ],
+      "description": "Conditional semantic field for this receiver; this spelling and machine type are not a prescribed native DID schema. Required only under the actual source invocation, source actor and conditions; required=false does not waive applicable source content. The generic report matrix uses the label Consequence on its horizontal axis. This label is separate from an impact narrative or ordinal consequence rating. Sources: DI-MGMT-81809 2.3; PDF 1 (https://quicksearch.dla.mil/WMX/Default.aspx?token=5098433)."
+    },
+    {
+      "name": "riskLevel",
+      "type": "string|null",
+      "required": false,
+      "governedBy": [
+        "DZR-F6-0017",
+        "DZR-F6-0018",
+        "DZR-F6-0019"
+      ],
+      "description": "Conditional semantic field for this receiver; this spelling and machine type are not a prescribed native DID schema. Required only under the actual source invocation, source actor and conditions; required=false does not waive applicable source content. Under DI-MGMT-81809 the reported root-cause risk classifications are low, moderate and high, with green, yellow and red respectively. Retain the supplied classification and its actual basis; do not invent a numeric score or infer a level from an unsupported formula. Sources: DI-MGMT-81809 2.3; PDF 1 (https://quicksearch.dla.mil/WMX/Default.aspx?token=5098433); DI-MGMT-81809 2.3; PDF 1 (https://quicksearch.dla.mil/WMX/Default.aspx?token=5098433); DI-MGMT-81809 2.3; PDF 1 (https://quicksearch.dla.mil/WMX/Default.aspx?token=5098433)."
+    },
+    {
+      "name": "riskColor",
+      "type": "string|null",
+      "required": false,
+      "governedBy": [
+        "DZR-F6-0017",
+        "DZR-F6-0018",
+        "DZR-F6-0019"
+      ],
+      "description": "Conditional semantic field for this receiver; this spelling and machine type are not a prescribed native DID schema. Required only under the actual source invocation, source actor and conditions; required=false does not waive applicable source content. Under DI-MGMT-81809 use green for low, yellow for moderate and red for high. These categorical mappings do not define numerical matrix cell boundaries. Sources: DI-MGMT-81809 2.3; PDF 1 (https://quicksearch.dla.mil/WMX/Default.aspx?token=5098433); DI-MGMT-81809 2.3; PDF 1 (https://quicksearch.dla.mil/WMX/Default.aspx?token=5098433); DI-MGMT-81809 2.3; PDF 1 (https://quicksearch.dla.mil/WMX/Default.aspx?token=5098433)."
+    },
+    {
+      "name": "description",
+      "type": "string|null",
+      "required": false,
+      "governedBy": [
+        "DZR-F6-0020",
+        "DZR-F6-0050",
+        "DZR-F6-0084"
+      ],
+      "description": "Conditional semantic field for this receiver; this spelling and machine type are not a prescribed native DID schema. Required only under the actual source invocation, source actor and conditions; required=false does not waive applicable source content. Shared selected narrative column. The invoked generic report requires a brief risk description; the applicable Supply Chain Risk Register requires a brief supply-chain-risk description. Issue/opportunity descriptions in the illustration are guidance-only and excluded from the baseline. Sources: DI-MGMT-81809 2.4; PDF 1 (https://quicksearch.dla.mil/WMX/Default.aspx?token=5098433); DI-MGMT-82255A 3.2(g); PDF 2 (https://quicksearch.dla.mil/WMX/Default.aspx?token=5781165); DI-MGMT-82256A 3.4h(3); PDF 4 (https://quicksearch.dla.mil/WMX/Default.aspx?token=5781166)."
+    },
+    {
+      "name": "title",
+      "type": "string|null",
+      "required": false,
+      "governedBy": [
+        "DZR-F6-0021",
+        "DZR-F6-0074"
+      ],
+      "description": "Conditional semantic field for this receiver; this spelling and machine type are not a prescribed native DID schema. Required only under the actual source invocation, source actor and conditions; required=false does not waive applicable source content. Shared selected title column. Operative source requirements apply to risk titles in the invoked generic report and to the relevant SCRM Plan handling content; issue/opportunity titles in this illustration are optional guidance-only content. Sources: DI-MGMT-81809 2.4; PDF 1 (https://quicksearch.dla.mil/WMX/Default.aspx?token=5098433); DI-MGMT-82256A 3.4g(1)(a); PDF 3 (https://quicksearch.dla.mil/WMX/Default.aspx?token=5781166)."
+    },
+    {
+      "name": "riskType",
+      "type": "string|null",
+      "required": false,
+      "governedBy": [
+        "DZR-F6-0022"
+      ],
+      "description": "Conditional semantic field for this receiver; this spelling and machine type are not a prescribed native DID schema. Required only under the actual source invocation, source actor and conditions; required=false does not waive applicable source content. For the invoked generic Risk Management Status Report use performance, schedule or cost to represent source P, S or C. Do not impose these as an exclusive source-mandated classification on guidance-only issue/opportunity entries or confuse them with the separate supply-chain category list. Sources: DI-MGMT-81809 2.4; PDF 1 (https://quicksearch.dla.mil/WMX/Default.aspx?token=5098433)."
+    },
+    {
+      "name": "rootCause",
+      "type": "string|null",
+      "required": false,
+      "governedBy": [
+        "DZR-F6-0023"
+      ],
+      "description": "Conditional semantic field for this receiver; this spelling and machine type are not a prescribed native DID schema. Required only under the actual source invocation, source actor and conditions; required=false does not waive applicable source content. The generic report requires a root-cause narrative. Keep it distinct from mitigations and from the SCRM trigger-or-root-causes alternative. Sources: DI-MGMT-81809 2.4; PDF 1 (https://quicksearch.dla.mil/WMX/Default.aspx?token=5098433)."
+    },
+    {
+      "name": "currentMitigations",
+      "type": "string|null",
+      "required": false,
+      "governedBy": [
+        "DZR-F6-0024"
+      ],
+      "description": "Conditional semantic field for this receiver; this spelling and machine type are not a prescribed native DID schema. Required only under the actual source invocation, source actor and conditions; required=false does not waive applicable source content. Retain the corresponding actual report, register or plan-section content without inventing sample metadata, fixed enums, encodings or additional applicability. Sources: DI-MGMT-81809 2.4; PDF 1 (https://quicksearch.dla.mil/WMX/Default.aspx?token=5098433)."
+    },
+    {
+      "name": "plannedMitigations",
+      "type": "string|null",
+      "required": false,
+      "governedBy": [
+        "DZR-F6-0025"
+      ],
+      "description": "Conditional semantic field for this receiver; this spelling and machine type are not a prescribed native DID schema. Required only under the actual source invocation, source actor and conditions; required=false does not waive applicable source content. Retain the corresponding actual report, register or plan-section content without inventing sample metadata, fixed enums, encodings or additional applicability. Sources: DI-MGMT-81809 2.4; PDF 1 (https://quicksearch.dla.mil/WMX/Default.aspx?token=5098433)."
+    },
+    {
+      "name": "riskReductionMilestoneDates",
+      "type": "string|null",
+      "required": false,
+      "governedBy": [
+        "DZR-F6-0026"
+      ],
+      "description": "Conditional semantic field for this receiver; this spelling and machine type are not a prescribed native DID schema. Required only under the actual source invocation, source actor and conditions; required=false does not waive applicable source content. Selected narrative/text column preserving the critical risk-reduction milestone dates as received. The source does not impose an ISO date syntax or a fixed number of dates. The sample date is illustrative only. Sources: DI-MGMT-81809 2.4; PDF 1 (https://quicksearch.dla.mil/WMX/Default.aspx?token=5098433)."
+    },
+    {
+      "name": "deliveryFormat",
+      "type": "string|null",
+      "required": false,
+      "governedBy": [
+        "DZR-F6-0027",
+        "DZR-F6-0028"
+      ],
+      "description": "Conditional semantic field for this receiver; this spelling and machine type are not a prescribed native DID schema. Required only under the actual source invocation, source actor and conditions; required=false does not waive applicable source content. Apply the actual invoked branch: DI-MGMT-81809 requires electronic MS Word version 2003-2007. The selected XML illustration uses native Word 2003 WordprocessingML and is only a partial contractor-format table. DI-MGMT-82255A requires the Government-directed electronic format to the fullest extent possible, with contractor Microsoft Excel .xlsx acceptable if none is identified; the Word illustration is not a Supply Chain Risk Register delivery. Sources: DI-MGMT-81809 3; PDF 2 (https://quicksearch.dla.mil/WMX/Default.aspx?token=5098433); DI-MGMT-82255A 2; PDF 1 (https://quicksearch.dla.mil/WMX/Default.aspx?token=5781165)."
+    },
+    {
+      "name": "awardDate",
+      "type": "string|null",
+      "required": false,
+      "governedBy": [
+        "DZR-F6-0031"
+      ],
+      "description": "Conditional semantic field for this receiver; this spelling and machine type are not a prescribed native DID schema. Required only under the actual source invocation, source actor and conditions; required=false does not waive applicable source content. Applicable SCRM contract-information award date includes the latest modification. This is separate from risk-event dates and is not fabricated in the sample. Sources: DI-MGMT-82255A 3.1(b); PDF 1 (https://quicksearch.dla.mil/WMX/Default.aspx?token=5781165)."
+    },
+    {
+      "name": "piin",
+      "type": "string|null",
+      "required": false,
+      "governedBy": [
+        "DZR-F6-0032"
+      ],
+      "description": "Conditional semantic field for this receiver; this spelling and machine type are not a prescribed native DID schema. Required only under the actual source invocation, source actor and conditions; required=false does not waive applicable source content. Retain the corresponding actual report, register or plan-section content without inventing sample metadata, fixed enums, encodings or additional applicability. Sources: DI-MGMT-82255A 3.1(c); PDF 1 (https://quicksearch.dla.mil/WMX/Default.aspx?token=5781165)."
+    },
+    {
+      "name": "spiin",
+      "type": "string|null",
+      "required": false,
+      "governedBy": [
+        "DZR-F6-0033"
+      ],
+      "description": "Conditional semantic field for this receiver; this spelling and machine type are not a prescribed native DID schema. Required only under the actual source invocation, source actor and conditions; required=false does not waive applicable source content. Retain the corresponding actual report, register or plan-section content without inventing sample metadata, fixed enums, encodings or additional applicability. Sources: DI-MGMT-82255A 3.1(d); PDF 1 (https://quicksearch.dla.mil/WMX/Default.aspx?token=5781165)."
+    },
+    {
+      "name": "orderNumber",
+      "type": "string|null",
+      "required": false,
+      "governedBy": [
+        "DZR-F6-0034"
+      ],
+      "description": "Conditional semantic field for this receiver; this spelling and machine type are not a prescribed native DID schema. Required only under the actual source invocation, source actor and conditions; required=false does not waive applicable source content. Retain the corresponding actual report, register or plan-section content without inventing sample metadata, fixed enums, encodings or additional applicability. Sources: DI-MGMT-82255A 3.1(e); PDF 1 (https://quicksearch.dla.mil/WMX/Default.aspx?token=5781165)."
+    },
+    {
+      "name": "clin",
+      "type": "string|null",
+      "required": false,
+      "governedBy": [
+        "DZR-F6-0035"
+      ],
+      "description": "Conditional semantic field for this receiver; this spelling and machine type are not a prescribed native DID schema. Required only under the actual source invocation, source actor and conditions; required=false does not waive applicable source content. Retain the corresponding actual report, register or plan-section content without inventing sample metadata, fixed enums, encodings or additional applicability. Sources: DI-MGMT-82255A 3.1(f); PDF 1 (https://quicksearch.dla.mil/WMX/Default.aspx?token=5781165)."
+    },
+    {
+      "name": "reportingPeriodDate",
+      "type": "string|null",
+      "required": false,
+      "governedBy": [
+        "DZR-F6-0036"
+      ],
+      "description": "Conditional semantic field for this receiver; this spelling and machine type are not a prescribed native DID schema. Required only under the actual source invocation, source actor and conditions; required=false does not waive applicable source content. Applicable SCRM reporting-period date; not a universal cadence or risk due date. Sources: DI-MGMT-82255A 3.1(g); PDF 1 (https://quicksearch.dla.mil/WMX/Default.aspx?token=5781165)."
+    },
+    {
+      "name": "securityClassification",
+      "type": "string|null",
+      "required": false,
+      "governedBy": [
+        "DZR-F6-0037"
+      ],
+      "description": "Conditional semantic field for this receiver; this spelling and machine type are not a prescribed native DID schema. Required only under the actual source invocation, source actor and conditions; required=false does not waive applicable source content. Use actual supplied SCRM contract-information classification. Do not infer public release from a security classification or fill the sample with an invented marking. Sources: DI-MGMT-82255A 3.1(h); PDF 1 (https://quicksearch.dla.mil/WMX/Default.aspx?token=5781165)."
+    },
+    {
+      "name": "criticalTechnologyList",
+      "type": "string|null",
+      "required": false,
+      "governedBy": [
+        "DZR-F6-0038"
+      ],
+      "description": "Conditional semantic field for this receiver; this spelling and machine type are not a prescribed native DID schema. Required only under the actual source invocation, source actor and conditions; required=false does not waive applicable source content. Required only if applicable under the SCRM contract-information clause. No actual critical-technology assertion is made by the sample. Sources: DI-MGMT-82255A 3.1(i); PDF 1 (https://quicksearch.dla.mil/WMX/Default.aspx?token=5781165)."
+    },
+    {
+      "name": "distributionStatement",
+      "type": "string|null",
+      "required": false,
+      "governedBy": [
+        "DZR-F6-0039"
+      ],
+      "description": "Conditional semantic field for this receiver; this spelling and machine type are not a prescribed native DID schema. Required only under the actual source invocation, source actor and conditions; required=false does not waive applicable source content. Use actual supplied SCRM distribution statement. Held marking/security issuances remain gaps; no inaccessible text is reconstructed. Sources: DI-MGMT-82255A 3.1(j); PDF 1 (https://quicksearch.dla.mil/WMX/Default.aspx?token=5781165)."
+    },
+    {
+      "name": "destructionNotice",
+      "type": "string|null",
+      "required": false,
+      "governedBy": [
+        "DZR-F6-0040"
+      ],
+      "description": "Conditional semantic field for this receiver; this spelling and machine type are not a prescribed native DID schema. Required only under the actual source invocation, source actor and conditions; required=false does not waive applicable source content. The SCRM Register DID lists destruction notice without an if-applicable qualifier in 3.1(k). Preserve that source requirement; do not borrow the separate SCRM Plan cover-page qualifier to relax the register. Sources: DI-MGMT-82255A 3.1(k); PDF 1,2 (https://quicksearch.dla.mil/WMX/Default.aspx?token=5781165)."
+    },
+    {
+      "name": "cmmcLevel",
+      "type": "string|null",
+      "required": false,
+      "governedBy": [
+        "DZR-F6-0041"
+      ],
+      "description": "Conditional semantic field for this receiver; this spelling and machine type are not a prescribed native DID schema. Required only under the actual source invocation, source actor and conditions; required=false does not waive applicable source content. Required content under the invoked SCRM DID; source references DoDI 5000.90 3.4.a, whose full text is an open gap. Record the actual supplied certification-level text, without inferring a certification, policy rule or level from the inaccessible issuance. Sources: DI-MGMT-82255A 3.1(l); PDF 1,2 (https://quicksearch.dla.mil/WMX/Default.aspx?token=5781165)."
+    },
+    {
+      "name": "riskEntries",
+      "type": "array of objects|null",
+      "required": false,
+      "governedBy": [
+        "DZR-F6-0042"
+      ],
+      "description": "Conditional semantic field for this receiver; this spelling and machine type are not a prescribed native DID schema. Required only under the actual source invocation, source actor and conditions; required=false does not waive applicable source content. For the applicable SCRM register, include all identified and potential supply-chain risks and segregate the list by the source risk categories. Do not restrict the actual register to critical risks or to the three-entry illustration. Sources: DI-MGMT-82255A 3; 3.2; PDF 1,2 (https://quicksearch.dla.mil/WMX/Default.aspx?token=5781165)."
+    },
+    {
+      "name": "riskCategory",
+      "type": "string|null",
+      "required": false,
+      "governedBy": [
+        "DZR-F6-0043",
+        "DZR-F6-0045",
+        "DZR-F6-0083"
+      ],
+      "description": "Conditional semantic field for this receiver; this spelling and machine type are not a prescribed native DID schema. Required only under the actual source invocation, source actor and conditions; required=false does not waive applicable source content. The explicit category list in DI-MGMT-82255A applies to the specialized supply-chain register only. A requirement to specify a category in the SCRM Plan does not impose that category on every generic RIO entry. Sources: DI-MGMT-82255A 3.2; PDF 2 (https://quicksearch.dla.mil/WMX/Default.aspx?token=5781165); DI-MGMT-82255A 3.2(b); PDF 2 (https://quicksearch.dla.mil/WMX/Default.aspx?token=5781165); DI-MGMT-82256A 3.4h(3); PDF 4 (https://quicksearch.dla.mil/WMX/Default.aspx?token=5781166)."
+    },
+    {
+      "name": "riskOwner",
+      "type": "string|null",
+      "required": false,
+      "governedBy": [
+        "DZR-F6-0046"
+      ],
+      "description": "Conditional semantic field for this receiver; this spelling and machine type are not a prescribed native DID schema. Required only under the actual source invocation, source actor and conditions; required=false does not waive applicable source content. Retain the corresponding actual report, register or plan-section content without inventing sample metadata, fixed enums, encodings or additional applicability. Sources: DI-MGMT-82255A 3.2(c); PDF 2 (https://quicksearch.dla.mil/WMX/Default.aspx?token=5781165)."
+    },
+    {
+      "name": "weaponSystem",
+      "type": "string|null",
+      "required": false,
+      "governedBy": [
+        "DZR-F6-0047"
+      ],
+      "description": "Conditional semantic field for this receiver; this spelling and machine type are not a prescribed native DID schema. Required only under the actual source invocation, source actor and conditions; required=false does not waive applicable source content. Retain the corresponding actual report, register or plan-section content without inventing sample metadata, fixed enums, encodings or additional applicability. Sources: DI-MGMT-82255A 3.2(d); PDF 2 (https://quicksearch.dla.mil/WMX/Default.aspx?token=5781165)."
+    },
+    {
+      "name": "niin",
+      "type": "string|null",
+      "required": false,
+      "governedBy": [
+        "DZR-F6-0048"
+      ],
+      "description": "Conditional semantic field for this receiver; this spelling and machine type are not a prescribed native DID schema. Required only under the actual source invocation, source actor and conditions; required=false does not waive applicable source content. Retain the corresponding actual report, register or plan-section content without inventing sample metadata, fixed enums, encodings or additional applicability. Sources: DI-MGMT-82255A 3.2(e); PDF 2 (https://quicksearch.dla.mil/WMX/Default.aspx?token=5781165)."
+    },
+    {
+      "name": "vendorPartNumber",
+      "type": "string|null",
+      "required": false,
+      "governedBy": [
+        "DZR-F6-0049"
+      ],
+      "description": "Conditional semantic field for this receiver; this spelling and machine type are not a prescribed native DID schema. Required only under the actual source invocation, source actor and conditions; required=false does not waive applicable source content. Retain the corresponding actual report, register or plan-section content without inventing sample metadata, fixed enums, encodings or additional applicability. Sources: DI-MGMT-82255A 3.2(f); PDF 2 (https://quicksearch.dla.mil/WMX/Default.aspx?token=5781165)."
+    },
+    {
+      "name": "locationOrRiskEvent",
+      "type": "string|null",
+      "required": false,
+      "governedBy": [
+        "DZR-F6-0051"
+      ],
+      "description": "Conditional semantic field for this receiver; this spelling and machine type are not a prescribed native DID schema. Required only under the actual source invocation, source actor and conditions; required=false does not waive applicable source content. Retain the corresponding actual report, register or plan-section content without inventing sample metadata, fixed enums, encodings or additional applicability. Sources: DI-MGMT-82255A 3.2(h); PDF 2 (https://quicksearch.dla.mil/WMX/Default.aspx?token=5781165)."
+    },
+    {
+      "name": "triggerOrRootCauses",
+      "type": "string|null",
+      "required": false,
+      "governedBy": [
+        "DZR-F6-0052",
+        "DZR-F6-0075"
+      ],
+      "description": "Conditional semantic field for this receiver; this spelling and machine type are not a prescribed native DID schema. Required only under the actual source invocation, source actor and conditions; required=false does not waive applicable source content. Retain the corresponding actual report, register or plan-section content without inventing sample metadata, fixed enums, encodings or additional applicability. Sources: DI-MGMT-82255A 3.2(i); PDF 2 (https://quicksearch.dla.mil/WMX/Default.aspx?token=5781165); DI-MGMT-82256A 3.4g(1)(b); PDF 3 (https://quicksearch.dla.mil/WMX/Default.aspx?token=5781166)."
+    },
+    {
+      "name": "initialRiskAssessment",
+      "type": "string|null",
+      "required": false,
+      "governedBy": [
+        "DZR-F6-0053"
+      ],
+      "description": "Conditional semantic field for this receiver; this spelling and machine type are not a prescribed native DID schema. Required only under the actual source invocation, source actor and conditions; required=false does not waive applicable source content. Retain the corresponding actual report, register or plan-section content without inventing sample metadata, fixed enums, encodings or additional applicability. Sources: DI-MGMT-82255A 3.2(j); PDF 2 (https://quicksearch.dla.mil/WMX/Default.aspx?token=5781165)."
+    },
+    {
+      "name": "riskToleranceLevel",
+      "type": "string|null",
+      "required": false,
+      "governedBy": [
+        "DZR-F6-0054"
+      ],
+      "description": "Conditional semantic field for this receiver; this spelling and machine type are not a prescribed native DID schema. Required only under the actual source invocation, source actor and conditions; required=false does not waive applicable source content. Retain the corresponding actual report, register or plan-section content without inventing sample metadata, fixed enums, encodings or additional applicability. Sources: DI-MGMT-82255A 3.2(k); PDF 2 (https://quicksearch.dla.mil/WMX/Default.aspx?token=5781165)."
+    },
+    {
+      "name": "residualRiskLevels",
+      "type": "string|null",
+      "required": false,
+      "governedBy": [
+        "DZR-F6-0055"
+      ],
+      "description": "Conditional semantic field for this receiver; this spelling and machine type are not a prescribed native DID schema. Required only under the actual source invocation, source actor and conditions; required=false does not waive applicable source content. Retain the corresponding actual report, register or plan-section content without inventing sample metadata, fixed enums, encodings or additional applicability. Sources: DI-MGMT-82255A 3.2(l); PDF 2 (https://quicksearch.dla.mil/WMX/Default.aspx?token=5781165)."
+    },
+    {
+      "name": "likelihoodValue",
+      "type": "string|null",
+      "required": false,
+      "governedBy": [
+        "DZR-F6-0056"
+      ],
+      "description": "Conditional semantic field for this receiver; this spelling and machine type are not a prescribed native DID schema. Required only under the actual source invocation, source actor and conditions; required=false does not waive applicable source content. Actual likelihood-of-occurrence information for a supply-chain risk. Keep this semantic value distinct from the generic matrix axis label. If a numeric percentage and ordinal rating are supplied, apply only the source-specific mapping that actually governs the delivery. Sources: DI-MGMT-82255A 3.2(m); PDF 2 (https://quicksearch.dla.mil/WMX/Default.aspx?token=5781165)."
+    },
+    {
+      "name": "impactAndConsequence",
+      "type": "string|null",
+      "required": false,
+      "governedBy": [
+        "DZR-F6-0057"
+      ],
+      "description": "Conditional semantic field for this receiver; this spelling and machine type are not a prescribed native DID schema. Required only under the actual source invocation, source actor and conditions; required=false does not waive applicable source content. Retain the corresponding actual report, register or plan-section content without inventing sample metadata, fixed enums, encodings or additional applicability. Sources: DI-MGMT-82255A 3.2(n); PDF 2 (https://quicksearch.dla.mil/WMX/Default.aspx?token=5781165)."
+    },
+    {
+      "name": "riskHandlingResponse",
+      "type": "string|null",
+      "required": false,
+      "governedBy": [
+        "DZR-F6-0058",
+        "DZR-F6-0086"
+      ],
+      "description": "Conditional semantic field for this receiver; this spelling and machine type are not a prescribed native DID schema. Required only under the actual source invocation, source actor and conditions; required=false does not waive applicable source content. Retain the corresponding actual report, register or plan-section content without inventing sample metadata, fixed enums, encodings or additional applicability. Sources: DI-MGMT-82255A 3.2(o); PDF 2 (https://quicksearch.dla.mil/WMX/Default.aspx?token=5781165); DI-MGMT-82256A 3.4h(3); PDF 4 (https://quicksearch.dla.mil/WMX/Default.aspx?token=5781166)."
+    },
+    {
+      "name": "handlingPlanEstimatedStart",
+      "type": "string|null",
+      "required": false,
+      "governedBy": [
+        "DZR-F6-0059"
+      ],
+      "description": "Conditional semantic field for this receiver; this spelling and machine type are not a prescribed native DID schema. Required only under the actual source invocation, source actor and conditions; required=false does not waive applicable source content. Retain the corresponding actual report, register or plan-section content without inventing sample metadata, fixed enums, encodings or additional applicability. Sources: DI-MGMT-82255A 3.2(p); PDF 2 (https://quicksearch.dla.mil/WMX/Default.aspx?token=5781165)."
+    },
+    {
+      "name": "handlingPlanEstimatedCompletion",
+      "type": "string|null",
+      "required": false,
+      "governedBy": [
+        "DZR-F6-0060"
+      ],
+      "description": "Conditional semantic field for this receiver; this spelling and machine type are not a prescribed native DID schema. Required only under the actual source invocation, source actor and conditions; required=false does not waive applicable source content. Retain the corresponding actual report, register or plan-section content without inventing sample metadata, fixed enums, encodings or additional applicability. Sources: DI-MGMT-82255A 3.2(p); PDF 2 (https://quicksearch.dla.mil/WMX/Default.aspx?token=5781165)."
+    },
+    {
+      "name": "likelihoodLevel",
+      "type": "integer|null",
+      "required": false,
+      "governedBy": [
+        "DZR-F6-0061",
+        "DZR-F6-0062",
+        "DZR-F6-0063",
+        "DZR-F6-0064",
+        "DZR-F6-0065"
+      ],
+      "description": "Conditional semantic field for this receiver; this spelling and machine type are not a prescribed native DID schema. Required only under the actual source invocation, source actor and conditions; required=false does not waive applicable source content. For the invoked SCRM DID, ordinal values 1-5 have the exact source labels Not likely, Low likelihood, Likely, High likelihood and Near certainty, with its printed probability endpoints. Generic 81809 axis labels alone do not mandate these probability bands. Sources: DI-MGMT-82255A Risk Reporting Matrix (cross-referenced as 3.3), a; PDF 2 (https://quicksearch.dla.mil/WMX/Default.aspx?token=5781165); DI-MGMT-82255A Risk Reporting Matrix (cross-referenced as 3.3), a; PDF 2 (https://quicksearch.dla.mil/WMX/Default.aspx?token=5781165); DI-MGMT-82255A Risk Reporting Matrix (cross-referenced as 3.3), a; PDF 2 (https://quicksearch.dla.mil/WMX/Default.aspx?token=5781165); DI-MGMT-82255A Risk Reporting Matrix (cross-referenced as 3.3), a; PDF 2 (https://quicksearch.dla.mil/WMX/Default.aspx?token=5781165); DI-MGMT-82255A Risk Reporting Matrix (cross-referenced as 3.3), a; PDF 2,3 (https://quicksearch.dla.mil/WMX/Default.aspx?token=5781165)."
+    },
+    {
+      "name": "occurrenceProbability",
+      "type": "number|null",
+      "required": false,
+      "governedBy": [
+        "DZR-F6-0061",
+        "DZR-F6-0062",
+        "DZR-F6-0063",
+        "DZR-F6-0064",
+        "DZR-F6-0065"
+      ],
+      "description": "Conditional semantic field for this receiver; this spelling and machine type are not a prescribed native DID schema. Required only under the actual source invocation, source actor and conditions; required=false does not waive applicable source content. Selected numeric unit is percentage points, distinct from the ordinal likelihood level. Under the applicable SCRM DID the printed bands are (>1,20], (20,40], (40,60], (60,80], and (80,99]. The source assigns no band to values at or below 1 or above 99; retain the gap and obtain actual governing direction instead of filling a 0-100 range. No probability is invented for issue rows. Sources: DI-MGMT-82255A Risk Reporting Matrix (cross-referenced as 3.3), a; PDF 2 (https://quicksearch.dla.mil/WMX/Default.aspx?token=5781165); DI-MGMT-82255A Risk Reporting Matrix (cross-referenced as 3.3), a; PDF 2 (https://quicksearch.dla.mil/WMX/Default.aspx?token=5781165); DI-MGMT-82255A Risk Reporting Matrix (cross-referenced as 3.3), a; PDF 2 (https://quicksearch.dla.mil/WMX/Default.aspx?token=5781165); DI-MGMT-82255A Risk Reporting Matrix (cross-referenced as 3.3), a; PDF 2 (https://quicksearch.dla.mil/WMX/Default.aspx?token=5781165); DI-MGMT-82255A Risk Reporting Matrix (cross-referenced as 3.3), a; PDF 2,3 (https://quicksearch.dla.mil/WMX/Default.aspx?token=5781165)."
+    },
+    {
+      "name": "consequenceLevel",
+      "type": "integer|null",
+      "required": false,
+      "governedBy": [
+        "DZR-F6-0066",
+        "DZR-F6-0067",
+        "DZR-F6-0068",
+        "DZR-F6-0069",
+        "DZR-F6-0070"
+      ],
+      "description": "Conditional semantic field for this receiver; this spelling and machine type are not a prescribed native DID schema. Required only under the actual source invocation, source actor and conditions; required=false does not waive applicable source content. For the invoked SCRM DID, ordinal levels 1-5 correspond to Minimal impact, Minor impact, Moderate impact, Significant impact and Critical impact. These labels do not prescribe dollar, day or performance thresholds. Sources: DI-MGMT-82255A Risk Reporting Matrix (cross-referenced as 3.3), b; PDF 3 (https://quicksearch.dla.mil/WMX/Default.aspx?token=5781165); DI-MGMT-82255A Risk Reporting Matrix (cross-referenced as 3.3), b; PDF 3 (https://quicksearch.dla.mil/WMX/Default.aspx?token=5781165); DI-MGMT-82255A Risk Reporting Matrix (cross-referenced as 3.3), b; PDF 3 (https://quicksearch.dla.mil/WMX/Default.aspx?token=5781165); DI-MGMT-82255A Risk Reporting Matrix (cross-referenced as 3.3), b; PDF 3 (https://quicksearch.dla.mil/WMX/Default.aspx?token=5781165); DI-MGMT-82255A Risk Reporting Matrix (cross-referenced as 3.3), b; PDF 3 (https://quicksearch.dla.mil/WMX/Default.aspx?token=5781165)."
+    },
+    {
+      "name": "consequenceLabel",
+      "type": "string|null",
+      "required": false,
+      "governedBy": [
+        "DZR-F6-0066",
+        "DZR-F6-0067",
+        "DZR-F6-0068",
+        "DZR-F6-0069",
+        "DZR-F6-0070"
+      ],
+      "description": "Conditional semantic field for this receiver; this spelling and machine type are not a prescribed native DID schema. Required only under the actual source invocation, source actor and conditions; required=false does not waive applicable source content. Preserve the applicable SCRM source consequence label. Do not use a guide example table to invent universal quantitative thresholds. Sources: DI-MGMT-82255A Risk Reporting Matrix (cross-referenced as 3.3), b; PDF 3 (https://quicksearch.dla.mil/WMX/Default.aspx?token=5781165); DI-MGMT-82255A Risk Reporting Matrix (cross-referenced as 3.3), b; PDF 3 (https://quicksearch.dla.mil/WMX/Default.aspx?token=5781165); DI-MGMT-82255A Risk Reporting Matrix (cross-referenced as 3.3), b; PDF 3 (https://quicksearch.dla.mil/WMX/Default.aspx?token=5781165); DI-MGMT-82255A Risk Reporting Matrix (cross-referenced as 3.3), b; PDF 3 (https://quicksearch.dla.mil/WMX/Default.aspx?token=5781165); DI-MGMT-82255A Risk Reporting Matrix (cross-referenced as 3.3), b; PDF 3 (https://quicksearch.dla.mil/WMX/Default.aspx?token=5781165)."
+    },
+    {
+      "name": "currentStatus",
+      "type": "string|null",
+      "required": false,
+      "governedBy": [
+        "DZR-F6-0071",
+        "DZR-F6-0089"
+      ],
+      "description": "Conditional semantic field for this receiver; this spelling and machine type are not a prescribed native DID schema. Required only under the actual source invocation, source actor and conditions; required=false does not waive applicable source content. The invoked SCRM Register requires the current status for each risk under the section-3 parent shall. The SCRM Plan monitoring section separately specifies inclusion of current status. Neither clause establishes a fixed universal status enum or a generic RIO refresh interval. Sources: DI-MGMT-82255A 3; 3.4(a); PDF 1,3 (https://quicksearch.dla.mil/WMX/Default.aspx?token=5781165); DI-MGMT-82256A 3.4h(3); PDF 4 (https://quicksearch.dla.mil/WMX/Default.aspx?token=5781166)."
+    },
+    {
+      "name": "criticalRiskDocumentationProcess",
+      "type": "string|null",
+      "required": false,
+      "governedBy": [
+        "DZR-F6-0072"
+      ],
+      "description": "Conditional semantic field for this receiver; this spelling and machine type are not a prescribed native DID schema. Required only under the actual source invocation, source actor and conditions; required=false does not waive applicable source content. SCRM Plan process describing documentation of critical supply-chain risks in the register. This does not narrow the register to critical risks alone. Sources: DI-MGMT-82256A 3.4f(4); PDF 3 (https://quicksearch.dla.mil/WMX/Default.aspx?token=5781166)."
+    },
+    {
+      "name": "registerReportingProcess",
+      "type": "string|null",
+      "required": false,
+      "governedBy": [
+        "DZR-F6-0073"
+      ],
+      "description": "Conditional semantic field for this receiver; this spelling and machine type are not a prescribed native DID schema. Required only under the actual source invocation, source actor and conditions; required=false does not waive applicable source content. SCRM Plan risk-assessment section content: a process for quarterly register reporting to the Government Product Support Manager or Program Manager. This is not a stand-alone quarterly delivery obligation for every F6 register. Sources: DI-MGMT-82256A 3.4f(5); PDF 3 (https://quicksearch.dla.mil/WMX/Default.aspx?token=5781166)."
+    },
+    {
+      "name": "riskHandlingPlan",
+      "type": "string|null",
+      "required": false,
+      "governedBy": [
+        "DZR-F6-0076"
+      ],
+      "description": "Conditional semantic field for this receiver; this spelling and machine type are not a prescribed native DID schema. Required only under the actual source invocation, source actor and conditions; required=false does not waive applicable source content. Retain the corresponding actual report, register or plan-section content without inventing sample metadata, fixed enums, encodings or additional applicability. Sources: DI-MGMT-82256A 3.4g(1)(c); PDF 3 (https://quicksearch.dla.mil/WMX/Default.aspx?token=5781166)."
+    },
+    {
+      "name": "handlingEventsAndActivities",
+      "type": "string|null",
+      "required": false,
+      "governedBy": [
+        "DZR-F6-0077"
+      ],
+      "description": "Conditional semantic field for this receiver; this spelling and machine type are not a prescribed native DID schema. Required only under the actual source invocation, source actor and conditions; required=false does not waive applicable source content. Retain the corresponding actual report, register or plan-section content without inventing sample metadata, fixed enums, encodings or additional applicability. Sources: DI-MGMT-82256A 3.4g(1)(d); PDF 3 (https://quicksearch.dla.mil/WMX/Default.aspx?token=5781166)."
+    },
+    {
+      "name": "handlingEventSuccessCriteria",
+      "type": "string|null",
+      "required": false,
+      "governedBy": [
+        "DZR-F6-0078"
+      ],
+      "description": "Conditional semantic field for this receiver; this spelling and machine type are not a prescribed native DID schema. Required only under the actual source invocation, source actor and conditions; required=false does not waive applicable source content. Retain the corresponding actual report, register or plan-section content without inventing sample metadata, fixed enums, encodings or additional applicability. Sources: DI-MGMT-82256A 3.4g(1)(d); PDF 3 (https://quicksearch.dla.mil/WMX/Default.aspx?token=5781166)."
+    },
+    {
+      "name": "residualRiskRating",
+      "type": "string|null",
+      "required": false,
+      "governedBy": [
+        "DZR-F6-0079"
+      ],
+      "description": "Conditional semantic field for this receiver; this spelling and machine type are not a prescribed native DID schema. Required only under the actual source invocation, source actor and conditions; required=false does not waive applicable source content. Retain the corresponding actual report, register or plan-section content without inventing sample metadata, fixed enums, encodings or additional applicability. Sources: DI-MGMT-82256A 3.4g(1)(d); PDF 3 (https://quicksearch.dla.mil/WMX/Default.aspx?token=5781166)."
+    },
+    {
+      "name": "riskCaptureProcess",
+      "type": "string|null",
+      "required": false,
+      "governedBy": [
+        "DZR-F6-0080"
+      ],
+      "description": "Conditional semantic field for this receiver; this spelling and machine type are not a prescribed native DID schema. Required only under the actual source invocation, source actor and conditions; required=false does not waive applicable source content. SCRM Plan process for capturing risks and associated details concerning the products and services to be provided in a register. Sources: DI-MGMT-82256A 3.4g(3); PDF 3,4 (https://quicksearch.dla.mil/WMX/Default.aspx?token=5781166)."
+    },
+    {
+      "name": "riskMonitoringReportingProcess",
+      "type": "string|null",
+      "required": false,
+      "governedBy": [
+        "DZR-F6-0081"
+      ],
+      "description": "Conditional semantic field for this receiver; this spelling and machine type are not a prescribed native DID schema. Required only under the actual source invocation, source actor and conditions; required=false does not waive applicable source content. SCRM Plan risk-monitoring section content: a process for quarterly risk-monitoring reporting. Preserve the plan actor and actual contract applicability. Sources: DI-MGMT-82256A 3.4h(2); PDF 4 (https://quicksearch.dla.mil/WMX/Default.aspx?token=5781166)."
+    },
+    {
+      "name": "riskRating",
+      "type": "string|null",
+      "required": false,
+      "governedBy": [
+        "DZR-F6-0085"
+      ],
+      "description": "Conditional semantic field for this receiver; this spelling and machine type are not a prescribed native DID schema. Required only under the actual source invocation, source actor and conditions; required=false does not waive applicable source content. DI-MGMT-82256A monitoring plan-content declaration. No universal rating formula or standalone generic register score is created. Sources: DI-MGMT-82256A 3.4h(3); PDF 4 (https://quicksearch.dla.mil/WMX/Default.aspx?token=5781166)."
+    },
+    {
+      "name": "responsiblePointOfContact",
+      "type": "string|null",
+      "required": false,
+      "governedBy": [
+        "DZR-F6-0087"
+      ],
+      "description": "Conditional semantic field for this receiver; this spelling and machine type are not a prescribed native DID schema. Required only under the actual source invocation, source actor and conditions; required=false does not waive applicable source content. DI-MGMT-82256A monitoring plan-content declaration. It does not establish a mandatory generic RIO contact-name field or authorize inventing contact details. Sources: DI-MGMT-82256A 3.4h(3); PDF 4 (https://quicksearch.dla.mil/WMX/Default.aspx?token=5781166)."
+    },
+    {
+      "name": "expirationDate",
+      "type": "string|null",
+      "required": false,
+      "governedBy": [
+        "DZR-F6-0088"
+      ],
+      "description": "Conditional semantic field for this receiver; this spelling and machine type are not a prescribed native DID schema. Required only under the actual source invocation, source actor and conditions; required=false does not waive applicable source content. DI-MGMT-82256A requires the risk-monitoring plan section to specify inclusion of a register expiration date. This is a plan-content obligation, not an independently invented generic entry due-date mandate. Sources: DI-MGMT-82256A 3.4h(3); PDF 4 (https://quicksearch.dla.mil/WMX/Default.aspx?token=5781166)."
+    },
+    {
+      "name": "missionContext",
+      "type": "string|null",
+      "required": false,
+      "governedBy": [
+        "DZR-F6-0090"
+      ],
+      "description": "Optional guidance-only context associated with mission traceability in 2023 RIO Guide section 3. No native field spelling is prescribed. It is excluded from every displayed sample risk projection and from the operative baseline, even when filled on a risk entry. Empty or absent missionContext does not reject this feed. https://www.cto.mil/wp-content/uploads/2024/05/RIO-2023-2-2.pdf"
+    },
+    {
+      "name": "sourceApplicabilityContext",
+      "type": "object",
+      "required": true,
+      "governedBy": [],
+      "description": "Receiver-required actual context identifies which operative source/contract/CDRL branch governs the received content. It prevents generic risk, specialized SCRM and plan-section obligations from being applied indiscriminately. No actual program or contract applicability is fabricated in the example."
+    },
+    {
+      "name": "joinContext",
+      "type": "object",
+      "required": true,
+      "governedBy": [],
+      "description": "Receiver-required actual WBS and requirements reference data or resolvable references proving both joins. It is not supplied by the illustrative table. Reject a claimed complete accepted drop when either join cannot be resolved."
+    },
+    {
+      "name": "supportingPlanContent",
+      "type": "object or received artifact|null",
+      "required": false,
+      "governedBy": [
+        "DZR-F6-0072",
+        "DZR-F6-0073",
+        "DZR-F6-0074",
+        "DZR-F6-0075",
+        "DZR-F6-0076",
+        "DZR-F6-0077",
+        "DZR-F6-0078",
+        "DZR-F6-0079",
+        "DZR-F6-0080",
+        "DZR-F6-0081",
+        "DZR-F6-0082",
+        "DZR-F6-0083",
+        "DZR-F6-0084",
+        "DZR-F6-0085",
+        "DZR-F6-0086",
+        "DZR-F6-0087",
+        "DZR-F6-0088",
+        "DZR-F6-0089"
+      ],
+      "description": "Retain only actual invoked SCRM Plan register-related assessment, handling and monitoring content for the F6 plan branch. The native plan artifact has its own format and wider content outside this scoped extraction. This field is not a newly prescribed register column and the sample does not fabricate a SCRM Plan."
+    }
+  ],
+  "markings": "Retain actual supplied classification and distribution information under the applicable report/register/plan contract. DI-MGMT-82255A 3.1 explicitly includes security classification, distribution statement, destruction notice and CMMC certification level, plus the Critical Technology List if applicable. The generic Risk Management Status Report DID does not independently prescribe a marking column. The five held security/data issuances and the inaccessible directly referenced sources remain gaps; do not reconstruct their rules. No sample security classification, distribution authorization or certification is fabricated.",
+  "acceptance": [
+    {
+      "rule": "Select the actual invoked source branch from received applicability context before evaluating operative checks. Do not require every DID for every delivery, and do not promote a guidance-only issue or opportunity entry into a government-mandated risk report.",
+      "severity": "reject",
+      "governedBy": []
+    },
+    {
+      "rule": "For each selected semantic entry require a nonempty unique entryId and exactly one entryType value of risk, issue or opportunity. These key/discriminator requirements are explicit receiver choices, not a newly asserted native government schema.",
+      "severity": "reject",
+      "governedBy": []
+    },
+    {
+      "rule": "Require nonempty wbsId and requirementId for each semantic entry, and resolve both against the actual received WBS and requirements context. Reject either missing or unresolved join. The example supplies identifiers only and cannot pass this complete-drop gate without actual external records.",
+      "severity": "reject",
+      "governedBy": []
+    },
+    {
+      "rule": "Preserve received identifiers and case. Reject key collisions after NFC and whitespace normalization; do not invent a required dotted-decimal identifier convention.",
+      "severity": "reject",
+      "governedBy": []
+    },
+    {
+      "rule": "The example is a native Word 2003 WordprocessingML table with exactly three data entries and a header. It is a partial contractor-format illustration: it contains no genuine title-page metadata, reporting-period coverage, progress report or complete five-by-five matrix. Reject any claim that the example alone is a complete DI-MGMT-81809 report or accepted delivery.",
+      "severity": "reject",
+      "governedBy": []
+    },
+    {
+      "rule": "Do not label the Word XML illustration as an accepted DI-MGMT-82255A delivery. Apply the actual Government-directed electronic format to the fullest extent possible; absent an identified format, the source permits contractor Microsoft Excel .xlsx. XML row encoding here is not an XLSX workbook.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F6-0028"
+      ]
+    },
+    {
+      "rule": "When the generic report branch applies, keep risk classification and color consistent: low/green, moderate/yellow, high/red. Retain the actual classification basis and full matrix; no numerical L-times-C score or invented cell thresholds are authorized by the inspected source.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F6-0014",
+        "DZR-F6-0015",
+        "DZR-F6-0016",
+        "DZR-F6-0017",
+        "DZR-F6-0018",
+        "DZR-F6-0019"
+      ]
+    },
+    {
+      "rule": "When SCRM likelihood mapping applies, preserve exactly the five source probability bands and labels. Apply rating-versus-probability consistency checks only within those defined bands. A supplied probability at or below 1 percent or above 99 percent is not prohibited by this extraction: retain it, flag its source-level mapping as unresolved for review, and do not invent a 0-100 extension or assign a source-derived category without separate actual governing direction.",
+      "severity": "warn",
+      "governedBy": [
+        "DZR-F6-0061",
+        "DZR-F6-0062",
+        "DZR-F6-0063",
+        "DZR-F6-0064",
+        "DZR-F6-0065"
+      ]
+    },
+    {
+      "rule": "SCRM Plan quarterly language governs the required process description in the applicable plan sections. Do not infer a universal register submission date, reporting-period endpoint or calendar-quarter deadline from those clauses.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F6-0073",
+        "DZR-F6-0081"
+      ]
+    },
+    {
+      "rule": "Before claiming a complete accepted drop, obtain actual required report/register/plan content, actual delivery media, actual markings and applicability, external trace data, and all applicable operative fields. The three entries do not fabricate or establish any of these supporting artifacts.",
+      "severity": "reject",
+      "governedBy": []
+    },
+    {
+      "rule": "The generic issue/opportunity operative-source coverage remains open: the inspected generic DID governs risk status reporting. The 2023 RIO Guide permits a combined register but remains nonbinding. Exclude the entire guidance-only issue and opportunity entries from the operative baseline; their presence does not establish statutory or contractual compliance.",
+      "severity": "warn",
+      "governedBy": []
+    },
+    {
+      "rule": "Catalogue guidance as binding=false and kind=guidance. Guidance does not independently impose rejection rules or mandatory source fields. Exclude every guidance-only field, including missionContext, from operative baseline inputs, including when that field appears on a risk entry.",
+      "severity": "warn",
+      "governedBy": [
+        "DZR-F6-0090"
+      ]
+    },
+    {
+      "rule": "DI-MGMT-82255A expressly cites the January 2017 RIO Guide. Keep that named reference distinct from the current 2023 guide; do not silently replace the referenced edition. No guide edition independently becomes a baseline source.",
+      "severity": "warn",
+      "governedBy": []
+    },
+    {
+      "rule": "Open source gaps remain for DoDI 5000.88, DoDM 5010.12, DoDI 5230.24, DoDI 5200.48 and DoDM 5200.01 Volume 2, and for the directly referenced DoDI 5000.90 and DoDM 4140.01. Extract no text or inferred requirements from these inaccessible sources; actual applicability and complete policy coverage remain unresolved.",
+      "severity": "warn",
+      "governedBy": []
+    },
+    {
+      "rule": "DI-MGMT-81809 base text dated 2010-04-26 was inspected. ASSIST verifies the active base and Notice 1 validation dated 2022-05-13, but the Notice 1 PDF text was inaccessible. Do not claim the notice text was inspected or derive new requirements from its metadata; the generic records are sourced only to the opened base document.",
+      "severity": "warn",
+      "governedBy": []
+    },
+    {
+      "rule": "Apply only under this source condition: When DI-MGMT-81809 is invoked by the applicable contract, solicitation, or CDRL. Required source behavior: The Risk Management Status Report shall use the contractor format.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F6-0001"
+      ]
+    },
+    {
+      "rule": "Apply only under this source condition: When DI-MGMT-81809 is invoked by the applicable contract, solicitation, or CDRL. Required source behavior: The Risk Management Status Report title page shall identify the contractor name.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F6-0002"
+      ]
+    },
+    {
+      "rule": "Apply only under this source condition: When DI-MGMT-81809 is invoked by the applicable contract, solicitation, or CDRL. Required source behavior: The Risk Management Status Report title page shall identify the contract number.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F6-0003"
+      ]
+    },
+    {
+      "rule": "Apply only under this source condition: When DI-MGMT-81809 is invoked by the applicable contract, solicitation, or CDRL. Required source behavior: The Risk Management Status Report title page shall identify the award dates, including the latest modification.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F6-0004"
+      ]
+    },
+    {
+      "rule": "Apply only under this source condition: When DI-MGMT-81809 is invoked by the applicable contract, solicitation, or CDRL. Required source behavior: The Risk Management Status Report title page shall identify all dates inclusive to the tasks for the reporting period.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F6-0005"
+      ]
+    },
+    {
+      "rule": "Apply only under this source condition: When DI-MGMT-81809 is invoked by the applicable contract, solicitation, or CDRL. Required source behavior: The Risk Management Status Report shall contain the contractor progress in risk identification.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F6-0006"
+      ]
+    },
+    {
+      "rule": "Apply only under this source condition: When DI-MGMT-81809 is invoked by the applicable contract, solicitation, or CDRL. Required source behavior: The Risk Management Status Report shall contain the contractor progress in risk analysis.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F6-0007"
+      ]
+    },
+    {
+      "rule": "Apply only under this source condition: When DI-MGMT-81809 is invoked by the applicable contract, solicitation, or CDRL. Required source behavior: The Risk Management Status Report shall contain the contractor progress in implementation of risk mitigation.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F6-0008"
+      ]
+    },
+    {
+      "rule": "Apply only under this source condition: When DI-MGMT-81809 is invoked by the applicable contract, solicitation, or CDRL. Required source behavior: The Risk Management Status Report shall contain the contractor progress in risk tracking.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F6-0009"
+      ]
+    },
+    {
+      "rule": "Apply only under this source condition: When DI-MGMT-81809 is invoked by the applicable contract, solicitation, or CDRL. Required source behavior: The Risk Management Status Report shall identify efforts made to assess the current program consequences of identified performance risks.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F6-0010"
+      ]
+    },
+    {
+      "rule": "Apply only under this source condition: When DI-MGMT-81809 is invoked by the applicable contract, solicitation, or CDRL. Required source behavior: The Risk Management Status Report shall identify efforts made to assess the current program consequences of identified schedule risks.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F6-0011"
+      ]
+    },
+    {
+      "rule": "Apply only under this source condition: When DI-MGMT-81809 is invoked by the applicable contract, solicitation, or CDRL. Required source behavior: The Risk Management Status Report shall identify efforts made to assess the current program consequences of identified cost risks.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F6-0012"
+      ]
+    },
+    {
+      "rule": "Apply only under this source condition: When DI-MGMT-81809 is invoked by the applicable contract, solicitation, or CDRL. Required source behavior: The Risk Management Status Report shall contain a projection of risk mitigation implementation.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F6-0013"
+      ]
+    },
+    {
+      "rule": "Apply only under this source condition: When DI-MGMT-81809 is invoked by the applicable contract, solicitation, or CDRL. Required source behavior: The Risk Management Status Report shall contain a five-by-five matrix identifying performance, schedule, and cost risks.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F6-0014"
+      ]
+    },
+    {
+      "rule": "Apply only under this source condition: When DI-MGMT-81809 is invoked by the applicable contract, solicitation, or CDRL. Required source behavior: The risk matrix vertical axis shall indicate the likelihood of a root-cause occurrence.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F6-0015"
+      ]
+    },
+    {
+      "rule": "Apply only under this source condition: When DI-MGMT-81809 is invoked by the applicable contract, solicitation, or CDRL. Required source behavior: The risk matrix horizontal axis shall indicate the consequence of a root-cause occurrence.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F6-0016"
+      ]
+    },
+    {
+      "rule": "Apply only under this source condition: When DI-MGMT-81809 is invoked by the applicable contract, solicitation, or CDRL; when the root-cause risk level is low. Required source behavior: The Risk Management Status Report shall identify a low root-cause risk level with green.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F6-0017"
+      ]
+    },
+    {
+      "rule": "Apply only under this source condition: When DI-MGMT-81809 is invoked by the applicable contract, solicitation, or CDRL; when the root-cause risk level is moderate. Required source behavior: The Risk Management Status Report shall identify a moderate root-cause risk level with yellow.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F6-0018"
+      ]
+    },
+    {
+      "rule": "Apply only under this source condition: When DI-MGMT-81809 is invoked by the applicable contract, solicitation, or CDRL; when the root-cause risk level is high. Required source behavior: The Risk Management Status Report shall identify a high root-cause risk level with red.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F6-0019"
+      ]
+    },
+    {
+      "rule": "Apply only under this source condition: When DI-MGMT-81809 is invoked by the applicable contract, solicitation, or CDRL. Required source behavior: The Risk Management Status Report shall contain a narrative briefly describing the risk.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F6-0020"
+      ]
+    },
+    {
+      "rule": "Apply only under this source condition: When DI-MGMT-81809 is invoked by the applicable contract, solicitation, or CDRL. Required source behavior: The Risk Management Status Report shall contain a narrative briefly describing the risk title.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F6-0021"
+      ]
+    },
+    {
+      "rule": "Apply only under this source condition: When DI-MGMT-81809 is invoked by the applicable contract, solicitation, or CDRL. Required source behavior: The Risk Management Status Report shall contain a narrative briefly describing the risk type as performance, schedule, or cost.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F6-0022"
+      ]
+    },
+    {
+      "rule": "Apply only under this source condition: When DI-MGMT-81809 is invoked by the applicable contract, solicitation, or CDRL. Required source behavior: The Risk Management Status Report shall contain a narrative briefly describing the root cause.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F6-0023"
+      ]
+    },
+    {
+      "rule": "Apply only under this source condition: When DI-MGMT-81809 is invoked by the applicable contract, solicitation, or CDRL. Required source behavior: The Risk Management Status Report shall contain a narrative briefly describing current mitigations.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F6-0024"
+      ]
+    },
+    {
+      "rule": "Apply only under this source condition: When DI-MGMT-81809 is invoked by the applicable contract, solicitation, or CDRL. Required source behavior: The Risk Management Status Report shall contain a narrative briefly describing identified planned mitigation efforts.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F6-0025"
+      ]
+    },
+    {
+      "rule": "Apply only under this source condition: When DI-MGMT-81809 is invoked by the applicable contract, solicitation, or CDRL. Required source behavior: The Risk Management Status Report shall contain a narrative briefly describing critical risk-reduction milestone dates.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F6-0026"
+      ]
+    },
+    {
+      "rule": "Apply only under this source condition: When DI-MGMT-81809 is invoked by the applicable contract, solicitation, or CDRL. Required source behavior: The Risk Management Status Report shall be presented electronically in MS Word version 2003–2007.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F6-0027"
+      ]
+    },
+    {
+      "rule": "Apply only under this source condition: When DI-MGMT-82255A is invoked by the applicable contract, solicitation, or CDRL for supply-chain risks associated with the prime contractor, suppliers, or subcontractors and the products or services to be provided; this specialized branch is not a generic issue/opportunity-register mandate; when a Government-directed format is identified; if no Government-directed format is identified, the contractor electronic Microsoft Excel .xlsx format is acceptable. Required source behavior: The Supply Chain Risk Register shall use the Government-directed electronic format to the fullest extent possible.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F6-0028"
+      ]
+    },
+    {
+      "rule": "Apply only under this source condition: When DI-MGMT-82255A is invoked by the applicable contract, solicitation, or CDRL for supply-chain risks associated with the prime contractor, suppliers, or subcontractors and the products or services to be provided; this specialized branch is not a generic issue/opportunity-register mandate. Required source behavior: The Supply Chain Risk Register contract-information section shall identify the contractor name.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F6-0029"
+      ]
+    },
+    {
+      "rule": "Apply only under this source condition: When DI-MGMT-82255A is invoked by the applicable contract, solicitation, or CDRL for supply-chain risks associated with the prime contractor, suppliers, or subcontractors and the products or services to be provided; this specialized branch is not a generic issue/opportunity-register mandate. Required source behavior: The Supply Chain Risk Register contract-information section shall identify the contract number.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F6-0030"
+      ]
+    },
+    {
+      "rule": "Apply only under this source condition: When DI-MGMT-82255A is invoked by the applicable contract, solicitation, or CDRL for supply-chain risks associated with the prime contractor, suppliers, or subcontractors and the products or services to be provided; this specialized branch is not a generic issue/opportunity-register mandate. Required source behavior: The Supply Chain Risk Register contract-information section shall identify the award date, including the latest modification.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F6-0031"
+      ]
+    },
+    {
+      "rule": "Apply only under this source condition: When DI-MGMT-82255A is invoked by the applicable contract, solicitation, or CDRL for supply-chain risks associated with the prime contractor, suppliers, or subcontractors and the products or services to be provided; this specialized branch is not a generic issue/opportunity-register mandate. Required source behavior: The Supply Chain Risk Register contract-information section shall identify the Procurement Instrument Identification Number.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F6-0032"
+      ]
+    },
+    {
+      "rule": "Apply only under this source condition: When DI-MGMT-82255A is invoked by the applicable contract, solicitation, or CDRL for supply-chain risks associated with the prime contractor, suppliers, or subcontractors and the products or services to be provided; this specialized branch is not a generic issue/opportunity-register mandate. Required source behavior: The Supply Chain Risk Register contract-information section shall identify the Supplemental Procurement Instrument Identification Number.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F6-0033"
+      ]
+    },
+    {
+      "rule": "Apply only under this source condition: When DI-MGMT-82255A is invoked by the applicable contract, solicitation, or CDRL for supply-chain risks associated with the prime contractor, suppliers, or subcontractors and the products or services to be provided; this specialized branch is not a generic issue/opportunity-register mandate. Required source behavior: The Supply Chain Risk Register contract-information section shall identify the delivery-order or task-order number.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F6-0034"
+      ]
+    },
+    {
+      "rule": "Apply only under this source condition: When DI-MGMT-82255A is invoked by the applicable contract, solicitation, or CDRL for supply-chain risks associated with the prime contractor, suppliers, or subcontractors and the products or services to be provided; this specialized branch is not a generic issue/opportunity-register mandate. Required source behavior: The Supply Chain Risk Register contract-information section shall identify the Contract Line Item Number.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F6-0035"
+      ]
+    },
+    {
+      "rule": "Apply only under this source condition: When DI-MGMT-82255A is invoked by the applicable contract, solicitation, or CDRL for supply-chain risks associated with the prime contractor, suppliers, or subcontractors and the products or services to be provided; this specialized branch is not a generic issue/opportunity-register mandate. Required source behavior: The Supply Chain Risk Register contract-information section shall identify the date of the reporting period.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F6-0036"
+      ]
+    },
+    {
+      "rule": "Apply only under this source condition: When DI-MGMT-82255A is invoked by the applicable contract, solicitation, or CDRL for supply-chain risks associated with the prime contractor, suppliers, or subcontractors and the products or services to be provided; this specialized branch is not a generic issue/opportunity-register mandate. Required source behavior: The Supply Chain Risk Register contract-information section shall identify the security classification.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F6-0037"
+      ]
+    },
+    {
+      "rule": "Apply only under this source condition: When DI-MGMT-82255A is invoked by the applicable contract, solicitation, or CDRL for supply-chain risks associated with the prime contractor, suppliers, or subcontractors and the products or services to be provided; this specialized branch is not a generic issue/opportunity-register mandate; when applicable. Required source behavior: The Supply Chain Risk Register contract-information section shall identify the USD(R&E) Critical Technology List.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F6-0038"
+      ]
+    },
+    {
+      "rule": "Apply only under this source condition: When DI-MGMT-82255A is invoked by the applicable contract, solicitation, or CDRL for supply-chain risks associated with the prime contractor, suppliers, or subcontractors and the products or services to be provided; this specialized branch is not a generic issue/opportunity-register mandate. Required source behavior: The Supply Chain Risk Register contract-information section shall identify the distribution statement.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F6-0039"
+      ]
+    },
+    {
+      "rule": "Apply only under this source condition: When DI-MGMT-82255A is invoked by the applicable contract, solicitation, or CDRL for supply-chain risks associated with the prime contractor, suppliers, or subcontractors and the products or services to be provided; this specialized branch is not a generic issue/opportunity-register mandate. Required source behavior: The Supply Chain Risk Register contract-information section shall identify the destruction notice.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F6-0040"
+      ]
+    },
+    {
+      "rule": "Apply only under this source condition: When DI-MGMT-82255A is invoked by the applicable contract, solicitation, or CDRL for supply-chain risks associated with the prime contractor, suppliers, or subcontractors and the products or services to be provided; this specialized branch is not a generic issue/opportunity-register mandate. Required source behavior: The Supply Chain Risk Register contract-information section shall identify the Cybersecurity Maturity Model Certification certification level.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F6-0041"
+      ]
+    },
+    {
+      "rule": "Apply only under this source condition: When DI-MGMT-82255A is invoked by the applicable contract, solicitation, or CDRL for supply-chain risks associated with the prime contractor, suppliers, or subcontractors and the products or services to be provided; this specialized branch is not a generic issue/opportunity-register mandate. Required source behavior: The Supply Chain Risk Register shall list all identified and potential supply-chain risks.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F6-0042"
+      ]
+    },
+    {
+      "rule": "Apply only under this source condition: When DI-MGMT-82255A is invoked by the applicable contract, solicitation, or CDRL for supply-chain risks associated with the prime contractor, suppliers, or subcontractors and the products or services to be provided; this specialized branch is not a generic issue/opportunity-register mandate. Required source behavior: The Supply Chain Risk Register risk list shall be segregated into the prescribed risk categories.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F6-0043"
+      ]
+    },
+    {
+      "rule": "Apply only under this source condition: When DI-MGMT-82255A is invoked by the applicable contract, solicitation, or CDRL for supply-chain risks associated with the prime contractor, suppliers, or subcontractors and the products or services to be provided; this specialized branch is not a generic issue/opportunity-register mandate. Required source behavior: Each Supply Chain Risk Register risk entry shall include a unique risk identifier.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F6-0044"
+      ]
+    },
+    {
+      "rule": "Apply only under this source condition: When DI-MGMT-82255A is invoked by the applicable contract, solicitation, or CDRL for supply-chain risks associated with the prime contractor, suppliers, or subcontractors and the products or services to be provided; this specialized branch is not a generic issue/opportunity-register mandate. Required source behavior: Each Supply Chain Risk Register risk entry shall include the applicable risk category from Foreign Ownership, Control or Influence; Political and Regulatory; Economic; Environmental; Product Quality and Design; Manufacturing and Supply; Transportation and Distribution; Financial; Compliance; Technology and Cybersecurity; Human Capital; or Infrastructure.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F6-0045"
+      ]
+    },
+    {
+      "rule": "Apply only under this source condition: When DI-MGMT-82255A is invoked by the applicable contract, solicitation, or CDRL for supply-chain risks associated with the prime contractor, suppliers, or subcontractors and the products or services to be provided; this specialized branch is not a generic issue/opportunity-register mandate. Required source behavior: Each Supply Chain Risk Register risk entry shall include the risk owner.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F6-0046"
+      ]
+    },
+    {
+      "rule": "Apply only under this source condition: When DI-MGMT-82255A is invoked by the applicable contract, solicitation, or CDRL for supply-chain risks associated with the prime contractor, suppliers, or subcontractors and the products or services to be provided; this specialized branch is not a generic issue/opportunity-register mandate. Required source behavior: Each Supply Chain Risk Register risk entry shall include the weapon system.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F6-0047"
+      ]
+    },
+    {
+      "rule": "Apply only under this source condition: When DI-MGMT-82255A is invoked by the applicable contract, solicitation, or CDRL for supply-chain risks associated with the prime contractor, suppliers, or subcontractors and the products or services to be provided; this specialized branch is not a generic issue/opportunity-register mandate. Required source behavior: Each Supply Chain Risk Register risk entry shall include the National Item Identification Number.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F6-0048"
+      ]
+    },
+    {
+      "rule": "Apply only under this source condition: When DI-MGMT-82255A is invoked by the applicable contract, solicitation, or CDRL for supply-chain risks associated with the prime contractor, suppliers, or subcontractors and the products or services to be provided; this specialized branch is not a generic issue/opportunity-register mandate. Required source behavior: Each Supply Chain Risk Register risk entry shall include the vendor part number.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F6-0049"
+      ]
+    },
+    {
+      "rule": "Apply only under this source condition: When DI-MGMT-82255A is invoked by the applicable contract, solicitation, or CDRL for supply-chain risks associated with the prime contractor, suppliers, or subcontractors and the products or services to be provided; this specialized branch is not a generic issue/opportunity-register mandate. Required source behavior: Each Supply Chain Risk Register risk entry shall include a brief description of the supply-chain risk.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F6-0050"
+      ]
+    },
+    {
+      "rule": "Apply only under this source condition: When DI-MGMT-82255A is invoked by the applicable contract, solicitation, or CDRL for supply-chain risks associated with the prime contractor, suppliers, or subcontractors and the products or services to be provided; this specialized branch is not a generic issue/opportunity-register mandate. Required source behavior: Each Supply Chain Risk Register risk entry shall include the location or risk event.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F6-0051"
+      ]
+    },
+    {
+      "rule": "Apply only under this source condition: When DI-MGMT-82255A is invoked by the applicable contract, solicitation, or CDRL for supply-chain risks associated with the prime contractor, suppliers, or subcontractors and the products or services to be provided; this specialized branch is not a generic issue/opportunity-register mandate. Required source behavior: Each Supply Chain Risk Register risk entry shall include the triggering event or root causes.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F6-0052"
+      ]
+    },
+    {
+      "rule": "Apply only under this source condition: When DI-MGMT-82255A is invoked by the applicable contract, solicitation, or CDRL for supply-chain risks associated with the prime contractor, suppliers, or subcontractors and the products or services to be provided; this specialized branch is not a generic issue/opportunity-register mandate. Required source behavior: Each Supply Chain Risk Register risk entry shall include the initial risk assessment.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F6-0053"
+      ]
+    },
+    {
+      "rule": "Apply only under this source condition: When DI-MGMT-82255A is invoked by the applicable contract, solicitation, or CDRL for supply-chain risks associated with the prime contractor, suppliers, or subcontractors and the products or services to be provided; this specialized branch is not a generic issue/opportunity-register mandate. Required source behavior: Each Supply Chain Risk Register risk entry shall include the risk tolerance level determined by the Program Manager.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F6-0054"
+      ]
+    },
+    {
+      "rule": "Apply only under this source condition: When DI-MGMT-82255A is invoked by the applicable contract, solicitation, or CDRL for supply-chain risks associated with the prime contractor, suppliers, or subcontractors and the products or services to be provided; this specialized branch is not a generic issue/opportunity-register mandate. Required source behavior: Each Supply Chain Risk Register risk entry shall include the residual risk levels representing acceptable risk.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F6-0055"
+      ]
+    },
+    {
+      "rule": "Apply only under this source condition: When DI-MGMT-82255A is invoked by the applicable contract, solicitation, or CDRL for supply-chain risks associated with the prime contractor, suppliers, or subcontractors and the products or services to be provided; this specialized branch is not a generic issue/opportunity-register mandate. Required source behavior: Each Supply Chain Risk Register risk entry shall include the likelihood of occurrence.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F6-0056"
+      ]
+    },
+    {
+      "rule": "Apply only under this source condition: When DI-MGMT-82255A is invoked by the applicable contract, solicitation, or CDRL for supply-chain risks associated with the prime contractor, suppliers, or subcontractors and the products or services to be provided; this specialized branch is not a generic issue/opportunity-register mandate. Required source behavior: Each Supply Chain Risk Register risk entry shall include the potential impact and consequence referenced to the Risk Reporting Matrix.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F6-0057"
+      ]
+    },
+    {
+      "rule": "Apply only under this source condition: When DI-MGMT-82255A is invoked by the applicable contract, solicitation, or CDRL for supply-chain risks associated with the prime contractor, suppliers, or subcontractors and the products or services to be provided; this specialized branch is not a generic issue/opportunity-register mandate. Required source behavior: Each Supply Chain Risk Register risk entry shall include the risk handling response.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F6-0058"
+      ]
+    },
+    {
+      "rule": "Apply only under this source condition: When DI-MGMT-82255A is invoked by the applicable contract, solicitation, or CDRL for supply-chain risks associated with the prime contractor, suppliers, or subcontractors and the products or services to be provided; this specialized branch is not a generic issue/opportunity-register mandate. Required source behavior: Each Supply Chain Risk Register risk entry shall include the estimated start date for the risk handling plan.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F6-0059"
+      ]
+    },
+    {
+      "rule": "Apply only under this source condition: When DI-MGMT-82255A is invoked by the applicable contract, solicitation, or CDRL for supply-chain risks associated with the prime contractor, suppliers, or subcontractors and the products or services to be provided; this specialized branch is not a generic issue/opportunity-register mandate. Required source behavior: Each Supply Chain Risk Register risk entry shall include the estimated completion date for the risk handling plan.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F6-0060"
+      ]
+    },
+    {
+      "rule": "Apply only under this source condition: When DI-MGMT-82255A is invoked by the applicable contract, solicitation, or CDRL for supply-chain risks associated with the prime contractor, suppliers, or subcontractors and the products or services to be provided; this specialized branch is not a generic issue/opportunity-register mandate. Required source behavior: The Supply Chain Risk Register likelihood scale shall define level 1 as “Not likely” for occurrence probability greater than 1 percent and less than or equal to 20 percent.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F6-0061"
+      ]
+    },
+    {
+      "rule": "Apply only under this source condition: When DI-MGMT-82255A is invoked by the applicable contract, solicitation, or CDRL for supply-chain risks associated with the prime contractor, suppliers, or subcontractors and the products or services to be provided; this specialized branch is not a generic issue/opportunity-register mandate. Required source behavior: The Supply Chain Risk Register likelihood scale shall define level 2 as “Low likelihood” for occurrence probability greater than 20 percent and less than or equal to 40 percent.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F6-0062"
+      ]
+    },
+    {
+      "rule": "Apply only under this source condition: When DI-MGMT-82255A is invoked by the applicable contract, solicitation, or CDRL for supply-chain risks associated with the prime contractor, suppliers, or subcontractors and the products or services to be provided; this specialized branch is not a generic issue/opportunity-register mandate. Required source behavior: The Supply Chain Risk Register likelihood scale shall define level 3 as “Likely” for occurrence probability greater than 40 percent and less than or equal to 60 percent.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F6-0063"
+      ]
+    },
+    {
+      "rule": "Apply only under this source condition: When DI-MGMT-82255A is invoked by the applicable contract, solicitation, or CDRL for supply-chain risks associated with the prime contractor, suppliers, or subcontractors and the products or services to be provided; this specialized branch is not a generic issue/opportunity-register mandate. Required source behavior: The Supply Chain Risk Register likelihood scale shall define level 4 as “High likelihood” for occurrence probability greater than 60 percent and less than or equal to 80 percent.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F6-0064"
+      ]
+    },
+    {
+      "rule": "Apply only under this source condition: When DI-MGMT-82255A is invoked by the applicable contract, solicitation, or CDRL for supply-chain risks associated with the prime contractor, suppliers, or subcontractors and the products or services to be provided; this specialized branch is not a generic issue/opportunity-register mandate. Required source behavior: The Supply Chain Risk Register likelihood scale shall define level 5 as “Near certainty” for occurrence probability greater than 80 percent and less than or equal to 99 percent.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F6-0065"
+      ]
+    },
+    {
+      "rule": "Apply only under this source condition: When DI-MGMT-82255A is invoked by the applicable contract, solicitation, or CDRL for supply-chain risks associated with the prime contractor, suppliers, or subcontractors and the products or services to be provided; this specialized branch is not a generic issue/opportunity-register mandate. Required source behavior: The Supply Chain Risk Register consequence scale shall define level 1 as “Minimal impact”.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F6-0066"
+      ]
+    },
+    {
+      "rule": "Apply only under this source condition: When DI-MGMT-82255A is invoked by the applicable contract, solicitation, or CDRL for supply-chain risks associated with the prime contractor, suppliers, or subcontractors and the products or services to be provided; this specialized branch is not a generic issue/opportunity-register mandate. Required source behavior: The Supply Chain Risk Register consequence scale shall define level 2 as “Minor impact”.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F6-0067"
+      ]
+    },
+    {
+      "rule": "Apply only under this source condition: When DI-MGMT-82255A is invoked by the applicable contract, solicitation, or CDRL for supply-chain risks associated with the prime contractor, suppliers, or subcontractors and the products or services to be provided; this specialized branch is not a generic issue/opportunity-register mandate. Required source behavior: The Supply Chain Risk Register consequence scale shall define level 3 as “Moderate impact”.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F6-0068"
+      ]
+    },
+    {
+      "rule": "Apply only under this source condition: When DI-MGMT-82255A is invoked by the applicable contract, solicitation, or CDRL for supply-chain risks associated with the prime contractor, suppliers, or subcontractors and the products or services to be provided; this specialized branch is not a generic issue/opportunity-register mandate. Required source behavior: The Supply Chain Risk Register consequence scale shall define level 4 as “Significant impact”.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F6-0069"
+      ]
+    },
+    {
+      "rule": "Apply only under this source condition: When DI-MGMT-82255A is invoked by the applicable contract, solicitation, or CDRL for supply-chain risks associated with the prime contractor, suppliers, or subcontractors and the products or services to be provided; this specialized branch is not a generic issue/opportunity-register mandate. Required source behavior: The Supply Chain Risk Register consequence scale shall define level 5 as “Critical impact”.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F6-0070"
+      ]
+    },
+    {
+      "rule": "Apply only under this source condition: When DI-MGMT-82255A is invoked by the applicable contract, solicitation, or CDRL for supply-chain risks associated with the prime contractor, suppliers, or subcontractors and the products or services to be provided; this specialized branch is not a generic issue/opportunity-register mandate. Required source behavior: Each Supply Chain Risk Register risk entry shall provide the current risk status.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F6-0071"
+      ]
+    },
+    {
+      "rule": "Apply only under this source condition: When DI-MGMT-82256A is invoked by the applicable contract, solicitation, or CDRL for supply-chain risks associated with the prime contractor, suppliers, or subcontractors and the products or services to be provided; this specialized branch is not a generic issue/opportunity-register mandate; the requirement governs the SCRM Plan section describing the register/reporting process or content, not an independent universal register delivery obligation. Required source behavior: The SCRM Plan risk-assessment section shall include a process to document critical supply-chain risks in the Supply Chain Risk Register.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F6-0072"
+      ]
+    },
+    {
+      "rule": "Apply only under this source condition: When DI-MGMT-82256A is invoked by the applicable contract, solicitation, or CDRL for supply-chain risks associated with the prime contractor, suppliers, or subcontractors and the products or services to be provided; this specialized branch is not a generic issue/opportunity-register mandate; the requirement governs the SCRM Plan section describing the register/reporting process or content, not an independent universal register delivery obligation. Required source behavior: The SCRM Plan risk-assessment section shall include a process to report the Supply Chain Risk Register quarterly to the Government Product Support Manager or Program Manager.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F6-0073"
+      ]
+    },
+    {
+      "rule": "Apply only under this source condition: When DI-MGMT-82256A is invoked by the applicable contract, solicitation, or CDRL for supply-chain risks associated with the prime contractor, suppliers, or subcontractors and the products or services to be provided; this specialized branch is not a generic issue/opportunity-register mandate; the requirement governs the SCRM Plan section describing the register/reporting process or content, not an independent universal register delivery obligation. Required source behavior: The SCRM Plan supply-chain risk-handling content shall include a descriptive title for each supply-chain risk.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F6-0074"
+      ]
+    },
+    {
+      "rule": "Apply only under this source condition: When DI-MGMT-82256A is invoked by the applicable contract, solicitation, or CDRL for supply-chain risks associated with the prime contractor, suppliers, or subcontractors and the products or services to be provided; this specialized branch is not a generic issue/opportunity-register mandate; the requirement governs the SCRM Plan section describing the register/reporting process or content, not an independent universal register delivery obligation. Required source behavior: The SCRM Plan supply-chain risk-handling content shall include the root cause or trigger of each supply-chain risk.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F6-0075"
+      ]
+    },
+    {
+      "rule": "Apply only under this source condition: When DI-MGMT-82256A is invoked by the applicable contract, solicitation, or CDRL for supply-chain risks associated with the prime contractor, suppliers, or subcontractors and the products or services to be provided; this specialized branch is not a generic issue/opportunity-register mandate; the requirement governs the SCRM Plan section describing the register/reporting process or content, not an independent universal register delivery obligation. Required source behavior: The SCRM Plan supply-chain risk-handling content shall include a possible risk handling plan to alleviate each supply-chain risk.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F6-0076"
+      ]
+    },
+    {
+      "rule": "Apply only under this source condition: When DI-MGMT-82256A is invoked by the applicable contract, solicitation, or CDRL for supply-chain risks associated with the prime contractor, suppliers, or subcontractors and the products or services to be provided; this specialized branch is not a generic issue/opportunity-register mandate; the requirement governs the SCRM Plan section describing the register/reporting process or content, not an independent universal register delivery obligation. Required source behavior: The SCRM Plan supply-chain risk-handling content shall include a description of events and activities intended to accept, avoid, mitigate, or transfer the supply-chain risk.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F6-0077"
+      ]
+    },
+    {
+      "rule": "Apply only under this source condition: When DI-MGMT-82256A is invoked by the applicable contract, solicitation, or CDRL for supply-chain risks associated with the prime contractor, suppliers, or subcontractors and the products or services to be provided; this specialized branch is not a generic issue/opportunity-register mandate; the requirement governs the SCRM Plan section describing the register/reporting process or content, not an independent universal register delivery obligation. Required source behavior: The SCRM Plan supply-chain risk-handling content shall include success criteria for each planned risk-handling event.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F6-0078"
+      ]
+    },
+    {
+      "rule": "Apply only under this source condition: When DI-MGMT-82256A is invoked by the applicable contract, solicitation, or CDRL for supply-chain risks associated with the prime contractor, suppliers, or subcontractors and the products or services to be provided; this specialized branch is not a generic issue/opportunity-register mandate; the requirement governs the SCRM Plan section describing the register/reporting process or content, not an independent universal register delivery obligation. Required source behavior: The SCRM Plan supply-chain risk-handling content shall include the residual risk rating representing acceptable risk.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F6-0079"
+      ]
+    },
+    {
+      "rule": "Apply only under this source condition: When DI-MGMT-82256A is invoked by the applicable contract, solicitation, or CDRL for supply-chain risks associated with the prime contractor, suppliers, or subcontractors and the products or services to be provided; this specialized branch is not a generic issue/opportunity-register mandate; the requirement governs the SCRM Plan section describing the register/reporting process or content, not an independent universal register delivery obligation. Required source behavior: The SCRM Plan risk-handling section shall include a process to capture risks and associated details for the products and services to be provided in a risk register.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F6-0080"
+      ]
+    },
+    {
+      "rule": "Apply only under this source condition: When DI-MGMT-82256A is invoked by the applicable contract, solicitation, or CDRL for supply-chain risks associated with the prime contractor, suppliers, or subcontractors and the products or services to be provided; this specialized branch is not a generic issue/opportunity-register mandate; the requirement governs the SCRM Plan section describing the register/reporting process or content, not an independent universal register delivery obligation. Required source behavior: The SCRM Plan risk-monitoring section shall include a process for reporting risk-monitoring information quarterly to the Government Product Support Manager or Program Manager.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F6-0081"
+      ]
+    },
+    {
+      "rule": "Apply only under this source condition: When DI-MGMT-82256A is invoked by the applicable contract, solicitation, or CDRL for supply-chain risks associated with the prime contractor, suppliers, or subcontractors and the products or services to be provided; this specialized branch is not a generic issue/opportunity-register mandate; the requirement governs the SCRM Plan section describing the register/reporting process or content, not an independent universal register delivery obligation. Required source behavior: The SCRM Plan risk-monitoring section shall specify inclusion of a unique risk identifier in the Supply Chain Risk Register.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F6-0082"
+      ]
+    },
+    {
+      "rule": "Apply only under this source condition: When DI-MGMT-82256A is invoked by the applicable contract, solicitation, or CDRL for supply-chain risks associated with the prime contractor, suppliers, or subcontractors and the products or services to be provided; this specialized branch is not a generic issue/opportunity-register mandate; the requirement governs the SCRM Plan section describing the register/reporting process or content, not an independent universal register delivery obligation. Required source behavior: The SCRM Plan risk-monitoring section shall specify inclusion of the risk category in the Supply Chain Risk Register.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F6-0083"
+      ]
+    },
+    {
+      "rule": "Apply only under this source condition: When DI-MGMT-82256A is invoked by the applicable contract, solicitation, or CDRL for supply-chain risks associated with the prime contractor, suppliers, or subcontractors and the products or services to be provided; this specialized branch is not a generic issue/opportunity-register mandate; the requirement governs the SCRM Plan section describing the register/reporting process or content, not an independent universal register delivery obligation. Required source behavior: The SCRM Plan risk-monitoring section shall specify inclusion of the risk description in the Supply Chain Risk Register.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F6-0084"
+      ]
+    },
+    {
+      "rule": "Apply only under this source condition: When DI-MGMT-82256A is invoked by the applicable contract, solicitation, or CDRL for supply-chain risks associated with the prime contractor, suppliers, or subcontractors and the products or services to be provided; this specialized branch is not a generic issue/opportunity-register mandate; the requirement governs the SCRM Plan section describing the register/reporting process or content, not an independent universal register delivery obligation. Required source behavior: The SCRM Plan risk-monitoring section shall specify inclusion of the risk rating in the Supply Chain Risk Register.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F6-0085"
+      ]
+    },
+    {
+      "rule": "Apply only under this source condition: When DI-MGMT-82256A is invoked by the applicable contract, solicitation, or CDRL for supply-chain risks associated with the prime contractor, suppliers, or subcontractors and the products or services to be provided; this specialized branch is not a generic issue/opportunity-register mandate; the requirement governs the SCRM Plan section describing the register/reporting process or content, not an independent universal register delivery obligation. Required source behavior: The SCRM Plan risk-monitoring section shall specify inclusion of the risk handling response in the Supply Chain Risk Register.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F6-0086"
+      ]
+    },
+    {
+      "rule": "Apply only under this source condition: When DI-MGMT-82256A is invoked by the applicable contract, solicitation, or CDRL for supply-chain risks associated with the prime contractor, suppliers, or subcontractors and the products or services to be provided; this specialized branch is not a generic issue/opportunity-register mandate; the requirement governs the SCRM Plan section describing the register/reporting process or content, not an independent universal register delivery obligation. Required source behavior: The SCRM Plan risk-monitoring section shall specify inclusion of the responsible point of contact in the Supply Chain Risk Register.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F6-0087"
+      ]
+    },
+    {
+      "rule": "Apply only under this source condition: When DI-MGMT-82256A is invoked by the applicable contract, solicitation, or CDRL for supply-chain risks associated with the prime contractor, suppliers, or subcontractors and the products or services to be provided; this specialized branch is not a generic issue/opportunity-register mandate; the requirement governs the SCRM Plan section describing the register/reporting process or content, not an independent universal register delivery obligation. Required source behavior: The SCRM Plan risk-monitoring section shall specify inclusion of the expiration date in the Supply Chain Risk Register.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F6-0088"
+      ]
+    },
+    {
+      "rule": "Apply only under this source condition: When DI-MGMT-82256A is invoked by the applicable contract, solicitation, or CDRL for supply-chain risks associated with the prime contractor, suppliers, or subcontractors and the products or services to be provided; this specialized branch is not a generic issue/opportunity-register mandate; the requirement governs the SCRM Plan section describing the register/reporting process or content, not an independent universal register delivery obligation. Required source behavior: The SCRM Plan risk-monitoring section shall specify inclusion of the current risk status in the Supply Chain Risk Register.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F6-0089"
+      ]
+    }
+  ],
+  "canonicalForm": "Explicit receiver hashing choice, not a government-native schema. The displayed baselineHash is sample-only and covers the operative risk-entry projection, not all three entries, not the raw Word XML bytes, and not a complete report. Parse sample as XML with namespace w=urn:schemas-microsoft-com:office:word. Read its sole w:body/w:tbl in document order. The first w:tr is the header; each following w:tr is one entry. For each w:tc concatenate descendant w:t text in document order, then NFC-normalize, trim and collapse Unicode whitespace to one ASCII space. Map columns by the exact normalized header names; require the 16 declared headers once each, reject duplicate/unknown headers and mismatched cell counts. All table cells are strings; an empty cell remains an empty string. Require unique entryId values before projection. Retain only entries whose normalized entryType equals risk. Exclude entire issue and opportunity entries as guidance-only. Project each retained risk entry to exactly these 15 properties: entryId, entryType, wbsId, requirementId, title, description, riskType, rootCause, currentMitigations, plannedMitigations, riskReductionMilestoneDates, likelihoodAxisLabel, consequenceAxisLabel, riskLevel, riskColor. Exclude missionContext even on retained risk entries. Sort retained entries by entryId in Unicode code-point order. Sort object properties lexicographically by Unicode code point, serialize the array as compact JSON with literal Unicode and no discretionary whitespace or trailing newline, apply the task NFC/trim/Unicode-whitespace-collapse rule to the serialized text, encode UTF-8 without BOM and compute lowercase SHA-256. No guide, catalogue, B records, hidden example metadata or external join records are part of this displayed sample hash. The supplied risk classification is an illustrative input, not a calculated score. For a real accepted complete drop, replace the sample-only projection with one canonical object containing exactly entries, report, context and attachments. entries contains the full received operative risk-entry content plus the explicitly required identity/trace keys, selected by actual source applicability; sort entries by normalized entryId. report contains all actual required operative report-level material (including title-page information, reporting coverage, progress, matrix and relevant invoked SCRM register/plan content). context contains actual operative applicability, markings and the explicit trace associations/reference-resolution content needed by this receiver; it must not fabricate absent source records. attachments maps unique stable relative identities to standard padded base64 of exact bytes only for received wholly operative supporting artifacts not captured semantically. Never include a mixed risk/issue/opportunity or mixed operative/guidance file as raw attachment bytes: separate its operative semantics into entries/report/context first, excluding guidance-only parts. Exclude entire issue/opportunity entries while no operative source for them is established, and exclude fields or content justified solely by guidance. Do not discard any actual operative content merely because it is absent from the partial example. Normalize all textual keys and values by NFC/trim/Unicode-whitespace collapse, preserve case, booleans and explicit nulls, and reject key collisions after normalization. Sort object keys in Unicode code-point order; preserve every other received array order except entries. Serialize numbers as plain decimal without exponent, leading zeroes or insignificant fractional zeroes; represent zero as 0. Serialize strings as literal Unicode except required JSON escaping, with compact JSON and no final newline; apply the same final task normalization and UTF-8 SHA-256. This canonical object is a stated hash-input choice within this data contract, not an additional native feed schema. A complete-drop hash must not be claimed until the actual required media, content, trace joins, applicability and unresolved source conditions have been inspected and accepted. Guidance is catalogued and excluded from baselines in every later batch.",
+  "baselineHash": "3a51e261cf8e3396326c4c35d8eadce7b2950a260ae51fb372feb6a8029b2385",
+  "mil-hdbk-539a": [
+    {
+      "section": "3.2.9; 5.2.8.8",
+      "concept": "authoritative source of truth",
+      "howThisFeedServesIt": "Inference: controlled operative risk records and their actual source/context preserve accountable reference content across revisions. Framework guidance only; excluded from baseline inputs and independent rejection rules. https://quicksearch.dla.mil/WMX/Default.aspx?token=5801571"
+    },
+    {
+      "section": "4.8.2.1",
+      "concept": "digital system model",
+      "howThisFeedServesIt": "Inference: scoped risk content provides contextual information for stakeholder model domains; a risk register alone is not a complete digital system model. Framework guidance only. https://quicksearch.dla.mil/WMX/Default.aspx?token=5801571"
+    },
+    {
+      "section": "4.8.2.3",
+      "concept": "digital thread",
+      "howThisFeedServesIt": "Inference: explicit WBS and requirements associations preserve trace among received records and controlled evidence. This does not make a guidance-only entry an operative baseline input. https://quicksearch.dla.mil/WMX/Default.aspx?token=5801571"
+    },
+    {
+      "section": "4.8.2.4",
+      "concept": "stakeholder view",
+      "howThisFeedServesIt": "Inference: the report and register present scoped risk information for readers while retaining source identity and applicability. Framework guidance only; no additional native view format is prescribed. https://quicksearch.dla.mil/WMX/Default.aspx?token=5801571"
+    }
+  ],
+  "sample": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<?mso-application progid=\"Word.Document\"?>\n<w:wordDocument xmlns:w=\"urn:schemas-microsoft-com:office:word\"><w:body><w:tbl><w:tr><w:tc><w:p><w:r><w:t>entryId</w:t></w:r></w:p></w:tc><w:tc><w:p><w:r><w:t>entryType</w:t></w:r></w:p></w:tc><w:tc><w:p><w:r><w:t>wbsId</w:t></w:r></w:p></w:tc><w:tc><w:p><w:r><w:t>requirementId</w:t></w:r></w:p></w:tc><w:tc><w:p><w:r><w:t>title</w:t></w:r></w:p></w:tc><w:tc><w:p><w:r><w:t>description</w:t></w:r></w:p></w:tc><w:tc><w:p><w:r><w:t>riskType</w:t></w:r></w:p></w:tc><w:tc><w:p><w:r><w:t>rootCause</w:t></w:r></w:p></w:tc><w:tc><w:p><w:r><w:t>currentMitigations</w:t></w:r></w:p></w:tc><w:tc><w:p><w:r><w:t>plannedMitigations</w:t></w:r></w:p></w:tc><w:tc><w:p><w:r><w:t>riskReductionMilestoneDates</w:t></w:r></w:p></w:tc><w:tc><w:p><w:r><w:t>likelihoodAxisLabel</w:t></w:r></w:p></w:tc><w:tc><w:p><w:r><w:t>consequenceAxisLabel</w:t></w:r></w:p></w:tc><w:tc><w:p><w:r><w:t>riskLevel</w:t></w:r></w:p></w:tc><w:tc><w:p><w:r><w:t>riskColor</w:t></w:r></w:p></w:tc><w:tc><w:p><w:r><w:t>missionContext</w:t></w:r></w:p></w:tc></w:tr><w:tr><w:tc><w:p><w:r><w:t>HALCYON-RIO-001</w:t></w:r></w:p></w:tc><w:tc><w:p><w:r><w:t>risk</w:t></w:r></w:p></w:tc><w:tc><w:p><w:r><w:t>HALCYON-WBS-001</w:t></w:r></w:p></w:tc><w:tc><w:p><w:r><w:t>HALCYON-REQ-001</w:t></w:r></w:p></w:tc><w:tc><w:p><w:r><w:t>HALCYON interface review delay</w:t></w:r></w:p></w:tc><w:tc><w:p><w:r><w:t>If the HALCYON interface definition remains unresolved before integration, the integration review may be delayed.</w:t></w:r></w:p></w:tc><w:tc><w:p><w:r><w:t>schedule</w:t></w:r></w:p></w:tc><w:tc><w:p><w:r><w:t>The interface assumptions have not been agreed.</w:t></w:r></w:p></w:tc><w:tc><w:p><w:r><w:t>The design review is tracking the unresolved assumptions.</w:t></w:r></w:p></w:tc><w:tc><w:p><w:r><w:t>Resolve the interface assumptions before the integration review.</w:t></w:r></w:p></w:tc><w:tc><w:p><w:r><w:t>2027-02-12</w:t></w:r></w:p></w:tc><w:tc><w:p><w:r><w:t>Likelihood</w:t></w:r></w:p></w:tc><w:tc><w:p><w:r><w:t>Consequence</w:t></w:r></w:p></w:tc><w:tc><w:p><w:r><w:t>moderate</w:t></w:r></w:p></w:tc><w:tc><w:p><w:r><w:t>yellow</w:t></w:r></w:p></w:tc><w:tc><w:p><w:r><w:t>HALCYON integration review</w:t></w:r></w:p></w:tc></w:tr><w:tr><w:tc><w:p><w:r><w:t>HALCYON-RIO-002</w:t></w:r></w:p></w:tc><w:tc><w:p><w:r><w:t>issue</w:t></w:r></w:p></w:tc><w:tc><w:p><w:r><w:t>HALCYON-WBS-002</w:t></w:r></w:p></w:tc><w:tc><w:p><w:r><w:t>HALCYON-REQ-002</w:t></w:r></w:p></w:tc><w:tc><w:p><w:r><w:t>HALCYON review action unresolved</w:t></w:r></w:p></w:tc><w:tc><w:p><w:r><w:t>A required HALCYON review action is already overdue; the action owner is preparing a corrective response.</w:t></w:r></w:p></w:tc><w:tc><w:p><w:r><w:t /></w:r></w:p></w:tc><w:tc><w:p><w:r><w:t /></w:r></w:p></w:tc><w:tc><w:p><w:r><w:t /></w:r></w:p></w:tc><w:tc><w:p><w:r><w:t /></w:r></w:p></w:tc><w:tc><w:p><w:r><w:t /></w:r></w:p></w:tc><w:tc><w:p><w:r><w:t /></w:r></w:p></w:tc><w:tc><w:p><w:r><w:t /></w:r></w:p></w:tc><w:tc><w:p><w:r><w:t /></w:r></w:p></w:tc><w:tc><w:p><w:r><w:t /></w:r></w:p></w:tc><w:tc><w:p><w:r><w:t>HALCYON configuration review</w:t></w:r></w:p></w:tc></w:tr><w:tr><w:tc><w:p><w:r><w:t>HALCYON-RIO-003</w:t></w:r></w:p></w:tc><w:tc><w:p><w:r><w:t>opportunity</w:t></w:r></w:p></w:tc><w:tc><w:p><w:r><w:t>HALCYON-WBS-003</w:t></w:r></w:p></w:tc><w:tc><w:p><w:r><w:t>HALCYON-REQ-003</w:t></w:r></w:p></w:tc><w:tc><w:p><w:r><w:t>HALCYON shared review evidence</w:t></w:r></w:p></w:tc><w:tc><w:p><w:r><w:t>Reusing approved HALCYON review evidence could reduce preparation effort for a later review.</w:t></w:r></w:p></w:tc><w:tc><w:p><w:r><w:t /></w:r></w:p></w:tc><w:tc><w:p><w:r><w:t /></w:r></w:p></w:tc><w:tc><w:p><w:r><w:t /></w:r></w:p></w:tc><w:tc><w:p><w:r><w:t /></w:r></w:p></w:tc><w:tc><w:p><w:r><w:t /></w:r></w:p></w:tc><w:tc><w:p><w:r><w:t /></w:r></w:p></w:tc><w:tc><w:p><w:r><w:t /></w:r></w:p></w:tc><w:tc><w:p><w:r><w:t /></w:r></w:p></w:tc><w:tc><w:p><w:r><w:t /></w:r></w:p></w:tc><w:tc><w:p><w:r><w:t>HALCYON review preparation</w:t></w:r></w:p></w:tc></w:tr></w:tbl></w:body></w:wordDocument>"
+}

@@ -1,0 +1,1360 @@
+[
+  {
+    "id": "DI-SESS-81253E",
+    "title": "Configuration Status Accounting (CSA) Information",
+    "currentEdition": "Revision E, 4 August 2020; validated by Notice 1, 31 March 2025",
+    "date": "2020-08-04",
+    "issuerPreparingActivity": "Department of the Navy; preparing activity NM; approval authority Navy SA",
+    "authoritativeUrl": "https://quicksearch.dla.mil/qsDocDetails.aspx?ident_number=205315",
+    "sourceUrl": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5767292",
+    "releaseStatement": "Distribution Statement A: approved for public release, distribution unlimited; printed on base PDF page 1.",
+    "copyrightClass": "usg-public-domain",
+    "status": "inspected-operative-source",
+    "binding": true,
+    "baselineEligible": "Only when actually invoked and applicable; not an automatic program baseline.",
+    "paragraphs": "Requirements1–3, including every native content item3(a–m). Repeated artifact-inventory fieldsets3(a–d) are grouped as one coherent inventory obligation with category-specific related-specification fields; every other coherent list/information duty retained. No multiplication by artifact instances or parts.",
+    "extractedRecords": 12,
+    "currentVerification": {
+      "date": "2026-11-06",
+      "status": "Active",
+      "method": "Official ASSIST record opened in the web reader and live official browser catalogue. Exact base and current validation notice independently inspected where a notice exists; no alternate edition substituted.",
+      "recordUrl": "https://quicksearch.dla.mil/qsDocDetails.aspx?ident_number=205315"
+    },
+    "inspection": {
+      "localPdf": "packet/halcyon-batch-9/_work/DI-SESS-81253E.pdf",
+      "pages": 2,
+      "openedFullPdf": true,
+      "textMethod": "Full pdfplumber extraction from the freshly downloaded official PDF. Candidate spans independently asserted against the cited page after NFC and layout-whitespace collapse.",
+      "visualPages": [
+        1,
+        2
+      ],
+      "renderFiles": [
+        "packet/halcyon-batch-9/_work/DI-SESS-81253E-1.png",
+        "packet/halcyon-batch-9/_work/DI-SESS-81253E-2.png"
+      ],
+      "indexedTextUsedForPassages": false
+    },
+    "applicability": "Only when DI-SESS-81253E is actually invoked by the applicable contract/CDRL. The DID reports configuration status; no independent execution of changes, audits or corrective actions is imposed by these records.",
+    "nativeFormat": {
+      "paragraph": "2",
+      "fact": "Contractor format. No universal extension, database schema, column names, digital-signature technology, hash algorithm or required spreadsheet format appears in this DID."
+    },
+    "cadence": "No fixed cadence or periodic submission interval is stated; the actual contract/CDRL controls delivery timing.",
+    "fieldFacts": [
+      {
+        "paragraph": "3(a–d)",
+        "fact": "Inventory specifications, engineering design data/associated lists, software/firmware, and supporting documents with identifier,title,revision,NHA and change history from initial release. Related specifications additionally appear in3(b–d), not3(a)."
+      },
+      {
+        "paragraph": "3(e–f)",
+        "fact": "Special tag identifiers; IPL of all parts in each serial-numbered product/end-item as delivered and as changed by maintenance/modification. Source does not mandate a specific hierarchy encoding."
+      },
+      {
+        "paragraph": "3(g)",
+        "fact": "Engineering changes, implementation activities, reason, justification or reference, and effectivity. No extra ECP ID/effective-date field is imported from the separate ASDP DID."
+      },
+      {
+        "paragraph": "3(h–j)",
+        "fact": "Variances and CSA-consideration activities, audit action items/closeout dates, and document-responsibility organizations. Obtaining the CSA consideration is the source phrase; no new approval meaning is inferred."
+      },
+      {
+        "paragraph": "3(k–l)",
+        "fact": "Each digital file has a unique identifier indicating version and submitted status; altered/annotated/redlined files have an altered version from the original submitted version. Submitted is not automatically approved, accepted or released."
+      },
+      {
+        "paragraph": "3(m)",
+        "fact": "CSI identification uses the source unsafe-condition/critical-characteristic definition. This source does not define the ASDP SCI category or require its CSI Y/N marker."
+      }
+    ],
+    "referencedSources": [
+      {
+        "id": "EIA-649-1",
+        "title": "Configuration Management Requirements for Defense Contracts",
+        "scope": "Bibliographic identification only. No SDO clauses opened, quoted or extracted; applicable issue is contract specified."
+      },
+      {
+        "id": "EIA-649",
+        "title": "Configuration Management Standard",
+        "scope": "Bibliographic identification only. No SDO clauses opened, quoted or extracted; applicable issue is contract specified."
+      }
+    ],
+    "gaps": [],
+    "notice": {
+      "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5793858",
+      "localPdf": "packet/halcyon-batch-9/_work/DI-SESS-81253E-notice1.pdf",
+      "date": "2025-03-31",
+      "pages": 1,
+      "openedFullPdf": true,
+      "visuallyInspected": true,
+      "effect": "Validates the 4 August2020 E issue for acquisition; no new data-product clauses."
+    }
+  },
+  {
+    "id": "DI-SESS-82333B",
+    "title": "Acquisition and Sustainment Data Package (ASDP) Configuration Status Accounting (CSA) Information",
+    "currentEdition": "Revision B, 16 September2022",
+    "date": "2022-09-16",
+    "issuerPreparingActivity": "Department of the Air Force; preparing activity11 AFLCMC/EZSC; ASSIST approval authority10",
+    "authoritativeUrl": "https://quicksearch.dla.mil/qsDocDetails.aspx?ident_number=284124",
+    "sourceUrl": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5778810",
+    "releaseStatement": "Distribution A verified in official ASSIST metadata during this batch.",
+    "copyrightClass": "usg-public-domain",
+    "status": "inspected-operative-source",
+    "binding": true,
+    "baselineEligible": "Only when actually invoked and applicable; not an automatic program baseline.",
+    "paragraphs": "Requirements1–3.15 inclusive, including3.6.1(a) and all21 numbered subitems. Repeated artifact-inventory lists3.1–3.4 are one coherent information set with category-dependent extra fields. Full delivered-item fieldset3.6.1, including nested date and applicability rules, is one coherent record; no one-per-field/part-type inflation. Repeated Excel/template rule in2 and3.15 is grouped once; language and not-applicable marking remain distinct obligations.",
+    "extractedRecords": 16,
+    "currentVerification": {
+      "date": "2026-11-06",
+      "status": "Active",
+      "method": "Official ASSIST record opened in the web reader and live official browser catalogue. Exact base and current validation notice independently inspected where a notice exists; no alternate edition substituted.",
+      "recordUrl": "https://quicksearch.dla.mil/qsDocDetails.aspx?ident_number=284124"
+    },
+    "inspection": {
+      "localPdf": "packet/halcyon-batch-9/_work/DI-SESS-82333B.pdf",
+      "pages": 3,
+      "openedFullPdf": true,
+      "textMethod": "Full pdfplumber extraction from the freshly downloaded official PDF. Every candidate span independently asserted against the cited page after NFC and layout-whitespace collapse.",
+      "visualPages": [
+        1,
+        2,
+        3
+      ],
+      "renderFiles": [
+        "packet/halcyon-batch-9/_work/DI-SESS-82333B-1.png",
+        "packet/halcyon-batch-9/_work/DI-SESS-82333B-2.png",
+        "packet/halcyon-batch-9/_work/DI-SESS-82333B-3.png"
+      ],
+      "indexedTextUsedForPassages": false
+    },
+    "applicability": "Distinct ASDP CSA reporting profile, only when actually invoked by the applicable contract/CDRL. Profile-specific Excel/template, added IPL fields and marking references are not universalized to the contractor-format CSA DID.",
+    "nativeFormat": {
+      "paragraph": "2;3.15",
+      "fact": "Microsoft Excel. DOAM listing uses a Microsoft Excel spreadsheet conforming to the actual template in the DOAM Specification attached to the contract; completed template supports ingestion/tracing to the lowest applicable end-item component. Actual contract template is not provided. No workbook design, format alternative, generic CSV/JSON substitution, extension, ingestion implementation or universal column layout is invented."
+    },
+    "cadence": "No fixed cadence or periodic submission interval stated. Contract/CDRL controls timing.",
+    "fieldFacts": [
+      {
+        "paragraph": "2",
+        "fact": "All data in English."
+      },
+      {
+        "paragraph": "3.1–3.4",
+        "fact": "Artifact inventory identifier,title,revision,NHA,change history and submitted status per digital file. Supporting documents additionally carry CAGE code and the referenced/related part-system part number. This source does not add the generic CSA related-specifications field."
+      },
+      {
+        "paragraph": "3.6",
+        "fact": "IPL contains all parts installed in each serial-numbered product/end-item as delivered and as changed through maintenance/modification."
+      },
+      {
+        "paragraph": "3.6.1(a)(1–21)",
+        "fact": "The delivered-item record carries the native part identity, WBS linkage, supply-chain/NHA references, condition-dependent date information, applicable directives/software/manual references, CSI marker, stock/warranty references, design/specification trace and location. WBS ID is an explicit source field, not an invented join."
+      },
+      {
+        "paragraph": "3.6.1(a)(7)",
+        "fact": "Manufacturer/manufacture date apply if CSI,SCI,or both, and for any age/date-managed life-limited item. The later source branch literally reads If not a CSI or age or date managed life limited item and does not repeat SCI; it requires installation date if available, otherwise the DD250 date. The omission is preserved. An SCI-only/non-life-limited item can satisfy both information conditions; no silent repair creates a different branch."
+      },
+      {
+        "paragraph": "3.6.1(a)(9),(11–13),(15)",
+        "fact": "Manufacturing CAGE only when different from vendor CAGE; Airworthiness Directives and Service Bulletins if applicable; software part/revision as applicable for each serial-number-controlled unit; applicable technical-manual/order identifiers and revisions."
+      },
+      {
+        "paragraph": "3.6.1(a)(16)",
+        "fact": "CSI marker is Y when determined CSI and N otherwise. No invented separate SCI Y/N field."
+      },
+      {
+        "paragraph": "3.7",
+        "fact": "Change record includes reasons,ECP ID,justification or reference,effective date,and applicable effectivity; effective date and effectivity remain distinct."
+      },
+      {
+        "paragraph": "3.8–3.12",
+        "fact": "Variance information/status,audit actions/closeout dates,document-responsibility roles,altered file versions,and CSI/SCI/both identifications. Source definitions for CSI and SCI remain distinct."
+      },
+      {
+        "paragraph": "3.13–3.14",
+        "fact": "Applicable distribution/classification/CUI marking references remain conditional and depend on uninspected user-held issuances. No missing-policy content inferred."
+      },
+      {
+        "paragraph": "3.15, final sentence",
+        "passage": "Any field that is not applicable shall be marked “NA.”",
+        "fact": "Exact printed marker has a full stop inside the quotation marks. Contract template is missing; no unprovided cell-encoding or punctuation convention is asserted."
+      }
+    ],
+    "referencedSources": [
+      {
+        "id": "SAE EIA-649-1",
+        "title": "Configuration Management Requirements for Defense Contracts",
+        "paragraphCited": "3.4",
+        "scope": "Bibliographic identification only; no SDO clauses opened, quoted or extracted."
+      },
+      {
+        "id": "SAE EIA-649",
+        "title": "Configuration Management Standard",
+        "paragraphCited": "5.4",
+        "scope": "Bibliographic identification only; no SDO clauses opened, quoted or extracted."
+      },
+      {
+        "id": "MIL-HDBK-61",
+        "title": "Configuration Management Guidance",
+        "paragraphCited": "7",
+        "scope": "Bibliographic identification here; handbook guidance is catalogued separately by the assigned owner and excluded from operative baselines."
+      },
+      {
+        "id": "DD Form250",
+        "title": "Material Inspection and Receiving Report",
+        "paragraphCited": "3.6.1(a)(7)",
+        "scope": "Referenced date source only; form was not opened or extracted for this subtask. No new form fields or rules inferred."
+      }
+    ],
+    "gaps": [
+      {
+        "source": "Contract-attached DOAM Specification and CSA Information template",
+        "status": "not provided",
+        "affectedParagraphs": [
+          "2",
+          "3.15"
+        ],
+        "extraction": "Only inspected DID constraints extracted; no contract-template content invented."
+      },
+      {
+        "source": "DoDI5230.24",
+        "status": "user-held PDF gap remains open; not retried",
+        "affectedParagraphs": [
+          "3.13"
+        ],
+        "extraction": "No issuance content extracted."
+      },
+      {
+        "source": "DoDM5200.01 Volume2",
+        "status": "user-held PDF gap remains open; not retried",
+        "affectedParagraphs": [
+          "3.14"
+        ],
+        "extraction": "No issuance content extracted."
+      },
+      {
+        "source": "DoDI5200.48",
+        "status": "user-held PDF gap remains open; not retried",
+        "affectedParagraphs": [
+          "3.14"
+        ],
+        "extraction": "No issuance content extracted."
+      },
+      {
+        "source": "DD Form250",
+        "status": "referenced form not inspected; no fetch attempted under subtask scope",
+        "affectedParagraphs": [
+          "3.6.1(a)(7)"
+        ],
+        "extraction": "Only the DID-required fallback date is extracted; no form content or current-edition claim."
+      }
+    ]
+  },
+  {
+    "id": "DI-SESS-80639E",
+    "title": "Engineering Change Proposal (ECP)",
+    "currentEdition": "Revision E, 2020-02-11; Notice 1 validation 2025-03-31",
+    "date": "2020-02-11",
+    "issuerPreparingActivity": "Department of the Navy; preparing activity NM (Department of the Navy Standardization Office); DID approval authority SA (Navy Supply Systems Command)",
+    "authoritativeUrl": "https://quicksearch.dla.mil/qsDocDetails.aspx?ident_number=205026",
+    "sourceUrl": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5763543",
+    "releaseStatement": "DISTRIBUTION STATEMENT A. Approved for public release. Distribution is unlimited.",
+    "copyrightClass": "usg-public-domain",
+    "status": "inspected-operative-source",
+    "binding": true,
+    "baselineEligible": "Only when actually invoked and applicable; mandatory form-content dependencies remain unresolved.",
+    "paragraphs": {
+      "included": "All three Requirements paragraphs; all format alternatives kept together; content by DD-form reference preserved once.",
+      "notExtracted": "No data-product shall/must/prohibition in the validation notice. Descriptive use/relationship text is scope metadata, not a new execution obligation. External EIA clauses and inaccessible DD-form contents are not extracted."
+    },
+    "extractedRecords": 3,
+    "currentVerification": {
+      "recordUrl": "https://quicksearch.dla.mil/qsDocDetails.aspx?ident_number=205026",
+      "recordId": 205026,
+      "verificationDate": "2026-11-06",
+      "method": "Current official ASSIST record opened in the web reader and live official browser catalogue; exact base and Notice 1 inspected locally in full. Direct scripted catalogue requests returned rejection HTML, which was not used as evidence.",
+      "latestNotice": "Notice 1",
+      "latestNoticeDate": "2025-03-31"
+    },
+    "inspection": {
+      "localPdf": "packet/halcyon-batch-9/_work/DI-SESS-80639E.pdf",
+      "textCopy": "packet/halcyon-batch-9/_work/DI-SESS-80639E.txt",
+      "openedFullPDF": true,
+      "pageCount": 1,
+      "textPagesRead": [
+        1
+      ],
+      "renderedPagesVisuallyRead": [
+        1
+      ],
+      "renderFiles": [
+        "packet/halcyon-batch-9/_work/DI-SESS-80639E-1.png"
+      ],
+      "noticeRenderFile": "packet/halcyon-batch-9/_work/DI-SESS-80639E-notice1-1.png",
+      "method": "Fresh official full local PDFs supplied in the current batch, complete text extraction plus visual inspection of all rendered base and notice pages; no indexed-text passage substitution."
+    },
+    "notice": {
+      "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5793856",
+      "localPdf": "packet/halcyon-batch-9/_work/DI-SESS-80639E-notice1.pdf",
+      "date": "2025-03-31",
+      "pages": 1,
+      "openedFullPDF": true,
+      "renderedPages": [
+        1
+      ],
+      "statement": "DI-SESS-80639E, dated 11-Feb-2020, has been reviewed and determined to be valid for use in acquisition.",
+      "dataObligationsExtracted": 0
+    },
+    "fieldFacts": [
+      {
+        "topic": "contractIssue",
+        "paragraph": "1",
+        "governedBy": [
+          "DZR-F9-0029"
+        ],
+        "fact": "Use the contract-specified applicable cited-document issues, including approval and applicable amendment/notice/revision dates."
+      },
+      {
+        "topic": "format",
+        "paragraph": "2(a)–(c)",
+        "governedBy": [
+          "DZR-F9-0030"
+        ],
+        "fact": "One of DD Form 1692, Acquirer IDE-required schema, or Supplier-preferred format. No universal extension or serialization is mandated."
+      },
+      {
+        "topic": "contentByReference",
+        "paragraph": "3",
+        "governedBy": [
+          "DZR-F9-0031"
+        ],
+        "fact": "All information required by DD Form 1692 remains required in every permitted format. Form-level fields and completeness remain unknown because the full form and instructions were inaccessible."
+      }
+    ],
+    "cadence": "No numeric delivery interval, deadline, or repeat schedule is specified in the inspected DID; actual delivery tasking remains contract/CDRL-defined. Production context is not a delivery cadence.",
+    "referencedSources": [
+      {
+        "docId": "DD Form 1692",
+        "role": "Required content and optional native presentation; full form and completion instructions are open gaps."
+      },
+      {
+        "docId": "EIA-649-1",
+        "role": "Externally published work-task reference in Use/relationship; metadata only, no external clauses extracted."
+      },
+      {
+        "docId": "EIA-649",
+        "role": "Externally published principles reference in Use/relationship; metadata only, no external clauses extracted."
+      }
+    ],
+    "guidanceCatalogue": [
+      {
+        "kind": "guidance",
+        "binding": false,
+        "paragraph": "Use/relationship(b)",
+        "passage": "A requirement for NORs and Specification Change Notices (SCN) should be contractually imposed in conjunction with this DID.",
+        "interpretation": "Recommendation to impose NOR/SCN deliverables contractually; does not automatically require those deliverables or enter the operative baseline.",
+        "requirementRecords": 0
+      }
+    ],
+    "applicability": "Operative DID only when invoked by applicable contract/CDRL; current publication status does not by itself invoke requirements.",
+    "notes": "Public release of this government DID; not a release determination for contractor-delivered change data."
+  },
+  {
+    "id": "DI-SESS-80640E",
+    "title": "Request for Variance (RFV)",
+    "currentEdition": "Revision E, 2020-02-11; Notice 1 validation 2025-03-31",
+    "date": "2020-02-11",
+    "issuerPreparingActivity": "Department of the Navy; preparing activity NM (Department of the Navy Standardization Office); DID approval authority SA (Navy Supply Systems Command)",
+    "authoritativeUrl": "https://quicksearch.dla.mil/qsDocDetails.aspx?ident_number=205028",
+    "sourceUrl": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5763544",
+    "releaseStatement": "DISTRIBUTION STATEMENT A. Approved for public release. Distribution is unlimited.",
+    "copyrightClass": "usg-public-domain",
+    "status": "inspected-operative-source",
+    "binding": true,
+    "baselineEligible": "Only when actually invoked and applicable; mandatory form-content dependencies remain unresolved.",
+    "paragraphs": {
+      "included": "All three Requirements paragraphs; all format alternatives kept together; content by DD-form reference preserved once. Both Use/relationship cost-reduction shall clauses combined with the Acquirer-caused exception.",
+      "notExtracted": "No data-product shall/must/prohibition in the validation notice. Descriptive use/relationship text is scope metadata, not a new execution obligation. External EIA clauses and inaccessible DD-form contents are not extracted."
+    },
+    "extractedRecords": 4,
+    "currentVerification": {
+      "recordUrl": "https://quicksearch.dla.mil/qsDocDetails.aspx?ident_number=205028",
+      "recordId": 205028,
+      "verificationDate": "2026-11-06",
+      "method": "Current official ASSIST record opened in the web reader and live official browser catalogue; exact base and Notice 1 inspected locally in full. Direct scripted catalogue requests returned rejection HTML, which was not used as evidence.",
+      "latestNotice": "Notice 1",
+      "latestNoticeDate": "2025-03-31"
+    },
+    "inspection": {
+      "localPdf": "packet/halcyon-batch-9/_work/DI-SESS-80640E.pdf",
+      "textCopy": "packet/halcyon-batch-9/_work/DI-SESS-80640E.txt",
+      "openedFullPDF": true,
+      "pageCount": 2,
+      "textPagesRead": [
+        1,
+        2
+      ],
+      "renderedPagesVisuallyRead": [
+        1,
+        2
+      ],
+      "renderFiles": [
+        "packet/halcyon-batch-9/_work/DI-SESS-80640E-1.png",
+        "packet/halcyon-batch-9/_work/DI-SESS-80640E-2.png"
+      ],
+      "noticeRenderFile": "packet/halcyon-batch-9/_work/DI-SESS-80640E-notice1-1.png",
+      "method": "Fresh official full local PDFs supplied in the current batch, complete text extraction plus visual inspection of all rendered base and notice pages; no indexed-text passage substitution."
+    },
+    "notice": {
+      "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5793860",
+      "localPdf": "packet/halcyon-batch-9/_work/DI-SESS-80640E-notice1.pdf",
+      "date": "2025-03-31",
+      "pages": 1,
+      "openedFullPDF": true,
+      "renderedPages": [
+        1
+      ],
+      "statement": "DI-SESS-80640E, dated 11-Feb-2020, has been reviewed and determined to be valid for use in acquisition.",
+      "dataObligationsExtracted": 0
+    },
+    "fieldFacts": [
+      {
+        "topic": "contractIssue",
+        "paragraph": "1",
+        "governedBy": [
+          "DZR-F9-0032"
+        ],
+        "fact": "Use the contract-specified applicable cited-document issues, including approval and applicable amendment/notice/revision dates."
+      },
+      {
+        "topic": "format",
+        "paragraph": "2(a)–(c)",
+        "governedBy": [
+          "DZR-F9-0033"
+        ],
+        "fact": "One of DD Form 1694, Acquirer IDE-required schema, or Supplier-preferred format. No universal extension or serialization is mandated."
+      },
+      {
+        "topic": "contentByReference",
+        "paragraph": "3",
+        "governedBy": [
+          "DZR-F9-0034"
+        ],
+        "fact": "All information required by DD Form 1694 remains required in every permitted format. Form-level fields and completeness remain unknown because the full form and instructions were inaccessible."
+      },
+      {
+        "topic": "costReduction",
+        "paragraph": "Use/relationship, three bullets",
+        "governedBy": [
+          "DZR-F9-0035"
+        ],
+        "fact": "Pre-production and post-production variances result in a cost reduction represented by parentheses, except when induced or caused by the Acquirer. No amount, currency, calculation formula, signed-number convention, or mandatory zero-cost substitute is supplied."
+      }
+    ],
+    "cadence": "No numeric delivery interval, deadline, or repeat schedule is specified in the inspected DID; actual delivery tasking remains contract/CDRL-defined. Production context is not a delivery cadence.",
+    "referencedSources": [
+      {
+        "docId": "DD Form 1694",
+        "role": "Required content and optional native presentation; full form and completion instructions are open gaps."
+      },
+      {
+        "docId": "EIA-649-1",
+        "role": "Externally published work-task reference in Use/relationship; metadata only, no external clauses extracted."
+      },
+      {
+        "docId": "EIA-649",
+        "role": "Externally published principles reference in Use/relationship; metadata only, no external clauses extracted."
+      }
+    ],
+    "guidanceCatalogue": [],
+    "applicability": "Operative DID only when invoked by applicable contract/CDRL; current publication status does not by itself invoke requirements.",
+    "notes": "Public release of this government DID; not a release determination for contractor-delivered change data."
+  },
+  {
+    "id": "DI-SESS-80642E",
+    "title": "Notice of Revision (NOR)",
+    "currentEdition": "Revision E, 2020-02-11; Notice 1 validation 2025-03-31",
+    "date": "2020-02-11",
+    "issuerPreparingActivity": "Department of the Navy; preparing activity NM (Department of the Navy Standardization Office); DID approval authority SA (Navy Supply Systems Command)",
+    "authoritativeUrl": "https://quicksearch.dla.mil/qsDocDetails.aspx?ident_number=205031",
+    "sourceUrl": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5763545",
+    "releaseStatement": "DISTRIBUTION STATEMENT A. Approved for public release. Distribution is unlimited.",
+    "copyrightClass": "usg-public-domain",
+    "status": "inspected-operative-source",
+    "binding": true,
+    "baselineEligible": "Only when actually invoked and applicable; mandatory form-content dependencies remain unresolved.",
+    "paragraphs": {
+      "included": "All three Requirements paragraphs; all format alternatives kept together; content by DD-form reference preserved once.",
+      "notExtracted": "No data-product shall/must/prohibition in the validation notice. Descriptive use/relationship text is scope metadata, not a new execution obligation. External EIA clauses and inaccessible DD-form contents are not extracted."
+    },
+    "extractedRecords": 3,
+    "currentVerification": {
+      "recordUrl": "https://quicksearch.dla.mil/qsDocDetails.aspx?ident_number=205031",
+      "recordId": 205031,
+      "verificationDate": "2026-11-06",
+      "method": "Current official ASSIST record opened in the web reader and live official browser catalogue; exact base and Notice 1 inspected locally in full. Direct scripted catalogue requests returned rejection HTML, which was not used as evidence.",
+      "latestNotice": "Notice 1",
+      "latestNoticeDate": "2025-03-31"
+    },
+    "inspection": {
+      "localPdf": "packet/halcyon-batch-9/_work/DI-SESS-80642E.pdf",
+      "textCopy": "packet/halcyon-batch-9/_work/DI-SESS-80642E.txt",
+      "openedFullPDF": true,
+      "pageCount": 1,
+      "textPagesRead": [
+        1
+      ],
+      "renderedPagesVisuallyRead": [
+        1
+      ],
+      "renderFiles": [
+        "packet/halcyon-batch-9/_work/DI-SESS-80642E-1.png"
+      ],
+      "noticeRenderFile": "packet/halcyon-batch-9/_work/DI-SESS-80642E-notice1-1.png",
+      "method": "Fresh official full local PDFs supplied in the current batch, complete text extraction plus visual inspection of all rendered base and notice pages; no indexed-text passage substitution."
+    },
+    "notice": {
+      "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5793857",
+      "localPdf": "packet/halcyon-batch-9/_work/DI-SESS-80642E-notice1.pdf",
+      "date": "2025-03-31",
+      "pages": 1,
+      "openedFullPDF": true,
+      "renderedPages": [
+        1
+      ],
+      "statement": "DI-SESS-80642E, dated 11-Feb-2020, has been reviewed and determined to be valid for use in acquisition.",
+      "dataObligationsExtracted": 0
+    },
+    "fieldFacts": [
+      {
+        "topic": "contractIssue",
+        "paragraph": "1",
+        "governedBy": [
+          "DZR-F9-0036"
+        ],
+        "fact": "Use the contract-specified applicable cited-document issues, including approval and applicable amendment/notice/revision dates."
+      },
+      {
+        "topic": "format",
+        "paragraph": "2(a)–(c)",
+        "governedBy": [
+          "DZR-F9-0037"
+        ],
+        "fact": "One of DD Form 1695, Acquirer IDE-required schema, or Supplier-preferred format. No universal extension or serialization is mandated."
+      },
+      {
+        "topic": "contentByReference",
+        "paragraph": "3",
+        "governedBy": [
+          "DZR-F9-0038"
+        ],
+        "fact": "All information required by DD Form 1695 remains required in every permitted format. Form-level fields and completeness remain unknown because the full form and instructions were inaccessible."
+      }
+    ],
+    "cadence": "No numeric delivery interval, deadline, or repeat schedule is specified in the inspected DID; actual delivery tasking remains contract/CDRL-defined. Production context is not a delivery cadence.",
+    "referencedSources": [
+      {
+        "docId": "DD Form 1695",
+        "role": "Required content and optional native presentation; full form and completion instructions are open gaps."
+      },
+      {
+        "docId": "EIA-649-1",
+        "role": "Externally published work-task reference in Use/relationship; metadata only, no external clauses extracted."
+      },
+      {
+        "docId": "EIA-649",
+        "role": "Externally published principles reference in Use/relationship; metadata only, no external clauses extracted."
+      },
+      {
+        "docId": "DI-SESS-80639",
+        "role": "Permissive use in conjunction with ECP; not automatic co-invocation."
+      },
+      {
+        "docId": "DI-SESS-80643",
+        "role": "Permissive use in conjunction with Specification Change Notice; not automatic co-invocation or an extracted SCN mandate."
+      }
+    ],
+    "guidanceCatalogue": [],
+    "applicability": "Operative DID only when invoked by applicable contract/CDRL; current publication status does not by itself invoke requirements.",
+    "notes": "Public release of this government DID; not a release determination for contractor-delivered change data."
+  },
+  {
+    "id": "DD1692",
+    "title": "Engineering Change Proposal (ECP), Complete",
+    "currentEdition": "2018-01-01 (official public forms catalogue; PDF body not inspected)",
+    "date": "2018-01-01",
+    "issuerPreparingActivity": "Department of the Navy; Washington Headquarters Services/Executive Services Directorate public forms catalogue",
+    "authoritativeUrl": "https://www.esd.whs.mil/Directives/forms/dd1500_1999/DD1692/",
+    "sourceUrl": "https://www.esd.whs.mil/Portals/54/Documents/DD/forms/dd/dd1692.pdf",
+    "releaseStatement": "The official forms catalogue lists the form family as not controlled and exposes a public download link; any formal release statement printed in the inaccessible PDF is unverified.",
+    "copyrightClass": "usg-public-domain",
+    "status": "open-gap",
+    "paragraphs": "None inspected; no field-level content extracted.",
+    "extractedRecords": 0,
+    "currentVerification": {
+      "date": "2026-11-06",
+      "method": "Official forms list and linked form-information pages actually opened in the live browser; observed edition/date and download URLs. Catalogue metadata is not evidence of form contents."
+    },
+    "inspection": {
+      "openedFullPDF": false,
+      "indexedTextUsedAsEvidence": false,
+      "retriedAfterPDF403": false
+    },
+    "notes": "HTTP Error 403: Forbidden. Stop extraction from this inaccessible source; no retry, alternate edition, summary, or indexed-text substitute. Await the applicable complete PDF. The DID obligation to include all form-required information is retained, but completeness cannot be certified without the applicable form and instructions."
+  },
+  {
+    "id": "DD1692-InstComplete",
+    "title": "Instructions for Engineering Change Proposal (ECP), Complete",
+    "currentEdition": "2018-01-01 (official public forms catalogue; PDF body not inspected)",
+    "date": "2018-01-01",
+    "issuerPreparingActivity": "Department of the Navy; Washington Headquarters Services/Executive Services Directorate public forms catalogue",
+    "authoritativeUrl": "https://www.esd.whs.mil/Directives/forms/dd1500_1999/DD1692/",
+    "sourceUrl": "https://www.esd.whs.mil/Portals/54/Documents/DD/forms/dd/DD1692-InstComplete.pdf",
+    "releaseStatement": "The official forms catalogue lists the form family as not controlled and exposes a public download link; any formal release statement printed in the inaccessible PDF is unverified.",
+    "copyrightClass": "usg-public-domain",
+    "status": "open-gap",
+    "paragraphs": "None inspected; no field-level content extracted.",
+    "extractedRecords": 0,
+    "currentVerification": {
+      "date": "2026-11-06",
+      "method": "Official forms list and linked form-information pages actually opened in the live browser; observed edition/date and download URLs. Catalogue metadata is not evidence of form contents."
+    },
+    "inspection": {
+      "openedFullPDF": false,
+      "indexedTextUsedAsEvidence": false,
+      "retriedAfterPDF403": false
+    },
+    "notes": "HTTP Error 403: Forbidden. Stop extraction from this inaccessible source; no retry, alternate edition, summary, or indexed-text substitute. Await the applicable complete PDF. The DID obligation to include all form-required information is retained, but completeness cannot be certified without the applicable form and instructions."
+  },
+  {
+    "id": "DD1694",
+    "title": "Request for Variance (RFV)",
+    "currentEdition": "2017-04-01 (official public forms catalogue; PDF body not inspected)",
+    "date": "2017-04-01",
+    "issuerPreparingActivity": "Department of the Navy; Washington Headquarters Services/Executive Services Directorate public forms catalogue",
+    "authoritativeUrl": "https://www.esd.whs.mil/Directives/forms/dd1500_1999/DD1694/",
+    "sourceUrl": "https://www.esd.whs.mil/Portals/54/Documents/DD/forms/dd/dd1694.pdf",
+    "releaseStatement": "The official forms catalogue lists the form family as not controlled and exposes a public download link; any formal release statement printed in the inaccessible PDF is unverified.",
+    "copyrightClass": "usg-public-domain",
+    "status": "open-gap",
+    "paragraphs": "None inspected; no field-level content extracted.",
+    "extractedRecords": 0,
+    "currentVerification": {
+      "date": "2026-11-06",
+      "method": "Official forms list and linked form-information pages actually opened in the live browser; observed edition/date and download URLs. Catalogue metadata is not evidence of form contents."
+    },
+    "inspection": {
+      "openedFullPDF": false,
+      "indexedTextUsedAsEvidence": false,
+      "retriedAfterPDF403": false
+    },
+    "notes": "HTTP Error 403: Forbidden. Stop extraction from this inaccessible source; no retry, alternate edition, summary, or indexed-text substitute. Await the applicable complete PDF. The DID obligation to include all form-required information is retained, but completeness cannot be certified without the applicable form and instructions."
+  },
+  {
+    "id": "DD1694-Inst",
+    "title": "Instructions for Preparation of Request for Variance Utilizing DD Form 1694",
+    "currentEdition": "2017-04-01 (official public forms catalogue; PDF body not inspected)",
+    "date": "2017-04-01",
+    "issuerPreparingActivity": "Department of the Navy; Washington Headquarters Services/Executive Services Directorate public forms catalogue",
+    "authoritativeUrl": "https://www.esd.whs.mil/Directives/forms/dd1500_1999/DD1694-INST/",
+    "sourceUrl": "https://www.esd.whs.mil/Portals/54/Documents/DD/forms/dd/dd1694-Inst.pdf",
+    "releaseStatement": "The official forms catalogue lists the form family as not controlled and exposes a public download link; any formal release statement printed in the inaccessible PDF is unverified.",
+    "copyrightClass": "usg-public-domain",
+    "status": "open-gap",
+    "paragraphs": "None inspected; no field-level content extracted.",
+    "extractedRecords": 0,
+    "currentVerification": {
+      "date": "2026-11-06",
+      "method": "Official forms list and linked form-information pages actually opened in the live browser; observed edition/date and download URLs. Catalogue metadata is not evidence of form contents."
+    },
+    "inspection": {
+      "openedFullPDF": false,
+      "indexedTextUsedAsEvidence": false,
+      "retriedAfterPDF403": false
+    },
+    "notes": "HTTP Error 403: Forbidden. Stop extraction from this inaccessible source; no retry, alternate edition, summary, or indexed-text substitute. Await the applicable complete PDF. The DID obligation to include all form-required information is retained, but completeness cannot be certified without the applicable form and instructions."
+  },
+  {
+    "id": "DD1695",
+    "title": "Notice of Revision (NOR)",
+    "currentEdition": "2017-04-01 (official public forms catalogue; PDF body not inspected)",
+    "date": "2017-04-01",
+    "issuerPreparingActivity": "Department of the Navy; Washington Headquarters Services/Executive Services Directorate public forms catalogue",
+    "authoritativeUrl": "https://www.esd.whs.mil/Directives/forms/dd1500_1999/DD1695/",
+    "sourceUrl": "https://www.esd.whs.mil/Portals/54/Documents/DD/forms/dd/dd1695.pdf",
+    "releaseStatement": "The official forms catalogue lists the form family as not controlled and exposes a public download link; any formal release statement printed in the inaccessible PDF is unverified.",
+    "copyrightClass": "usg-public-domain",
+    "status": "open-gap",
+    "paragraphs": "None inspected; no field-level content extracted.",
+    "extractedRecords": 0,
+    "currentVerification": {
+      "date": "2026-11-06",
+      "method": "Official forms list and linked form-information pages actually opened in the live browser; observed edition/date and download URLs. Catalogue metadata is not evidence of form contents."
+    },
+    "inspection": {
+      "openedFullPDF": false,
+      "indexedTextUsedAsEvidence": false,
+      "retriedAfterPDF403": false
+    },
+    "notes": "HTTP Error 403: Forbidden. Stop extraction from this inaccessible source; no retry, alternate edition, summary, or indexed-text substitute. Await the applicable complete PDF. The DID obligation to include all form-required information is retained, but completeness cannot be certified without the applicable form and instructions."
+  },
+  {
+    "id": "DD1695-Inst",
+    "title": "Instructions for Preparation of Notice of Revision DD Form 1695",
+    "currentEdition": "2017-04-01 (official public forms catalogue; PDF body not inspected)",
+    "date": "2017-04-01",
+    "issuerPreparingActivity": "Department of the Navy; Washington Headquarters Services/Executive Services Directorate public forms catalogue",
+    "authoritativeUrl": "https://www.esd.whs.mil/Directives/forms/dd1500_1999/DD1695-INST/",
+    "sourceUrl": "https://www.esd.whs.mil/Portals/54/Documents/DD/forms/dd/dd1695-Inst.pdf",
+    "releaseStatement": "The official forms catalogue lists the form family as not controlled and exposes a public download link; any formal release statement printed in the inaccessible PDF is unverified.",
+    "copyrightClass": "usg-public-domain",
+    "status": "open-gap",
+    "paragraphs": "None inspected; no field-level content extracted.",
+    "extractedRecords": 0,
+    "currentVerification": {
+      "date": "2026-11-06",
+      "method": "Official forms list and linked form-information pages actually opened in the live browser; observed edition/date and download URLs. Catalogue metadata is not evidence of form contents."
+    },
+    "inspection": {
+      "openedFullPDF": false,
+      "indexedTextUsedAsEvidence": false,
+      "retriedAfterPDF403": false
+    },
+    "notes": "HTTP Error 403: Forbidden. Stop extraction from this inaccessible source; no retry, alternate edition, summary, or indexed-text substitute. Await the applicable complete PDF. The DID obligation to include all form-required information is retained, but completeness cannot be certified without the applicable form and instructions."
+  },
+  {
+    "inspectedOn": "2026-11-06",
+    "status": "inspected-guidance",
+    "binding": false,
+    "kind": "guidance",
+    "baselineEligible": false,
+    "extractedRecords": 0,
+    "copyrightClass": "usg-public-domain",
+    "inspectionMethod": "Fresh exact official PDF retrieved by the parent in current Batch 9, opened/text-extracted locally here; selected relevant government-authored passages read and critical pages visually inspected. No prior batch/project/app files read.",
+    "nativeFormatAndCadence": "No mandatory native F9 machine format, identifier syntax, fixed interval, digest scheme or delivery deadline is established by the selected guidance passages. Operative DIDs/contracts provide applicable mandatory rules.",
+    "id": "MIL-HDBK-61B",
+    "title": "Configuration Management Guidance",
+    "currentEdition": "B, 7 April 2020, incorporating Change 1, 15 August 2025",
+    "preparingActivity": "NM",
+    "authoritativeUrl": "https://quicksearch.dla.mil/qsDocDetails.aspx?ident_number=202239",
+    "sourceUrl": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5796547",
+    "releaseStatement": "Distribution Statement A on current cover; handbook is guidance only and not a requirement.",
+    "currentVerification": "Freshly verified Active current base/change through official ASSIST browser record; local cover independently agrees. The small local ASSIST HTML is Request Rejected content, not metadata evidence.",
+    "inspection": {
+      "localPdf": "packet/halcyon-batch-9/_work/MIL-HDBK-61B-change1.pdf",
+      "pageCount": 82,
+      "fullSourceOpened": true,
+      "allPagesTextExtracted": true,
+      "focusedSections": [
+        "4.2.1.3-4.2.1.4.2",
+        "5.4.2.5",
+        "5.5",
+        "6.1-6.3",
+        "7.1-7.2.3; Figure 8; Table I",
+        "10.3.1-10.3.4"
+      ],
+      "visuallyInspectedPdfPages": [
+        1,
+        38,
+        48,
+        50,
+        51,
+        52
+      ]
+    },
+    "fieldFactScope": "Informational only; no operative hash contribution or independent rejection gates.",
+    "zeroRecordRationale": [
+      "Relevant baseline, ECP/RFV/NOR and CSA content is descriptive, permissive, should wording, or nonmodal figure/table material; none is manufactured into a mandatory B field list.",
+      "Section 5.6.1 explicitly attributes its identifier principle to SAE EIA-649; the attributed clause is excluded from extraction and output.",
+      "Appendix B Figure B-1 licensed SAE principles are excluded; only the existence of attributed material is catalogued.",
+      "Section 7.2.3 describes some warranty information often being shared without a bounded delivered-data duty; no mandatory warranty-field list is inferred.",
+      "Section 10.3.3 concerns a formal CM process, not a specific feed record; no process-conduct duty is converted into feed content."
+    ],
+    "date": "2025-08-15",
+    "issuerPreparingActivity": "Department of the Navy Standardization Office (NM)",
+    "copyrightScope": "Government-authored portions only. Attributed/licensed third-party material, including SAE clauses, is excluded from extraction and from the field-fact catalogue.",
+    "paragraphs": [
+      "4.2.1.3-4.2.1.4.2",
+      "5.4.2.5",
+      "5.5",
+      "6.1-6.3",
+      "7.1-7.2.3; Figure 8; Table I",
+      "10.3.1-10.3.4"
+    ],
+    "guidanceCatalogue": [
+      {
+        "fields": [
+          "configurationState",
+          "changeStatus",
+          "changeHistory",
+          "auditStatus"
+        ],
+        "source": {
+          "docId": "MIL-HDBK-61B",
+          "edition": "B, 7 April 2020, incorporating Change 1, 15 August 2025",
+          "paragraph": "4.2.1.4.1; printed p. 18",
+          "pdfPage": 28,
+          "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5796547",
+          "passage": "The CSA information is maintained in a CM database that may include such information as the as-designed, as-built, as-delivered, or as-modified configuration of any serial-numbered unit of the product as well as of any replaceable component within the product. Other information, such as the current status of any change, the history of any change, and the schedules for and status of configuration audits (including the status of resultant action items) can also be accessed in the database.",
+          "passageSHA256": "52e5c866e19d3a39e32a2caf92bea2c05c78ce36333e7ffef48c1b27051f70ec"
+        },
+        "description": "Descriptive, permissive CSA context; possible fields are not independent mandatory feed fields and do not enter the operative baseline solely because the handbook lists them.",
+        "binding": false,
+        "kind": "guidance",
+        "baselineEligible": false,
+        "acceptanceEffect": "informational only; no rejection gate"
+      },
+      {
+        "fields": [
+          "releasedVersion",
+          "releaseReason",
+          "supersessionRationale"
+        ],
+        "source": {
+          "docId": "MIL-HDBK-61B",
+          "edition": "B, 7 April 2020, incorporating Change 1, 15 August 2025",
+          "paragraph": "5.4.2.5; printed p. 27",
+          "pdfPage": 37,
+          "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5796547",
+          "passage": "Each and every version of all elements of the developmental configuration released, for whatever purpose, should be maintained along with the reasons the version was released and the rationale for superseding the previous version.",
+          "passageSHA256": "376d8b8ab7ff00b8e512b696e4b18958fe6570230c189e005f06753ad8a5fe7b"
+        },
+        "description": "Recommendation only; should is not promoted to a mandatory record or rejection gate.",
+        "binding": false,
+        "kind": "guidance",
+        "baselineEligible": false,
+        "acceptanceEffect": "informational only; no rejection gate"
+      },
+      {
+        "fields": [
+          "configurationBaselineContext"
+        ],
+        "source": {
+          "docId": "MIL-HDBK-61B",
+          "edition": "B, 7 April 2020, incorporating Change 1, 15 August 2025",
+          "paragraph": "5.5.1.2; printed p. 28",
+          "pdfPage": 38,
+          "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5796547",
+          "passage": "In CM, a configuration baseline is a fixed reference configuration established by defining and recording the approved configuration documentation for a System or CI at a milestone event or at a specified time.",
+          "passageSHA256": "8f34da9fec9f1c112f482b0f7f1c295d64c3ade31663d5c177bb34db280cf1f6"
+        },
+        "description": "Descriptive distinction between a configuration baseline and a receiving-system digest; a hash alone establishes neither approval nor a formal baseline.",
+        "binding": false,
+        "kind": "guidance",
+        "baselineEligible": false,
+        "acceptanceEffect": "informational only; no rejection gate"
+      },
+      {
+        "fields": [
+          "configurationHistory",
+          "changeTrace"
+        ],
+        "source": {
+          "docId": "MIL-HDBK-61B",
+          "edition": "B, 7 April 2020, incorporating Change 1, 15 August 2025",
+          "paragraph": "5.5.2.1; printed p. 28",
+          "pdfPage": 38,
+          "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5796547",
+          "passage": "Each configuration baseline serves as a point of departure for future CI changes. The current approved configuration documentation constitutes the current configuration baseline. Incremental configuration baselines occur sequentially over the life cycle of a CI as each new change is approved. Each change from the previous baseline to the current baseline occurs through a configuration control process. The audit trail of the configuration control activity from the CI’s original requirements documentation to the current baseline is maintained as part of CSA.",
+          "transcriptionNote": "Visually verified against PDF page 38. Removed the text-extractor artifact space before the period after process; printed punctuation is process.",
+          "passageSHA256": "c707dd163ffe04f69107a3cb22509af25327b213081cdd840e3db8372145c409"
+        },
+        "description": "Describes baseline succession and the audit trail; no mandatory baseline-type field, approval workflow or digest format is inferred.",
+        "binding": false,
+        "kind": "guidance",
+        "baselineEligible": false,
+        "acceptanceEffect": "informational only; no rejection gate"
+      },
+      {
+        "fields": [
+          "documentChangeStatus",
+          "approvalAuthorityContext"
+        ],
+        "source": {
+          "docId": "MIL-HDBK-61B",
+          "edition": "B, 7 April 2020, incorporating Change 1, 15 August 2025",
+          "paragraph": "6.1.1(c); printed p. 35",
+          "pdfPage": 45,
+          "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5796547",
+          "passage": "Ensures complete, accurate, and timely changes to configuration documentation maintained under appropriate configuration approval authority.",
+          "passageSHA256": "839468c7ee837e1298bfe2f9c71b604acfee871a5da1dcc4e9c7d6cca41ea8bb"
+        },
+        "description": "Configuration-control objective, not a literal shall/must feed obligation or numerical delivery deadline.",
+        "binding": false,
+        "kind": "guidance",
+        "baselineEligible": false,
+        "acceptanceEffect": "informational only; no rejection gate"
+      },
+      {
+        "fields": [
+          "configurationHistory",
+          "changeEffectivity"
+        ],
+        "source": {
+          "docId": "MIL-HDBK-61B",
+          "edition": "B, 7 April 2020, incorporating Change 1, 15 August 2025",
+          "paragraph": "6.1.1(e); printed p. 35",
+          "pdfPage": 45,
+          "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5796547",
+          "passage": "Ensures accurate documentation of the initial and change product configurations, along with records of the effectivity of the change in both documentation and actual product units.",
+          "passageSHA256": "c84397433526c65281504b05b2222e236065e32fdde53e3887e37499e105fae2"
+        },
+        "description": "Describes documentation and affected-unit relationships; proposed, approved and implemented changes remain distinct.",
+        "binding": false,
+        "kind": "guidance",
+        "baselineEligible": false,
+        "acceptanceEffect": "informational only; no rejection gate"
+      },
+      {
+        "fields": [
+          "noticeOfRevisionContext",
+          "affectedDocumentReference"
+        ],
+        "source": {
+          "docId": "MIL-HDBK-61B",
+          "edition": "B, 7 April 2020, incorporating Change 1, 15 August 2025",
+          "paragraph": "6.3; printed p. 38",
+          "pdfPage": 48,
+          "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5796547",
+          "passage": "A NOR is an ancillary document to the ECP, which conveys the specific change to a specific document.",
+          "passageSHA256": "27654dd54797ac75a1f5ba31df2b0fd0422cc98a4423079eedc79d18cd04dbf9"
+        },
+        "description": "Descriptive NOR/ECP relationship; the actual operative DID/contract supplies mandatory details.",
+        "binding": false,
+        "kind": "guidance",
+        "baselineEligible": false,
+        "acceptanceEffect": "informational only; no rejection gate"
+      },
+      {
+        "fields": [
+          "noticeOfRevisionContext"
+        ],
+        "source": {
+          "docId": "MIL-HDBK-61B",
+          "edition": "B, 7 April 2020, incorporating Change 1, 15 August 2025",
+          "paragraph": "6.3; printed p. 38",
+          "pdfPage": 48,
+          "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5796547",
+          "passage": "For ECPs to documents that are controlled by the ECP originator, a NOR may be used at contractor option. Alternatively, the originator may describe the change to each document within the ECP.",
+          "passageSHA256": "1dece60197f60d80f0da9b6f73d489694767376e4d028f182edf2df22f92c583"
+        },
+        "description": "Preserves the described alternative and originator-control condition; this guidance does not replace actual contract/DID obligations.",
+        "binding": false,
+        "kind": "guidance",
+        "baselineEligible": false,
+        "acceptanceEffect": "informational only; no rejection gate"
+      },
+      {
+        "fields": [
+          "engineeringChangeStatus"
+        ],
+        "source": {
+          "docId": "MIL-HDBK-61B",
+          "edition": "B, 7 April 2020, incorporating Change 1, 15 August 2025",
+          "paragraph": "Figure 8, task 2; printed p. 40",
+          "pdfPage": 50,
+          "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5796547",
+          "passage": "Record and report the status of proposed engineering changes from initiation to final approval to contractual implementation",
+          "passageSHA256": "70e767c8bdb55f2193fe8ce7c1ea320ada3d132518a3b1a0d24da20323965256"
+        },
+        "description": "Nonmodal figure task, not a B record. Proposal, approval and contractual implementation are distinct stages.",
+        "binding": false,
+        "kind": "guidance",
+        "baselineEligible": false,
+        "acceptanceEffect": "informational only; no rejection gate"
+      },
+      {
+        "fields": [
+          "changeImplementationStatus"
+        ],
+        "source": {
+          "docId": "MIL-HDBK-61B",
+          "edition": "B, 7 April 2020, incorporating Change 1, 15 August 2025",
+          "paragraph": "Figure 8, task 5; printed p. 40",
+          "pdfPage": 50,
+          "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5796547",
+          "passage": "Record and report implementation status of authorized changes",
+          "passageSHA256": "c0101b471e05592481096d9fa7bd8d328888ebfa73a3ebffc36b141caea2243a"
+        },
+        "description": "Nonmodal figure task; an approved change is not automatically implemented.",
+        "binding": false,
+        "kind": "guidance",
+        "baselineEligible": false,
+        "acceptanceEffect": "informational only; no rejection gate"
+      },
+      {
+        "fields": [
+          "configurationChangeTrace"
+        ],
+        "source": {
+          "docId": "MIL-HDBK-61B",
+          "edition": "B, 7 April 2020, incorporating Change 1, 15 August 2025",
+          "paragraph": "Figure 8, task 6; printed p. 40",
+          "pdfPage": 50,
+          "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5796547",
+          "passage": "Provide the traceability of all changes from the original released configuration documentation of each System/CI(s)",
+          "transcriptionNote": "Visually verified against the Figure 8 task 6 box on PDF page 50. This is one contiguous numbered figure entry; only its visual line wrap is normalized. Nearby input/output arrow labels are not part of the passage.",
+          "passageSHA256": "922d58aead8f810e6f895860f26cd494b6adad6bc79da58ecd351cd4d2b9b65d"
+        },
+        "description": "Descriptive trace relationship, not a mandatory database join or source-prescribed ID syntax.",
+        "binding": false,
+        "kind": "guidance",
+        "baselineEligible": false,
+        "acceptanceEffect": "informational only; no rejection gate"
+      },
+      {
+        "fields": [
+          "changeStatus"
+        ],
+        "source": {
+          "docId": "MIL-HDBK-61B",
+          "edition": "B, 7 April 2020, incorporating Change 1, 15 August 2025",
+          "paragraph": "Table I, EMD phase, Typical Outputs; printed p. 41",
+          "pdfPage": 51,
+          "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5796547",
+          "passage": "Status of ECPs, RFVs in process by contractor, by Government",
+          "transcriptionNote": "Visually verified against the EMD Phase / Typical Outputs cell in Table I on PDF page 51. This is one contiguous bullet in the rightmost column; only its visual line wraps are normalized. Text from the adjacent information-sources column is excluded.",
+          "passageSHA256": "b22f258a89da9b425b41c82b83c44aa3fd40bc93f0daf8c0d27ef4a0b844dcac"
+        },
+        "description": "Typical output example, not a mandatory closed status enum or per-phase duplicated obligation.",
+        "binding": false,
+        "kind": "guidance",
+        "baselineEligible": false,
+        "acceptanceEffect": "informational only; no rejection gate"
+      },
+      {
+        "fields": [
+          "changeEffectivity",
+          "changeIncorporationStatus"
+        ],
+        "source": {
+          "docId": "MIL-HDBK-61B",
+          "edition": "B, 7 April 2020, incorporating Change 1, 15 August 2025",
+          "paragraph": "Table I, EMD phase, Typical Outputs; printed p. 41",
+          "pdfPage": 51,
+          "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5796547",
+          "passage": "Effectivity and incorporation status of approved ECPs, RFVs, including retrofit effectivity",
+          "transcriptionNote": "Visually verified against the EMD Phase / Typical Outputs cell in Table I on PDF page 51. This is one contiguous bullet in the rightmost column; only its visual line wraps are normalized. Text from the adjacent information-sources column is excluded.",
+          "passageSHA256": "9373c5fc9b7029f14be34b2562cfaa367670d8d4d052a9d3c68c329e79e7c282"
+        },
+        "description": "Typical output, not a new modal duty or automatic approval/implementation inference.",
+        "binding": false,
+        "kind": "guidance",
+        "baselineEligible": false,
+        "acceptanceEffect": "informational only; no rejection gate"
+      },
+      {
+        "fields": [
+          "changeStatus",
+          "varianceStatus"
+        ],
+        "source": {
+          "docId": "MIL-HDBK-61B",
+          "edition": "B, 7 April 2020, incorporating Change 1, 15 August 2025",
+          "paragraph": "Table I continued, Production and Deployment, Typical Outputs; printed p. 42",
+          "pdfPage": 52,
+          "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5796547",
+          "passage": "Status of all requested, in process, and approved changes and RFVs",
+          "passageSHA256": "c7274fd43a4744f92ab8c890840459d7c4f25c9692feeccecd7a34fddccbd7c7"
+        },
+        "description": "Typical output; illustrated states are not promoted to a universal enum or acceptance rule.",
+        "binding": false,
+        "kind": "guidance",
+        "baselineEligible": false,
+        "acceptanceEffect": "informational only; no rejection gate"
+      }
+    ]
+  },
+  {
+    "inspectedOn": "2026-11-06",
+    "status": "inspected-guidance",
+    "binding": false,
+    "kind": "guidance",
+    "baselineEligible": false,
+    "extractedRecords": 0,
+    "copyrightClass": "usg-public-domain",
+    "inspectionMethod": "Fresh exact official PDF retrieved by the parent in current Batch 9, opened/text-extracted locally here; selected relevant government-authored passages read and critical pages visually inspected. No prior batch/project/app files read.",
+    "nativeFormatAndCadence": "No mandatory native F9 machine format, identifier syntax, fixed interval, digest scheme or delivery deadline is established by the selected guidance passages. Operative DIDs/contracts provide applicable mandatory rules.",
+    "id": "MIL-HDBK-539A",
+    "title": "Digital Engineering and Modeling Practices",
+    "currentEdition": "A, 12 March 2026, incorporating Change 1, 10 June 2026",
+    "preparingActivity": "AR",
+    "authoritativeUrl": "https://quicksearch.dla.mil/qsDocDetails.aspx?ident_number=285031",
+    "sourceUrl": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5801571",
+    "releaseStatement": "Distribution Statement A on current cover; handbook is guidance only and not a requirement.",
+    "currentVerification": "Freshly verified Active current base/change through official ASSIST browser record; local cover independently agrees. The small local ASSIST HTML is Request Rejected content, not metadata evidence.",
+    "inspection": {
+      "localPdf": "packet/halcyon-batch-9/_work/MIL-HDBK-539A-change1.pdf",
+      "pageCount": 139,
+      "fullSourceOpened": true,
+      "allPagesTextExtracted": true,
+      "focusedSections": [
+        "4.8.2.1.2-4.8.2.4",
+        "4.8.3",
+        "5.2.8.1-5.2.8.8"
+      ],
+      "visuallyInspectedPdfPages": [
+        40,
+        41,
+        48,
+        49
+      ]
+    },
+    "fieldFactScope": "Informational only; no operative hash contribution or independent rejection gates.",
+    "zeroRecordRationale": [
+      "Focused configuration-management and authoritative-data/thread passages contain no qualifying literal shall/must data-product clauses.",
+      "General digital-engineering sample material and framework terms are not promoted into F9 feed requirements."
+    ],
+    "date": "2026-06-10",
+    "issuerPreparingActivity": "US Army Combat Capabilities Development Command, Armaments Center (AR)",
+    "copyrightScope": "Government-authored portions only. Attributed/licensed third-party material, including SAE clauses, is excluded from extraction and from the field-fact catalogue.",
+    "paragraphs": [
+      "4.8.2.1.2-4.8.2.4",
+      "4.8.3",
+      "5.2.8.1-5.2.8.8"
+    ],
+    "guidanceCatalogue": [
+      {
+        "fields": [
+          "authoritativeSourceContext"
+        ],
+        "source": {
+          "docId": "MIL-HDBK-539A",
+          "edition": "A, 12 March 2026, incorporating Change 1, 10 June 2026",
+          "paragraph": "4.8.2.1.3; printed p. 25",
+          "pdfPage": 40,
+          "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5801571",
+          "passage": "Data contained witin the DSM is authoritative because database configuration, data capture, data creation, and data maintenance processes are well documented and subject to quality verification. The data is easily accessible and available to stakeholders via digital threads.",
+          "passageSHA256": "02b8ef3c7c6672b1297f2243b90aa5596ddfb6c2b84b3fa3f2796cedf0d626b0"
+        },
+        "description": "Nonbinding provenance and controlled-record framework. Source spelling witin is preserved; a digest is not authority or approval.",
+        "binding": false,
+        "kind": "guidance",
+        "baselineEligible": false,
+        "acceptanceEffect": "informational only; no rejection gate"
+      },
+      {
+        "fields": [
+          "digitalThreadContext"
+        ],
+        "source": {
+          "docId": "MIL-HDBK-539A",
+          "edition": "A, 12 March 2026, incorporating Change 1, 10 June 2026",
+          "paragraph": "4.8.2.3; printed p. 26",
+          "pdfPage": 41,
+          "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5801571",
+          "passage": "Digital threads transport a continuous and synchronized flow of data and information. Data flows via digital thread among models, simulations, engineering domains, stakeholder groups, and across all stages of the acquisition life cycle. Digital threads facilitate efficient communication, collaboration, and the production of views and artifacts.",
+          "passageSHA256": "f270b8858cb8d3323cd2f136fd9191c99584669d2ae5c103fbee31b092f05e3d"
+        },
+        "description": "Nonbinding traceable-information framing; no live-update cadence, integration specification or schema is imposed.",
+        "binding": false,
+        "kind": "guidance",
+        "baselineEligible": false,
+        "acceptanceEffect": "informational only; no rejection gate"
+      },
+      {
+        "fields": [
+          "configurationManagementContext"
+        ],
+        "source": {
+          "docId": "MIL-HDBK-539A",
+          "edition": "A, 12 March 2026, incorporating Change 1, 10 June 2026",
+          "paragraph": "5.2.8.3(b); printed p. 33",
+          "pdfPage": 48,
+          "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5801571",
+          "passage": "CM is the technical and management process applying appropriate resources, processes, and tools to establish and maintain consistency among the product requirements, the product, and associated product configuration information.",
+          "passageSHA256": "c765b62bf1671e3387629763cb94f06b27207082e2e180d620dde7be0d863813"
+        },
+        "description": "Framework context only; no new data-product clause, review approval or baseline authority.",
+        "binding": false,
+        "kind": "guidance",
+        "baselineEligible": false,
+        "acceptanceEffect": "informational only; no rejection gate"
+      },
+      {
+        "fields": [
+          "baselineContext"
+        ],
+        "source": {
+          "docId": "MIL-HDBK-539A",
+          "edition": "A, 12 March 2026, incorporating Change 1, 10 June 2026",
+          "paragraph": "5.2.8.8(a); printed p. 34",
+          "pdfPage": 49,
+          "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5801571",
+          "passage": "Baseline. Defined quantity or quality used as a starting point for subsequent efforts and progress measurement; it can be a technical, cost, or schedule baseline.",
+          "passageSHA256": "92adf18537f6b0545b9ebec94189c87bd62da2b93f1b6f39c639cfc9d1abbc96"
+        },
+        "description": "Nonbinding term context. No handbook-derived baseline-classification field is added to the operative hash absent independent operative basis or explicit receiving context.",
+        "binding": false,
+        "kind": "guidance",
+        "baselineEligible": false,
+        "acceptanceEffect": "informational only; no rejection gate"
+      },
+      {
+        "fields": [
+          "versionContext"
+        ],
+        "source": {
+          "docId": "MIL-HDBK-539A",
+          "edition": "A, 12 March 2026, incorporating Change 1, 10 June 2026",
+          "paragraph": "5.2.8.8(b); printed p. 34",
+          "pdfPage": 49,
+          "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5801571",
+          "passage": "Version. The numbering scheme used to identify sets of digital files that are tagged and named at a certain point in time.",
+          "passageSHA256": "303db6cce70b311130c03e9aec9743dbbc3333a868ece92bd8059a86331c6f0c"
+        },
+        "description": "Nonbinding baseline/version distinction; no hash algorithm, UID syntax or numbering pattern prescribed.",
+        "binding": false,
+        "kind": "guidance",
+        "baselineEligible": false,
+        "acceptanceEffect": "informational only; no rejection gate"
+      }
+    ]
+  },
+  {
+    "id": "SAE EIA649C",
+    "title": "Configuration Management Standard",
+    "currentEdition": "C",
+    "date": "2019-02-07",
+    "publisher": "SAE International",
+    "issuingCommittee": "G-33 Configuration Management",
+    "authoritativeUrl": "https://saemobilus.sae.org/standards/eia649c-configuration-management-standard",
+    "doi": "10.4271/EIA649C",
+    "status": "metadata-only",
+    "copyrightClass": "sdo-copyrighted",
+    "extractedRecords": 0,
+    "currentVerification": "Official publisher metadata page opened 2026-11-06. Revisions panel identifies this edition as verified current listing and B dated 2011-04-01 as historical. No standard View/preview or licensed PDF was opened.",
+    "notes": "Metadata only; no clauses, scope paraphrases, tables or embedded handbook-attributed principles are imported. Publisher current edition does not establish contract invocation or independently verify DoD adoption detail. Metadata-only treatment is not a determination that an incorporated standard is nonbinding; contractual applicability has not been assessed.",
+    "issuerPreparingActivity": "SAE International; G-33 Configuration Management",
+    "sourceUrl": "https://saemobilus.sae.org/standards/eia649c-configuration-management-standard",
+    "releaseStatement": "Copyrighted SDO publication; publisher bibliographic metadata only. No U.S. Government public-domain classification is asserted for the standard.",
+    "paragraphs": "No clauses inspected, quoted or paraphrased; publisher title/edition/date metadata only.",
+    "baselineEligible": false
+  },
+  {
+    "id": "SAE EIA649_1A",
+    "title": "Configuration Management Requirements for Defense Contracts",
+    "currentEdition": "A",
+    "date": "2020-08-10",
+    "publisher": "SAE International",
+    "issuingCommittee": "G-33 Configuration Management",
+    "authoritativeUrl": "https://saemobilus.sae.org/standards/eia649_1a-configuration-management-requirements-defense-contracts",
+    "doi": "10.4271/EIA649_1A",
+    "status": "metadata-only",
+    "copyrightClass": "sdo-copyrighted",
+    "extractedRecords": 0,
+    "currentVerification": "Official publisher metadata page opened 2026-11-06. Revisions panel identifies this edition as verified current listing and base dated 2014-11-20 as historical. No standard View/preview or licensed PDF was opened.",
+    "notes": "Metadata only; no clauses, scope paraphrases, tables or embedded handbook-attributed principles are imported. Publisher current edition does not establish contract invocation or independently verify DoD adoption detail. Metadata-only treatment is not a determination that an incorporated standard is nonbinding; contractual applicability has not been assessed.",
+    "issuerPreparingActivity": "SAE International; G-33 Configuration Management",
+    "sourceUrl": "https://saemobilus.sae.org/standards/eia649_1a-configuration-management-requirements-defense-contracts",
+    "releaseStatement": "Copyrighted SDO publication; publisher bibliographic metadata only. No U.S. Government public-domain classification is asserted for the standard.",
+    "paragraphs": "No clauses inspected, quoted or paraphrased; publisher title/edition/date metadata only.",
+    "baselineEligible": false
+  },
+  {
+    "id": "DoDI 5000.88",
+    "title": "DoDI 5000.88 (full current title unverified; awaiting source PDF)",
+    "currentEdition": "unverified; user-held source gap",
+    "date": "unverified",
+    "issuerPreparingActivity": "Department of Defense; current specific issuing activity unverified",
+    "authoritativeUrl": "https://www.esd.whs.mil/DD/",
+    "sourceUrl": null,
+    "releaseStatement": "Unverified; source PDF not opened.",
+    "copyrightClass": "usg-public-domain",
+    "status": "open-gap",
+    "paragraphs": "No paragraphs inspected or extracted.",
+    "extractedRecords": 0,
+    "inspection": {
+      "openedFullPDF": false,
+      "retried": false,
+      "indexedTextUsedAsEvidence": false
+    },
+    "scopeImpact": "Overarching engineering/configuration-management issuance remains uninspected; no data-product policy clause reconstructed.",
+    "notes": "Awaiting user-provided PDF; no retry, substitute edition or extracted clause in this batch."
+  },
+  {
+    "id": "DoDM 5010.12",
+    "title": "DoDM 5010.12 (full current title unverified; awaiting source PDF)",
+    "currentEdition": "unverified; user-held source gap",
+    "date": "unverified",
+    "issuerPreparingActivity": "Department of Defense; current specific issuing activity unverified",
+    "authoritativeUrl": "https://www.esd.whs.mil/DD/",
+    "sourceUrl": null,
+    "releaseStatement": "Unverified; source PDF not opened.",
+    "copyrightClass": "usg-public-domain",
+    "status": "open-gap",
+    "paragraphs": "No paragraphs inspected or extracted.",
+    "extractedRecords": 0,
+    "inspection": {
+      "openedFullPDF": false,
+      "retried": false,
+      "indexedTextUsedAsEvidence": false
+    },
+    "scopeImpact": "Technical-data acquisition and management issuance remains uninspected; no data delivery or currency rule reconstructed.",
+    "notes": "Awaiting user-provided PDF; no retry, substitute edition or extracted clause in this batch."
+  },
+  {
+    "id": "DoDI 5230.24",
+    "title": "DoDI 5230.24 (full current title unverified; awaiting source PDF)",
+    "currentEdition": "unverified; user-held source gap",
+    "date": "unverified",
+    "issuerPreparingActivity": "Department of Defense; current specific issuing activity unverified",
+    "authoritativeUrl": "https://www.esd.whs.mil/DD/",
+    "sourceUrl": null,
+    "releaseStatement": "Unverified; source PDF not opened.",
+    "copyrightClass": "usg-public-domain",
+    "status": "open-gap",
+    "paragraphs": "No paragraphs inspected or extracted.",
+    "extractedRecords": 0,
+    "inspection": {
+      "openedFullPDF": false,
+      "retried": false,
+      "indexedTextUsedAsEvidence": false
+    },
+    "scopeImpact": "DI-SESS-82333B §3.13 expressly invokes Distribution Statement requirements; detailed applicability and marking validation remain unresolved.",
+    "notes": "Awaiting user-provided PDF; no retry, substitute edition or extracted clause in this batch."
+  },
+  {
+    "id": "DoDI 5200.48",
+    "title": "DoDI 5200.48 (full current title unverified; awaiting source PDF)",
+    "currentEdition": "unverified; user-held source gap",
+    "date": "unverified",
+    "issuerPreparingActivity": "Department of Defense; current specific issuing activity unverified",
+    "authoritativeUrl": "https://www.esd.whs.mil/DD/",
+    "sourceUrl": null,
+    "releaseStatement": "Unverified; source PDF not opened.",
+    "copyrightClass": "usg-public-domain",
+    "status": "open-gap",
+    "paragraphs": "No paragraphs inspected or extracted.",
+    "extractedRecords": 0,
+    "inspection": {
+      "openedFullPDF": false,
+      "retried": false,
+      "indexedTextUsedAsEvidence": false
+    },
+    "scopeImpact": "DI-SESS-82333B §3.14 expressly invokes applicable CUI markings; detailed marking validation remains unresolved.",
+    "notes": "Awaiting user-provided PDF; no retry, substitute edition or extracted clause in this batch."
+  },
+  {
+    "id": "DoDM 5200.01 Volume 2",
+    "title": "DoDM 5200.01 Volume 2 (full current title unverified; awaiting source PDF)",
+    "currentEdition": "unverified; user-held source gap",
+    "date": "unverified",
+    "issuerPreparingActivity": "Department of Defense; current specific issuing activity unverified",
+    "authoritativeUrl": "https://www.esd.whs.mil/DD/",
+    "sourceUrl": null,
+    "releaseStatement": "Unverified; source PDF not opened.",
+    "copyrightClass": "usg-public-domain",
+    "status": "open-gap",
+    "paragraphs": "No paragraphs inspected or extracted.",
+    "extractedRecords": 0,
+    "inspection": {
+      "openedFullPDF": false,
+      "retried": false,
+      "indexedTextUsedAsEvidence": false
+    },
+    "scopeImpact": "DI-SESS-82333B §3.14 expressly invokes applicable classification markings; detailed marking validation remains unresolved.",
+    "notes": "Awaiting user-provided PDF; no retry, substitute edition or extracted clause in this batch."
+  }
+]

@@ -1,0 +1,2589 @@
+{
+  "feed": "F1",
+  "name": "HALCYON requirements baseline ingestion contract",
+  "contractVersion": "1.0-sample",
+  "status": "sample",
+  "systemOfRecord": [
+    "HALCYON controlled requirements repository"
+  ],
+  "formats": [
+    {
+      "format": "UTF-8 CSV with JSON-encoded array/object cells and a JSON metadata sidecar",
+      "spec": "HALCYON-F1-CSV-1 (local adapter profile)",
+      "url": null,
+      "sourceBasis": [
+        {
+          "document": "DI-IPSC-81431A",
+          "paragraph": "Requirements §§2.a, 3, 4.a–d",
+          "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=195669"
+        }
+      ],
+      "nativeConformance": "This is an export/ingestion transport. DI-MGMT-82133A §2 requires a relational database; CSV alone does not satisfy that requirement."
+    }
+  ],
+  "reqif": {
+    "enabled": false,
+    "reason": "Metadata-only reference in Batch 0. No SDO clause extraction and no unverified ReqIF conformance assertion. A future adapter requires an independently verified licensed format profile."
+  },
+  "cadence": "Each approved baseline and each approved change; local integration choice, not a universal government delivery cadence.",
+  "keys": {
+    "primary": [
+      "baselineId",
+      "requirementId"
+    ],
+    "joins": {
+      "wbs": "wbsId",
+      "requirement": "requirementId"
+    },
+    "identityPolicy": "Opaque IDs are never reused. A wording change changes wordingSHA256 and creates a new immutable baseline version; it does not silently reassign the requirement ID. Split obligations receive new IDs with predecessor links in change history."
+  },
+  "fields": [
+    {
+      "name": "rows[].baselineId",
+      "type": "string",
+      "required": true,
+      "governedBy": [],
+      "localRuleIds": [],
+      "description": "Stable identifier of the delivered baseline; local primary-key component."
+    },
+    {
+      "name": "rows[].requirementId",
+      "type": "string",
+      "required": true,
+      "governedBy": [
+        "DZR-F1-0032",
+        "DZR-F1-0044",
+        "DZR-F1-0110",
+        "DZR-F1-0138",
+        "DZR-F1-0143",
+        "DZR-F1-0145",
+        "DZR-F1-0147"
+      ],
+      "localRuleIds": [],
+      "description": "Project-unique requirement identifier; stable across wording changes and never reassigned to another obligation."
+    },
+    {
+      "name": "rows[].wbsId",
+      "type": "string",
+      "required": true,
+      "governedBy": [],
+      "localRuleIds": [
+        "HALCYON-F1-LOCAL-001"
+      ],
+      "description": "Explicit join to an entry in the separately controlled HALCYON F5 WBS dictionary. Mandatory here by user integration rule, not an invented DID field."
+    },
+    {
+      "name": "rows[].tier",
+      "type": "integer",
+      "required": true,
+      "governedBy": [],
+      "localRuleIds": [],
+      "description": "Normalized hierarchy level 0..3; source tier-specific ID/text columns become one row per requirement."
+    },
+    {
+      "name": "rows[].requirementTitle",
+      "type": "string",
+      "required": true,
+      "governedBy": [
+        "DZR-F1-0217"
+      ],
+      "localRuleIds": [],
+      "description": "Short subject identification."
+    },
+    {
+      "name": "rows[].requirementText",
+      "type": "string",
+      "required": true,
+      "governedBy": [
+        "DZR-F1-0033",
+        "DZR-F1-0034",
+        "DZR-F1-0037",
+        "DZR-F1-0045",
+        "DZR-F1-0061",
+        "DZR-F1-0070",
+        "DZR-F1-0072",
+        "DZR-F1-0073",
+        "DZR-F1-0075",
+        "DZR-F1-0076",
+        "DZR-F1-0077",
+        "DZR-F1-0078",
+        "DZR-F1-0079",
+        "DZR-F1-0080",
+        "DZR-F1-0081",
+        "DZR-F1-0082",
+        "DZR-F1-0083",
+        "DZR-F1-0084",
+        "DZR-F1-0085",
+        "DZR-F1-0086",
+        "DZR-F1-0087",
+        "DZR-F1-0088",
+        "DZR-F1-0089",
+        "DZR-F1-0090",
+        "DZR-F1-0102",
+        "DZR-F1-0103",
+        "DZR-F1-0142",
+        "DZR-F1-0144",
+        "DZR-F1-0146",
+        "DZR-F1-0148",
+        "DZR-F1-0175",
+        "DZR-F1-0176",
+        "DZR-F1-0177",
+        "DZR-F1-0178",
+        "DZR-F1-0179",
+        "DZR-F1-0180",
+        "DZR-F1-0181",
+        "DZR-F1-0182",
+        "DZR-F1-0183",
+        "DZR-F1-0184",
+        "DZR-F1-0185",
+        "DZR-F1-0186",
+        "DZR-F1-0187",
+        "DZR-F1-0188",
+        "DZR-F1-0189",
+        "DZR-F1-0190",
+        "DZR-F1-0191",
+        "DZR-F1-0194",
+        "DZR-F1-0196",
+        "DZR-F1-0197",
+        "DZR-F1-0198",
+        "DZR-F1-0199",
+        "DZR-F1-0200",
+        "DZR-F1-0201",
+        "DZR-F1-0203",
+        "DZR-F1-0204",
+        "DZR-F1-0205",
+        "DZR-F1-0206",
+        "DZR-F1-0207",
+        "DZR-F1-0208",
+        "DZR-F1-0209",
+        "DZR-F1-0210",
+        "DZR-F1-0218",
+        "DZR-F1-0219",
+        "DZR-F1-0220",
+        "DZR-F1-0221",
+        "DZR-F1-0222",
+        "DZR-F1-0223",
+        "DZR-F1-0224",
+        "DZR-F1-0225",
+        "DZR-F1-0226",
+        "DZR-F1-0227",
+        "DZR-F1-0228",
+        "DZR-F1-0229",
+        "DZR-F1-0230"
+      ],
+      "localRuleIds": [],
+      "description": "Imported authoritative requirement wording; source text is not silently rewritten. A derived review wording belongs in a separately versioned record."
+    },
+    {
+      "name": "rows[].sourceDocumentId",
+      "type": "string",
+      "required": true,
+      "governedBy": [
+        "DZR-F1-0139"
+      ],
+      "localRuleIds": [],
+      "description": "Exact source document identifier, retained with its edition."
+    },
+    {
+      "name": "rows[].sourceDocumentTitle",
+      "type": "string",
+      "required": true,
+      "governedBy": [
+        "DZR-F1-0140"
+      ],
+      "localRuleIds": [],
+      "description": "Source document title."
+    },
+    {
+      "name": "rows[].sourceEdition",
+      "type": "string",
+      "required": true,
+      "governedBy": [],
+      "localRuleIds": [],
+      "description": "Explicit source edition; never replaced automatically with the current catalog edition."
+    },
+    {
+      "name": "rows[].sourceParagraph",
+      "type": "string",
+      "required": true,
+      "governedBy": [
+        "DZR-F1-0141",
+        "DZR-F1-0215",
+        "DZR-F1-0216"
+      ],
+      "localRuleIds": [],
+      "description": "Source paragraph locator, independent from the opaque requirement identifier."
+    },
+    {
+      "name": "rows[].sourcePassage",
+      "type": "string",
+      "required": true,
+      "governedBy": [],
+      "localRuleIds": [],
+      "description": "Verbatim source passage; the three sample rows have synthetic HALCYON passages, not government excerpts."
+    },
+    {
+      "name": "rows[].sourcePassageSHA256",
+      "type": "string",
+      "required": true,
+      "governedBy": [],
+      "localRuleIds": [
+        "HALCYON-F1-LOCAL-003"
+      ],
+      "description": "Computed normalized digest of sourcePassage."
+    },
+    {
+      "name": "rows[].wordingSHA256",
+      "type": "string",
+      "required": true,
+      "governedBy": [],
+      "localRuleIds": [
+        "HALCYON-F1-LOCAL-003"
+      ],
+      "description": "Computed normalized digest of requirementText."
+    },
+    {
+      "name": "rows[].parentRequirementIds",
+      "type": "array",
+      "required": true,
+      "governedBy": [
+        "DZR-F1-0036",
+        "DZR-F1-0111",
+        "DZR-F1-0112",
+        "DZR-F1-0113",
+        "DZR-F1-0122",
+        "DZR-F1-0229"
+      ],
+      "localRuleIds": [],
+      "description": "Explicit relationship endpoints; may be empty for documented top-level/derived requirements. This array is not the mandatory requirement join key."
+    },
+    {
+      "name": "rows[].verificationMethods",
+      "type": "array",
+      "required": true,
+      "governedBy": [
+        "DZR-F1-0035",
+        "DZR-F1-0110",
+        "DZR-F1-0163",
+        "DZR-F1-0218",
+        "DZR-F1-0228",
+        "DZR-F1-0230"
+      ],
+      "localRuleIds": [],
+      "description": "Source qualification/verification methods. Special is allowed by the SSS; the extraction record verificationIntent uses only the user-requested four-value enum."
+    },
+    {
+      "name": "rows[].classification",
+      "type": "string",
+      "required": true,
+      "governedBy": [],
+      "localRuleIds": [],
+      "description": "This public-demo profile accepts only UNCLASSIFIED; it does not certify that the document is properly marked or releasable."
+    },
+    {
+      "name": "rows[].distributionStatement",
+      "type": "string",
+      "required": true,
+      "governedBy": [],
+      "localRuleIds": [],
+      "description": "Source marking retained; public demo uses an explicit fictional-sample statement, not an invented government release approval."
+    },
+    {
+      "name": "rows[].attributes",
+      "type": "object",
+      "required": true,
+      "governedBy": [],
+      "localRuleIds": [],
+      "description": "Structured, profile-specific content. In CSV this object is encoded as a JSON string."
+    },
+    {
+      "name": "rows[].stateModeIds",
+      "type": "array",
+      "required": false,
+      "governedBy": [
+        "DZR-F1-0041"
+      ],
+      "localRuleIds": [],
+      "description": "Applicable state/mode links."
+    },
+    {
+      "name": "rows[].sectionId",
+      "type": "string",
+      "required": false,
+      "governedBy": [
+        "DZR-F1-0031",
+        "DZR-F1-0042",
+        "DZR-F1-0051",
+        "DZR-F1-0057",
+        "DZR-F1-0059",
+        "DZR-F1-0070",
+        "DZR-F1-0072",
+        "DZR-F1-0073",
+        "DZR-F1-0075",
+        "DZR-F1-0076",
+        "DZR-F1-0077",
+        "DZR-F1-0078",
+        "DZR-F1-0079",
+        "DZR-F1-0080",
+        "DZR-F1-0081",
+        "DZR-F1-0082",
+        "DZR-F1-0083",
+        "DZR-F1-0084",
+        "DZR-F1-0085",
+        "DZR-F1-0086",
+        "DZR-F1-0087",
+        "DZR-F1-0088",
+        "DZR-F1-0089",
+        "DZR-F1-0090",
+        "DZR-F1-0098",
+        "DZR-F1-0102",
+        "DZR-F1-0103",
+        "DZR-F1-0204"
+      ],
+      "localRuleIds": [],
+      "description": "Source requirement category or specification section."
+    },
+    {
+      "name": "rows[].capabilityId",
+      "type": "string",
+      "required": false,
+      "governedBy": [
+        "DZR-F1-0042",
+        "DZR-F1-0043",
+        "DZR-F1-0044"
+      ],
+      "localRuleIds": [],
+      "description": "Capability grouping identifier."
+    },
+    {
+      "name": "rows[].interfaceId",
+      "type": "string",
+      "required": false,
+      "governedBy": [
+        "DZR-F1-0051",
+        "DZR-F1-0053",
+        "DZR-F1-0057",
+        "DZR-F1-0059"
+      ],
+      "localRuleIds": [],
+      "description": "Project-unique interface identifier when relevant."
+    },
+    {
+      "name": "rows[].criticality",
+      "type": "string",
+      "required": false,
+      "governedBy": [
+        "DZR-F1-0107"
+      ],
+      "localRuleIds": [],
+      "description": "Source-defined requirement criticality; no invented universal scale."
+    },
+    {
+      "name": "metadata.references",
+      "type": "array",
+      "required": false,
+      "requiredWhen": "When the corresponding source profile and record condition apply and the field has not been tailored out.",
+      "governedBy": [
+        "DZR-F1-0029",
+        "DZR-F1-0194",
+        "DZR-F1-0195",
+        "DZR-F1-0202"
+      ],
+      "description": "Preserved source-content slot; this JSON representation is a HALCYON mapping. Applicable source records define the content; document-level material belongs in metadata, not repeated on every CSV row."
+    },
+    {
+      "name": "metadata.references[].edition",
+      "type": "string",
+      "required": false,
+      "requiredWhen": "When the corresponding source profile and record condition apply and the field has not been tailored out.",
+      "governedBy": [
+        "DZR-F1-0120"
+      ],
+      "description": "Preserved source-content slot; this JSON representation is a HALCYON mapping. Applicable source records define the content; document-level material belongs in metadata, not repeated on every CSV row."
+    },
+    {
+      "name": "metadata.references[].source",
+      "type": "string",
+      "required": false,
+      "requiredWhen": "When the corresponding source profile and record condition apply and the field has not been tailored out.",
+      "governedBy": [
+        "DZR-F1-0030"
+      ],
+      "description": "Preserved source-content slot; this JSON representation is a HALCYON mapping. Applicable source records define the content; document-level material belongs in metadata, not repeated on every CSV row."
+    },
+    {
+      "name": "metadata.rtvm.change_history",
+      "type": "array",
+      "required": false,
+      "requiredWhen": "When the corresponding source profile and record condition apply and the field has not been tailored out.",
+      "governedBy": [
+        "DZR-F1-0133"
+      ],
+      "description": "Preserved source-content slot; this JSON representation is a HALCYON mapping. Applicable source records define the content; document-level material belongs in metadata, not repeated on every CSV row."
+    },
+    {
+      "name": "metadata.rtvm.cover.contract_number",
+      "type": "string",
+      "required": false,
+      "requiredWhen": "When the corresponding source profile and record condition apply and the field has not been tailored out.",
+      "governedBy": [
+        "DZR-F1-0127"
+      ],
+      "description": "Preserved source-content slot; this JSON representation is a HALCYON mapping. Applicable source records define the content; document-level material belongs in metadata, not repeated on every CSV row."
+    },
+    {
+      "name": "metadata.rtvm.cover.contractor_address",
+      "type": "string",
+      "required": false,
+      "requiredWhen": "When the corresponding source profile and record condition apply and the field has not been tailored out.",
+      "governedBy": [
+        "DZR-F1-0129"
+      ],
+      "description": "Preserved source-content slot; this JSON representation is a HALCYON mapping. Applicable source records define the content; document-level material belongs in metadata, not repeated on every CSV row."
+    },
+    {
+      "name": "metadata.rtvm.cover.contractor_name",
+      "type": "string",
+      "required": false,
+      "requiredWhen": "When the corresponding source profile and record condition apply and the field has not been tailored out.",
+      "governedBy": [
+        "DZR-F1-0128"
+      ],
+      "description": "Preserved source-content slot; this JSON representation is a HALCYON mapping. Applicable source records define the content; document-level material belongs in metadata, not repeated on every CSV row."
+    },
+    {
+      "name": "metadata.rtvm.cover.distribution_statement",
+      "type": "string",
+      "required": false,
+      "requiredWhen": "When the corresponding source profile and record condition apply and the field has not been tailored out.",
+      "governedBy": [
+        "DZR-F1-0130"
+      ],
+      "description": "Preserved source-content slot; this JSON representation is a HALCYON mapping. Applicable source records define the content; document-level material belongs in metadata, not repeated on every CSV row."
+    },
+    {
+      "name": "metadata.rtvm.cover.export_control_warning",
+      "type": "string",
+      "required": false,
+      "requiredWhen": "When the corresponding source profile and record condition apply and the field has not been tailored out.",
+      "governedBy": [
+        "DZR-F1-0131"
+      ],
+      "description": "Preserved source-content slot; this JSON representation is a HALCYON mapping. Applicable source records define the content; document-level material belongs in metadata, not repeated on every CSV row."
+    },
+    {
+      "name": "metadata.rtvm.cover.issue_date",
+      "type": "string",
+      "required": false,
+      "requiredWhen": "When the corresponding source profile and record condition apply and the field has not been tailored out.",
+      "governedBy": [
+        "DZR-F1-0125"
+      ],
+      "description": "Preserved source-content slot; this JSON representation is a HALCYON mapping. Applicable source records define the content; document-level material belongs in metadata, not repeated on every CSV row."
+    },
+    {
+      "name": "metadata.rtvm.cover.revision_date",
+      "type": "string",
+      "required": false,
+      "requiredWhen": "When the corresponding source profile and record condition apply and the field has not been tailored out.",
+      "governedBy": [
+        "DZR-F1-0126"
+      ],
+      "description": "Preserved source-content slot; this JSON representation is a HALCYON mapping. Applicable source records define the content; document-level material belongs in metadata, not repeated on every CSV row."
+    },
+    {
+      "name": "metadata.rtvm.cover.security_classification",
+      "type": "string",
+      "required": false,
+      "requiredWhen": "When the corresponding source profile and record condition apply and the field has not been tailored out.",
+      "governedBy": [
+        "DZR-F1-0132"
+      ],
+      "description": "Preserved source-content slot; this JSON representation is a HALCYON mapping. Applicable source records define the content; document-level material belongs in metadata, not repeated on every CSV row."
+    },
+    {
+      "name": "metadata.rtvm.cover.title",
+      "type": "string",
+      "required": false,
+      "requiredWhen": "When the corresponding source profile and record condition apply and the field has not been tailored out.",
+      "governedBy": [
+        "DZR-F1-0124"
+      ],
+      "description": "Preserved source-content slot; this JSON representation is a HALCYON mapping. Applicable source records define the content; document-level material belongs in metadata, not repeated on every CSV row."
+    },
+    {
+      "name": "metadata.rtvm.data_dictionary.acronyms",
+      "type": "array",
+      "required": false,
+      "requiredWhen": "When the corresponding source profile and record condition apply and the field has not been tailored out.",
+      "governedBy": [
+        "DZR-F1-0137"
+      ],
+      "description": "Preserved source-content slot; this JSON representation is a HALCYON mapping. Applicable source records define the content; document-level material belongs in metadata, not repeated on every CSV row."
+    },
+    {
+      "name": "metadata.rtvm.data_dictionary.terms",
+      "type": "object",
+      "required": false,
+      "requiredWhen": "When the corresponding source profile and record condition apply and the field has not been tailored out.",
+      "governedBy": [
+        "DZR-F1-0136"
+      ],
+      "description": "Preserved source-content slot; this JSON representation is a HALCYON mapping. Applicable source records define the content; document-level material belongs in metadata, not repeated on every CSV row."
+    },
+    {
+      "name": "metadata.rtvm.database_description",
+      "type": "string",
+      "required": false,
+      "requiredWhen": "When the corresponding source profile and record condition apply and the field has not been tailored out.",
+      "governedBy": [
+        "DZR-F1-0134"
+      ],
+      "description": "Preserved source-content slot; this JSON representation is a HALCYON mapping. Applicable source records define the content; document-level material belongs in metadata, not repeated on every CSV row."
+    },
+    {
+      "name": "metadata.rtvm.database_relationships",
+      "type": "object",
+      "required": false,
+      "requiredWhen": "When the corresponding source profile and record condition apply and the field has not been tailored out.",
+      "governedBy": [
+        "DZR-F1-0135"
+      ],
+      "description": "Preserved source-content slot; this JSON representation is a HALCYON mapping. Applicable source records define the content; document-level material belongs in metadata, not repeated on every CSV row."
+    },
+    {
+      "name": "metadata.rtvm.format",
+      "type": "string",
+      "required": false,
+      "requiredWhen": "When the corresponding source profile and record condition apply and the field has not been tailored out.",
+      "governedBy": [
+        "DZR-F1-0121"
+      ],
+      "description": "Preserved source-content slot; this JSON representation is a HALCYON mapping. Applicable source records define the content; document-level material belongs in metadata, not repeated on every CSV row."
+    },
+    {
+      "name": "metadata.sss.acronyms",
+      "type": "array",
+      "required": false,
+      "requiredWhen": "When the corresponding source profile and record condition apply and the field has not been tailored out.",
+      "governedBy": [
+        "DZR-F1-0116"
+      ],
+      "description": "Preserved source-content slot; this JSON representation is a HALCYON mapping. Applicable source records define the content; document-level material belongs in metadata, not repeated on every CSV row."
+    },
+    {
+      "name": "metadata.sss.allocatedSystemRequirements",
+      "type": "array",
+      "required": false,
+      "requiredWhen": "When the corresponding source profile and record condition apply and the field has not been tailored out.",
+      "governedBy": [
+        "DZR-F1-0112",
+        "DZR-F1-0113"
+      ],
+      "description": "Preserved source-content slot; this JSON representation is a HALCYON mapping. Applicable source records define the content; document-level material belongs in metadata, not repeated on every CSV row."
+    },
+    {
+      "name": "metadata.sss.appendices.identifier",
+      "type": "string",
+      "required": false,
+      "requiredWhen": "When the corresponding source profile and record condition apply and the field has not been tailored out.",
+      "governedBy": [
+        "DZR-F1-0119"
+      ],
+      "description": "Preserved source-content slot; this JSON representation is a HALCYON mapping. Applicable source records define the content; document-level material belongs in metadata, not repeated on every CSV row."
+    },
+    {
+      "name": "metadata.sss.appendices.references",
+      "type": "array",
+      "required": false,
+      "requiredWhen": "When the corresponding source profile and record condition apply and the field has not been tailored out.",
+      "governedBy": [
+        "DZR-F1-0118"
+      ],
+      "description": "Preserved source-content slot; this JSON representation is a HALCYON mapping. Applicable source records define the content; document-level material belongs in metadata, not repeated on every CSV row."
+    },
+    {
+      "name": "metadata.sss.capabilityHierarchy",
+      "type": "object",
+      "required": false,
+      "requiredWhen": "When the corresponding source profile and record condition apply and the field has not been tailored out.",
+      "governedBy": [
+        "DZR-F1-0047"
+      ],
+      "description": "Preserved source-content slot; this JSON representation is a HALCYON mapping. Applicable source records define the content; document-level material belongs in metadata, not repeated on every CSV row."
+    },
+    {
+      "name": "metadata.sss.cdrlItem",
+      "type": "string",
+      "required": false,
+      "requiredWhen": "When the corresponding source profile and record condition apply and the field has not been tailored out.",
+      "governedBy": [
+        "DZR-F1-0010"
+      ],
+      "description": "Preserved source-content slot; this JSON representation is a HALCYON mapping. Applicable source records define the content; document-level material belongs in metadata, not repeated on every CSV row."
+    },
+    {
+      "name": "metadata.sss.contentIndex",
+      "type": "array",
+      "required": false,
+      "requiredWhen": "When the corresponding source profile and record condition apply and the field has not been tailored out.",
+      "governedBy": [
+        "DZR-F1-0016"
+      ],
+      "description": "Preserved source-content slot; this JSON representation is a HALCYON mapping. Applicable source records define the content; document-level material belongs in metadata, not repeated on every CSV row."
+    },
+    {
+      "name": "metadata.sss.contractIdentifier",
+      "type": "string",
+      "required": false,
+      "requiredWhen": "When the corresponding source profile and record condition apply and the field has not been tailored out.",
+      "governedBy": [
+        "DZR-F1-0009"
+      ],
+      "description": "Preserved source-content slot; this JSON representation is a HALCYON mapping. Applicable source records define the content; document-level material belongs in metadata, not repeated on every CSV row."
+    },
+    {
+      "name": "metadata.sss.date",
+      "type": "string",
+      "required": false,
+      "requiredWhen": "When the corresponding source profile and record condition apply and the field has not been tailored out.",
+      "governedBy": [
+        "DZR-F1-0006"
+      ],
+      "description": "Preserved source-content slot; this JSON representation is a HALCYON mapping. Applicable source records define the content; document-level material belongs in metadata, not repeated on every CSV row."
+    },
+    {
+      "name": "metadata.sss.distributionStatement",
+      "type": "string",
+      "required": false,
+      "requiredWhen": "When the corresponding source profile and record condition apply and the field has not been tailored out.",
+      "governedBy": [
+        "DZR-F1-0014"
+      ],
+      "description": "Preserved source-content slot; this JSON representation is a HALCYON mapping. Applicable source records define the content; document-level material belongs in metadata, not repeated on every CSV row."
+    },
+    {
+      "name": "metadata.sss.documentId",
+      "type": "string",
+      "required": false,
+      "requiredWhen": "When the corresponding source profile and record condition apply and the field has not been tailored out.",
+      "governedBy": [
+        "DZR-F1-0002"
+      ],
+      "description": "Preserved source-content slot; this JSON representation is a HALCYON mapping. Applicable source records define the content; document-level material belongs in metadata, not repeated on every CSV row."
+    },
+    {
+      "name": "metadata.sss.documentOverview",
+      "type": "string",
+      "required": false,
+      "requiredWhen": "When the corresponding source profile and record condition apply and the field has not been tailored out.",
+      "governedBy": [
+        "DZR-F1-0027"
+      ],
+      "description": "Preserved source-content slot; this JSON representation is a HALCYON mapping. Applicable source records define the content; document-level material belongs in metadata, not repeated on every CSV row."
+    },
+    {
+      "name": "metadata.sss.entityIndex",
+      "type": "array",
+      "required": false,
+      "requiredWhen": "When the corresponding source profile and record condition apply and the field has not been tailored out.",
+      "governedBy": [
+        "DZR-F1-0017"
+      ],
+      "description": "Preserved source-content slot; this JSON representation is a HALCYON mapping. Applicable source records define the content; document-level material belongs in metadata, not repeated on every CSV row."
+    },
+    {
+      "name": "metadata.sss.equalRequirementWeight",
+      "type": "boolean",
+      "required": false,
+      "requiredWhen": "When the corresponding source profile and record condition apply and the field has not been tailored out.",
+      "governedBy": [
+        "DZR-F1-0108"
+      ],
+      "description": "Preserved source-content slot; this JSON representation is a HALCYON mapping. Applicable source records define the content; document-level material belongs in metadata, not repeated on every CSV row."
+    },
+    {
+      "name": "metadata.sss.format",
+      "type": "string",
+      "required": false,
+      "requiredWhen": "When the corresponding source profile and record condition apply and the field has not been tailored out.",
+      "governedBy": [
+        "DZR-F1-0001"
+      ],
+      "description": "Preserved source-content slot; this JSON representation is a HALCYON mapping. Applicable source records define the content; document-level material belongs in metadata, not repeated on every CSV row."
+    },
+    {
+      "name": "metadata.sss.glossary",
+      "type": "array",
+      "required": false,
+      "requiredWhen": "When the corresponding source profile and record condition apply and the field has not been tailored out.",
+      "governedBy": [
+        "DZR-F1-0117"
+      ],
+      "description": "Preserved source-content slot; this JSON representation is a HALCYON mapping. Applicable source records define the content; document-level material belongs in metadata, not repeated on every CSV row."
+    },
+    {
+      "name": "metadata.sss.identificationMethod",
+      "type": "string",
+      "required": false,
+      "requiredWhen": "When the corresponding source profile and record condition apply and the field has not been tailored out.",
+      "governedBy": [
+        "DZR-F1-0015"
+      ],
+      "description": "Preserved source-content slot; this JSON representation is a HALCYON mapping. Applicable source records define the content; document-level material belongs in metadata, not repeated on every CSV row."
+    },
+    {
+      "name": "metadata.sss.interfaces",
+      "type": "object",
+      "required": false,
+      "requiredWhen": "When the corresponding source profile and record condition apply and the field has not been tailored out.",
+      "governedBy": [
+        "DZR-F1-0052"
+      ],
+      "description": "Preserved source-content slot; this JSON representation is a HALCYON mapping. Applicable source records define the content; document-level material belongs in metadata, not repeated on every CSV row."
+    },
+    {
+      "name": "metadata.sss.interfaces.diagrams",
+      "type": "object",
+      "required": false,
+      "requiredWhen": "When the corresponding source profile and record condition apply and the field has not been tailored out.",
+      "governedBy": [
+        "DZR-F1-0056"
+      ],
+      "description": "Preserved source-content slot; this JSON representation is a HALCYON mapping. Applicable source records define the content; document-level material belongs in metadata, not repeated on every CSV row."
+    },
+    {
+      "name": "metadata.sss.interfaces.entities",
+      "type": "object",
+      "required": false,
+      "requiredWhen": "When the corresponding source profile and record condition apply and the field has not been tailored out.",
+      "governedBy": [
+        "DZR-F1-0054"
+      ],
+      "description": "Preserved source-content slot; this JSON representation is a HALCYON mapping. Applicable source records define the content; document-level material belongs in metadata, not repeated on every CSV row."
+    },
+    {
+      "name": "metadata.sss.interfaces.entityStatus",
+      "type": "object",
+      "required": false,
+      "requiredWhen": "When the corresponding source profile and record condition apply and the field has not been tailored out.",
+      "governedBy": [
+        "DZR-F1-0055"
+      ],
+      "description": "Preserved source-content slot; this JSON representation is a HALCYON mapping. Applicable source records define the content; document-level material belongs in metadata, not repeated on every CSV row."
+    },
+    {
+      "name": "metadata.sss.markings",
+      "type": "string",
+      "required": false,
+      "requiredWhen": "When the corresponding source profile and record condition apply and the field has not been tailored out.",
+      "governedBy": [
+        "DZR-F1-0005"
+      ],
+      "description": "Preserved source-content slot; this JSON representation is a HALCYON mapping. Applicable source records define the content; document-level material belongs in metadata, not repeated on every CSV row."
+    },
+    {
+      "name": "metadata.sss.notes",
+      "type": "string",
+      "required": false,
+      "requiredWhen": "When the corresponding source profile and record condition apply and the field has not been tailored out.",
+      "governedBy": [
+        "DZR-F1-0115"
+      ],
+      "description": "Preserved source-content slot; this JSON representation is a HALCYON mapping. Applicable source records define the content; document-level material belongs in metadata, not repeated on every CSV row."
+    },
+    {
+      "name": "metadata.sss.operatingSites",
+      "type": "array",
+      "required": false,
+      "requiredWhen": "When the corresponding source profile and record condition apply and the field has not been tailored out.",
+      "governedBy": [
+        "DZR-F1-0025"
+      ],
+      "description": "Preserved source-content slot; this JSON representation is a HALCYON mapping. Applicable source records define the content; document-level material belongs in metadata, not repeated on every CSV row."
+    },
+    {
+      "name": "metadata.sss.preparerAddress",
+      "type": "string",
+      "required": false,
+      "requiredWhen": "When the corresponding source profile and record condition apply and the field has not been tailored out.",
+      "governedBy": [
+        "DZR-F1-0013"
+      ],
+      "description": "Preserved source-content slot; this JSON representation is a HALCYON mapping. Applicable source records define the content; document-level material belongs in metadata, not repeated on every CSV row."
+    },
+    {
+      "name": "metadata.sss.preparerName",
+      "type": "string",
+      "required": false,
+      "requiredWhen": "When the corresponding source profile and record condition apply and the field has not been tailored out.",
+      "governedBy": [
+        "DZR-F1-0012"
+      ],
+      "description": "Preserved source-content slot; this JSON representation is a HALCYON mapping. Applicable source records define the content; document-level material belongs in metadata, not repeated on every CSV row."
+    },
+    {
+      "name": "metadata.sss.qualificationMethodDefinitions",
+      "type": "object",
+      "required": false,
+      "requiredWhen": "When the corresponding source profile and record condition apply and the field has not been tailored out.",
+      "governedBy": [
+        "DZR-F1-0109"
+      ],
+      "description": "Preserved source-content slot; this JSON representation is a HALCYON mapping. Applicable source records define the content; document-level material belongs in metadata, not repeated on every CSV row."
+    },
+    {
+      "name": "metadata.sss.recipientOrganization",
+      "type": "string",
+      "required": false,
+      "requiredWhen": "When the corresponding source profile and record condition apply and the field has not been tailored out.",
+      "governedBy": [
+        "DZR-F1-0011"
+      ],
+      "description": "Preserved source-content slot; this JSON representation is a HALCYON mapping. Applicable source records define the content; document-level material belongs in metadata, not repeated on every CSV row."
+    },
+    {
+      "name": "metadata.sss.relatedDocuments",
+      "type": "array",
+      "required": false,
+      "requiredWhen": "When the corresponding source profile and record condition apply and the field has not been tailored out.",
+      "governedBy": [
+        "DZR-F1-0026"
+      ],
+      "description": "Preserved source-content slot; this JSON representation is a HALCYON mapping. Applicable source records define the content; document-level material belongs in metadata, not repeated on every CSV row."
+    },
+    {
+      "name": "metadata.sss.scope",
+      "type": "object",
+      "required": false,
+      "requiredWhen": "When the corresponding source profile and record condition apply and the field has not been tailored out.",
+      "governedBy": [
+        "DZR-F1-0019"
+      ],
+      "description": "Preserved source-content slot; this JSON representation is a HALCYON mapping. Applicable source records define the content; document-level material belongs in metadata, not repeated on every CSV row."
+    },
+    {
+      "name": "metadata.sss.sectionIndex",
+      "type": "array",
+      "required": false,
+      "requiredWhen": "When the corresponding source profile and record condition apply and the field has not been tailored out.",
+      "governedBy": [
+        "DZR-F1-0031",
+        "DZR-F1-0098"
+      ],
+      "description": "Preserved source-content slot; this JSON representation is a HALCYON mapping. Applicable source records define the content; document-level material belongs in metadata, not repeated on every CSV row."
+    },
+    {
+      "name": "metadata.sss.sectionIndex[].deferral",
+      "type": "string",
+      "required": false,
+      "requiredWhen": "When the corresponding source profile and record condition apply and the field has not been tailored out.",
+      "governedBy": [
+        "DZR-F1-0071",
+        "DZR-F1-0074"
+      ],
+      "description": "Preserved source-content slot; this JSON representation is a HALCYON mapping. Applicable source records define the content; document-level material belongs in metadata, not repeated on every CSV row."
+    },
+    {
+      "name": "metadata.sss.sectionIndex[].noRequirements",
+      "type": "boolean",
+      "required": false,
+      "requiredWhen": "When the corresponding source profile and record condition apply and the field has not been tailored out.",
+      "governedBy": [
+        "DZR-F1-0038"
+      ],
+      "description": "Preserved source-content slot; this JSON representation is a HALCYON mapping. Applicable source records define the content; document-level material belongs in metadata, not repeated on every CSV row."
+    },
+    {
+      "name": "metadata.sss.securityPrivacyConsiderations",
+      "type": "string",
+      "required": false,
+      "requiredWhen": "When the corresponding source profile and record condition apply and the field has not been tailored out.",
+      "governedBy": [
+        "DZR-F1-0028"
+      ],
+      "description": "Preserved source-content slot; this JSON representation is a HALCYON mapping. Applicable source records define the content; document-level material belongs in metadata, not repeated on every CSV row."
+    },
+    {
+      "name": "metadata.sss.stakeholders",
+      "type": "array",
+      "required": false,
+      "requiredWhen": "When the corresponding source profile and record condition apply and the field has not been tailored out.",
+      "governedBy": [
+        "DZR-F1-0024"
+      ],
+      "description": "Preserved source-content slot; this JSON representation is a HALCYON mapping. Applicable source records define the content; document-level material belongs in metadata, not repeated on every CSV row."
+    },
+    {
+      "name": "metadata.sss.statesModes",
+      "type": "array",
+      "required": false,
+      "requiredWhen": "When the corresponding source profile and record condition apply and the field has not been tailored out.",
+      "governedBy": [
+        "DZR-F1-0039",
+        "DZR-F1-0040"
+      ],
+      "description": "Preserved source-content slot; this JSON representation is a HALCYON mapping. Applicable source records define the content; document-level material belongs in metadata, not repeated on every CSV row."
+    },
+    {
+      "name": "metadata.sss.systemHistory",
+      "type": "array",
+      "required": false,
+      "requiredWhen": "When the corresponding source profile and record condition apply and the field has not been tailored out.",
+      "governedBy": [
+        "DZR-F1-0023"
+      ],
+      "description": "Preserved source-content slot; this JSON representation is a HALCYON mapping. Applicable source records define the content; document-level material belongs in metadata, not repeated on every CSV row."
+    },
+    {
+      "name": "metadata.sss.systemIdentification",
+      "type": "object",
+      "required": false,
+      "requiredWhen": "When the corresponding source profile and record condition apply and the field has not been tailored out.",
+      "governedBy": [
+        "DZR-F1-0008",
+        "DZR-F1-0020"
+      ],
+      "description": "Preserved source-content slot; this JSON representation is a HALCYON mapping. Applicable source records define the content; document-level material belongs in metadata, not repeated on every CSV row."
+    },
+    {
+      "name": "metadata.sss.systemOverview",
+      "type": "string",
+      "required": false,
+      "requiredWhen": "When the corresponding source profile and record condition apply and the field has not been tailored out.",
+      "governedBy": [
+        "DZR-F1-0022"
+      ],
+      "description": "Preserved source-content slot; this JSON representation is a HALCYON mapping. Applicable source records define the content; document-level material belongs in metadata, not repeated on every CSV row."
+    },
+    {
+      "name": "metadata.sss.systemPurpose",
+      "type": "string",
+      "required": false,
+      "requiredWhen": "When the corresponding source profile and record condition apply and the field has not been tailored out.",
+      "governedBy": [
+        "DZR-F1-0021"
+      ],
+      "description": "Preserved source-content slot; this JSON representation is a HALCYON mapping. Applicable source records define the content; document-level material belongs in metadata, not repeated on every CSV row."
+    },
+    {
+      "name": "metadata.sss.tailoring",
+      "type": "array",
+      "required": false,
+      "requiredWhen": "When the corresponding source profile and record condition apply and the field has not been tailored out.",
+      "governedBy": [
+        "DZR-F1-0018"
+      ],
+      "description": "Preserved source-content slot; this JSON representation is a HALCYON mapping. Applicable source records define the content; document-level material belongs in metadata, not repeated on every CSV row."
+    },
+    {
+      "name": "metadata.sss.title",
+      "type": "string",
+      "required": false,
+      "requiredWhen": "When the corresponding source profile and record condition apply and the field has not been tailored out.",
+      "governedBy": [
+        "DZR-F1-0007"
+      ],
+      "description": "Preserved source-content slot; this JSON representation is a HALCYON mapping. Applicable source records define the content; document-level material belongs in metadata, not repeated on every CSV row."
+    },
+    {
+      "name": "metadata.sss.version",
+      "type": "string",
+      "required": false,
+      "requiredWhen": "When the corresponding source profile and record condition apply and the field has not been tailored out.",
+      "governedBy": [
+        "DZR-F1-0004"
+      ],
+      "description": "Preserved source-content slot; this JSON representation is a HALCYON mapping. Applicable source records define the content; document-level material belongs in metadata, not repeated on every CSV row."
+    },
+    {
+      "name": "metadata.sss.volume",
+      "type": "string",
+      "required": false,
+      "requiredWhen": "When the corresponding source profile and record condition apply and the field has not been tailored out.",
+      "governedBy": [
+        "DZR-F1-0003"
+      ],
+      "description": "Preserved source-content slot; this JSON representation is a HALCYON mapping. Applicable source records define the content; document-level material belongs in metadata, not repeated on every CSV row."
+    },
+    {
+      "name": "rows[].attributes.guidance.performance_value",
+      "type": "string",
+      "required": false,
+      "requiredWhen": "When the corresponding source profile and record condition apply and the field has not been tailored out.",
+      "governedBy": [
+        "DZR-F1-0229",
+        "DZR-F1-0230"
+      ],
+      "description": "Preserved source-content slot; this JSON representation is a HALCYON mapping. Applicable source records define the content; document-level material belongs in metadata, not repeated on every CSV row."
+    },
+    {
+      "name": "rows[].attributes.guidance.requirement_type",
+      "type": "string",
+      "required": false,
+      "requiredWhen": "When the corresponding source profile and record condition apply and the field has not been tailored out.",
+      "governedBy": [
+        "DZR-F1-0228"
+      ],
+      "description": "Preserved source-content slot; this JSON representation is a HALCYON mapping. Applicable source records define the content; document-level material belongs in metadata, not repeated on every CSV row."
+    },
+    {
+      "name": "rows[].attributes.rtvm.allocated_items",
+      "type": "array",
+      "required": false,
+      "requiredWhen": "When the corresponding source profile and record condition apply and the field has not been tailored out.",
+      "governedBy": [
+        "DZR-F1-0160"
+      ],
+      "description": "Preserved source-content slot; this JSON representation is a HALCYON mapping. Applicable source records define the content; document-level material belongs in metadata, not repeated on every CSV row."
+    },
+    {
+      "name": "rows[].attributes.rtvm.comments",
+      "type": "string",
+      "required": false,
+      "requiredWhen": "When the corresponding source profile and record condition apply and the field has not been tailored out.",
+      "governedBy": [
+        "DZR-F1-0174"
+      ],
+      "description": "Preserved source-content slot; this JSON representation is a HALCYON mapping. Applicable source records define the content; document-level material belongs in metadata, not repeated on every CSV row."
+    },
+    {
+      "name": "rows[].attributes.rtvm.corrective_actions",
+      "type": "array",
+      "required": false,
+      "requiredWhen": "When the corresponding source profile and record condition apply and the field has not been tailored out.",
+      "governedBy": [
+        "DZR-F1-0172"
+      ],
+      "description": "Preserved source-content slot; this JSON representation is a HALCYON mapping. Applicable source records define the content; document-level material belongs in metadata, not repeated on every CSV row."
+    },
+    {
+      "name": "rows[].attributes.rtvm.corrective_actions[].result",
+      "type": "string",
+      "required": false,
+      "requiredWhen": "When the corresponding source profile and record condition apply and the field has not been tailored out.",
+      "governedBy": [
+        "DZR-F1-0173"
+      ],
+      "description": "Preserved source-content slot; this JSON representation is a HALCYON mapping. Applicable source records define the content; document-level material belongs in metadata, not repeated on every CSV row."
+    },
+    {
+      "name": "rows[].attributes.rtvm.design_reference",
+      "type": "string",
+      "required": false,
+      "requiredWhen": "When the corresponding source profile and record condition apply and the field has not been tailored out.",
+      "governedBy": [
+        "DZR-F1-0159"
+      ],
+      "description": "Preserved source-content slot; this JSON representation is a HALCYON mapping. Applicable source records define the content; document-level material belongs in metadata, not repeated on every CSV row."
+    },
+    {
+      "name": "rows[].attributes.rtvm.dr_database_url",
+      "type": "string",
+      "required": false,
+      "requiredWhen": "When the corresponding source profile and record condition apply and the field has not been tailored out.",
+      "governedBy": [
+        "DZR-F1-0158"
+      ],
+      "description": "Preserved source-content slot; this JSON representation is a HALCYON mapping. Applicable source records define the content; document-level material belongs in metadata, not repeated on every CSV row."
+    },
+    {
+      "name": "rows[].attributes.rtvm.dr_number",
+      "type": "string",
+      "required": false,
+      "requiredWhen": "When the corresponding source profile and record condition apply and the field has not been tailored out.",
+      "governedBy": [
+        "DZR-F1-0155"
+      ],
+      "description": "Preserved source-content slot; this JSON representation is a HALCYON mapping. Applicable source records define the content; document-level material belongs in metadata, not repeated on every CSV row."
+    },
+    {
+      "name": "rows[].attributes.rtvm.dr_title",
+      "type": "string",
+      "required": false,
+      "requiredWhen": "When the corresponding source profile and record condition apply and the field has not been tailored out.",
+      "governedBy": [
+        "DZR-F1-0156"
+      ],
+      "description": "Preserved source-content slot; this JSON representation is a HALCYON mapping. Applicable source records define the content; document-level material belongs in metadata, not repeated on every CSV row."
+    },
+    {
+      "name": "rows[].attributes.rtvm.oem_compliance",
+      "type": "string",
+      "required": false,
+      "requiredWhen": "When the corresponding source profile and record condition apply and the field has not been tailored out.",
+      "governedBy": [
+        "DZR-F1-0151"
+      ],
+      "description": "Preserved source-content slot; this JSON representation is a HALCYON mapping. Applicable source records define the content; document-level material belongs in metadata, not repeated on every CSV row."
+    },
+    {
+      "name": "rows[].attributes.rtvm.prior_test_names",
+      "type": "array",
+      "required": false,
+      "requiredWhen": "When the corresponding source profile and record condition apply and the field has not been tailored out.",
+      "governedBy": [
+        "DZR-F1-0170"
+      ],
+      "description": "Preserved source-content slot; this JSON representation is a HALCYON mapping. Applicable source records define the content; document-level material belongs in metadata, not repeated on every CSV row."
+    },
+    {
+      "name": "rows[].attributes.rtvm.requirement_attribute",
+      "type": "string",
+      "required": false,
+      "requiredWhen": "When the corresponding source profile and record condition apply and the field has not been tailored out.",
+      "governedBy": [
+        "DZR-F1-0150"
+      ],
+      "description": "Preserved source-content slot; this JSON representation is a HALCYON mapping. Applicable source records define the content; document-level material belongs in metadata, not repeated on every CSV row."
+    },
+    {
+      "name": "rows[].attributes.rtvm.requirement_status",
+      "type": "string",
+      "required": false,
+      "requiredWhen": "When the corresponding source profile and record condition apply and the field has not been tailored out.",
+      "governedBy": [
+        "DZR-F1-0152"
+      ],
+      "description": "Preserved source-content slot; this JSON representation is a HALCYON mapping. Applicable source records define the content; document-level material belongs in metadata, not repeated on every CSV row."
+    },
+    {
+      "name": "rows[].attributes.rtvm.requirement_type",
+      "type": "string",
+      "required": false,
+      "requiredWhen": "When the corresponding source profile and record condition apply and the field has not been tailored out.",
+      "governedBy": [
+        "DZR-F1-0149"
+      ],
+      "description": "Preserved source-content slot; this JSON representation is a HALCYON mapping. Applicable source records define the content; document-level material belongs in metadata, not repeated on every CSV row."
+    },
+    {
+      "name": "rows[].attributes.rtvm.str_database_url",
+      "type": "string",
+      "required": false,
+      "requiredWhen": "When the corresponding source profile and record condition apply and the field has not been tailored out.",
+      "governedBy": [
+        "DZR-F1-0157"
+      ],
+      "description": "Preserved source-content slot; this JSON representation is a HALCYON mapping. Applicable source records define the content; document-level material belongs in metadata, not repeated on every CSV row."
+    },
+    {
+      "name": "rows[].attributes.rtvm.str_number",
+      "type": "string",
+      "required": false,
+      "requiredWhen": "When the corresponding source profile and record condition apply and the field has not been tailored out.",
+      "governedBy": [
+        "DZR-F1-0153"
+      ],
+      "description": "Preserved source-content slot; this JSON representation is a HALCYON mapping. Applicable source records define the content; document-level material belongs in metadata, not repeated on every CSV row."
+    },
+    {
+      "name": "rows[].attributes.rtvm.str_title",
+      "type": "string",
+      "required": false,
+      "requiredWhen": "When the corresponding source profile and record condition apply and the field has not been tailored out.",
+      "governedBy": [
+        "DZR-F1-0154"
+      ],
+      "description": "Preserved source-content slot; this JSON representation is a HALCYON mapping. Applicable source records define the content; document-level material belongs in metadata, not repeated on every CSV row."
+    },
+    {
+      "name": "rows[].attributes.rtvm.verificationStatus",
+      "type": "string",
+      "required": false,
+      "requiredWhen": "When the corresponding source profile and record condition apply and the field has not been tailored out.",
+      "governedBy": [
+        "DZR-F1-0123"
+      ],
+      "description": "Preserved source-content slot; this JSON representation is a HALCYON mapping. Applicable source records define the content; document-level material belongs in metadata, not repeated on every CSV row."
+    },
+    {
+      "name": "rows[].attributes.rtvm.verification_conformance",
+      "type": "string",
+      "required": false,
+      "requiredWhen": "When the corresponding source profile and record condition apply and the field has not been tailored out.",
+      "governedBy": [
+        "DZR-F1-0171"
+      ],
+      "description": "Preserved source-content slot; this JSON representation is a HALCYON mapping. Applicable source records define the content; document-level material belongs in metadata, not repeated on every CSV row."
+    },
+    {
+      "name": "rows[].attributes.rtvm.verification_document_date",
+      "type": "string",
+      "required": false,
+      "requiredWhen": "When the corresponding source profile and record condition apply and the field has not been tailored out.",
+      "governedBy": [
+        "DZR-F1-0166"
+      ],
+      "description": "Preserved source-content slot; this JSON representation is a HALCYON mapping. Applicable source records define the content; document-level material belongs in metadata, not repeated on every CSV row."
+    },
+    {
+      "name": "rows[].attributes.rtvm.verification_document_id",
+      "type": "string",
+      "required": false,
+      "requiredWhen": "When the corresponding source profile and record condition apply and the field has not been tailored out.",
+      "governedBy": [
+        "DZR-F1-0164"
+      ],
+      "description": "Preserved source-content slot; this JSON representation is a HALCYON mapping. Applicable source records define the content; document-level material belongs in metadata, not repeated on every CSV row."
+    },
+    {
+      "name": "rows[].attributes.rtvm.verification_document_paragraph",
+      "type": "string",
+      "required": false,
+      "requiredWhen": "When the corresponding source profile and record condition apply and the field has not been tailored out.",
+      "governedBy": [
+        "DZR-F1-0167"
+      ],
+      "description": "Preserved source-content slot; this JSON representation is a HALCYON mapping. Applicable source records define the content; document-level material belongs in metadata, not repeated on every CSV row."
+    },
+    {
+      "name": "rows[].attributes.rtvm.verification_document_title",
+      "type": "string",
+      "required": false,
+      "requiredWhen": "When the corresponding source profile and record condition apply and the field has not been tailored out.",
+      "governedBy": [
+        "DZR-F1-0165"
+      ],
+      "description": "Preserved source-content slot; this JSON representation is a HALCYON mapping. Applicable source records define the content; document-level material belongs in metadata, not repeated on every CSV row."
+    },
+    {
+      "name": "rows[].attributes.rtvm.verification_procedure_section",
+      "type": "string",
+      "required": false,
+      "requiredWhen": "When the corresponding source profile and record condition apply and the field has not been tailored out.",
+      "governedBy": [
+        "DZR-F1-0168"
+      ],
+      "description": "Preserved source-content slot; this JSON representation is a HALCYON mapping. Applicable source records define the content; document-level material belongs in metadata, not repeated on every CSV row."
+    },
+    {
+      "name": "rows[].attributes.rtvm.verification_procedure_steps",
+      "type": "array",
+      "required": false,
+      "requiredWhen": "When the corresponding source profile and record condition apply and the field has not been tailored out.",
+      "governedBy": [
+        "DZR-F1-0169"
+      ],
+      "description": "Preserved source-content slot; this JSON representation is a HALCYON mapping. Applicable source records define the content; document-level material belongs in metadata, not repeated on every CSV row."
+    },
+    {
+      "name": "rows[].attributes.rtvm.verification_product_form",
+      "type": "string",
+      "required": false,
+      "requiredWhen": "When the corresponding source profile and record condition apply and the field has not been tailored out.",
+      "governedBy": [
+        "DZR-F1-0161"
+      ],
+      "description": "Preserved source-content slot; this JSON representation is a HALCYON mapping. Applicable source records define the content; document-level material belongs in metadata, not repeated on every CSV row."
+    },
+    {
+      "name": "rows[].attributes.rtvm.verification_product_maturity",
+      "type": "string",
+      "required": false,
+      "requiredWhen": "When the corresponding source profile and record condition apply and the field has not been tailored out.",
+      "governedBy": [
+        "DZR-F1-0162"
+      ],
+      "description": "Preserved source-content slot; this JSON representation is a HALCYON mapping. Applicable source records define the content; document-level material belongs in metadata, not repeated on every CSV row."
+    },
+    {
+      "name": "rows[].attributes.specification.alternative_reference",
+      "type": "string",
+      "required": false,
+      "requiredWhen": "When the corresponding source profile and record condition apply and the field has not been tailored out.",
+      "governedBy": [
+        "DZR-F1-0198"
+      ],
+      "description": "Preserved source-content slot; this JSON representation is a HALCYON mapping. Applicable source records define the content; document-level material belongs in metadata, not repeated on every CSV row."
+    },
+    {
+      "name": "rows[].attributes.specification.brand_name_justification",
+      "type": "string",
+      "required": false,
+      "requiredWhen": "When the corresponding source profile and record condition apply and the field has not been tailored out.",
+      "governedBy": [
+        "DZR-F1-0192"
+      ],
+      "description": "Preserved source-content slot; this JSON representation is a HALCYON mapping. Applicable source records define the content; document-level material belongs in metadata, not repeated on every CSV row."
+    },
+    {
+      "name": "rows[].attributes.specification.brand_name_justification_ref",
+      "type": "string",
+      "required": false,
+      "requiredWhen": "When the corresponding source profile and record condition apply and the field has not been tailored out.",
+      "governedBy": [
+        "DZR-F1-0193"
+      ],
+      "description": "Preserved source-content slot; this JSON representation is a HALCYON mapping. Applicable source records define the content; document-level material belongs in metadata, not repeated on every CSV row."
+    },
+    {
+      "name": "rows[].attributes.specification.conversion_basis",
+      "type": "string",
+      "required": false,
+      "requiredWhen": "When the corresponding source profile and record condition apply and the field has not been tailored out.",
+      "governedBy": [
+        "DZR-F1-0214"
+      ],
+      "description": "Preserved source-content slot; this JSON representation is a HALCYON mapping. Applicable source records define the content; document-level material belongs in metadata, not repeated on every CSV row."
+    },
+    {
+      "name": "rows[].attributes.specification.limit",
+      "type": "string",
+      "required": false,
+      "requiredWhen": "When the corresponding source profile and record condition apply and the field has not been tailored out.",
+      "governedBy": [
+        "DZR-F1-0210"
+      ],
+      "description": "Preserved source-content slot; this JSON representation is a HALCYON mapping. Applicable source records define the content; document-level material belongs in metadata, not repeated on every CSV row."
+    },
+    {
+      "name": "rows[].attributes.specification.numeric_value",
+      "type": "string",
+      "required": false,
+      "requiredWhen": "When the corresponding source profile and record condition apply and the field has not been tailored out.",
+      "governedBy": [
+        "DZR-F1-0209"
+      ],
+      "description": "Preserved source-content slot; this JSON representation is a HALCYON mapping. Applicable source records define the content; document-level material belongs in metadata, not repeated on every CSV row."
+    },
+    {
+      "name": "rows[].attributes.specification.tolerance",
+      "type": "string",
+      "required": false,
+      "requiredWhen": "When the corresponding source profile and record condition apply and the field has not been tailored out.",
+      "governedBy": [
+        "DZR-F1-0210"
+      ],
+      "description": "Preserved source-content slot; this JSON representation is a HALCYON mapping. Applicable source records define the content; document-level material belongs in metadata, not repeated on every CSV row."
+    },
+    {
+      "name": "rows[].attributes.specification.unit",
+      "type": "string",
+      "required": false,
+      "requiredWhen": "When the corresponding source profile and record condition apply and the field has not been tailored out.",
+      "governedBy": [
+        "DZR-F1-0211",
+        "DZR-F1-0212",
+        "DZR-F1-0213",
+        "DZR-F1-0214"
+      ],
+      "description": "Preserved source-content slot; this JSON representation is a HALCYON mapping. Applicable source records define the content; document-level material belongs in metadata, not repeated on every CSV row."
+    },
+    {
+      "name": "rows[].attributes.sss.abnormalBehavior",
+      "type": "string",
+      "required": false,
+      "requiredWhen": "When the corresponding source profile and record condition apply and the field has not been tailored out.",
+      "governedBy": [
+        "DZR-F1-0048"
+      ],
+      "description": "Preserved source-content slot; this JSON representation is a HALCYON mapping. Applicable source records define the content; document-level material belongs in metadata, not repeated on every CSV row."
+    },
+    {
+      "name": "rows[].attributes.sss.capabilityParameters",
+      "type": "string",
+      "required": false,
+      "requiredWhen": "When the corresponding source profile and record condition apply and the field has not been tailored out.",
+      "governedBy": [
+        "DZR-F1-0046"
+      ],
+      "description": "Preserved source-content slot; this JSON representation is a HALCYON mapping. Applicable source records define the content; document-level material belongs in metadata, not repeated on every CSV row."
+    },
+    {
+      "name": "rows[].attributes.sss.computerHardware",
+      "type": "object",
+      "required": false,
+      "requiredWhen": "When the corresponding source profile and record condition apply and the field has not been tailored out.",
+      "governedBy": [
+        "DZR-F1-0099"
+      ],
+      "description": "Preserved source-content slot; this JSON representation is a HALCYON mapping. Applicable source records define the content; document-level material belongs in metadata, not repeated on every CSV row."
+    },
+    {
+      "name": "rows[].attributes.sss.designDecisionReferences",
+      "type": "array",
+      "required": false,
+      "requiredWhen": "When the corresponding source profile and record condition apply and the field has not been tailored out.",
+      "governedBy": [
+        "DZR-F1-0111"
+      ],
+      "description": "Preserved source-content slot; this JSON representation is a HALCYON mapping. Applicable source records define the content; document-level material belongs in metadata, not repeated on every CSV row."
+    },
+    {
+      "name": "rows[].attributes.sss.emergencyContinuity",
+      "type": "string",
+      "required": false,
+      "requiredWhen": "When the corresponding source profile and record condition apply and the field has not been tailored out.",
+      "governedBy": [
+        "DZR-F1-0050"
+      ],
+      "description": "Preserved source-content slot; this JSON representation is a HALCYON mapping. Applicable source records define the content; document-level material belongs in metadata, not repeated on every CSV row."
+    },
+    {
+      "name": "rows[].attributes.sss.errorHandling",
+      "type": "string",
+      "required": false,
+      "requiredWhen": "When the corresponding source profile and record condition apply and the field has not been tailored out.",
+      "governedBy": [
+        "DZR-F1-0049"
+      ],
+      "description": "Preserved source-content slot; this JSON representation is a HALCYON mapping. Applicable source records define the content; document-level material belongs in metadata, not repeated on every CSV row."
+    },
+    {
+      "name": "rows[].attributes.sss.humanFactors.capabilities",
+      "type": "string",
+      "required": false,
+      "requiredWhen": "When the corresponding source profile and record condition apply and the field has not been tailored out.",
+      "governedBy": [
+        "DZR-F1-0104"
+      ],
+      "description": "Preserved source-content slot; this JSON representation is a HALCYON mapping. Applicable source records define the content; document-level material belongs in metadata, not repeated on every CSV row."
+    },
+    {
+      "name": "rows[].attributes.sss.humanFactors.criticalAreas",
+      "type": "string",
+      "required": false,
+      "requiredWhen": "When the corresponding source profile and record condition apply and the field has not been tailored out.",
+      "governedBy": [
+        "DZR-F1-0106"
+      ],
+      "description": "Preserved source-content slot; this JSON representation is a HALCYON mapping. Applicable source records define the content; document-level material belongs in metadata, not repeated on every CSV row."
+    },
+    {
+      "name": "rows[].attributes.sss.humanFactors.foreseeableErrors",
+      "type": "string",
+      "required": false,
+      "requiredWhen": "When the corresponding source profile and record condition apply and the field has not been tailored out.",
+      "governedBy": [
+        "DZR-F1-0105"
+      ],
+      "description": "Preserved source-content slot; this JSON representation is a HALCYON mapping. Applicable source records define the content; document-level material belongs in metadata, not repeated on every CSV row."
+    },
+    {
+      "name": "rows[].attributes.sss.interface.communicationMethods",
+      "type": "string",
+      "required": false,
+      "requiredWhen": "When the corresponding source profile and record condition apply and the field has not been tailored out.",
+      "governedBy": [
+        "DZR-F1-0066"
+      ],
+      "description": "Preserved source-content slot; this JSON representation is a HALCYON mapping. Applicable source records define the content; document-level material belongs in metadata, not repeated on every CSV row."
+    },
+    {
+      "name": "rows[].attributes.sss.interface.dataAssemblies",
+      "type": "object",
+      "required": false,
+      "requiredWhen": "When the corresponding source profile and record condition apply and the field has not been tailored out.",
+      "governedBy": [
+        "DZR-F1-0065"
+      ],
+      "description": "Preserved source-content slot; this JSON representation is a HALCYON mapping. Applicable source records define the content; document-level material belongs in metadata, not repeated on every CSV row."
+    },
+    {
+      "name": "rows[].attributes.sss.interface.dataElements",
+      "type": "object",
+      "required": false,
+      "requiredWhen": "When the corresponding source profile and record condition apply and the field has not been tailored out.",
+      "governedBy": [
+        "DZR-F1-0064"
+      ],
+      "description": "Preserved source-content slot; this JSON representation is a HALCYON mapping. Applicable source records define the content; document-level material belongs in metadata, not repeated on every CSV row."
+    },
+    {
+      "name": "rows[].attributes.sss.interface.expectationDifferences",
+      "type": "string",
+      "required": false,
+      "requiredWhen": "When the corresponding source profile and record condition apply and the field has not been tailored out.",
+      "governedBy": [
+        "DZR-F1-0069"
+      ],
+      "description": "Preserved source-content slot; this JSON representation is a HALCYON mapping. Applicable source records define the content; document-level material belongs in metadata, not repeated on every CSV row."
+    },
+    {
+      "name": "rows[].attributes.sss.interface.other",
+      "type": "string",
+      "required": false,
+      "requiredWhen": "When the corresponding source profile and record condition apply and the field has not been tailored out.",
+      "governedBy": [
+        "DZR-F1-0068"
+      ],
+      "description": "Preserved source-content slot; this JSON representation is a HALCYON mapping. Applicable source records define the content; document-level material belongs in metadata, not repeated on every CSV row."
+    },
+    {
+      "name": "rows[].attributes.sss.interface.priority",
+      "type": "string",
+      "required": false,
+      "requiredWhen": "When the corresponding source profile and record condition apply and the field has not been tailored out.",
+      "governedBy": [
+        "DZR-F1-0062"
+      ],
+      "description": "Preserved source-content slot; this JSON representation is a HALCYON mapping. Applicable source records define the content; document-level material belongs in metadata, not repeated on every CSV row."
+    },
+    {
+      "name": "rows[].attributes.sss.interface.protocols",
+      "type": "string",
+      "required": false,
+      "requiredWhen": "When the corresponding source profile and record condition apply and the field has not been tailored out.",
+      "governedBy": [
+        "DZR-F1-0067"
+      ],
+      "description": "Preserved source-content slot; this JSON representation is a HALCYON mapping. Applicable source records define the content; document-level material belongs in metadata, not repeated on every CSV row."
+    },
+    {
+      "name": "rows[].attributes.sss.interface.type",
+      "type": "string",
+      "required": false,
+      "requiredWhen": "When the corresponding source profile and record condition apply and the field has not been tailored out.",
+      "governedBy": [
+        "DZR-F1-0063"
+      ],
+      "description": "Preserved source-content slot; this JSON representation is a HALCYON mapping. Applicable source records define the content; document-level material belongs in metadata, not repeated on every CSV row."
+    },
+    {
+      "name": "rows[].attributes.sss.interfaceAssumptions",
+      "type": "string",
+      "required": false,
+      "requiredWhen": "When the corresponding source profile and record condition apply and the field has not been tailored out.",
+      "governedBy": [
+        "DZR-F1-0060"
+      ],
+      "description": "Preserved source-content slot; this JSON representation is a HALCYON mapping. Applicable source records define the content; document-level material belongs in metadata, not repeated on every CSV row."
+    },
+    {
+      "name": "rows[].attributes.sss.interfaceRequirementSpecRefs",
+      "type": "string",
+      "required": false,
+      "requiredWhen": "When the corresponding source profile and record condition apply and the field has not been tailored out.",
+      "governedBy": [
+        "DZR-F1-0114"
+      ],
+      "description": "Preserved source-content slot; this JSON representation is a HALCYON mapping. Applicable source records define the content; document-level material belongs in metadata, not repeated on every CSV row."
+    },
+    {
+      "name": "rows[].attributes.sss.interfacingEntities",
+      "type": "string",
+      "required": false,
+      "requiredWhen": "When the corresponding source profile and record condition apply and the field has not been tailored out.",
+      "governedBy": [
+        "DZR-F1-0058"
+      ],
+      "description": "Preserved source-content slot; this JSON representation is a HALCYON mapping. Applicable source records define the content; document-level material belongs in metadata, not repeated on every CSV row."
+    },
+    {
+      "name": "rows[].attributes.sss.precedence",
+      "type": "string",
+      "required": false,
+      "requiredWhen": "When the corresponding source profile and record condition apply and the field has not been tailored out.",
+      "governedBy": [
+        "DZR-F1-0107"
+      ],
+      "description": "Preserved source-content slot; this JSON representation is a HALCYON mapping. Applicable source records define the content; document-level material belongs in metadata, not repeated on every CSV row."
+    },
+    {
+      "name": "rows[].attributes.sss.resourceMeasurementConditions",
+      "type": "string",
+      "required": false,
+      "requiredWhen": "When the corresponding source profile and record condition apply and the field has not been tailored out.",
+      "governedBy": [
+        "DZR-F1-0100"
+      ],
+      "description": "Preserved source-content slot; this JSON representation is a HALCYON mapping. Applicable source records define the content; document-level material belongs in metadata, not repeated on every CSV row."
+    },
+    {
+      "name": "rows[].attributes.sss.securityPrivacy.accountability",
+      "type": "string",
+      "required": false,
+      "requiredWhen": "When the corresponding source profile and record condition apply and the field has not been tailored out.",
+      "governedBy": [
+        "DZR-F1-0096"
+      ],
+      "description": "Preserved source-content slot; this JSON representation is a HALCYON mapping. Applicable source records define the content; document-level material belongs in metadata, not repeated on every CSV row."
+    },
+    {
+      "name": "rows[].attributes.sss.securityPrivacy.certificationCriteria",
+      "type": "string",
+      "required": false,
+      "requiredWhen": "When the corresponding source profile and record condition apply and the field has not been tailored out.",
+      "governedBy": [
+        "DZR-F1-0097"
+      ],
+      "description": "Preserved source-content slot; this JSON representation is a HALCYON mapping. Applicable source records define the content; document-level material belongs in metadata, not repeated on every CSV row."
+    },
+    {
+      "name": "rows[].attributes.sss.securityPrivacy.degree",
+      "type": "string",
+      "required": false,
+      "requiredWhen": "When the corresponding source profile and record condition apply and the field has not been tailored out.",
+      "governedBy": [
+        "DZR-F1-0092"
+      ],
+      "description": "Preserved source-content slot; this JSON representation is a HALCYON mapping. Applicable source records define the content; document-level material belongs in metadata, not repeated on every CSV row."
+    },
+    {
+      "name": "rows[].attributes.sss.securityPrivacy.environment",
+      "type": "string",
+      "required": false,
+      "requiredWhen": "When the corresponding source profile and record condition apply and the field has not been tailored out.",
+      "governedBy": [
+        "DZR-F1-0091"
+      ],
+      "description": "Preserved source-content slot; this JSON representation is a HALCYON mapping. Applicable source records define the content; document-level material belongs in metadata, not repeated on every CSV row."
+    },
+    {
+      "name": "rows[].attributes.sss.securityPrivacy.policy",
+      "type": "string",
+      "required": false,
+      "requiredWhen": "When the corresponding source profile and record condition apply and the field has not been tailored out.",
+      "governedBy": [
+        "DZR-F1-0095"
+      ],
+      "description": "Preserved source-content slot; this JSON representation is a HALCYON mapping. Applicable source records define the content; document-level material belongs in metadata, not repeated on every CSV row."
+    },
+    {
+      "name": "rows[].attributes.sss.securityPrivacy.risks",
+      "type": "string",
+      "required": false,
+      "requiredWhen": "When the corresponding source profile and record condition apply and the field has not been tailored out.",
+      "governedBy": [
+        "DZR-F1-0093"
+      ],
+      "description": "Preserved source-content slot; this JSON representation is a HALCYON mapping. Applicable source records define the content; document-level material belongs in metadata, not repeated on every CSV row."
+    },
+    {
+      "name": "rows[].attributes.sss.securityPrivacy.safeguards",
+      "type": "string",
+      "required": false,
+      "requiredWhen": "When the corresponding source profile and record condition apply and the field has not been tailored out.",
+      "governedBy": [
+        "DZR-F1-0094"
+      ],
+      "description": "Preserved source-content slot; this JSON representation is a HALCYON mapping. Applicable source records define the content; document-level material belongs in metadata, not repeated on every CSV row."
+    },
+    {
+      "name": "rows[].attributes.sss.softwareItems",
+      "type": "object",
+      "required": false,
+      "requiredWhen": "When the corresponding source profile and record condition apply and the field has not been tailored out.",
+      "governedBy": [
+        "DZR-F1-0101"
+      ],
+      "description": "Preserved source-content slot; this JSON representation is a HALCYON mapping. Applicable source records define the content; document-level material belongs in metadata, not repeated on every CSV row."
+    },
+    {
+      "name": "rows[].attributes.sss.weight",
+      "type": "string",
+      "required": false,
+      "requiredWhen": "When the corresponding source profile and record condition apply and the field has not been tailored out.",
+      "governedBy": [
+        "DZR-F1-0107"
+      ],
+      "description": "Preserved source-content slot; this JSON representation is a HALCYON mapping. Applicable source records define the content; document-level material belongs in metadata, not repeated on every CSV row."
+    }
+  ],
+  "rowSchema": {
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "urn:halcyon:f1:row-schema:v1",
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "baselineId",
+      "requirementId",
+      "wbsId",
+      "tier",
+      "requirementTitle",
+      "requirementText",
+      "sourceDocumentId",
+      "sourceDocumentTitle",
+      "sourceEdition",
+      "sourceParagraph",
+      "sourcePassage",
+      "sourcePassageSHA256",
+      "wordingSHA256",
+      "parentRequirementIds",
+      "verificationMethods",
+      "classification",
+      "distributionStatement",
+      "attributes"
+    ],
+    "properties": {
+      "baselineId": {
+        "type": "string",
+        "minLength": 1
+      },
+      "requirementId": {
+        "type": "string",
+        "minLength": 1
+      },
+      "wbsId": {
+        "type": "string",
+        "minLength": 1
+      },
+      "tier": {
+        "type": "integer",
+        "minimum": 0,
+        "maximum": 3
+      },
+      "requirementTitle": {
+        "type": "string",
+        "minLength": 1
+      },
+      "requirementText": {
+        "type": "string",
+        "minLength": 1
+      },
+      "sourceDocumentId": {
+        "type": "string",
+        "minLength": 1
+      },
+      "sourceDocumentTitle": {
+        "type": "string",
+        "minLength": 1
+      },
+      "sourceEdition": {
+        "type": "string",
+        "minLength": 1
+      },
+      "sourceParagraph": {
+        "type": "string",
+        "minLength": 1
+      },
+      "sourcePassage": {
+        "type": "string",
+        "minLength": 1
+      },
+      "sourcePassageSHA256": {
+        "type": "string",
+        "pattern": "^[0-9a-f]{64}$"
+      },
+      "wordingSHA256": {
+        "type": "string",
+        "pattern": "^[0-9a-f]{64}$"
+      },
+      "parentRequirementIds": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "minLength": 1
+        },
+        "uniqueItems": true
+      },
+      "verificationMethods": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "minLength": 1,
+          "enum": [
+            "analysis",
+            "demonstration",
+            "inspection",
+            "test",
+            "special"
+          ]
+        },
+        "uniqueItems": true
+      },
+      "classification": {
+        "const": "UNCLASSIFIED"
+      },
+      "distributionStatement": {
+        "type": "string",
+        "minLength": 1
+      },
+      "attributes": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "sss": {
+            "type": "object"
+          },
+          "rtvm": {
+            "type": "object"
+          },
+          "specification": {
+            "type": "object"
+          },
+          "guidance": {
+            "type": "object"
+          }
+        }
+      },
+      "stateModeIds": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "minLength": 1
+        },
+        "uniqueItems": true
+      },
+      "sectionId": {
+        "type": "string",
+        "minLength": 1
+      },
+      "capabilityId": {
+        "type": "string",
+        "minLength": 1
+      },
+      "interfaceId": {
+        "type": "string",
+        "minLength": 1
+      },
+      "criticality": {
+        "type": "string",
+        "minLength": 1
+      }
+    }
+  },
+  "metadataSchema": {
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "schemaVersion",
+      "program",
+      "baselineId",
+      "baselineVersion",
+      "status",
+      "classification",
+      "publicReleaseBasis",
+      "appliedProfiles",
+      "contractualSourceProfiles",
+      "sampleOnly",
+      "sourceCoverageComplete",
+      "joinCatalogs",
+      "references",
+      "sss",
+      "rtvm",
+      "contentDeclarations",
+      "humanReview"
+    ],
+    "properties": {
+      "schemaVersion": {
+        "const": "HALCYON-F1-CSV-1"
+      },
+      "program": {
+        "const": "HALCYON"
+      },
+      "baselineId": {
+        "type": "string",
+        "minLength": 1
+      },
+      "baselineVersion": {
+        "type": "string",
+        "minLength": 1
+      },
+      "status": {
+        "type": "string",
+        "minLength": 1
+      },
+      "classification": {
+        "const": "UNCLASSIFIED"
+      },
+      "publicReleaseBasis": {
+        "type": "string",
+        "minLength": 1
+      },
+      "appliedProfiles": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "minLength": 1
+        },
+        "uniqueItems": true
+      },
+      "contractualSourceProfiles": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "minLength": 1
+        },
+        "uniqueItems": true
+      },
+      "sampleOnly": {
+        "const": true
+      },
+      "sourceCoverageComplete": {
+        "type": "boolean"
+      },
+      "joinCatalogs": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "wbsIds",
+          "requirementIds",
+          "basis"
+        ],
+        "properties": {
+          "wbsIds": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            },
+            "uniqueItems": true
+          },
+          "requirementIds": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            },
+            "uniqueItems": true
+          },
+          "basis": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      },
+      "references": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "id",
+            "title",
+            "edition",
+            "date",
+            "source"
+          ],
+          "properties": {
+            "id": {
+              "type": "string",
+              "minLength": 1
+            },
+            "title": {
+              "type": "string",
+              "minLength": 1
+            },
+            "edition": {
+              "type": "string",
+              "minLength": 1
+            },
+            "date": {
+              "type": "string",
+              "minLength": 1
+            },
+            "source": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        }
+      },
+      "sss": {
+        "type": "object"
+      },
+      "rtvm": {
+        "type": "object"
+      },
+      "contentDeclarations": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "publicFictional",
+          "cui",
+          "classified",
+          "exportRestricted",
+          "proprietary"
+        ],
+        "properties": {
+          "publicFictional": {
+            "const": true
+          },
+          "cui": {
+            "const": false
+          },
+          "classified": {
+            "const": false
+          },
+          "exportRestricted": {
+            "const": false
+          },
+          "proprietary": {
+            "const": false
+          }
+        }
+      },
+      "humanReview": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "governmentConformance",
+          "sourceAuthenticity",
+          "publicContentAttestation"
+        ],
+        "properties": {
+          "governmentConformance": {
+            "type": "string",
+            "minLength": 1
+          },
+          "sourceAuthenticity": {
+            "type": "string",
+            "minLength": 1
+          },
+          "publicContentAttestation": {
+            "const": true
+          }
+        }
+      }
+    }
+  },
+  "csvDecoding": {
+    "columns": [
+      "baselineId",
+      "requirementId",
+      "wbsId",
+      "tier",
+      "requirementTitle",
+      "requirementText",
+      "sourceDocumentId",
+      "sourceDocumentTitle",
+      "sourceEdition",
+      "sourceParagraph",
+      "sourcePassage",
+      "sourcePassageSHA256",
+      "wordingSHA256",
+      "parentRequirementIds",
+      "verificationMethods",
+      "classification",
+      "distributionStatement",
+      "attributes",
+      "stateModeIds",
+      "sectionId",
+      "capabilityId",
+      "interfaceId",
+      "criticality"
+    ],
+    "encoding": "UTF-8 without BOM",
+    "headerRule": "Exactly the listed columns in the listed order; duplicate, missing, or unknown headers reject.",
+    "blankCells": "Blank optional cells are omitted from the decoded row. Blank required cells reject; an empty parent-link array is encoded as [] rather than a blank cell.",
+    "integerCells": "tier is parsed as a base-10 integer 0..3; other IDs and version values remain strings.",
+    "jsonCells": "parentRequirementIds, verificationMethods, stateModeIds are JSON arrays; attributes is a JSON object. Reject malformed JSON and duplicate JSON member names.",
+    "stringCells": "Every other cell remains a string, including numeric-looking WBS/requirement IDs.",
+    "recordOrder": "Source order is retained until canonicalization, then sorted by primary key."
+  },
+  "metadataContract": {
+    "required": [
+      "schemaVersion",
+      "program",
+      "baselineId",
+      "baselineVersion",
+      "status",
+      "classification",
+      "publicReleaseBasis",
+      "appliedProfiles",
+      "contractualSourceProfiles",
+      "sampleOnly",
+      "sourceCoverageComplete",
+      "joinCatalogs",
+      "references",
+      "sss",
+      "rtvm",
+      "contentDeclarations",
+      "humanReview"
+    ],
+    "profilePaths": {
+      "sss": "Document-level SSS title/index/tailoring and other content, per record conditions.",
+      "rtvm": "RTVM cover/change history/database description/relationships/dictionary. Not supplied as fictitious contractor identity or contract number.",
+      "references": "Exact document edition registry, independent of the current catalog."
+    },
+    "noFabricatedContractData": true
+  },
+  "lookupCatalogAuthority": "Sample joinCatalogs are demonstration fixtures. In operational ingestion the receiver uses independently controlled F5 and requirement registries; an incoming file cannot approve its own new join targets.",
+  "explicitRestrictedDistributionLabels": [
+    "CUI",
+    "SECRET",
+    "CONFIDENTIAL",
+    "PROPRIETARY",
+    "EXPORT CONTROLLED",
+    "EXPORT-CONTROLLED",
+    "ITAR"
+  ],
+  "markings": "Carry classification and distributionStatement on every row and in metadata; preserve original source markings in the controlled source registry. This demo accepts only fictional public UNCLASSIFIED material. Marking validation and a digest do not prove release authority or detect all sensitive information. No CUI storage/control claim is made.",
+  "localRules": [
+    {
+      "id": "HALCYON-F1-LOCAL-001",
+      "basis": "Explicit user instruction",
+      "rule": "Reject every row missing either requirementId or wbsId; resolve both keys against the controlled requirement registry and F5 WBS index."
+    },
+    {
+      "id": "HALCYON-F1-LOCAL-002",
+      "basis": "HALCYON ingestion design",
+      "rule": "Require unique (baselineId, requirementId), explicit source identity/edition/paragraph, and one declared public-demo marking profile."
+    },
+    {
+      "id": "HALCYON-F1-LOCAL-003",
+      "basis": "Explicit user instruction",
+      "rule": "Compute SHA-256 using UTF-8, Unicode NFC, trim and Unicode-whitespace collapse, no final newline, lowercase hexadecimal; never treat a digest as proof of authenticity or compliance."
+    },
+    {
+      "id": "HALCYON-F1-LOCAL-004",
+      "basis": "HALCYON public-demo boundary",
+      "rule": "Accept only explicitly public fictional sample data. Reject declared CUI/classified/export-restricted/proprietary content. Labels and attestation cannot guarantee safe content; no automatic marking classification is claimed."
+    },
+    {
+      "id": "HALCYON-F1-LOCAL-005",
+      "basis": "HALCYON ingestion design",
+      "rule": "Validate CSV parsing, JSON-encoded cells, required fields, references, and normalized hashes before accepting a drop. Keep source applicability review separate from transport validation."
+    },
+    {
+      "id": "HALCYON-F1-LOCAL-006",
+      "basis": "HALCYON change-management choice",
+      "rule": "Receive each approved baseline and each approved change; retain immutable prior snapshots. No universal monthly or real-time source cadence is asserted."
+    }
+  ],
+  "acceptance": [
+    {
+      "rule": "Reject metadata that fails metadataSchema; reject rows whose baselineId differs from metadata.baselineId.",
+      "severity": "reject",
+      "governedBy": [],
+      "localRuleIds": [
+        "HALCYON-F1-LOCAL-005"
+      ],
+      "check": "json_schema(metadataSchema, metadata) AND every(rows, row.baselineId=metadata.baselineId)"
+    },
+    {
+      "rule": "Reject rows that fail rowSchema after CSV JSON-cell decoding.",
+      "severity": "reject",
+      "governedBy": [],
+      "localRuleIds": [
+        "HALCYON-F1-LOCAL-005"
+      ],
+      "check": "json_schema(rowSchema, row)"
+    },
+    {
+      "rule": "Reject blank requirementId or wbsId on every row.",
+      "severity": "reject",
+      "governedBy": [],
+      "localRuleIds": [
+        "HALCYON-F1-LOCAL-001"
+      ],
+      "check": "nonempty(row.requirementId) AND nonempty(row.wbsId)"
+    },
+    {
+      "rule": "Reject duplicate (baselineId, requirementId) keys.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F1-0032",
+        "DZR-F1-0053"
+      ],
+      "localRuleIds": [
+        "HALCYON-F1-LOCAL-002"
+      ],
+      "check": "count(keys) = count(unique(keys))"
+    },
+    {
+      "rule": "Reject a requirement join absent from the controlled requirement registry or a WBS join absent from the supplied controlled F5 index.",
+      "severity": "reject",
+      "governedBy": [],
+      "localRuleIds": [
+        "HALCYON-F1-LOCAL-001"
+      ],
+      "check": "row.requirementId IN catalogs.requirementIds AND row.wbsId IN catalogs.wbsIds"
+    },
+    {
+      "rule": "Reject parent links that do not resolve to a requirement in this drop or its declared external requirement registry. Empty parent lists remain valid for documented top-level/derived content.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F1-0111",
+        "DZR-F1-0112",
+        "DZR-F1-0113",
+        "DZR-F1-0114"
+      ],
+      "localRuleIds": [
+        "HALCYON-F1-LOCAL-005"
+      ],
+      "check": "every(parentRequirementIds, id IN catalogs.requirementIds)"
+    },
+    {
+      "rule": "Reject sourcePassageSHA256 or wordingSHA256 mismatches.",
+      "severity": "reject",
+      "governedBy": [],
+      "localRuleIds": [
+        "HALCYON-F1-LOCAL-003"
+      ],
+      "check": "H(row.sourcePassage)=row.sourcePassageSHA256 AND H(row.requirementText)=row.wordingSHA256"
+    },
+    {
+      "rule": "Reject a supplied baseline hash that differs from the recomputed canonical snapshot hash.",
+      "severity": "reject",
+      "governedBy": [],
+      "localRuleIds": [
+        "HALCYON-F1-LOCAL-003"
+      ],
+      "check": "H(canonicalSnapshot)=suppliedBaselineHash"
+    },
+    {
+      "rule": "Reject non-UNCLASSIFIED markings, failed public-fictional attestation, restrictive content declarations, or explicit contradictory restricted distribution labels. Content review remains necessary; this check cannot discover undisclosed sensitivity.",
+      "severity": "reject",
+      "governedBy": [],
+      "localRuleIds": [
+        "HALCYON-F1-LOCAL-004"
+      ],
+      "check": "json_schema(metadataSchema, metadata) AND all(row.classification=UNCLASSIFIED) AND no_explicit_restricted_distribution_label(rows)"
+    },
+    {
+      "rule": "Warn that transport acceptance does not establish contractual SSS/RTVM/specification compliance. Applicable source-profile content and qualitative wording criteria require human review.",
+      "severity": "warn",
+      "governedBy": [
+        "DZR-F1-0121",
+        "DZR-F1-0122",
+        "DZR-F1-0123"
+      ],
+      "localRuleIds": [
+        "HALCYON-F1-LOCAL-005"
+      ],
+      "check": "human_source_profile_review"
+    },
+    {
+      "rule": "Warn when an applicable source profile lacks required metadata or field content, has missing tailoring decisions, or depends on an uninspected source. Do not promote to approved conformance until resolved.",
+      "severity": "warn",
+      "governedBy": [
+        "DZR-F1-0001",
+        "DZR-F1-0002",
+        "DZR-F1-0003",
+        "DZR-F1-0004",
+        "DZR-F1-0005",
+        "DZR-F1-0006",
+        "DZR-F1-0007",
+        "DZR-F1-0008",
+        "DZR-F1-0009",
+        "DZR-F1-0010",
+        "DZR-F1-0011",
+        "DZR-F1-0012",
+        "DZR-F1-0013",
+        "DZR-F1-0014",
+        "DZR-F1-0015",
+        "DZR-F1-0016",
+        "DZR-F1-0017",
+        "DZR-F1-0018",
+        "DZR-F1-0019",
+        "DZR-F1-0020",
+        "DZR-F1-0021",
+        "DZR-F1-0022",
+        "DZR-F1-0023",
+        "DZR-F1-0024",
+        "DZR-F1-0025",
+        "DZR-F1-0026",
+        "DZR-F1-0027",
+        "DZR-F1-0028",
+        "DZR-F1-0029",
+        "DZR-F1-0030",
+        "DZR-F1-0031",
+        "DZR-F1-0032",
+        "DZR-F1-0033",
+        "DZR-F1-0034",
+        "DZR-F1-0035",
+        "DZR-F1-0036",
+        "DZR-F1-0037",
+        "DZR-F1-0038",
+        "DZR-F1-0039",
+        "DZR-F1-0040",
+        "DZR-F1-0041",
+        "DZR-F1-0042",
+        "DZR-F1-0043",
+        "DZR-F1-0044",
+        "DZR-F1-0045",
+        "DZR-F1-0046",
+        "DZR-F1-0047",
+        "DZR-F1-0048",
+        "DZR-F1-0049",
+        "DZR-F1-0050",
+        "DZR-F1-0051",
+        "DZR-F1-0052",
+        "DZR-F1-0053",
+        "DZR-F1-0054",
+        "DZR-F1-0055",
+        "DZR-F1-0056",
+        "DZR-F1-0057",
+        "DZR-F1-0058",
+        "DZR-F1-0059",
+        "DZR-F1-0060",
+        "DZR-F1-0061",
+        "DZR-F1-0062",
+        "DZR-F1-0063",
+        "DZR-F1-0064",
+        "DZR-F1-0065",
+        "DZR-F1-0066",
+        "DZR-F1-0067",
+        "DZR-F1-0068",
+        "DZR-F1-0069",
+        "DZR-F1-0070",
+        "DZR-F1-0071",
+        "DZR-F1-0072",
+        "DZR-F1-0073",
+        "DZR-F1-0074",
+        "DZR-F1-0075",
+        "DZR-F1-0076",
+        "DZR-F1-0077",
+        "DZR-F1-0078",
+        "DZR-F1-0079",
+        "DZR-F1-0080",
+        "DZR-F1-0081",
+        "DZR-F1-0082",
+        "DZR-F1-0083",
+        "DZR-F1-0084",
+        "DZR-F1-0085",
+        "DZR-F1-0086",
+        "DZR-F1-0087",
+        "DZR-F1-0088",
+        "DZR-F1-0089",
+        "DZR-F1-0090",
+        "DZR-F1-0091",
+        "DZR-F1-0092",
+        "DZR-F1-0093",
+        "DZR-F1-0094",
+        "DZR-F1-0095",
+        "DZR-F1-0096",
+        "DZR-F1-0097",
+        "DZR-F1-0098",
+        "DZR-F1-0099",
+        "DZR-F1-0100",
+        "DZR-F1-0101",
+        "DZR-F1-0102",
+        "DZR-F1-0103",
+        "DZR-F1-0104",
+        "DZR-F1-0105",
+        "DZR-F1-0106",
+        "DZR-F1-0107",
+        "DZR-F1-0108",
+        "DZR-F1-0109",
+        "DZR-F1-0110",
+        "DZR-F1-0111",
+        "DZR-F1-0112",
+        "DZR-F1-0113",
+        "DZR-F1-0114",
+        "DZR-F1-0115",
+        "DZR-F1-0116",
+        "DZR-F1-0117",
+        "DZR-F1-0118",
+        "DZR-F1-0119",
+        "DZR-F1-0120",
+        "DZR-F1-0121",
+        "DZR-F1-0122",
+        "DZR-F1-0123",
+        "DZR-F1-0124",
+        "DZR-F1-0125",
+        "DZR-F1-0126",
+        "DZR-F1-0127",
+        "DZR-F1-0128",
+        "DZR-F1-0129",
+        "DZR-F1-0130",
+        "DZR-F1-0131",
+        "DZR-F1-0132",
+        "DZR-F1-0133",
+        "DZR-F1-0134",
+        "DZR-F1-0135",
+        "DZR-F1-0136",
+        "DZR-F1-0137",
+        "DZR-F1-0138",
+        "DZR-F1-0139",
+        "DZR-F1-0140",
+        "DZR-F1-0141",
+        "DZR-F1-0142",
+        "DZR-F1-0143",
+        "DZR-F1-0144",
+        "DZR-F1-0145",
+        "DZR-F1-0146",
+        "DZR-F1-0147",
+        "DZR-F1-0148",
+        "DZR-F1-0149",
+        "DZR-F1-0150",
+        "DZR-F1-0151",
+        "DZR-F1-0152",
+        "DZR-F1-0153",
+        "DZR-F1-0154",
+        "DZR-F1-0155",
+        "DZR-F1-0156",
+        "DZR-F1-0157",
+        "DZR-F1-0158",
+        "DZR-F1-0159",
+        "DZR-F1-0160",
+        "DZR-F1-0161",
+        "DZR-F1-0162",
+        "DZR-F1-0163",
+        "DZR-F1-0164",
+        "DZR-F1-0165",
+        "DZR-F1-0166",
+        "DZR-F1-0167",
+        "DZR-F1-0168",
+        "DZR-F1-0169",
+        "DZR-F1-0170",
+        "DZR-F1-0171",
+        "DZR-F1-0172",
+        "DZR-F1-0173",
+        "DZR-F1-0174",
+        "DZR-F1-0175",
+        "DZR-F1-0176",
+        "DZR-F1-0177",
+        "DZR-F1-0178",
+        "DZR-F1-0179",
+        "DZR-F1-0180",
+        "DZR-F1-0181",
+        "DZR-F1-0182",
+        "DZR-F1-0183",
+        "DZR-F1-0184",
+        "DZR-F1-0185",
+        "DZR-F1-0186",
+        "DZR-F1-0187",
+        "DZR-F1-0188",
+        "DZR-F1-0189",
+        "DZR-F1-0190",
+        "DZR-F1-0191",
+        "DZR-F1-0192",
+        "DZR-F1-0193",
+        "DZR-F1-0194",
+        "DZR-F1-0195",
+        "DZR-F1-0196",
+        "DZR-F1-0197",
+        "DZR-F1-0198",
+        "DZR-F1-0199",
+        "DZR-F1-0200",
+        "DZR-F1-0201",
+        "DZR-F1-0202",
+        "DZR-F1-0203",
+        "DZR-F1-0204",
+        "DZR-F1-0205",
+        "DZR-F1-0206",
+        "DZR-F1-0207",
+        "DZR-F1-0208",
+        "DZR-F1-0209",
+        "DZR-F1-0210",
+        "DZR-F1-0211",
+        "DZR-F1-0212",
+        "DZR-F1-0213",
+        "DZR-F1-0214",
+        "DZR-F1-0215",
+        "DZR-F1-0216",
+        "DZR-F1-0217",
+        "DZR-F1-0218",
+        "DZR-F1-0219",
+        "DZR-F1-0220",
+        "DZR-F1-0221",
+        "DZR-F1-0222",
+        "DZR-F1-0223",
+        "DZR-F1-0224",
+        "DZR-F1-0225",
+        "DZR-F1-0226",
+        "DZR-F1-0227"
+      ],
+      "localRuleIds": [
+        "HALCYON-F1-LOCAL-005"
+      ],
+      "check": "human_applicability_and_coverage_review"
+    },
+    {
+      "rule": "Warn on guidance-only quality findings; do not reject a drop solely on an unadopted handbook statement.",
+      "severity": "warn",
+      "governedBy": [
+        "DZR-F1-0228",
+        "DZR-F1-0229",
+        "DZR-F1-0230"
+      ],
+      "localRuleIds": [],
+      "check": "human_guidance_review"
+    }
+  ],
+  "canonicalForm": "Decode CSV under this profile; reject duplicate columns and malformed JSON cells; preserve numeric types; reject non-finite numbers. NFC-normalize every string, trim, and collapse Unicode whitespace to one ASCII space. Sort rows lexicographically by (baselineId,requirementId). Serialize exactly {metadata,rows} with recursively sorted object keys, compact separators, UTF-8, literal Unicode, no trailing newline. Preserve array order. Do not include supplied hashes outside the row content, ingestion timestamps, or the baseline hash itself in the snapshot. Apply the task normalization once more to the resulting canonical JSON before SHA-256.",
+  "hashAlgorithm": "SHA-256(UTF-8(collapseWhitespace(trim(NFC(text))))), lowercase hexadecimal",
+  "baselineHash": "0bf51a10034763b82948d83f6ede8b99caf8731372c199ae80b1c36b2658d4ee",
+  "baselineHashScope": "The included sample metadata plus the three included sample rows; verified against F1-baseline-snapshot.json. This digest is not a hash of the contract object or a signature.",
+  "mil-hdbk-539a": [
+    {
+      "section": "3.2.9; 4.8.2.1.3",
+      "concept": "authoritative source of truth",
+      "howThisFeedServesIt": "Preserve source document identity, edition, paragraph, original passage, and stable requirement identity."
+    },
+    {
+      "section": "4.8.2.3",
+      "concept": "digital thread",
+      "howThisFeedServesIt": "Join requirement records to WBS and explicit parent/verification links without replacing source authority."
+    },
+    {
+      "section": "4.8.2.1; 4.8.2.1.1; 4.8.2.1.2",
+      "concept": "digital system model",
+      "howThisFeedServesIt": "Provide a controlled requirements-domain data contribution."
+    },
+    {
+      "section": "4.8.2.4",
+      "concept": "stakeholder view",
+      "howThisFeedServesIt": "Generate filtered requirement views from a declared baseline."
+    },
+    {
+      "section": "8.1.1; 8.4.3; 8.4.5",
+      "concept": "lifecycle review",
+      "howThisFeedServesIt": "Supply traceable review artifacts and verification-method metadata; content maturity is reviewed separately."
+    }
+  ],
+  "frameworkSupportingSections": [
+    "4.8.1.3",
+    "4.8.1.4",
+    "5.2.4.8",
+    "5.2.8.5",
+    "5.2.8.8",
+    "6.9.1.1",
+    "6.9.1.2",
+    "6.9.2",
+    "6.9.3"
+  ],
+  "frameworkEdition": "MIL-HDBK-539A with Change 1, 2026-06-10",
+  "frameworkUrl": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5801571",
+  "sample": "baselineId,requirementId,wbsId,tier,requirementTitle,requirementText,sourceDocumentId,sourceDocumentTitle,sourceEdition,sourceParagraph,sourcePassage,sourcePassageSHA256,wordingSHA256,parentRequirementIds,verificationMethods,classification,distributionStatement,attributes,stateModeIds,sectionId,capabilityId,interfaceId,criticality\nHALCYON-DEMO-B001,HALCYON-R-001,1.1,0,Baseline identity,The HALCYON console shall display the active baseline identifier.,HALCYON-DEMO-SRD,HALCYON fictional demonstration requirements,Demo 1,3.1,The HALCYON console shall display the active baseline identifier.,8a95f466018a07043d3772431a7dd9bea50b152bd84ecdd873a14fdc88d2630a,8a95f466018a07043d3772431a7dd9bea50b152bd84ecdd873a14fdc88d2630a,[],\"[\"\"inspection\"\"]\",UNCLASSIFIED,PUBLIC FICTIONAL SAMPLE; NOT A GOVERNMENT RELEASE DETERMINATION,\"{\"\"rtvm\"\":{\"\"requirement_status\"\":\"\"Under Review\"\",\"\"comments\"\":\"\"Synthetic demonstration row; no claim of contractual acceptance or verification completion.\"\"}}\",,,,,\nHALCYON-DEMO-B001,HALCYON-R-002,1.2,0,Baseline export,The HALCYON console shall export the selected baseline as a UTF-8 CSV file.,HALCYON-DEMO-SRD,HALCYON fictional demonstration requirements,Demo 1,3.2,The HALCYON console shall export the selected baseline as a UTF-8 CSV file.,a0fdcb6cf39fef672a6b66f0ed5c323e2792848e5bb9c7415af3f171b3c6253e,a0fdcb6cf39fef672a6b66f0ed5c323e2792848e5bb9c7415af3f171b3c6253e,[],\"[\"\"test\"\"]\",UNCLASSIFIED,PUBLIC FICTIONAL SAMPLE; NOT A GOVERNMENT RELEASE DETERMINATION,\"{\"\"rtvm\"\":{\"\"requirement_status\"\":\"\"Under Review\"\",\"\"comments\"\":\"\"Synthetic demonstration row; no claim of contractual acceptance or verification completion.\"\"}}\",,,,,\nHALCYON-DEMO-B001,HALCYON-R-003,1.3,0,Source navigation,The HALCYON console shall open the source paragraph linked to the selected requirement.,HALCYON-DEMO-SRD,HALCYON fictional demonstration requirements,Demo 1,3.3,The HALCYON console shall open the source paragraph linked to the selected requirement.,077541674430e8c53238d37a4dfeddebfe07a53b77c0a41594cc58178233fd4c,077541674430e8c53238d37a4dfeddebfe07a53b77c0a41594cc58178233fd4c,[],\"[\"\"demonstration\"\"]\",UNCLASSIFIED,PUBLIC FICTIONAL SAMPLE; NOT A GOVERNMENT RELEASE DETERMINATION,\"{\"\"rtvm\"\":{\"\"requirement_status\"\":\"\"Under Review\"\",\"\"comments\"\":\"\"Synthetic demonstration row; no claim of contractual acceptance or verification completion.\"\"}}\",,,,,\n",
+  "sampleMetadata": {
+    "schemaVersion": "HALCYON-F1-CSV-1",
+    "program": "HALCYON",
+    "baselineId": "HALCYON-DEMO-B001",
+    "baselineVersion": "1",
+    "status": "sample",
+    "classification": "UNCLASSIFIED",
+    "publicReleaseBasis": "All three sample rows are newly authored fiction. This is not a government release determination.",
+    "appliedProfiles": [
+      "HALCYON-F1-PUBLIC-DEMO-v1"
+    ],
+    "contractualSourceProfiles": [],
+    "sampleOnly": true,
+    "sourceCoverageComplete": false,
+    "joinCatalogs": {
+      "wbsIds": [
+        "1.1",
+        "1.2",
+        "1.3"
+      ],
+      "requirementIds": [
+        "HALCYON-R-001",
+        "HALCYON-R-002",
+        "HALCYON-R-003"
+      ],
+      "basis": "Fictional lookup fixtures only; no commodity-specific MIL-STD-881 appendix asserted."
+    },
+    "references": [
+      {
+        "id": "HALCYON-DEMO-SRD",
+        "title": "HALCYON fictional demonstration requirements",
+        "edition": "Demo 1",
+        "date": "2026-11-06",
+        "source": "Fictional source included in this package"
+      }
+    ],
+    "sss": {},
+    "rtvm": {},
+    "contentDeclarations": {
+      "publicFictional": true,
+      "cui": false,
+      "classified": false,
+      "exportRestricted": false,
+      "proprietary": false
+    },
+    "humanReview": {
+      "governmentConformance": "not assessed",
+      "sourceAuthenticity": "not established by hashes",
+      "publicContentAttestation": true
+    }
+  },
+  "coverage": {
+    "exhaustive": false,
+    "reason": "Five common-policy sources could not be directly inspected. Complete specification packaging is assigned to F2. Guidance-only records remain advisory. No unknown obligation count is represented as zero."
+  }
+}

@@ -1,0 +1,994 @@
+[
+ {
+  "id": "DZR-F9-0001",
+  "alias": "DI-SESS-81253E §1; PDF 1",
+  "source": {
+   "docId": "DI-SESS-81253E",
+   "edition": "Revision E, 4 August 2020; validated by Notice 1, 31 March 2025",
+   "paragraph": "1; PDF 1",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5767292",
+   "passage": "The applicable issue of the documents cited herein, including their approval dates and dates of any applicable amendments, notices, and revisions, shall be as specified in the contract.",
+   "passageSHA256": "549fa95ee28fd854ef56c5a29de96674e25c34b33bf9cd11d2b5da43c8543ef3"
+  },
+  "wording": "The applicable issues of documents cited by DI-SESS-81253E shall match the contract-specified issues, including approval dates and applicable amendment, notice, and revision dates.",
+  "actor": "The applicable issues of documents cited by DI-SESS-81253E",
+  "condition": "When DI-SESS-81253E is invoked by the applicable contract or CDRL.",
+  "verificationIntent": "inspection",
+  "kind": "currency",
+  "binding": true,
+  "fields": [
+   "applicableSourceIssues"
+  ],
+  "status": "sample",
+  "notes": "Operative DID data-product requirement, binding only when actually invoked by the applicable contract/CDRL and within the source conditions. Coherent content lists are grouped; product classes, installed-part instances, and individual subfields do not multiply records. One exact consecutive source span; layout whitespace normalized. Every span matches the opened source PDF text by cited page after NFC and layout-whitespace collapse.",
+  "wordingSHA256": "c82d18aad3ddcb127bd859f5b0f7d40e4ec8eb9c9d625414811bf98ed65881f9"
+ },
+ {
+  "id": "DZR-F9-0002",
+  "alias": "DI-SESS-81253E §2; PDF 1",
+  "source": {
+   "docId": "DI-SESS-81253E",
+   "edition": "Revision E, 4 August 2020; validated by Notice 1, 31 March 2025",
+   "paragraph": "2; PDF 1",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5767292",
+   "passage": "The CSA Information shall be in the contractor’s format.",
+   "passageSHA256": "45bf7814ae7283ea96f7450df8e4aeb2756c28539393c7b0965f5649b942da29"
+  },
+  "wording": "The CSA Information shall use the contractor format.",
+  "actor": "The CSA Information",
+  "condition": "When DI-SESS-81253E is invoked by the applicable contract or CDRL.",
+  "verificationIntent": "inspection",
+  "kind": "structure",
+  "binding": true,
+  "fields": [
+   "nativeFormat"
+  ],
+  "status": "sample",
+  "notes": "Operative DID data-product requirement, binding only when actually invoked by the applicable contract/CDRL and within the source conditions. Coherent content lists are grouped; product classes, installed-part instances, and individual subfields do not multiply records. One exact consecutive source span; layout whitespace normalized. Every span matches the opened source PDF text by cited page after NFC and layout-whitespace collapse.",
+  "wordingSHA256": "fe35afe506d005deb53cf984de8873d0b2899df51b3847b84216449c3485bbc6"
+ },
+ {
+  "id": "DZR-F9-0003",
+  "alias": "DI-SESS-81253E §3; 3(a); 3(b); 3(c); 3(d); PDF 1",
+  "source": {
+   "docId": "DI-SESS-81253E",
+   "edition": "Revision E, 4 August 2020; validated by Notice 1, 31 March 2025",
+   "paragraph": "3; 3(a); 3(b); 3(c); 3(d); PDF 1",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5767292",
+   "passage": "The CSA Information shall identify:\n\na. A listing of specifications generated for this project, including: unique identifier, title, revision, Next Higher Assembly (NHA), and change history from initial release.\n\nb. A listing of engineering design data and associated lists generated for this project, including: unique identifier, title, revision, NHA, related specifications, and change history from initial release.\n\nc. A listing of software and firmware generated for this project, including: unique identifier, title, revision, NHA, related specifications, and change history from initial release.\n\nd. A listing of all supporting documents (such as test procedures, reports, analyses) generated as a part of this project, including: unique identifier, title, revision, NHA, related specifications, and change history from initial release.",
+   "passageSHA256": "3c42fbf8cff349d552db9517ad0530d52e45b35438f66660d006f5fbe5e0e8f7"
+  },
+  "wording": "The CSA Information shall list project-generated specifications, engineering design data and associated lists, software and firmware, and supporting documents with unique identifier, title, revision, Next Higher Assembly, and change history from initial release, including related specifications for engineering design data, software, firmware, and supporting documents.",
+  "actor": "The CSA Information",
+  "condition": "When DI-SESS-81253E is invoked by the applicable contract or CDRL; related specifications are expressly included for engineering design data/associated lists, software/firmware, and supporting documents; section 3(a) does not add the related-specifications field to the specification inventory.",
+  "verificationIntent": "inspection",
+  "kind": "content",
+  "binding": true,
+  "fields": [
+   "artifactInventory",
+   "artifactCategory",
+   "uniqueIdentifier",
+   "title",
+   "revision",
+   "nextHigherAssembly",
+   "changeHistory",
+   "relatedSpecifications"
+  ],
+  "status": "sample",
+  "notes": "Operative DID data-product requirement, binding only when actually invoked by the applicable contract/CDRL and within the source conditions. Coherent content lists are grouped; product classes, installed-part instances, and individual subfields do not multiply records. Composite quotation: separate exact spans are separated by blank lines, with intervening text or page furniture omitted; no claim of consecutive prose. Span PDF pages: 1,1,1,1,1. Every span matches the opened source PDF text by cited page after NFC and layout-whitespace collapse. The four repeated inventory fieldsets are one coherent information obligation with category-dependent related-specifications applicability. No separate requirement per artifact instance or supporting-document example.",
+  "wordingSHA256": "f2818aa97b65df6f5650cad9f2c6fdd43ae4068ddcc17e21e39b4f94238d4e90"
+ },
+ {
+  "id": "DZR-F9-0004",
+  "alias": "DI-SESS-81253E §3; 3(e); PDF 1,2",
+  "source": {
+   "docId": "DI-SESS-81253E",
+   "edition": "Revision E, 4 August 2020; validated by Notice 1, 31 March 2025",
+   "paragraph": "3; 3(e); PDF 1,2",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5767292",
+   "passage": "The CSA Information shall identify:\n\ne. Special identifiers utilized to “tag” parts, assemblies, and software used in each product.",
+   "passageSHA256": "915614134d8b6e0440cf4f4efd85ad5b4e9ac6eda1a2c0fc90106b56a9623ac4"
+  },
+  "wording": "The CSA Information shall identify special identifiers used to tag parts, assemblies, and software within each product.",
+  "actor": "The CSA Information",
+  "condition": "When DI-SESS-81253E is invoked by the applicable contract or CDRL.",
+  "verificationIntent": "inspection",
+  "kind": "identifier",
+  "binding": true,
+  "fields": [
+   "specialIdentifiers"
+  ],
+  "status": "sample",
+  "notes": "Operative DID data-product requirement, binding only when actually invoked by the applicable contract/CDRL and within the source conditions. Coherent content lists are grouped; product classes, installed-part instances, and individual subfields do not multiply records. Composite quotation: separate exact spans are separated by blank lines, with intervening text or page furniture omitted; no claim of consecutive prose. Span PDF pages: 1,2. Every span matches the opened source PDF text by cited page after NFC and layout-whitespace collapse.",
+  "wordingSHA256": "c39766c77966f4928d64a4b4b8f04fdb988776576ac626782d8700f95f28913c"
+ },
+ {
+  "id": "DZR-F9-0005",
+  "alias": "DI-SESS-81253E §3; 3(f); PDF 1,2",
+  "source": {
+   "docId": "DI-SESS-81253E",
+   "edition": "Revision E, 4 August 2020; validated by Notice 1, 31 March 2025",
+   "paragraph": "3; 3(f); PDF 1,2",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5767292",
+   "passage": "The CSA Information shall identify:\n\nf. An Indentured Parts List (IPL) of all parts installed in each serial-numbered product or end- item as delivered and as changed through maintenance and modification activities.",
+   "passageSHA256": "1800984d8db8cfd1a64385c293884d7289a849d808859ec305b1dd009c430a5f"
+  },
+  "wording": "The CSA Information shall identify an Indentured Parts List covering all parts installed in each serial-numbered product or end-item as delivered and as changed through maintenance and modification.",
+  "actor": "The CSA Information",
+  "condition": "When DI-SESS-81253E is invoked by the applicable contract or CDRL.",
+  "verificationIntent": "inspection",
+  "kind": "content",
+  "binding": true,
+  "fields": [
+   "indenturedPartsList",
+   "serialNumberedProduct",
+   "asDeliveredConfiguration",
+   "asChangedConfiguration"
+  ],
+  "status": "sample",
+  "notes": "Operative DID data-product requirement, binding only when actually invoked by the applicable contract/CDRL and within the source conditions. Coherent content lists are grouped; product classes, installed-part instances, and individual subfields do not multiply records. Composite quotation: separate exact spans are separated by blank lines, with intervening text or page furniture omitted; no claim of consecutive prose. Span PDF pages: 1,2. Every span matches the opened source PDF text by cited page after NFC and layout-whitespace collapse.",
+  "wordingSHA256": "71cb5737c2988005dd3c34e82474d032a84fffd1bd997420e2f5218c69c9b811"
+ },
+ {
+  "id": "DZR-F9-0006",
+  "alias": "DI-SESS-81253E §3; 3(g); PDF 1,2",
+  "source": {
+   "docId": "DI-SESS-81253E",
+   "edition": "Revision E, 4 August 2020; validated by Notice 1, 31 March 2025",
+   "paragraph": "3; 3(g); PDF 1,2",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5767292",
+   "passage": "The CSA Information shall identify:\n\ng. Engineering changes and their implementation activities, including the reason for change, with justification for change or reference thereto, and the change effectivity.",
+   "passageSHA256": "4b2ae5e1e43f29405e2b8675dda95d08800d58f2f0051333a48f633ed235005c"
+  },
+  "wording": "The CSA Information shall identify engineering changes and implementation activities, including change reasons, justification or a justification reference, and change effectivity.",
+  "actor": "The CSA Information",
+  "condition": "When DI-SESS-81253E is invoked by the applicable contract or CDRL.",
+  "verificationIntent": "inspection",
+  "kind": "content",
+  "binding": true,
+  "fields": [
+   "engineeringChanges",
+   "implementationActivities",
+   "changeReason",
+   "changeJustificationOrReference",
+   "effectivity"
+  ],
+  "status": "sample",
+  "notes": "Operative DID data-product requirement, binding only when actually invoked by the applicable contract/CDRL and within the source conditions. Coherent content lists are grouped; product classes, installed-part instances, and individual subfields do not multiply records. Composite quotation: separate exact spans are separated by blank lines, with intervening text or page furniture omitted; no claim of consecutive prose. Span PDF pages: 1,2. Every span matches the opened source PDF text by cited page after NFC and layout-whitespace collapse.",
+  "wordingSHA256": "0c213d46d8ab8539008d8a03d4b3f7c9bf56d2cbd641cf0bc3c3e2ec6a9191d0"
+ },
+ {
+  "id": "DZR-F9-0007",
+  "alias": "DI-SESS-81253E §3; 3(h); PDF 1,2",
+  "source": {
+   "docId": "DI-SESS-81253E",
+   "edition": "Revision E, 4 August 2020; validated by Notice 1, 31 March 2025",
+   "paragraph": "3; 3(h); PDF 1,2",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5767292",
+   "passage": "The CSA Information shall identify:\n\nh. Variances and activities related to obtaining the CSA consideration.",
+   "passageSHA256": "211787c461f7ea00f13fea866b75a55dd58bb8cd7222f46a600417daaa351601"
+  },
+  "wording": "The CSA Information shall identify variances and activities related to obtaining CSA consideration.",
+  "actor": "The CSA Information",
+  "condition": "When DI-SESS-81253E is invoked by the applicable contract or CDRL.",
+  "verificationIntent": "inspection",
+  "kind": "content",
+  "binding": true,
+  "fields": [
+   "variances",
+   "csaConsiderationActivities"
+  ],
+  "status": "sample",
+  "notes": "Operative DID data-product requirement, binding only when actually invoked by the applicable contract/CDRL and within the source conditions. Coherent content lists are grouped; product classes, installed-part instances, and individual subfields do not multiply records. Composite quotation: separate exact spans are separated by blank lines, with intervening text or page furniture omitted; no claim of consecutive prose. Span PDF pages: 1,2. Every span matches the opened source PDF text by cited page after NFC and layout-whitespace collapse. The source phrase obtaining the CSA consideration is retained without interpreting it as an approval or inventing an approval workflow.",
+  "wordingSHA256": "e4d6a76273e4117e6d01ee8ece25087eaa46d893c27fd1ba8a62415e6dc8ca97"
+ },
+ {
+  "id": "DZR-F9-0008",
+  "alias": "DI-SESS-81253E §3; 3(i); PDF 1,2",
+  "source": {
+   "docId": "DI-SESS-81253E",
+   "edition": "Revision E, 4 August 2020; validated by Notice 1, 31 March 2025",
+   "paragraph": "3; 3(i); PDF 1,2",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5767292",
+   "passage": "The CSA Information shall identify:\n\ni. Configuration audit action items and their closeout dates.",
+   "passageSHA256": "0e744590da3ecda55332c56a488e6e394dc206dc9694d366e740f458f9acc5d9"
+  },
+  "wording": "The CSA Information shall identify configuration-audit action items and closeout dates.",
+  "actor": "The CSA Information",
+  "condition": "When DI-SESS-81253E is invoked by the applicable contract or CDRL.",
+  "verificationIntent": "inspection",
+  "kind": "content",
+  "binding": true,
+  "fields": [
+   "configurationAuditActions",
+   "closeoutDates"
+  ],
+  "status": "sample",
+  "notes": "Operative DID data-product requirement, binding only when actually invoked by the applicable contract/CDRL and within the source conditions. Coherent content lists are grouped; product classes, installed-part instances, and individual subfields do not multiply records. Composite quotation: separate exact spans are separated by blank lines, with intervening text or page furniture omitted; no claim of consecutive prose. Span PDF pages: 1,2. Every span matches the opened source PDF text by cited page after NFC and layout-whitespace collapse.",
+  "wordingSHA256": "10375ca2091f57cd80e4cea93ebab9c601dfc7952785ef5dabe80c1ce5d122db"
+ },
+ {
+  "id": "DZR-F9-0009",
+  "alias": "DI-SESS-81253E §3; 3(j); PDF 1,2",
+  "source": {
+   "docId": "DI-SESS-81253E",
+   "edition": "Revision E, 4 August 2020; validated by Notice 1, 31 March 2025",
+   "paragraph": "3; 3(j); PDF 1,2",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5767292",
+   "passage": "The CSA Information shall identify:\n\nj. The organizations performing the roles of Current Document Change Authority, Application Activity, and Document Custodian for each project document.",
+   "passageSHA256": "5fa3a060c65d9876a9ef49b6f6238ee46e9a3e97a4b56d47a4cd47d1eeb7490e"
+  },
+  "wording": "The CSA Information shall identify the organizations performing Current Document Change Authority, Application Activity, and Document Custodian roles for each project document.",
+  "actor": "The CSA Information",
+  "condition": "When DI-SESS-81253E is invoked by the applicable contract or CDRL.",
+  "verificationIntent": "inspection",
+  "kind": "content",
+  "binding": true,
+  "fields": [
+   "documentResponsibilityOrganizations"
+  ],
+  "status": "sample",
+  "notes": "Operative DID data-product requirement, binding only when actually invoked by the applicable contract/CDRL and within the source conditions. Coherent content lists are grouped; product classes, installed-part instances, and individual subfields do not multiply records. Composite quotation: separate exact spans are separated by blank lines, with intervening text or page furniture omitted; no claim of consecutive prose. Span PDF pages: 1,2. Every span matches the opened source PDF text by cited page after NFC and layout-whitespace collapse.",
+  "wordingSHA256": "3f50acf9bcb1c4c38ee9f6d7bcac97ce32040e477d1879ad2f52c9fa10b54024"
+ },
+ {
+  "id": "DZR-F9-0010",
+  "alias": "DI-SESS-81253E §3; 3(k); PDF 1,2",
+  "source": {
+   "docId": "DI-SESS-81253E",
+   "edition": "Revision E, 4 August 2020; validated by Notice 1, 31 March 2025",
+   "paragraph": "3; 3(k); PDF 1,2",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5767292",
+   "passage": "The CSA Information shall identify:\n\nk. A unique identifier that indicates the file version number and reflects a “submitted” status for each digital file.",
+   "passageSHA256": "8bbf00b78a0eafd0610c99bc3de2b33ecf8b8dfc8e84b3cff2a53c0ed64c5d85"
+  },
+  "wording": "The CSA Information shall identify a unique identifier indicating the file version number and submitted status for each digital file.",
+  "actor": "The CSA Information",
+  "condition": "When DI-SESS-81253E is invoked by the applicable contract or CDRL; for each digital file.",
+  "verificationIntent": "inspection",
+  "kind": "identifier",
+  "binding": true,
+  "fields": [
+   "digitalFileIdentifier",
+   "fileVersion",
+   "submittedStatus"
+  ],
+  "status": "sample",
+  "notes": "Operative DID data-product requirement, binding only when actually invoked by the applicable contract/CDRL and within the source conditions. Coherent content lists are grouped; product classes, installed-part instances, and individual subfields do not multiply records. Composite quotation: separate exact spans are separated by blank lines, with intervening text or page furniture omitted; no claim of consecutive prose. Span PDF pages: 1,2. Every span matches the opened source PDF text by cited page after NFC and layout-whitespace collapse. Submitted is the source status. No approval, acceptance or released status is inferred.",
+  "wordingSHA256": "8475839a7d4521665af8d32e1f48bb4c4c64f0cec3f0d238059a38d7845adf93"
+ },
+ {
+  "id": "DZR-F9-0011",
+  "alias": "DI-SESS-81253E §3; 3(l); PDF 1,2",
+  "source": {
+   "docId": "DI-SESS-81253E",
+   "edition": "Revision E, 4 August 2020; validated by Notice 1, 31 March 2025",
+   "paragraph": "3; 3(l); PDF 1,2",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5767292",
+   "passage": "The CSA Information shall identify:\n\nl. An altered (i.e., annotated or redlined) file version number from the originally submitted file version number to ensure file integrity.",
+   "passageSHA256": "52011a05f2b38df36687c32b4d74a35012093066432078ab7e38f5c1fcbb4cd4"
+  },
+  "wording": "The CSA Information shall identify an altered file version number distinct from the originally submitted version for an annotated or redlined file.",
+  "actor": "The CSA Information",
+  "condition": "When DI-SESS-81253E is invoked by the applicable contract or CDRL; for an annotated or redlined file.",
+  "verificationIntent": "inspection",
+  "kind": "identifier",
+  "binding": true,
+  "fields": [
+   "alteredFileVersion",
+   "originalSubmittedFileVersion"
+  ],
+  "status": "sample",
+  "notes": "Operative DID data-product requirement, binding only when actually invoked by the applicable contract/CDRL and within the source conditions. Coherent content lists are grouped; product classes, installed-part instances, and individual subfields do not multiply records. Composite quotation: separate exact spans are separated by blank lines, with intervening text or page furniture omitted; no claim of consecutive prose. Span PDF pages: 1,2. Every span matches the opened source PDF text by cited page after NFC and layout-whitespace collapse. The source intent is file integrity; no cryptographic hash algorithm or version syntax is prescribed by this clause.",
+  "wordingSHA256": "c0d8fa9a0ab80e91006b435ec08daa776c0be4effa8eaed9b3eb981b6a025b72"
+ },
+ {
+  "id": "DZR-F9-0012",
+  "alias": "DI-SESS-81253E §3; 3(m); PDF 1,2",
+  "source": {
+   "docId": "DI-SESS-81253E",
+   "edition": "Revision E, 4 August 2020; validated by Notice 1, 31 March 2025",
+   "paragraph": "3; 3(m); PDF 1,2",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5767292",
+   "passage": "The CSA Information shall identify:\n\nm. Any item that is a Critical Safety Item (CSI). A CSI is any component, assembly, sub-assembly, or process with one or more critical characteristics that would result in an unsafe condition if not in compliance with the design data or quality requirements.",
+   "passageSHA256": "51f4968deb9f29e2e29b054f2f693ce9bf6fc1339c2b6559a1db1ea591fd9584"
+  },
+  "wording": "The CSA Information shall identify any Critical Safety Item using the Critical Safety Item definition in section 3(m).",
+  "actor": "The CSA Information",
+  "condition": "When DI-SESS-81253E is invoked by the applicable contract or CDRL; for a component, assembly, sub-assembly, or process with one or more critical characteristics capable of causing an unsafe condition when not compliant with design data or quality requirements.",
+  "verificationIntent": "inspection",
+  "kind": "content",
+  "binding": true,
+  "fields": [
+   "criticalSafetyItemIdentification"
+  ],
+  "status": "sample",
+  "notes": "Operative DID data-product requirement, binding only when actually invoked by the applicable contract/CDRL and within the source conditions. Coherent content lists are grouped; product classes, installed-part instances, and individual subfields do not multiply records. Composite quotation: separate exact spans are separated by blank lines, with intervening text or page furniture omitted; no claim of consecutive prose. Span PDF pages: 1,2. Every span matches the opened source PDF text by cited page after NFC and layout-whitespace collapse. This profile defines CSI only. The ASDP SCI category and Y/N marker are not imported into this DID.",
+  "wordingSHA256": "0992e289268bb310607eae5b96baba187e01bef70c7b29e427da842119760cf3"
+ },
+ {
+  "id": "DZR-F9-0013",
+  "alias": "DI-SESS-82333B §1; PDF 1",
+  "source": {
+   "docId": "DI-SESS-82333B",
+   "edition": "Revision B, 16 September 2022",
+   "paragraph": "1; PDF 1",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5778810",
+   "passage": "The applicable issue of the documents cited herein, including their approval dates and dates of any applicable amendments, notices, and revisions, shall be as specified in the contract.",
+   "passageSHA256": "549fa95ee28fd854ef56c5a29de96674e25c34b33bf9cd11d2b5da43c8543ef3"
+  },
+  "wording": "The applicable issues of documents cited by DI-SESS-82333B shall match the contract-specified issues, including approval dates and applicable amendment, notice, and revision dates.",
+  "actor": "The applicable issues of documents cited by DI-SESS-82333B",
+  "condition": "When DI-SESS-82333B is invoked by the applicable contract or CDRL.",
+  "verificationIntent": "inspection",
+  "kind": "currency",
+  "binding": true,
+  "fields": [
+   "applicableSourceIssues"
+  ],
+  "status": "sample",
+  "notes": "Operative DID data-product requirement, binding only when actually invoked by the applicable contract/CDRL and within the source conditions. Coherent content lists are grouped; product classes, installed-part instances, and individual subfields do not multiply records. One exact consecutive source span; layout whitespace normalized. Every span matches the opened source PDF text by cited page after NFC and layout-whitespace collapse.",
+  "wordingSHA256": "f963b516fc9e9dba745ac63a2e1526f6de6d0d5c55d6497f62c1cb00ebe44c75"
+ },
+ {
+  "id": "DZR-F9-0014",
+  "alias": "DI-SESS-82333B §2, first two sentences; 3.15, first sentence; PDF 1,3",
+  "source": {
+   "docId": "DI-SESS-82333B",
+   "edition": "Revision B, 16 September 2022",
+   "paragraph": "2, first two sentences; 3.15, first sentence; PDF 1,3",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5778810",
+   "passage": "The ASDP CSA Information shall be in Microsoft Excel format. The Data Objects/Attributes and Associated Metadata (DOAM) listing shall be in a Microsoft Excel spreadsheet format in accordance with the template provided in the DOAM Specification attached to the contract.\n\n3.15 DOAM. The completed CSA Information template, provided in the DOAM Specification attached to the contract, shall comply with the format requirements in 2. above so that it can be ingestible into a PLM solution to ensure proper tying, tracing, and linking to the lowest component of the end item to which the delivered CSA Information is applicable.",
+   "passageSHA256": "905f5e782f4f58ee55c150aea8bd1da37f40d308013e1aabe9651408c9ee1470"
+  },
+  "wording": "The ASDP CSA Information and DOAM listing shall use Microsoft Excel format conforming to the contract-attached DOAM template for PLM ingestion and tracing to the lowest applicable end-item component.",
+  "actor": "The ASDP CSA Information and DOAM listing",
+  "condition": "When DI-SESS-82333B is invoked by the applicable contract or CDRL; the actual DOAM Specification and template attached to the applicable contract govern the layout; that contract-specific template was not provided and remains an open gap.",
+  "verificationIntent": "inspection",
+  "kind": "structure",
+  "binding": true,
+  "fields": [
+   "nativeFormat",
+   "doamListing",
+   "contractDoamTemplate",
+   "lowestComponentTrace"
+  ],
+  "status": "sample",
+  "notes": "Operative DID data-product requirement, binding only when actually invoked by the applicable contract/CDRL and within the source conditions. Coherent content lists are grouped; product classes, installed-part instances, and individual subfields do not multiply records. Composite quotation: separate exact spans are separated by blank lines, with intervening text or page furniture omitted; no claim of consecutive prose. Span PDF pages: 1,3. Every span matches the opened source PDF text by cited page after NFC and layout-whitespace collapse. The repeated format/template rule in 2 and 3.15 is represented once. No workbook layout, columns, filename extension, vendor PLM interface, ingestion implementation, or missing contract template is invented.",
+  "wordingSHA256": "03d3acff0f960b23497cb0972dda913f101783e472e96659569be205260df766"
+ },
+ {
+  "id": "DZR-F9-0015",
+  "alias": "DI-SESS-82333B §2, final sentence; PDF 1",
+  "source": {
+   "docId": "DI-SESS-82333B",
+   "edition": "Revision B, 16 September 2022",
+   "paragraph": "2, final sentence; PDF 1",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5778810",
+   "passage": "All data shall be in the English language.",
+   "passageSHA256": "f9fea09f1461e97f3e7cc554ae414e24867b65a107d9d7c8aa8b0b2e1b32c129"
+  },
+  "wording": "All ASDP CSA data shall use the English language.",
+  "actor": "All ASDP CSA data",
+  "condition": "When DI-SESS-82333B is invoked by the applicable contract or CDRL.",
+  "verificationIntent": "inspection",
+  "kind": "content",
+  "binding": true,
+  "fields": [
+   "dataLanguage"
+  ],
+  "status": "sample",
+  "notes": "Operative DID data-product requirement, binding only when actually invoked by the applicable contract/CDRL and within the source conditions. Coherent content lists are grouped; product classes, installed-part instances, and individual subfields do not multiply records. One exact consecutive source span; layout whitespace normalized. Every span matches the opened source PDF text by cited page after NFC and layout-whitespace collapse.",
+  "wordingSHA256": "b1ee222e9096d320acd3ca7c9f00332a177bd804651b2f7afdf667def847e2e0"
+ },
+ {
+  "id": "DZR-F9-0016",
+  "alias": "DI-SESS-82333B §3; 3.1; 3.2; 3.3; 3.4; PDF 1,2",
+  "source": {
+   "docId": "DI-SESS-82333B",
+   "edition": "Revision B, 16 September 2022",
+   "paragraph": "3; 3.1; 3.2; 3.3; 3.4; PDF 1,2",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5778810",
+   "passage": "The ASDP CSA Information shall identify and include the following:\n\n3.1 A listing of specifications generated for the project, which shall include: unique identifier, title, revision, Next Higher Assembly (NHA), change history from initial release, and which shall reflect a “submitted” status for each digital file.\n\n3.2 A listing of Engineering Design Data and Associated Lists (EDDAL) generated for the project, which shall include: unique identifier, title, revision, NHA, change history from initial release, and which shall reflect a “submitted” status for each digital file.\n\n3.3 A listing of software and firmware generated for the project, which shall include: unique identifier, title, revision, NHA, change history from initial release, and which shall reflect a “submitted” status for each digital file.\n\n3.4 A listing of all supporting documents (such as: test procedures, reports, analyses, etc.) generated as a part of the project, which shall include: unique identifier, CAGE code, title,\n\nrevision, NHA, part number of the part/system the supporting document references or relates, change history from initial release, and which shall reflect a “submitted” status for each digital file.",
+   "passageSHA256": "a0d26a95cdd37219e1b4fad887acf8e96aa0d1b2b5e1bfaeb05d583a7bb7c5ea"
+  },
+  "wording": "The ASDP CSA Information shall list project-generated specifications, Engineering Design Data and Associated Lists, software and firmware, and supporting documents with unique identifier, title, revision, Next Higher Assembly, change history from initial release, and submitted status for each digital file, adding CAGE code and the referenced or related part/system part number for supporting documents.",
+  "actor": "The ASDP CSA Information",
+  "condition": "When DI-SESS-82333B is invoked by the applicable contract or CDRL; the CAGE code and referenced/related part-system part number are additional fields for supporting documents in 3.4; submitted status applies to each digital file.",
+  "verificationIntent": "inspection",
+  "kind": "content",
+  "binding": true,
+  "fields": [
+   "artifactInventory",
+   "artifactCategory",
+   "uniqueIdentifier",
+   "title",
+   "revision",
+   "nextHigherAssembly",
+   "changeHistory",
+   "submittedStatus",
+   "supportingDocumentCageCode",
+   "referencedPartNumber"
+  ],
+  "status": "sample",
+  "notes": "Operative DID data-product requirement, binding only when actually invoked by the applicable contract/CDRL and within the source conditions. Coherent content lists are grouped; product classes, installed-part instances, and individual subfields do not multiply records. Composite quotation: separate exact spans are separated by blank lines, with intervening text or page furniture omitted; no claim of consecutive prose. Span PDF pages: 1,1,1,1,1,2. Every span matches the opened source PDF text by cited page after NFC and layout-whitespace collapse. One coherent repeated inventory information set with exact category-dependent extra fields; no separate requirement per product category or file. The CSA-profile related-specifications field is not imported here.",
+  "wordingSHA256": "81663f3e709dcb44944dcfc39167f22e45433edbce22fa9a7c57f1e42d951df7"
+ },
+ {
+  "id": "DZR-F9-0017",
+  "alias": "DI-SESS-82333B §3; 3.5; PDF 1,2",
+  "source": {
+   "docId": "DI-SESS-82333B",
+   "edition": "Revision B, 16 September 2022",
+   "paragraph": "3; 3.5; PDF 1,2",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5778810",
+   "passage": "The ASDP CSA Information shall identify and include the following:\n\n3.5 Listing of special identifiers utilized to tag parts, assemblies, and software used in each product.",
+   "passageSHA256": "2230cf0dfcd0b5ce43aeaf20ee6a20efc0ff604472deea68fb858bbdb6b8c00a"
+  },
+  "wording": "The ASDP CSA Information shall list special identifiers used to tag parts, assemblies, and software within each product.",
+  "actor": "The ASDP CSA Information",
+  "condition": "When DI-SESS-82333B is invoked by the applicable contract or CDRL.",
+  "verificationIntent": "inspection",
+  "kind": "identifier",
+  "binding": true,
+  "fields": [
+   "specialIdentifiers"
+  ],
+  "status": "sample",
+  "notes": "Operative DID data-product requirement, binding only when actually invoked by the applicable contract/CDRL and within the source conditions. Coherent content lists are grouped; product classes, installed-part instances, and individual subfields do not multiply records. Composite quotation: separate exact spans are separated by blank lines, with intervening text or page furniture omitted; no claim of consecutive prose. Span PDF pages: 1,2. Every span matches the opened source PDF text by cited page after NFC and layout-whitespace collapse.",
+  "wordingSHA256": "acc7c3c56f2c953a70beeddd6cdd495f520639ea4e3115d56a2c316e8ca0e9a1"
+ },
+ {
+  "id": "DZR-F9-0018",
+  "alias": "DI-SESS-82333B §3; 3.6; PDF 1,2",
+  "source": {
+   "docId": "DI-SESS-82333B",
+   "edition": "Revision B, 16 September 2022",
+   "paragraph": "3; 3.6; PDF 1,2",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5778810",
+   "passage": "The ASDP CSA Information shall identify and include the following:\n\n3.6 An Indentured Parts List (IPL) shall list all parts installed in each serial-numbered product or end-item as-delivered and as-changed through maintenance and modification activities.",
+   "passageSHA256": "d8f1f20dce0554117a839c22865f11aa1d9448961333e3ea6a2e420705266d32"
+  },
+  "wording": "The ASDP Indentured Parts List shall list all parts installed in each serial-numbered product or end-item as delivered and as changed through maintenance and modification.",
+  "actor": "The ASDP Indentured Parts List",
+  "condition": "When DI-SESS-82333B is invoked by the applicable contract or CDRL.",
+  "verificationIntent": "inspection",
+  "kind": "content",
+  "binding": true,
+  "fields": [
+   "indenturedPartsList",
+   "serialNumberedProduct",
+   "asDeliveredConfiguration",
+   "asChangedConfiguration"
+  ],
+  "status": "sample",
+  "notes": "Operative DID data-product requirement, binding only when actually invoked by the applicable contract/CDRL and within the source conditions. Coherent content lists are grouped; product classes, installed-part instances, and individual subfields do not multiply records. Composite quotation: separate exact spans are separated by blank lines, with intervening text or page furniture omitted; no claim of consecutive prose. Span PDF pages: 1,2. Every span matches the opened source PDF text by cited page after NFC and layout-whitespace collapse.",
+  "wordingSHA256": "4a69e36d14be91e986040d091bc7ee148039e5def4c74923661734ec8b6beae7"
+ },
+ {
+  "id": "DZR-F9-0019",
+  "alias": "DI-SESS-82333B §3; 3.6.1; PDF 1,2,3",
+  "source": {
+   "docId": "DI-SESS-82333B",
+   "edition": "Revision B, 16 September 2022",
+   "paragraph": "3; 3.6.1; PDF 1,2,3",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5778810",
+   "passage": "The ASDP CSA Information shall identify and include the following:\n\n3.6.1 For each assembly, subassembly, part, or component installed in the end item at time of delivery to the Government, shall include: a. Part number and revision. (1) Mission Design Series (MDS) (2) Part name. (3) Nomenclature. (4) Serial number (SN). (5) Lot number. (6) Associated Work Breakdown Structure (WBS) ID (7) Manufacturer and manufacture date, if the part is a Critical Safety Item (CSI), Safety Critical Item (SCI) (see 3.12 for definition), or both. In addition, manufacturer and manufacture date shall be included for any age or date managed life limited item. If not a CSI or age or date managed life limited item, installation date shall be provided, if available. If the installation date is not available, the Department of Defense (DD) Form 250, Material Inspection and Receiving Report, date shall be provided. (Copies of this form are available online at https://www.esd.whs.mil/Directives/forms.) (8) Vendor Commercial and Government Entity (CAGE) Code. (9) Manufacturing CAGE Code (if different than Vendor CAGE Code) (10) NHA part number, CAGE Code, and SN. (11) Airworthiness Directive(s) identifier (ID), if applicable. (12) Service Bulletin(s) ID, if applicable. (13) Software part number and revision, as applicable, for each SN-controlled unit. (14) Computer Program Identification Number (CPIN). (15) Applicable Technical Manuals and Technical Orders ID and their revisions. (16) Mark any item that has been determined to be a CSI “Y”. If not, mark “N”. (17) National Stock Number (NSN). (18) Identifier of warrantied item. (19) Unique Identifier of drawing/model used to develop, acquire, or purchase the part. (20) Unique Identifier of the direct Specification the PN was derived, or equivalent (e.g. Part Spec, Source Control Document (SCD), etc.).\n\n(21) Location(s) of part (e.g. water line, buttock line, or station line)",
+   "passageSHA256": "73818f36f0824cd79de1b3b0dc123080c40ec01d68a7179501f5ec32707407a9"
+  },
+  "wording": "The ASDP Indentured Parts List shall provide the delivered-item identification and traceability fieldset in section 3.6.1(a), covering part number and revision, mission/design and item names, serial and lot identifiers, WBS link, conditional manufacture or installation/receiving dates, vendor/manufacturer and next-higher-assembly identifiers, applicable directives and software/manual references, CSI marking, stock and warranty identifiers, drawing/specification trace, and part locations.",
+  "actor": "The ASDP Indentured Parts List",
+  "condition": "When DI-SESS-82333B is invoked by the applicable contract or CDRL; for each assembly, subassembly, part, or component installed in the end item at delivery to the Government; manufacturer and manufacture date apply to CSI, SCI, or both, and to any age/date-managed life-limited item; preserve the exact later branch \"If not a CSI or age or date managed life limited item\" for installation date if available, followed by DD Form 250 date if installation date is unavailable; manufacturing CAGE applies if different from vendor CAGE; Airworthiness Directives and Service Bulletins apply if applicable; software part number/revision applies as applicable to each serial-number-controlled unit; CSI marking is Y if determined CSI and N otherwise; the source NA-field rule remains applicable.",
+  "verificationIntent": "inspection",
+  "kind": "content",
+  "binding": true,
+  "fields": [
+   "deliveredItemIdentity",
+   "partNumber",
+   "partRevision",
+   "missionDesignSeries",
+   "partName",
+   "nomenclature",
+   "serialNumber",
+   "lotNumber",
+   "wbsId",
+   "manufacturer",
+   "manufactureDate",
+   "installationDate",
+   "dd250Date",
+   "vendorCageCode",
+   "manufacturingCageCode",
+   "nextHigherAssemblyPartNumber",
+   "nextHigherAssemblyCageCode",
+   "nextHigherAssemblySerialNumber",
+   "airworthinessDirectiveIds",
+   "serviceBulletinIds",
+   "softwarePartNumber",
+   "softwareRevision",
+   "computerProgramIdentificationNumber",
+   "technicalManualOrderIdsAndRevisions",
+   "csiMarker",
+   "nationalStockNumber",
+   "warrantiedItemIdentifier",
+   "drawingModelIdentifier",
+   "directSpecificationIdentifierOrEquivalent",
+   "partLocations"
+  ],
+  "status": "sample",
+  "notes": "Operative DID data-product requirement, binding only when actually invoked by the applicable contract/CDRL and within the source conditions. Coherent content lists are grouped; product classes, installed-part instances, and individual subfields do not multiply records. Composite quotation: separate exact spans are separated by blank lines, with intervening text or page furniture omitted; no claim of consecutive prose. Span PDF pages: 1,2,3. Every span matches the opened source PDF text by cited page after NFC and layout-whitespace collapse. One coherent delivered-item fieldset, not 21 requirements or one per part type. The source negative date branch does not repeat SCI: an SCI-only item can meet the first manufacturer/manufacture-date condition and the later non-CSI/non-life-limited date condition. The omission is preserved, not silently repaired. DD Form 250 is cited only as the date source; no form content is extracted. WBS ID is an express native field here. CSI Y/N is not an invented SCI Y/N enum. Part/specification/location examples are not sample rows.",
+  "wordingSHA256": "e3bce471725bc2a898cf18488dbf1456f9090fb171d4abb5b81cc6134e057d7e"
+ },
+ {
+  "id": "DZR-F9-0020",
+  "alias": "DI-SESS-82333B §3; 3.7; PDF 1,3",
+  "source": {
+   "docId": "DI-SESS-82333B",
+   "edition": "Revision B, 16 September 2022",
+   "paragraph": "3; 3.7; PDF 1,3",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5778810",
+   "passage": "The ASDP CSA Information shall identify and include the following:\n\n3.7 Listing of engineering changes and their implementation activities, including: the reason(s) for the changes, Engineering Change Proposal (ECP) ID, justification for the changes or reference thereto, effective date of the change, and the effectivity to which this change is applicable.",
+   "passageSHA256": "645b3f9febc5d154c0d21125545e71d3224503324ac9d4ae4d18a6d3495949a1"
+  },
+  "wording": "The ASDP CSA Information shall list engineering changes and implementation activities with change reasons, ECP identifier, justification or justification reference, effective date, and applicable effectivity.",
+  "actor": "The ASDP CSA Information",
+  "condition": "When DI-SESS-82333B is invoked by the applicable contract or CDRL.",
+  "verificationIntent": "inspection",
+  "kind": "content",
+  "binding": true,
+  "fields": [
+   "engineeringChanges",
+   "implementationActivities",
+   "changeReason",
+   "ecpId",
+   "changeJustificationOrReference",
+   "effectiveDate",
+   "effectivity"
+  ],
+  "status": "sample",
+  "notes": "Operative DID data-product requirement, binding only when actually invoked by the applicable contract/CDRL and within the source conditions. Coherent content lists are grouped; product classes, installed-part instances, and individual subfields do not multiply records. Composite quotation: separate exact spans are separated by blank lines, with intervening text or page furniture omitted; no claim of consecutive prose. Span PDF pages: 1,3. Every span matches the opened source PDF text by cited page after NFC and layout-whitespace collapse.",
+  "wordingSHA256": "e00ed254f60be39bcc60da7cdc7cc77be32394e638a2e59e1e65db5d994b6949"
+ },
+ {
+  "id": "DZR-F9-0021",
+  "alias": "DI-SESS-82333B §3; 3.8; PDF 1,3",
+  "source": {
+   "docId": "DI-SESS-82333B",
+   "edition": "Revision B, 16 September 2022",
+   "paragraph": "3; 3.8; PDF 1,3",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5778810",
+   "passage": "The ASDP CSA Information shall identify and include the following:\n\n3.8 A listing of variance information and status for the item to which the CSA applies.",
+   "passageSHA256": "3c9a7e6d23855a0db9ed2e14b4c4d4fcea5146fa8e686480cc86bceb6257ef89"
+  },
+  "wording": "The ASDP CSA Information shall list variance information and status for the item covered by the CSA.",
+  "actor": "The ASDP CSA Information",
+  "condition": "When DI-SESS-82333B is invoked by the applicable contract or CDRL.",
+  "verificationIntent": "inspection",
+  "kind": "content",
+  "binding": true,
+  "fields": [
+   "varianceInformation",
+   "varianceStatus"
+  ],
+  "status": "sample",
+  "notes": "Operative DID data-product requirement, binding only when actually invoked by the applicable contract/CDRL and within the source conditions. Coherent content lists are grouped; product classes, installed-part instances, and individual subfields do not multiply records. Composite quotation: separate exact spans are separated by blank lines, with intervening text or page furniture omitted; no claim of consecutive prose. Span PDF pages: 1,3. Every span matches the opened source PDF text by cited page after NFC and layout-whitespace collapse.",
+  "wordingSHA256": "9724391f2090c0147b16843e7a9d160443a4c164e1c5bff138130bb23b0a9b8e"
+ },
+ {
+  "id": "DZR-F9-0022",
+  "alias": "DI-SESS-82333B §3; 3.9; PDF 1,3",
+  "source": {
+   "docId": "DI-SESS-82333B",
+   "edition": "Revision B, 16 September 2022",
+   "paragraph": "3; 3.9; PDF 1,3",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5778810",
+   "passage": "The ASDP CSA Information shall identify and include the following:\n\n3.9 Configuration audit action items and their closeout dates.",
+   "passageSHA256": "a41ee8f3012231ed2326176710f7f2b992011a11ddee7ef35610368dfb4da0d8"
+  },
+  "wording": "The ASDP CSA Information shall identify configuration-audit action items and closeout dates.",
+  "actor": "The ASDP CSA Information",
+  "condition": "When DI-SESS-82333B is invoked by the applicable contract or CDRL.",
+  "verificationIntent": "inspection",
+  "kind": "content",
+  "binding": true,
+  "fields": [
+   "configurationAuditActions",
+   "closeoutDates"
+  ],
+  "status": "sample",
+  "notes": "Operative DID data-product requirement, binding only when actually invoked by the applicable contract/CDRL and within the source conditions. Coherent content lists are grouped; product classes, installed-part instances, and individual subfields do not multiply records. Composite quotation: separate exact spans are separated by blank lines, with intervening text or page furniture omitted; no claim of consecutive prose. Span PDF pages: 1,3. Every span matches the opened source PDF text by cited page after NFC and layout-whitespace collapse.",
+  "wordingSHA256": "e08f0836c1dcfffbd1ddc9e9343cefa0485065de19ac3d4afc389ff3f8284134"
+ },
+ {
+  "id": "DZR-F9-0023",
+  "alias": "DI-SESS-82333B §3; 3.10; PDF 1,3",
+  "source": {
+   "docId": "DI-SESS-82333B",
+   "edition": "Revision B, 16 September 2022",
+   "paragraph": "3; 3.10; PDF 1,3",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5778810",
+   "passage": "The ASDP CSA Information shall identify and include the following:\n\n3.10 The organizations performing the roles of Current Document Change Authority, Application Activity, and Document Custodian for each project document.",
+   "passageSHA256": "ede6043466296b50016827e34bae8c27701facffe8fe015b4a1cb544b0bc379f"
+  },
+  "wording": "The ASDP CSA Information shall identify the organizations performing Current Document Change Authority, Application Activity, and Document Custodian roles for each project document.",
+  "actor": "The ASDP CSA Information",
+  "condition": "When DI-SESS-82333B is invoked by the applicable contract or CDRL.",
+  "verificationIntent": "inspection",
+  "kind": "content",
+  "binding": true,
+  "fields": [
+   "documentResponsibilityOrganizations"
+  ],
+  "status": "sample",
+  "notes": "Operative DID data-product requirement, binding only when actually invoked by the applicable contract/CDRL and within the source conditions. Coherent content lists are grouped; product classes, installed-part instances, and individual subfields do not multiply records. Composite quotation: separate exact spans are separated by blank lines, with intervening text or page furniture omitted; no claim of consecutive prose. Span PDF pages: 1,3. Every span matches the opened source PDF text by cited page after NFC and layout-whitespace collapse.",
+  "wordingSHA256": "871301274a60da0abd36f5b213f4ba2eefad7889bc8e17261b77818147e2aa84"
+ },
+ {
+  "id": "DZR-F9-0024",
+  "alias": "DI-SESS-82333B §3; 3.11; PDF 1,3",
+  "source": {
+   "docId": "DI-SESS-82333B",
+   "edition": "Revision B, 16 September 2022",
+   "paragraph": "3; 3.11; PDF 1,3",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5778810",
+   "passage": "The ASDP CSA Information shall identify and include the following:\n\n3.11 A listing of an altered (i.e., annotated or redlined) file version number from the originally submitted file version number to ensure file integrity.",
+   "passageSHA256": "bd88de8fafa5f0109ed989f3d82e9ae46d6ce133d922170a1a0e089446d2bbfb"
+  },
+  "wording": "The ASDP CSA Information shall list an altered file version number distinct from the originally submitted version for an annotated or redlined file.",
+  "actor": "The ASDP CSA Information",
+  "condition": "When DI-SESS-82333B is invoked by the applicable contract or CDRL; for an annotated or redlined file.",
+  "verificationIntent": "inspection",
+  "kind": "identifier",
+  "binding": true,
+  "fields": [
+   "alteredFileVersion",
+   "originalSubmittedFileVersion"
+  ],
+  "status": "sample",
+  "notes": "Operative DID data-product requirement, binding only when actually invoked by the applicable contract/CDRL and within the source conditions. Coherent content lists are grouped; product classes, installed-part instances, and individual subfields do not multiply records. Composite quotation: separate exact spans are separated by blank lines, with intervening text or page furniture omitted; no claim of consecutive prose. Span PDF pages: 1,3. Every span matches the opened source PDF text by cited page after NFC and layout-whitespace collapse.",
+  "wordingSHA256": "15e3397791f38f5114324a0a523bdffbcee6a841c72536257c4ff252568741ba"
+ },
+ {
+  "id": "DZR-F9-0025",
+  "alias": "DI-SESS-82333B §3; 3.12; PDF 1,3",
+  "source": {
+   "docId": "DI-SESS-82333B",
+   "edition": "Revision B, 16 September 2022",
+   "paragraph": "3; 3.12; PDF 1,3",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5778810",
+   "passage": "The ASDP CSA Information shall identify and include the following:\n\n3.12 A listing of any item that is a CSI, SCI, or both. A CSI is any component, assembly, sub- assembly, or process with one or more critical characteristics that would result in an unsafe condition if not in compliance with the design data or quality requirements. A SCI is any component, assembly, sub-assembly, or process that is associated with a function resulting in a mishap of either catastrophic or critical severity.",
+   "passageSHA256": "687d3d0788bf8a0fd12363f0ee3e0895b6296af1394be07c7126a55a3c3f9a03"
+  },
+  "wording": "The ASDP CSA Information shall list any Critical Safety Item, Safety Critical Item, or item meeting both classifications according to the definitions in section 3.12.",
+  "actor": "The ASDP CSA Information",
+  "condition": "When DI-SESS-82333B is invoked by the applicable contract or CDRL; CSI covers a component, assembly, sub-assembly, or process with critical characteristics capable of causing an unsafe condition when noncompliant with design data or quality requirements; SCI covers a component, assembly, sub-assembly, or process associated with a function resulting in a catastrophic- or critical-severity mishap.",
+  "verificationIntent": "inspection",
+  "kind": "content",
+  "binding": true,
+  "fields": [
+   "criticalSafetyItemIdentification",
+   "safetyCriticalItemIdentification"
+  ],
+  "status": "sample",
+  "notes": "Operative DID data-product requirement, binding only when actually invoked by the applicable contract/CDRL and within the source conditions. Coherent content lists are grouped; product classes, installed-part instances, and individual subfields do not multiply records. Composite quotation: separate exact spans are separated by blank lines, with intervening text or page furniture omitted; no claim of consecutive prose. Span PDF pages: 1,3. Every span matches the opened source PDF text by cited page after NFC and layout-whitespace collapse. CSI and SCI are distinct source categories; no classification score or qualification threshold is invented.",
+  "wordingSHA256": "7aaa4f35fde38355e2cd7f98abddcf33738a63caa6113ffdca57ba6703364d34"
+ },
+ {
+  "id": "DZR-F9-0026",
+  "alias": "DI-SESS-82333B §3; 3.13; PDF 1,3",
+  "source": {
+   "docId": "DI-SESS-82333B",
+   "edition": "Revision B, 16 September 2022",
+   "paragraph": "3; 3.13; PDF 1,3",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5778810",
+   "passage": "The ASDP CSA Information shall identify and include the following:\n\n3.13 Distribution Statement. The applicable Distribution Statement, as necessary, in accordance with DoD Instruction (DoDI) 5230.24, Distribution Statements on Technical Documents, Enclosure 4. (Copies of this document are available online at www.esd.whs.mil/DD.)",
+   "passageSHA256": "0a0b8ba56d92b397a4343230befa86d1967108a4a12244c80326f488a6a0397e"
+  },
+  "wording": "The ASDP CSA Information shall include the applicable Distribution Statement required by DoDI 5230.24 Enclosure 4.",
+  "actor": "The ASDP CSA Information",
+  "condition": "When DI-SESS-82333B is invoked by the applicable contract or CDRL; as necessary and applicable.",
+  "verificationIntent": "inspection",
+  "kind": "marking",
+  "binding": true,
+  "fields": [
+   "distributionStatement"
+  ],
+  "status": "sample",
+  "notes": "Operative DID data-product requirement, binding only when actually invoked by the applicable contract/CDRL and within the source conditions. Coherent content lists are grouped; product classes, installed-part instances, and individual subfields do not multiply records. Composite quotation: separate exact spans are separated by blank lines, with intervening text or page furniture omitted; no claim of consecutive prose. Span PDF pages: 1,3. Every span matches the opened source PDF text by cited page after NFC and layout-whitespace collapse. The DID clause is inspected, but the referenced DoDI remains an open user-held PDF gap. No unseen statement-selection rules or text are inferred.",
+  "wordingSHA256": "491648d97524c9b6bbd084142737f0b9b3d4c02baffa40422e4c58ee2664567e"
+ },
+ {
+  "id": "DZR-F9-0027",
+  "alias": "DI-SESS-82333B §3; 3.14; PDF 1,3",
+  "source": {
+   "docId": "DI-SESS-82333B",
+   "edition": "Revision B, 16 September 2022",
+   "paragraph": "3; 3.14; PDF 1,3",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5778810",
+   "passage": "The ASDP CSA Information shall identify and include the following:\n\n3.14 Classification Marking. The applicable classification marking, as necessary, in accordance with DoD Manual (DoDM) 5200.01, Volume 2, DoD Information Security Program: Marking of Information, or Controlled Unclassified Information (CUI) markings (when applicable) in accordance with DoDI 5200.48, Controlled Unclassified Information (CUI). (Copies of these documents are available online at www.esd.whs.mil/DD.)",
+   "passageSHA256": "27d998468163437422db1dca42cb96c76be8d256034efc509aff9846e735b539"
+  },
+  "wording": "The ASDP CSA Information shall include applicable classification markings under DoDM 5200.01 Volume 2 or applicable CUI markings under DoDI 5200.48.",
+  "actor": "The ASDP CSA Information",
+  "condition": "When DI-SESS-82333B is invoked by the applicable contract or CDRL; classification marking applies as necessary; CUI markings apply when applicable.",
+  "verificationIntent": "inspection",
+  "kind": "marking",
+  "binding": true,
+  "fields": [
+   "classificationMarkings",
+   "cuiMarkings"
+  ],
+  "status": "sample",
+  "notes": "Operative DID data-product requirement, binding only when actually invoked by the applicable contract/CDRL and within the source conditions. Coherent content lists are grouped; product classes, installed-part instances, and individual subfields do not multiply records. Composite quotation: separate exact spans are separated by blank lines, with intervening text or page furniture omitted; no claim of consecutive prose. Span PDF pages: 1,3. Every span matches the opened source PDF text by cited page after NFC and layout-whitespace collapse. The DID clause is inspected. Both invoked marking issuances remain open user-held PDF gaps; no unseen marking rules are extracted or inferred.",
+  "wordingSHA256": "2b016ef4860ceebae7f60e5e855dbaff7c3832d79e5938b77825f3647c2992ed"
+ },
+ {
+  "id": "DZR-F9-0028",
+  "alias": "DI-SESS-82333B §3.15, final sentence; PDF 3",
+  "source": {
+   "docId": "DI-SESS-82333B",
+   "edition": "Revision B, 16 September 2022",
+   "paragraph": "3.15, final sentence; PDF 3",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5778810",
+   "passage": "Any field that is not applicable shall be marked “NA.”",
+   "passageSHA256": "053ddbc85a3145ef9da10601f9fbcb610686a01aeb62787234d0e6e8aab05887"
+  },
+  "wording": "The ASDP CSA Information shall mark every non-applicable field using the source-prescribed not-applicable marker in section 3.15.",
+  "actor": "The ASDP CSA Information",
+  "condition": "When DI-SESS-82333B is invoked by the applicable contract or CDRL; when a field is not applicable.",
+  "verificationIntent": "inspection",
+  "kind": "content",
+  "binding": true,
+  "fields": [
+   "notApplicableFieldMarker"
+  ],
+  "status": "sample",
+  "notes": "Operative DID data-product requirement, binding only when actually invoked by the applicable contract/CDRL and within the source conditions. Coherent content lists are grouped; product classes, installed-part instances, and individual subfields do not multiply records. One exact consecutive source span; layout whitespace normalized. Every span matches the opened source PDF text by cited page after NFC and layout-whitespace collapse. The source visibly prints “NA.” with the full stop inside the quotation marks. That exact passage is retained. The actual contract DOAM template is missing; no unprovided cell encoding or punctuation convention is asserted.",
+  "wordingSHA256": "713dffd70809bbc577a836105d82ac5b3a4b3ff4588d11b513f7c698162a3d3f"
+ },
+ {
+  "id": "DZR-F9-0029",
+  "alias": "DI-SESS-80639E §1; PDF 1",
+  "source": {
+   "docId": "DI-SESS-80639E",
+   "edition": "Revision E, 11 February 2020; validated by Notice 1, 31 March 2025",
+   "paragraph": "1; PDF 1",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5763543",
+   "passage": "The applicable issue of the documents cited herein, including their approval dates and dates of any applicable amendments, notices, and revisions, shall be as specified in the contract.",
+   "passageSHA256": "549fa95ee28fd854ef56c5a29de96674e25c34b33bf9cd11d2b5da43c8543ef3"
+  },
+  "wording": "The applicable issues of documents cited by DI-SESS-80639E shall match the contract-specified issues, including approval dates and applicable amendment, notice, and revision dates.",
+  "wordingSHA256": "9dfa412f9390815b8fc0366527812479d72b5027506a0376124566662a928f10",
+  "actor": "The applicable issues of documents cited by DI-SESS-80639E",
+  "condition": "When DI-SESS-80639E is invoked by the applicable contract or CDRL for the required data deliverable.",
+  "verificationIntent": "inspection",
+  "kind": "currency",
+  "binding": true,
+  "fields": [
+   "applicableSourceIssue",
+   "contractReference"
+  ],
+  "status": "sample",
+  "notes": "Operative DID provision conditional on actual contractual invocation, not a general obligation to execute an engineering change or accept a nonconformance. One consecutive exact source span; layout whitespace normalized. Span PDF pages: 1. No automatic substitution of a newly published issue. The named fields are logical receiving mappings, not uninspected DD-form field names."
+ },
+ {
+  "id": "DZR-F9-0030",
+  "alias": "DI-SESS-80639E §2(a)–(c); PDF 1",
+  "source": {
+   "docId": "DI-SESS-80639E",
+   "edition": "Revision E, 11 February 2020; validated by Notice 1, 31 March 2025",
+   "paragraph": "2(a)–(c); PDF 1",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5763543",
+   "passage": "2. Format. The ECP shall be in one of the following formats: a. DD Form 1692, Engineering Change Proposal (ECP), b. The schema required by the Acquirer’s Integrated Digital Environment (IDE), or c. The Supplier’s preferred format.",
+   "passageSHA256": "e4a15c500bb69ea6258680edd1c15cb82713765838079cceeee361c3a01e41df"
+  },
+  "wording": "The Engineering Change Proposal shall use DD Form 1692, the schema required by the Acquirer’s Integrated Digital Environment, or the Supplier’s preferred format.",
+  "wordingSHA256": "c02d4240866040bb182670f783c80e5e66c472a1ba6a5da0f7042d854824503a",
+  "actor": "The Engineering Change Proposal",
+  "condition": "When DI-SESS-80639E is invoked by the applicable contract or CDRL for the required data deliverable.",
+  "verificationIntent": "inspection",
+  "kind": "structure",
+  "binding": true,
+  "fields": [
+   "deliveryFormat"
+  ],
+  "status": "sample",
+  "notes": "Operative DID provision conditional on actual contractual invocation, not a general obligation to execute an engineering change or accept a nonconformance. One consecutive exact source span; layout whitespace normalized. Span PDF pages: 1. One format-alternatives obligation, not three simultaneous formats. No native file extension, database, serialization, or universal machine schema is specified. Content required by section 3 remains applicable whichever permitted format is used."
+ },
+ {
+  "id": "DZR-F9-0031",
+  "alias": "DI-SESS-80639E §3; PDF 1",
+  "source": {
+   "docId": "DI-SESS-80639E",
+   "edition": "Revision E, 11 February 2020; validated by Notice 1, 31 March 2025",
+   "paragraph": "3; PDF 1",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5763543",
+   "passage": "The ECP shall contain all the information required by DD Form 1692.",
+   "passageSHA256": "63a8c825dec2142b57c16cec295bbe4fe3a93dfb5a61669cef522470dabdc9ca"
+  },
+  "wording": "The Engineering Change Proposal shall contain all information required by DD Form 1692.",
+  "wordingSHA256": "f02de256d8deeb8e680151077e361f18e9cb405744a67567310c04d5ebb77319",
+  "actor": "The Engineering Change Proposal",
+  "condition": "When DI-SESS-80639E is invoked by the applicable contract or CDRL for the required data deliverable.",
+  "verificationIntent": "inspection",
+  "kind": "content",
+  "binding": true,
+  "fields": [
+   "formRequiredContent"
+  ],
+  "status": "sample",
+  "notes": "Operative DID provision conditional on actual contractual invocation, not a general obligation to execute an engineering change or accept a nonconformance. One consecutive exact source span; layout whitespace normalized. Span PDF pages: 1. The DD Form 1692 PDF and completion instructions are inaccessible open dependencies. This is the inspected DID incorporation-by-reference obligation only. No form fields, completion instructions, validations, signatures, status codes, or identifiers are invented or extracted from indexed text; form-content completeness cannot be established until the applicable form and instructions can be inspected."
+ },
+ {
+  "id": "DZR-F9-0032",
+  "alias": "DI-SESS-80640E §1; PDF 1",
+  "source": {
+   "docId": "DI-SESS-80640E",
+   "edition": "Revision E, 11 February 2020; validated by Notice 1, 31 March 2025",
+   "paragraph": "1; PDF 1",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5763544",
+   "passage": "The applicable issue of the documents cited herein, including their approval dates and dates of any applicable amendments, notices, and revisions, shall be as specified in the contract.",
+   "passageSHA256": "549fa95ee28fd854ef56c5a29de96674e25c34b33bf9cd11d2b5da43c8543ef3"
+  },
+  "wording": "The applicable issues of documents cited by DI-SESS-80640E shall match the contract-specified issues, including approval dates and applicable amendment, notice, and revision dates.",
+  "wordingSHA256": "9c545e08ab0827b0f21e602758a0b05d6cab095ec09b96abc845cfa6f952d719",
+  "actor": "The applicable issues of documents cited by DI-SESS-80640E",
+  "condition": "When DI-SESS-80640E is invoked by the applicable contract or CDRL for the required data deliverable.",
+  "verificationIntent": "inspection",
+  "kind": "currency",
+  "binding": true,
+  "fields": [
+   "applicableSourceIssue",
+   "contractReference"
+  ],
+  "status": "sample",
+  "notes": "Operative DID provision conditional on actual contractual invocation, not a general obligation to execute an engineering change or accept a nonconformance. One consecutive exact source span; layout whitespace normalized. Span PDF pages: 1. No automatic substitution of a newly published issue. The named fields are logical receiving mappings, not uninspected DD-form field names."
+ },
+ {
+  "id": "DZR-F9-0033",
+  "alias": "DI-SESS-80640E §2(a)–(c); PDF 1,2",
+  "source": {
+   "docId": "DI-SESS-80640E",
+   "edition": "Revision E, 11 February 2020; validated by Notice 1, 31 March 2025",
+   "paragraph": "2(a)–(c); PDF 1,2",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5763544",
+   "passage": "2. Format. The RFV shall be in one of the following formats: a. DD Form 1694, Request for Variance (RFV), b. The schema required by the Acquirer’s Integrated Digital Environment (IDE), or\n\nc. The Supplier’s preferred format.",
+   "passageSHA256": "a38587c272de1ffc23a0b91b4a87a254e99f99b5bfb63a6443ab36eac003cb90"
+  },
+  "wording": "The Request for Variance shall use DD Form 1694, the schema required by the Acquirer’s Integrated Digital Environment, or the Supplier’s preferred format.",
+  "wordingSHA256": "ed96ab7e3fce3dd18f20249c7642eb9eec5f8054fb7afbe2b380e0a875e61a55",
+  "actor": "The Request for Variance",
+  "condition": "When DI-SESS-80640E is invoked by the applicable contract or CDRL for the required data deliverable.",
+  "verificationIntent": "inspection",
+  "kind": "structure",
+  "binding": true,
+  "fields": [
+   "deliveryFormat"
+  ],
+  "status": "sample",
+  "notes": "Operative DID provision conditional on actual contractual invocation, not a general obligation to execute an engineering change or accept a nonconformance. Composite quotation of separate exact source spans; intervening page furniture omitted. Span PDF pages: 1,2. One format-alternatives obligation, not three simultaneous formats. No native file extension, database, serialization, or universal machine schema is specified. Content required by section 3 remains applicable whichever permitted format is used."
+ },
+ {
+  "id": "DZR-F9-0034",
+  "alias": "DI-SESS-80640E §3; PDF 2",
+  "source": {
+   "docId": "DI-SESS-80640E",
+   "edition": "Revision E, 11 February 2020; validated by Notice 1, 31 March 2025",
+   "paragraph": "3; PDF 2",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5763544",
+   "passage": "The RFV shall contain all the information required by DD Form 1694.",
+   "passageSHA256": "828c26433d854b4e6f11e879b679536b45331a889d4a78431bd6c491952a45f9"
+  },
+  "wording": "The Request for Variance shall contain all information required by DD Form 1694.",
+  "wordingSHA256": "2b3b02422c013fb6fb7141434d7e84516a42b507c0015defbfd6e8a539b9fcd9",
+  "actor": "The Request for Variance",
+  "condition": "When DI-SESS-80640E is invoked by the applicable contract or CDRL for the required data deliverable.",
+  "verificationIntent": "inspection",
+  "kind": "content",
+  "binding": true,
+  "fields": [
+   "formRequiredContent"
+  ],
+  "status": "sample",
+  "notes": "Operative DID provision conditional on actual contractual invocation, not a general obligation to execute an engineering change or accept a nonconformance. One consecutive exact source span; layout whitespace normalized. Span PDF pages: 2. The DD Form 1694 PDF and completion instructions are inaccessible open dependencies. This is the inspected DID incorporation-by-reference obligation only. No form fields, completion instructions, validations, signatures, status codes, or identifiers are invented or extracted from indexed text; form-content completeness cannot be established until the applicable form and instructions can be inspected."
+ },
+ {
+  "id": "DZR-F9-0035",
+  "alias": "DI-SESS-80640E §Use/relationship, three cost-reduction bullets; PDF 1",
+  "source": {
+   "docId": "DI-SESS-80640E",
+   "edition": "Revision E, 11 February 2020; validated by Notice 1, 31 March 2025",
+   "paragraph": "Use/relationship, three cost-reduction bullets; PDF 1",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5763544",
+   "passage": "When the RFV describes a proposed departure from approved product definition information (i.e., pre-production), the variance shall result in a reduction in cost; indicated by enclosing the value in parentheses.\n\nWhen the RFV describes a product found to be nonconforming after the product has been produced (i.e., post-production), the variance shall result in a reduction in cost; indicated by enclosing the value in parentheses.\n\nWhen the nonconformance is induced or caused by the Acquirer, a reduction in cost is not required when submitting the RFV.",
+   "passageSHA256": "e0a5f7e3ed9e769533387614f1a26f65cf7b09cbcaad20135e66e5a81688aa6f"
+  },
+  "wording": "The Request for Variance shall identify a variance resulting in a reduction in cost, with the reduction value enclosed in parentheses.",
+  "wordingSHA256": "c2ad65097bcbb88c56ad4042566591c0c2f020a5e26f125bb1602a96458cdb04",
+  "actor": "The Request for Variance",
+  "condition": "When DI-SESS-80640E is invoked by the applicable contract or CDRL for the required data deliverable. For a proposed pre-production departure from approved product definition information or a product found nonconforming after production; a reduction in cost is not required when the nonconformance is induced or caused by the Acquirer.",
+  "verificationIntent": "inspection",
+  "kind": "content",
+  "binding": true,
+  "fields": [
+   "varianceProductionContext",
+   "acquirerCausedNonconformance",
+   "costReductionValue",
+   "costReductionPresentation"
+  ],
+  "status": "sample",
+  "notes": "Operative DID provision conditional on actual contractual invocation, not a general obligation to execute an engineering change or accept a nonconformance. Composite quotation of separate exact source spans; intervening page furniture omitted. Span PDF pages: 1,1,1. The same cost-reduction/data-presentation rule is catalogued once for both explicitly stated production contexts. The Acquirer-caused exception is part of the requirement, not a separate mandate or a zero-cost requirement. No cost formula, amount, currency, numeric encoding, or inferred form-field label is supplied by the inspected text. This records the RFV cost condition and its presentation; it does not instruct performance of manufacturing or engineering work."
+ },
+ {
+  "id": "DZR-F9-0036",
+  "alias": "DI-SESS-80642E §1; PDF 1",
+  "source": {
+   "docId": "DI-SESS-80642E",
+   "edition": "Revision E, 11 February 2020; validated by Notice 1, 31 March 2025",
+   "paragraph": "1; PDF 1",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5763545",
+   "passage": "The applicable issue of the documents cited herein, including their approval dates and dates of any applicable amendments, notices, and revisions, shall be as specified in the contract.",
+   "passageSHA256": "549fa95ee28fd854ef56c5a29de96674e25c34b33bf9cd11d2b5da43c8543ef3"
+  },
+  "wording": "The applicable issues of documents cited by DI-SESS-80642E shall match the contract-specified issues, including approval dates and applicable amendment, notice, and revision dates.",
+  "wordingSHA256": "7697f91dd7e409602b86def62c989e232f0afb24a823183937c57c5fa5c0908e",
+  "actor": "The applicable issues of documents cited by DI-SESS-80642E",
+  "condition": "When DI-SESS-80642E is invoked by the applicable contract or CDRL for the required data deliverable.",
+  "verificationIntent": "inspection",
+  "kind": "currency",
+  "binding": true,
+  "fields": [
+   "applicableSourceIssue",
+   "contractReference"
+  ],
+  "status": "sample",
+  "notes": "Operative DID provision conditional on actual contractual invocation, not a general obligation to execute an engineering change or accept a nonconformance. One consecutive exact source span; layout whitespace normalized. Span PDF pages: 1. No automatic substitution of a newly published issue. The named fields are logical receiving mappings, not uninspected DD-form field names."
+ },
+ {
+  "id": "DZR-F9-0037",
+  "alias": "DI-SESS-80642E §2(a)–(c); PDF 1",
+  "source": {
+   "docId": "DI-SESS-80642E",
+   "edition": "Revision E, 11 February 2020; validated by Notice 1, 31 March 2025",
+   "paragraph": "2(a)–(c); PDF 1",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5763545",
+   "passage": "2. Format. The NOR shall be in one of the following formats: a. DD Form 1695, Notice of Revision (NOR), b. The schema required by the Acquirer’s Integrated Digital Environment (IDE), or c. The Supplier’s preferred format.",
+   "passageSHA256": "1cb958ad3dbf076b6cd8ee561e31506d5583703aa37ee9a480f961261fde8643"
+  },
+  "wording": "The Notice of Revision shall use DD Form 1695, the schema required by the Acquirer’s Integrated Digital Environment, or the Supplier’s preferred format.",
+  "wordingSHA256": "f7441577d112a1bdca2ebc03a067fd542b1976cdd210c027a735f9db809e7dc3",
+  "actor": "The Notice of Revision",
+  "condition": "When DI-SESS-80642E is invoked by the applicable contract or CDRL for the required data deliverable.",
+  "verificationIntent": "inspection",
+  "kind": "structure",
+  "binding": true,
+  "fields": [
+   "deliveryFormat"
+  ],
+  "status": "sample",
+  "notes": "Operative DID provision conditional on actual contractual invocation, not a general obligation to execute an engineering change or accept a nonconformance. One consecutive exact source span; layout whitespace normalized. Span PDF pages: 1. One format-alternatives obligation, not three simultaneous formats. No native file extension, database, serialization, or universal machine schema is specified. Content required by section 3 remains applicable whichever permitted format is used."
+ },
+ {
+  "id": "DZR-F9-0038",
+  "alias": "DI-SESS-80642E §3; PDF 1",
+  "source": {
+   "docId": "DI-SESS-80642E",
+   "edition": "Revision E, 11 February 2020; validated by Notice 1, 31 March 2025",
+   "paragraph": "3; PDF 1",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5763545",
+   "passage": "The NOR shall contain all the information required by DD Form 1695.",
+   "passageSHA256": "6f9330419135ca2b235432621054f011c4219687e38df16eae8344bf09e0cd34"
+  },
+  "wording": "The Notice of Revision shall contain all information required by DD Form 1695.",
+  "wordingSHA256": "a16c8ea965f8f9b3488ed1ace15e9e0492c98702585b0f2a9b00958ae46a9bbc",
+  "actor": "The Notice of Revision",
+  "condition": "When DI-SESS-80642E is invoked by the applicable contract or CDRL for the required data deliverable.",
+  "verificationIntent": "inspection",
+  "kind": "content",
+  "binding": true,
+  "fields": [
+   "formRequiredContent"
+  ],
+  "status": "sample",
+  "notes": "Operative DID provision conditional on actual contractual invocation, not a general obligation to execute an engineering change or accept a nonconformance. One consecutive exact source span; layout whitespace normalized. Span PDF pages: 1. The DD Form 1695 PDF and completion instructions are inaccessible open dependencies. This is the inspected DID incorporation-by-reference obligation only. No form fields, completion instructions, validations, signatures, status codes, or identifiers are invented or extracted from indexed text; form-content completeness cannot be established until the applicable form and instructions can be inspected."
+ }
+]

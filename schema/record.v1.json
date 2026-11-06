@@ -1,0 +1,103 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "$id": "https://dayzero.example/schema/record.v1.json",
+ "title": "DayZero requirement record v1",
+ "type": "object",
+ "required": [
+  "id",
+  "alias",
+  "source",
+  "wording",
+  "wordingSHA256",
+  "actor",
+  "verificationIntent",
+  "kind",
+  "binding",
+  "status"
+ ],
+ "properties": {
+  "id": {
+   "type": "string",
+   "pattern": "^DZR-F\\d+-\\d{4}$"
+  },
+  "alias": {
+   "type": "string"
+  },
+  "source": {
+   "type": "object",
+   "required": [
+    "docId",
+    "edition",
+    "paragraph",
+    "url",
+    "passage",
+    "passageSHA256"
+   ],
+   "properties": {
+    "docId": {
+     "type": "string"
+    },
+    "edition": {
+     "type": "string"
+    },
+    "paragraph": {
+     "type": "string"
+    },
+    "url": {
+     "type": "string"
+    },
+    "passage": {
+     "type": "string"
+    },
+    "passageSHA256": {
+     "type": "string",
+     "pattern": "^[0-9a-f]{64}$"
+    }
+   }
+  },
+  "wording": {
+   "type": "string"
+  },
+  "wordingSHA256": {
+   "type": "string",
+   "pattern": "^[0-9a-f]{64}$"
+  },
+  "actor": {
+   "type": "string"
+  },
+  "condition": {
+   "type": "string"
+  },
+  "verificationIntent": {
+   "enum": [
+    "inspection",
+    "analysis",
+    "demonstration",
+    "test"
+   ]
+  },
+  "kind": {
+   "type": "string"
+  },
+  "binding": {
+   "type": "boolean"
+  },
+  "fields": {
+   "type": "array",
+   "items": {
+    "type": "string"
+   }
+  },
+  "status": {
+   "enum": [
+    "sample",
+    "reviewed",
+    "adopted",
+    "unsourced"
+   ]
+  },
+  "notes": {
+   "type": "string"
+  }
+ }
+}

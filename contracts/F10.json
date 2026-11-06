@@ -1,0 +1,1046 @@
+{
+  "feed": "F10",
+  "name": "RACI / staffing by WBS",
+  "systemOfRecord": [
+    "Actually invoked contractor Program Management Plan / Management Plan and controlled organization/responsibility records; neither a receiver hash nor this sample creates source authority.",
+    "Actually invoked Digital Engineering Management Plan and agreed document/model for DE-specific RACI, organization-chart and IMS resource-allocation information.",
+    "Actually invoked contractor EVMS/IPMDAR CPD and Performance Narrative Report for native WBS/OBS/CA/WP structures, hours, reporting calendar and selected staffing narratives."
+  ],
+  "formats": [
+    {
+      "format": "F10 receiver-selected contractor-format JSON projection, with native delivered content retained; not a universal government schema or complete-source substitute",
+      "spec": "Chosen receiving representation. DI-MGMT-81797 §2 permits contractor format; completeness and all applicable native source obligations remain separate.",
+      "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=4820183"
+    },
+    {
+      "format": "Native CPD Version 1.0 ZIP with specified UTF-8 JSON table entries and FileType.txt; actual package bytes retained",
+      "spec": "IPMDAR Contract Performance Dataset File Format Specification Version 1.0, 12 March 2020, plus Data Exchange Instructions Version 1.0 under actual invocation.",
+      "url": "https://www.acq.osd.mil/asda/dpc/api/ipm/docs/20200312%20Contract%20Performance%20Dataset%20-%20FFS.pdf"
+    },
+    {
+      "format": "PNR electronic human-readable contractor file structure containing searchable text, with actual required signature/attestation and proprietary disclosure",
+      "spec": "DI-MGMT-81861C §§1.6–1.8 and applicable Table 2.2 selection. Requested C is retained; current D is not silently substituted.",
+      "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5773808"
+    },
+    {
+      "format": "DEMP agreed natural-language document and formal-language model; both required by invoked profile",
+      "spec": "DI-SESS-82538 §2, mutually agreed government/contractor format for access and review. Tailored-out content retains the exact source placeholder statement: This content has been tailored out.",
+      "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5800888"
+    },
+    {
+      "format": "Management Plan contractor-devised format retaining the applicable identification, structure, pagination, binding and legibility requirements",
+      "spec": "DI-MGMT-80004A §2; a receiving JSON view alone is not evidence that all native plan-format duties are satisfied.",
+      "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=148563"
+    }
+  ],
+  "cadence": "IPMDAR profile only: actual CDRL reporting at least monthly; same reporting/accounting period across components; reports after period close and no later than sixteen business days after period end, with applicable incremental Detailed Analysis final date. Selected Table 2.2 staffing/subcontractor items follow the CDRL Block 16 selection and individual frequency. Program/Management/DE plans use the actual contract/CDRL schedule; no uninspected universal update cadence is invented.",
+  "keys": {
+    "primary": [
+      "recordId"
+    ],
+    "joins": {
+      "wbs": "wbsId",
+      "requirement": "requirementId"
+    }
+  },
+  "fields": [
+    {
+      "name": "profile",
+      "type": "string",
+      "required": true,
+      "governedBy": [],
+      "description": "Envelope. Names the selected source/profile and receiver format. A projection format does not waive native deliverable requirements."
+    },
+    {
+      "name": "completeness",
+      "type": "string",
+      "required": true,
+      "governedBy": [],
+      "description": "Envelope. Uses partial-example, partial-extract, or complete-submission. A partial flag never represents acceptance of a complete source deliverable."
+    },
+    {
+      "name": "invocation",
+      "type": "object",
+      "required": true,
+      "governedBy": [
+        "DZR-F10-0009",
+        "DZR-F10-0027",
+        "DZR-F10-0201",
+        "DZR-F10-0203",
+        "DZR-F10-0223"
+      ],
+      "description": "Envelope. Actual contract/CDRL applicability, source editions, tailoring, reportingFrequency, tailoredItems, submission role, format agreement and applicable reference editions. An illustrative invocation is not an actual contract. Covered source logical field names: applicableCdrlRequirements, invocation.reportingFrequency, invocation.tailoredItems, referenceDocumentIssues, tailoringPlaceholders."
+    },
+    {
+      "name": "context",
+      "type": "object",
+      "required": true,
+      "governedBy": [],
+      "description": "Envelope. Controlled origin, scope, source-to-receiver mapping and authoritative WBS/requirement join targets. Retains all supplied operative context; excludes guidance catalogues."
+    },
+    {
+      "name": "records",
+      "type": "array<object>",
+      "required": true,
+      "governedBy": [],
+      "description": "Envelope. Non-empty received role/responsibility or staffing records; no fixed production row count. The sample alone has exactly three rows."
+    },
+    {
+      "name": "nativeDelivery",
+      "type": "object",
+      "required": true,
+      "governedBy": [
+        "DZR-F10-0101",
+        "DZR-F10-0202",
+        "DZR-F10-0209",
+        "DZR-F10-0212"
+      ],
+      "description": "Envelope. Actual native delivered payloads and attachments, including the complete received CPD ZIP bytes or agreed DEMP document/model where applicable. attachments carries mediaType and contentBase64 containing canonical unbroken RFC 4648 base64 bytes, not merely filenames/URLs or a precomputed digest. This receiving representation is not a mandated native format. Covered source logical field names: agreedFormat, attachmentIdentifiers, attachmentTextReferences, document, model, nativeFormat."
+    },
+    {
+      "name": "recordId",
+      "type": "string",
+      "required": true,
+      "governedBy": [],
+      "description": "Each record. Stable, non-empty receiver identifier; a receiver rule, not a source-prescribed syntax."
+    },
+    {
+      "name": "wbsId",
+      "type": "string",
+      "required": true,
+      "governedBy": [],
+      "description": "Each record. Required, non-empty WBS join resolving to an authoritative receiver target; chosen receiver rule. Preserve native source WBS IDs and hierarchies separately."
+    },
+    {
+      "name": "requirementId",
+      "type": "string",
+      "required": true,
+      "governedBy": [],
+      "description": "Each record. Required, non-empty requirement join resolving to an authoritative receiver target; chosen receiver rule, not a DID-created requirement allocation mandate."
+    },
+    {
+      "name": "securityMarking",
+      "type": "string",
+      "required": true,
+      "governedBy": [
+        "DZR-F10-0004",
+        "DZR-F10-0102",
+        "DZR-F10-0210"
+      ],
+      "description": "Each record. Received security marking and controlling context. Source-document Distribution A does not authorize release of delivered personnel/program data. PMP nativeFormat/classification is unclassified; actual marking/CUI determinations remain separate. Covered source logical field names: classification, securityClassification, securityMarking."
+    },
+    {
+      "name": "scope",
+      "type": "object",
+      "required": false,
+      "governedBy": [
+        "DZR-F10-0001"
+      ],
+      "description": "Each record or shared source context as mapped. Negotiated work, AUW, organizational/task scope and applicable plan boundaries. Required whenever the selected source clause applies. Covered source logical field names: scope."
+    },
+    {
+      "name": "sourceMetadata",
+      "type": "object",
+      "required": false,
+      "governedBy": [
+        "DZR-F10-0012",
+        "DZR-F10-0210"
+      ],
+      "description": "Received complete source heading/identity/version/period and source-to-record provenance. Native contractor/contract/program metadata is retained when supplied; the sample invents no actual contract number. Covered source logical field names: contractOrProcurementRequestIdentification, sourceMetadata, systemComponentProgramProjectIdentification."
+    },
+    {
+      "name": "sourceEvidence",
+      "type": "object",
+      "required": false,
+      "governedBy": [
+        "DZR-F10-0002",
+        "DZR-F10-0005",
+        "DZR-F10-0013",
+        "DZR-F10-0021",
+        "DZR-F10-0022",
+        "DZR-F10-0028",
+        "DZR-F10-0029",
+        "DZR-F10-0030",
+        "DZR-F10-0031",
+        "DZR-F10-0032",
+        "DZR-F10-0033",
+        "DZR-F10-0034",
+        "DZR-F10-0039",
+        "DZR-F10-0042",
+        "DZR-F10-0043",
+        "DZR-F10-0044",
+        "DZR-F10-0045",
+        "DZR-F10-0046",
+        "DZR-F10-0048",
+        "DZR-F10-0049",
+        "DZR-F10-0050",
+        "DZR-F10-0051",
+        "DZR-F10-0054",
+        "DZR-F10-0055",
+        "DZR-F10-0103"
+      ],
+      "description": "Complete operative received source data and data-product content underlying the projection, not a selected-field or ID-only summary. Includes native CPD table data/type metadata and full reference fieldsets needed by applicable constraints; received bytes belong in nativeDelivery. Contains no guidance-only fields. Covered source logical field names: costData, scheduleData, sourceEvidence, technicalData."
+    },
+    {
+      "name": "roleAssignments",
+      "type": "array<object>",
+      "required": false,
+      "governedBy": [
+        "DZR-F10-0207",
+        "DZR-F10-0208",
+        "DZR-F10-0217",
+        "DZR-F10-0218",
+        "DZR-F10-0219",
+        "DZR-F10-0220",
+        "DZR-F10-0221"
+      ],
+      "description": "Non-empty when the selected profile reports roles/responsibilities. Retains actual source organization titles/names, functions/duties, personnel position requirements, assigned-person background, task skill type/level/headcount/clearance and proposal-only availability/hiring data as applicable. DEMP RACI uses Responsible, Accountable, Consulted, Informed only for the invoked DE-specific profile; no universal one-accountable/one-responsible cardinality is imposed. Retains DE organization-chart and IMS resource-allocation links without inferring a numeric allocation absent source data. Covered source logical field names: assignedPersonnelBackground, assignedPersonnelIdentity, assignedPersonnelWorkExperience, availablePersonnelCount, corporateResponsibilities, deRaciMatrix, deStakeholderResponsibilities, deStakeholderRoles, imsRoleResourceAllocations, managementOfficeStaffing, positionClearance, positionEducation, positionExperience, positionSkills, positionTraining, requiredPersonnelCount, requiredSecurityClearance, responsibilities, skillLevel, skillType."
+    },
+    {
+      "name": "staffingHours",
+      "type": "object",
+      "required": false,
+      "governedBy": [
+        "DZR-F10-0013",
+        "DZR-F10-0021",
+        "DZR-F10-0022",
+        "DZR-F10-0023",
+        "DZR-F10-0039",
+        "DZR-F10-0041",
+        "DZR-F10-0048",
+        "DZR-F10-0049",
+        "DZR-F10-0050",
+        "DZR-F10-0051",
+        "DZR-F10-0052",
+        "DZR-F10-0054",
+        "DZR-F10-0055"
+      ],
+      "description": "CPD hours and associated metric metadata: BCWS/BCWP/ACWP/ETC, cost element, CA/WP grain, reporting period, cumulative/time-phased basis, reprogramming data and supplied dollars where required. Unit is explicit; hours are not silently converted into personnel counts or FTE. Required only under the applicable staffing source/profile. Covered source logical field names: staffingHours."
+    },
+    {
+      "name": "reportingPeriodId",
+      "type": "string|integer",
+      "required": false,
+      "governedBy": [
+        "DZR-F10-0003",
+        "DZR-F10-0010"
+      ],
+      "description": "Preserves the source reporting-period identifier and alignment across applicable IPMDAR components; not a receiver-invented calendar period. Covered source logical field names: reportingPeriodId."
+    },
+    {
+      "name": "reportingCalendar",
+      "type": "array<object>",
+      "required": false,
+      "governedBy": [
+        "DZR-F10-0018",
+        "DZR-F10-0023",
+        "DZR-F10-0038",
+        "DZR-F10-0047"
+      ],
+      "description": "Native periods, inclusive start/end dates and working hours across baseline/forecast, preserving native ordering and conditional scope. FFS inclusive bounds and DEI exclusive periods require disjoint contiguous periods: StartDate is no later than EndDate and each next StartDate is the previous EndDate plus one day. WorkingHours is nonnegative. Covered source logical field names: reportingCalendar."
+    },
+    {
+      "name": "wbs",
+      "type": "array<object>",
+      "required": false,
+      "governedBy": [
+        "DZR-F10-0014",
+        "DZR-F10-0035",
+        "DZR-F10-0036",
+        "DZR-F10-0103",
+        "DZR-F10-0105"
+      ],
+      "description": "Native WBS/CWBS identifiers, hierarchy, commonBase or planning-equivalent basis, relationship, element descriptions and associated costs where required. Receiver wbsId joins do not replace the native tree or resolve unstated equivalence mappings. Covered source logical field names: commonBase, cwbsElementCost, cwbsElementDescription, cwbsRelationship, wbs."
+    },
+    {
+      "name": "organizations",
+      "type": "array<object>",
+      "required": false,
+      "governedBy": [
+        "DZR-F10-0014",
+        "DZR-F10-0017",
+        "DZR-F10-0035",
+        "DZR-F10-0036",
+        "DZR-F10-0104",
+        "DZR-F10-0106",
+        "DZR-F10-0208",
+        "DZR-F10-0217",
+        "DZR-F10-0218"
+      ],
+      "description": "Native organization data/OBS, programOrganizationChart with organizationTitle/organizationName, programOffice/supportContractors/majorSubcontractors, and functionalOrganizationRelationshipChart with programFunctions/functionalOrganizations/authorityLines/communicationLines. Preserve the two PMP charts and relevant management-plan charts as distinct content, even when a chosen representation shares nodes. Covered source logical field names: authorityLines, communicationLines, corporateOrganizationChart, corporateOrganizationNarrative, functionalOrganizationRelationshipChart, functionalOrganizations, majorSubcontractors, managementOfficeOrganizationChart, organization, organizationChartRoleLinks, organizationName, organizationTitle, organizations, programFunctions, programOffice, programOrganizationChart, supportContractors."
+    },
+    {
+      "name": "controlAccounts",
+      "type": "array<object>",
+      "required": false,
+      "governedBy": [
+        "DZR-F10-0015",
+        "DZR-F10-0020",
+        "DZR-F10-0037"
+      ],
+      "description": "Native control-account and summary-level planning-package structure, separate types and exact applicable WBS/OBS terminal-element mappings. Covered source logical field names: controlAccounts."
+    },
+    {
+      "name": "workPackages",
+      "type": "array<object>",
+      "required": false,
+      "governedBy": [
+        "DZR-F10-0016",
+        "DZR-F10-0019"
+      ],
+      "description": "Native work/planning-package identities, type distinctions and control-account trace; only required at the contract-selected grain. Covered source logical field names: workPackages."
+    },
+    {
+      "name": "subcontractors",
+      "type": "array<object>",
+      "required": false,
+      "governedBy": [
+        "DZR-F10-0017",
+        "DZR-F10-0053"
+      ],
+      "description": "Applicable native major-subcontractor/EVM-flow-down identity and relationship data; not an automatic requirement for subcontractors absent source applicability. Covered source logical field names: subcontractors."
+    },
+    {
+      "name": "staffingNarrative",
+      "type": "object",
+      "required": false,
+      "governedBy": [
+        "DZR-F10-0006",
+        "DZR-F10-0024",
+        "DZR-F10-0026",
+        "DZR-F10-0053"
+      ],
+      "description": "Received searchable human-readable PNR content and native document bytes, including selected staffing changes/reasons/projection risks/impacts and selected major-subcontractor changes. CDRL Block 16 selection and frequency are preserved; no unselected Table 2.2 narrative is made mandatory. Covered source logical field names: staffingNarrative."
+    },
+    {
+      "name": "approval",
+      "type": "object",
+      "required": false,
+      "governedBy": [
+        "DZR-F10-0007"
+      ],
+      "description": "Only actual required signatures, attestation and evidence; no signature or approval is inferred from ingestion or hashing. Covered source logical field names: approval."
+    },
+    {
+      "name": "proprietaryDisclosure",
+      "type": "object",
+      "required": false,
+      "governedBy": [
+        "DZR-F10-0008"
+      ],
+      "description": "Actual company proprietary disclosure statement and required placements across PNR/signature page, CPD and SPD when the IPMDAR source applies. Covered source logical field names: proprietaryDisclosure."
+    },
+    {
+      "name": "delivery",
+      "type": "object",
+      "required": false,
+      "governedBy": [
+        "DZR-F10-0010",
+        "DZR-F10-0011",
+        "DZR-F10-0025",
+        "DZR-F10-0056"
+      ],
+      "description": "Actual delivery endpoint, timing, source period close, business-day basis, incremental final date and subcontractor-to-prime relation as applicable. Preserves source context without inventing a contract cadence for plans. Covered source logical field names: delivery."
+    },
+    {
+      "name": "managementPlanContent",
+      "type": "object",
+      "required": false,
+      "governedBy": [
+        "DZR-F10-0104",
+        "DZR-F10-0204",
+        "DZR-F10-0205",
+        "DZR-F10-0206",
+        "DZR-F10-0210",
+        "DZR-F10-0211",
+        "DZR-F10-0213",
+        "DZR-F10-0214",
+        "DZR-F10-0215",
+        "DZR-F10-0216",
+        "DZR-F10-0217",
+        "DZR-F10-0218",
+        "DZR-F10-0220",
+        "DZR-F10-0221",
+        "DZR-F10-0222",
+        "DZR-F10-0223"
+      ],
+      "description": "Remaining received operative management-plan fieldsets needed for the selected F10 duties: managementPractices, managementTechniques, subcontractorManagement, organizational/control narratives, resource assumptions, reporting approach, content structure and required format/tailoring metadata. Preserve all supplied operative content. F10 does not claim to extract every complete PMP/Management Plan/DEMP section. Covered source logical field names: authority, binding, contractualTask, controlLines, corporateFunctionalRelationships, dataDeliveryManagementMethods, deImplementationAssumptions, deImplementationConstraints, digitalEnvironmentHardware, digitalEnvironmentNetworks, digitalEnvironmentSoftware, digitalEnvironmentTools, digitalEnvironmentWorkforce, functionalRelationships, governmentInterfaces, index, issuingGovernmentActivity, legibility, maintenanceUpdateApproach, managementOfficeNarrative, managementPractices, managementTechniques, otherContractorInterfaces, pageSequence, paragraphNumbers, preparingOfficeOrContractorTitle, reproducibility, requiredNewHireCount, sectionNumbers, stakeholderTrainingPlan, subcontractorManagement, tableOfContents."
+    }
+  ],
+  "markings": "PMP §2 requires an unclassified plan; DI-MGMT-81861C excludes classified submissions to EVM-CR. Neither condition means publicly releasable or free of CUI. Retain actual security and proprietary disclosure context. DoDI 5230.24, DoDI 5200.48 and DoDM 5200.01 Volume 2 remain uninspected open gaps pending user PDFs; no compliance is claimed. Public-source release markings do not transfer to delivered staffing or personnel data.",
+  "acceptance": [
+    {
+      "rule": "Apply only under this source condition: When DI-MGMT-81861C is invoked by the contract and CPD-derived staffing data or the associated staffing narrative is delivered. Then verify the complete grouped obligation: The IPMDAR shall reflect all negotiated contract work and the total scope of Authorized Unpriced Work efforts. Preserve the source exceptions and complete fieldset; a receiver projection does not replace missing required native content.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F10-0001"
+      ]
+    },
+    {
+      "rule": "Apply only under this source condition: When DI-MGMT-81861C is invoked by the contract and CPD-derived staffing data or the associated staffing narrative is delivered. Then verify the complete grouped obligation: The IPMDAR shall reflect the output of the contractor's Earned Value Management System. Preserve the source exceptions and complete fieldset; a receiver projection does not replace missing required native content.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F10-0002"
+      ]
+    },
+    {
+      "rule": "Apply only under this source condition: When DI-MGMT-81861C is invoked by the contract and CPD-derived staffing data or the associated staffing narrative is delivered. Then verify the complete grouped obligation: The IPMDAR shall use the same reporting period for the CPD, Schedule and Performance Narrative Report. Preserve the source exceptions and complete fieldset; a receiver projection does not replace missing required native content.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F10-0003"
+      ]
+    },
+    {
+      "rule": "Apply only under this source condition: When DI-MGMT-81861C is invoked by the contract and CPD-derived staffing data or the associated staffing narrative is delivered. Then verify the complete grouped obligation: The contractor shall exclude classified material from submissions to the EVM-CR. Preserve the source exceptions and complete fieldset; a receiver projection does not replace missing required native content.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F10-0004"
+      ]
+    },
+    {
+      "rule": "Apply only under this source condition: When DI-MGMT-81861C is invoked by the contract and CPD-derived staffing data or the associated staffing narrative is delivered. Then verify the complete grouped obligation: The CPD shall conform to the applicable DoD-approved File Format Specification and Data Exchange Instructions. Preserve the source exceptions and complete fieldset; a receiver projection does not replace missing required native content.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F10-0005"
+      ]
+    },
+    {
+      "rule": "Apply only under this source condition: When DI-MGMT-81861C is invoked by the contract and CPD-derived staffing data or the associated staffing narrative is delivered. Then verify the complete grouped obligation: The contractor shall deliver the Performance Narrative Report electronically in a human-readable contractor file structure containing searchable text. Preserve the source exceptions and complete fieldset; a receiver projection does not replace missing required native content.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F10-0006"
+      ]
+    },
+    {
+      "rule": "Apply only under this source condition: When DI-MGMT-81861C is invoked by the contract and CPD-derived staffing data or the associated staffing narrative is delivered. Then verify the complete grouped obligation: The contractor's program manager or designee shall sign the final Performance Narrative Report or a separate signature page to confirm completion of the data submission and that the information in all submitted components is authoritative and used by the contractor to manage the program. Preserve the source exceptions and complete fieldset; a receiver projection does not replace missing required native content.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F10-0007"
+      ]
+    },
+    {
+      "rule": "Apply only under this source condition: When DI-MGMT-81861C is invoked by the contract and CPD-derived staffing data or the associated staffing narrative is delivered. Then verify the complete grouped obligation: The contractor shall provide the company proprietary disclosure statement in the Performance Narrative Report submission or separate signature page and record the statement in the CPD and SPD files. Preserve the source exceptions and complete fieldset; a receiver projection does not replace missing required native content.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F10-0008"
+      ]
+    },
+    {
+      "rule": "Apply only under this source condition: When DI-MGMT-81861C is invoked by the contract and CPD-derived staffing data or the associated staffing narrative is delivered. Then verify the complete grouped obligation: The CDRL shall specify an IPMDAR reporting frequency of at least monthly. Preserve the source exceptions and complete fieldset; a receiver projection does not replace missing required native content.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F10-0009"
+      ]
+    },
+    {
+      "rule": "Apply only under this source condition: When DI-MGMT-81861C is invoked by the contract and CPD-derived staffing data or the associated staffing narrative is delivered. Then verify the complete grouped obligation: The contractor shall deliver IPMDAR reports for the same accounting period after period close and no later than sixteen business days after the accounting period end date. Preserve the source exceptions and complete fieldset; a receiver projection does not replace missing required native content.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F10-0010"
+      ]
+    },
+    {
+      "rule": "Apply only under this source condition: When DI-MGMT-81861C is invoked by the contract and CPD-derived staffing data or the associated staffing narrative is delivered. Then verify the complete grouped obligation: The contractor shall deliver the IPMDAR to the ADA EVM-CR. Preserve the source exceptions and complete fieldset; a receiver projection does not replace missing required native content.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F10-0011"
+      ]
+    },
+    {
+      "rule": "Apply only under this source condition: When DI-MGMT-81861C is invoked by the contract and CPD-derived staffing data or the associated staffing narrative is delivered. Then verify the complete grouped obligation: The IPMDAR common heading shall contain reporting-contractor identity and location, applicable contract and effort identity and type, program identity and phase, and the current reporting period. Preserve the source exceptions and complete fieldset; a receiver projection does not replace missing required native content.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F10-0012"
+      ]
+    },
+    {
+      "rule": "Apply only under this source condition: When DI-MGMT-81861C is invoked by the contract and CPD-derived staffing data or the associated staffing narrative is delivered and the CDRL has not tailored the dollars-and-hours requirement. Then verify the complete grouped obligation: The CPD shall report performance data in dollars and hours. Preserve the source exceptions and complete fieldset; a receiver projection does not replace missing required native content.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F10-0013"
+      ]
+    },
+    {
+      "rule": "Apply only under this source condition: When DI-MGMT-81861C is invoked by the contract and CPD-derived staffing data or the associated staffing narrative is delivered. Then verify the complete grouped obligation: The CPD structures shall contain the contractor's WBS and organizational categories representing the contractor's internal management structure. Preserve the source exceptions and complete fieldset; a receiver projection does not replace missing required native content.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F10-0014"
+      ]
+    },
+    {
+      "rule": "Apply only under this source condition: When DI-MGMT-81861C is invoked by the contract and CPD-derived staffing data or the associated staffing narrative is delivered. Then verify the complete grouped obligation: The CPD shall associate each control account with exactly one WBS element and exactly one organizational structure element. Preserve the source exceptions and complete fieldset; a receiver projection does not replace missing required native content.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F10-0015"
+      ]
+    },
+    {
+      "rule": "Apply only under this source condition: When DI-MGMT-81861C is invoked by the contract and CPD-derived staffing data or the associated staffing narrative is delivered and the CDRL requires work-package data. Then verify the complete grouped obligation: The CPD shall trace each reported work package to the associated control account. Preserve the source exceptions and complete fieldset; a receiver projection does not replace missing required native content.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F10-0016"
+      ]
+    },
+    {
+      "rule": "Apply only under this source condition: When DI-MGMT-81861C is invoked by the contract and CPD-derived staffing data or the associated staffing narrative is delivered. Then verify the complete grouped obligation: The CPD organizational structure shall clearly identify major-subcontractor efforts, including subcontractors with an EVM flow-down requirement. Preserve the source exceptions and complete fieldset; a receiver projection does not replace missing required native content.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F10-0017"
+      ]
+    },
+    {
+      "rule": "Apply only under this source condition: When DI-MGMT-81861C is invoked by the contract and CPD-derived staffing data or the associated staffing narrative is delivered. Then verify the complete grouped obligation: The CPD reporting calendar shall span the entire baseline and forecast with accounting-period start dates, end dates and working hours. Preserve the source exceptions and complete fieldset; a receiver projection does not replace missing required native content.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F10-0018"
+      ]
+    },
+    {
+      "rule": "Apply only under this source condition: When DI-MGMT-81861C is invoked by the contract and CPD-derived staffing data or the associated staffing narrative is delivered and the CDRL requires planning-package data. Then verify the complete grouped obligation: The CPD shall identify planning packages separately from work packages in the appropriate structure. Preserve the source exceptions and complete fieldset; a receiver projection does not replace missing required native content.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F10-0019"
+      ]
+    },
+    {
+      "rule": "Apply only under this source condition: When DI-MGMT-81861C is invoked by the contract and CPD-derived staffing data or the associated staffing narrative is delivered and summary level planning packages are applicable. Then verify the complete grouped obligation: The CPD shall identify summary level planning packages separately from control accounts while retaining traceability to WBS and organizational structure elements. Preserve the source exceptions and complete fieldset; a receiver projection does not replace missing required native content.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F10-0020"
+      ]
+    },
+    {
+      "rule": "Apply only under this source condition: When DI-MGMT-81861C is invoked by the contract and CPD-derived staffing data or the associated staffing narrative is delivered. Then verify the complete grouped obligation: The CPD detail data shall report BCWS, BCWP, ACWP and ETC at the control-account level, or at the CDRL-specified work-package level, by Labor, Material, Other Direct and Subcontractor elements of cost. Preserve the source exceptions and complete fieldset; a receiver projection does not replace missing required native content.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F10-0021"
+      ]
+    },
+    {
+      "rule": "Apply only under this source condition: When DI-MGMT-81861C is invoked by the contract and CPD-derived staffing data or the associated staffing narrative is delivered. Then verify the complete grouped obligation: The CPD shall provide cumulative-to-date BCWS, BCWP and ACWP values. Preserve the source exceptions and complete fieldset; a receiver projection does not replace missing required native content.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F10-0022"
+      ]
+    },
+    {
+      "rule": "Apply only under this source condition: When DI-MGMT-81861C is invoked by the contract and CPD-derived staffing data or the associated staffing narrative is delivered. Then verify the complete grouped obligation: The CPD shall provide non-cumulative BCWS and ETC values by reporting period from the next consecutive period through the Baseline Completion Date for BCWS and through the Forecast Completion Date for ETC. Preserve the source exceptions and complete fieldset; a receiver projection does not replace missing required native content.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F10-0023"
+      ]
+    },
+    {
+      "rule": "Apply only under this source condition: When DI-MGMT-81861C is invoked by the contract and CPD-derived staffing data or the associated staffing narrative is delivered and dollars or hours are applicable or specified in the CDRL. Then verify the complete grouped obligation: The Performance Narrative Report shall reflect dollars and hours where applicable or as specified in the CDRL. Preserve the source exceptions and complete fieldset; a receiver projection does not replace missing required native content.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F10-0024"
+      ]
+    },
+    {
+      "rule": "Apply only under this source condition: When DI-MGMT-81861C is invoked by the contract and CPD-derived staffing data or the associated staffing narrative is delivered and incremental delivery applies. Then verify the complete grouped obligation: The contractor shall deliver the Detailed Analysis no later than the final delivery date specified in the CDRL. Preserve the source exceptions and complete fieldset; a receiver projection does not replace missing required native content.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F10-0025"
+      ]
+    },
+    {
+      "rule": "Apply only under this source condition: When DI-MGMT-81861C is invoked by the contract and CPD-derived staffing data or the associated staffing narrative is delivered and CDRL Block 16 includes the Staffing Changes item. Then verify the complete grouped obligation: The staffing-change narrative shall identify major staffing changes by organization, reasons for the changes, major risks in staffing projections and the impacts of the risks. Preserve the source exceptions and complete fieldset; a receiver projection does not replace missing required native content.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F10-0026"
+      ]
+    },
+    {
+      "rule": "Apply only under this source condition: When DI-MGMT-81861C is invoked by the contract and CPD-derived staffing data or the associated staffing narrative is delivered and additional Table 2.2 items are tailored in. Then verify the complete grouped obligation: CDRL Block 16 shall identify the selected additional Table 2.2 items and the reporting frequency for each selected item. Preserve the source exceptions and complete fieldset; a receiver projection does not replace missing required native content.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F10-0027"
+      ]
+    },
+    {
+      "rule": "Apply only under this source condition: When a native IPMDAR CPD Version 1.0 is supplied as operative staffing evidence under the recorded contract invocation. Then verify the complete grouped obligation: The CPD shall encode each field value using the primitive data type specified for the field. Preserve the source exceptions and complete fieldset; a receiver projection does not replace missing required native content.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F10-0028"
+      ]
+    },
+    {
+      "rule": "Apply only under this source condition: When a native IPMDAR CPD Version 1.0 is supplied as operative staffing evidence under the recorded contract invocation. Then verify the complete grouped obligation: The CPD shall include values for all non-nullable fields. Preserve the source exceptions and complete fieldset; a receiver projection does not replace missing required native content.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F10-0029"
+      ]
+    },
+    {
+      "rule": "Apply only under this source condition: When a native IPMDAR CPD Version 1.0 is supplied as operative staffing evidence under the recorded contract invocation. Then verify the complete grouped obligation: The CPD shall contain no duplicate primary-key value collections within a table. Preserve the source exceptions and complete fieldset; a receiver projection does not replace missing required native content.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F10-0030"
+      ]
+    },
+    {
+      "rule": "Apply only under this source condition: When a native IPMDAR CPD Version 1.0 is supplied as operative staffing evidence under the recorded contract invocation. Then verify the complete grouped obligation: The CPD shall resolve each non-null foreign-key field value to a corresponding record in the referenced table. Preserve the source exceptions and complete fieldset; a receiver projection does not replace missing required native content.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F10-0031"
+      ]
+    },
+    {
+      "rule": "Apply only under this source condition: When a native IPMDAR CPD Version 1.0 is supplied as operative staffing evidence under the recorded contract invocation. Then verify the complete grouped obligation: The CPD shall exclude U+0000–U+0008, U+000B–U+000C, U+000E–U+001F and U+007F from string values and limit identifier strings to U+0020–U+007E. Preserve the source exceptions and complete fieldset; a receiver projection does not replace missing required native content.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F10-0032"
+      ]
+    },
+    {
+      "rule": "Apply only under this source condition: When a native IPMDAR CPD Version 1.0 is supplied as operative staffing evidence under the recorded contract invocation. Then verify the complete grouped obligation: The CPD shall normalize String and StringID whitespace to single U+0020 spaces between text with no leading or trailing whitespace, except for remarks and other expository Text values. Preserve the source exceptions and complete fieldset; a receiver projection does not replace missing required native content.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F10-0033"
+      ]
+    },
+    {
+      "rule": "Apply only under this source condition: When a native IPMDAR CPD Version 1.0 is supplied as operative staffing evidence under the recorded contract invocation. Then verify the complete grouped obligation: The CPD shall provide non-empty string values for string fields that cannot be null. Preserve the source exceptions and complete fieldset; a receiver projection does not replace missing required native content.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F10-0034"
+      ]
+    },
+    {
+      "rule": "Apply only under this source condition: When a native IPMDAR CPD Version 1.0 is supplied as operative staffing evidence under the recorded contract invocation. Then verify the complete grouped obligation: The CPD shall order WBS and OBS elements in depth-first hierarchy order, with each parent the nearest preceding lower-level element, a minimum level of one and a level increase no greater than one between consecutive elements. Preserve the source exceptions and complete fieldset; a receiver projection does not replace missing required native content.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F10-0035"
+      ]
+    },
+    {
+      "rule": "Apply only under this source condition: When a native IPMDAR CPD Version 1.0 is supplied as operative staffing evidence under the recorded contract invocation. Then verify the complete grouped obligation: Each CPD WBS or OBS table shall start with one Level 1 record having null ParentID and assign every subsequent record a Level greater than one and the ParentID of the parent determined by hierarchy order. Preserve the source exceptions and complete fieldset; a receiver projection does not replace missing required native content.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F10-0036"
+      ]
+    },
+    {
+      "rule": "Apply only under this source condition: When a native IPMDAR CPD Version 1.0 is supplied as operative staffing evidence under the recorded contract invocation. Then verify the complete grouped obligation: The CPD shall map each control-account WBSElementID and OBSElementID to terminal elements in the respective WBS and OBS hierarchies. Preserve the source exceptions and complete fieldset; a receiver projection does not replace missing required native content.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F10-0037"
+      ]
+    },
+    {
+      "rule": "Apply only under this source condition: When a native IPMDAR CPD Version 1.0 is supplied as operative staffing evidence under the recorded contract invocation. Then verify the complete grouped obligation: The CPD reporting calendar shall use contiguous sequential IDs starting at one, contiguous non-overlapping inclusive date ranges and nonnegative working hours. Preserve the source exceptions and complete fieldset; a receiver projection does not replace missing required native content.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F10-0038"
+      ]
+    },
+    {
+      "rule": "Apply only under this source condition: When a native IPMDAR CPD Version 1.0 is supplied as operative staffing evidence under the recorded contract invocation. Then verify the complete grouped obligation: The CPD BCWS_ToComplete and EST_ToComplete tables shall populate only WorkPackageID when the corresponding table-specific ByWorkPackage flag is true and only ControlAccountID when the flag is false. Preserve the source exceptions and complete fieldset; a receiver projection does not replace missing required native content.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F10-0039"
+      ]
+    },
+    {
+      "rule": "Apply only under this source condition: When a native IPMDAR CPD Version 1.0 is supplied as operative staffing evidence under the recorded contract invocation. Then verify the complete grouped obligation: The CPD BCWS_ToComplete and EST_ToComplete tables shall reference only reporting periods after the current DatasetMetadata.ReportingPeriodID. Preserve the source exceptions and complete fieldset; a receiver projection does not replace missing required native content.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F10-0041"
+      ]
+    },
+    {
+      "rule": "Apply only under this source condition: When a native IPMDAR CPD Version 1.0 is supplied as operative staffing evidence under the recorded contract invocation. Then verify the complete grouped obligation: The CPD ZIP package shall contain unencrypted UTF-8 text entries with DEFLATE used for compressed entries. Preserve the source exceptions and complete fieldset; a receiver projection does not replace missing required native content.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F10-0042"
+      ]
+    },
+    {
+      "rule": "Apply only under this source condition: When a native IPMDAR CPD Version 1.0 is supplied as operative staffing evidence under the recorded contract invocation. Then verify the complete grouped obligation: The CPD ZIP package shall include the type/version entry and every table entry except a table with no records or a singleton with all fields null. Preserve the source exceptions and complete fieldset; a receiver projection does not replace missing required native content.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F10-0043"
+      ]
+    },
+    {
+      "rule": "Apply only under this source condition: When a native IPMDAR CPD Version 1.0 is supplied as operative staffing evidence under the recorded contract invocation. Then verify the complete grouped obligation: The CPD FileType.txt entry shall contain exactly IPMDAR_CONTRACT_PERFORMANCE_DATASET/1.0. Preserve the source exceptions and complete fieldset; a receiver projection does not replace missing required native content.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F10-0044"
+      ]
+    },
+    {
+      "rule": "Apply only under this source condition: When a native IPMDAR CPD Version 1.0 is supplied as operative staffing evidence under the recorded contract invocation. Then verify the complete grouped obligation: The CPD JSON records shall use unique field names defined for the corresponding table and values conforming to the specified primitive-type JSON representation. Preserve the source exceptions and complete fieldset; a receiver projection does not replace missing required native content.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F10-0045"
+      ]
+    },
+    {
+      "rule": "Apply only under this source condition: When a native IPMDAR CPD Version 1.0 is supplied as operative staffing evidence under the recorded contract invocation. Then verify the complete grouped obligation: The CPD JSON records shall include non-null fields with non-null and non-empty values and represent included null fields as null or, for String, StringID and Text only, an empty string. Preserve the source exceptions and complete fieldset; a receiver projection does not replace missing required native content.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F10-0046"
+      ]
+    },
+    {
+      "rule": "Apply only under this source condition: When a native IPMDAR CPD Version 1.0 is supplied as operative staffing evidence under the recorded contract invocation. Then verify the complete grouped obligation: The CPD reporting calendar shall include only periods with associated cost data or overlap with the contractual period of performance, using non-overlapping and contiguous date ranges. Preserve the source exceptions and complete fieldset; a receiver projection does not replace missing required native content.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F10-0047"
+      ]
+    },
+    {
+      "rule": "Apply only under this source condition: When a native IPMDAR CPD Version 1.0 is supplied as operative staffing evidence under the recorded contract invocation. Then verify the complete grouped obligation: The CPD to-date metrics shall reconcile work-package sums to control-account values and time-phased sums to cumulative-to-date totals at the current reporting period, with unphased values reported as cumulative-to-date values. Preserve the source exceptions and complete fieldset; a receiver projection does not replace missing required native content.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F10-0048"
+      ]
+    },
+    {
+      "rule": "Apply only under this source condition: When a native IPMDAR CPD Version 1.0 is supplied as operative staffing evidence under the recorded contract invocation. Then verify the complete grouped obligation: The CPD to-complete metrics shall sum across reported dimensions, with work-package values reconciling to control-account values and time-phased values reconciling to cumulative-to-completion values. Preserve the source exceptions and complete fieldset; a receiver projection does not replace missing required native content.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F10-0049"
+      ]
+    },
+    {
+      "rule": "Apply only under this source condition: When a native IPMDAR CPD Version 1.0 is supplied as operative staffing evidence under the recorded contract invocation. Then verify the complete grouped obligation: The CPD BCWS_ToDate, BCWP_ToDate and ACWP_ToDate tables shall populate only WorkPackageID when the corresponding table-specific ByWorkPackage flag is true and only ControlAccountID when the flag is false. Preserve the source exceptions and complete fieldset; a receiver projection does not replace missing required native content.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F10-0050"
+      ]
+    },
+    {
+      "rule": "Apply only under this source condition: When a native IPMDAR CPD Version 1.0 is supplied as operative staffing evidence under the recorded contract invocation. Then verify the complete grouped obligation: The CPD to-date metric tables shall provide a non-null ReportingPeriodID when ToDate_TimePhased is true and a null ReportingPeriodID when ToDate_TimePhased is false. Preserve the source exceptions and complete fieldset; a receiver projection does not replace missing required native content.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F10-0051"
+      ]
+    },
+    {
+      "rule": "Apply only under this source condition: When a native IPMDAR CPD Version 1.0 is supplied as operative staffing evidence under the recorded contract invocation. Then verify the complete grouped obligation: The CPD to-date metric tables shall restrict each non-null ReportingPeriodID to the current or an earlier DatasetMetadata.ReportingPeriodID. Preserve the source exceptions and complete fieldset; a receiver projection does not replace missing required native content.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F10-0052"
+      ]
+    },
+    {
+      "rule": "Apply only under this source condition: When DI-MGMT-81861C is invoked by the contract and CPD-derived staffing data or the associated staffing narrative is delivered and CDRL Block 16 includes the Major Subcontractors/Supplier Changes item. Then verify the complete grouped obligation: The major-subcontractor change narrative shall identify major subcontractors with EVM flow-down requirements, including subcontractors not yet definitized. Preserve the source exceptions and complete fieldset; a receiver projection does not replace missing required native content.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F10-0053"
+      ]
+    },
+    {
+      "rule": "Apply only under this source condition: When DI-MGMT-81861C is invoked by the contract and CPD-derived staffing data or the associated staffing narrative is delivered and a reprogramming adjustment has occurred. Then verify the complete grouped obligation: The CPD shall report cumulative adjustments for all previous and current reprogramming adjustments in hours, dollars or both in every report after reprogramming. Preserve the source exceptions and complete fieldset; a receiver projection does not replace missing required native content.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F10-0054"
+      ]
+    },
+    {
+      "rule": "Apply only under this source condition: When DI-MGMT-81861C is invoked by the contract and CPD-derived staffing data or the associated staffing narrative is delivered and formal reprogramming is in progress. Then verify the complete grouped obligation: The CPD shall continue reporting at least ACWP during formal reprogramming. Preserve the source exceptions and complete fieldset; a receiver projection does not replace missing required native content.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F10-0055"
+      ]
+    },
+    {
+      "rule": "Apply only under this source condition: When DI-MGMT-81861C is invoked by the contract and CPD-derived staffing data or the associated staffing narrative is delivered and the supplier is a subcontractor reporting data to the prime. Then verify the complete grouped obligation: The subcontractor shall provide data to the prime in a manner supporting the prime contractor submission to the Government. Preserve the source exceptions and complete fieldset; a receiver projection does not replace missing required native content.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F10-0056"
+      ]
+    },
+    {
+      "rule": "Apply only under this source condition: When the applicable contract/CDRL invokes DI-MGMT-81797 for the Program Management Plan; this is a conditional data-deliverable requirement, not an automatically applicable legal obligation.. Then verify the complete grouped obligation: The Program Management Plan shall use contractor format. Preserve the source exceptions and complete fieldset; a receiver projection does not replace missing required native content.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F10-0101"
+      ]
+    },
+    {
+      "rule": "Apply only under this source condition: When the applicable contract/CDRL invokes DI-MGMT-81797 for the Program Management Plan; this is a conditional data-deliverable requirement, not an automatically applicable legal obligation.. Then verify the complete grouped obligation: The Program Management Plan shall be unclassified. Preserve the source exceptions and complete fieldset; a receiver projection does not replace missing required native content.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F10-0102"
+      ]
+    },
+    {
+      "rule": "Apply only under this source condition: When the applicable contract/CDRL invokes DI-MGMT-81797 for the Program Management Plan; this is a conditional data-deliverable requirement, not an automatically applicable legal obligation. The source expressly permits the CWBS or the planning equivalent as the common base.. Then verify the complete grouped obligation: The Program Management Plan shall integrate technical, cost, and schedule data using the contract work breakdown structure or the planning equivalent of the contract work breakdown structure as a common base. Preserve the source exceptions and complete fieldset; a receiver projection does not replace missing required native content.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F10-0103"
+      ]
+    },
+    {
+      "rule": "Apply only under this source condition: When the applicable contract/CDRL invokes DI-MGMT-81797 for the Program Management Plan; this is a conditional data-deliverable requirement, not an automatically applicable legal obligation. Subcontractor management information applies only if subcontractors are applicable, as stated in the source.. Then verify the complete grouped obligation: The Program Management Plan shall provide information on the contractor organization and on the practices and techniques to be used in managing the program and, if applicable, subcontractors. Preserve the source exceptions and complete fieldset; a receiver projection does not replace missing required native content.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F10-0104"
+      ]
+    },
+    {
+      "rule": "Apply only under this source condition: When the applicable contract/CDRL invokes DI-MGMT-81797 for the Program Management Plan; this is a conditional data-deliverable requirement, not an automatically applicable legal obligation. Section 3 permits a planning equivalent as the integrated common base, while §3(b) expressly names the CWBS; no additional exemption or mapping rule is specified in the inspected source.. Then verify the complete grouped obligation: The Program Management Plan shall indicate the relationship of the plan to the CWBS, including a description of each CWBS element and the cost associated with each CWBS element. Preserve the source exceptions and complete fieldset; a receiver projection does not replace missing required native content.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F10-0105"
+      ]
+    },
+    {
+      "rule": "Apply only under this source condition: When the applicable contract/CDRL invokes DI-MGMT-81797 for the Program Management Plan; this is a conditional data-deliverable requirement, not an automatically applicable legal obligation.. Then verify the complete grouped obligation: The Program Management Plan shall contain organization data comprising a program organization chart showing the program organization structure by title and name and identifying the program office, support contractors, and major subcontractors, together with a program/functional organization relationship chart showing the relationship of program functions to functional organizations and indicating lines of authority and communications. Preserve the source exceptions and complete fieldset; a receiver projection does not replace missing required native content.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F10-0106"
+      ]
+    },
+    {
+      "rule": "Apply only under this source condition: When the applicable contract/CDRL invokes DI-SESS-82538 for the applicable plan and the quoted requirement remains after contract-authorized tailoring; this is a conditional data-deliverable obligation, not a universal requirement for every contractor or every F10 row.. Then verify the complete grouped obligation: The DEMP reference-document issues, including approval dates and dates of applicable amendments, notices, and revisions, shall match the issues specified in the contract. Preserve the source exceptions and complete fieldset; a receiver projection does not replace missing required native content.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F10-0201"
+      ]
+    },
+    {
+      "rule": "Apply only under this source condition: When the applicable contract/CDRL invokes DI-SESS-82538 for the applicable plan and the quoted requirement remains after contract-authorized tailoring; this is a conditional data-deliverable obligation, not a universal requirement for every contractor or every F10 row.. Then verify the complete grouped obligation: The delivered DEMP shall include a natural-language document and a formal-language model in a format mutually agreed upon by the government and contractor to ensure government access and review. Preserve the source exceptions and complete fieldset; a receiver projection does not replace missing required native content.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F10-0202"
+      ]
+    },
+    {
+      "rule": "Apply only under this source condition: When the applicable contract/CDRL invokes DI-SESS-82538 for the applicable plan and the quoted requirement remains after contract-authorized tailoring; this is a conditional data-deliverable obligation, not a universal requirement for every contractor or every F10 row. Applies when requirements are tailored out of DI-SESS-82538.. Then verify the complete grouped obligation: The DEMP description shall contain a corresponding placeholder appended with the exact tailored-out statement prescribed in DI-SESS-82538 §2. Preserve the source exceptions and complete fieldset; a receiver projection does not replace missing required native content.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F10-0203"
+      ]
+    },
+    {
+      "rule": "Apply only under this source condition: When the applicable contract/CDRL invokes DI-SESS-82538 for the applicable plan and the quoted requirement remains after contract-authorized tailoring; this is a conditional data-deliverable obligation, not a universal requirement for every contractor or every F10 row.. Then verify the complete grouped obligation: The DEMP Configuration Management subsection shall define and describe the approach to maintaining and updating the DEMP. Preserve the source exceptions and complete fieldset; a receiver projection does not replace missing required native content.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F10-0204"
+      ]
+    },
+    {
+      "rule": "Apply only under this source condition: When the applicable contract/CDRL invokes DI-SESS-82538 for the applicable plan and the quoted requirement remains after contract-authorized tailoring; this is a conditional data-deliverable obligation, not a universal requirement for every contractor or every F10 row.. Then verify the complete grouped obligation: The DEMP Assumptions and Constraints subsection shall define and describe the assumptions and constraints for DE implementation. Preserve the source exceptions and complete fieldset; a receiver projection does not replace missing required native content.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F10-0205"
+      ]
+    },
+    {
+      "rule": "Apply only under this source condition: When the applicable contract/CDRL invokes DI-SESS-82538 for the applicable plan and the quoted requirement remains after contract-authorized tailoring; this is a conditional data-deliverable obligation, not a universal requirement for every contractor or every F10 row.. Then verify the complete grouped obligation: The DEMP Training subsection shall define and describe a comprehensive plan to develop and provide training for all stakeholders, including training on all tools, methods, procedures, use cases, and management processes. Preserve the source exceptions and complete fieldset; a receiver projection does not replace missing required native content.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F10-0206"
+      ]
+    },
+    {
+      "rule": "Apply only under this source condition: When the applicable contract/CDRL invokes DI-SESS-82538 for the applicable plan and the quoted requirement remains after contract-authorized tailoring; this is a conditional data-deliverable obligation, not a universal requirement for every contractor or every F10 row.. Then verify the complete grouped obligation: The DEMP Roles and Responsibilities section shall identify and describe the DE-specific roles and responsibilities of internal and external stakeholders and team members using a Responsible, Accountable, Consulted, Informed (RACI) matrix. Preserve the source exceptions and complete fieldset; a receiver projection does not replace missing required native content.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F10-0207"
+      ]
+    },
+    {
+      "rule": "Apply only under this source condition: When the applicable contract/CDRL invokes DI-SESS-82538 for the applicable plan and the quoted requirement remains after contract-authorized tailoring; this is a conditional data-deliverable obligation, not a universal requirement for every contractor or every F10 row.. Then verify the complete grouped obligation: The DE-specific roles shall be included in the program's organization chart and allocated resources in the program's Integrated Master Schedule (IMS). Preserve the source exceptions and complete fieldset; a receiver projection does not replace missing required native content.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F10-0208"
+      ]
+    },
+    {
+      "rule": "Apply only under this source condition: When the applicable contract/CDRL invokes DI-MGMT-80004A for the applicable plan and the quoted requirement remains after contract-authorized tailoring; this is a conditional data-deliverable obligation, not a universal requirement for every contractor or every F10 row.. Then verify the complete grouped obligation: The Management Plan shall use a contractor-devised format conforming to the applicable DI-MGMT-80004A §2 requirements. Preserve the source exceptions and complete fieldset; a receiver projection does not replace missing required native content.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F10-0209"
+      ]
+    },
+    {
+      "rule": "Apply only under this source condition: When the applicable contract/CDRL invokes DI-MGMT-80004A for the applicable plan and the quoted requirement remains after contract-authorized tailoring; this is a conditional data-deliverable obligation, not a universal requirement for every contractor or every F10 row.. Then verify the complete grouped obligation: The Management Plan shall identify the preparing office or contractor title, the identifying numbers or designation of the Contract/Procurement Request, the identity and/or nomenclature of the system/component/program/project, the security classification, and the Government activity issuing the controlling contract. Preserve the source exceptions and complete fieldset; a receiver projection does not replace missing required native content.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F10-0210"
+      ]
+    },
+    {
+      "rule": "Apply only under this source condition: When the applicable contract/CDRL invokes DI-MGMT-80004A for the applicable plan and the quoted requirement remains after contract-authorized tailoring; this is a conditional data-deliverable obligation, not a universal requirement for every contractor or every F10 row.. Then verify the complete grouped obligation: The Management Plan pages shall be sequentially numbered and bound together as prescribed by DI-MGMT-80004A §2(c). Preserve the source exceptions and complete fieldset; a receiver projection does not replace missing required native content.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F10-0211"
+      ]
+    },
+    {
+      "rule": "Apply only under this source condition: When the applicable contract/CDRL invokes DI-MGMT-80004A for the applicable plan and the quoted requirement remains after contract-authorized tailoring; this is a conditional data-deliverable obligation, not a universal requirement for every contractor or every F10 row. Applies to attachments present in the plan.. Then verify the complete grouped obligation: All Management Plan attachments shall be identified and referenced in the Management Plan text. Preserve the source exceptions and complete fieldset; a receiver projection does not replace missing required native content.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F10-0212"
+      ]
+    },
+    {
+      "rule": "Apply only under this source condition: When the applicable contract/CDRL invokes DI-MGMT-80004A for the applicable plan and the quoted requirement remains after contract-authorized tailoring; this is a conditional data-deliverable obligation, not a universal requirement for every contractor or every F10 row.. Then verify the complete grouped obligation: Each Management Plan section and paragraph shall be numbered. Preserve the source exceptions and complete fieldset; a receiver projection does not replace missing required native content.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F10-0213"
+      ]
+    },
+    {
+      "rule": "Apply only under this source condition: When the applicable contract/CDRL invokes DI-MGMT-80004A for the applicable plan and the quoted requirement remains after contract-authorized tailoring; this is a conditional data-deliverable obligation, not a universal requirement for every contractor or every F10 row. Applies when the Management Plan exceeds 30 pages.. Then verify the complete grouped obligation: The Management Plan shall contain a table of contents. Preserve the source exceptions and complete fieldset; a receiver projection does not replace missing required native content.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F10-0214"
+      ]
+    },
+    {
+      "rule": "Apply only under this source condition: When the applicable contract/CDRL invokes DI-MGMT-80004A for the applicable plan and the quoted requirement remains after contract-authorized tailoring; this is a conditional data-deliverable obligation, not a universal requirement for every contractor or every F10 row. Applies when the Management Plan exceeds 120 pages, in addition to the table-of-contents requirement.. Then verify the complete grouped obligation: The Management Plan shall include an index. Preserve the source exceptions and complete fieldset; a receiver projection does not replace missing required native content.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F10-0215"
+      ]
+    },
+    {
+      "rule": "Apply only under this source condition: When the applicable contract/CDRL invokes DI-MGMT-80004A for the applicable plan and the quoted requirement remains after contract-authorized tailoring; this is a conditional data-deliverable obligation, not a universal requirement for every contractor or every F10 row.. Then verify the complete grouped obligation: The Management Plan shall be legible and reproducible. Preserve the source exceptions and complete fieldset; a receiver projection does not replace missing required native content.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F10-0216"
+      ]
+    },
+    {
+      "rule": "Apply only under this source condition: When the applicable contract/CDRL invokes DI-MGMT-80004A for the applicable plan and the quoted requirement remains after contract-authorized tailoring; this is a conditional data-deliverable obligation, not a universal requirement for every contractor or every F10 row.. Then verify the complete grouped obligation: The Management Plan shall present an organizational chart and supporting narrative portraying the contractor business structure and describing functional relationships and responsibilities among organizational elements participating in accomplishment of the contractual commitments. Preserve the source exceptions and complete fieldset; a receiver projection does not replace missing required native content.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F10-0217"
+      ]
+    },
+    {
+      "rule": "Apply only under this source condition: When the applicable contract/CDRL invokes DI-MGMT-80004A for the applicable plan and the quoted requirement remains after contract-authorized tailoring; this is a conditional data-deliverable obligation, not a universal requirement for every contractor or every F10 row.. Then verify the complete grouped obligation: The Management Plan shall present the management-office organizational chart and supporting narrative, including direct lines of control, responsibilities, functional relationships, and authority between the management office and other contractor organizational elements, and all contractor-to-Government and contractor-to-other-contractor interfaces necessary and pertinent to accomplishment of contractual tasks, projects, and programs. Preserve the source exceptions and complete fieldset; a receiver projection does not replace missing required native content.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F10-0218"
+      ]
+    },
+    {
+      "rule": "Apply only under this source condition: When the applicable contract/CDRL invokes DI-MGMT-80004A for the applicable plan and the quoted requirement remains after contract-authorized tailoring; this is a conditional data-deliverable obligation, not a universal requirement for every contractor or every F10 row.. Then verify the complete grouped obligation: The Management Plan shall list the staffing of the contractor management office directing contractual tasks, projects, and programs and assisting contract completion, including required education, training, skills, experience, and security clearance for each position and the identity, background, and work experience of assigned personnel. Preserve the source exceptions and complete fieldset; a receiver projection does not replace missing required native content.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F10-0219"
+      ]
+    },
+    {
+      "rule": "Apply only under this source condition: When the applicable contract/CDRL invokes DI-MGMT-80004A for the applicable plan and the quoted requirement remains after contract-authorized tailoring; this is a conditional data-deliverable obligation, not a universal requirement for every contractor or every F10 row.. Then verify the complete grouped obligation: The Management Plan shall describe the staffing required for proper accomplishment of each contractual task by skill type, skill level, number of personnel, and security clearance. Preserve the source exceptions and complete fieldset; a receiver projection does not replace missing required native content.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F10-0220"
+      ]
+    },
+    {
+      "rule": "Apply only under this source condition: When the applicable contract/CDRL invokes DI-MGMT-80004A for the applicable plan and the quoted requirement remains after contract-authorized tailoring; this is a conditional data-deliverable obligation, not a universal requirement for every contractor or every F10 row. Applies when the Management Plan is submitted as part of a proposal; the personnel categories are the task staffing categories in the preceding sentence.. Then verify the complete grouped obligation: The Management Plan shall state the number of currently available personnel and the number of new hires required for full staffing to accomplish each contractual task as scheduled. Preserve the source exceptions and complete fieldset; a receiver projection does not replace missing required native content.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F10-0221"
+      ]
+    },
+    {
+      "rule": "Apply only under this source condition: When the applicable contract/CDRL invokes DI-SESS-82538 for the applicable plan and the quoted requirement remains after contract-authorized tailoring; this is a conditional data-deliverable obligation, not a universal requirement for every contractor or every F10 row.. Then verify the complete grouped obligation: The DEMP Digital Environment/Ecosystem section shall describe the hardware, software, networks including cloud services, tools, and workforce. Preserve the source exceptions and complete fieldset; a receiver projection does not replace missing required native content.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F10-0222"
+      ]
+    },
+    {
+      "rule": "Apply only under this source condition: When the applicable contract/CDRL invokes DI-MGMT-80004A for the applicable plan and the quoted requirement remains after contract-authorized tailoring; this is a conditional data-deliverable obligation, not a universal requirement for every contractor or every F10 row.. Then verify the complete grouped obligation: The Management Plan shall describe the contractor management methods for meeting all preparations, format, and submittal requirements established by the CDRL (DD Form 1423) for data delivered to the Government. Preserve the source exceptions and complete fieldset; a receiver projection does not replace missing required native content.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F10-0223"
+      ]
+    },
+    {
+      "rule": "Apply the DI-MGMT-81861C checks only when the recorded actual contract invokes Revision C. Current ASSIST Revision D does not invalidate an actual C invocation, and no rejection is based solely on C being superseded. If the actual contract invokes D or another unextracted edition, mark the relevant profile unsupported by this F10 extraction and withhold an edition-compliance claim; never silently substitute C requirements for that edition.",
+      "severity": "reject",
+      "governedBy": []
+    },
+    {
+      "rule": "Reject missing, empty or unrecognized profile, completeness, invocation, context, records or nativeDelivery envelope content. Require records to be non-empty; a role-assignment profile requires a non-empty roleAssignments array. These are receiver rules, not an invented DID format.",
+      "severity": "reject",
+      "governedBy": []
+    },
+    {
+      "rule": "Reject missing/empty recordId, wbsId or requirementId, duplicate normalized recordId values, or WBS/requirement joins that do not resolve to the designated authoritative targets. The three sample targets are illustrative only. Joins are receiving requirements and do not establish that a source mandates a RACI row per WBS element.",
+      "severity": "reject",
+      "governedBy": []
+    },
+    {
+      "rule": "Do not accept partial-example or partial-extract as a complete operative baseline. Actual source invocation, required native deliverable coverage and resolution of applicable open-source gaps must be established before a complete-submission is accepted. The sample is hashable for illustration only.",
+      "severity": "reject",
+      "governedBy": []
+    },
+    {
+      "rule": "Reject a claimed complete native CPD supported only by this F10 projection. Preserve the complete received CPD ZIP bytes and applicable complete native tables and metadata. F10 checks cover only the extracted organization/staffing portion and common controls, not all CPD/PNR requirements.",
+      "severity": "reject",
+      "governedBy": []
+    },
+    {
+      "rule": "Reject a claimed complete DEMP supported only by JSON role rows. The invoked DEMP requires the agreed natural-language document and formal-language model; store the actual delivered bytes and format agreement. F10 is not a complete DEMP content extraction.",
+      "severity": "reject",
+      "governedBy": []
+    },
+    {
+      "rule": "Reject a claimed complete PMP or Management Plan supported only by these F10 rows. Required non-F10 source sections and complete native formatting remain outside the subset; explicit full-deliverable evidence is necessary for such a claim.",
+      "severity": "reject",
+      "governedBy": []
+    },
+    {
+      "rule": "For hours or headcount received, require an explicit unit and retain the actual metric/grain/time basis. Do not silently calculate FTE, headcount, workload, utilization or RACI cardinality from hours; these are different quantities and no such formula is imposed by this contract.",
+      "severity": "reject",
+      "governedBy": []
+    },
+    {
+      "rule": "For native evidence that is actually delivered, require complete immutable bytes using canonical unbroken RFC 4648 base64 in nativeDelivery.attachments and include every received operative table, nested field, narrative, context and attachment in the baseline input. Use the explicit contentBase64 key and validate each original value before any text normalization: reject whitespace, invalid alphabet/padding and any value not identical to the canonical re-encoding of the decoded bytes. Do not hash only pointers, IDs, a selected staffing projection, counts, or precomputed attachment digests. A source-permitted reference to material not delivered does not independently require fetching that material.",
+      "severity": "reject",
+      "governedBy": []
+    },
+    {
+      "rule": "Reject non-finite numbers, binary-floating approximations of source decimals, duplicate object keys, normalized-key collisions, unknown envelope keys, and unknown direct record keys. Exact native nested content belongs in the named sourceEvidence/managementPlanContent or nativeDelivery fields and is retained in full, not discarded. Keep all non-record array order when that order can carry meaning.",
+      "severity": "reject",
+      "governedBy": []
+    },
+    {
+      "rule": "Exclude guidance catalogues, handbook interpretations and guidance-only additions from the receiver payload and baseline. Guidance may explain the model outside the payload; guidance does not create a rejection criterion or mandatory field.",
+      "severity": "reject",
+      "governedBy": []
+    },
+    {
+      "rule": "Do not claim marking, release or CUI compliance based on the source documents being public. Applicable DoDI 5230.24, DoDI 5200.48 and DoDM 5200.01 Volume 2 remain open gaps; retain an unresolved status and withhold any acceptance claim dependent on the uninspected rules. DoDI 5000.88 and DoDM 5010.12 also remain listed gaps where applicable.",
+      "severity": "reject",
+      "governedBy": []
+    },
+    {
+      "rule": "For the native CPD profile, require StartDate <= EndDate for each inclusive period, each next StartDate to equal the preceding EndDate plus one day, non-overlapping periods and valid nonnegative WorkingHours. The DEI description of exclusive periods means periods are disjoint; it does not replace the FFS inclusive date bounds with exclusive end dates.",
+      "severity": "reject",
+      "governedBy": []
+    }
+  ],
+  "canonicalForm": "Hash the complete received operative payload with exactly these envelope keys: profile, completeness, invocation, context, records, nativeDelivery. Each record uses named record fields in this contract; exact native nested content and all actual delivered bytes remain in sourceEvidence/managementPlanContent/nativeDelivery rather than being dropped by projection. No guidance catalogue or guidance-only field enters the payload. Reject unknown envelope/direct-record keys, duplicate keys, or collisions after normalization. Normalize every object key and string to Unicode NFC, trim Unicode White_Space, and collapse each sequence of Unicode White_Space to one U+0020. Unicode White_Space is U+0009–000D, U+0020, U+0085, U+00A0, U+1680, U+2000–200A, U+2028, U+2029, U+202F, U+205F and U+3000. Sort records by normalized recordId in Unicode code-point order and reject duplicate recordId values; preserve all other array order. Sort object keys by Unicode code-point order. Reject unpaired Unicode surrogates in keys and values. Serialize compact JSON with this exact string escaping: double quotation mark and backslash are escaped; U+0008, U+0009, U+000A, U+000C and U+000D use the standard short JSON b, t, n, f and r escapes; remaining U+0000 through U+001F controls use lowercase hexadecimal Unicode escapes of the form backslash-u00xx; slash and all other Unicode characters are literal. Use null/true/false literals, and exact finite decimal numbers in plain notation with no exponent, no unnecessary trailing fractional zeros or decimal point, and zero for negative zero; never round through binary floating point. Before string normalization, validate each original nativeDelivery.attachments[].contentBase64 value as canonical unbroken RFC 4648 base64: reject whitespace or invalid alphabet/padding and require exact equality with the canonical re-encoding of the decoded bytes. The complete byte representation is part of the serialized payload, not replaced by identifiers or hashes. Finally apply Unicode NFC, trim, and the same Unicode-White_Space collapse to the serialized JSON, encode UTF-8, and compute SHA-256. The baselineHash below is the actual digest of the three-row partial sample only; it is not an accepted production baseline. A production baseline hashes all received operative content under its actual invocation, including native evidence and attachments, not merely these three records or their selected fields.",
+  "baselineHash": "e9f81f7048006182923af2e11c4879c3294630c4d1aad3ef4227495f11afe075",
+  "mil-hdbk-539a": [
+    {
+      "section": "4.8.2.1.3",
+      "concept": "authoritative source of truth",
+      "howThisFeedServesIt": "Preserves received organization, responsibility and staffing source context so assignments can be traced to controlled records. A computed digest does not itself authorize an assignment. Nonbinding framework context only; excluded from operative baseline and acceptance. Source: https://quicksearch.dla.mil/WMX/Default.aspx?token=5801571"
+    },
+    {
+      "section": "4.8.2.3",
+      "concept": "digital thread",
+      "howThisFeedServesIt": "Links received responsibility/staffing information to its WBS scope and requirement context, while keeping those links distinct from implied personnel approval or live-system integration. Nonbinding framework context only; excluded from operative baseline and acceptance. Source: https://quicksearch.dla.mil/WMX/Default.aspx?token=5801571"
+    },
+    {
+      "section": "4.8.2.4",
+      "concept": "stakeholder view",
+      "howThisFeedServesIt": "Supports responsibility and staffing views tailored to the relevant team or decision, with source identities and context retained. Nonbinding framework context only; excluded from operative baseline and acceptance. Source: https://quicksearch.dla.mil/WMX/Default.aspx?token=5801571"
+    }
+  ],
+  "sample": "{\n  \"profile\": \"F10 contractor-format receiving projection; illustrative PMP organization content\",\n  \"completeness\": \"partial-example\",\n  \"invocation\": {\n    \"sourceEditions\": [\n      {\n        \"documentId\": \"DI-MGMT-81797\",\n        \"edition\": \"Base, 8 December 2009; Notice 3 validation, 17 September 2024\"\n      }\n    ],\n    \"actualContractInvocation\": false,\n    \"formatChoice\": \"Receiver-selected JSON; not a government-prescribed JSON schema\"\n  },\n  \"context\": {\n    \"purpose\": \"Three fictional HALCYON organization/assignment rows only; no complete PMP, staffing dataset, approval, or accepted baseline is asserted.\",\n    \"wbsJoinRegistry\": [\n      \"HALCYON-WBS-1.1\",\n      \"HALCYON-WBS-1.2\",\n      \"HALCYON-WBS-1.3\"\n    ],\n    \"requirementJoinRegistry\": [\n      \"HALCYON-REQ-001\",\n      \"HALCYON-REQ-002\",\n      \"HALCYON-REQ-003\"\n    ],\n    \"joinRegistryStatus\": \"Illustrative local targets only; production joins require authoritative receiver targets.\"\n  },\n  \"records\": [\n    {\n      \"recordId\": \"HALCYON-F10-001\",\n      \"wbsId\": \"HALCYON-WBS-1.1\",\n      \"requirementId\": \"HALCYON-REQ-001\",\n      \"securityMarking\": \"UNCLASSIFIED — FICTIONAL EXAMPLE\",\n      \"roleAssignments\": [\n        {\n          \"roleId\": \"HALCYON-ROLE-001\",\n          \"title\": \"Program management lead\",\n          \"name\": \"HALCYON sample assignee 1\",\n          \"function\": \"Program management\",\n          \"organizationId\": \"HALCYON-ORG-001\",\n          \"responsibility\": \"Coordinate program management information\"\n        }\n      ],\n      \"organizations\": [\n        {\n          \"organizationId\": \"HALCYON-ORG-001\",\n          \"name\": \"HALCYON program office\",\n          \"category\": \"program office\",\n          \"authorityLines\": [\n            \"HALCYON-ORG-002\"\n          ],\n          \"communicationLines\": [\n            \"HALCYON-ORG-002\"\n          ]\n        }\n      ]\n    },\n    {\n      \"recordId\": \"HALCYON-F10-002\",\n      \"wbsId\": \"HALCYON-WBS-1.2\",\n      \"requirementId\": \"HALCYON-REQ-002\",\n      \"securityMarking\": \"UNCLASSIFIED — FICTIONAL EXAMPLE\",\n      \"roleAssignments\": [\n        {\n          \"roleId\": \"HALCYON-ROLE-002\",\n          \"title\": \"Requirements lead\",\n          \"name\": \"HALCYON sample assignee 2\",\n          \"function\": \"Requirements coordination\",\n          \"organizationId\": \"HALCYON-ORG-002\",\n          \"responsibility\": \"Maintain requirements coordination information\"\n        }\n      ],\n      \"organizations\": [\n        {\n          \"organizationId\": \"HALCYON-ORG-002\",\n          \"name\": \"HALCYON requirements team\",\n          \"category\": \"functional organization\",\n          \"authorityLines\": [\n            \"HALCYON-ORG-003\"\n          ],\n          \"communicationLines\": [\n            \"HALCYON-ORG-001\",\n            \"HALCYON-ORG-003\"\n          ]\n        }\n      ]\n    },\n    {\n      \"recordId\": \"HALCYON-F10-003\",\n      \"wbsId\": \"HALCYON-WBS-1.3\",\n      \"requirementId\": \"HALCYON-REQ-003\",\n      \"securityMarking\": \"UNCLASSIFIED — FICTIONAL EXAMPLE\",\n      \"roleAssignments\": [\n        {\n          \"roleId\": \"HALCYON-ROLE-003\",\n          \"title\": \"Verification coordination lead\",\n          \"name\": \"HALCYON sample assignee 3\",\n          \"function\": \"Verification coordination\",\n          \"organizationId\": \"HALCYON-ORG-003\",\n          \"responsibility\": \"Coordinate verification evidence information\"\n        }\n      ],\n      \"organizations\": [\n        {\n          \"organizationId\": \"HALCYON-ORG-003\",\n          \"name\": \"HALCYON verification team\",\n          \"category\": \"functional organization\",\n          \"authorityLines\": [],\n          \"communicationLines\": [\n            \"HALCYON-ORG-002\"\n          ]\n        }\n      ]\n    }\n  ],\n  \"nativeDelivery\": {\n    \"attachments\": [],\n    \"completeNativeDeliverablePresent\": false\n  }\n}"
+}

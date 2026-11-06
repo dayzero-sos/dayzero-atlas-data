@@ -1,0 +1,1272 @@
+{
+  "feed": "F5",
+  "name": "WBS dictionary",
+  "systemOfRecord": [
+    "Received, configuration-controlled WBS Index and Dictionary and applicable approved CSDR Plan; actual owner and source identified from the delivery context."
+  ],
+  "formats": [
+    {
+      "format": "Standalone electronic CWBS report: electronic Index plus separate Word-compatible Dictionary; RTF is the selected illustration, not a mandated extension.",
+      "spec": "DI-MGMT-81334D, Requirements 3 and Preparation Instructions 1-2; apply when invoked by contract.",
+      "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5710950"
+    },
+    {
+      "format": "WBS dictionary data within FlexFile; use CAPE-approved DEI/FFS or contract-specified alternative. Current native encoding is unverified because DEI/FFS remain inaccessible.",
+      "spec": "DI-FNCL-82162, Requirements 2 and Preparation Instructions B.1/C.1-C.3; separate applicable delivery path.",
+      "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5749099"
+    },
+    {
+      "format": "Contract-specified WBS dictionary representation where only MIL-STD-881F content provisions apply; no native machine format is prescribed by the standard.",
+      "spec": "MIL-STD-881F 2.2.4 and applicable contract/CDRL direction. Apply either DID delivery path above only when invoked.",
+      "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5777624"
+    }
+  ],
+  "cadence": "Under invoked DI-MGMT-81334D Use/relationship (https://quicksearch.dla.mil/WMX/Default.aspx?token=5710950): first Index/Dictionary due with required Initial Report, otherwise the first Interim Report; earlier delivery permitted. Maintain and update throughout contract life; CWBS changes accompany the next affected CSD Reports. No required update submission more frequently than CSDR submissions, and no sixty-day deadline. Under invoked DI-FNCL-82162 General Instructions opening paragraph (https://quicksearch.dla.mil/WMX/Default.aspx?token=5749099), reporting follows the applicable approved DD FORM 2794; no unsourced interval is invented. Under applicable MIL-STD-881F 2.2.4 (https://quicksearch.dla.mil/WMX/Default.aspx?token=5777624), keep the dictionary reflective of current program status throughout program life; this is not a new fixed submission interval.",
+  "keys": {
+    "primary": [
+      "code"
+    ],
+    "joins": {
+      "wbs": "code",
+      "requirement": "requirementId"
+    }
+  },
+  "fields": [
+    {
+      "name": "code",
+      "type": "string",
+      "required": true,
+      "governedBy": [
+        "DZR-F5-0136"
+      ],
+      "description": "User-selected logical entry/trace key carrying the WBS identifier as text. Code presence is required by the requested join contract; the DID says codes, when used, match the approved CSDR Plan. No numeric-only, dotted-decimal or case-insensitive coding rule is invented. DI-MGMT-81334D Preparation Instructions 1.a/2.a: https://quicksearch.dla.mil/WMX/Default.aspx?token=5710950. FlexFile Data Group B.1 identifies the Block 11 WBS element but its native field encoding is uninspected: https://quicksearch.dla.mil/WMX/Default.aspx?token=5749099. MIL-STD-881F 4.3 explicitly does not make maintaining WBS numbering essential; do not require a universal numeric code scheme. https://quicksearch.dla.mil/WMX/Default.aspx?token=5777624."
+    },
+    {
+      "name": "level",
+      "type": "integer",
+      "required": true,
+      "governedBy": [
+        "DZR-F5-0118",
+        "DZR-F5-0119",
+        "DZR-F5-0130",
+        "DZR-F5-0008",
+        "DZR-F5-0009"
+      ],
+      "description": "User-selected dictionary column retaining the electronic Index hierarchy level. Level 1 represents the total contract and successive levels are lower levels; DI-MGMT-81334D Preparation Instructions 1.b: https://quicksearch.dla.mil/WMX/Default.aspx?token=5710950. Routine reporting is level 3, with more detail only for the stated high-risk/high-value/high-technical-interest elements. Presence/type in the selected semantic row are user choices, not a claimed FlexFile native field. When MIL-STD-881F 2.2.3 applies, relate levels to system requirements and the product-oriented family tree; 4.2 leaves reporting levels to the contract. https://quicksearch.dla.mil/WMX/Default.aspx?token=5777624."
+    },
+    {
+      "name": "name",
+      "type": "string",
+      "required": true,
+      "governedBy": [
+        "DZR-F5-0139"
+      ],
+      "description": "Logical element title/nomenclature. Under the standalone DID, Index and Dictionary names match the approved contract CSDR Plan; DI-MGMT-81334D Preparation Instructions 1.c/2.b: https://quicksearch.dla.mil/WMX/Default.aspx?token=5710950."
+    },
+    {
+      "name": "technicalContent",
+      "type": "string|null",
+      "required": false,
+      "governedBy": [
+        "DZR-F5-0140",
+        "DZR-F5-0141",
+        "DZR-F5-0142",
+        "DZR-F5-0143",
+        "DZR-F5-0144"
+      ],
+      "description": "Conditionally required by the standalone CWBS DID: highest-level general system description/top-level attributes, lower-level general physical characteristics, and item identity/function/physical definition. Preserve permitted generic parent definitions with detailed supporting children and the exemption from detailed descriptions of integrated GFE; no-work elements indicate not applicable. DI-MGMT-81334D Preparation Instructions 2.c: https://quicksearch.dla.mil/WMX/Default.aspx?token=5710950. FlexFile C.1 does not independently impose this separate technical-content field. required=false reflects cross-path conditionality, not a waiver when the standalone DID applies. MIL-STD-881F 2.2.4 also describes dictionary content including basic technical characteristics and links to detailed technical definitions, without prescribing separate machine columns. https://quicksearch.dla.mil/WMX/Default.aspx?token=5777624."
+    },
+    {
+      "name": "workContent",
+      "type": "string",
+      "required": false,
+      "governedBy": [
+        "DZR-F5-0146",
+        "DZR-F5-0151",
+        "DZR-F5-0152",
+        "DZR-F5-0153",
+        "DZR-F5-0154",
+        "DZR-F5-0155",
+        "DZR-F5-0156",
+        "DZR-F5-0157",
+        "DZR-F5-0158",
+        "DZR-F5-0167",
+        "DZR-F5-0168",
+        "DZR-F5-0169",
+        "DZR-F5-0170",
+        "DZR-F5-0171",
+        "DZR-F5-0176",
+        "DZR-F5-0177",
+        "DZR-F5-0002",
+        "DZR-F5-0003",
+        "DZR-F5-0011",
+        "DZR-F5-0029",
+        "DZR-F5-0030"
+      ],
+      "description": "Conditionally required under the invoked standalone CWBS or FlexFile dictionary DID; required=false avoids imposing the DID content rule on a standard-only delivery. Narrative work scope, short design/production/sustainment process, and included activity types. For standalone CWBS state reporting-contractor versus supplier/subcontractor performance; for FlexFile state supplier/subcontractor performance when present. Limit descriptions to covered contract work and, for a subcontract/supplier dictionary, exclude prime work. Mark elements with no expected work not applicable rather than dropping plan elements. Content may be one definition narrative rather than separate native columns. DI-MGMT-81334D Preparation Instructions 2.c: https://quicksearch.dla.mil/WMX/Default.aspx?token=5710950; DI-FNCL-82162 Preparation Instructions C.1.a/b/d: https://quicksearch.dla.mil/WMX/Default.aspx?token=5749099. Apply the product-oriented Program WBS and contract-only CWBS scope rules only under applicable MIL-STD-881F 2.1, 2.2.5.1 and 3.1-3.1.1. https://quicksearch.dla.mil/WMX/Default.aspx?token=5777624."
+    },
+    {
+      "name": "costContent",
+      "type": "string",
+      "required": false,
+      "governedBy": [
+        "DZR-F5-0145",
+        "DZR-F5-0147",
+        "DZR-F5-0148",
+        "DZR-F5-0149",
+        "DZR-F5-0150",
+        "DZR-F5-0172",
+        "DZR-F5-0173",
+        "DZR-F5-0174",
+        "DZR-F5-0175"
+      ],
+      "description": "Conditionally required under the invoked standalone CWBS or FlexFile dictionary DID; required=false avoids imposing the DID content rule on a standard-only delivery. Narrative explanation of recurring/nonrecurring effort, functional cost-element inclusion/exclusion and make/buy decisions; characterize by functional category as appropriate. No numeric cost/hour amount is required merely by this dictionary-content field. Preserve not-applicable and generic-parent qualifications. DI-MGMT-81334D Preparation Instructions 2.c: https://quicksearch.dla.mil/WMX/Default.aspx?token=5710950; DI-FNCL-82162 Preparation Instructions C.1.c: https://quicksearch.dla.mil/WMX/Default.aspx?token=5749099."
+    },
+    {
+      "name": "parentCode",
+      "type": "string|null",
+      "required": false,
+      "governedBy": [
+        "DZR-F5-0009"
+      ],
+      "description": "User-selected explicit hierarchy association, not a prescribed native DID column. Required for nonroot entries in the selected semantic contract; root uses null. Resolve against code and preserve the relation in the hash. Do not derive hierarchy by assuming the characters or punctuation in a code encode a level. MIL-STD-881F 2.2.3 supplies the hierarchy semantics, not this column name. https://quicksearch.dla.mil/WMX/Default.aspx?token=5777624."
+    },
+    {
+      "name": "requirementId",
+      "type": "string",
+      "required": true,
+      "governedBy": [
+        "DZR-F5-0008"
+      ],
+      "description": "User-required trace association to the received requirements set. The inspected DIDs do not prescribe this column; it is an explicit receiver contract choice. Require resolution to an actual requirement record. It may be carried as a selected Word-compatible column or a separate received association for other deliveries; do not inject undeclared fields into an uninspected FlexFile native format. MIL-STD-881F 2.2.3 relates Program WBS levels to system requirements; it does not prescribe this identifier or a universal one-to-one trace. https://quicksearch.dla.mil/WMX/Default.aspx?token=5777624."
+    },
+    {
+      "name": "applicability",
+      "type": "string|null",
+      "required": false,
+      "governedBy": [
+        "DZR-F5-0155",
+        "DZR-F5-0177"
+      ],
+      "description": "Conditionally required indication when no work is expected for an element. FlexFile specifies NA; the standalone DID says not applicable without a fixed Boolean/enum encoding. An indication may reside in the definition narrative. DI-MGMT-81334D Preparation Instructions 2.c: https://quicksearch.dla.mil/WMX/Default.aspx?token=5710950; DI-FNCL-82162 Preparation Instructions C.1.d: https://quicksearch.dla.mil/WMX/Default.aspx?token=5749099."
+    },
+    {
+      "name": "gfeIdentification",
+      "type": "string|null",
+      "required": false,
+      "governedBy": [
+        "DZR-F5-0159",
+        "DZR-F5-0178"
+      ],
+      "description": "Identify every integrated contract GFE item as GFE under the appropriate element when present. Do not demand detailed GFE-item descriptions. Information may be retained in the definition narrative. DI-MGMT-81334D Preparation Instructions 2.c: https://quicksearch.dla.mil/WMX/Default.aspx?token=5710950; DI-FNCL-82162 Preparation Instructions C.1.f: https://quicksearch.dla.mil/WMX/Default.aspx?token=5749099."
+    },
+    {
+      "name": "wbsElementRemarks",
+      "type": "string|null",
+      "required": false,
+      "governedBy": [],
+      "description": "Directly inspected FlexFile field description, not a new literal-modal B record: Data Group C.2 concerns direct-reporting subcontractor/government-entity roles, IWO performing organizations and useful WBS-specific context. Requiredness follows the applicable reporting context; no actual names or invented remarks are supplied here. DI-FNCL-82162 Preparation Instructions C.2: https://quicksearch.dla.mil/WMX/Default.aspx?token=5749099."
+    },
+    {
+      "name": "summaryRemarks",
+      "type": "string|null",
+      "required": false,
+      "governedBy": [],
+      "description": "FlexFile Data Group C.3 provides relevant information for interpretation. Imperative-only source text is preserved as a field fact, not promoted to an independent shall/must record. DI-FNCL-82162 Preparation Instructions C.3: https://quicksearch.dla.mil/WMX/Default.aspx?token=5749099."
+    },
+    {
+      "name": "cwbsIndex",
+      "type": "electronic artifact|null",
+      "required": false,
+      "governedBy": [
+        "DZR-F5-0120",
+        "DZR-F5-0121",
+        "DZR-F5-0130",
+        "DZR-F5-0136",
+        "DZR-F5-0137",
+        "DZR-F5-0138",
+        "DZR-F5-0139"
+      ],
+      "description": "Required part of the complete standalone CWBS report, listing codes, levels and names. Include every approved-plan element regardless of applicability, and no extra element. No Excel-compatible format is mandated. This artifact is not present in the three-entry dictionary illustration. DI-MGMT-81334D Requirements 3 and Preparation Instructions 1: https://quicksearch.dla.mil/WMX/Default.aspx?token=5710950."
+    },
+    {
+      "name": "deliveryArtifact",
+      "type": "electronic artifact",
+      "required": true,
+      "governedBy": [
+        "DZR-F5-0129",
+        "DZR-F5-0130",
+        "DZR-F5-0133",
+        "DZR-F5-0134",
+        "DZR-F5-0135",
+        "DZR-F5-0160",
+        "DZR-F5-0161",
+        "DZR-F5-0162",
+        "DZR-F5-0164"
+      ],
+      "description": "Separate applicability paths: a standalone Word-compatible dictionary with the electronic Index under DI-MGMT-81334D Requirements 3 (https://quicksearch.dla.mil/WMX/Default.aspx?token=5710950), or WBS dictionary data in a FlexFile under DI-FNCL-82162 Requirements 2 (https://quicksearch.dla.mil/WMX/Default.aspx?token=5749099). A contract-specified alternative FlexFile format remains permitted. Current FlexFile DEI/FFS are open gaps; no native encoding is claimed. The chosen RTF illustration is Word-compatible but does not prescribe RTF for all deliveries."
+    },
+    {
+      "name": "approvedCsdrPlanReference",
+      "type": "received artifact or resolvable reference",
+      "required": false,
+      "governedBy": [
+        "DZR-F5-0117",
+        "DZR-F5-0128",
+        "DZR-F5-0131",
+        "DZR-F5-0132",
+        "DZR-F5-0163"
+      ],
+      "description": "Conditionally required received context when the invoked source requires an approved contract CSDR Plan; not universal for a standard-only or non-CSDR WBS. Received context needed to resolve applicable approved plan, element membership, names/codes, report dates and tailoring. Not an invented native dictionary column or a fabricated completed DD FORM 2794. OSD DDCA approval applies under the invoked standalone DID. Existing internal WBS reuse requires the source-prescribed mapping first. DI-MGMT-81334D Use/relationship, Requirements 2.c/3: https://quicksearch.dla.mil/WMX/Default.aspx?token=5710950; DI-FNCL-82162 General Instructions opening paragraph: https://quicksearch.dla.mil/WMX/Default.aspx?token=5749099."
+    },
+    {
+      "name": "classification",
+      "type": "string|null",
+      "required": false,
+      "governedBy": [
+        "DZR-F5-0165"
+      ],
+      "description": "Conditional FlexFile Data Group A Item 12 marking; no native standalone-CWBS marking field was prescribed in the inspected DID. The receiving contract records actual supplied marking context alongside the file. The source unclassified-only sentence uses should, not shall, and is not converted to a universal prohibition. DI-FNCL-82162 General Instructions 3 and Preparation Instructions A.12: https://quicksearch.dla.mil/WMX/Default.aspx?token=5749099."
+    },
+    {
+      "name": "proprietaryDistributionStatement",
+      "type": "string|null",
+      "required": false,
+      "governedBy": [
+        "DZR-F5-0166"
+      ],
+      "description": "Conditional FlexFile Data Group A Item 13 statement. Preserve actual supplied distribution/proprietary context; classification is not public-release permission. No inaccessible policy text is reconstructed. DI-FNCL-82162 General Instructions 3 and Preparation Instructions A.13: https://quicksearch.dla.mil/WMX/Default.aspx?token=5749099."
+    },
+    {
+      "name": "detailedTechnicalDefinitionReferences",
+      "type": "array of strings|null",
+      "required": false,
+      "governedBy": [],
+      "description": "Logical representation of links to detailed technical definitions described by MIL-STD-881F 2.2.4, not a prescribed native property or a newly invented B modal record. Retain actual received links where provided. https://quicksearch.dla.mil/WMX/Default.aspx?token=5777624."
+    },
+    {
+      "name": "currentStatusContext",
+      "type": "received metadata or resolvable reference|null",
+      "required": false,
+      "governedBy": [
+        "DZR-F5-0010"
+      ],
+      "description": "Received revision/effectivity or equivalent current-status evidence supporting the obligation for the dictionary to reflect current program status throughout program life. No particular revision column or timestamp syntax is imposed by MIL-STD-881F 2.2.4. https://quicksearch.dla.mil/WMX/Default.aspx?token=5777624."
+    },
+    {
+      "name": "changeApprovalReference",
+      "type": "received artifact or resolvable reference|null",
+      "required": false,
+      "governedBy": [
+        "DZR-F5-0001",
+        "DZR-F5-0033",
+        "DZR-F5-0034",
+        "DZR-F5-0035"
+      ],
+      "description": "Conditionally required evidence for the applicable WBS change/extension gates, with post-award, contract-modification, contracting-officer and Government-equivalent conditions preserved. No actual approval is assumed and no contract number is invented. MIL-STD-881F 1.6, 4.1 and 4.2: https://quicksearch.dla.mil/WMX/Default.aspx?token=5777624."
+    },
+    {
+      "name": "applicableAppendices",
+      "type": "array of strings|null",
+      "required": false,
+      "governedBy": [
+        "DZR-F5-0032"
+      ],
+      "description": "Received applicability context used to select actual MIL-STD-881F commodity/common/sustainment/test appendix rules. Not a native mandatory column. Appendix K common elements apply only to development/production Appendices A-J under 3.2.6; do not apply every commodity appendix to a single WBS. https://quicksearch.dla.mil/WMX/Default.aspx?token=5777624."
+    }
+  ],
+  "markings": "For FlexFile, retain security classification in Data Group A Item 12 and proprietary/distribution statement in Item 13 under General Instructions 3 and Preparation Instructions A.12-A.13 (https://quicksearch.dla.mil/WMX/Default.aspx?token=5749099). The receiver records actual supplied file/entry marking context without changing source text. The standalone CWBS DID does not prescribe a native marking column. Held classification/CUI/distribution issuances remain gaps; no sample security or release assertion is fabricated.",
+  "acceptance": [
+    {
+      "rule": "Apply only sources and editions invoked by the actual contract and approved CSDR Plan. For the standalone CWBS DID, inspect the solicitation-date ASSIST issues including applicable approvals, amendments, notices and revisions; use stated issues for non-ASSIST references. The current-source catalogue is not automatic evidence of contract incorporation. The DID retains a MIL-HDBK-881 reference; do not silently replace that contractual reference with MIL-STD-881F.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F5-0126",
+        "DZR-F5-0127"
+      ]
+    },
+    {
+      "rule": "Under DI-MGMT-81334D, require the electronic report with both Index and Dictionary and the separate Word-compatible Dictionary file. The Index has no Excel-only mandate. The selected RTF table is only a three-entry dictionary illustration and cannot pass complete-report or plan-reconciliation checks. A standalone dictionary does not satisfy a separately invoked FlexFile delivery, and a FlexFile does not waive the separately invoked standalone deliverable.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F5-0120",
+        "DZR-F5-0129",
+        "DZR-F5-0130",
+        "DZR-F5-0133",
+        "DZR-F5-0134"
+      ]
+    },
+    {
+      "rule": "When an approved CSDR Plan is required by the invoked standalone CWBS or FlexFile source, reject an absent or unresolved actual approved-plan reference. Under the invoked standalone DID, reconcile every approved CSDR Plan element with the Index, including not-applicable elements; reject extra Index elements. Reconcile Dictionary codes/names with Index and approved-plan codes/names. Verify the required plan approval. When an existing internal WBS is reused, retain the source-prescribed mapping to the approved plan before the conforming CWBS. No example plan content can replace the actual received plan.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F5-0117",
+        "DZR-F5-0128",
+        "DZR-F5-0131",
+        "DZR-F5-0132",
+        "DZR-F5-0136",
+        "DZR-F5-0137",
+        "DZR-F5-0138",
+        "DZR-F5-0139"
+      ]
+    },
+    {
+      "rule": "Require each entry to have a nonempty code that resolves to the received WBS/Index context and a nonempty requirementId resolving to an actual requirement record. Reject either missing or unresolved join. These presence/trace rules are explicit user contract choices; the government sources do not mandate a requirementId column. The illustrative rows alone do not prove either external join.",
+      "severity": "reject",
+      "governedBy": []
+    },
+    {
+      "rule": "For the selected semantic-entry contract, require unique code keys and integer hierarchy levels. Require one level-1 root with null parentCode; every nonroot parentCode must resolve without cycles and its level must be one less than the child level. Preserve all parent relationships in the baseline input. These machine-checkable transport rules are user choices, not a claimed native DID schema or mandated WBS numbering convention.",
+      "severity": "reject",
+      "governedBy": []
+    },
+    {
+      "rule": "When the standalone DID reporting-depth rules apply, use routine level-3 reporting. Require deeper detail only for the lower-level elements selected under the high-risk, high-value or high-technical-interest criteria; do not expand the rule into mandatory reporting for all lower-level elements. The partial illustration is not evidence of complete reporting depth.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F5-0118",
+        "DZR-F5-0119"
+      ]
+    },
+    {
+      "rule": "For the standalone CWBS technical descriptions, inspect top-level system attributes, general lower-level physical characteristics, and identification/function/physical definition of each applicable element. Permit generic parent definitions when supporting lower-level definitions provide the detail, and preserve the exception from detailed GFE-item descriptions. Do not impose this standalone-DID technical-content requirement on FlexFile C.1 alone.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F5-0140",
+        "DZR-F5-0141",
+        "DZR-F5-0142",
+        "DZR-F5-0143",
+        "DZR-F5-0144"
+      ]
+    },
+    {
+      "rule": "For the applicable dictionary path, inspect work-content process and activity descriptions, required performing-party distinctions and contract-only scope. Supplier/subcontractor dictionaries exclude prime work. Retain no-work elements with the required not-applicable indication. Do not turn description of work into a new obligation to perform an engineering activity.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F5-0146",
+        "DZR-F5-0151",
+        "DZR-F5-0152",
+        "DZR-F5-0153",
+        "DZR-F5-0154",
+        "DZR-F5-0155",
+        "DZR-F5-0156",
+        "DZR-F5-0157",
+        "DZR-F5-0158",
+        "DZR-F5-0167",
+        "DZR-F5-0168",
+        "DZR-F5-0169",
+        "DZR-F5-0170",
+        "DZR-F5-0171",
+        "DZR-F5-0176",
+        "DZR-F5-0177"
+      ]
+    },
+    {
+      "rule": "For applicable dictionary cost definitions, inspect explanations of recurring/nonrecurring effort, functional cost inclusion/exclusion and make/buy decisions, with functional-category characterization as appropriate. Preserve permitted generic-parent definitions with detailed children and not-applicable indications. Do not require actual-cost, forecast or hours amounts from these narrative clauses.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F5-0145",
+        "DZR-F5-0147",
+        "DZR-F5-0148",
+        "DZR-F5-0149",
+        "DZR-F5-0150",
+        "DZR-F5-0172",
+        "DZR-F5-0173",
+        "DZR-F5-0174",
+        "DZR-F5-0175"
+      ]
+    },
+    {
+      "rule": "When contract GFE items are integrated, require identification as GFE under appropriate WBS elements. Do not demand detailed descriptions of those GFE items or invent additional work scope.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F5-0159",
+        "DZR-F5-0178"
+      ]
+    },
+    {
+      "rule": "Under the standalone DID, prepare and deliver the first Index and Dictionary through the CSDR Submit-Review System by the required Initial Report due date; if no Initial Report is required, use the first Interim Report due date. Earlier delivery is allowed. Maintain/update the Dictionary throughout contract life; when CWBS changes, submit the updated Index and Dictionary with the next affected CSD Reports. There is no mandatory submission more frequently than CSDR submissions and no imposed sixty-day-after-award deadline. Verify the named DCARC/CSDR delivery path without inventing a successor endpoint.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F5-0120",
+        "DZR-F5-0121",
+        "DZR-F5-0122",
+        "DZR-F5-0123",
+        "DZR-F5-0124",
+        "DZR-F5-0125",
+        "DZR-F5-0135"
+      ]
+    },
+    {
+      "rule": "For WBS dictionary data submitted under the invoked FlexFile DID, require electronic delivery in accordance with the CAPE-approved DEI/FFS unless the contract specifies an alternative format; require delivery to DCARC through CADE CSDR Submit-Review in accordance with that DID and the approved DD FORM 2794. Do not use the prior CWBS Dictionary format for a FlexFile submission. This last prohibition does not invalidate a separately invoked standalone CWBS deliverable.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F5-0160",
+        "DZR-F5-0161",
+        "DZR-F5-0162",
+        "DZR-F5-0163",
+        "DZR-F5-0164"
+      ]
+    },
+    {
+      "rule": "For an invoked FlexFile delivery, preserve appropriate security classification in Data Group A Item 12 and proprietary/distribution statement in Item 13. Record supplied marking context at the receiver. Do not infer release authorization from an unclassified marking or create binding marking rules from inaccessible issuances.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F5-0165",
+        "DZR-F5-0166"
+      ]
+    },
+    {
+      "rule": "Keep the five held issuances open where affected: DoDI 5000.88, DoDM 5010.12, DoDI 5230.24, DoDI 5200.48 and DoDM 5200.01 Vol 2. Also retain the inaccessible DoDM 5000.04 and DoDI 5000.73 and current FlexFile DEI/FFS as open gaps. Do not assert full policy, current native FlexFile encoding or FFS conformance from inspected DID text alone. A specifically supplied contractual alternative format is evaluated on its own received terms, not invented terms.",
+      "severity": "warn",
+      "governedBy": []
+    },
+    {
+      "rule": "Catalogue guidance as binding=false/kind=guidance. Guidance does not independently reject this feed, does not create mandatory definition fields, and is excluded from operative baseline inputs in this and every later batch. Do not hash the governing-document or requirement-record catalogue as the feed baseline.",
+      "severity": "warn",
+      "governedBy": []
+    },
+    {
+      "rule": "Apply each following MIL-STD-881F check only when the standard and the particular paragraph/appendix conditions govern the received WBS. The checks concern WBS data represented by the dictionary and received context; they do not direct performance of the described engineering work. Preserve domain-specific exceptions and do not apply all appendix rules universally. The source does not mandate a universal numbering convention, fixed file schema or a one-to-one external trace. MIL-STD-881F 2.2.4, 2.3 and 4.3: https://quicksearch.dla.mil/WMX/Default.aspx?token=5777624.",
+      "severity": "warn",
+      "governedBy": []
+    },
+    {
+      "rule": "Applicable data-product check: Each post-award Contract WBS change shall be approved through a contract change. Applicability: When MIL-STD-881F is applicable through the governing contract, CDRL, or other authorized acquisition direction; after contract award. Source: MIL-STD-881F 1.6; printed p. 9 (PDF 17) (https://quicksearch.dla.mil/WMX/Default.aspx?token=5777624).",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F5-0001"
+      ]
+    },
+    {
+      "rule": "Applicable data-product check: The Program WBS shall be product oriented. Applicability: When MIL-STD-881F is applicable through the governing contract, CDRL, or other authorized acquisition direction. Source: MIL-STD-881F 2.1; printed p. 9 (PDF 17) (https://quicksearch.dla.mil/WMX/Default.aspx?token=5777624).",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F5-0002"
+      ]
+    },
+    {
+      "rule": "Applicable data-product check: Each Program WBS element shall represent an identifiable work product. Applicability: When MIL-STD-881F is applicable through the governing contract, CDRL, or other authorized acquisition direction. Source: MIL-STD-881F 2.1; printed p. 9 (PDF 17) (https://quicksearch.dla.mil/WMX/Default.aspx?token=5777624).",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F5-0003"
+      ]
+    },
+    {
+      "rule": "Applicable data-product check: Each WBS element initially designated as “Other” shall represent a unique product not envisioned or not existing within the defined appendix WBS elements. Applicability: When MIL-STD-881F is applicable through the governing contract, CDRL, or other authorized acquisition direction; when an “Other” subsystem or product-level element is used. Source: MIL-STD-881F 2.2.1; printed p. 10 (PDF 18) (https://quicksearch.dla.mil/WMX/Default.aspx?token=5777624).",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F5-0004"
+      ]
+    },
+    {
+      "rule": "Applicable data-product check: Each needed “Other” WBS element shall be specified. Applicability: When MIL-STD-881F is applicable through the governing contract, CDRL, or other authorized acquisition direction; when the “Other” element is determined to be needed. Source: MIL-STD-881F 2.2.1; printed p. 10 (PDF 18) (https://quicksearch.dla.mil/WMX/Default.aspx?token=5777624).",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F5-0005"
+      ]
+    },
+    {
+      "rule": "Applicable data-product check: Each needed “Other” WBS element shall be defined. Applicability: When MIL-STD-881F is applicable through the governing contract, CDRL, or other authorized acquisition direction; when the “Other” element is determined to be needed. Source: MIL-STD-881F 2.2.1; printed p. 10 (PDF 18) (https://quicksearch.dla.mil/WMX/Default.aspx?token=5777624).",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F5-0006"
+      ]
+    },
+    {
+      "rule": "Applicable data-product check: Each needed “Other” WBS element name shall replace “Other” with the newly defined WBS element name. Applicability: When MIL-STD-881F is applicable through the governing contract, CDRL, or other authorized acquisition direction; when the “Other” element is determined to be needed. Source: MIL-STD-881F 2.2.1; printed p. 10 (PDF 18) (https://quicksearch.dla.mil/WMX/Default.aspx?token=5777624).",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F5-0007"
+      ]
+    },
+    {
+      "rule": "Applicable data-product check: The Program WBS levels shall be related to the system requirements. Applicability: When MIL-STD-881F is applicable through the governing contract, CDRL, or other authorized acquisition direction. Source: MIL-STD-881F 2.2.3; printed p. 10 (PDF 18) (https://quicksearch.dla.mil/WMX/Default.aspx?token=5777624).",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F5-0008"
+      ]
+    },
+    {
+      "rule": "Applicable data-product check: The Program WBS levels shall conform to the product-oriented family tree. Applicability: When MIL-STD-881F is applicable through the governing contract, CDRL, or other authorized acquisition direction. Source: MIL-STD-881F 2.2.3; printed p. 10 (PDF 18) (https://quicksearch.dla.mil/WMX/Default.aspx?token=5777624).",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F5-0009"
+      ]
+    },
+    {
+      "rule": "Applicable data-product check: The WBS dictionary shall reflect the current status of the program throughout the program life. Applicability: When MIL-STD-881F is applicable through the governing contract, CDRL, or other authorized acquisition direction; throughout the program life. Source: MIL-STD-881F 2.2.4; printed p. 14 (PDF 22) (https://quicksearch.dla.mil/WMX/Default.aspx?token=5777624).",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F5-0010"
+      ]
+    },
+    {
+      "rule": "Applicable data-product check: The WBS shall include only product elements comprising hardware, software, services, data, or facilities. Applicability: When MIL-STD-881F is applicable through the governing contract, CDRL, or other authorized acquisition direction. Source: MIL-STD-881F 2.2.5.1; printed p. 14 (PDF 22) (https://quicksearch.dla.mil/WMX/Default.aspx?token=5777624).",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F5-0011"
+      ]
+    },
+    {
+      "rule": "Applicable data-product check: The WBS shall exclude program acquisition phases as WBS elements. Applicability: When MIL-STD-881F is applicable through the governing contract, CDRL, or other authorized acquisition direction. Source: MIL-STD-881F 2.2.5.1; printed p. 14 (PDF 22) (https://quicksearch.dla.mil/WMX/Default.aspx?token=5777624).",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F5-0012"
+      ]
+    },
+    {
+      "rule": "Applicable data-product check: The WBS shall exclude types of funds as WBS elements. Applicability: When MIL-STD-881F is applicable through the governing contract, CDRL, or other authorized acquisition direction. Source: MIL-STD-881F 2.2.5.1; printed p. 14 (PDF 22) (https://quicksearch.dla.mil/WMX/Default.aspx?token=5777624).",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F5-0013"
+      ]
+    },
+    {
+      "rule": "Applicable data-product check: The WBS shall exclude rework as separate WBS elements. Applicability: When MIL-STD-881F is applicable through the governing contract, CDRL, or other authorized acquisition direction. Source: MIL-STD-881F 2.2.5.1; printed p. 14 (PDF 22) (https://quicksearch.dla.mil/WMX/Default.aspx?token=5777624).",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F5-0014"
+      ]
+    },
+    {
+      "rule": "Applicable data-product check: The WBS shall exclude retesting as separate WBS elements. Applicability: When MIL-STD-881F is applicable through the governing contract, CDRL, or other authorized acquisition direction. Source: MIL-STD-881F 2.2.5.1; printed p. 14 (PDF 22) (https://quicksearch.dla.mil/WMX/Default.aspx?token=5777624).",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F5-0015"
+      ]
+    },
+    {
+      "rule": "Applicable data-product check: The WBS shall exclude refurbishing as separate WBS elements. Applicability: When MIL-STD-881F is applicable through the governing contract, CDRL, or other authorized acquisition direction. Source: MIL-STD-881F 2.2.5.1; printed p. 14 (PDF 22) (https://quicksearch.dla.mil/WMX/Default.aspx?token=5777624).",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F5-0016"
+      ]
+    },
+    {
+      "rule": "Applicable data-product check: The WBS shall exclude engineering changes as separate WBS elements. Applicability: When MIL-STD-881F is applicable through the governing contract, CDRL, or other authorized acquisition direction. Source: MIL-STD-881F 2.2.5.1; printed p. 14 (PDF 22) (https://quicksearch.dla.mil/WMX/Default.aspx?token=5777624).",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F5-0017"
+      ]
+    },
+    {
+      "rule": "Applicable data-product check: The WBS shall exclude recurring and nonrecurring classifications as distinct WBS elements. Applicability: When MIL-STD-881F is applicable through the governing contract, CDRL, or other authorized acquisition direction. Source: MIL-STD-881F 2.2.5.1; printed p. 14 (PDF 22) (https://quicksearch.dla.mil/WMX/Default.aspx?token=5777624).",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F5-0018"
+      ]
+    },
+    {
+      "rule": "Applicable data-product check: The WBS shall exclude separate cost-saving initiative elements. Applicability: When MIL-STD-881F is applicable through the governing contract, CDRL, or other authorized acquisition direction. Source: MIL-STD-881F 2.2.5.1; printed p. 14 (PDF 22) (https://quicksearch.dla.mil/WMX/Default.aspx?token=5777624).",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F5-0019"
+      ]
+    },
+    {
+      "rule": "Applicable data-product check: The WBS shall exclude warranty as a WBS element. Applicability: When MIL-STD-881F is applicable through the governing contract, CDRL, or other authorized acquisition direction. Source: MIL-STD-881F 2.2.5.1; printed p. 14 (PDF 22) (https://quicksearch.dla.mil/WMX/Default.aspx?token=5777624).",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F5-0020"
+      ]
+    },
+    {
+      "rule": "Applicable data-product check: The WBS shall not use the program office organizational structure as the basis of the WBS. Applicability: When MIL-STD-881F is applicable through the governing contract, CDRL, or other authorized acquisition direction. Source: MIL-STD-881F 2.2.5.1; printed p. 14 (PDF 22) (https://quicksearch.dla.mil/WMX/Default.aspx?token=5777624).",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F5-0021"
+      ]
+    },
+    {
+      "rule": "Applicable data-product check: The WBS shall not use the contractor organizational structure as the basis of the WBS. Applicability: When MIL-STD-881F is applicable through the governing contract, CDRL, or other authorized acquisition direction. Source: MIL-STD-881F 2.2.5.1; printed p. 14 (PDF 22) (https://quicksearch.dla.mil/WMX/Default.aspx?token=5777624).",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F5-0022"
+      ]
+    },
+    {
+      "rule": "Applicable data-product check: The WBS reporting shall exclude recurring-unit reporting for the same end item. Applicability: When MIL-STD-881F is applicable through the governing contract, CDRL, or other authorized acquisition direction. Source: MIL-STD-881F 2.2.5.1; printed p. 14 (PDF 22) (https://quicksearch.dla.mil/WMX/Default.aspx?token=5777624).",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F5-0023"
+      ]
+    },
+    {
+      "rule": "Applicable data-product check: The WBS tooling cost classification shall include tooling in the functional cost of the equipment being produced. Applicability: When MIL-STD-881F is applicable through the governing contract, CDRL, or other authorized acquisition direction; when tooling is reported; rate tooling may be specifically identified as an Integration, Assembly, Test, and Checkout child element when circumstances require under 2.2.5.2. Source: MIL-STD-881F 2.2.5.1; 2.2.5.2; printed pp. 14, 15 (PDF 22, 23) (https://quicksearch.dla.mil/WMX/Default.aspx?token=5777624).",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F5-0024"
+      ]
+    },
+    {
+      "rule": "Applicable data-product check: The WBS cost classification for production automatic test equipment programming shall include the programming costs in the cost of the equipment being produced. Applicability: When MIL-STD-881F is applicable through the governing contract, CDRL, or other authorized acquisition direction; when production automatic test equipment programming costs are represented. Source: MIL-STD-881F 2.2.5.1; printed p. 15 (PDF 23) (https://quicksearch.dla.mil/WMX/Default.aspx?token=5777624).",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F5-0025"
+      ]
+    },
+    {
+      "rule": "Applicable data-product check: The System Test and Evaluation WBS representation shall separately identify development tests and operational-user tests. Applicability: When MIL-STD-881F is applicable through the governing contract, CDRL, or other authorized acquisition direction; when System Test and Evaluation is represented. Source: MIL-STD-881F 2.2.5.2; printed p. 15 (PDF 23) (https://quicksearch.dla.mil/WMX/Default.aspx?token=5777624).",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F5-0026"
+      ]
+    },
+    {
+      "rule": "Applicable data-product check: The solicitation WBS shall select appropriate elements from the approved Program WBS. Applicability: When MIL-STD-881F is applicable through the governing contract, CDRL, or other authorized acquisition direction; when the WBS is used for a solicitation. Source: MIL-STD-881F 2.3; printed p. 15 (PDF 23) (https://quicksearch.dla.mil/WMX/Default.aspx?token=5777624).",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F5-0027"
+      ]
+    },
+    {
+      "rule": "Applicable data-product check: The solicitation WBS shall be extended through the Contract WBS. Applicability: When MIL-STD-881F is applicable through the governing contract, CDRL, or other authorized acquisition direction; when the WBS is used for a solicitation. Source: MIL-STD-881F 2.3; printed p. 15 (PDF 23) (https://quicksearch.dla.mil/WMX/Default.aspx?token=5777624).",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F5-0028"
+      ]
+    },
+    {
+      "rule": "Applicable data-product check: The Contract WBS shall be tailored to the program to support the defined contract requirements. Applicability: When MIL-STD-881F is applicable through the governing contract, CDRL, or other authorized acquisition direction. Source: MIL-STD-881F 3.1; printed p. 17 (PDF 25) (https://quicksearch.dla.mil/WMX/Default.aspx?token=5777624).",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F5-0029"
+      ]
+    },
+    {
+      "rule": "Applicable data-product check: The Contract WBS shall capture only contract efforts. Applicability: When MIL-STD-881F is applicable through the governing contract, CDRL, or other authorized acquisition direction. Source: MIL-STD-881F 3.1.1; printed p. 17 (PDF 25) (https://quicksearch.dla.mil/WMX/Default.aspx?token=5777624).",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F5-0030"
+      ]
+    },
+    {
+      "rule": "Applicable data-product check: The WBS shall not derive the WBS structure from the contractor program organization. Applicability: When MIL-STD-881F is applicable through the governing contract, CDRL, or other authorized acquisition direction. Source: MIL-STD-881F 3.1.3; printed p. 18 (PDF 26) (https://quicksearch.dla.mil/WMX/Default.aspx?token=5777624).",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F5-0031"
+      ]
+    },
+    {
+      "rule": "Applicable data-product check: The Appendix K common WBS elements shall apply only to development and production Appendices A through J. Applicability: When MIL-STD-881F is applicable through the governing contract, CDRL, or other authorized acquisition direction. Source: MIL-STD-881F 3.2.6; printed p. 22 (PDF 30) (https://quicksearch.dla.mil/WMX/Default.aspx?token=5777624).",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F5-0032"
+      ]
+    },
+    {
+      "rule": "Applicable data-product check: The reporting entity and Government project controls shall negotiate the Contract WBS extension at a CSDR Post Award Conference in accordance with DoDM 5000.04. Applicability: When MIL-STD-881F is applicable through the governing contract, CDRL, or other authorized acquisition direction; when a Contract WBS is extended; the equivalent Government function applies for Government-performed efforts. Source: MIL-STD-881F 4.1; printed p. 22 (PDF 30) (https://quicksearch.dla.mil/WMX/Default.aspx?token=5777624).",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F5-0033"
+      ]
+    },
+    {
+      "rule": "Applicable data-product check: The Contract WBS shall incorporate approved changes only after a contract modification. Applicability: When MIL-STD-881F is applicable through the governing contract, CDRL, or other authorized acquisition direction; when approved Contract WBS changes are incorporated. Source: MIL-STD-881F 4.1; printed p. 22 (PDF 30) (https://quicksearch.dla.mil/WMX/Default.aspx?token=5777624).",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F5-0034"
+      ]
+    },
+    {
+      "rule": "Applicable data-product check: The Contract WBS shall incorporate only changes approved by the contracting officer in accordance with the contract terms. Applicability: When MIL-STD-881F is applicable through the governing contract, CDRL, or other authorized acquisition direction; when Contract WBS changes are incorporated. Source: MIL-STD-881F 4.2; printed p. 22 (PDF 30) (https://quicksearch.dla.mil/WMX/Default.aspx?token=5777624).",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F5-0035"
+      ]
+    },
+    {
+      "rule": "Applicable data-product check: Each needed “Other” WBS element shall be defined. Applicability: When MIL-STD-881F is applicable through the governing contract, CDRL, or other authorized acquisition direction; when the “Other” element is determined to be needed. Source: MIL-STD-881F 4.3.1; printed p. 23 (PDF 31) (https://quicksearch.dla.mil/WMX/Default.aspx?token=5777624).",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F5-0036"
+      ]
+    },
+    {
+      "rule": "Applicable data-product check: Each needed “Other” WBS element shall be placed in the WBS. Applicability: When MIL-STD-881F is applicable through the governing contract, CDRL, or other authorized acquisition direction; when the “Other” element is determined to be needed. Source: MIL-STD-881F 4.3.1; printed p. 23 (PDF 31) (https://quicksearch.dla.mil/WMX/Default.aspx?token=5777624).",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F5-0037"
+      ]
+    },
+    {
+      "rule": "Applicable data-product check: The Aircraft Systems WBS shall use only elements defining the system. Applicability: When MIL-STD-881F is applicable through the governing contract, CDRL, or other authorized acquisition direction; when Appendix A (Aircraft Systems) is applicable. Source: MIL-STD-881F A.3.2(1); printed p. 30 (PDF 38) (https://quicksearch.dla.mil/WMX/Default.aspx?token=5777624).",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F5-0038"
+      ]
+    },
+    {
+      "rule": "Applicable data-product check: The next child level of each Aircraft Systems WBS element shall represent 100 percent of the work applicable to the parent element. Applicability: When MIL-STD-881F is applicable through the governing contract, CDRL, or other authorized acquisition direction; when Appendix A (Aircraft Systems) is applicable; when a WBS element is decomposed. Source: MIL-STD-881F A.3.2(2); printed p. 30 (PDF 38) (https://quicksearch.dla.mil/WMX/Default.aspx?token=5777624).",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F5-0039"
+      ]
+    },
+    {
+      "rule": "Applicable data-product check: Each Aircraft Systems WBS element initially designated as “Other” shall represent a product not envisioned or predicted within the defined applicable WBS elements. Applicability: When MIL-STD-881F is applicable through the governing contract, CDRL, or other authorized acquisition direction; when Appendix A (Aircraft Systems) is applicable; when an “Other” subsystem or product-level element is used. Source: MIL-STD-881F A.3.3.1; printed p. 30 (PDF 38) (https://quicksearch.dla.mil/WMX/Default.aspx?token=5777624).",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F5-0040"
+      ]
+    },
+    {
+      "rule": "Applicable data-product check: Each needed “Other” Aircraft Systems WBS element shall be defined. Applicability: When MIL-STD-881F is applicable through the governing contract, CDRL, or other authorized acquisition direction; when Appendix A (Aircraft Systems) is applicable; when the “Other” element is determined to be needed. Source: MIL-STD-881F A.3.3.1; printed p. 30 (PDF 38) (https://quicksearch.dla.mil/WMX/Default.aspx?token=5777624).",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F5-0041"
+      ]
+    },
+    {
+      "rule": "Applicable data-product check: Each needed “Other” Aircraft Systems WBS element name shall replace “other” with the newly defined WBS element name. Applicability: When MIL-STD-881F is applicable through the governing contract, CDRL, or other authorized acquisition direction; when Appendix A (Aircraft Systems) is applicable; when the “Other” element is determined to be needed. Source: MIL-STD-881F A.3.3.1; printed p. 30 (PDF 38) (https://quicksearch.dla.mil/WMX/Default.aspx?token=5777624).",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F5-0042"
+      ]
+    },
+    {
+      "rule": "Applicable data-product check: The Electronic/Avionics/Generic Systems WBS shall use only elements defining the system. Applicability: When MIL-STD-881F is applicable through the governing contract, CDRL, or other authorized acquisition direction; when Appendix B (Electronic/Avionics/Generic Systems) is applicable. Source: MIL-STD-881F B.3.2(1); printed p. 47 (PDF 55) (https://quicksearch.dla.mil/WMX/Default.aspx?token=5777624).",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F5-0043"
+      ]
+    },
+    {
+      "rule": "Applicable data-product check: The next child level of each Electronic/Avionics/Generic Systems WBS element shall represent 100 percent of the work applicable to the parent element. Applicability: When MIL-STD-881F is applicable through the governing contract, CDRL, or other authorized acquisition direction; when Appendix B (Electronic/Avionics/Generic Systems) is applicable; when a WBS element is decomposed. Source: MIL-STD-881F B.3.2(2); printed p. 47 (PDF 55) (https://quicksearch.dla.mil/WMX/Default.aspx?token=5777624).",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F5-0044"
+      ]
+    },
+    {
+      "rule": "Applicable data-product check: Each Electronic/Avionics/Generic Systems WBS element initially designated as “Other” shall represent a product not envisioned or predicted within the defined applicable WBS elements. Applicability: When MIL-STD-881F is applicable through the governing contract, CDRL, or other authorized acquisition direction; when Appendix B (Electronic/Avionics/Generic Systems) is applicable; when an “Other” subsystem or product-level element is used. Source: MIL-STD-881F B.3.3.1; printed p. 48 (PDF 56) (https://quicksearch.dla.mil/WMX/Default.aspx?token=5777624).",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F5-0045"
+      ]
+    },
+    {
+      "rule": "Applicable data-product check: Each needed “Other” Electronic/Avionics/Generic Systems WBS element shall be defined. Applicability: When MIL-STD-881F is applicable through the governing contract, CDRL, or other authorized acquisition direction; when Appendix B (Electronic/Avionics/Generic Systems) is applicable; when the “Other” element is determined to be needed. Source: MIL-STD-881F B.3.3.1; printed p. 48 (PDF 56) (https://quicksearch.dla.mil/WMX/Default.aspx?token=5777624).",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F5-0046"
+      ]
+    },
+    {
+      "rule": "Applicable data-product check: Each needed “Other” Electronic/Avionics/Generic Systems WBS element name shall replace “other” with the newly defined WBS element name. Applicability: When MIL-STD-881F is applicable through the governing contract, CDRL, or other authorized acquisition direction; when Appendix B (Electronic/Avionics/Generic Systems) is applicable; when the “Other” element is determined to be needed. Source: MIL-STD-881F B.3.3.1; printed p. 48 (PDF 56) (https://quicksearch.dla.mil/WMX/Default.aspx?token=5777624).",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F5-0047"
+      ]
+    },
+    {
+      "rule": "Applicable data-product check: The Missile/Ordnance Systems WBS shall use only elements defining the system. Applicability: When MIL-STD-881F is applicable through the governing contract, CDRL, or other authorized acquisition direction; when Appendix C (Missile/Ordnance Systems) is applicable. Source: MIL-STD-881F C.3.2(1); printed p. 57 (PDF 65) (https://quicksearch.dla.mil/WMX/Default.aspx?token=5777624).",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F5-0048"
+      ]
+    },
+    {
+      "rule": "Applicable data-product check: The next child level of each Missile/Ordnance Systems WBS element shall represent 100 percent of the work applicable to the parent element. Applicability: When MIL-STD-881F is applicable through the governing contract, CDRL, or other authorized acquisition direction; when Appendix C (Missile/Ordnance Systems) is applicable; when a WBS element is decomposed. Source: MIL-STD-881F C.3.2(2); printed p. 57 (PDF 65) (https://quicksearch.dla.mil/WMX/Default.aspx?token=5777624).",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F5-0049"
+      ]
+    },
+    {
+      "rule": "Applicable data-product check: Each Missile/Ordnance Systems WBS element initially designated as “Other” shall represent a product not envisioned or predicted within the defined applicable WBS elements. Applicability: When MIL-STD-881F is applicable through the governing contract, CDRL, or other authorized acquisition direction; when Appendix C (Missile/Ordnance Systems) is applicable; when an “Other” subsystem or product-level element is used. Source: MIL-STD-881F C.3.4.1; printed pp. 57, 58 (PDF 65, 66) (https://quicksearch.dla.mil/WMX/Default.aspx?token=5777624).",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F5-0050"
+      ]
+    },
+    {
+      "rule": "Applicable data-product check: Each needed “Other” Missile/Ordnance Systems WBS element shall be defined. Applicability: When MIL-STD-881F is applicable through the governing contract, CDRL, or other authorized acquisition direction; when Appendix C (Missile/Ordnance Systems) is applicable; when the “Other” element is determined to be needed. Source: MIL-STD-881F C.3.4.1; printed p. 58 (PDF 66) (https://quicksearch.dla.mil/WMX/Default.aspx?token=5777624).",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F5-0051"
+      ]
+    },
+    {
+      "rule": "Applicable data-product check: Each needed “Other” Missile/Ordnance Systems WBS element name shall replace “other” with the newly defined WBS element name. Applicability: When MIL-STD-881F is applicable through the governing contract, CDRL, or other authorized acquisition direction; when Appendix C (Missile/Ordnance Systems) is applicable; when the “Other” element is determined to be needed. Source: MIL-STD-881F C.3.4.1; printed p. 58 (PDF 66) (https://quicksearch.dla.mil/WMX/Default.aspx?token=5777624).",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F5-0052"
+      ]
+    },
+    {
+      "rule": "Applicable data-product check: The Strategic Missile Systems WBS shall use only elements defining the system. Applicability: When MIL-STD-881F is applicable through the governing contract, CDRL, or other authorized acquisition direction; when Appendix D (Strategic Missile Systems) is applicable. Source: MIL-STD-881F D.3.2(1); printed p. 72 (PDF 80) (https://quicksearch.dla.mil/WMX/Default.aspx?token=5777624).",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F5-0053"
+      ]
+    },
+    {
+      "rule": "Applicable data-product check: The next child level of each Strategic Missile Systems WBS element shall represent 100 percent of the work applicable to the parent element. Applicability: When MIL-STD-881F is applicable through the governing contract, CDRL, or other authorized acquisition direction; when Appendix D (Strategic Missile Systems) is applicable; when a WBS element is decomposed. Source: MIL-STD-881F D.3.2(2); printed p. 72 (PDF 80) (https://quicksearch.dla.mil/WMX/Default.aspx?token=5777624).",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F5-0054"
+      ]
+    },
+    {
+      "rule": "Applicable data-product check: Each Strategic Missile Systems WBS element initially designated as “Other” shall represent a product not envisioned or predicted within the defined applicable WBS elements. Applicability: When MIL-STD-881F is applicable through the governing contract, CDRL, or other authorized acquisition direction; when Appendix D (Strategic Missile Systems) is applicable; when an “Other” subsystem or product-level element is used. Source: MIL-STD-881F D.3.3.1; printed p. 73 (PDF 81) (https://quicksearch.dla.mil/WMX/Default.aspx?token=5777624).",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F5-0055"
+      ]
+    },
+    {
+      "rule": "Applicable data-product check: Each needed “Other” Strategic Missile Systems WBS element shall be defined. Applicability: When MIL-STD-881F is applicable through the governing contract, CDRL, or other authorized acquisition direction; when Appendix D (Strategic Missile Systems) is applicable; when the “Other” element is determined to be needed. Source: MIL-STD-881F D.3.3.1; printed p. 73 (PDF 81) (https://quicksearch.dla.mil/WMX/Default.aspx?token=5777624).",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F5-0056"
+      ]
+    },
+    {
+      "rule": "Applicable data-product check: Each needed “Other” Strategic Missile Systems WBS element name shall replace “other” with the newly defined WBS element name. Applicability: When MIL-STD-881F is applicable through the governing contract, CDRL, or other authorized acquisition direction; when Appendix D (Strategic Missile Systems) is applicable; when the “Other” element is determined to be needed. Source: MIL-STD-881F D.3.3.1; printed p. 73 (PDF 81) (https://quicksearch.dla.mil/WMX/Default.aspx?token=5777624).",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F5-0057"
+      ]
+    },
+    {
+      "rule": "Applicable data-product check: The Sea Systems WBS shall use only elements defining the system. Applicability: When MIL-STD-881F is applicable through the governing contract, CDRL, or other authorized acquisition direction; when Appendix E (Sea Systems) is applicable. Source: MIL-STD-881F E.3.2(1); printed p. 85 (PDF 93) (https://quicksearch.dla.mil/WMX/Default.aspx?token=5777624).",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F5-0058"
+      ]
+    },
+    {
+      "rule": "Applicable data-product check: The next child level of each Sea Systems WBS element shall represent 100 percent of the work applicable to the parent element. Applicability: When MIL-STD-881F is applicable through the governing contract, CDRL, or other authorized acquisition direction; when Appendix E (Sea Systems) is applicable; when a WBS element is decomposed. Source: MIL-STD-881F E.3.2(2); printed pp. 85, 86 (PDF 93, 94) (https://quicksearch.dla.mil/WMX/Default.aspx?token=5777624).",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F5-0059"
+      ]
+    },
+    {
+      "rule": "Applicable data-product check: Each Sea Systems WBS element initially designated as “Other” shall represent a product not envisioned or predicted within the defined applicable WBS elements. Applicability: When MIL-STD-881F is applicable through the governing contract, CDRL, or other authorized acquisition direction; when Appendix E (Sea Systems) is applicable; when an “Other” subsystem or product-level element is used. Source: MIL-STD-881F E.3.3.1; printed p. 86 (PDF 94) (https://quicksearch.dla.mil/WMX/Default.aspx?token=5777624).",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F5-0060"
+      ]
+    },
+    {
+      "rule": "Applicable data-product check: Each needed “Other” Sea Systems WBS element shall be defined. Applicability: When MIL-STD-881F is applicable through the governing contract, CDRL, or other authorized acquisition direction; when Appendix E (Sea Systems) is applicable; when the “Other” element is determined to be needed. Source: MIL-STD-881F E.3.3.1; printed p. 86 (PDF 94) (https://quicksearch.dla.mil/WMX/Default.aspx?token=5777624).",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F5-0061"
+      ]
+    },
+    {
+      "rule": "Applicable data-product check: Each needed “Other” Sea Systems WBS element name shall replace “other” with the newly defined WBS element name. Applicability: When MIL-STD-881F is applicable through the governing contract, CDRL, or other authorized acquisition direction; when Appendix E (Sea Systems) is applicable; when the “Other” element is determined to be needed. Source: MIL-STD-881F E.3.3.1; printed p. 86 (PDF 94) (https://quicksearch.dla.mil/WMX/Default.aspx?token=5777624).",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F5-0062"
+      ]
+    },
+    {
+      "rule": "Applicable data-product check: The Space Systems WBS shall use only elements defining the system. Applicability: When MIL-STD-881F is applicable through the governing contract, CDRL, or other authorized acquisition direction; when Appendix F (Space Systems) is applicable. Source: MIL-STD-881F F.3.6(1); printed p. 99 (PDF 107) (https://quicksearch.dla.mil/WMX/Default.aspx?token=5777624).",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F5-0063"
+      ]
+    },
+    {
+      "rule": "Applicable data-product check: The Ground Vehicle Systems WBS shall use only elements defining the system. Applicability: When MIL-STD-881F is applicable through the governing contract, CDRL, or other authorized acquisition direction; when Appendix G (Ground Vehicle Systems) is applicable. Source: MIL-STD-881F G.3.2(1); printed p. 135 (PDF 143) (https://quicksearch.dla.mil/WMX/Default.aspx?token=5777624).",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F5-0064"
+      ]
+    },
+    {
+      "rule": "Applicable data-product check: The next child level of each Ground Vehicle Systems WBS element shall represent 100 percent of the work applicable to the parent element. Applicability: When MIL-STD-881F is applicable through the governing contract, CDRL, or other authorized acquisition direction; when Appendix G (Ground Vehicle Systems) is applicable; when a WBS element is decomposed. Source: MIL-STD-881F G.3.2(2); printed p. 135 (PDF 143) (https://quicksearch.dla.mil/WMX/Default.aspx?token=5777624).",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F5-0065"
+      ]
+    },
+    {
+      "rule": "Applicable data-product check: Each Ground Vehicle Systems WBS element initially designated as “Other” shall represent a product not envisioned or predicted within the defined applicable WBS elements. Applicability: When MIL-STD-881F is applicable through the governing contract, CDRL, or other authorized acquisition direction; when Appendix G (Ground Vehicle Systems) is applicable; when an “Other” subsystem or product-level element is used. Source: MIL-STD-881F G.3.3.1; printed p. 136 (PDF 144) (https://quicksearch.dla.mil/WMX/Default.aspx?token=5777624).",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F5-0066"
+      ]
+    },
+    {
+      "rule": "Applicable data-product check: Each needed “Other” Ground Vehicle Systems WBS element shall be defined. Applicability: When MIL-STD-881F is applicable through the governing contract, CDRL, or other authorized acquisition direction; when Appendix G (Ground Vehicle Systems) is applicable; when the “Other” element is determined to be needed. Source: MIL-STD-881F G.3.3.1; printed p. 136 (PDF 144) (https://quicksearch.dla.mil/WMX/Default.aspx?token=5777624).",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F5-0067"
+      ]
+    },
+    {
+      "rule": "Applicable data-product check: Each needed “Other” Ground Vehicle Systems WBS element name shall replace “other” with the newly defined WBS element name. Applicability: When MIL-STD-881F is applicable through the governing contract, CDRL, or other authorized acquisition direction; when Appendix G (Ground Vehicle Systems) is applicable; when the “Other” element is determined to be needed. Source: MIL-STD-881F G.3.3.1; printed p. 136 (PDF 144) (https://quicksearch.dla.mil/WMX/Default.aspx?token=5777624).",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F5-0068"
+      ]
+    },
+    {
+      "rule": "Applicable data-product check: The Unmanned Maritime Systems WBS shall use only elements defining the system. Applicability: When MIL-STD-881F is applicable through the governing contract, CDRL, or other authorized acquisition direction; when Appendix H (Unmanned Maritime Systems) is applicable. Source: MIL-STD-881F H.3.2(1); printed p. 145 (PDF 153) (https://quicksearch.dla.mil/WMX/Default.aspx?token=5777624).",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F5-0069"
+      ]
+    },
+    {
+      "rule": "Applicable data-product check: The next child level of each Unmanned Maritime Systems WBS element shall represent 100 percent of the work applicable to the parent element. Applicability: When MIL-STD-881F is applicable through the governing contract, CDRL, or other authorized acquisition direction; when Appendix H (Unmanned Maritime Systems) is applicable; when a WBS element is decomposed. Source: MIL-STD-881F H.3.2(2); printed p. 145 (PDF 153) (https://quicksearch.dla.mil/WMX/Default.aspx?token=5777624).",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F5-0070"
+      ]
+    },
+    {
+      "rule": "Applicable data-product check: Each Unmanned Maritime Systems WBS element initially designated as “Other” shall represent a product not envisioned or predicted within the defined applicable WBS elements. Applicability: When MIL-STD-881F is applicable through the governing contract, CDRL, or other authorized acquisition direction; when Appendix H (Unmanned Maritime Systems) is applicable; when an “Other” subsystem or product-level element is used. Source: MIL-STD-881F H.3.3.1; printed p. 146 (PDF 154) (https://quicksearch.dla.mil/WMX/Default.aspx?token=5777624).",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F5-0071"
+      ]
+    },
+    {
+      "rule": "Applicable data-product check: Each needed “Other” Unmanned Maritime Systems WBS element shall be defined. Applicability: When MIL-STD-881F is applicable through the governing contract, CDRL, or other authorized acquisition direction; when Appendix H (Unmanned Maritime Systems) is applicable; when the “Other” element is determined to be needed. Source: MIL-STD-881F H.3.3.1; printed p. 146 (PDF 154) (https://quicksearch.dla.mil/WMX/Default.aspx?token=5777624).",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F5-0072"
+      ]
+    },
+    {
+      "rule": "Applicable data-product check: Each needed “Other” Unmanned Maritime Systems WBS element name shall replace “other” with the newly defined WBS element name. Applicability: When MIL-STD-881F is applicable through the governing contract, CDRL, or other authorized acquisition direction; when Appendix H (Unmanned Maritime Systems) is applicable; when the “Other” element is determined to be needed. Source: MIL-STD-881F H.3.3.1; printed p. 146 (PDF 154) (https://quicksearch.dla.mil/WMX/Default.aspx?token=5777624).",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F5-0073"
+      ]
+    },
+    {
+      "rule": "Applicable data-product check: The Launch Vehicle Systems WBS shall use only elements defining the system. Applicability: When MIL-STD-881F is applicable through the governing contract, CDRL, or other authorized acquisition direction; when Appendix I (Launch Vehicle Systems) is applicable. Source: MIL-STD-881F I.3.3(1); printed p. 166 (PDF 174) (https://quicksearch.dla.mil/WMX/Default.aspx?token=5777624).",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F5-0074"
+      ]
+    },
+    {
+      "rule": "Applicable data-product check: The next child level of each Launch Vehicle Systems WBS element shall represent 100 percent of the work applicable to the parent element. Applicability: When MIL-STD-881F is applicable through the governing contract, CDRL, or other authorized acquisition direction; when Appendix I (Launch Vehicle Systems) is applicable; when a WBS element is decomposed. Source: MIL-STD-881F I.3.3(2); printed p. 166 (PDF 174) (https://quicksearch.dla.mil/WMX/Default.aspx?token=5777624).",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F5-0075"
+      ]
+    },
+    {
+      "rule": "Applicable data-product check: Each Launch Vehicle Systems WBS element initially designated as “Other” shall represent a product not envisioned or predicted within the defined applicable WBS elements. Applicability: When MIL-STD-881F is applicable through the governing contract, CDRL, or other authorized acquisition direction; when Appendix I (Launch Vehicle Systems) is applicable; when an “Other” subsystem or product-level element is used. Source: MIL-STD-881F I.3.4.1; printed p. 167 (PDF 175) (https://quicksearch.dla.mil/WMX/Default.aspx?token=5777624).",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F5-0076"
+      ]
+    },
+    {
+      "rule": "Applicable data-product check: Each needed “Other” Launch Vehicle Systems WBS element shall be defined. Applicability: When MIL-STD-881F is applicable through the governing contract, CDRL, or other authorized acquisition direction; when Appendix I (Launch Vehicle Systems) is applicable; when the “Other” element is determined to be needed. Source: MIL-STD-881F I.3.4.1; printed p. 167 (PDF 175) (https://quicksearch.dla.mil/WMX/Default.aspx?token=5777624).",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F5-0077"
+      ]
+    },
+    {
+      "rule": "Applicable data-product check: Each needed “Other” Launch Vehicle Systems WBS element name shall replace “other” with the newly defined WBS element name. Applicability: When MIL-STD-881F is applicable through the governing contract, CDRL, or other authorized acquisition direction; when Appendix I (Launch Vehicle Systems) is applicable; when the “Other” element is determined to be needed. Source: MIL-STD-881F I.3.4.1; printed p. 167 (PDF 175) (https://quicksearch.dla.mil/WMX/Default.aspx?token=5777624).",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F5-0078"
+      ]
+    },
+    {
+      "rule": "Applicable data-product check: The Information Systems/Defense Business Systems WBS shall use only elements defining the system. Applicability: When MIL-STD-881F is applicable through the governing contract, CDRL, or other authorized acquisition direction; when Appendix J (Information Systems/Defense Business Systems) is applicable. Source: MIL-STD-881F J.3.2(1); printed p. 181 (PDF 189) (https://quicksearch.dla.mil/WMX/Default.aspx?token=5777624).",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F5-0079"
+      ]
+    },
+    {
+      "rule": "Applicable data-product check: The next child level of each Information Systems/Defense Business Systems WBS element shall represent 100 percent of the work applicable to the parent element. Applicability: When MIL-STD-881F is applicable through the governing contract, CDRL, or other authorized acquisition direction; when Appendix J (Information Systems/Defense Business Systems) is applicable; when a WBS element is decomposed. Source: MIL-STD-881F J.3.2(2); printed p. 181 (PDF 189) (https://quicksearch.dla.mil/WMX/Default.aspx?token=5777624).",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F5-0080"
+      ]
+    },
+    {
+      "rule": "Applicable data-product check: Each Information Systems/Defense Business Systems WBS element initially designated as “Other” shall represent a product not envisioned or predicted within the defined applicable WBS elements. Applicability: When MIL-STD-881F is applicable through the governing contract, CDRL, or other authorized acquisition direction; when Appendix J (Information Systems/Defense Business Systems) is applicable; when an “Other” subsystem or product-level element is used. Source: MIL-STD-881F J.3.3.1; printed p. 181 (PDF 189) (https://quicksearch.dla.mil/WMX/Default.aspx?token=5777624).",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F5-0081"
+      ]
+    },
+    {
+      "rule": "Applicable data-product check: Each needed “Other” Information Systems/Defense Business Systems WBS element shall be defined. Applicability: When MIL-STD-881F is applicable through the governing contract, CDRL, or other authorized acquisition direction; when Appendix J (Information Systems/Defense Business Systems) is applicable; when the “Other” element is determined to be needed. Source: MIL-STD-881F J.3.3.1; printed p. 182 (PDF 190) (https://quicksearch.dla.mil/WMX/Default.aspx?token=5777624).",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F5-0082"
+      ]
+    },
+    {
+      "rule": "Applicable data-product check: Each needed “Other” Information Systems/Defense Business Systems WBS element name shall replace “other” with the newly defined WBS element name. Applicability: When MIL-STD-881F is applicable through the governing contract, CDRL, or other authorized acquisition direction; when Appendix J (Information Systems/Defense Business Systems) is applicable; when the “Other” element is determined to be needed. Source: MIL-STD-881F J.3.3.1; printed p. 182 (PDF 190) (https://quicksearch.dla.mil/WMX/Default.aspx?token=5777624).",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F5-0083"
+      ]
+    },
+    {
+      "rule": "Applicable data-product check: The Government System Test and Evaluation WBS shall use only elements defining the system. Applicability: When MIL-STD-881F is applicable through the governing contract, CDRL, or other authorized acquisition direction; when Appendix M (Government System Test and Evaluation) is applicable. Source: MIL-STD-881F M.3(1); printed p. 239 (PDF 247) (https://quicksearch.dla.mil/WMX/Default.aspx?token=5777624).",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F5-0084"
+      ]
+    },
+    {
+      "rule": "Applicable data-product check: The next child level of each Government System Test and Evaluation WBS element shall represent 100 percent of the work applicable to the parent element. Applicability: When MIL-STD-881F is applicable through the governing contract, CDRL, or other authorized acquisition direction; when Appendix M (Government System Test and Evaluation) is applicable; when a WBS element is decomposed. Source: MIL-STD-881F M.3(2); printed p. 239 (PDF 247) (https://quicksearch.dla.mil/WMX/Default.aspx?token=5777624).",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F5-0085"
+      ]
+    },
+    {
+      "rule": "Applicable data-product check: Each Government System Test and Evaluation WBS element initially designated as “Other” shall represent a test not envisioned or predicted within the defined applicable WBS elements. Applicability: When MIL-STD-881F is applicable through the governing contract, CDRL, or other authorized acquisition direction; when Appendix M (Government System Test and Evaluation) is applicable; when an “Other” subsystem or product-level element is used. Source: MIL-STD-881F M.3(6); printed p. 240 (PDF 248) (https://quicksearch.dla.mil/WMX/Default.aspx?token=5777624).",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F5-0086"
+      ]
+    },
+    {
+      "rule": "Applicable data-product check: Each needed “Other” Government System Test and Evaluation WBS element shall be defined. Applicability: When MIL-STD-881F is applicable through the governing contract, CDRL, or other authorized acquisition direction; when Appendix M (Government System Test and Evaluation) is applicable; when the “Other” element is determined to be needed. Source: MIL-STD-881F M.3(6); printed p. 240 (PDF 248) (https://quicksearch.dla.mil/WMX/Default.aspx?token=5777624).",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F5-0087"
+      ]
+    },
+    {
+      "rule": "Applicable data-product check: Each needed “Other” Government System Test and Evaluation WBS element name shall replace “other” with the newly defined WBS element name. Applicability: When MIL-STD-881F is applicable through the governing contract, CDRL, or other authorized acquisition direction; when Appendix M (Government System Test and Evaluation) is applicable; when the “Other” element is determined to be needed. Source: MIL-STD-881F M.3(6); printed p. 240 (PDF 248) (https://quicksearch.dla.mil/WMX/Default.aspx?token=5777624).",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F5-0088"
+      ]
+    },
+    {
+      "rule": "Applicable data-product check: The Space System Contract WBS shall use the appropriate Space System WBS elements. Applicability: When MIL-STD-881F is applicable through the governing contract, CDRL, or other authorized acquisition direction; when Appendix F applies. Source: MIL-STD-881F F.3.2; printed p. 98 (PDF 106) (https://quicksearch.dla.mil/WMX/Default.aspx?token=5777624).",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F5-0089"
+      ]
+    },
+    {
+      "rule": "Applicable data-product check: The Space System Contract WBS shall exclude elements outside the contract scope. Applicability: When MIL-STD-881F is applicable through the governing contract, CDRL, or other authorized acquisition direction; when Appendix F applies. Source: MIL-STD-881F F.3.2; printed p. 98 (PDF 106) (https://quicksearch.dla.mil/WMX/Default.aspx?token=5777624).",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F5-0090"
+      ]
+    },
+    {
+      "rule": "Applicable data-product check: Each Space System WBS 1...n placeholder shall be replaced with a specific item name. Applicability: When MIL-STD-881F is applicable through the governing contract, CDRL, or other authorized acquisition direction; when Appendix F applies and a program or contract WBS uses the 1...n convention. Source: MIL-STD-881F F.3.3; printed p. 98 (PDF 106) (https://quicksearch.dla.mil/WMX/Default.aspx?token=5777624).",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F5-0091"
+      ]
+    },
+    {
+      "rule": "Applicable data-product check: Each contract dictionary definition for an added Space System WBS occurrence element shall provide a detailed description of the added element content. Applicability: When MIL-STD-881F is applicable through the governing contract, CDRL, or other authorized acquisition direction; when Appendix F applies and WBS occurrence elements are added using the 1...n convention. Source: MIL-STD-881F F.3.3; printed p. 98 (PDF 106) (https://quicksearch.dla.mil/WMX/Default.aspx?token=5777624).",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F5-0092"
+      ]
+    },
+    {
+      "rule": "Applicable data-product check: Each Space System WBS element initially designated as “Other” shall represent a product not envisioned or predicted in the other defined WBS elements. Applicability: When MIL-STD-881F is applicable through the governing contract, CDRL, or other authorized acquisition direction; when Appendix F applies and an “Other” system, subsystem, or product-level element is used. Source: MIL-STD-881F F.3.4; printed p. 98 (PDF 106) (https://quicksearch.dla.mil/WMX/Default.aspx?token=5777624).",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F5-0093"
+      ]
+    },
+    {
+      "rule": "Applicable data-product check: The Ground Vehicle System WBS shall exclude Variant (2...n) WBS elements. Applicability: When MIL-STD-881F is applicable through the governing contract, CDRL, or other authorized acquisition direction; when Appendix G applies and the ground vehicle system is not a family of vehicles. Source: MIL-STD-881F G.4.2.1; printed p. 136 (PDF 144) (https://quicksearch.dla.mil/WMX/Default.aspx?token=5777624).",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F5-0094"
+      ]
+    },
+    {
+      "rule": "Applicable data-product check: The Launch Vehicle common WBS elements shall include systems engineering. Applicability: When MIL-STD-881F is applicable through the governing contract, CDRL, or other authorized acquisition direction; when Appendix I applies. Source: MIL-STD-881F I.3.1; printed p. 166 (PDF 174) (https://quicksearch.dla.mil/WMX/Default.aspx?token=5777624).",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F5-0095"
+      ]
+    },
+    {
+      "rule": "Applicable data-product check: The Launch Vehicle common WBS elements shall include integration and test. Applicability: When MIL-STD-881F is applicable through the governing contract, CDRL, or other authorized acquisition direction; when Appendix I applies. Source: MIL-STD-881F I.3.1; printed p. 166 (PDF 174) (https://quicksearch.dla.mil/WMX/Default.aspx?token=5777624).",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F5-0096"
+      ]
+    },
+    {
+      "rule": "Applicable data-product check: The Launch Vehicle common WBS elements shall include program management. Applicability: When MIL-STD-881F is applicable through the governing contract, CDRL, or other authorized acquisition direction; when Appendix I applies. Source: MIL-STD-881F I.3.1; printed p. 166 (PDF 174) (https://quicksearch.dla.mil/WMX/Default.aspx?token=5777624).",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F5-0097"
+      ]
+    },
+    {
+      "rule": "Applicable data-product check: Each Launch Vehicle WBS (1...n) placeholder shall be replaced with a specific item name. Applicability: When MIL-STD-881F is applicable through the governing contract, CDRL, or other authorized acquisition direction; when Appendix I applies and a program or contract WBS uses the (1...n) convention. Source: MIL-STD-881F I.3.2; printed p. 166 (PDF 174) (https://quicksearch.dla.mil/WMX/Default.aspx?token=5777624).",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F5-0098"
+      ]
+    },
+    {
+      "rule": "Applicable data-product check: The Help Desk reporting system shall specify the applicable support tier. Applicability: When MIL-STD-881F is applicable through the governing contract, CDRL, or other authorized acquisition direction; when Appendix J applies and Help Desk support is reported. Source: MIL-STD-881F J.5.5; printed p. 189 (PDF 197) (https://quicksearch.dla.mil/WMX/Default.aspx?token=5777624).",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F5-0099"
+      ]
+    },
+    {
+      "rule": "Applicable data-product check: The Space System program or contract WBS shall use a systems engineering common-element subcategory. Applicability: When MIL-STD-881F is applicable through the governing contract, CDRL, or other authorized acquisition direction; when Appendix F and the Space-specific Appendix K.4 apply. Source: MIL-STD-881F K.4; printed p. 208 (PDF 216) (https://quicksearch.dla.mil/WMX/Default.aspx?token=5777624).",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F5-0100"
+      ]
+    },
+    {
+      "rule": "Applicable data-product check: The Space System program or contract WBS shall use an integration and test common-element subcategory. Applicability: When MIL-STD-881F is applicable through the governing contract, CDRL, or other authorized acquisition direction; when Appendix F and the Space-specific Appendix K.4 apply. Source: MIL-STD-881F K.4; printed p. 208 (PDF 216) (https://quicksearch.dla.mil/WMX/Default.aspx?token=5777624).",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F5-0101"
+      ]
+    },
+    {
+      "rule": "Applicable data-product check: The Space System program or contract WBS shall use a program management common-element subcategory. Applicability: When MIL-STD-881F is applicable through the governing contract, CDRL, or other authorized acquisition direction; when Appendix F and the Space-specific Appendix K.4 apply. Source: MIL-STD-881F K.4; printed p. 208 (PDF 216) (https://quicksearch.dla.mil/WMX/Default.aspx?token=5777624).",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F5-0102"
+      ]
+    },
+    {
+      "rule": "Applicable data-product check: The Space System program or contract WBS shall use a support equipment common-element subcategory. Applicability: When MIL-STD-881F is applicable through the governing contract, CDRL, or other authorized acquisition direction; when Appendix F and the Space-specific Appendix K.4 apply. Source: MIL-STD-881F K.4; printed p. 208 (PDF 216) (https://quicksearch.dla.mil/WMX/Default.aspx?token=5777624).",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F5-0103"
+      ]
+    },
+    {
+      "rule": "Applicable data-product check: The lower-level Space System common WBS elements shall sum to the correct parent common-element category. Applicability: When MIL-STD-881F is applicable through the governing contract, CDRL, or other authorized acquisition direction; when Appendix K.4 applies and lower-level elements of the four common categories are created. Source: MIL-STD-881F K.4; printed p. 208 (PDF 216) (https://quicksearch.dla.mil/WMX/Default.aspx?token=5777624).",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F5-0104"
+      ]
+    },
+    {
+      "rule": "Applicable data-product check: The Space System WBS reporting shall include systems engineering. Applicability: When MIL-STD-881F is applicable through the governing contract, CDRL, or other authorized acquisition direction; when Appendix K.4 applies. Source: MIL-STD-881F K.4.1; printed p. 208 (PDF 216) (https://quicksearch.dla.mil/WMX/Default.aspx?token=5777624).",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F5-0105"
+      ]
+    },
+    {
+      "rule": "Applicable data-product check: The Space System WBS reporting shall include integration and test. Applicability: When MIL-STD-881F is applicable through the governing contract, CDRL, or other authorized acquisition direction; when Appendix K.4 applies. Source: MIL-STD-881F K.4.1; printed p. 208 (PDF 216) (https://quicksearch.dla.mil/WMX/Default.aspx?token=5777624).",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F5-0106"
+      ]
+    },
+    {
+      "rule": "Applicable data-product check: The Space System WBS reporting shall include program management. Applicability: When MIL-STD-881F is applicable through the governing contract, CDRL, or other authorized acquisition direction; when Appendix K.4 applies. Source: MIL-STD-881F K.4.1; printed p. 208 (PDF 216) (https://quicksearch.dla.mil/WMX/Default.aspx?token=5777624).",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F5-0107"
+      ]
+    },
+    {
+      "rule": "Applicable data-product check: The Space System WBS reporting shall include support equipment. Applicability: When MIL-STD-881F is applicable through the governing contract, CDRL, or other authorized acquisition direction; when Appendix K.4 applies. Source: MIL-STD-881F K.4.1; printed p. 208 (PDF 216) (https://quicksearch.dla.mil/WMX/Default.aspx?token=5777624).",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F5-0108"
+      ]
+    },
+    {
+      "rule": "Applicable data-product check: The Space System WBS reporting shall report uncollected item-level SEIT/PM and Support Equipment costs at the next higher-level WBS element. Applicability: When MIL-STD-881F is applicable through the governing contract, CDRL, or other authorized acquisition direction; when Appendix K.4 applies and the contractor or other developer manages the project by a different means and does not collect any or all SEIT/PM and Support Equipment elements at the supported-item level. Source: MIL-STD-881F K.4.1.1; printed p. 208 (PDF 216) (https://quicksearch.dla.mil/WMX/Default.aspx?token=5777624).",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F5-0109"
+      ]
+    },
+    {
+      "rule": "Applicable data-product check: The Space System SEIT/PM and Support Equipment WBS representation shall separate systems engineering, assembly/integration/test, program management, and support equipment into individual elements. Applicability: When MIL-STD-881F is applicable through the governing contract, CDRL, or other authorized acquisition direction; when Appendix K.4 applies, for WBS levels one through four; level-five product-level systems engineering and program management may be combined into a single SEPM element. Source: MIL-STD-881F K.4.1.1; printed p. 208 (PDF 216) (https://quicksearch.dla.mil/WMX/Default.aspx?token=5777624).",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F5-0110"
+      ]
+    },
+    {
+      "rule": "Applicable data-product check: The lower-level Strategic Missile System common WBS elements shall sum to the correct parent common-element category. Applicability: When MIL-STD-881F is applicable through the governing contract, CDRL, or other authorized acquisition direction; when Appendix K.7 applies and lower-level elements of the common categories are created. Source: MIL-STD-881F K.7; printed p. 225 (PDF 233) (https://quicksearch.dla.mil/WMX/Default.aspx?token=5777624).",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F5-0111"
+      ]
+    },
+    {
+      "rule": "Applicable data-product check: The Strategic Missile System WBS reporting shall report uncollected item-level SEIT/PM and Support Equipment costs at the next higher-level WBS element. Applicability: When MIL-STD-881F is applicable through the governing contract, CDRL, or other authorized acquisition direction; when Appendix K.7 applies and the contractor or other developer manages the project by a different means and does not collect any or all SEIT/PM and Support Equipment elements at the supported-item level. Source: MIL-STD-881F K.7.1; printed p. 225 (PDF 233) (https://quicksearch.dla.mil/WMX/Default.aspx?token=5777624).",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F5-0112"
+      ]
+    },
+    {
+      "rule": "Applicable data-product check: The Strategic Missile System SEIT/PM and Support Equipment WBS representation shall separate systems engineering, assembly/integration/test, program management, and support equipment into individual elements. Applicability: When MIL-STD-881F is applicable through the governing contract, CDRL, or other authorized acquisition direction; when Appendix K.7 applies, for all WBS levels, except that lowest-level systems engineering and program management may be combined into a single SEPM element. Source: MIL-STD-881F K.7.1; printed p. 225 (PDF 233) (https://quicksearch.dla.mil/WMX/Default.aspx?token=5777624).",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F5-0113"
+      ]
+    },
+    {
+      "rule": "Applicable data-product check: Contractors responsible for initial sustainment efforts shall report the initial sustainment activities for contract purposes. Applicability: When MIL-STD-881F is applicable through the governing contract, CDRL, or other authorized acquisition direction; when contractors are responsible for initial sustainment efforts during the acquisition phase. Source: MIL-STD-881F L.3; printed p. 230 (PDF 238) (https://quicksearch.dla.mil/WMX/Default.aspx?token=5777624).",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F5-0114"
+      ]
+    },
+    {
+      "rule": "Applicable data-product check: The effort reported in the Sustaining Support WBS element shall be attributable to a specific system. Applicability: When MIL-STD-881F is applicable through the governing contract, CDRL, or other authorized acquisition direction; when Appendix L applies and effort is reported in the Sustaining Support WBS element. Source: MIL-STD-881F L.5.1.4; printed p. 234 (PDF 242) (https://quicksearch.dla.mil/WMX/Default.aspx?token=5777624).",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F5-0115"
+      ]
+    },
+    {
+      "rule": "Applicable data-product check: The Sustaining Support WBS element shall exclude arbitrarily allocated effort. Applicability: When MIL-STD-881F is applicable through the governing contract, CDRL, or other authorized acquisition direction; when Appendix L applies and effort is reported in the Sustaining Support WBS element. Source: MIL-STD-881F L.5.1.4; printed p. 234 (PDF 242) (https://quicksearch.dla.mil/WMX/Default.aspx?token=5777624).",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F5-0116"
+      ]
+    }
+  ],
+  "canonicalForm": "User-selected semantic canonicalization; not a government-mandated native schema. The displayed baselineHash covers only the three dictionary entries decoded from sample, not a complete report or actual accepted delivery. Decode the RTF table as displayed cell text, ignore presentation controls and the header, map the eight named columns exactly, parse level as an integer and the blank root parentCode as null. Normalize every string to Unicode NFC, trim and collapse Unicode whitespace to one ASCII space, preserving identifier case. Reject duplicate code keys, unresolved parent references and cycles. Order roots by normalized code in Unicode code-point order; traverse each root in preorder with children sorted the same way by code. Serialize every entry with all eight fields, retaining parentCode, with property names sorted lexicographically, compact JSON, literal Unicode, integer levels without leading zeroes, and no trailing newline. Apply the task NFC/trim/whitespace-collapse normalization to that serialized UTF-8 text, then compute lowercase SHA-256. A hierarchy change alters parentCode and therefore changes the hash even if codes remain unchanged. For an actual complete accepted drop under an inspected delivery format, use a canonical object with exactly dictionary, index, context, and supplementalFiles properties. dictionary is the complete semantic entry array with every received operative field/narrative retained, ordered by the same explicit-parent preorder; index is the complete semantic Index entry array ordered by the same received hierarchy, or null only when the applicable delivery does not require an Index. context is the complete actual received operative delivery, plan, applicability, marking and trace metadata object; preserve the received order of every context array. supplementalFiles is an object keyed by unique stable relative file identities, with values consisting of standard padded base64 of exact original bytes and no line breaks; it retains actual operative supplemental artifacts and any received content not faithfully captured in dictionary/index/context. Normalize all textual keys/values by the task NFC/trim/Unicode-whitespace-collapse rule; preserve case, booleans and explicit nulls; reject keys that collide after normalization. Sort all object keys by Unicode code-point order. Serialize arrays in the established order, objects with no discretionary whitespace, strings as literal Unicode except JSON-required escaping, and numbers in plain decimal notation without exponent, leading zeroes or insignificant fractional zeroes (zero is 0). Normalize the resulting UTF-8 JSON text under the task rule before SHA-256. The canonical object description is an explicit hashing choice, not a new native feed schema or a separately produced artifact. Do not claim an accepted native FlexFile or complete-drop hash while applicable DEI/FFS checks remain uninspected; a specifically provided alternative contract format requires its own actual inspected conditions. The displayed hash remains sample-only until a real complete accepted drop exists. Exclude governing-document catalogues, B requirement records, nonbinding guidance and content justified solely by guidance from feed inputs. Guidance exclusion applies to every later batch.",
+  "baselineHash": "891831bccaa354b053f865c18209502dda00f8dc6b0b5b07578d230e459291de",
+  "mil-hdbk-539a": [
+    {
+      "section": "3.2.9; 5.2.8.8",
+      "concept": "authoritative source of truth",
+      "howThisFeedServesIt": "Inference for this contract: retain the controlled WBS definitions and successive operative snapshots as traceable references. Framework guidance only, excluded from rejection rules and baseline inputs. https://quicksearch.dla.mil/WMX/Default.aspx?token=5801571"
+    },
+    {
+      "section": "4.8.2.3",
+      "concept": "digital thread",
+      "howThisFeedServesIt": "Inference for this contract: explicit WBS and requirement associations permit controlled exchange of dictionary meaning across domains and versions. Framework guidance only. https://quicksearch.dla.mil/WMX/Default.aspx?token=5801571"
+    },
+    {
+      "section": "4.8.2.1",
+      "concept": "digital system model",
+      "howThisFeedServesIt": "Inference for this contract: scoped WBS definitions provide contextual data for stakeholder model domains; the dictionary alone is not a complete digital system model. Framework guidance only. https://quicksearch.dla.mil/WMX/Default.aspx?token=5801571"
+    },
+    {
+      "section": "4.8.2.4",
+      "concept": "stakeholder view",
+      "howThisFeedServesIt": "Inference for this contract: the Index and narrative Dictionary present element hierarchy and scope to readers while preserving the controlled source content. Framework guidance only. https://quicksearch.dla.mil/WMX/Default.aspx?token=5801571"
+    }
+  ],
+  "sample": "{/rtf1/ansi/deff0{/fonttbl{/f0 Arial;}}/paperw16840/paperh11907/landscape/margl720/margr720/margt720/margb720/f0/fs16\n/trowd/trgaph80/cellx1700/cellx2100/cellx4000/cellx7000/cellx9700/cellx12700/cellx14000/cellx15400\n/intbl /b code/b0/cell /intbl /b level/b0/cell /intbl /b name/b0/cell /intbl /b technicalContent/b0/cell /intbl /b workContent/b0/cell /intbl /b costContent/b0/cell /intbl /b parentCode/b0/cell /intbl /b requirementId/b0/cell /row\n/trowd/trgaph80/cellx1700/cellx2100/cellx4000/cellx7000/cellx9700/cellx12700/cellx14000/cellx15400\n/intbl HALCYON-WBS-001/cell /intbl 1/cell /intbl HALCYON system/cell /intbl Integrated system assembly containing a control module and an interface module; coordinates mission functions through enclosed electronics./cell /intbl Reporting entity performs in-house system design, integration and analysis for the contract scope./cell /intbl Nonrecurring design and recurring integration; includes engineering labor and integration material; excludes module fabrication reported below; system assembly is made in-house./cell /intbl /cell /intbl HALCYON-REQ-001/cell /row\n/trowd/trgaph80/cellx1700/cellx2100/cellx4000/cellx7000/cellx9700/cellx12700/cellx14000/cellx15400\n/intbl HALCYON-WBS-002/cell /intbl 2/cell /intbl HALCYON control module/cell /intbl Enclosed electronic controller with processing boards and connectors; directs the system operating sequence./cell /intbl Reporting entity performs in-house board design, assembly and functional analysis for the control module./cell /intbl Nonrecurring design and recurring assembly; includes engineering and manufacturing labor and board material; excludes system integration; controller is made in-house from purchased components./cell /intbl HALCYON-WBS-001/cell /intbl HALCYON-REQ-002/cell /row\n/trowd/trgaph80/cellx1700/cellx2100/cellx4000/cellx7000/cellx9700/cellx12700/cellx14000/cellx15400\n/intbl HALCYON-WBS-003/cell /intbl 2/cell /intbl HALCYON interface module/cell /intbl Connector and harness assembly with a protective housing; routes signals between the controller and external interfaces./cell /intbl Supplier performs harness fabrication; reporting entity performs purchased-module inspection and integration within the contract scope./cell /intbl Recurring fabrication and inspection with nonrecurring interface design; includes purchased harness material and quality-control labor; excludes controller development; harness is purchased and housing is made in-house./cell /intbl HALCYON-WBS-001/cell /intbl HALCYON-REQ-003/cell /row\n}"
+}

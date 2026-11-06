@@ -1,0 +1,579 @@
+{
+  "feed": "F2",
+  "name": "Contract set: SOW, CDRL list, and specification tree",
+  "systemOfRecord": [
+    "Controlled SOW document",
+    "Controlled CDRL list",
+    "Controlled specification-tree document"
+  ],
+  "formats": [
+    {
+      "format": "SOW document in its contract-specified form",
+      "spec": "MIL-HDBK-245E Change 2, Foreword 2 and §4.6 (guidance only; no mandatory interchange serialization asserted)",
+      "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5783737"
+    },
+    {
+      "format": "DD Form 1423 CDRL list; current native form and field contract unresolved",
+      "spec": "DD Form 1423 — open source gap; nothing extracted from the inaccessible form",
+      "url": "https://www.esd.whs.mil/Directives/forms/dd1000_1499/DD1423/"
+    },
+    {
+      "format": "Contractor-format specification tree; the three sample entries use JSON",
+      "spec": "DI-SESS-82177 §2 permits contractor format; JSON is a presentation choice, not a prescribed government format",
+      "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5749976"
+    }
+  ],
+  "cadence": "As specified by the applicable contract/CDRL; no general cadence has been established from the inspected sources. Specification-tree content conditions occur at the SETR completions named in DI-SESS-82177 §§3.4.1–3.4.5 (https://quicksearch.dla.mil/WMX/Default.aspx?token=5749976); those conditions do not establish a recurring delivery schedule.",
+  "keys": {
+    "primary": [
+      "recordId"
+    ],
+    "joins": {
+      "wbs": "wbsId",
+      "requirement": "requirementId"
+    }
+  },
+  "fields": [
+    {
+      "name": "recordId",
+      "type": "string",
+      "required": true,
+      "governedBy": [],
+      "description": "Stable record identifier for this requested data contract; not a government-prescribed identifier convention."
+    },
+    {
+      "name": "documentType",
+      "type": "string",
+      "required": true,
+      "governedBy": [],
+      "description": "Identifies SOW, CDRL, or specificationTreeEntry within the F2 contract set; a data-contract discriminator, not a new data product."
+    },
+    {
+      "name": "documentId",
+      "type": "string",
+      "required": true,
+      "governedBy": [],
+      "description": "Identifier of the source SOW, CDRL, or specification-tree document represented by the record."
+    },
+    {
+      "name": "documentRevision",
+      "type": "string",
+      "required": true,
+      "governedBy": [],
+      "description": "Preserved source revision, required here to identify the dropped baseline; no universal government revision convention asserted."
+    },
+    {
+      "name": "wbsId",
+      "type": "string",
+      "required": true,
+      "governedBy": [],
+      "description": "Explicit WBS join required by the task prompt, including when the native source has no such field. Not attributed to the DID or handbook."
+    },
+    {
+      "name": "requirementId",
+      "type": "string",
+      "required": true,
+      "governedBy": [],
+      "description": "Explicit requirement join required by the task prompt, including when the native source has no such field. Not attributed to the DID or handbook."
+    },
+    {
+      "name": "markings",
+      "type": "string",
+      "required": true,
+      "governedBy": [],
+      "description": "Source classification/CUI/distribution marking text as supplied. Detailed governing marking rules remain open source gaps; this field does not assign classification or release authority."
+    },
+    {
+      "name": "cdrl.dataRequirements",
+      "type": "array",
+      "required": false,
+      "governedBy": [
+        "DZR-F2-0002"
+      ],
+      "description": "Content addressed by the cited record(s). Only contextual SOW/CDRL separation guidance was inspected. Current DD1423 and DoDM5010.12 field requirements remain gaps; this is not a verified native DD1423 block definition. Catalogued guidance only; excluded from baseline content."
+    },
+    {
+      "name": "cdrl.deliverySchedule",
+      "type": "string",
+      "required": false,
+      "governedBy": [
+        "DZR-F2-0026"
+      ],
+      "description": "Content addressed by the cited record(s). Only contextual SOW/CDRL separation guidance was inspected. Current DD1423 and DoDM5010.12 field requirements remain gaps; this is not a verified native DD1423 block definition. Catalogued guidance only; excluded from baseline content."
+    },
+    {
+      "name": "cdrl.didReferences",
+      "type": "array",
+      "required": false,
+      "governedBy": [
+        "DZR-F2-0002",
+        "DZR-F2-0028",
+        "DZR-F2-0075"
+      ],
+      "description": "Content addressed by the cited record(s). Only contextual SOW/CDRL separation guidance was inspected. Current DD1423 and DoDM5010.12 field requirements remain gaps; this is not a verified native DD1423 block definition. Catalogued guidance only; excluded from baseline content."
+    },
+    {
+      "name": "cdrl.sourceReferences",
+      "type": "array",
+      "required": false,
+      "governedBy": [
+        "DZR-F2-0073",
+        "DZR-F2-0074"
+      ],
+      "description": "Content addressed by the cited record(s). Only contextual SOW/CDRL separation guidance was inspected. Current DD1423 and DoDM5010.12 field requirements remain gaps; this is not a verified native DD1423 block definition. Catalogued guidance only; excluded from baseline content."
+    },
+    {
+      "name": "sow.cdrlReferences",
+      "type": "array",
+      "required": false,
+      "governedBy": [
+        "DZR-F2-0011",
+        "DZR-F2-0012",
+        "DZR-F2-0013"
+      ],
+      "description": "Content addressed by the cited record(s). MIL-HDBK-245E provides guidance only; source wording alone is not a contractual rejection criterion. Catalogued guidance only; excluded from baseline content."
+    },
+    {
+      "name": "sow.definitions",
+      "type": "object",
+      "required": false,
+      "governedBy": [
+        "DZR-F2-0005"
+      ],
+      "description": "Content addressed by the cited record(s). MIL-HDBK-245E provides guidance only; source wording alone is not a contractual rejection criterion. Catalogued guidance only; excluded from baseline content."
+    },
+    {
+      "name": "sow.deliverables",
+      "type": "array",
+      "required": false,
+      "governedBy": [
+        "DZR-F2-0032"
+      ],
+      "description": "Content addressed by the cited record(s). MIL-HDBK-245E provides guidance only; source wording alone is not a contractual rejection criterion. Catalogued guidance only; excluded from baseline content."
+    },
+    {
+      "name": "sow.didReferences",
+      "type": "array",
+      "required": false,
+      "governedBy": [
+        "DZR-F2-0014"
+      ],
+      "description": "Content addressed by the cited record(s). MIL-HDBK-245E provides guidance only; source wording alone is not a contractual rejection criterion. Catalogued guidance only; excluded from baseline content."
+    },
+    {
+      "name": "sow.formatRequirements",
+      "type": "string",
+      "required": false,
+      "governedBy": [
+        "DZR-F2-0020"
+      ],
+      "description": "Content addressed by the cited record(s). MIL-HDBK-245E provides guidance only; source wording alone is not a contractual rejection criterion. Catalogued guidance only; excluded from baseline content."
+    },
+    {
+      "name": "sow.referenceTailoring",
+      "type": "array",
+      "required": false,
+      "governedBy": [
+        "DZR-F2-0069"
+      ],
+      "description": "Content addressed by the cited record(s). MIL-HDBK-245E provides guidance only; source wording alone is not a contractual rejection criterion. Catalogued guidance only; excluded from baseline content."
+    },
+    {
+      "name": "sow.references",
+      "type": "array",
+      "required": false,
+      "governedBy": [
+        "DZR-F2-0001",
+        "DZR-F2-0022",
+        "DZR-F2-0029",
+        "DZR-F2-0067",
+        "DZR-F2-0068",
+        "DZR-F2-0072"
+      ],
+      "description": "Content addressed by the cited record(s). MIL-HDBK-245E provides guidance only; source wording alone is not a contractual rejection criterion. Catalogued guidance only; excluded from baseline content."
+    },
+    {
+      "name": "sow.specificationReferences",
+      "type": "array",
+      "required": false,
+      "governedBy": [
+        "DZR-F2-0023",
+        "DZR-F2-0024"
+      ],
+      "description": "Content addressed by the cited record(s). MIL-HDBK-245E provides guidance only; source wording alone is not a contractual rejection criterion. Catalogued guidance only; excluded from baseline content."
+    },
+    {
+      "name": "sow.taskAppropriations",
+      "type": "array",
+      "required": false,
+      "governedBy": [
+        "DZR-F2-0003",
+        "DZR-F2-0017"
+      ],
+      "description": "Content addressed by the cited record(s). MIL-HDBK-245E provides guidance only; source wording alone is not a contractual rejection criterion. Catalogued guidance only; excluded from baseline content."
+    },
+    {
+      "name": "sow.tasks",
+      "type": "array",
+      "required": false,
+      "governedBy": [
+        "DZR-F2-0003",
+        "DZR-F2-0004",
+        "DZR-F2-0006",
+        "DZR-F2-0007",
+        "DZR-F2-0008",
+        "DZR-F2-0009",
+        "DZR-F2-0010",
+        "DZR-F2-0018",
+        "DZR-F2-0019",
+        "DZR-F2-0021",
+        "DZR-F2-0025",
+        "DZR-F2-0027",
+        "DZR-F2-0028",
+        "DZR-F2-0030",
+        "DZR-F2-0031",
+        "DZR-F2-0033",
+        "DZR-F2-0034",
+        "DZR-F2-0035",
+        "DZR-F2-0036",
+        "DZR-F2-0037",
+        "DZR-F2-0038",
+        "DZR-F2-0039",
+        "DZR-F2-0040",
+        "DZR-F2-0041",
+        "DZR-F2-0042",
+        "DZR-F2-0044",
+        "DZR-F2-0045",
+        "DZR-F2-0046",
+        "DZR-F2-0047",
+        "DZR-F2-0048",
+        "DZR-F2-0049",
+        "DZR-F2-0050",
+        "DZR-F2-0051",
+        "DZR-F2-0068"
+      ],
+      "description": "Content addressed by the cited record(s). MIL-HDBK-245E provides guidance only; source wording alone is not a contractual rejection criterion. Catalogued guidance only; excluded from baseline content."
+    },
+    {
+      "name": "sow.technicalDataDescription",
+      "type": "string",
+      "required": false,
+      "governedBy": [
+        "DZR-F2-0070"
+      ],
+      "description": "Content addressed by the cited record(s). MIL-HDBK-245E provides guidance only; source wording alone is not a contractual rejection criterion. Catalogued guidance only; excluded from baseline content."
+    },
+    {
+      "name": "sow.technicalDataRights",
+      "type": "string",
+      "required": false,
+      "governedBy": [
+        "DZR-F2-0071"
+      ],
+      "description": "Content addressed by the cited record(s). MIL-HDBK-245E provides guidance only; source wording alone is not a contractual rejection criterion. Catalogued guidance only; excluded from baseline content."
+    },
+    {
+      "name": "sow.text",
+      "type": "string",
+      "required": false,
+      "governedBy": [
+        "DZR-F2-0002",
+        "DZR-F2-0011",
+        "DZR-F2-0012",
+        "DZR-F2-0013",
+        "DZR-F2-0014",
+        "DZR-F2-0015",
+        "DZR-F2-0016",
+        "DZR-F2-0017",
+        "DZR-F2-0023",
+        "DZR-F2-0024",
+        "DZR-F2-0026",
+        "DZR-F2-0074"
+      ],
+      "description": "Content addressed by the cited record(s). MIL-HDBK-245E provides guidance only; source wording alone is not a contractual rejection criterion. Catalogued guidance only; excluded from baseline content."
+    },
+    {
+      "name": "specTree.acronyms",
+      "type": "array",
+      "required": false,
+      "governedBy": [
+        "DZR-F2-0066"
+      ],
+      "description": "Content addressed by the cited record(s). Required for a specification-tree record only when the DID and the cited conditions apply; the field name is a mapping, not a DID-prescribed column name."
+    },
+    {
+      "name": "specTree.architectureProductId",
+      "type": "string",
+      "required": false,
+      "governedBy": [
+        "DZR-F2-0060"
+      ],
+      "description": "Content addressed by the cited record(s). Required for a specification-tree record only when the DID and the cited conditions apply; the field name is a mapping, not a DID-prescribed column name."
+    },
+    {
+      "name": "specTree.baseline",
+      "type": "string",
+      "required": false,
+      "governedBy": [
+        "DZR-F2-0057",
+        "DZR-F2-0058",
+        "DZR-F2-0059",
+        "DZR-F2-0060",
+        "DZR-F2-0061",
+        "DZR-F2-0062",
+        "DZR-F2-0063",
+        "DZR-F2-0064"
+      ],
+      "description": "Content addressed by the cited record(s). Required for a specification-tree record only when the DID and the cited conditions apply; the field name is a mapping, not a DID-prescribed column name."
+    },
+    {
+      "name": "specTree.developingOrganization",
+      "type": "string",
+      "required": false,
+      "governedBy": [
+        "DZR-F2-0054"
+      ],
+      "description": "Content addressed by the cited record(s). Required for a specification-tree record only when the DID and the cited conditions apply; the field name is a mapping, not a DID-prescribed column name."
+    },
+    {
+      "name": "specTree.drawingId",
+      "type": "string",
+      "required": false,
+      "governedBy": [
+        "DZR-F2-0064"
+      ],
+      "description": "Content addressed by the cited record(s). Required for a specification-tree record only when the DID and the cited conditions apply; the field name is a mapping, not a DID-prescribed column name."
+    },
+    {
+      "name": "specTree.governmentFurnishedInformation",
+      "type": "boolean",
+      "required": false,
+      "governedBy": [
+        "DZR-F2-0065"
+      ],
+      "description": "Content addressed by the cited record(s). Required for a specification-tree record only when the DID and the cited conditions apply; the field name is a mapping, not a DID-prescribed column name."
+    },
+    {
+      "name": "specTree.isGovernmentSystemSpecification",
+      "type": "boolean",
+      "required": false,
+      "governedBy": [
+        "DZR-F2-0055"
+      ],
+      "description": "Content addressed by the cited record(s). Required for a specification-tree record only when the DID and the cited conditions apply; the field name is a mapping, not a DID-prescribed column name."
+    },
+    {
+      "name": "specTree.parentSpecificationId",
+      "type": "string|null",
+      "required": false,
+      "governedBy": [
+        "DZR-F2-0055"
+      ],
+      "description": "Content addressed by the cited record(s). Required for a specification-tree record only when the DID and the cited conditions apply; the field name is a mapping, not a DID-prescribed column name."
+    },
+    {
+      "name": "specTree.referenceDocuments[].edition",
+      "type": "string",
+      "required": false,
+      "governedBy": [
+        "DZR-F2-0052"
+      ],
+      "description": "Content addressed by the cited record(s). Required for a specification-tree record only when the DID and the cited conditions apply; the field name is a mapping, not a DID-prescribed column name."
+    },
+    {
+      "name": "specTree.setrEvent",
+      "type": "string",
+      "required": false,
+      "governedBy": [
+        "DZR-F2-0056",
+        "DZR-F2-0058",
+        "DZR-F2-0059",
+        "DZR-F2-0060",
+        "DZR-F2-0061",
+        "DZR-F2-0062",
+        "DZR-F2-0063",
+        "DZR-F2-0064"
+      ],
+      "description": "Content addressed by the cited record(s). Required for a specification-tree record only when the DID and the cited conditions apply; the field name is a mapping, not a DID-prescribed column name."
+    },
+    {
+      "name": "specTree.specificationId",
+      "type": "string",
+      "required": false,
+      "governedBy": [
+        "DZR-F2-0055",
+        "DZR-F2-0058",
+        "DZR-F2-0059",
+        "DZR-F2-0061",
+        "DZR-F2-0062",
+        "DZR-F2-0063",
+        "DZR-F2-0065"
+      ],
+      "description": "Content addressed by the cited record(s). Required for a specification-tree record only when the DID and the cited conditions apply; the field name is a mapping, not a DID-prescribed column name."
+    },
+    {
+      "name": "specTree.specificationTitle",
+      "type": "string",
+      "required": false,
+      "governedBy": [
+        "DZR-F2-0053"
+      ],
+      "description": "Content addressed by the cited record(s). Required for a specification-tree record only when the DID and the cited conditions apply; the field name is a mapping, not a DID-prescribed column name."
+    }
+  ],
+  "markings": "Preserve supplied classification/CUI/distribution marking text on the source documents and in the markings field. Detailed marking obligations remain open gaps for DoDI5230.24, DoDI5200.48, and DoDM5200.01 Volume2. No markings are invented or inferred from a file hash. MIL-HDBK-539A Change1 §6.9.1.2 supplies framework guidance, not a substitute for those sources (https://quicksearch.dla.mil/WMX/Default.aspx?token=5801571).",
+  "acceptance": [
+    {
+      "rule": "Reject every record with a missing, null, or whitespace-only wbsId. This rule comes from the task prompt, not an extracted government mandate.",
+      "severity": "reject",
+      "governedBy": []
+    },
+    {
+      "rule": "Reject every record with a missing, null, or whitespace-only requirementId. This rule comes from the task prompt, not an extracted government mandate.",
+      "severity": "reject",
+      "governedBy": []
+    },
+    {
+      "rule": "Reject missing or duplicate recordId values within a drop. This is the key check required by this data contract, not a source-prescribed ID convention.",
+      "severity": "reject",
+      "governedBy": []
+    },
+    {
+      "rule": "Reject a specification-tree submission lacking specification titles or developing-organization names when the corresponding untailored DID content is invoked.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F2-0053",
+        "DZR-F2-0054"
+      ]
+    },
+    {
+      "rule": "Reject a specification tree that fails to place the contract-provided Government system specification at the top of the hierarchy when that source condition applies.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F2-0055"
+      ]
+    },
+    {
+      "rule": "Reject a specification-tree submission missing its applicable SETR-event, baseline, milestone-content, furnished-specification, or acronym-list content when the corresponding untailored DID conditions apply.",
+      "severity": "reject",
+      "governedBy": [
+        "DZR-F2-0056",
+        "DZR-F2-0057",
+        "DZR-F2-0058",
+        "DZR-F2-0059",
+        "DZR-F2-0060",
+        "DZR-F2-0061",
+        "DZR-F2-0062",
+        "DZR-F2-0063",
+        "DZR-F2-0064",
+        "DZR-F2-0065",
+        "DZR-F2-0066"
+      ]
+    },
+    {
+      "rule": "Catalogue guidance findings only; do not include the cited nonbinding records or guidance-only content in the baseline hash and do not use them to reject a drop.",
+      "severity": "warn",
+      "governedBy": [
+        "DZR-F2-0001",
+        "DZR-F2-0002",
+        "DZR-F2-0003",
+        "DZR-F2-0004",
+        "DZR-F2-0005",
+        "DZR-F2-0006",
+        "DZR-F2-0007",
+        "DZR-F2-0008",
+        "DZR-F2-0009",
+        "DZR-F2-0010",
+        "DZR-F2-0011",
+        "DZR-F2-0012",
+        "DZR-F2-0013",
+        "DZR-F2-0014",
+        "DZR-F2-0015",
+        "DZR-F2-0016",
+        "DZR-F2-0017",
+        "DZR-F2-0018",
+        "DZR-F2-0019",
+        "DZR-F2-0020",
+        "DZR-F2-0021",
+        "DZR-F2-0022",
+        "DZR-F2-0023",
+        "DZR-F2-0024",
+        "DZR-F2-0025",
+        "DZR-F2-0026",
+        "DZR-F2-0027",
+        "DZR-F2-0028",
+        "DZR-F2-0029",
+        "DZR-F2-0030",
+        "DZR-F2-0031",
+        "DZR-F2-0032",
+        "DZR-F2-0033",
+        "DZR-F2-0034",
+        "DZR-F2-0035",
+        "DZR-F2-0036",
+        "DZR-F2-0037",
+        "DZR-F2-0038",
+        "DZR-F2-0039",
+        "DZR-F2-0040",
+        "DZR-F2-0041",
+        "DZR-F2-0042",
+        "DZR-F2-0044",
+        "DZR-F2-0045",
+        "DZR-F2-0046",
+        "DZR-F2-0047",
+        "DZR-F2-0048",
+        "DZR-F2-0049",
+        "DZR-F2-0050",
+        "DZR-F2-0051",
+        "DZR-F2-0067",
+        "DZR-F2-0068",
+        "DZR-F2-0069",
+        "DZR-F2-0070",
+        "DZR-F2-0071",
+        "DZR-F2-0072",
+        "DZR-F2-0073",
+        "DZR-F2-0074",
+        "DZR-F2-0075"
+      ]
+    },
+    {
+      "rule": "Warn that CDRL/form and affected policy/marking compliance cannot be assessed while the six governing-source gaps remain open. Nothing from those sources has been extracted.",
+      "severity": "warn",
+      "governedBy": []
+    },
+    {
+      "rule": "Reject a provided baselineHash that differs from the recomputed hash of the declared canonical rows. This is the task-requested integrity check, not proof of compliance or source authenticity.",
+      "severity": "reject",
+      "governedBy": []
+    }
+  ],
+  "canonicalForm": "Baseline eligibility: only content supported by operative-source records with binding=true and kind other than guidance enters the baseline. Catalogue all binding=false/kind=guidance records separately; exclude them and fields supported solely by them. Keep the task-required identity, provenance, marking and join fields accompanying eligible data rows. For F2, the inspected operative source is DI-SESS-82177; all 59 MIL-HDBK-245E records are excluded. The three sample specification-tree rows contain no handbook-guidance content. For the represented rows, retain declared JSON value types; normalize every string value using Unicode NFC, trim, and collapse Unicode whitespace to a single ASCII space. Sort rows lexicographically by recordId. Serialize the array with recursively sorted object keys, compact separators, literal Unicode, UTF-8, and no trailing newline; preserve array order within a row. Apply the same task normalization to that serialized text before SHA-256. Hash the represented row content, not PDF/DOCX bytes and not this contract object. For the included sample, parse sample as a JSON array and apply this procedure.",
+  "baselineHash": "6b67d3f6c1531a42e2716f7669a93da67882ad5584e8bd57cef1a45c9dece313",
+  "mil-hdbk-539a": [
+    {
+      "section": "3.2.9",
+      "concept": "authoritative source of truth",
+      "howThisFeedServesIt": "Retain identified, revision-controlled contract-set documents as the source of the represented obligations. Framework: A with Change1, https://quicksearch.dla.mil/WMX/Default.aspx?token=5801571."
+    },
+    {
+      "section": "4.8.2.3",
+      "concept": "digital thread",
+      "howThisFeedServesIt": "Preserve links among work statements, data deliverables, specifications, WBS identifiers, and requirement identifiers. Framework mapping only; it does not prescribe these join-field names."
+    },
+    {
+      "section": "4.8.2.4",
+      "concept": "stakeholder view",
+      "howThisFeedServesIt": "Present the contract set and specification hierarchy as views of the identified source data."
+    },
+    {
+      "section": "6.9.1.1",
+      "concept": "digital thread",
+      "howThisFeedServesIt": "Distinguish access to contract data from the delivery commitments recorded in the contract set."
+    },
+    {
+      "section": "6.9.1.2",
+      "concept": "authoritative source of truth",
+      "howThisFeedServesIt": "Preserve source metadata and supplied markings while the detailed marking-source gaps remain unresolved."
+    }
+  ],
+  "sample": "[\n  {\n    \"recordId\": \"HALCYON-F2-001\",\n    \"documentType\": \"specificationTreeEntry\",\n    \"documentId\": \"HALCYON-SPEC-TREE\",\n    \"documentRevision\": \"1\",\n    \"wbsId\": \"1\",\n    \"requirementId\": \"HALCYON-REQ-001\",\n    \"markings\": \"UNCLASSIFIED; fictional sample\",\n    \"specTree.specificationId\": \"HALCYON-SYSTEM\",\n    \"specTree.specificationTitle\": \"HALCYON system specification\",\n    \"specTree.developingOrganization\": \"HALCYON government developing organization (fictional)\",\n    \"specTree.parentSpecificationId\": null,\n    \"specTree.isGovernmentSystemSpecification\": true,\n    \"specTree.setrEvent\": \"SRR-2\",\n    \"specTree.baseline\": \"Requirements Baseline\",\n    \"specTree.acronyms\": [\n      {\n        \"term\": \"SRR-2\",\n        \"meaning\": \"Systems Requirements Review 2\"\n      }\n    ]\n  },\n  {\n    \"recordId\": \"HALCYON-F2-002\",\n    \"documentType\": \"specificationTreeEntry\",\n    \"documentId\": \"HALCYON-SPEC-TREE\",\n    \"documentRevision\": \"1\",\n    \"wbsId\": \"1.1\",\n    \"requirementId\": \"HALCYON-REQ-002\",\n    \"markings\": \"UNCLASSIFIED; fictional sample\",\n    \"specTree.specificationId\": \"HALCYON-FUNCTIONAL\",\n    \"specTree.specificationTitle\": \"HALCYON functional specification\",\n    \"specTree.developingOrganization\": \"HALCYON developing organization (fictional)\",\n    \"specTree.parentSpecificationId\": \"HALCYON-SYSTEM\",\n    \"specTree.isGovernmentSystemSpecification\": false,\n    \"specTree.setrEvent\": \"SFR\",\n    \"specTree.baseline\": \"Functional Baseline\",\n    \"specTree.acronyms\": [\n      {\n        \"term\": \"SFR\",\n        \"meaning\": \"System Functional Review\"\n      }\n    ]\n  },\n  {\n    \"recordId\": \"HALCYON-F2-003\",\n    \"documentType\": \"specificationTreeEntry\",\n    \"documentId\": \"HALCYON-SPEC-TREE\",\n    \"documentRevision\": \"1\",\n    \"wbsId\": \"1.1.1\",\n    \"requirementId\": \"HALCYON-REQ-003\",\n    \"markings\": \"UNCLASSIFIED; fictional sample\",\n    \"specTree.specificationId\": \"HALCYON-ALLOCATED\",\n    \"specTree.specificationTitle\": \"HALCYON allocated specification\",\n    \"specTree.developingOrganization\": \"HALCYON developing organization (fictional)\",\n    \"specTree.parentSpecificationId\": \"HALCYON-FUNCTIONAL\",\n    \"specTree.isGovernmentSystemSpecification\": false,\n    \"specTree.setrEvent\": \"PDR\",\n    \"specTree.baseline\": \"Allocated Baseline\",\n    \"specTree.acronyms\": [\n      {\n        \"term\": \"PDR\",\n        \"meaning\": \"Preliminary Design Review\"\n      }\n    ]\n  }\n]"
+}

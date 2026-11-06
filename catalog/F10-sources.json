@@ -1,0 +1,1254 @@
+{
+  "feed": "F10",
+  "name": "RACI / staffing by WBS",
+  "asOf": "2026-11-06",
+  "scope": "Exactly the F10 data-product obligations supported by inspected public government sources, plus the MIL-HDBK-539A framework. One obligation per coherent source duty; no multiplication by person, organization, WBS, period or review type.",
+  "sources": [
+    {
+      "id": "DI-MGMT-81861C",
+      "title": "Integrated Program Management Data and Analysis Report (IPMDAR)",
+      "currentEdition": "Current revision D, 12 March 2026; requested extraction basis remains Revision C, 30 August 2021",
+      "date": "2026-03-12",
+      "issuerPreparingActivity": "OUSD (A&S), Acquisition Data & Analytics (ADA)",
+      "authoritativeUrl": "https://quicksearch.dla.mil/qsDocDetails.aspx?ident_number=278901",
+      "sourceUrl": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5773808",
+      "releaseStatement": "Distribution A in official ASSIST revision history.",
+      "copyrightClass": "usg-public-domain",
+      "binding": true,
+      "bindingScope": "Conditional on actual contract/CDRL invocation and tailoring; not automatically applicable to all organizations.",
+      "kind": "operative-source",
+      "status": "inspected",
+      "inspection": {
+        "localPdf": "packet/halcyon-batch-10/_work/di-mgmt-81861c.pdf",
+        "fullSourceOpened": true,
+        "pageCount": 14,
+        "allPagesTextExtracted": true,
+        "visuallyInspectedPdfPages": [
+          1,
+          2,
+          3,
+          5,
+          7,
+          11,
+          14
+        ],
+        "indexedTextUsedForPassages": false
+      },
+      "notes": "ASSIST live revision-history page opened 6 November 2026: Active Revision D, 19 pages, Distribution A, token5799520; separate Revision C row dated30Aug2021,14pages,Distribution A,token5773808. Revision C was downloaded, opened in full, and used for source passages to retain the prompt's expressly selected IPMDAR edition; Revision D was not substituted or clause-extracted. Revision C §1.2 describes CPD, Schedule and Performance Narrative components, not legacy numbered IPMR Formats1and5. F10 selects organization, WBS/control-account, staffing-hours and staffing-narrative obligations plus applicable delivery/format controls; pure cost, schedule-task and other full-IPMDAR obligations remain outside this F10 extract. No claim of full IPMDAR acceptance. CDRL Block16 controls whether the staffing-change narrative is included under C Table2.2.",
+      "extractionEdition": "Revision C, 30 August 2021",
+      "currentSourceUrl": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5799520",
+      "currentEditionPdfInspected": false,
+      "extractedBRecords": 31
+    },
+    {
+      "id": "IPMDAR-CPD-FFS",
+      "title": "IPMDAR Contract Performance Dataset — File Format Specification",
+      "currentEdition": "Version 1.0, 12 March 2020",
+      "date": "2020-03-12",
+      "issuerPreparingActivity": "Office of the Secretary of Defense IPM office; current official host OUSD A&S / DPC / API / IPM",
+      "authoritativeUrl": "https://www.acq.osd.mil/asda/dpc/api/ipm/policy-guidance.html#ipmdar-dei-ffs",
+      "sourceUrl": "https://www.acq.osd.mil/asda/dpc/api/ipm/docs/20200312%20Contract%20Performance%20Dataset%20-%20FFS.pdf",
+      "releaseStatement": "Public government PDF linked on the official IPM Policy and Guidance page; no formal distribution statement observed on the inspected cover.",
+      "copyrightClass": "usg-public-domain",
+      "binding": true,
+      "bindingScope": "Conditional on actual contract/CDRL invocation and tailoring; not automatically applicable to all organizations.",
+      "kind": "operative-source",
+      "status": "inspected",
+      "inspection": {
+        "localPdf": "packet/halcyon-batch-10/_work/cpd-ffs.pdf",
+        "fullSourceOpened": true,
+        "pageCount": 27,
+        "allPagesTextExtracted": true,
+        "visuallyInspectedPdfPages": [
+          3,
+          11,
+          12,
+          15,
+          16,
+          17,
+          18
+        ],
+        "indexedTextUsedForPassages": false
+      },
+      "notes": "Exact PDF linked by the official policy-guidance page downloaded 6November2026; no newer CPD technical edition advertised there. Operative only through applicable DID/contract invocation (DI-MGMT-81861C §1.6.1). Full text opened; F10 excerpts focus on staffing source tables, identities, hours, calendar and common format controls. Dollar-specific burdening/cost dimensions are not expanded into additional F10 obligations. Complete-CPD compliance requires all applicable fields and constraints, including non-F10 components.",
+      "operativeBasis": "DID-incorporated technical specification: DI-MGMT-81861C §1.6.1, https://quicksearch.dla.mil/WMX/Default.aspx?token=5773808. Not independently imposed as a guide.",
+      "extractedBRecords": 21
+    },
+    {
+      "id": "IPMDAR-CPD-DEI",
+      "title": "IPMDAR Contract Performance Dataset — Data Exchange Instructions",
+      "currentEdition": "Version 1.0, 12 March 2020",
+      "date": "2020-03-12",
+      "issuerPreparingActivity": "Office of the Secretary of Defense IPM office; current official host OUSD A&S / DPC / API / IPM",
+      "authoritativeUrl": "https://www.acq.osd.mil/asda/dpc/api/ipm/policy-guidance.html#ipmdar-dei-ffs",
+      "sourceUrl": "https://www.acq.osd.mil/asda/dpc/api/ipm/docs/20200312%20contract%20performance%20dataset%20-%20dei.pdf",
+      "releaseStatement": "Public government PDF linked on the official IPM Policy and Guidance page; no formal distribution statement observed on the inspected cover.",
+      "copyrightClass": "usg-public-domain",
+      "binding": true,
+      "bindingScope": "Conditional on actual contract/CDRL invocation and tailoring; not automatically applicable to all organizations.",
+      "kind": "operative-source",
+      "status": "inspected",
+      "inspection": {
+        "localPdf": "packet/halcyon-batch-10/_work/cpd-dei.pdf",
+        "fullSourceOpened": true,
+        "pageCount": 26,
+        "allPagesTextExtracted": true,
+        "visuallyInspectedPdfPages": [
+          12,
+          13,
+          17
+        ],
+        "indexedTextUsedForPassages": false
+      },
+      "notes": "Exact PDF linked by the official policy-guidance page downloaded 6November2026; no newer CPD technical edition advertised there. Operative only through applicable DID/contract invocation (DI-MGMT-81861C §1.6.1). Full text opened; F10 excerpts focus on staffing source tables, identities, hours, calendar and common format controls. Dollar-specific burdening/cost dimensions are not expanded into additional F10 obligations. Complete-CPD compliance requires all applicable fields and constraints, including non-F10 components.",
+      "operativeBasis": "DID-incorporated technical specification: DI-MGMT-81861C §1.6.1, https://quicksearch.dla.mil/WMX/Default.aspx?token=5773808. Not independently imposed as a guide.",
+      "extractedBRecords": 3
+    },
+    {
+      "id": "DI-MGMT-81797",
+      "title": "Program Management Plan",
+      "sourceType": "Data Item Description",
+      "binding": true,
+      "bindingScope": "When the applicable contract/CDRL invokes DI-MGMT-81797 for the Program Management Plan; this is a conditional data-deliverable requirement, not an automatically applicable legal obligation.",
+      "currentEdition": "Base, 8 December 2009; validated by Notice 3, 17 September 2024",
+      "baseApprovalDate": "2009-12-08",
+      "currentNotice": {
+        "number": 3,
+        "type": "Validation",
+        "date": "2024-09-17",
+        "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5790938",
+        "pages": 1,
+        "inspected": true
+      },
+      "status": "Active",
+      "issuer": "Department of the Air Force",
+      "preparingActivity": {
+        "code": "170",
+        "name": "Air Force Life Cycle Management Center, Ogden",
+        "basis": "Current ASSIST record; current notice identifies Air Force - 170"
+      },
+      "approvalAuthority": {
+        "code": "10",
+        "name": "AFMC Command Standardization Office (ComSO)",
+        "basis": "Current ASSIST record"
+      },
+      "release": "Distribution A for base and Notice 3 according to ASSIST; this describes source-document release, not delivered program data.",
+      "assist": {
+        "url": "https://quicksearch.dla.mil/qsDocDetails.aspx?ident_number=277009",
+        "verifiedOn": "2026-11-06",
+        "recordNumber": "277009",
+        "nextReviewDue": "2029-09-16",
+        "baseDate": "2009-12-08",
+        "currentDIDDate": "2024-09-17",
+        "currentDIDDateMeaning": "Validation notice date, not a new base or revision letter"
+      },
+      "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=4820183",
+      "inspection": {
+        "basePdf": "DI-MGMT-81797.pdf",
+        "basePages": 2,
+        "baseTextRead": "All two pages, including §§1–4 and every §3(a)–(g) item.",
+        "baseRenderedPagesInspected": [
+          1,
+          2
+        ],
+        "noticePdf": "DI-MGMT-81797-notice3.pdf",
+        "noticeRenderedPagesInspected": [
+          1
+        ],
+        "method": "Fresh official PDF downloads; complete pdfplumber extraction plus Poppler renders visually inspected. Indexed/search text was used only for discovery, not as passage evidence.",
+        "transcriptionNote": "The base text layer encodes two apostrophes as replacement characters. Rendered page 1 visibly shows right single quotation marks in “it’s” and “contractor’s”; the passages use U+2019 and retain the source grammar.",
+        "noticeInterpretation": "Notice 3 names the prior 11 October 2019 validation date. The live ASSIST history identifies the unchanged 8 December 2009 base separately; no 2019 or 2024 rewritten base is assumed."
+      },
+      "coverage": {
+        "included": [
+          "§2 contractor format",
+          "§2 unclassified limitation",
+          "§3 integrated common CWBS/planning-equivalent base",
+          "§3 organization, management practices and techniques",
+          "§3(b) CWBS relationship and coherent element description/cost fieldset",
+          "§3(g)(1)–(2) coherent organization-data fieldset preserving both required charts"
+        ],
+        "excluded": [
+          {
+            "paragraph": "Use/Relationship",
+            "reason": "Purpose/context text without a separate feed shall; retained as scope context only."
+          },
+          {
+            "paragraph": "§1",
+            "reason": "Reference documents: None; source fact, not a new requirement."
+          },
+          {
+            "paragraph": "§3(a)",
+            "reason": "Whole-plan introduction is outside the selected F10 responsibilities/organization/WBS subset."
+          },
+          {
+            "paragraph": "§3(c)",
+            "reason": "Detailed milestone chart is a schedule data-product obligation outside this selected F10 subset."
+          },
+          {
+            "paragraph": "§3(d)",
+            "reason": "GFE/facility chart and availability dates are outside this selected organization/responsibility data subset."
+          },
+          {
+            "paragraph": "§3(e)",
+            "reason": "Monthly cost-chart forecast is outside this selected F10 subset; explicit CWBS element cost remains with its coherent §3(b) fieldset."
+          },
+          {
+            "paragraph": "§3(f)",
+            "reason": "Purchase/subcontract chart dates and amounts are procurement information outside this selected F10 subset."
+          },
+          {
+            "paragraph": "§4",
+            "reason": "End marker, no requirement."
+          },
+          {
+            "paragraph": "Notice 3",
+            "reason": "Current validation/currency evidence; no F10 data-product requirement."
+          }
+        ],
+        "completionLimit": "These six F10 candidates do not represent all obligations of a complete PMP. A claim to deliver a complete PMP must also address the non-F10 content in §3(a), (c), (d), (e), and (f) under the actual invocation.",
+        "notPrescribed": [
+          "RACI letters or responsibility-assignment nomenclature",
+          "One RACI record per WBS element",
+          "Hours, FTE, headcount or time-phased staffing quantities",
+          "A requirement identifier join",
+          "A fixed WBS depth/code syntax",
+          "A prescribed spreadsheet/JSON schema",
+          "Delivery/update frequency"
+        ],
+        "recordIds": [
+          "DZR-F10-0101",
+          "DZR-F10-0102",
+          "DZR-F10-0103",
+          "DZR-F10-0104",
+          "DZR-F10-0105",
+          "DZR-F10-0106"
+        ],
+        "recordCount": 6
+      },
+      "fieldFacts": {
+        "nativeFormat": {
+          "paragraph": "§2",
+          "value": "Contractor format. A receiver-selected JSON representation is an implementation choice, not a DID-mandated schema."
+        },
+        "classification": {
+          "paragraph": "§2",
+          "value": "Unclassified; neither public-release authorization nor a conclusion that no CUI exists."
+        },
+        "references": {
+          "paragraph": "§1",
+          "value": "None."
+        },
+        "commonBase": {
+          "paragraph": "§3",
+          "value": "CWBS or planning equivalent for integrated technical/cost/schedule information."
+        },
+        "organizationChart": {
+          "paragraph": "§3(g)(1)",
+          "value": "Structure by title and name; identify program office, support contractors, major subcontractors."
+        },
+        "functionalRelationshipChart": {
+          "paragraph": "§3(g)(2)",
+          "value": "Relationship of program functions to functional organizations; lines of authority and communications."
+        },
+        "cadence": {
+          "value": "No frequency or update trigger is prescribed in the inspected DID. Actual contract/CDRL scheduling is external input."
+        }
+      },
+      "gaps": [],
+      "scopeCandidatesNotExtracted": [
+        {
+          "id": "DI-MGMT-81911",
+          "title": "Work Management Plan",
+          "status": "Not selected",
+          "reason": "Narrow official discovery found only a handbook bibliographic listing, not a verified current ASSIST record or inspected source demonstrating direct F10 obligations. No contents, current-revision claim, or requirement is inferred; no alternate source was substituted."
+        }
+      ],
+      "hashAlgorithm": "SHA-256 of UTF-8 bytes after Unicode NFC normalization, trimming, and collapse of each whitespace sequence to one U+0020 space.",
+      "copyrightClass": "usg-public-domain",
+      "authoritativeUrl": "https://quicksearch.dla.mil/qsDocDetails.aspx?ident_number=277009",
+      "sourceUrl": "https://quicksearch.dla.mil/WMX/Default.aspx?token=4820183",
+      "releaseStatement": "Distribution A for base and Notice 3 according to ASSIST; this describes source-document release, not delivered program data.",
+      "kind": "operative-source",
+      "date": "2024-09-17",
+      "issuerPreparingActivity": "Department of the Air Force; Air Force Life Cycle Management Center, Ogden (170)",
+      "extractedBRecords": 6
+    },
+    {
+      "id": "MIL-HDBK-539A",
+      "title": "Digital Engineering and Modeling Practices",
+      "currentEdition": "Revision A, 12 March 2026, incorporating Change 1, 10 June 2026",
+      "date": "2026-06-10",
+      "issuerPreparingActivity": "Department of War; preparing activity AR, US Army Combat Capabilities Development Command, Armaments Center",
+      "authoritativeUrl": "https://quicksearch.dla.mil/qsDocDetails.aspx?ident_number=285031",
+      "sourceUrl": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5801571",
+      "releaseStatement": "DISTRIBUTION STATEMENT A. Approved for public release. Distribution is unlimited. Verified on current cover.",
+      "copyrightClass": "usg-public-domain",
+      "copyrightScope": "Government-authored passages only; attributed SDO text, licensed tables, and source-example records excluded.",
+      "currentVerification": {
+        "date": "2026-11-06",
+        "method": "Fresh official ASSIST document-details page opened in the web reader; data updated 04 Nov 2026. Active, Revision A Change 1, 10 Jun 2026, 139 pages, Distribution A, preparing AR. Exact current PDF freshly downloaded and cover inspected.",
+        "status": "Active"
+      },
+      "status": "inspected-guidance",
+      "binding": false,
+      "kind": "guidance",
+      "baselineEligible": false,
+      "extractedBRecords": 0,
+      "inspection": {
+        "localPdf": "packet/halcyon-batch-10/_work/MIL-HDBK-539A-change1.pdf",
+        "fullSourceOpened": true,
+        "pageCount": 139,
+        "allPagesTextExtracted": true,
+        "focusedSections": [
+          "4.8.1.1",
+          "4.8.2.1.3",
+          "4.8.2.3-4.8.2.4",
+          "8.2.1",
+          "Appendix F F.2.2-F.2.2.1 and Table F-II",
+          "Appendix H 1.3 and 3.1"
+        ],
+        "visuallyInspectedPdfPages": [
+          1,
+          39,
+          40,
+          41,
+          83,
+          115,
+          117,
+          130,
+          133
+        ],
+        "indexedTextUsedForPassages": false
+      },
+      "nativeFormatAndCadence": "No F10 native RACI/staffing transport, fixed update cadence, RACI enum, headcount threshold or FTE calculation prescribed by the inspected guidance. Appendix F and H are guidance templates, not mandatory feed schemas.",
+      "zeroRecordRationale": "The relevant role/staffing/framework passages are descriptive, should-based or optional template prompts. They are catalogued as nonbinding field facts; no operative record or independent acceptance gate is created."
+    },
+    {
+      "id": "DoD EVMSIG",
+      "title": "Department of Defense Earned Value Management System Interpretation Guide",
+      "currentEdition": "24 June 2026",
+      "date": "2026-06-24",
+      "issuerPreparingActivity": "Department of Defense, OUSD A&S (DPCAP/API); Assistant Secretary of Defense for Acquisition",
+      "authoritativeUrl": "https://www.acq.osd.mil/asda/dpc/api/ipm/policy-guidance.html",
+      "sourceUrl": "https://www.acq.osd.mil/asda/dpc/api/ipm/docs/dod_evmsig_24june2026.pdf",
+      "releaseStatement": "Public PDF linked by the current official government Policy and Guidance catalogue. No formal Distribution Statement A was observed on the inspected cover or relevant pages; none is asserted.",
+      "copyrightClass": "usg-public-domain",
+      "copyrightScope": "Only separately labeled government-authored DoD Strategic Intent explanations and typical-work-product labels are catalogued. EIA Standard Guideline text, licensed standard clauses, source-example chart values and real signatory details are excluded.",
+      "currentVerification": {
+        "date": "2026-11-06",
+        "method": "Fresh official policy-guidance HTML downloaded directly. Current guide link points to docs/dod_evmsig_24june2026.pdf and is labeled June 2026; March 2019 is separately in the legacy area. Exact linked PDF downloaded and cover date visually verified."
+      },
+      "status": "inspected-guidance",
+      "binding": false,
+      "kind": "guidance",
+      "baselineEligible": false,
+      "extractedBRecords": 0,
+      "inspection": {
+        "localPdf": "packet/halcyon-batch-10/_work/DoD-EVMSIG-2026-06-24.pdf",
+        "fullSourceOpened": true,
+        "pageCount": 92,
+        "allPagesTextExtracted": true,
+        "focusedSections": [
+          "2.2 government-authored DoD Strategic Intent and Typical Work Products",
+          "2.3 government-authored DoD Strategic Intent and Typical Work Products"
+        ],
+        "visuallyInspectedPdfPages": [
+          1,
+          12,
+          13,
+          14,
+          15
+        ],
+        "indexedTextUsedForPassages": false
+      },
+      "nativeFormatAndCadence": "The responsibility assignment matrix is named as a typical work product. The inspected guidance does not supply a compulsory F10 transport, universal RACI field layout, fixed cadence or staffing formula.",
+      "zeroRecordRationale": "No operative or guidance-B records are added in this narrow F10 subtask. Government explanations and typical work-product descriptions are field facts; staffing/manager-assignment conduct is not converted into feed-content obligations. The guide is not treated as an independent contract requirement."
+    },
+    {
+      "id": "MIL-STD-881F",
+      "title": "Work Breakdown Structures for Defense Materiel Items",
+      "currentEdition": "Revision F, 13 May 2022",
+      "date": "2022-05-13",
+      "issuerPreparingActivity": "OUSD (A&S) Acquisition Data & Analytics (ADA)",
+      "authoritativeUrl": "https://quicksearch.dla.mil/qsdocdetails.aspx?ident_number=36026",
+      "releaseStatement": "Distribution A in ASSIST revision history.",
+      "copyrightClass": "usg-public-domain",
+      "kind": "referenced-standard-metadata",
+      "binding": false,
+      "status": "metadata-only",
+      "inspection": {
+        "fullSourceOpened": false,
+        "indexedTextUsedForPassages": false
+      },
+      "notes": "Fresh official ASSIST metadata verifies active Revision F. The prompt explicitly makes F10.wbsId the join to the MIL-STD-881F WBS maintained in F5. No F5 output was read, no 881F clauses were extracted from catalogue text, and no new WBS code syntax or commodity structure is inferred. The requirement to reject missing WBS and requirement joins is the user receiving-contract rule.",
+      "extractedBRecords": 0
+    },
+    {
+      "title": "Digital Engineering Management Plan (DEMP)",
+      "edition": "Base, 4 May 2026",
+      "approvalDate": "2026-05-04",
+      "currentStatus": "Active; current base verified in official ASSIST on 2026-11-06",
+      "assistRecord": "https://quicksearch.dla.mil/qsDocDetails.aspx?ident_number=287035",
+      "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5800888",
+      "authority": "DID Approval Authority: 10, AFMC Command Standardization Office (ComSO); Preparing Activity: 19 (SSC), Space Systems Command.",
+      "release": "Official ASSIST catalogue reports Distribution Statement A. No separate distribution statement is printed in the inspected PDF.",
+      "binding": true,
+      "bindingCondition": "Only when the applicable contract/CDRL invokes DI-SESS-82538 and after authorized tailoring; DE-specific scope, not all contractor responsibilities.",
+      "inspection": {
+        "localPdf": "packet/halcyon-batch-10/_work/DI-SESS-82538.pdf",
+        "localText": "packet/halcyon-batch-10/_work/DI-SESS-82538.txt",
+        "openedFullPDF": true,
+        "pageCount": 3,
+        "textPagesRead": [
+          1,
+          2,
+          3
+        ],
+        "renderedPagesInspected": [
+          1,
+          2,
+          3
+        ],
+        "method": "Fresh official ASSIST PDF downloaded into this batch only; full extracted text read and every page visually inspected in local rendered PNGs.",
+        "sourceSubstitution": false,
+        "indexedTextUsedAsPassageSource": false
+      },
+      "extractedIds": [
+        "DZR-F10-0201",
+        "DZR-F10-0202",
+        "DZR-F10-0203",
+        "DZR-F10-0204",
+        "DZR-F10-0205",
+        "DZR-F10-0206",
+        "DZR-F10-0207",
+        "DZR-F10-0208",
+        "DZR-F10-0222"
+      ],
+      "extractionCount": 9,
+      "coverage": "Narrow F10 organization/workforce/RACI and shared data-format/currency scope: §1; §2; §§3.1.2,3.1.3,3.3,3.6; §3.5 second sentence. Every PDF page was inspected; the extraction is not a complete DEMP requirements baseline.",
+      "outsideFeedScope": [
+        {
+          "paragraph": "Use/relationship, third paragraph; §§3 and3.1–3.1.1; §3.1.4",
+          "reason": "Whole-plan alignment, general DE-topic coverage, introduction, scope, and DE-goal definitions exceed the F10 roles/staffing subset. Workforce-specific content is captured from the direct detailed clauses without also duplicating the general parent list."
+        },
+        {
+          "paragraph": "§§3.2–3.2.2",
+          "reason": "Whole DE approach, technical artifact inventories, implementation and lifecycle dataflow/schedule roadmap descriptions are outside the F10 roles/staffing subset."
+        },
+        {
+          "paragraph": "§3.4",
+          "reason": "Digital maturity capabilities/assessment process/metric baselines are not staffing or responsibility assignments."
+        },
+        {
+          "paragraph": "§3.5 first and third sentences",
+          "reason": "Broader digital infrastructure architecture and collaboration-environment descriptions are outside F10. The complete middle-sentence hardware/software/networks/tools/workforce fieldset is retained once."
+        },
+        {
+          "paragraph": "§3.7",
+          "reason": "General DE terms/definitions/acronyms section is outside the narrow F10 extraction."
+        }
+      ],
+      "fieldFacts": [
+        {
+          "paragraph": "§2",
+          "fact": "Native delivery includes both a natural-language document and a formal-language model in a government/contractor mutually agreed format. SysML is an example, not a mandatory sole language. An exported roles table alone is not full native conformance."
+        },
+        {
+          "paragraph": "§2",
+          "fact": "If a DID requirement is tailored out, the corresponding placeholder is appended with exactly “This content has been tailored out.” The clause does not independently authorize tailoring."
+        },
+        {
+          "paragraph": "§3.1.2",
+          "fact": "Describe the approach to maintaining/updating DEMP; no fixed reporting interval is specified."
+        },
+        {
+          "paragraph": "§3.1.3",
+          "fact": "Budget/resources/tools/access/framework/technology are illustrative assumptions/constraints introduced by “such as”, not an unconditional six-column schema."
+        },
+        {
+          "paragraph": "§3.3",
+          "fact": "Comprehensive stakeholder training-plan content covers all tools, methods, procedures, use cases and management processes. The data obligation is to describe the plan, not certify training execution."
+        },
+        {
+          "paragraph": "§3.5",
+          "fact": "Environment description includes hardware, software, networks including cloud services, tools and workforce; no quantitative workforce unit is prescribed."
+        },
+        {
+          "paragraph": "§3.6",
+          "fact": "DE-specific roles/responsibilities of internal/external stakeholders and team members are represented in a Responsible, Accountable, Consulted, Informed (RACI) matrix."
+        },
+        {
+          "paragraph": "§3.6",
+          "fact": "Those DE roles appear in the program organization chart and receive allocated resources in the IMS. No RACI key syntax, exactly-one-A constraint, staffing headcount/FTE unit, person identifier, machine matrix schema or WBS identifier is specified."
+        }
+      ],
+      "cadence": "No fixed cadence. The document describes the maintenance/update approach; actual delivery dates and format agreement depend on the contract/CDRL.",
+      "sourceNotes": [
+        "The official PDF literally prints “The DEMP shall alight with the goals...” in Use/relationship. The apparent typo is preserved here; no quoted requirement silently substitutes “align”. This sentence is outside the narrow F10 extraction.",
+        "The PDF names DI-SESS-80776B and DI-SESS-82361 in §3.2.1. The source identifiers are not silently updated or corrected; that artifact-list branch is outside F10.",
+        "The catalogue was obtained from a fresh official ASSIST Document ID search and the current record, not from a secondary document summary."
+      ],
+      "uninspectedReferencedDependencies": [
+        {
+          "docId": "DoD Digital Engineering Strategy",
+          "editionAsCited": "June 2018, Section V",
+          "url": "https://apps.dtic.mil/sti/citations/AD1068564",
+          "status": "Referenced but uninspected and outside the selected F10 source extraction; not an inaccessible-source gap.",
+          "claimLimit": "No content of this strategy has been extracted or used to claim complete DEMP conformance."
+        },
+        {
+          "docId": "DoDI 5000.97",
+          "editionAsCited": "21 December 2023, Section 3",
+          "url": "https://www.esd.whs.mil/Portals/54/Documents/DD/issuances/dodi/500097p.PDF",
+          "status": "Referenced but uninspected and outside the selected F10 source extraction; not an inaccessible-source gap.",
+          "claimLimit": "No content of this issuance has been extracted or used to claim complete DEMP conformance."
+        },
+        {
+          "docId": "DAF Digital Maturity Guide",
+          "editionAsCited": "2023",
+          "url": "https://guide.dafdto.com/wp-content/uploads/2023/03/DAF-Digital-Maturity-Guide_v2.0_PA.pdf",
+          "status": "Optional guidance reference only, not inspected; no baseline use."
+        }
+      ],
+      "id": "DI-SESS-82538",
+      "currentEdition": "Base, 4 May 2026",
+      "date": "2026-05-04",
+      "issuerPreparingActivity": "DID Approval Authority: 10, AFMC Command Standardization Office (ComSO); Preparing Activity: 19 (SSC), Space Systems Command.",
+      "authoritativeUrl": "https://quicksearch.dla.mil/qsDocDetails.aspx?ident_number=287035",
+      "sourceUrl": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5800888",
+      "releaseStatement": "Official ASSIST catalogue reports Distribution Statement A. No separate distribution statement is printed in the inspected PDF.",
+      "copyrightClass": "usg-public-domain",
+      "kind": "operative-source",
+      "extractedBRecords": 9
+    },
+    {
+      "title": "Management Plan",
+      "edition": "Revision A, 30 October 2006",
+      "approvalDate": "2006-10-30",
+      "currentStatus": "Active; current Revision A verified in official ASSIST on 2026-11-06",
+      "assistRecord": "https://quicksearch.dla.mil/qsDocDetails.aspx?ident_number=204762",
+      "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=148563",
+      "authority": "ASSIST approval/preparing activity NS, National Security Agency; PDF Office of Primary Responsibility NS/DA02.",
+      "release": "Official ASSIST catalogue reports Distribution Statement A. No separate distribution statement is printed in the inspected PDF.",
+      "binding": true,
+      "bindingCondition": "Only when the applicable contract/CDRL invokes DI-MGMT-80004A; the source describes contractor-managed contract tasks/projects/programs, not all organizational data.",
+      "inspection": {
+        "localPdf": "packet/halcyon-batch-10/_work/DI-MGMT-80004A.pdf",
+        "localText": "packet/halcyon-batch-10/_work/DI-MGMT-80004A.txt",
+        "openedFullPDF": true,
+        "pageCount": 4,
+        "textPagesRead": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "renderedPagesInspected": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "method": "Fresh official ASSIST PDF downloaded into this batch only; full extracted text read and every page visually inspected in local rendered PNGs.",
+        "sourceSubstitution": false,
+        "indexedTextUsedAsPassageSource": false
+      },
+      "extractedIds": [
+        "DZR-F10-0209",
+        "DZR-F10-0210",
+        "DZR-F10-0211",
+        "DZR-F10-0212",
+        "DZR-F10-0213",
+        "DZR-F10-0214",
+        "DZR-F10-0215",
+        "DZR-F10-0216",
+        "DZR-F10-0217",
+        "DZR-F10-0218",
+        "DZR-F10-0219",
+        "DZR-F10-0220",
+        "DZR-F10-0221",
+        "DZR-F10-0223"
+      ],
+      "extractionCount": 14,
+      "coverage": "Narrow F10 organization/personnel and shared data-format/delivery-management scope: §2 opening, §§2(a),2(c),2(d),2(e),3.3,3.4,3.6(a),3.6(b),3.7(c). Every PDF page was inspected. No full Management Plan compliance claim is made.",
+      "outsideFeedScope": [
+        {
+          "paragraph": "§2(b); §2(c) paper size and graphic fold-out sentences",
+          "reason": "May-permissions are not extracted as obligations."
+        },
+        {
+          "paragraph": "§§3.1–3.2",
+          "reason": "Whole Management Plan general/specific subject coverage includes numerous non-F10 technical/security topics. The direct organization and staffing duties are captured from detailed sections without duplicating these parent generalities."
+        },
+        {
+          "paragraph": "§3.5(a)",
+          "reason": "Technical approach/method narrative is outside F10 and the printed sentence contains no literal shall/must/prohibition."
+        },
+        {
+          "paragraph": "§3.5(b)",
+          "reason": "A milestone chart for every contractual commitment is schedule content beyond F10 staffing/roles."
+        },
+        {
+          "paragraph": "§§3.7(a)–(b)",
+          "reason": "Separate security procedure/accreditation-plan content and approval duties are not F10 organization/staffing requirements; no security conduct or unopened security manual is extracted."
+        }
+      ],
+      "fieldFacts": [
+        {
+          "paragraph": "§2",
+          "fact": "Contractor-devised format subject to specified identification, sequential page numbering/binding, attachment identification/text references, numbered sections/paragraphs and legibility/reproducibility."
+        },
+        {
+          "paragraph": "§2(a)",
+          "fact": "Identification uses preparing office or contractor title; Contract/Procurement Request numbers or designation; system/component/program/project identity and/or nomenclature; security classification; issuing Government activity. Alternatives are preserved."
+        },
+        {
+          "paragraph": "§2(c)",
+          "fact": "The source literally states “security bound together”. The actual invocation must resolve binding treatment; no electronic file extension, cryptographic protection or alternative binding rule is invented."
+        },
+        {
+          "paragraph": "§2(d)",
+          "fact": "Table of contents applies strictly above 30 pages; index additionally applies strictly above 120 pages."
+        },
+        {
+          "paragraph": "§3.3",
+          "fact": "Corporate organization chart plus narrative includes participating organizational elements, functional relationships and responsibilities."
+        },
+        {
+          "paragraph": "§3.4",
+          "fact": "Management-office chart/narrative includes control, responsibilities, functional relationships, authority and necessary/pertinent contractor-to-Government/other-contractor interfaces."
+        },
+        {
+          "paragraph": "§3.6(a)",
+          "fact": "Management-office roster distinguishes position requirements (education, training, skills, experience, clearance) from assigned-person identity, background and work experience."
+        },
+        {
+          "paragraph": "§3.6(b)",
+          "fact": "Required staffing is by contractual task, skill type, skill level, number of personnel and security clearance. Number of personnel is a headcount concept; no FTE or hours definition or WBS schema is supplied."
+        },
+        {
+          "paragraph": "§3.6(b)",
+          "fact": "Only proposal submissions additionally state currently available personnel and required new hires for scheduled task accomplishment."
+        },
+        {
+          "paragraph": "§3.7(c)",
+          "fact": "Describe contractor management methods for CDRL preparation/format/submittal requirements; actual CDRL supplies the delivery requirements. No DD Form1423 fields are extracted."
+        }
+      ],
+      "cadence": "No fixed schedule or reporting interval in the DID. Data-delivery management methods refer to the actual CDRL requirements.",
+      "sourceNotes": [
+        "The printed identification clause uses “identify and/or nomenclature”; the normalized requirement corrects the obvious noun to “identity”, while its quote remains verbatim.",
+        "The current official record resolved the same Revision A PDF after an old indexed transient URL returned 404. Fresh current official PDF download succeeded; there is no remaining inaccessible-source gap.",
+        "The record remains Active despite the historical Next Review date. No inference that an overdue review cancels the DID is made."
+      ],
+      "id": "DI-MGMT-80004A",
+      "currentEdition": "Revision A, 30 October 2006",
+      "date": "2006-10-30",
+      "issuerPreparingActivity": "ASSIST approval/preparing activity NS, National Security Agency; PDF Office of Primary Responsibility NS/DA02.",
+      "authoritativeUrl": "https://quicksearch.dla.mil/qsDocDetails.aspx?ident_number=204762",
+      "sourceUrl": "https://quicksearch.dla.mil/WMX/Default.aspx?token=148563",
+      "releaseStatement": "Official ASSIST catalogue reports Distribution Statement A. No separate distribution statement is printed in the inspected PDF.",
+      "copyrightClass": "usg-public-domain",
+      "kind": "operative-source",
+      "extractedBRecords": 14
+    },
+    {
+      "title": "Systems Engineering Management Plan (SEMP)",
+      "edition": "Revision B, 8 January 2025",
+      "approvalDate": "2025-01-08",
+      "currentStatus": "Active; current Revision B verified in official ASSIST on 2026-11-06",
+      "assistRecord": "https://quicksearch.dla.mil/qsDocDetails.aspx?ident_number=276889",
+      "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5792932",
+      "authority": "DID Approval Authority SO, Executive Agent for the Defense Standardization Program; Preparing Activity SE, Director, Systems Engineering.",
+      "release": "Official ASSIST catalogue reports Distribution Statement A. No separate distribution statement is printed in the inspected PDF.",
+      "binding": true,
+      "bindingCondition": "Potential operative DID when invoked by the actual contract/CDRL, but no F10 requirement is extracted absent the actual SEP/outline content establishing relevant roles/staffing duties.",
+      "inspection": {
+        "localPdf": "packet/halcyon-batch-10/_work/DI-SESS-81785B.pdf",
+        "localText": "packet/halcyon-batch-10/_work/DI-SESS-81785B.txt",
+        "openedFullPDF": true,
+        "pageCount": 2,
+        "textPagesRead": [
+          1,
+          2
+        ],
+        "renderedPagesInspected": [
+          1,
+          2
+        ],
+        "method": "Fresh official ASSIST PDF downloaded into this batch only; full extracted text read and every page visually inspected in local rendered PNGs.",
+        "sourceSubstitution": false,
+        "indexedTextUsedAsPassageSource": false
+      },
+      "extractedIds": [],
+      "extractionCount": 0,
+      "coverage": "Full two-page source inspected. Metadata-only for this feed: no explicit RACI schema, staffing by WBS, person/role roster or quantitative staffing field obligation is stated.",
+      "fieldFacts": [
+        {
+          "paragraph": "§2",
+          "fact": "Contractor-selected SEMP format."
+        },
+        {
+          "paragraph": "§3",
+          "fact": "SEMP addresses all topics in the government SEP when available; absent a government SEP, the OSD SEP Outline active at RFP time supplies the topics. The actual SEP/RFP-time outline was not supplied or inspected, so no F10 roles/staffing mandate is inferred."
+        }
+      ],
+      "cadence": "No fixed delivery cadence stated.",
+      "sourceNotes": [
+        "Current Revision B is inspected rather than an older revision. The actual SEP/RFP-time outline is a contract-dependent content dependency, not an inaccessible public source finding.",
+        "IEEE24748-7:2019 and IEEE24748-8:2019 are cited by the DID. No SDO clauses were accessed, quoted or converted into F10 obligations.",
+        "No additional SEMP format/content baseline is constructed merely because the source is broadly relevant to systems engineering."
+      ],
+      "id": "DI-SESS-81785B",
+      "currentEdition": "Revision B, 8 January 2025",
+      "date": "2025-01-08",
+      "issuerPreparingActivity": "DID Approval Authority SO, Executive Agent for the Defense Standardization Program; Preparing Activity SE, Director, Systems Engineering.",
+      "authoritativeUrl": "https://quicksearch.dla.mil/qsDocDetails.aspx?ident_number=276889",
+      "sourceUrl": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5792932",
+      "releaseStatement": "Official ASSIST catalogue reports Distribution Statement A. No separate distribution statement is printed in the inspected PDF.",
+      "copyrightClass": "usg-public-domain",
+      "kind": "operative-source",
+      "extractedBRecords": 0
+    },
+    {
+      "id": "DoDI 5000.88",
+      "title": "Unverified in this batch; source PDF pending",
+      "currentEdition": "unverified",
+      "date": null,
+      "issuerPreparingActivity": "Department of Defense / Department of War; issuing-office metadata unverified in this batch",
+      "authoritativeUrl": null,
+      "sourceUrl": null,
+      "releaseStatement": "unverified; source PDF not inspected",
+      "copyrightClass": "usg-public-domain",
+      "status": "open-gap",
+      "binding": null,
+      "baselineEligible": false,
+      "inspection": {
+        "fullSourceOpened": false,
+        "indexedTextUsedForPassages": false
+      },
+      "notes": "User-held inaccessible issuance; awaiting supplied PDF. Not retried in Batch 10; no passages extracted and no edition substituted.",
+      "extractedBRecords": 0
+    },
+    {
+      "id": "DoDM 5010.12",
+      "title": "Unverified in this batch; source PDF pending",
+      "currentEdition": "unverified",
+      "date": null,
+      "issuerPreparingActivity": "Department of Defense / Department of War; issuing-office metadata unverified in this batch",
+      "authoritativeUrl": null,
+      "sourceUrl": null,
+      "releaseStatement": "unverified; source PDF not inspected",
+      "copyrightClass": "usg-public-domain",
+      "status": "open-gap",
+      "binding": null,
+      "baselineEligible": false,
+      "inspection": {
+        "fullSourceOpened": false,
+        "indexedTextUsedForPassages": false
+      },
+      "notes": "User-held inaccessible issuance; awaiting supplied PDF. Not retried in Batch 10; no passages extracted and no edition substituted.",
+      "extractedBRecords": 0
+    },
+    {
+      "id": "DoDI 5230.24",
+      "title": "Unverified in this batch; source PDF pending",
+      "currentEdition": "unverified",
+      "date": null,
+      "issuerPreparingActivity": "Department of Defense / Department of War; issuing-office metadata unverified in this batch",
+      "authoritativeUrl": null,
+      "sourceUrl": null,
+      "releaseStatement": "unverified; source PDF not inspected",
+      "copyrightClass": "usg-public-domain",
+      "status": "open-gap",
+      "binding": null,
+      "baselineEligible": false,
+      "inspection": {
+        "fullSourceOpened": false,
+        "indexedTextUsedForPassages": false
+      },
+      "notes": "User-held inaccessible issuance; awaiting supplied PDF. Not retried in Batch 10; no passages extracted and no edition substituted.",
+      "extractedBRecords": 0
+    },
+    {
+      "id": "DoDI 5200.48",
+      "title": "Unverified in this batch; source PDF pending",
+      "currentEdition": "unverified",
+      "date": null,
+      "issuerPreparingActivity": "Department of Defense / Department of War; issuing-office metadata unverified in this batch",
+      "authoritativeUrl": null,
+      "sourceUrl": null,
+      "releaseStatement": "unverified; source PDF not inspected",
+      "copyrightClass": "usg-public-domain",
+      "status": "open-gap",
+      "binding": null,
+      "baselineEligible": false,
+      "inspection": {
+        "fullSourceOpened": false,
+        "indexedTextUsedForPassages": false
+      },
+      "notes": "User-held inaccessible issuance; awaiting supplied PDF. Not retried in Batch 10; no passages extracted and no edition substituted.",
+      "extractedBRecords": 0
+    },
+    {
+      "id": "DoDM 5200.01 Volume 2",
+      "title": "Unverified in this batch; source PDF pending",
+      "currentEdition": "unverified",
+      "date": null,
+      "issuerPreparingActivity": "Department of Defense / Department of War; issuing-office metadata unverified in this batch",
+      "authoritativeUrl": null,
+      "sourceUrl": null,
+      "releaseStatement": "unverified; source PDF not inspected",
+      "copyrightClass": "usg-public-domain",
+      "status": "open-gap",
+      "binding": null,
+      "baselineEligible": false,
+      "inspection": {
+        "fullSourceOpened": false,
+        "indexedTextUsedForPassages": false
+      },
+      "notes": "User-held inaccessible issuance; awaiting supplied PDF. Not retried in Batch 10; no passages extracted and no edition substituted.",
+      "extractedBRecords": 0
+    }
+  ],
+  "guidanceFacts": [
+    {
+      "fields": [
+        "skillsContext",
+        "authorityContext",
+        "stakeholderRole"
+      ],
+      "source": {
+        "docId": "MIL-HDBK-539A",
+        "edition": "Revision A, 12 March 2026, incorporating Change 1, 10 June 2026",
+        "paragraph": "4.8.1.1 People; printed p.24",
+        "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5801571",
+        "passage": "People with the requisite knowledge, skill, ability, behavior and proper authority use the DEE infrastructure. These members of Government and industry stakeholder groups collaboratively work together to develop, produce, and sustain products and services over the acquisition life cycle. These ecosystem members provide inputs to the system infrastructure and evaluate resulting views and artifacts.",
+        "passageSHA256": "ebc3c842a7dbe9a149d94aaec4b1e2fcf776e93cd9cdcbec538bec1f0a5efcc9",
+        "pdfPage": 39
+      },
+      "description": "Describes people and authority in the DE enabling environment; establishes no staffing quantity, required named-person roster, RACI values, or mandatory role cardinality.",
+      "binding": false,
+      "kind": "guidance",
+      "baselineEligible": false,
+      "acceptanceEffect": "Informational context only; no independent rejection gate.",
+      "notes": ""
+    },
+    {
+      "fields": [
+        "sourceContext",
+        "dataProvenance"
+      ],
+      "source": {
+        "docId": "MIL-HDBK-539A",
+        "edition": "Revision A, 12 March 2026, incorporating Change 1, 10 June 2026",
+        "paragraph": "4.8.2.1.3 Authoritative data; printed p.25",
+        "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5801571",
+        "passage": "Data contained witin the DSM is authoritative because database configuration, data capture, data creation, and data maintenance processes are well documented and subject to quality verification. The data is easily accessible and available to stakeholders via digital threads.",
+        "passageSHA256": "02b8ef3c7c6672b1297f2243b90aa5596ddfb6c2b84b3fa3f2796cedf0d626b0",
+        "pdfPage": 40
+      },
+      "description": "Framework for documented, quality-verified source data. A digest does not itself establish organizational authority or approve a staffing assignment.",
+      "binding": false,
+      "kind": "guidance",
+      "baselineEligible": false,
+      "acceptanceEffect": "Informational context only; no independent rejection gate.",
+      "notes": "Source spelling witin is preserved."
+    },
+    {
+      "fields": [
+        "wbsTrace",
+        "requirementTrace"
+      ],
+      "source": {
+        "docId": "MIL-HDBK-539A",
+        "edition": "Revision A, 12 March 2026, incorporating Change 1, 10 June 2026",
+        "paragraph": "4.8.2.3 Digital threads; printed p.26",
+        "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5801571",
+        "passage": "Digital threads transport a continuous and synchronized flow of data and information. Data flows via digital thread among models, simulations, engineering domains, stakeholder groups, and across all stages of the acquisition life cycle. Digital threads facilitate efficient communication, collaboration, and the production of views and artifacts.",
+        "passageSHA256": "f270b8858cb8d3323cd2f136fd9191c99584669d2ae5c103fbee31b092f05e3d",
+        "pdfPage": 41
+      },
+      "description": "Nonbinding digital-thread alignment for joining responsibility information to its work scope and requirement context; no live-connection mandate is inferred.",
+      "binding": false,
+      "kind": "guidance",
+      "baselineEligible": false,
+      "acceptanceEffect": "Informational context only; no independent rejection gate.",
+      "notes": ""
+    },
+    {
+      "fields": [
+        "responsibilityView",
+        "staffingView"
+      ],
+      "source": {
+        "docId": "MIL-HDBK-539A",
+        "edition": "Revision A, 12 March 2026, incorporating Change 1, 10 June 2026",
+        "paragraph": "4.8.2.4 Views and artifacts; printed p.26",
+        "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5801571",
+        "passage": "Views and artifacts are interactively generated or tailored perspectives on the system, product, or process for a particular purpose or stakeholder. Views and artifacts are generated from digital models and processes, at a specific point in time, to visualize, communicate, and deliver data, information, and knowledge to stakeholders.",
+        "passageSHA256": "a677fc3b6559d4124dcd309e7082ab46c57438078ae34fb195f7f42a0a4ceaea",
+        "pdfPage": 41
+      },
+      "description": "Supports purpose-specific views of received responsibility/staffing information without treating a view as an authoritative personnel or approval record.",
+      "binding": false,
+      "kind": "guidance",
+      "baselineEligible": false,
+      "acceptanceEffect": "Informational context only; no independent rejection gate.",
+      "notes": ""
+    },
+    {
+      "fields": [
+        "technicalStaffingContext",
+        "technicalManagementContext"
+      ],
+      "source": {
+        "docId": "MIL-HDBK-539A",
+        "edition": "Revision A, 12 March 2026, incorporating Change 1, 10 June 2026",
+        "paragraph": "8.2.1 The SEP and DE; printed p.68",
+        "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5801571",
+        "passage": "As specified in the SEP Outline, the SEP is a planning and management tool, specific to the program and tailored to meet program needs. The SEP defines the methods for implementing all system requirements having technical content, technical staffing, and technical management.",
+        "passageSHA256": "367e56c088cf37eb9fbf5e8e7300fa974856dc8893f0ac0bec3c0142cba6115c",
+        "pdfPage": 83
+      },
+      "description": "Describes technical staffing as SEP planning context. The referenced SEP Outline is not represented as separately inspected and no staffing-by-WBS schema is inferred.",
+      "binding": false,
+      "kind": "guidance",
+      "baselineEligible": false,
+      "acceptanceEffect": "Informational context only; no independent rejection gate.",
+      "notes": ""
+    },
+    {
+      "fields": [
+        "primaryResponsibleOrganization",
+        "modelDomain"
+      ],
+      "source": {
+        "docId": "MIL-HDBK-539A",
+        "edition": "Revision A, 12 March 2026, incorporating Change 1, 10 June 2026",
+        "paragraph": "Appendix F, F.2.2 and F.2.2.1; printed p.100",
+        "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5801571",
+        "passage": "This breakdown is notional and not prescriptive. Each organization will need to tailor this MBE breakdown to fit their unique situation.\nThe intended use of the MBE decomposition in table F-I is for each organization to identify those MBx areas for which they have primary responsibility. Then perform an analysis of the effectiveness of that MBx capability in their organization. (Use of the template in table F-II and example in table F-III may be used as a guide.)",
+        "passageSHA256": "eaac5c3f0807870c9262a46590d5260665e390f491cb99477e85b827f975f92b",
+        "spans": [
+          {
+            "pdfPage": 115,
+            "passage": "This breakdown is notional and not prescriptive. Each organization will need to tailor this MBE breakdown to fit their unique situation."
+          },
+          {
+            "pdfPage": 115,
+            "passage": "The intended use of the MBE decomposition in table F-I is for each organization to identify those MBx areas for which they have primary responsibility. Then perform an analysis of the effectiveness of that MBx capability in their organization. (Use of the template in table F-II and example in table F-III may be used as a guide.)"
+          }
+        ],
+        "compositionNote": "Composite of the explicitly enumerated verbatim spans in order, joined with a newline; no omitted text is represented as contiguous."
+      },
+      "description": "Notional MBE responsibility decomposition and capability review guidance; not a mandatory universal organization or WBS hierarchy.",
+      "binding": false,
+      "kind": "guidance",
+      "baselineEligible": false,
+      "acceptanceEffect": "Informational context only; no independent rejection gate.",
+      "notes": ""
+    },
+    {
+      "fields": [
+        "subjectMatterExpertAvailability",
+        "trainingAvailability"
+      ],
+      "source": {
+        "docId": "MIL-HDBK-539A",
+        "edition": "Revision A, 12 March 2026, incorporating Change 1, 10 June 2026",
+        "paragraph": "Appendix F, Table F-II questions 3 and 4; printed p.102",
+        "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5801571",
+        "passage": "3. Is there a cadre of subject matter experts in your organization on this software application?\n4. Is there sufficient training available in your organization on this software application?",
+        "passageSHA256": "e69adb7732f50699d2af9190b1089d9474078ef34e5adb340a59778250dbdddd",
+        "spans": [
+          {
+            "pdfPage": 117,
+            "passage": "3. Is there a cadre of subject matter experts in your organization on this software application?"
+          },
+          {
+            "pdfPage": 117,
+            "passage": "4. Is there sufficient training available in your organization on this software application?"
+          }
+        ],
+        "compositionNote": "Composite of the explicitly enumerated verbatim spans in order, joined with a newline; no omitted text is represented as contiguous."
+      },
+      "description": "Optional capability-assessment questions; no headcount threshold, training quota, readiness scoring formula or RACI cardinality is specified.",
+      "binding": false,
+      "kind": "guidance",
+      "baselineEligible": false,
+      "acceptanceEffect": "Informational context only; no independent rejection gate.",
+      "notes": ""
+    },
+    {
+      "fields": [
+        "dataManagementResponsibilities",
+        "stakeholderInteraction",
+        "resourceContext"
+      ],
+      "source": {
+        "docId": "MIL-HDBK-539A",
+        "edition": "Revision A, 12 March 2026, incorporating Change 1, 10 June 2026",
+        "paragraph": "Appendix H template 1.3 Roles and Responsibilities; printed p.115",
+        "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5801571",
+        "passage": "Provide a brief description of Data Management responsibilities for project members and other agencies/stakeholders (as applicable on your team). How are they supposed to work together? What resources will you need for Data Management?",
+        "passageSHA256": "df537282ab8e376e4b5aeb68c6b2ada209bdc3a509d39c70efd7f2c1c77bfc68",
+        "pdfPage": 130
+      },
+      "description": "Template prompts to describe responsibilities, interactions and resources. They do not prescribe a RACI matrix, fixed role set or staffing rate.",
+      "binding": false,
+      "kind": "guidance",
+      "baselineEligible": false,
+      "acceptanceEffect": "Informational context only; no independent rejection gate.",
+      "notes": ""
+    },
+    {
+      "fields": [
+        "dataOwner",
+        "dataSteward",
+        "governanceResponsibilities"
+      ],
+      "source": {
+        "docId": "MIL-HDBK-539A",
+        "edition": "Revision A, 12 March 2026, incorporating Change 1, 10 June 2026",
+        "paragraph": "Appendix H template 3.1 Data Governance; printed p.118",
+        "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5801571",
+        "passage": "This data governance section serves as a foundational guide for managing and protecting your data holdings. It should outline the policies, standards, and procedures that ensure data is accurate, consistent, secure, and accessible. This section establishes roles and responsibilities, delineates data owner and stewardship practices, and provides a framework for maintaining data integrity throughout its life cycle.",
+        "passageSHA256": "da47020e72a57bbb0d4763a2592d50adb69966a8d4dfeb77764c07e3dadf5567",
+        "pdfPage": 133
+      },
+      "description": "Optional governance context; guidance-derived ownership fields remain outside the operative baseline unless independently supported by an applicable operative source.",
+      "binding": false,
+      "kind": "guidance",
+      "baselineEligible": false,
+      "acceptanceEffect": "Informational context only; no independent rejection gate.",
+      "notes": ""
+    },
+    {
+      "fields": [
+        "organizationContext",
+        "staffAvailability",
+        "staffCapability"
+      ],
+      "source": {
+        "docId": "DoD EVMSIG",
+        "edition": "24 June 2026",
+        "paragraph": "2.2 DoD Strategic Intent / Management Value; printed and PDF p.12",
+        "url": "https://www.acq.osd.mil/asda/dpc/api/ipm/docs/dod_evmsig_24june2026.pdf",
+        "passage": "An effective program organization, defined by the contractor PM at the onset of the contract, enhances management control of cost, schedule, and technical execution. Establishing and maintaining the organizational structure helps management focus on forming the most efficient organization by taking into consideration availability and capability of management and technical staff, including subcontractors, to achieve the program objectives.",
+        "passageSHA256": "454f78bdce4326f4152c3da54ef56464da857da8feabf203e970d3ec1bfcaf0f",
+        "pdfPage": 12
+      },
+      "description": "Government-authored explanatory staffing context, including subcontractors. No numeric staffing formula or minimum FTE is established.",
+      "binding": false,
+      "kind": "guidance",
+      "baselineEligible": false,
+      "acceptanceEffect": "Informational context only; no independent rejection gate.",
+      "notes": "The separately labeled EIA Standard Guideline paragraph is excluded; only the government-authored Management Value text is catalogued."
+    },
+    {
+      "fields": [
+        "organizationHierarchy",
+        "rolesAndResponsibilities"
+      ],
+      "source": {
+        "docId": "DoD EVMSIG",
+        "edition": "24 June 2026",
+        "paragraph": "2.2 DoD Strategic Intent / Intent of Guideline; printed and PDF p.12",
+        "url": "https://www.acq.osd.mil/asda/dpc/api/ipm/docs/dod_evmsig_24june2026.pdf",
+        "passage": "The organizational structure is a direct representation of this hierarchy, as defined by the OBS, and describes the organization’s roles and responsibilities for each segment of work, including major subcontracted and inter-company work efforts.",
+        "passageSHA256": "324764bac93619f204e54c53f6185e78868208631df4606a0c110114900fe44e",
+        "pdfPage": 12
+      },
+      "description": "Government explanation of role/responsibility coverage; does not mandate a RACI-letter vocabulary or one accountable-person rule.",
+      "binding": false,
+      "kind": "guidance",
+      "baselineEligible": false,
+      "acceptanceEffect": "Informational context only; no independent rejection gate.",
+      "notes": "The separately labeled EIA clause is excluded."
+    },
+    {
+      "fields": [
+        "wbsId",
+        "obsId",
+        "controlAccountId"
+      ],
+      "source": {
+        "docId": "DoD EVMSIG",
+        "edition": "24 June 2026",
+        "paragraph": "2.3 DoD Strategic Intent / Purpose of Guideline; printed and PDF p.14",
+        "url": "https://www.acq.osd.mil/asda/dpc/api/ipm/docs/dod_evmsig_24june2026.pdf",
+        "passage": "The intersection of the Work Breakdown Structure (WBS) and the Organizational Breakdown Structure (OBS) is the point at which the control accounts are established and is the focal point for work authorization, management, and performance measurement.",
+        "passageSHA256": "403d43af02a41d284637c61f7ee60e3898fd890bdbeba07fb9b44e29d36ef925",
+        "pdfPage": 14
+      },
+      "description": "Government explanation of WBS/OBS responsibility context. This is not itself an operative feed-field requirement or validation rule.",
+      "binding": false,
+      "kind": "guidance",
+      "baselineEligible": false,
+      "acceptanceEffect": "Informational context only; no independent rejection gate.",
+      "notes": "The separately labeled EIA Standard Guideline paragraph is excluded."
+    },
+    {
+      "fields": [
+        "wbsOrganizationRelationship",
+        "controlAccountLevel"
+      ],
+      "source": {
+        "docId": "DoD EVMSIG",
+        "edition": "24 June 2026",
+        "paragraph": "2.3 DoD Strategic Intent / Intent of Guideline; printed and PDF p.14",
+        "url": "https://www.acq.osd.mil/asda/dpc/api/ipm/docs/dod_evmsig_24june2026.pdf",
+        "passage": "For management control purposes, there may be one or more responsible organizations supporting a single WBS or multiple control accounts within one OBS element driven by scope and exit criteria (i.e., completion of the effort).\nEstablishment of control accounts should consider the complexity of the work and the efficiency of the organization. Control accounts are the optimal points in the Earned Value Management System (EVMS) where managerial control, performance measurement, and responsibility for corrective action exist. Intent of Guideline: The intersection of the lowest level WBS element and the OBS is the point at which control account(s) are established. That intersection is necessary to understand the assigned responsibility for managing, controlling, and facilitating the allocation of resources to the work scope and permits cost accumulation and performance measurement (see Figure 3: Example Integration of the WBS and OBS). For management control purposes, there may be one or more responsible organizations supporting a single WBS or multiple control accounts within one OBS element driven by scope and exit criteria (i.e., completion of the effort). Establishment of control accounts should consider the complexity of the work and the efficiency of the organization. Accordingly, Control Accounts should not be arbitrarily established at a single WBS level across the program.",
+        "passageSHA256": "c617da6beb4d3530b0da444b1365abbc8fe2cf9e5c569e49b6b2c6e924624ac0",
+        "spans": [
+          {
+            "pdfPage": 14,
+            "passage": "For management control purposes, there may be one or more responsible organizations supporting a single WBS or multiple control accounts within one OBS element driven by scope and exit criteria (i.e., completion of the effort)."
+          },
+          {
+            "pdfPage": 14,
+            "passage": "Establishment of control accounts should consider the complexity of the work and the efficiency of the organization. Control accounts are the optimal points in the Earned Value Management System (EVMS) where managerial control, performance measurement, and responsibility for corrective action exist. Intent of Guideline: The intersection of the lowest level WBS element and the OBS is the point at which control account(s) are established. That intersection is necessary to understand the assigned responsibility for managing, controlling, and facilitating the allocation of resources to the work scope and permits cost accumulation and performance measurement (see Figure 3: Example Integration of the WBS and OBS). For management control purposes, there may be one or more responsible organizations supporting a single WBS or multiple control accounts within one OBS element driven by scope and exit criteria (i.e., completion of the effort). Establishment of control accounts should consider the complexity of the work and the efficiency of the organization. Accordingly, Control Accounts should not be arbitrarily established at a single WBS level across the program."
+          }
+        ],
+        "compositionNote": "Composite of the explicitly enumerated verbatim spans in order, joined with a newline; no omitted text is represented as contiguous."
+      },
+      "description": "Preserves multiple supporting organizations and variable control-account levels; do not infer one organization per WBS or a fixed WBS depth from the example.",
+      "binding": false,
+      "kind": "guidance",
+      "baselineEligible": false,
+      "acceptanceEffect": "Informational context only; no independent rejection gate.",
+      "notes": ""
+    },
+    {
+      "fields": [
+        "controlAccountManager"
+      ],
+      "source": {
+        "docId": "DoD EVMSIG",
+        "edition": "24 June 2026",
+        "paragraph": "2.3 DoD Strategic Intent / Intent of Guideline; printed and PDF p.14",
+        "url": "https://www.acq.osd.mil/asda/dpc/api/ipm/docs/dod_evmsig_24june2026.pdf",
+        "passage": "Each control account has a corresponding Control Account Manager (CAM), who is responsible for ensuring the accomplishment of work in the control account and is the focal point of management control.",
+        "passageSHA256": "df08fe3d45c2021e90fef6b0191bd803ed56fd68f15d3b6cac7c37cb8a965b4b",
+        "pdfPage": 14
+      },
+      "description": "Government explanatory control-account responsibility context; not proof that CAM equals every Responsible/Accountable entry in a RACI matrix.",
+      "binding": false,
+      "kind": "guidance",
+      "baselineEligible": false,
+      "acceptanceEffect": "Informational context only; no independent rejection gate.",
+      "notes": ""
+    },
+    {
+      "fields": [
+        "responsibilityAssignmentMatrix"
+      ],
+      "source": {
+        "docId": "DoD EVMSIG",
+        "edition": "24 June 2026",
+        "paragraph": "2.3 Typical Work Products; printed and PDF p.15",
+        "url": "https://www.acq.osd.mil/asda/dpc/api/ipm/docs/dod_evmsig_24june2026.pdf",
+        "passage": "Responsibility assignment matrix",
+        "passageSHA256": "33f7068935fa62936b3a5300d18f1474027beccaa06d2f9435f8bf62d1af2728",
+        "pdfPage": 15
+      },
+      "description": "The guide names a responsibility assignment matrix as a typical work product; it does not specify a native file format, a RACI enum, columns, fixed cadence or acceptance rule.",
+      "binding": false,
+      "kind": "guidance",
+      "baselineEligible": false,
+      "acceptanceEffect": "Informational context only; no independent rejection gate.",
+      "notes": "The quoted text is the complete first bullet label under Typical Work Products; it is not a shall/must clause."
+    },
+    {
+      "fields": [
+        "planningPackageManager",
+        "planningScopeContext"
+      ],
+      "source": {
+        "docId": "DoD EVMSIG",
+        "edition": "24 June 2026",
+        "paragraph": "2.3 continuation before Figure 3; printed and PDF p.15",
+        "url": "https://www.acq.osd.mil/asda/dpc/api/ipm/docs/dod_evmsig_24june2026.pdf",
+        "passage": "For scope that cannot practically be identified to a control account, it is permissible to establish a Summary Level Planning Package (SLPP) above the control account level with the assignment of an SLPP manager (see Guidelines 8 and 20).",
+        "passageSHA256": "ace178d86900f5493d6f99ad5b94065e873e2fe89ae6fb4a19d1b68c2fded5ff",
+        "pdfPage": 15
+      },
+      "description": "Preserves the permission for an SLPP above the control-account level with an SLPP manager; no mandatory SLPP or fabricated control account is inferred.",
+      "binding": false,
+      "kind": "guidance",
+      "baselineEligible": false,
+      "acceptanceEffect": "Informational context only; no independent rejection gate.",
+      "notes": ""
+    }
+  ],
+  "openGaps": [
+    {
+      "id": "DoDI 5000.88",
+      "status": "open-gap",
+      "reason": "User-held inaccessible issuance; awaiting supplied PDF. Not retried in Batch 10; no passages extracted and no edition substituted.",
+      "binding": null,
+      "extractedRecords": 0
+    },
+    {
+      "id": "DoDM 5010.12",
+      "status": "open-gap",
+      "reason": "User-held inaccessible issuance; awaiting supplied PDF. Not retried in Batch 10; no passages extracted and no edition substituted.",
+      "binding": null,
+      "extractedRecords": 0
+    },
+    {
+      "id": "DoDI 5230.24",
+      "status": "open-gap",
+      "reason": "User-held inaccessible issuance; awaiting supplied PDF. Not retried in Batch 10; no passages extracted and no edition substituted.",
+      "binding": null,
+      "extractedRecords": 0
+    },
+    {
+      "id": "DoDI 5200.48",
+      "status": "open-gap",
+      "reason": "User-held inaccessible issuance; awaiting supplied PDF. Not retried in Batch 10; no passages extracted and no edition substituted.",
+      "binding": null,
+      "extractedRecords": 0
+    },
+    {
+      "id": "DoDM 5200.01 Volume 2",
+      "status": "open-gap",
+      "reason": "User-held inaccessible issuance; awaiting supplied PDF. Not retried in Batch 10; no passages extracted and no edition substituted.",
+      "binding": null,
+      "extractedRecords": 0
+    }
+  ],
+  "inspectionStatement": "The listed local PDFs were freshly downloaded into this batch output folder and actually opened. Source inspections are recorded per document. No passages are based on snippets, indexed text, summaries, prior batch files or prototype content.",
+  "guidancePolicy": "Guidance is binding:false, kind:guidance, baselineEligible:false; retained for context and excluded from B operative counts, baseline payloads and independent mandatory acceptance gates.",
+  "limitations": [
+    "Public release of a source document does not authorize public release of delivered program data.",
+    "Source currency and contract applicability are separate; actual invocation, tailoring, approvals and delivery scheduling are required inputs.",
+    "All B normalized wordings are status sample pending human review. A cryptographic digest does not approve or authenticate a requirement.",
+    "The required WBS and requirement join keys are user receiving-contract rules; they are not falsely attributed to a source that does not define them.",
+    "Only three HALCYON rows in C.sample are fictional; the sample is a partial receiving-format demonstration, not an approved or complete source data product."
+  ],
+  "counts": {
+    "governingSourceEntries": 15,
+    "operativeSourcesWithRecords": 6,
+    "guidanceSources": 2,
+    "metadataOnlySources": 2,
+    "heldSourceGaps": 5,
+    "recordsExtracted": 84,
+    "recordsWithRealPassages": 84,
+    "recordsUnsourced": 0,
+    "operativeRecords": 84,
+    "guidanceBRecords": 0,
+    "guidanceFacts": 16,
+    "recordsBySource": {
+      "DI-MGMT-81861C": 31,
+      "IPMDAR-CPD-FFS": 21,
+      "IPMDAR-CPD-DEI": 3,
+      "DI-MGMT-81797": 6,
+      "DI-SESS-82538": 9,
+      "DI-MGMT-80004A": 14
+    }
+  },
+  "sourceSelectionNote": "DI-SESS-82538 supplies a DE-specific RACI requirement; the inspected sources do not impose one universal RACI/staffing schema on every contractor. DI-SESS-81785B was actually inspected but is metadata-only for F10 because the actual SEP or RFP-time SEP Outline would determine any relevant content. MIL-STD-881F is catalogue-verified join context, not clause-extracted here."
+}

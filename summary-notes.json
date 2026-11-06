@@ -1,0 +1,454 @@
+{
+  "batch": 11,
+  "asOf": "2026-11-06",
+  "deliverables": {
+    "edges": "edges.csv",
+    "summaryTable": "summary.csv",
+    "register": "../halcyon-batch-0/governing-document-register.json"
+  },
+  "summaryColumnMeaning": {
+    "governing docs": "Count of deduplicated Batch0 document entries associated with this feed, including operative sources, guidance, metadata-only context, explicit reference anchors and open gaps. This is not an operative-source count. The TOTAL row is the union, not the sum of feed counts. Full IDs are in governingDocumentsByFeed.",
+    "records extracted": "Delivered B records, counted once by record ID. Repeated underlying obligations across feeds remain distinct delivered records. No working draft, source text or matrix cell is counted.",
+    "records with real passages": "Nonempty B passages whose existing batch catalogues identify the source as inspected. Stored-text hashes were recomputed; Batch11 is not a fresh full-PDF audit of every passage.",
+    "records unsourced": "B records with missing passages or marked unsourced. Zero does not imply complete source coverage or absence of extraction errors."
+  },
+  "governingDocumentsByFeed": {
+    "F1": [
+      "ASME Y14.38",
+      "DI-IPSC-81431A",
+      "DI-MGMT-82133A",
+      "DoDI 5000.88",
+      "DoDI 5200.48",
+      "DoDI 5230.24",
+      "DoDM 5010.12",
+      "DoDM 5200.01 Volume 2",
+      "DoW-SE-Guidebook-2026",
+      "IEEE 260.1",
+      "IEEE/ASTM SI 10",
+      "MIL-HDBK-520A",
+      "MIL-HDBK-539A",
+      "MIL-STD-961E",
+      "SEP Outline v4.1 May2023"
+    ],
+    "F2": [
+      "DD Form 1423",
+      "DI-SESS-82177",
+      "DoDI 5000.88",
+      "DoDI 5200.48",
+      "DoDI 5230.24",
+      "DoDM 5010.12",
+      "DoDM 5200.01 Volume 2",
+      "MIL-HDBK-245E",
+      "MIL-HDBK-539A"
+    ],
+    "F3": [
+      "DI-MGMT-81861C",
+      "DI-MGMT-81861D",
+      "DoDI 5000.88",
+      "DoDI 5200.48",
+      "DoDI 5230.24",
+      "DoDM 5010.12",
+      "DoDM 5200.01 Volume 2",
+      "DoDM 5200.01 Volume 4",
+      "IPMDAR-ITG",
+      "IPMDAR-SPD-DEI",
+      "IPMDAR-SPD-FFS",
+      "MIL-HDBK-539A",
+      "MIL-STD-881F"
+    ],
+    "F4": [
+      "DFARS 234.201",
+      "DFARS 252.234-7002",
+      "DI-MGMT-81861C",
+      "DI-MGMT-81861D",
+      "DoDI 5000.85",
+      "DoDI 5000.88",
+      "DoDI 5200.48",
+      "DoDI 5230.24",
+      "DoDM 5010.12",
+      "DoDM 5200.01 Volume 2",
+      "DoDM 5200.01 Volume 4",
+      "FAR 34.201",
+      "IPMDAR-CPD-DEI",
+      "IPMDAR-CPD-FFS",
+      "IPMDAR-ITG",
+      "MIL-HDBK-539A",
+      "MIL-STD-881F",
+      "SAE EIA748"
+    ],
+    "F5": [
+      "DI-FNCL-82162",
+      "DI-MGMT-81334D",
+      "DoDI 5000.73",
+      "DoDI 5000.88",
+      "DoDI 5200.48",
+      "DoDI 5230.24",
+      "DoDM 5000.04",
+      "DoDM 5010.12",
+      "DoDM 5200.01 Volume 2",
+      "FlexFile Data Exchange Instructions (DEI)",
+      "FlexFile File Format Specifications (FFS)",
+      "MIL-HDBK-539A",
+      "MIL-STD-881F"
+    ],
+    "F6": [
+      "DI-MGMT-81809",
+      "DI-MGMT-81809 Notice 1",
+      "DI-MGMT-82255A",
+      "DI-MGMT-82256A",
+      "DoD-RIO-Guide-2017",
+      "DoD-RIO-Guide-2023",
+      "DoDI 5000.88",
+      "DoDI 5000.90",
+      "DoDI 5200.48",
+      "DoDI 5230.24",
+      "DoDM 4140.01",
+      "DoDM 5010.12",
+      "DoDM 5200.01 Volume 2",
+      "MIL-HDBK-539A"
+    ],
+    "F7": [
+      "DI-ADMN-81250C",
+      "DI-SESS-82168",
+      "DoD-Engineering-of-Defense-Systems-Guidebook",
+      "DoDI 5000.02 (Interim, 2013-11-26)",
+      "DoDI 5000.88",
+      "DoDI 5200.48",
+      "DoDI 5230.24",
+      "DoDM 5010.12",
+      "DoDM 5200.01 Volume 2",
+      "DoW-SE-Guidebook-2026",
+      "ISO/IEC/IEEE 24748-8:2019",
+      "ISO/IEC/IEEE 24748-8:2026",
+      "MIL-HDBK-539A",
+      "NAVAIRINST 4355.19E",
+      "SECNAV Manual 5210.1"
+    ],
+    "F8": [
+      "DI-IPSC-81440A",
+      "DI-MGMT-82133A",
+      "DI-NDTI-80809B",
+      "DoD-Engineering-of-Defense-Systems-Guidebook",
+      "DoDI 5000.88",
+      "DoDI 5000.89",
+      "DoDI 5000.98",
+      "DoDI 5200.48",
+      "DoDI 5230.24",
+      "DoDM 5010.12",
+      "DoDM 5200.01 Volume 2",
+      "DoW-SE-Guidebook-2026",
+      "ISO/IEC/IEEE15288:2023",
+      "MIL-HDBK-539A",
+      "Test and Evaluation Enterprise Guidebook"
+    ],
+    "F9": [
+      "DD1692",
+      "DD1692-InstComplete",
+      "DD1694",
+      "DD1694-Inst",
+      "DD1695",
+      "DD1695-Inst",
+      "DI-SESS-80639E",
+      "DI-SESS-80640E",
+      "DI-SESS-80642E",
+      "DI-SESS-81253E",
+      "DI-SESS-82333B",
+      "DoDI 5000.88",
+      "DoDI 5200.48",
+      "DoDI 5230.24",
+      "DoDM 5010.12",
+      "DoDM 5200.01 Volume 2",
+      "MIL-HDBK-539A",
+      "MIL-HDBK-61B",
+      "SAE EIA649_1A",
+      "SAE EIA649C"
+    ],
+    "F10": [
+      "DI-MGMT-80004A",
+      "DI-MGMT-81797",
+      "DI-MGMT-81861C",
+      "DI-MGMT-81861D",
+      "DI-SESS-81785B",
+      "DI-SESS-82538",
+      "DoD EVMSIG",
+      "DoDI 5000.88",
+      "DoDI 5200.48",
+      "DoDI 5230.24",
+      "DoDM 5010.12",
+      "DoDM 5200.01 Volume 2",
+      "IPMDAR-CPD-DEI",
+      "IPMDAR-CPD-FFS",
+      "MIL-HDBK-539A",
+      "MIL-STD-881F"
+    ]
+  },
+  "recordTotals": {
+    "records": 1804,
+    "recordsWithNonemptyPassages": 1804,
+    "recordsClaimedAsInspectedByCatalogue": 1804,
+    "recordsUnsourced": 0,
+    "operativeDocumented": 1658,
+    "guidanceDocumented": 146,
+    "bindingFlags": {
+      "true": 1658,
+      "false": 146,
+      "absent": 0
+    },
+    "statusCounts": {
+      "sample": 1804
+    },
+    "passageHashesChecked": 1804,
+    "wordingHashesChecked": 1804,
+    "totalHashesChecked": 3608,
+    "hashMismatchOrMissingCount": 0,
+    "distinctSourceDocIdsInB": 34,
+    "openGapInstancesAcrossFeeds": 70
+  },
+  "operativeGuidanceByFeed": [
+    {
+      "feed": "F1",
+      "records": 230,
+      "operativeDocumented": 227,
+      "guidanceDocumented": 3,
+      "bindingFlags": {
+        "true": 227,
+        "false": 3,
+        "absent": 0
+      }
+    },
+    {
+      "feed": "F2",
+      "records": 74,
+      "operativeDocumented": 15,
+      "guidanceDocumented": 59,
+      "bindingFlags": {
+        "true": 15,
+        "false": 59,
+        "absent": 0
+      }
+    },
+    {
+      "feed": "F3",
+      "records": 187,
+      "operativeDocumented": 146,
+      "guidanceDocumented": 41,
+      "bindingFlags": {
+        "true": 146,
+        "false": 41,
+        "absent": 0
+      }
+    },
+    {
+      "feed": "F4",
+      "records": 497,
+      "operativeDocumented": 455,
+      "guidanceDocumented": 42,
+      "bindingFlags": {
+        "true": 455,
+        "false": 42,
+        "absent": 0
+      }
+    },
+    {
+      "feed": "F5",
+      "records": 178,
+      "operativeDocumented": 178,
+      "guidanceDocumented": 0,
+      "bindingFlags": {
+        "true": 178,
+        "false": 0,
+        "absent": 0
+      }
+    },
+    {
+      "feed": "F6",
+      "records": 90,
+      "operativeDocumented": 89,
+      "guidanceDocumented": 1,
+      "bindingFlags": {
+        "true": 89,
+        "false": 1,
+        "absent": 0
+      }
+    },
+    {
+      "feed": "F7",
+      "records": 355,
+      "operativeDocumented": 355,
+      "guidanceDocumented": 0,
+      "bindingFlags": {
+        "true": 355,
+        "false": 0,
+        "absent": 0
+      }
+    },
+    {
+      "feed": "F8",
+      "records": 71,
+      "operativeDocumented": 71,
+      "guidanceDocumented": 0,
+      "bindingFlags": {
+        "true": 71,
+        "false": 0,
+        "absent": 0
+      }
+    },
+    {
+      "feed": "F9",
+      "records": 38,
+      "operativeDocumented": 38,
+      "guidanceDocumented": 0,
+      "bindingFlags": {
+        "true": 38,
+        "false": 0,
+        "absent": 0
+      }
+    },
+    {
+      "feed": "F10",
+      "records": 84,
+      "operativeDocumented": 84,
+      "guidanceDocumented": 0,
+      "bindingFlags": {
+        "true": 84,
+        "false": 0,
+        "absent": 0
+      }
+    }
+  ],
+  "guidancePolicy": "All 146 guidance records explicitly carry binding:false and kind:guidance; all 1658 operative records carry binding:true with an operative kind. Guidance remains catalogued, not baselined. The pre-existing F1 contract guidance-projection limitation remains separately flagged; no guidance-only sample values were added.",
+  "gradingFlags": [
+    {
+      "code": "F1_LEGACY_GUIDANCE_HASH_PROJECTION",
+      "severity": "warning",
+      "file": "halcyon-batch-1/F1-data-contract.json",
+      "finding": "F1 C includes guidance-only slots rows[].attributes.guidance.performance_value and rows[].attributes.guidance.requirement_type. Its canonicalForm serializes all metadata and rows without an explicit guidance exclusion. Therefore guidance-only values, if supplied in those slots, are not excluded by the declared rule. C correctly makes handbook findings warn-only; this is not a claim that the included sample contains those values or that its digest failed. No baseline hash was recomputed in this B-focused audit."
+    },
+    {
+      "code": "F10_SOURCE_CORRECTION",
+      "finding": "All 84 F10 B records are from DI-MGMT-81861C (31), incorporated CPD FFS (21), incorporated CPD DEI (3), DI-MGMT-81797 (6), DI-SESS-82538 (9), and DI-MGMT-80004A (14). SEP Outline, SE Guidebook and MIL-STD-881F contributed no operative F10 B records. Guidance facts retained in A are not counted."
+    },
+    {
+      "code": "F10_SEMP_METADATA_ROLE",
+      "finding": "The retained A entry for DI-SESS-81785B has an operative-source classification but the same batch explicitly treats it as metadata-only for F10; it contributed zero B records. The reconstruction preserves the conflicting metadata claims rather than counting extra requirements."
+    },
+    {
+      "code": "RECONSTRUCTED_REGISTER",
+      "finding": "Batch0 is reconstructed with user approval from the delivered batch files. Missing edition, title, release or copyright metadata stays unverified. Four F1-only entries have unverified copyrightClass. The five Batch11 reference anchors supply no target clauses. Original section labels and provenance are retained, not newly verified."
+    },
+    {
+      "code": "HUMAN_REVIEW",
+      "finding": "All 1,804 B records retain status sample; normalized wordings await human review. Hashes establish normalized text identity, not accuracy, applicability, source authority or approval."
+    }
+  ],
+  "edgeCounts": {
+    "total": 573,
+    "implements": 546,
+    "invokes": 27,
+    "tailors": 0
+  },
+  "edgeSemantics": {
+    "implements": "Child technical obligation -> represented explicit parent obligation in another document. Parent selection uses the lowest numbered feed for the same clause; all 24 F10 CPD technical children point to DZR-F4-0007. Rev2 explicitly adds 262 same-document NAVAIR criterion-to-review-type-parent edges. These 17 parents retain the common 4b(7)/5e/5f obligation text once per review type.",
+    "invokes": "Source requirement -> canonical document ID in Batch0, only where the inspected source expressly commands use, conformance or required content. A target may be an open gap or metadata-only anchor; the edge does not claim that its contents were inspected or complied with.",
+    "tailors": "Reserved for a source-proven actual tailoring of another document obligation. No such edge was established. A generic permission or unfilled contract choice is insufficient.",
+    "applicability": "CSV is a projection of trace identity only. Each source requirement retains its exact conditions and selected edition. The supporting conditions/evidence/exclusions are retained in _work/final-edge-evidence.json.",
+    "recordIdentity": "Distinct delivered from_id values remain distinct, including F10-0005 and F4-0007 invocation edges. Canonical parent selection does not merge B records or renumber opaque IDs.",
+    "excluded": "No shared-topic, matching-field, bibliography-only, generic framework or source-gap-to-invented-requirement edges. Fifteen DD1423 choices, nine approved DD2794 plan references and two contractor system-description references require actual contract instances. No generic blank form stands in for those unavailable instances."
+  },
+  "openGaps": {
+    "uniqueSources": 24,
+    "feedInstances": 70,
+    "registerLocation": "../halcyon-batch-0/governing-document-register.json#/gaps",
+    "heldIssuances": [
+      "DoDI 5000.88",
+      "DoDM 5010.12",
+      "DoDI 5230.24",
+      "DoDI 5200.48",
+      "DoDM 5200.01 Volume 2"
+    ],
+    "policy": "Existing source gaps stay open on every affected feed. No replacement edition, indexed summary or target passage was substituted. Reference-only anchors are separately uninspected, not claimed inaccessible."
+  },
+  "F7": {
+    "records": 355,
+    "entranceExitCriteria": 262,
+    "TRPPObligations": 30,
+    "meetingMinutesObligations": 31,
+    "recordDuties": 15,
+    "productReviewMatrixCells": 328,
+    "matrixTreatment": "The matrix remains in the F7 contract; its cells are not baseline requirement records. Retired F7 IDs are absent from current B/C.",
+    "reviewTypeParentObligations": 17,
+    "reviewTypeParentIds": [
+      "DZR-F7-0895",
+      "DZR-F7-0896",
+      "DZR-F7-0897",
+      "DZR-F7-0898",
+      "DZR-F7-0899",
+      "DZR-F7-0900",
+      "DZR-F7-0901",
+      "DZR-F7-0902",
+      "DZR-F7-0903",
+      "DZR-F7-0904",
+      "DZR-F7-0905",
+      "DZR-F7-0906",
+      "DZR-F7-0907",
+      "DZR-F7-0908",
+      "DZR-F7-0909",
+      "DZR-F7-0910",
+      "DZR-F7-0911"
+    ],
+    "criterionPassagePolicy": "The 262 criterion source.passage fields contain only the native criterion row text. Common 4b(7)/5e/5f body text is retained in the parent records and linked by implements.",
+    "sourceCriterionTerminology": "The source labels the rows SETR Entry Criteria; the legacy entranceExitCriteria summary key does not assert that exit-criteria rows were extracted.",
+    "governingObligationRecords": 93,
+    "subordinateCriterionRows": 262,
+    "countMeaning": "355 B objects comprise 93 governing obligation records and 262 subordinate criterion rows. Binding counts include those conditional criterion rows; they are not 262 additional independent engineering-execution duties."
+  },
+  "verification": {
+    "passageHashesRecomputed": 1804,
+    "wordingHashesRecomputed": 1804,
+    "mismatches": 0,
+    "allEdgeEndpointsResolve": true,
+    "duplicateEdgeRows": 0,
+    "selfEdges": 0,
+    "sourceGapPassagesAdded": 0,
+    "newRequirementRecords": 17,
+    "baselineHashesRecomputedInBatch11": false,
+    "allF1RecordsExplicitlyClassified": true,
+    "criterionOnlyPassages": 262,
+    "criteriaMappedExactlyOnce": 262,
+    "IPMDARPdfCount": 5,
+    "F7SampleHashRecomputed": {
+      "rows": 3,
+      "changed": false,
+      "previousSHA256": "d307642e238b3ca33bef5a218257598f89467f8eadbe478b88cff0538cd3b581",
+      "currentSHA256": "d307642e238b3ca33bef5a218257598f89467f8eadbe478b88cff0538cd3b581",
+      "acceptedBaseline": false,
+      "reason": "Only catalogue governance references changed; complete three-row sample bytes/content remain unchanged."
+    }
+  },
+  "packetGradingGuide": {
+    "Batch0": "Read governing-documents.csv and mil-hdbk-539a-sections.csv; governing-document-register.json preserves all metadata, source pointers, gaps and aliases.",
+    "Batch1": "Grade F1-requirement-records.json, F1-data-contract.json and F1-source-audit.json. Other existing F1 baseline/sample/validation files are preserved legacy outputs.",
+    "Batches2Through10": "Grade top-level A-governing-documents.json, B-requirement-records.json and C-data-contract.json.",
+    "Batch11": "Read edges.csv, summary.csv, summary-notes.json and sources/ipmdar/source-manifest.json. The five IPMDAR PDFs are grouped beside that manifest.",
+    "workingFolders": "Whole batch folders are retained. _work includes previous drafts and helpers as well as rev2 checks; grade top-level A/B/C and Batch11 deliverables. The original packet outside the revision root is unchanged. F1 and F7 were revised as requested; old draft/helper counts are not current requirement counts.",
+    "transportChecks": "The internal package inventory uses exact-byte checksums only to confirm that originals survive packaging unchanged. These transport checks are distinct from the prompt-defined normalized passage, wording and baseline hashes."
+  },
+  "revision": "00-11-rev2",
+  "resolvedGradingFlags": [
+    {
+      "code": "F1_LEGACY_BINDING_CLASSIFICATION",
+      "resolution": "Rev2 explicitly marks all 230 F1 records: 227 binding true; the three MIL-HDBK-520A records binding false and kind guidance. Text hashes remain unchanged."
+    }
+  ],
+  "sourcePacket": {
+    "manifest": "sources/ipmdar/source-manifest.json",
+    "pdfs": [
+      "halcyon-batch-11/sources/ipmdar/IPMDAR-SPD-FFS_v1.0_2020-03-12.pdf",
+      "halcyon-batch-11/sources/ipmdar/IPMDAR-SPD-DEI_v1.0_2020-03-12.pdf",
+      "halcyon-batch-11/sources/ipmdar/IPMDAR-CPD-FFS_v1.0_2020-03-12.pdf",
+      "halcyon-batch-11/sources/ipmdar/IPMDAR-CPD-DEI_v1.0_2020-03-12.pdf",
+      "halcyon-batch-11/sources/ipmdar/IPMDAR-Implementation-Tailoring-Guide_cleared-2021-08-24.pdf"
+    ],
+    "policy": "All five selected PDFs are included byte-for-byte. File-byte checksums are distinct from normalized passage and wording hashes. The implementation guide remains nonbinding guidance."
+  }
+}

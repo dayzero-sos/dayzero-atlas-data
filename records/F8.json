@@ -1,0 +1,1869 @@
+[
+ {
+  "id": "DZR-F8-0001",
+  "alias": "DI-NDTI-80809B §10.2 and 10.2.1(a–i); PDF 1",
+  "source": {
+   "docId": "DI-NDTI-80809B",
+   "edition": "Revision B, 24 January 1997; validated by Notice 3, 24 September 2024",
+   "paragraph": "10.2 and 10.2.1(a–i); PDF 1",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=171334",
+   "passage": "The test/inspection report shall contain the following information, as applicable.\n\nThe following information shall appear on the outside front cover and title page:\na. Report date.\nb. Report number (contractor or government)\nc. Contractor's name, address, and commercial and government entity code.\nd. Contract number and contract line item number or sequence number (if applicable).\ne. Type of test/inspection (for example, first article acceptance test, quality conformance inspection, developmental test, qualification test, environmental test).\nf. Identification of item tested/inspected.\ng. Date or period of test/inspection.\nh. Name and address of requiring government activity.\ni. Security classification, downgrading and declassifying information, if applicable.",
+   "passageSHA256": "6d8d9224820f8b4fc24ca956d1ef801f9f35a97bf35eed90ff42dd1db02f043e"
+  },
+  "wording": "The test/inspection report shall present the report date and number, contractor identity and address with commercial and government entity code, applicable contract identifiers, test/inspection type, tested-item identification, test/inspection date or period, requiring Government activity identity and address, and applicable security-classification information on both the outside front cover and title page.",
+  "actor": "The test/inspection report",
+  "condition": "When DI-NDTI-80809B is invoked by the applicable contract or CDRL for the test/inspection report, and the information or certification is applicable under 10.2 or 10.2.7. The source applies to engineering (developmental), preliminary qualification, qualification, and acceptance testing; these are applicability contexts, not separate duplicated obligations. The contract line item number or sequence number and security-classification/downgrading/declassifying information retain the source if-applicable qualifications.",
+  "verificationIntent": "inspection",
+  "kind": "identifier",
+  "binding": true,
+  "fields": [
+   "reportDate",
+   "reportNumber",
+   "contractorName",
+   "contractorAddress",
+   "cageCode",
+   "contractNumber",
+   "contractLineItemOrSequenceNumber",
+   "testInspectionType",
+   "itemIdentification",
+   "testInspectionDateOrPeriod",
+   "requiringGovernmentActivityName",
+   "requiringGovernmentActivityAddress",
+   "securityClassification",
+   "downgradingInformation",
+   "declassifyingInformation"
+  ],
+  "status": "sample",
+  "notes": "Operative DID data-product requirement, conditional on actual contractual invocation. The complete current four-page base PDF was opened, rendered and visually inspected. Each coherent content list is retained as one underlying data obligation, not split into one record per field or test type. Normalized wording does not independently command conduct of the test, redesign, corrective work, or acceptance of the item. The passage combines separately verbatim controlling-parent and child spans, separated by blank lines; intervening text is not presented as consecutive prose. Report number may be contractor or government; contract line item number or sequence number is an alternative, not two cumulative identifiers. Types in the source example list are illustrations, not additional reports. Held marking issuances remain uninspected; their rules are not inferred.",
+  "wordingSHA256": "46386dca34a6bec462d1594df38a881b5ead10e709a6ddc6599ffe3da9d510f2"
+ },
+ {
+  "id": "DZR-F8-0002",
+  "alias": "DI-NDTI-80809B §10.2 and 10.2.2(a–b); PDF 1–2",
+  "source": {
+   "docId": "DI-NDTI-80809B",
+   "edition": "Revision B, 24 January 1997; validated by Notice 3, 24 September 2024",
+   "paragraph": "10.2 and 10.2.2(a–b); PDF 1–2",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=171334",
+   "passage": "The test/inspection report shall contain the following information, as applicable.\n\nThe table of contents shall identify the following:\na. The title and starting page of each major section, paragraph, and appendix of the report.\nb. The page, identifying number, and title of each illustration (for example; figure, table, photograph, chart, and drawing).",
+   "passageSHA256": "7ddc3237c22aa76a43ab4d5c6183fc1712d7cc4e138644d069c33eefc9d7bf56"
+  },
+  "wording": "The table of contents shall identify the title and starting page of each major section, paragraph, and appendix, and the page, identifying number, and title of each illustration.",
+  "actor": "The table of contents",
+  "condition": "When DI-NDTI-80809B is invoked by the applicable contract or CDRL for the test/inspection report, and the information or certification is applicable under 10.2 or 10.2.7. The source applies to engineering (developmental), preliminary qualification, qualification, and acceptance testing; these are applicability contexts, not separate duplicated obligations.",
+  "verificationIntent": "inspection",
+  "kind": "structure",
+  "binding": true,
+  "fields": [
+   "contentsEntries",
+   "illustrationIndex"
+  ],
+  "status": "sample",
+  "notes": "Operative DID data-product requirement, conditional on actual contractual invocation. The complete current four-page base PDF was opened, rendered and visually inspected. Each coherent content list is retained as one underlying data obligation, not split into one record per field or test type. Normalized wording does not independently command conduct of the test, redesign, corrective work, or acceptance of the item. The passage combines separately verbatim controlling-parent and child spans, separated by blank lines; intervening text is not presented as consecutive prose. One contents-index obligation covering the two source index categories; no separate obligation per illustration type.",
+  "wordingSHA256": "b79ae293186e149bd9707088cb3bd98101b93e949da49b275501b00b8866ba13"
+ },
+ {
+  "id": "DZR-F8-0003",
+  "alias": "DI-NDTI-80809B §10.2, 10.2.3 and 10.2.3.1; PDF 1–2",
+  "source": {
+   "docId": "DI-NDTI-80809B",
+   "edition": "Revision B, 24 January 1997; validated by Notice 3, 24 September 2024",
+   "paragraph": "10.2, 10.2.3 and 10.2.3.1; PDF 1–2",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=171334",
+   "passage": "The test/inspection report shall contain the following information, as applicable.\n\nThe introduction shall include the following information:\n\nThe specific test/inspection objective(s) as specified in the contract tasking document.",
+   "passageSHA256": "dd290196cdf1940f3cb96ad046d92598c61385b995e5de2ced24823b00400860"
+  },
+  "wording": "The report introduction shall identify the specific test/inspection objectives specified in the contract tasking document.",
+  "actor": "The report introduction",
+  "condition": "When DI-NDTI-80809B is invoked by the applicable contract or CDRL for the test/inspection report, and the information or certification is applicable under 10.2 or 10.2.7. The source applies to engineering (developmental), preliminary qualification, qualification, and acceptance testing; these are applicability contexts, not separate duplicated obligations.",
+  "verificationIntent": "inspection",
+  "kind": "content",
+  "binding": true,
+  "fields": [
+   "testInspectionObjectives",
+   "contractTaskingReference"
+  ],
+  "status": "sample",
+  "notes": "Operative DID data-product requirement, conditional on actual contractual invocation. The complete current four-page base PDF was opened, rendered and visually inspected. Each coherent content list is retained as one underlying data obligation, not split into one record per field or test type. Normalized wording does not independently command conduct of the test, redesign, corrective work, or acceptance of the item. The passage combines separately verbatim controlling-parent and child spans, separated by blank lines; intervening text is not presented as consecutive prose.",
+  "wordingSHA256": "5877500dff8f9d3bfabe7b793b2acdf3188625a1ae3fefa64c7208a021e1f74c"
+ },
+ {
+  "id": "DZR-F8-0004",
+  "alias": "DI-NDTI-80809B §10.2, 10.2.3 and 10.2.3.2(a–h); PDF 1–2",
+  "source": {
+   "docId": "DI-NDTI-80809B",
+   "edition": "Revision B, 24 January 1997; validated by Notice 3, 24 September 2024",
+   "paragraph": "10.2, 10.2.3 and 10.2.3.2(a–h); PDF 1–2",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=171334",
+   "passage": "The test/inspection report shall contain the following information, as applicable.\n\nThe introduction shall include the following information:\n\nComplete identification of the item(s) tested/inspected including the following:\na. Nomenclature.\nb. National stock number.\nc. Model number, part number, and serial number\nd. Type of item (for example, prototype, production item, laboratory model).\ne. Serial or lot number.\nf. Applicable engineering changes.\ng. Production item specification, if applicable.\nh. Date of manufacture.",
+   "passageSHA256": "b91759a35abf60ae99f31f78ab30f321f9e608f217f08a424a8cf2bb54fcfc82"
+  },
+  "wording": "The report introduction shall completely identify the tested/inspected items by nomenclature, national stock number, model number, part number, serial number, item type, serial or lot number, applicable engineering changes, applicable production item specification, and date of manufacture.",
+  "actor": "The report introduction",
+  "condition": "When DI-NDTI-80809B is invoked by the applicable contract or CDRL for the test/inspection report, and the information or certification is applicable under 10.2 or 10.2.7. The source applies to engineering (developmental), preliminary qualification, qualification, and acceptance testing; these are applicability contexts, not separate duplicated obligations. Production item specification is required only if applicable; the source serial-or-lot alternative is preserved.",
+  "verificationIntent": "inspection",
+  "kind": "content",
+  "binding": true,
+  "fields": [
+   "itemNomenclature",
+   "nationalStockNumber",
+   "modelNumber",
+   "partNumber",
+   "serialNumber",
+   "itemType",
+   "serialOrLotNumber",
+   "engineeringChanges",
+   "productionItemSpecification",
+   "manufactureDate"
+  ],
+  "status": "sample",
+  "notes": "Operative DID data-product requirement, conditional on actual contractual invocation. The complete current four-page base PDF was opened, rendered and visually inspected. Each coherent content list is retained as one underlying data obligation, not split into one record per field or test type. Normalized wording does not independently command conduct of the test, redesign, corrective work, or acceptance of the item. The passage combines separately verbatim controlling-parent and child spans, separated by blank lines; intervening text is not presented as consecutive prose. The source lists serial number in 10.2.3.2c and serial or lot number in 10.2.3.2e; both positions are preserved without inventing a second distinct serial identifier.",
+  "wordingSHA256": "3b7742bf3adfa1284d9ee2f56248cae25f31686eeeca03c13cf909bdcd999325"
+ },
+ {
+  "id": "DZR-F8-0005",
+  "alias": "DI-NDTI-80809B §10.2, 10.2.3 and 10.2.3.3(a–b); PDF 1–2",
+  "source": {
+   "docId": "DI-NDTI-80809B",
+   "edition": "Revision B, 24 January 1997; validated by Notice 3, 24 September 2024",
+   "paragraph": "10.2, 10.2.3 and 10.2.3.3(a–b); PDF 1–2",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=171334",
+   "passage": "The test/inspection report shall contain the following information, as applicable.\n\nThe introduction shall include the following information:\n\nComplete identification of the test/inspection requirements correlated to contractual requirements including the following:\na. Required test/inspection parameters.\nb. Performance requirements, acceptance or compliance limits, and environmental criteria.",
+   "passageSHA256": "daa79393ea887d2b9ef056c896ef91aafa5af97fe553aa4f3b8c43fde28a8176"
+  },
+  "wording": "The report introduction shall completely identify the test/inspection requirements correlated to contractual requirements, including required test/inspection parameters, performance requirements, acceptance or compliance limits, and environmental criteria.",
+  "actor": "The report introduction",
+  "condition": "When DI-NDTI-80809B is invoked by the applicable contract or CDRL for the test/inspection report, and the information or certification is applicable under 10.2 or 10.2.7. The source applies to engineering (developmental), preliminary qualification, qualification, and acceptance testing; these are applicability contexts, not separate duplicated obligations.",
+  "verificationIntent": "inspection",
+  "kind": "content",
+  "binding": true,
+  "fields": [
+   "testInspectionRequirements",
+   "contractualRequirementsCorrelation",
+   "testInspectionParameters",
+   "performanceRequirements",
+   "acceptanceOrComplianceLimits",
+   "environmentalCriteria"
+  ],
+  "status": "sample",
+  "notes": "Operative DID data-product requirement, conditional on actual contractual invocation. The complete current four-page base PDF was opened, rendered and visually inspected. Each coherent content list is retained as one underlying data obligation, not split into one record per field or test type. Normalized wording does not independently command conduct of the test, redesign, corrective work, or acceptance of the item. The passage combines separately verbatim controlling-parent and child spans, separated by blank lines; intervening text is not presented as consecutive prose. The correlation is an express source requirement; a particular database key name, WBS key, or machine encoding is not prescribed by the DID.",
+  "wordingSHA256": "bb2f4f9e1d552fc94ecadc77e5e183b664cd87f74acbf0be92e32793e3203d31"
+ },
+ {
+  "id": "DZR-F8-0006",
+  "alias": "DI-NDTI-80809B §10.2 and 10.2.4(a–d); PDF 1–2",
+  "source": {
+   "docId": "DI-NDTI-80809B",
+   "edition": "Revision B, 24 January 1997; validated by Notice 3, 24 September 2024",
+   "paragraph": "10.2 and 10.2.4(a–d); PDF 1–2",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=171334",
+   "passage": "The test/inspection report shall contain the following information, as applicable.\n\nComplete test/inspection report summary including the following:\na. A brief discussion of the significant test/inspection results, observations, conclusions, and recommendations covered in greater detail elsewhere in the report.\nb. Proposed corrective actions and schedules for failures or problems encountered.\nc. Identification of deviations, departures, or limitations encountered, referenced to the contract requirements.\nd. Tables, graphs, illustrations, or charts as appropriate to simplify the summary data.",
+   "passageSHA256": "bad0767a74c5f34a5d039937867155f100cbbde6af786d79a4c919ccca41ae2b"
+  },
+  "wording": "The test/inspection report shall include a complete summary covering significant results, observations, conclusions and recommendations, proposed corrective actions and schedules for encountered failures or problems, deviations/departures/limitations referenced to contract requirements, and appropriate visual summaries.",
+  "actor": "The test/inspection report",
+  "condition": "When DI-NDTI-80809B is invoked by the applicable contract or CDRL for the test/inspection report, and the information or certification is applicable under 10.2 or 10.2.7. The source applies to engineering (developmental), preliminary qualification, qualification, and acceptance testing; these are applicability contexts, not separate duplicated obligations. Failure/problem and deviation/departure/limitation content applies when encountered; visual summaries apply as appropriate.",
+  "verificationIntent": "inspection",
+  "kind": "content",
+  "binding": true,
+  "fields": [
+   "summary",
+   "correctiveActionsAndSchedules",
+   "deviationsDeparturesLimitations",
+   "contractRequirementReferences",
+   "summaryVisuals"
+  ],
+  "status": "sample",
+  "notes": "Operative DID data-product requirement, conditional on actual contractual invocation. The complete current four-page base PDF was opened, rendered and visually inspected. Each coherent content list is retained as one underlying data obligation, not split into one record per field or test type. Normalized wording does not independently command conduct of the test, redesign, corrective work, or acceptance of the item. The passage combines separately verbatim controlling-parent and child spans, separated by blank lines; intervening text is not presented as consecutive prose. Proposed actions and schedules are report content, not an instruction to execute corrective work.",
+  "wordingSHA256": "323e9ebb81aa4113bda8820cb636c1d181b2ee747869b608988609faf777e82f"
+ },
+ {
+  "id": "DZR-F8-0007",
+  "alias": "DI-NDTI-80809B §10.2 and 10.2.5(a–e); PDF 1–2",
+  "source": {
+   "docId": "DI-NDTI-80809B",
+   "edition": "Revision B, 24 January 1997; validated by Notice 3, 24 September 2024",
+   "paragraph": "10.2 and 10.2.5(a–e); PDF 1–2",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=171334",
+   "passage": "The test/inspection report shall contain the following information, as applicable.\n\nComplete identification of all documents referenced in the test/inspection report including the following, as applicable:\na. Prior test/inspection reports on the same item.\nb. Test/inspection plans and procedure documents.\nc. Prior certifications of compliance.\nd. Contractor's file designation where test/inspection records are maintained.\ne. Input parameters used.",
+   "passageSHA256": "8bcb32311b99693c2d48d541906bf9c40cf8bed30273bb892ce348a8cb7400c8"
+  },
+  "wording": "The test/inspection report shall completely identify referenced documents, including applicable prior reports on the same item, plans and procedures, prior compliance certifications, the contractor's record-file designation, and input parameters used.",
+  "actor": "The test/inspection report",
+  "condition": "When DI-NDTI-80809B is invoked by the applicable contract or CDRL for the test/inspection report, and the information or certification is applicable under 10.2 or 10.2.7. The source applies to engineering (developmental), preliminary qualification, qualification, and acceptance testing; these are applicability contexts, not separate duplicated obligations.",
+  "verificationIntent": "inspection",
+  "kind": "content",
+  "binding": true,
+  "fields": [
+   "referenceDocuments",
+   "priorReports",
+   "testInspectionPlans",
+   "procedureDocuments",
+   "priorCertifications",
+   "recordFileDesignation",
+   "inputParameters"
+  ],
+  "status": "sample",
+  "notes": "Operative DID data-product requirement, conditional on actual contractual invocation. The complete current four-page base PDF was opened, rendered and visually inspected. Each coherent content list is retained as one underlying data obligation, not split into one record per field or test type. Normalized wording does not independently command conduct of the test, redesign, corrective work, or acceptance of the item. The passage combines separately verbatim controlling-parent and child spans, separated by blank lines; intervening text is not presented as consecutive prose. The source includes file designation and input parameters within the reference-documents list; these are retained as listed rather than silently corrected into a different section.",
+  "wordingSHA256": "75d1a0ea75bac5bc8d69bf204f827a9c2e5c26ccad6f605e6367d8b4d5141914"
+ },
+ {
+  "id": "DZR-F8-0008",
+  "alias": "DI-NDTI-80809B §10.2.5, final paragraph; PDF 2",
+  "source": {
+   "docId": "DI-NDTI-80809B",
+   "edition": "Revision B, 24 January 1997; validated by Notice 3, 24 September 2024",
+   "paragraph": "10.2.5, final paragraph; PDF 2",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=171334",
+   "passage": "The applicable issue of the documents cited therein, including their approval dates and dates of any applicable amendments, notices, and revisions, shall be as specified in the contract.",
+   "passageSHA256": "519cc52d77b959950140d31cb125b65944d1d4f9efe5f326e2cf6040f2dd6b3e"
+  },
+  "wording": "The report reference-document issues shall match the contract-specified issues, including approval dates and dates of applicable amendments, notices, and revisions.",
+  "actor": "The report reference-document issues",
+  "condition": "When DI-NDTI-80809B is invoked by the applicable contract or CDRL for the test/inspection report, and the information or certification is applicable under 10.2 or 10.2.7. The source applies to engineering (developmental), preliminary qualification, qualification, and acceptance testing; these are applicability contexts, not separate duplicated obligations.",
+  "verificationIntent": "inspection",
+  "kind": "currency",
+  "binding": true,
+  "fields": [
+   "referenceDocumentIssue",
+   "referenceApprovalDate",
+   "referenceAmendmentNoticeRevisionDates"
+  ],
+  "status": "sample",
+  "notes": "Operative DID data-product requirement, conditional on actual contractual invocation. The complete current four-page base PDF was opened, rendered and visually inspected. Each coherent content list is retained as one underlying data obligation, not split into one record per field or test type. Normalized wording does not independently command conduct of the test, redesign, corrective work, or acceptance of the item. No calendar refresh interval is imposed; issue selection follows the contract.",
+  "wordingSHA256": "ed4d4cc46987b346e5d39e657f574e53fd8f4dcf8c69687bf74a5b4e6709e37c"
+ },
+ {
+  "id": "DZR-F8-0009",
+  "alias": "DI-NDTI-80809B §10.2, 10.2.6 and 10.2.6.1(a–g); PDF 1, 3",
+  "source": {
+   "docId": "DI-NDTI-80809B",
+   "edition": "Revision B, 24 January 1997; validated by Notice 3, 24 September 2024",
+   "paragraph": "10.2, 10.2.6 and 10.2.6.1(a–g); PDF 1, 3",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=171334",
+   "passage": "The test/inspection report shall contain the following information, as applicable.\n\nThe body of the test/inspection report shall be as follows:\n\nComplete identification of each item of test equipment used in the test/inspection including the following:\na. Nomenclature.\nb. Model number.\nc. Serial number.\nd. Manufacturer.\ne. Calibration status.\nf. Accuracy data.\ng. Comments, if applicable.",
+   "passageSHA256": "93a7ab44f07c4937fb1cbe23e63c33a4ec323ec1bce0242f8c027ca16c6f5444"
+  },
+  "wording": "The report body shall completely identify each test-equipment item used, including nomenclature, model number, serial number, manufacturer, calibration status, accuracy data, and applicable comments.",
+  "actor": "The report body",
+  "condition": "When DI-NDTI-80809B is invoked by the applicable contract or CDRL for the test/inspection report, and the information or certification is applicable under 10.2 or 10.2.7. The source applies to engineering (developmental), preliminary qualification, qualification, and acceptance testing; these are applicability contexts, not separate duplicated obligations.",
+  "verificationIntent": "inspection",
+  "kind": "content",
+  "binding": true,
+  "fields": [
+   "testEquipmentIdentification",
+   "equipmentNomenclature",
+   "equipmentModelNumber",
+   "equipmentSerialNumber",
+   "equipmentManufacturer",
+   "calibrationStatus",
+   "accuracyData",
+   "equipmentComments"
+  ],
+  "status": "sample",
+  "notes": "Operative DID data-product requirement, conditional on actual contractual invocation. The complete current four-page base PDF was opened, rendered and visually inspected. Each coherent content list is retained as one underlying data obligation, not split into one record per field or test type. Normalized wording does not independently command conduct of the test, redesign, corrective work, or acceptance of the item. The passage combines separately verbatim controlling-parent and child spans, separated by blank lines; intervening text is not presented as consecutive prose. Calibration status is reported; this DID does not itself set calibration intervals or require a new calibration operation.",
+  "wordingSHA256": "a39480538eee7409f1b308189d3652b1a7e5fe59c5c5dda46a9e39cc4afc2fa1"
+ },
+ {
+  "id": "DZR-F8-0010",
+  "alias": "DI-NDTI-80809B §10.2, 10.2.6 and 10.2.6.2(a–e); PDF 1, 3",
+  "source": {
+   "docId": "DI-NDTI-80809B",
+   "edition": "Revision B, 24 January 1997; validated by Notice 3, 24 September 2024",
+   "paragraph": "10.2, 10.2.6 and 10.2.6.2(a–e); PDF 1, 3",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=171334",
+   "passage": "The test/inspection report shall contain the following information, as applicable.\n\nThe body of the test/inspection report shall be as follows:\n\nComplete description of the physical set-up used in conducting the test/inspection to include the following:\na. Location or orientation of the item.\nb. Location, orientation, or settings of test equipment and instrumentation.\nc. Location, orientation, or settings of sensors and probes.\nd. Location or orientation of interconnections, cables, and hoop-ups.\ne. Electrical power, pneumatic, fluidic, and hydraulic requirements.\nDrawings, illustrations, and photographs may be used for clarification.",
+   "passageSHA256": "1484ab808ad078ad337a2fb3f72ddbc14c4e7e1f32fda799651057480dd114a4"
+  },
+  "wording": "The report body shall completely describe the physical test/inspection set-up, including the listed item, equipment/instrumentation, sensor/probe and interconnection location/orientation/settings information and electrical-power, pneumatic, fluidic and hydraulic requirements.",
+  "actor": "The report body",
+  "condition": "When DI-NDTI-80809B is invoked by the applicable contract or CDRL for the test/inspection report, and the information or certification is applicable under 10.2 or 10.2.7. The source applies to engineering (developmental), preliminary qualification, qualification, and acceptance testing; these are applicability contexts, not separate duplicated obligations.",
+  "verificationIntent": "inspection",
+  "kind": "content",
+  "binding": true,
+  "fields": [
+   "physicalSetup",
+   "itemLocationOrOrientation",
+   "equipmentLocationOrientationOrSettings",
+   "sensorProbeLocationOrientationOrSettings",
+   "interconnectionLocationOrOrientation",
+   "electricalPowerRequirements",
+   "pneumaticRequirements",
+   "fluidicRequirements",
+   "hydraulicRequirements"
+  ],
+  "status": "sample",
+  "notes": "Operative DID data-product requirement, conditional on actual contractual invocation. The complete current four-page base PDF was opened, rendered and visually inspected. Each coherent content list is retained as one underlying data obligation, not split into one record per field or test type. Normalized wording does not independently command conduct of the test, redesign, corrective work, or acceptance of the item. The passage combines separately verbatim controlling-parent and child spans, separated by blank lines; intervening text is not presented as consecutive prose. The source visibly prints 'hoop-ups'; the quotation preserves that spelling. Drawings, illustrations and photographs are permitted for clarification, not universally required.",
+  "wordingSHA256": "0e87b25077da1460f978919ec049ee3809e2fb120f9b4896c4f144be7e83cec8"
+ },
+ {
+  "id": "DZR-F8-0011",
+  "alias": "DI-NDTI-80809B §10.2, 10.2.6 and 10.2.6.3(a–b); PDF 1, 3",
+  "source": {
+   "docId": "DI-NDTI-80809B",
+   "edition": "Revision B, 24 January 1997; validated by Notice 3, 24 September 2024",
+   "paragraph": "10.2, 10.2.6 and 10.2.6.3(a–b); PDF 1, 3",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=171334",
+   "passage": "The test/inspection report shall contain the following information, as applicable.\n\nThe body of the test/inspection report shall be as follows:\n\nComplete description of the procedures used in conducting the test/inspection to include the following:\na. Item selection and inspection that verified suitability for test/inspection.\nb. Summarized sequence of testing/inspection steps, including a description of how the item was operated during the test/inspection, and any control conditions imposed.",
+   "passageSHA256": "12ffb5f555a26dfae999cd1e952731175acc49ca8b95bb3dac307f1362fb51d5"
+  },
+  "wording": "The report body shall completely describe the test/inspection procedures used, including suitability-verifying item selection and inspection, the summarized step sequence, item operation during the test/inspection, and any imposed control conditions.",
+  "actor": "The report body",
+  "condition": "When DI-NDTI-80809B is invoked by the applicable contract or CDRL for the test/inspection report, and the information or certification is applicable under 10.2 or 10.2.7. The source applies to engineering (developmental), preliminary qualification, qualification, and acceptance testing; these are applicability contexts, not separate duplicated obligations.",
+  "verificationIntent": "inspection",
+  "kind": "content",
+  "binding": true,
+  "fields": [
+   "procedureDescription",
+   "itemSelectionAndSuitabilityInspection",
+   "testInspectionStepSequence",
+   "itemOperation",
+   "imposedControlConditions"
+  ],
+  "status": "sample",
+  "notes": "Operative DID data-product requirement, conditional on actual contractual invocation. The complete current four-page base PDF was opened, rendered and visually inspected. Each coherent content list is retained as one underlying data obligation, not split into one record per field or test type. Normalized wording does not independently command conduct of the test, redesign, corrective work, or acceptance of the item. The passage combines separately verbatim controlling-parent and child spans, separated by blank lines; intervening text is not presented as consecutive prose. Describes procedures actually used; does not introduce a command to perform additional testing.",
+  "wordingSHA256": "1de7d900258f3d9dd3a4fa964b8bd342a3246913e289a082a8a4d2087c9c900e"
+ },
+ {
+  "id": "DZR-F8-0012",
+  "alias": "DI-NDTI-80809B §10.2, 10.2.6, 10.2.6.4 and 10.2.6.4.1; PDF 1, 3",
+  "source": {
+   "docId": "DI-NDTI-80809B",
+   "edition": "Revision B, 24 January 1997; validated by Notice 3, 24 September 2024",
+   "paragraph": "10.2, 10.2.6, 10.2.6.4 and 10.2.6.4.1; PDF 1, 3",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=171334",
+   "passage": "The test/inspection report shall contain the following information, as applicable.\n\nThe body of the test/inspection report shall be as follows:\n\nA copy of all test/inspection results and analysis to include the following:\n\nThe actual recorded data (for example, log book entries, oscillographs, instrument readings, plotter graphs). If the recorded data is extensive, provide it in an appendix.",
+   "passageSHA256": "9cf5c9319d92d2b2c7dec9f4dcc9fc17f05c187349c5bdcf95193184627261df"
+  },
+  "wording": "The report body shall provide the actual recorded test/inspection data, using an appendix when the recorded data is extensive.",
+  "actor": "The report body",
+  "condition": "When DI-NDTI-80809B is invoked by the applicable contract or CDRL for the test/inspection report, and the information or certification is applicable under 10.2 or 10.2.7. The source applies to engineering (developmental), preliminary qualification, qualification, and acceptance testing; these are applicability contexts, not separate duplicated obligations. Extensive recorded data is provided in an appendix.",
+  "verificationIntent": "inspection",
+  "kind": "content",
+  "binding": true,
+  "fields": [
+   "recordedTestInspectionData",
+   "recordedDataAppendix"
+  ],
+  "status": "sample",
+  "notes": "Operative DID data-product requirement, conditional on actual contractual invocation. The complete current four-page base PDF was opened, rendered and visually inspected. Each coherent content list is retained as one underlying data obligation, not split into one record per field or test type. Normalized wording does not independently command conduct of the test, redesign, corrective work, or acceptance of the item. The passage combines separately verbatim controlling-parent and child spans, separated by blank lines; intervening text is not presented as consecutive prose. Recorded-data forms are source examples, not a mandate to produce every example instrument output. The conditional appendix placement is retained within the same underlying recorded-data obligation.",
+  "wordingSHA256": "a73242b0748e9dded93de4b958e5802a05567fc78e15843123d6a9c5e2d19c4e"
+ },
+ {
+  "id": "DZR-F8-0013",
+  "alias": "DI-NDTI-80809B §10.2, 10.2.6, 10.2.6.4 and 10.2.6.4.2(a–d); PDF 1, 3",
+  "source": {
+   "docId": "DI-NDTI-80809B",
+   "edition": "Revision B, 24 January 1997; validated by Notice 3, 24 September 2024",
+   "paragraph": "10.2, 10.2.6, 10.2.6.4 and 10.2.6.4.2(a–d); PDF 1, 3",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=171334",
+   "passage": "The test/inspection report shall contain the following information, as applicable.\n\nThe body of the test/inspection report shall be as follows:\n\nA copy of all test/inspection results and analysis to include the following:\n\nIdentification of all test/inspection results to include the following:\na. Matrices comparing results achieved against test/inspection objectives or requirements.\nb. A discussion of these matrices as to their significance, and how they compare to any prior test/inspections.\nc. Calculation examples.\nd. Discussion of anomalies, deviations, discrepancies, or failures, including their impact, causes, and proposed corrective actions. The discussion shall address discrepancies between design requirements and the tested/inspected configuration.",
+   "passageSHA256": "205dd83c4615a3e6202838ad6f7d9d5883de09b4eba380fa7e57b1bb25524f31"
+  },
+  "wording": "The report body shall identify all test/inspection results through achieved-result versus objective/requirement matrices, significance and prior-test comparisons, calculation examples, and anomaly/deviation/discrepancy/failure discussion covering impacts, causes, proposed corrective actions, and discrepancies between design requirements and the tested/inspected configuration.",
+  "actor": "The report body",
+  "condition": "When DI-NDTI-80809B is invoked by the applicable contract or CDRL for the test/inspection report, and the information or certification is applicable under 10.2 or 10.2.7. The source applies to engineering (developmental), preliminary qualification, qualification, and acceptance testing; these are applicability contexts, not separate duplicated obligations.",
+  "verificationIntent": "inspection",
+  "kind": "content",
+  "binding": true,
+  "fields": [
+   "testInspectionResults",
+   "resultObjectiveRequirementMatrices",
+   "matrixSignificance",
+   "priorTestInspectionComparison",
+   "calculationExamples",
+   "anomaliesDeviationsDiscrepanciesFailures",
+   "impacts",
+   "causes",
+   "proposedCorrectiveActions",
+   "designRequirementTestedConfigurationDiscrepancies"
+  ],
+  "status": "sample",
+  "notes": "Operative DID data-product requirement, conditional on actual contractual invocation. The complete current four-page base PDF was opened, rendered and visually inspected. Each coherent content list is retained as one underlying data obligation, not split into one record per field or test type. Normalized wording does not independently command conduct of the test, redesign, corrective work, or acceptance of the item. The passage combines separately verbatim controlling-parent and child spans, separated by blank lines; intervening text is not presented as consecutive prose. The additional explicit shall in 10.2.6.4.2d is fully preserved within this grouped result-discussion obligation, not duplicated as a second requirement. Results trace to objectives or requirements; acceptance/compliance limits remain defined in the introduction.",
+  "wordingSHA256": "a15f07698a8e8243576688ba6916b39e37e15e2173318ee931e468b8650a62f9"
+ },
+ {
+  "id": "DZR-F8-0014",
+  "alias": "DI-NDTI-80809B §10.2, 10.2.6 and 10.2.6.5(a–f); PDF 1, 3–4",
+  "source": {
+   "docId": "DI-NDTI-80809B",
+   "edition": "Revision B, 24 January 1997; validated by Notice 3, 24 September 2024",
+   "paragraph": "10.2, 10.2.6 and 10.2.6.5(a–f); PDF 1, 3–4",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=171334",
+   "passage": "The test/inspection report shall contain the following information, as applicable.\n\nThe body of the test/inspection report shall be as follows:\n\nTest/inspection conclusions distinguished between objective and subjective to include the following:\na. The effectiveness of the test/inspection procedures in measuring item performance.\nb. The success or failure of the item to meet required test/inspection objectives.\nc. The need for repeat, additional, or alternative tests/inspections.\nd. The need for item redesign or further development.\ne. The need for improved test/inspection procedures, techniques, or facilities.\nf. The adequacy and completeness of the test/inspection requirements.",
+   "passageSHA256": "8916c9ca70cc85e6ac67fbe60b0fd9c2d191a66fbec50358ec90b760dd7e050a"
+  },
+  "wording": "The report body shall provide objective and subjective test/inspection conclusions as distinct categories, covering procedure effectiveness, objective success/failure, needs for further or alternative tests/inspections, redesign/development or procedure/technique/facility improvement, and requirements adequacy/completeness.",
+  "actor": "The report body",
+  "condition": "When DI-NDTI-80809B is invoked by the applicable contract or CDRL for the test/inspection report, and the information or certification is applicable under 10.2 or 10.2.7. The source applies to engineering (developmental), preliminary qualification, qualification, and acceptance testing; these are applicability contexts, not separate duplicated obligations.",
+  "verificationIntent": "inspection",
+  "kind": "content",
+  "binding": true,
+  "fields": [
+   "objectiveConclusions",
+   "subjectiveConclusions",
+   "procedureEffectiveness",
+   "testObjectiveSuccessOrFailure",
+   "furtherTestInspectionNeed",
+   "redesignDevelopmentNeed",
+   "procedureTechniqueFacilityImprovementNeed",
+   "requirementsAdequacyAndCompleteness"
+  ],
+  "status": "sample",
+  "notes": "Operative DID data-product requirement, conditional on actual contractual invocation. The complete current four-page base PDF was opened, rendered and visually inspected. Each coherent content list is retained as one underlying data obligation, not split into one record per field or test type. Normalized wording does not independently command conduct of the test, redesign, corrective work, or acceptance of the item. The passage combines separately verbatim controlling-parent and child spans, separated by blank lines; intervening text is not presented as consecutive prose. The coherent conclusions list crosses PDF pages 3–4; the page header/footer is excluded. Reporting a need does not itself mandate execution of the recommended activity.",
+  "wordingSHA256": "090e9e775d6758cd0439d3b2134d8c37a7bb8cbb21fcd110d44147b5629e9780"
+ },
+ {
+  "id": "DZR-F8-0015",
+  "alias": "DI-NDTI-80809B §10.2, 10.2.6 and 10.2.6.6(a–h); PDF 1, 3–4",
+  "source": {
+   "docId": "DI-NDTI-80809B",
+   "edition": "Revision B, 24 January 1997; validated by Notice 3, 24 September 2024",
+   "paragraph": "10.2, 10.2.6 and 10.2.6.6(a–h); PDF 1, 3–4",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=171334",
+   "passage": "The test/inspection report shall contain the following information, as applicable.\n\nThe body of the test/inspection report shall be as follows:\n\nRecommendations appropriate to the test/inspection results and conclusions including the following:\na. Acceptability of the item tested/inspected (pass or fail).\nb. Additional testing/inspection required.\nc. Redesign required.\nd. Problem resolution.\ne. Test/inspection procedure or facility improvements.\nf. Disposition of items tested/inspected.\ng. Documentation changes required.\nh. Testing/inspection improvements.",
+   "passageSHA256": "99082caaa42f1d9787feee77b58d57ee969f1bba3add374fe6a9c3024c5da676"
+  },
+  "wording": "The report body shall provide recommendations appropriate to the results and conclusions covering item acceptability (pass or fail), additional testing/inspection, redesign, problem resolution, procedure/facility improvements, tested-item disposition, documentation changes, and testing/inspection improvements.",
+  "actor": "The report body",
+  "condition": "When DI-NDTI-80809B is invoked by the applicable contract or CDRL for the test/inspection report, and the information or certification is applicable under 10.2 or 10.2.7. The source applies to engineering (developmental), preliminary qualification, qualification, and acceptance testing; these are applicability contexts, not separate duplicated obligations.",
+  "verificationIntent": "inspection",
+  "kind": "content",
+  "binding": true,
+  "fields": [
+   "recommendations",
+   "recommendedAcceptability",
+   "recommendedAdditionalTestInspection",
+   "recommendedRedesign",
+   "recommendedProblemResolution",
+   "recommendedProcedureFacilityImprovements",
+   "recommendedItemDisposition",
+   "recommendedDocumentationChanges",
+   "recommendedTestingInspectionImprovements"
+  ],
+  "status": "sample",
+  "notes": "Operative DID data-product requirement, conditional on actual contractual invocation. The complete current four-page base PDF was opened, rendered and visually inspected. Each coherent content list is retained as one underlying data obligation, not split into one record per field or test type. Normalized wording does not independently command conduct of the test, redesign, corrective work, or acceptance of the item. The passage combines separately verbatim controlling-parent and child spans, separated by blank lines; intervening text is not presented as consecutive prose. Recommendation categories are grouped as one report-content obligation; pass/fail is not computed by an invented numerical formula.",
+  "wordingSHA256": "48bb54eb66adbff0a81b0c5467421a94f349fde114205fb4484b045283064b2c"
+ },
+ {
+  "id": "DZR-F8-0016",
+  "alias": "DI-NDTI-80809B §10.2.7 and 10.2.7.1, first sentence; PDF 4",
+  "source": {
+   "docId": "DI-NDTI-80809B",
+   "edition": "Revision B, 24 January 1997; validated by Notice 3, 24 September 2024",
+   "paragraph": "10.2.7 and 10.2.7.1, first sentence; PDF 4",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=171334",
+   "passage": "The following certifications shall be included, as applicable:\n\nA statement that the test/inspection was performed in accordance with applicable test/inspection plans and procedures, and that the results are true and accurate.",
+   "passageSHA256": "5889747965c1aa04d3b8a8451e1d817e0a904b72a4befebde2360c7391af1a81"
+  },
+  "wording": "The report test/inspection-results authentication shall state that the test/inspection followed applicable plans and procedures and that the results are true and accurate.",
+  "actor": "The report test/inspection-results authentication",
+  "condition": "When DI-NDTI-80809B is invoked by the applicable contract or CDRL for the test/inspection report, and the information or certification is applicable under 10.2 or 10.2.7. The source applies to engineering (developmental), preliminary qualification, qualification, and acceptance testing; these are applicability contexts, not separate duplicated obligations. Applies when test/inspection-results certification is applicable under 10.2.7.",
+  "verificationIntent": "inspection",
+  "kind": "content",
+  "binding": true,
+  "fields": [
+   "resultsAuthenticationStatement",
+   "plansProceduresConformanceStatement",
+   "resultsTruthAccuracyStatement"
+  ],
+  "status": "sample",
+  "notes": "Operative DID data-product requirement, conditional on actual contractual invocation. The complete current four-page base PDF was opened, rendered and visually inspected. Each coherent content list is retained as one underlying data obligation, not split into one record per field or test type. Normalized wording does not independently command conduct of the test, redesign, corrective work, or acceptance of the item. The passage combines separately verbatim controlling-parent and child spans, separated by blank lines; intervening text is not presented as consecutive prose.",
+  "wordingSHA256": "a4bff8b039ba6283969601226fa40896d113a277d69ef3f0e1a24c6c80b17e03"
+ },
+ {
+  "id": "DZR-F8-0017",
+  "alias": "DI-NDTI-80809B §10.2.7 and 10.2.7.1, second sentence; PDF 4",
+  "source": {
+   "docId": "DI-NDTI-80809B",
+   "edition": "Revision B, 24 January 1997; validated by Notice 3, 24 September 2024",
+   "paragraph": "10.2.7 and 10.2.7.1, second sentence; PDF 4",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=171334",
+   "passage": "The following certifications shall be included, as applicable:\n\nThe authentication shall include the signature of the contractor personnel that performed the test(s)/inspection(s), a contractor representative authorized to make such certification, and any government witnesses.",
+   "passageSHA256": "350e3dd056a7ffd2663b531f2f5cbf9f15f346e5a108e76224d6dd3c07639072"
+  },
+  "wording": "The report test/inspection-results authentication shall include signatures of the contractor personnel who performed the tests/inspections, an authorized contractor certifying representative, and any Government witnesses.",
+  "actor": "The report test/inspection-results authentication",
+  "condition": "When DI-NDTI-80809B is invoked by the applicable contract or CDRL for the test/inspection report, and the information or certification is applicable under 10.2 or 10.2.7. The source applies to engineering (developmental), preliminary qualification, qualification, and acceptance testing; these are applicability contexts, not separate duplicated obligations. Applies when test/inspection-results certification is applicable; Government witness signatures apply to any Government witnesses.",
+  "verificationIntent": "inspection",
+  "kind": "content",
+  "binding": true,
+  "fields": [
+   "performerSignatures",
+   "authorizedCertifierSignature",
+   "governmentWitnessSignatures"
+  ],
+  "status": "sample",
+  "notes": "Operative DID data-product requirement, conditional on actual contractual invocation. The complete current four-page base PDF was opened, rendered and visually inspected. Each coherent content list is retained as one underlying data obligation, not split into one record per field or test type. Normalized wording does not independently command conduct of the test, redesign, corrective work, or acceptance of the item. The passage combines separately verbatim controlling-parent and child spans, separated by blank lines; intervening text is not presented as consecutive prose. The source joins performer, authorized representative, and any witnesses with and. These are not alternative signature routes. No digital-signature technology is specified.",
+  "wordingSHA256": "5df8a2a740fc30ceff11350b6eb69e962b05062dd154e78c050b7a6546bcab0f"
+ },
+ {
+  "id": "DZR-F8-0018",
+  "alias": "DI-NDTI-80809B §10.2.7 and 10.2.7.2, first two sentences; PDF 4",
+  "source": {
+   "docId": "DI-NDTI-80809B",
+   "edition": "Revision B, 24 January 1997; validated by Notice 3, 24 September 2024",
+   "paragraph": "10.2.7 and 10.2.7.2, first two sentences; PDF 4",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=171334",
+   "passage": "The following certifications shall be included, as applicable:\n\nA statement identifying those requirements not tested/inspected or measured that were previously validated. Include identification of the data and method employed for such validation (for example, prior test/inspection, analytical verification, equivalent item, and so on).",
+   "passageSHA256": "ea1b19a82b613f160eb0d48b56a2013b0d25ffe62630cf61f49e0c7d82e8fc5d"
+  },
+  "wording": "The report prior-validation authentication shall identify the previously validated requirements not tested/inspected or measured and the data and method used for that validation.",
+  "actor": "The report prior-validation authentication",
+  "condition": "When DI-NDTI-80809B is invoked by the applicable contract or CDRL for the test/inspection report, and the information or certification is applicable under 10.2 or 10.2.7. The source applies to engineering (developmental), preliminary qualification, qualification, and acceptance testing; these are applicability contexts, not separate duplicated obligations. Applies when prior-validation certification is applicable to requirements not tested/inspected or measured.",
+  "verificationIntent": "inspection",
+  "kind": "content",
+  "binding": true,
+  "fields": [
+   "previouslyValidatedRequirementsNotRetested",
+   "priorValidationData",
+   "priorValidationMethod"
+  ],
+  "status": "sample",
+  "notes": "Operative DID data-product requirement, conditional on actual contractual invocation. The complete current four-page base PDF was opened, rendered and visually inspected. Each coherent content list is retained as one underlying data obligation, not split into one record per field or test type. Normalized wording does not independently command conduct of the test, redesign, corrective work, or acceptance of the item. The passage combines separately verbatim controlling-parent and child spans, separated by blank lines; intervening text is not presented as consecutive prose. Previously validated requirements are distinguished from newly tested requirements. The example validation methods are alternatives/examples, not three mandatory validation activities.",
+  "wordingSHA256": "5c01518281acf1ded9e5db4ae3818ec1092e7ae401b7a7da336312fc34315c85"
+ },
+ {
+  "id": "DZR-F8-0019",
+  "alias": "DI-NDTI-80809B §10.2.7 and 10.2.7.2, final sentence; PDF 4",
+  "source": {
+   "docId": "DI-NDTI-80809B",
+   "edition": "Revision B, 24 January 1997; validated by Notice 3, 24 September 2024",
+   "paragraph": "10.2.7 and 10.2.7.2, final sentence; PDF 4",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=171334",
+   "passage": "The following certifications shall be included, as applicable:\n\nThe authentication shall include the signature of a contractor representative authorized to make such authentication and any government witness.",
+   "passageSHA256": "5c65624f99d6d58cc0ca8b6b252809c67cf9b4fa91861c4a54c5f3d5095beca7"
+  },
+  "wording": "The report prior-validation authentication shall include the signature of an authorized contractor authenticating representative and any Government witness.",
+  "actor": "The report prior-validation authentication",
+  "condition": "When DI-NDTI-80809B is invoked by the applicable contract or CDRL for the test/inspection report, and the information or certification is applicable under 10.2 or 10.2.7. The source applies to engineering (developmental), preliminary qualification, qualification, and acceptance testing; these are applicability contexts, not separate duplicated obligations. Applies when prior-validation certification is applicable; witness signatures apply to any Government witness.",
+  "verificationIntent": "inspection",
+  "kind": "content",
+  "binding": true,
+  "fields": [
+   "authorizedPriorValidationAuthenticatorSignature",
+   "priorValidationGovernmentWitnessSignatures"
+  ],
+  "status": "sample",
+  "notes": "Operative DID data-product requirement, conditional on actual contractual invocation. The complete current four-page base PDF was opened, rendered and visually inspected. Each coherent content list is retained as one underlying data obligation, not split into one record per field or test type. Normalized wording does not independently command conduct of the test, redesign, corrective work, or acceptance of the item. The passage combines separately verbatim controlling-parent and child spans, separated by blank lines; intervening text is not presented as consecutive prose. No test-performer signature is added to this certification: unlike 10.2.7.1, the source names the authorized representative and any Government witness.",
+  "wordingSHA256": "68c2767d9a02a4d9395b529125b3f15c13b206813e4ef9f2f1c92d6d01fff602"
+ },
+ {
+  "id": "DZR-F8-0020",
+  "alias": "DI-NDTI-80809B §10.2.7 and 10.2.7.3, first sentence; PDF 4",
+  "source": {
+   "docId": "DI-NDTI-80809B",
+   "edition": "Revision B, 24 January 1997; validated by Notice 3, 24 September 2024",
+   "paragraph": "10.2.7 and 10.2.7.3, first sentence; PDF 4",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=171334",
+   "passage": "The following certifications shall be included, as applicable:\n\nA statement that the item tested/inspected either passed or failed item acceptability requirements.",
+   "passageSHA256": "50088865058ae56a35fe226bfdded3abd8c2b61f9642f5b4cc400fa42466a2b8"
+  },
+  "wording": "The report acceptability authentication shall state whether the tested/inspected item passed or failed the item acceptability requirements.",
+  "actor": "The report acceptability authentication",
+  "condition": "When DI-NDTI-80809B is invoked by the applicable contract or CDRL for the test/inspection report, and the information or certification is applicable under 10.2 or 10.2.7. The source applies to engineering (developmental), preliminary qualification, qualification, and acceptance testing; these are applicability contexts, not separate duplicated obligations. Applies when item-acceptability certification is applicable.",
+  "verificationIntent": "inspection",
+  "kind": "content",
+  "binding": true,
+  "fields": [
+   "itemAcceptabilityAuthentication",
+   "itemAcceptabilityPassOrFail"
+  ],
+  "status": "sample",
+  "notes": "Operative DID data-product requirement, conditional on actual contractual invocation. The complete current four-page base PDF was opened, rendered and visually inspected. Each coherent content list is retained as one underlying data obligation, not split into one record per field or test type. Normalized wording does not independently command conduct of the test, redesign, corrective work, or acceptance of the item. The passage combines separately verbatim controlling-parent and child spans, separated by blank lines; intervening text is not presented as consecutive prose. The statement may be passed or failed; the source does not require a successful result or an invented universal threshold.",
+  "wordingSHA256": "8b851d57b70f5399877538018a4740dd346531a86f5f461120dc42a727f22590"
+ },
+ {
+  "id": "DZR-F8-0021",
+  "alias": "DI-NDTI-80809B §10.2.7 and 10.2.7.3, second sentence; PDF 4",
+  "source": {
+   "docId": "DI-NDTI-80809B",
+   "edition": "Revision B, 24 January 1997; validated by Notice 3, 24 September 2024",
+   "paragraph": "10.2.7 and 10.2.7.3, second sentence; PDF 4",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=171334",
+   "passage": "The following certifications shall be included, as applicable:\n\nThis authentication shall include the signature of a contractor representative authorized to make such authentication and any government witness.",
+   "passageSHA256": "cb86012a748e668853a702726684602acc0aafe44791a4f97aafe0a44a9a25ed"
+  },
+  "wording": "The report acceptability authentication shall include the signature of an authorized contractor authenticating representative and any Government witness.",
+  "actor": "The report acceptability authentication",
+  "condition": "When DI-NDTI-80809B is invoked by the applicable contract or CDRL for the test/inspection report, and the information or certification is applicable under 10.2 or 10.2.7. The source applies to engineering (developmental), preliminary qualification, qualification, and acceptance testing; these are applicability contexts, not separate duplicated obligations. Applies when item-acceptability certification is applicable; witness signatures apply to any Government witness.",
+  "verificationIntent": "inspection",
+  "kind": "content",
+  "binding": true,
+  "fields": [
+   "authorizedAcceptabilityAuthenticatorSignature",
+   "acceptabilityGovernmentWitnessSignatures"
+  ],
+  "status": "sample",
+  "notes": "Operative DID data-product requirement, conditional on actual contractual invocation. The complete current four-page base PDF was opened, rendered and visually inspected. Each coherent content list is retained as one underlying data obligation, not split into one record per field or test type. Normalized wording does not independently command conduct of the test, redesign, corrective work, or acceptance of the item. The passage combines separately verbatim controlling-parent and child spans, separated by blank lines; intervening text is not presented as consecutive prose. No test-performer signature is added to this certification; no electronic-signature format is prescribed.",
+  "wordingSHA256": "8c6813f20829e12eea038f9313c16b340f4f51b19f30c084d257f2f111c20b90"
+ },
+ {
+  "id": "DZR-F8-0022",
+  "alias": "DI-NDTI-80809B §10.2.8; PDF 4",
+  "source": {
+   "docId": "DI-NDTI-80809B",
+   "edition": "Revision B, 24 January 1997; validated by Notice 3, 24 September 2024",
+   "paragraph": "10.2.8; PDF 4",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=171334",
+   "passage": "Appendices shall be used to append detailed test/inspection data, drawings, photographs, or other documentation too voluminous to include in the main body of the report. This includes referenced documentation not previously provided by the government, and test/inspection reports from any associated test/inspection activity that may have performed some of the testing/inspecting requirements.",
+   "passageSHA256": "d91a78c3a880fe5e2d965dfeb4f910c35cb007aad9c5db83369a4062c2e63c2d"
+  },
+  "wording": "The report appendices shall contain detailed test/inspection data, drawings, photographs or other documentation too voluminous for the main body, including referenced documentation not previously provided by the Government and reports from associated activities that performed some testing/inspecting requirements.",
+  "actor": "The report appendices",
+  "condition": "When DI-NDTI-80809B is invoked by the applicable contract or CDRL for the test/inspection report, and the information or certification is applicable under 10.2 or 10.2.7. The source applies to engineering (developmental), preliminary qualification, qualification, and acceptance testing; these are applicability contexts, not separate duplicated obligations. Applies to material too voluminous for the main report and the referenced or associated-activity documentation identified by 10.2.8.",
+  "verificationIntent": "inspection",
+  "kind": "structure",
+  "binding": true,
+  "fields": [
+   "appendixDocumentation",
+   "referencedDocumentationNotGovernmentProvided",
+   "associatedActivityTestInspectionReports"
+  ],
+  "status": "sample",
+  "notes": "Operative DID data-product requirement, conditional on actual contractual invocation. The complete current four-page base PDF was opened, rendered and visually inspected. Each coherent content list is retained as one underlying data obligation, not split into one record per field or test type. Normalized wording does not independently command conduct of the test, redesign, corrective work, or acceptance of the item. This appendix-documentation scope is broader than the specific extensive-recorded-data placement in 10.2.6.4.1; the two are not duplicated per data type.",
+  "wordingSHA256": "4f5ae14d350124734658eb6b5912f3973d348bebaaf560df224a6b8e182d2f59"
+ },
+ {
+  "id": "DZR-F8-0023",
+  "alias": "DI-MGMT-82133A §1; PDF 1",
+  "source": {
+   "docId": "DI-MGMT-82133A",
+   "edition": "A, 29 July 2025",
+   "paragraph": "1; PDF 1",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5796351",
+   "passage": "1. Reference documents. The applicable issue of the documents cited herein, including their approval dates and dates of any applicable amendments, notices and revisions, shall be as specified in the contract.",
+   "passageSHA256": "f44d792b8b2e2c3de91967043747c9d5a9670d6f79b0cd331a7d65553ec94b12"
+  },
+  "wording": "The applicable issues of documents cited by DI-MGMT-82133A shall match the contract-specified issues, including approval dates and applicable amendment, notice, and revision dates.",
+  "actor": "The applicable issues of documents cited by DI-MGMT-82133A",
+  "condition": "When DI-MGMT-82133A is invoked by the applicable contract or CDRL for the Requirements Traceability Verification Matrix.",
+  "verificationIntent": "inspection",
+  "kind": "currency",
+  "binding": true,
+  "fields": [
+   "applicableSourceIssues"
+  ],
+  "status": "sample",
+  "notes": "Operative DID data-product provision; binding is conditional on actual contractual invocation, profile applicability, and preserved source conditions. Lists are grouped as coherent required information sets, not multiplied by product or test type. One consecutive source span; layout whitespace normalized. Every span matches the freshly opened text PDF after layout-whitespace normalization.",
+  "wordingSHA256": "ae00b3b942227f3b501ea8f49ad639c5810d2c070b0441c7f0e02c202c799c0d"
+ },
+ {
+  "id": "DZR-F8-0024",
+  "alias": "DI-MGMT-82133A §2; PDF 1",
+  "source": {
+   "docId": "DI-MGMT-82133A",
+   "edition": "A, 29 July 2025",
+   "paragraph": "2; PDF 1",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5796351",
+   "passage": "2. Format: The RTVM shall be in an electronic relational database format that can be manipulated to show bidirectional requirements traceability and track the verification of each requirement.",
+   "passageSHA256": "f0481d7d75d6ebd2a9da85faf1cac6f5e1fbc4963e3fcec399d81fd1df858f32"
+  },
+  "wording": "The RTVM shall use an electronic relational database format supporting bidirectional requirements traceability and tracking verification of each requirement.",
+  "actor": "The RTVM",
+  "condition": "When DI-MGMT-82133A is invoked by the applicable contract or CDRL for the Requirements Traceability Verification Matrix.",
+  "verificationIntent": "inspection",
+  "kind": "structure",
+  "binding": true,
+  "fields": [
+   "nativeDatabaseFormat",
+   "requirementsTraceability",
+   "verificationTracking"
+  ],
+  "status": "sample",
+  "notes": "Operative DID data-product provision; binding is conditional on actual contractual invocation, profile applicability, and preserved source conditions. Lists are grouped as coherent required information sets, not multiplied by product or test type. One consecutive source span; layout whitespace normalized. Every span matches the freshly opened text PDF after layout-whitespace normalization.",
+  "wordingSHA256": "37a316ad1443ce90e6cd3fef0a2a6baa93bdf0514be5b168caf519a363aa9108"
+ },
+ {
+  "id": "DZR-F8-0025",
+  "alias": "DI-MGMT-82133A §3.1; 3.1.1; PDF 1",
+  "source": {
+   "docId": "DI-MGMT-82133A",
+   "edition": "A, 29 July 2025",
+   "paragraph": "3.1; 3.1.1; PDF 1",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5796351",
+   "passage": "The RTVM software database files shall contain the following:\n\n3.1.1. Cover Page: Enter the Title, Date of Issue, Revision Date Contract Number, Contractor’s name and address, Distribution Statement (as delineated in the contract), Export Control Warning Label (as delineated in the contract and if applicable), and Security classification.",
+   "passageSHA256": "ab37056f9107b8332c40d7a0a75047e24969dd809ee2d5839ed92c67b517651d"
+  },
+  "wording": "The RTVM software database files shall contain cover-page identification, issue and revision dates, contract number, contractor name and address, contract-delineated distribution statement, applicable contract-delineated export-control warning, and security classification.",
+  "actor": "The RTVM software database files",
+  "condition": "When DI-MGMT-82133A is invoked by the applicable contract or CDRL for the Requirements Traceability Verification Matrix; the distribution statement is as delineated in the contract; the export-control warning applies only as delineated in the contract and if applicable.",
+  "verificationIntent": "inspection",
+  "kind": "marking",
+  "binding": true,
+  "fields": [
+   "coverPage",
+   "documentTitle",
+   "issueDate",
+   "revisionDate",
+   "contractNumber",
+   "contractorIdentity",
+   "distributionStatement",
+   "exportControlWarning",
+   "securityClassification"
+  ],
+  "status": "sample",
+  "notes": "Operative DID data-product provision; binding is conditional on actual contractual invocation, profile applicability, and preserved source conditions. Lists are grouped as coherent required information sets, not multiplied by product or test type. Composite quotation: separate exact source spans are separated by blank lines; intervening material may be omitted. No claim of consecutive full-page prose is made. Span PDF pages: 1,1. Every span matches the freshly opened text PDF after layout-whitespace normalization. The visibly printed source omits a comma between Revision Date and Contract Number. The normalized information list separates those named fields without inventing values.",
+  "wordingSHA256": "39fde48d42a3d64b3b933ffe91ea5361a5a9f4c98770581cd44c5e0db88a7b4c"
+ },
+ {
+  "id": "DZR-F8-0026",
+  "alias": "DI-MGMT-82133A §3.1; 3.1.2; PDF 1",
+  "source": {
+   "docId": "DI-MGMT-82133A",
+   "edition": "A, 29 July 2025",
+   "paragraph": "3.1; 3.1.2; PDF 1",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5796351",
+   "passage": "The RTVM software database files shall contain the following:\n\n3.1.2. Record of Change Page: Enter a record of all changes made to the RTVM.",
+   "passageSHA256": "39a60af6013049028bcbaf4eb1e7dd275b2a02892f6d0ce0ddf9cbdb2f0e95ac"
+  },
+  "wording": "The RTVM software database files shall contain a record-of-change page covering all changes made to the RTVM.",
+  "actor": "The RTVM software database files",
+  "condition": "When DI-MGMT-82133A is invoked by the applicable contract or CDRL for the Requirements Traceability Verification Matrix.",
+  "verificationIntent": "inspection",
+  "kind": "currency",
+  "binding": true,
+  "fields": [
+   "changeRecord"
+  ],
+  "status": "sample",
+  "notes": "Operative DID data-product provision; binding is conditional on actual contractual invocation, profile applicability, and preserved source conditions. Lists are grouped as coherent required information sets, not multiplied by product or test type. Composite quotation: separate exact source spans are separated by blank lines; intervening material may be omitted. No claim of consecutive full-page prose is made. Span PDF pages: 1,1. Every span matches the freshly opened text PDF after layout-whitespace normalization.",
+  "wordingSHA256": "db97b1999efb2172ead8666ef61b6d2c9e650e13192129eb8f0e9af820e8ee7c"
+ },
+ {
+  "id": "DZR-F8-0027",
+  "alias": "DI-MGMT-82133A §3.1; 3.1.3; PDF 1",
+  "source": {
+   "docId": "DI-MGMT-82133A",
+   "edition": "A, 29 July 2025",
+   "paragraph": "3.1; 3.1.3; PDF 1",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5796351",
+   "passage": "The RTVM software database files shall contain the following:\n\n3.1.3. Database Architecture Description Pages: Enter a detailed description of the database, show relationships and define all the terms/acronyms used in the database fields.",
+   "passageSHA256": "3d33278a5270e5a1daa46621542b75889a9df7ed1382edf0d43a0670255e8e95"
+  },
+  "wording": "The RTVM software database files shall contain database-architecture description pages detailing the database, relationships, and definitions of terms and acronyms used in database fields.",
+  "actor": "The RTVM software database files",
+  "condition": "When DI-MGMT-82133A is invoked by the applicable contract or CDRL for the Requirements Traceability Verification Matrix.",
+  "verificationIntent": "inspection",
+  "kind": "content",
+  "binding": true,
+  "fields": [
+   "databaseArchitecture",
+   "relationships",
+   "fieldDefinitions"
+  ],
+  "status": "sample",
+  "notes": "Operative DID data-product provision; binding is conditional on actual contractual invocation, profile applicability, and preserved source conditions. Lists are grouped as coherent required information sets, not multiplied by product or test type. Composite quotation: separate exact source spans are separated by blank lines; intervening material may be omitted. No claim of consecutive full-page prose is made. Span PDF pages: 1,1. Every span matches the freshly opened text PDF after layout-whitespace normalization.",
+  "wordingSHA256": "c2e703721fa833f87983759dc5e961cc423fc3416f4f0ac215e39b10c1d7b23c"
+ },
+ {
+  "id": "DZR-F8-0028",
+  "alias": "DI-MGMT-82133A §3; 3.2.1; 3.2.5; 3.2.7; 3.2.9; PDF 1,2",
+  "source": {
+   "docId": "DI-MGMT-82133A",
+   "edition": "A, 29 July 2025",
+   "paragraph": "3; 3.2.1; 3.2.5; 3.2.7; 3.2.9; PDF 1,2",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5796351",
+   "passage": "The RTVM package shall contain the following:\n\n3.2.1. Tier 0 Unique Identification Number (UID): Enter the UID for every requirement in the system configuration baseline (functional and physical).\n\n3.2.5. Tier 1 UID: Enter the UID for every requirement in the system configuration baseline (functional and physical).\n\n3.2.7. Tier 2 UID (if required): Enter the UID for every requirement in the system configuration baseline (functional and physical).\n\n3.2.9. Tier 3 UID (if required): Enter the UID for every requirement in the system configuration baseline (functional and physical).",
+   "passageSHA256": "d480d43e12cc33cdbbf8d83669e37f90f07c4cb38a9c816a5bb00ee1a3c9a023"
+  },
+  "wording": "The RTVM database shall record the Tier 0 and Tier 1 UIDs, and the Tier 2 and Tier 3 UIDs when required, for every requirement in the functional and physical system configuration baseline.",
+  "actor": "The RTVM database",
+  "condition": "When DI-MGMT-82133A is invoked by the applicable contract or CDRL for the Requirements Traceability Verification Matrix; Tier 2 and Tier 3 UIDs apply only if required.",
+  "verificationIntent": "inspection",
+  "kind": "identifier",
+  "binding": true,
+  "fields": [
+   "tier0Uid",
+   "tier1Uid",
+   "tier2Uid",
+   "tier3Uid"
+  ],
+  "status": "sample",
+  "notes": "Operative DID data-product provision; binding is conditional on actual contractual invocation, profile applicability, and preserved source conditions. Lists are grouped as coherent required information sets, not multiplied by product or test type. Composite quotation: separate exact source spans are separated by blank lines; intervening material may be omitted. No claim of consecutive full-page prose is made. Span PDF pages: 1,2,2,2,2. Every span matches the freshly opened text PDF after layout-whitespace normalization. One tier-identity information set; no copied example identifiers or imposed example UID syntax.",
+  "wordingSHA256": "29d2d8e61df645db50828395eeb3169aa5ec10b2d2046b4ed1bc56643bc272b9"
+ },
+ {
+  "id": "DZR-F8-0029",
+  "alias": "DI-MGMT-82133A §3; 3.2.2; PDF 1,2",
+  "source": {
+   "docId": "DI-MGMT-82133A",
+   "edition": "A, 29 July 2025",
+   "paragraph": "3; 3.2.2; PDF 1,2",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5796351",
+   "passage": "The RTVM package shall contain the following:\n\n3.2.2. Source document: For each specification and source document, enter the document number and title for the source of each requirement statement.",
+   "passageSHA256": "02b58e0f355f0a16cb0df52f3ba51edbfd506e5feed8773a4b5feb78fcd27226"
+  },
+  "wording": "The RTVM database shall record the source document number and title for each requirement statement.",
+  "actor": "The RTVM database",
+  "condition": "When DI-MGMT-82133A is invoked by the applicable contract or CDRL for the Requirements Traceability Verification Matrix; for each specification and source document.",
+  "verificationIntent": "inspection",
+  "kind": "identifier",
+  "binding": true,
+  "fields": [
+   "sourceDocumentNumber",
+   "sourceDocumentTitle"
+  ],
+  "status": "sample",
+  "notes": "Operative DID data-product provision; binding is conditional on actual contractual invocation, profile applicability, and preserved source conditions. Lists are grouped as coherent required information sets, not multiplied by product or test type. Composite quotation: separate exact source spans are separated by blank lines; intervening material may be omitted. No claim of consecutive full-page prose is made. Span PDF pages: 1,2. Every span matches the freshly opened text PDF after layout-whitespace normalization.",
+  "wordingSHA256": "7819d2ca54f8997211f82c7c2f87814f08723bd85f87a95424ae603a68aae442"
+ },
+ {
+  "id": "DZR-F8-0030",
+  "alias": "DI-MGMT-82133A §3; 3.2.3; PDF 1,2",
+  "source": {
+   "docId": "DI-MGMT-82133A",
+   "edition": "A, 29 July 2025",
+   "paragraph": "3; 3.2.3; PDF 1,2",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5796351",
+   "passage": "The RTVM package shall contain the following:\n\n3.2.3. Specification or Source Document Paragraph Number: Enter the specification or source document paragraph number for each requirement.",
+   "passageSHA256": "10d808789e2911864f2451c0f4bc5028d387d8f84d74cd03e2934d2fdb5ff950"
+  },
+  "wording": "The RTVM database shall record the specification or source-document paragraph number for each requirement.",
+  "actor": "The RTVM database",
+  "condition": "When DI-MGMT-82133A is invoked by the applicable contract or CDRL for the Requirements Traceability Verification Matrix.",
+  "verificationIntent": "inspection",
+  "kind": "identifier",
+  "binding": true,
+  "fields": [
+   "sourceParagraph"
+  ],
+  "status": "sample",
+  "notes": "Operative DID data-product provision; binding is conditional on actual contractual invocation, profile applicability, and preserved source conditions. Lists are grouped as coherent required information sets, not multiplied by product or test type. Composite quotation: separate exact source spans are separated by blank lines; intervening material may be omitted. No claim of consecutive full-page prose is made. Span PDF pages: 1,2. Every span matches the freshly opened text PDF after layout-whitespace normalization.",
+  "wordingSHA256": "43a20a8b23259177993b842b64c2550733416b44f99dcc9b7e5795c4eac132e2"
+ },
+ {
+  "id": "DZR-F8-0031",
+  "alias": "DI-MGMT-82133A §3; 3.2.4; 3.2.6; 3.2.8; 3.2.10; PDF 1,2",
+  "source": {
+   "docId": "DI-MGMT-82133A",
+   "edition": "A, 29 July 2025",
+   "paragraph": "3; 3.2.4; 3.2.6; 3.2.8; 3.2.10; PDF 1,2",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5796351",
+   "passage": "The RTVM package shall contain the following:\n\n3.2.4. Requirement Text (Tier 0): Enter the specification or source document requirement text. Tier 0 requirements are broad statements of intent. They describe what the system needs to accomplish without specifying how it should be done.\n\n3.2.6. Tier 1 Requirement Text: Tier 1 requirements in an RTVM represent the highest level of abstraction in the project's requirements hierarchy. They articulate the fundamental needs, goals, and objectives that the project aims to satisfy.\n\n3.2.8. Tier 2 Requirement Text (if required): Tier 2 requirements are derived directly from the Tier 1 requirements. They take the high-level needs and objectives defined in Tier 1 and begin to translate them into more specific system-level or feature-level requirements. They define what the system or specific features within the system must do to satisfy the Tier 1 objectives.\n\n3.2.10. Tier 3 Requirement Text (if required): Tier 3 requirements are derived directly from the Tier 2 requirements. They represent the most detailed level of requirements specification, providing the granular instructions needed for developers to implement the system. They define how the system will achieve the functionality outlined in Tier 2.",
+   "passageSHA256": "a6cf57ba3852e4cba5f0eab8f5508732a7d962c247cec57a2e8c2f1f005c0441"
+  },
+  "wording": "The RTVM database shall contain Tier 0 and Tier 1 requirement text and, when required, Tier 2 and Tier 3 requirement text in the source-described hierarchy.",
+  "actor": "The RTVM database",
+  "condition": "When DI-MGMT-82133A is invoked by the applicable contract or CDRL for the Requirements Traceability Verification Matrix; Tier 2 and Tier 3 requirement text applies only if required.",
+  "verificationIntent": "inspection",
+  "kind": "content",
+  "binding": true,
+  "fields": [
+   "tier0RequirementText",
+   "tier1RequirementText",
+   "tier2RequirementText",
+   "tier3RequirementText"
+  ],
+  "status": "sample",
+  "notes": "Operative DID data-product provision; binding is conditional on actual contractual invocation, profile applicability, and preserved source conditions. Lists are grouped as coherent required information sets, not multiplied by product or test type. Composite quotation: separate exact source spans are separated by blank lines; intervening material may be omitted. No claim of consecutive full-page prose is made. Span PDF pages: 1,2,2,2,2. Every span matches the freshly opened text PDF after layout-whitespace normalization. The parent Content shall governs the requirement-text fields. Tier descriptions explain data meaning; the embedded what the system must do wording is not promoted to a new engineering-execution obligation. Tier 0 and Tier 1 descriptions overlap in the source; no alternative hierarchy is invented.",
+  "wordingSHA256": "d483da2542aa4ca850a3cec7972dfb6724ea0ad56cc1dcd1e62531c36d1a6219"
+ },
+ {
+  "id": "DZR-F8-0032",
+  "alias": "DI-MGMT-82133A §3.2.11; PDF 2",
+  "source": {
+   "docId": "DI-MGMT-82133A",
+   "edition": "A, 29 July 2025",
+   "paragraph": "3.2.11; PDF 2",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5796351",
+   "passage": "3.2.11. Requirement Type: The RTVM database shall identify if the requirement is “Derived” or “Decomposed”.",
+   "passageSHA256": "f410af793abbddcaa53223cd04a509da5cf647565540a0393e0e9f00af96b836"
+  },
+  "wording": "The RTVM database shall identify each requirement type as Derived or Decomposed.",
+  "actor": "The RTVM database",
+  "condition": "When DI-MGMT-82133A is invoked by the applicable contract or CDRL for the Requirements Traceability Verification Matrix.",
+  "verificationIntent": "inspection",
+  "kind": "content",
+  "binding": true,
+  "fields": [
+   "requirementType"
+  ],
+  "status": "sample",
+  "notes": "Operative DID data-product provision; binding is conditional on actual contractual invocation, profile applicability, and preserved source conditions. Lists are grouped as coherent required information sets, not multiplied by product or test type. One consecutive source span; layout whitespace normalized. Every span matches the freshly opened text PDF after layout-whitespace normalization.",
+  "wordingSHA256": "01d9e5a0f2acde31d440c5dffe66671bc251a710ab4e3f57a1e75b826f31ddcd"
+ },
+ {
+  "id": "DZR-F8-0033",
+  "alias": "DI-MGMT-82133A §3; 3.2.12; PDF 1,2",
+  "source": {
+   "docId": "DI-MGMT-82133A",
+   "edition": "A, 29 July 2025",
+   "paragraph": "3; 3.2.12; PDF 1,2",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5796351",
+   "passage": "The RTVM package shall contain the following:\n\n3.2.12. Requirement Attribute: For each requirement, define whether the requirement is a measure of performance, design parameter, software functional requirement, interface requirement, physical parameter, environmental or cybersecurity (This data field can encompass other data attributes if needed.)",
+   "passageSHA256": "f51014ea29e871b68ebbb990d86d91a76d39113688ff0552c859bf67463072bf"
+  },
+  "wording": "The RTVM database shall identify each requirement attribute using the named performance, design, software-functional, interface, physical, environmental, or cybersecurity categories, with other attributes permitted when needed.",
+  "actor": "The RTVM database",
+  "condition": "When DI-MGMT-82133A is invoked by the applicable contract or CDRL for the Requirements Traceability Verification Matrix; the attribute field may encompass other attributes if needed.",
+  "verificationIntent": "inspection",
+  "kind": "content",
+  "binding": true,
+  "fields": [
+   "requirementAttribute"
+  ],
+  "status": "sample",
+  "notes": "Operative DID data-product provision; binding is conditional on actual contractual invocation, profile applicability, and preserved source conditions. Lists are grouped as coherent required information sets, not multiplied by product or test type. Composite quotation: separate exact source spans are separated by blank lines; intervening material may be omitted. No claim of consecutive full-page prose is made. Span PDF pages: 1,2. Every span matches the freshly opened text PDF after layout-whitespace normalization. The named categories are not treated as a closed exhaustive enum.",
+  "wordingSHA256": "d550a6bceb9ba1ae26a35e08f24e5adcc55b39eb363b38f808a9d5178f80dd2b"
+ },
+ {
+  "id": "DZR-F8-0034",
+  "alias": "DI-MGMT-82133A §3.2.13; PDF 2",
+  "source": {
+   "docId": "DI-MGMT-82133A",
+   "edition": "A, 29 July 2025",
+   "paragraph": "3.2.13; PDF 2",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5796351",
+   "passage": "3.2.13. OEM Compliance of Requirement: The RTVM database shall identify if the OEM’s compliance of the requirement is “Compliant”, “Non-Compliant”, or “Partial Compliant”.",
+   "passageSHA256": "fafa54afaf410529feffaf3117956007e681e8580e9d274710e093d0748cdfb5"
+  },
+  "wording": "The RTVM database shall identify OEM requirement compliance as Compliant, Non-Compliant, or Partial Compliant.",
+  "actor": "The RTVM database",
+  "condition": "When DI-MGMT-82133A is invoked by the applicable contract or CDRL for the Requirements Traceability Verification Matrix.",
+  "verificationIntent": "inspection",
+  "kind": "content",
+  "binding": true,
+  "fields": [
+   "oemCompliance"
+  ],
+  "status": "sample",
+  "notes": "Operative DID data-product provision; binding is conditional on actual contractual invocation, profile applicability, and preserved source conditions. Lists are grouped as coherent required information sets, not multiplied by product or test type. One consecutive source span; layout whitespace normalized. Every span matches the freshly opened text PDF after layout-whitespace normalization.",
+  "wordingSHA256": "72af74e30bfb3247246443a91bfd8d163a55c790d0b420b8edbb6a08580f6ab8"
+ },
+ {
+  "id": "DZR-F8-0035",
+  "alias": "DI-MGMT-82133A §3; 3.2.14; PDF 1,3",
+  "source": {
+   "docId": "DI-MGMT-82133A",
+   "edition": "A, 29 July 2025",
+   "paragraph": "3; 3.2.14; PDF 1,3",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5796351",
+   "passage": "The RTVM package shall contain the following:\n\n3.2.14. Requirement Status: Identify the Requirement status for each requirement as “Approved”, “Under Review”, “Needs Revision”, or “Rejected”. The status should identify the latest revision number.",
+   "passageSHA256": "d2ad90b62705d6b6598c9968807d7f5a6306d2b9b3ed2bc6636a37deb7911e3b"
+  },
+  "wording": "The RTVM database shall identify each requirement status as Approved, Under Review, Needs Revision, or Rejected.",
+  "actor": "The RTVM database",
+  "condition": "When DI-MGMT-82133A is invoked by the applicable contract or CDRL for the Requirements Traceability Verification Matrix.",
+  "verificationIntent": "inspection",
+  "kind": "content",
+  "binding": true,
+  "fields": [
+   "requirementStatus"
+  ],
+  "status": "sample",
+  "notes": "Operative DID data-product provision; binding is conditional on actual contractual invocation, profile applicability, and preserved source conditions. Lists are grouped as coherent required information sets, not multiplied by product or test type. Composite quotation: separate exact source spans are separated by blank lines; intervening material may be omitted. No claim of consecutive full-page prose is made. Span PDF pages: 1,3. Every span matches the freshly opened text PDF after layout-whitespace normalization. The separate latest-revision-number should is a recommendation, catalogued as a nonbinding field fact and excluded from the operative baseline; it is not promoted by the parent shall.",
+  "wordingSHA256": "66eec0b2ddb1ae7bf2af8ce1d9edea0ae986274049e0c184f8c4a46430ab5df2"
+ },
+ {
+  "id": "DZR-F8-0036",
+  "alias": "DI-MGMT-82133A §3; 3.2.15; PDF 1,3",
+  "source": {
+   "docId": "DI-MGMT-82133A",
+   "edition": "A, 29 July 2025",
+   "paragraph": "3; 3.2.15; PDF 1,3",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5796351",
+   "passage": "The RTVM package shall contain the following:\n\n3.2.15. Non-Conforming Requirements: For non-conforming requirements, enter the System Trouble Report (STR) and Deficiency Report (DR) number and title.",
+   "passageSHA256": "fc33d7c49cbeef4d45acaccd4c9ef200cffdbb5a5e33bed65ec41c5410b2310d"
+  },
+  "wording": "The RTVM database shall record the System Trouble Report and Deficiency Report numbers and titles for each non-conforming requirement.",
+  "actor": "The RTVM database",
+  "condition": "When DI-MGMT-82133A is invoked by the applicable contract or CDRL for the Requirements Traceability Verification Matrix; for non-conforming requirements.",
+  "verificationIntent": "inspection",
+  "kind": "identifier",
+  "binding": true,
+  "fields": [
+   "systemTroubleReportNumber",
+   "systemTroubleReportTitle",
+   "deficiencyReportNumber",
+   "deficiencyReportTitle"
+  ],
+  "status": "sample",
+  "notes": "Operative DID data-product provision; binding is conditional on actual contractual invocation, profile applicability, and preserved source conditions. Lists are grouped as coherent required information sets, not multiplied by product or test type. Composite quotation: separate exact source spans are separated by blank lines; intervening material may be omitted. No claim of consecutive full-page prose is made. Span PDF pages: 1,3. Every span matches the freshly opened text PDF after layout-whitespace normalization. STR here means System Trouble Report, not the separately profiled Software Test Report.",
+  "wordingSHA256": "683a13f2458b0e5680a9fe29b3323920306827b46d5549090109e4cc9bfe5170"
+ },
+ {
+  "id": "DZR-F8-0037",
+  "alias": "DI-MGMT-82133A §3; 3.2.15.1; PDF 1,3",
+  "source": {
+   "docId": "DI-MGMT-82133A",
+   "edition": "A, 29 July 2025",
+   "paragraph": "3; 3.2.15.1; PDF 1,3",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5796351",
+   "passage": "The RTVM package shall contain the following:\n\n3.2.15.1. Hyperlink: Provide hyper-link to the STR and DR databases.",
+   "passageSHA256": "fc884271d9015471f3c3ceae6c9913226ec6c5fcf26f4a583a68108cefae1cd0"
+  },
+  "wording": "The RTVM database shall provide hyperlinks to the System Trouble Report and Deficiency Report databases.",
+  "actor": "The RTVM database",
+  "condition": "When DI-MGMT-82133A is invoked by the applicable contract or CDRL for the Requirements Traceability Verification Matrix; for the non-conforming requirements covered by parent 3.2.15.",
+  "verificationIntent": "inspection",
+  "kind": "content",
+  "binding": true,
+  "fields": [
+   "systemTroubleReportLink",
+   "deficiencyReportLink"
+  ],
+  "status": "sample",
+  "notes": "Operative DID data-product provision; binding is conditional on actual contractual invocation, profile applicability, and preserved source conditions. Lists are grouped as coherent required information sets, not multiplied by product or test type. Composite quotation: separate exact source spans are separated by blank lines; intervening material may be omitted. No claim of consecutive full-page prose is made. Span PDF pages: 1,3. Every span matches the freshly opened text PDF after layout-whitespace normalization.",
+  "wordingSHA256": "7f860cbff1f7b864a525ef3d24c389f2567fd0c839f71496183fe7959f695a31"
+ },
+ {
+  "id": "DZR-F8-0038",
+  "alias": "DI-MGMT-82133A §3; 3.2.16; PDF 1,3",
+  "source": {
+   "docId": "DI-MGMT-82133A",
+   "edition": "A, 29 July 2025",
+   "paragraph": "3; 3.2.16; PDF 1,3",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5796351",
+   "passage": "The RTVM package shall contain the following:\n\n3.2.16. Design Reference: Enter the specific piece of design information (e.g., design document section, drawing, etc.) associated with each requirement.",
+   "passageSHA256": "830c9b83a7582cb547eeef3b3fc6b1c48b78942629aad0906fa6fde0efbf3ba7"
+  },
+  "wording": "The RTVM database shall record the specific design information associated with each requirement.",
+  "actor": "The RTVM database",
+  "condition": "When DI-MGMT-82133A is invoked by the applicable contract or CDRL for the Requirements Traceability Verification Matrix.",
+  "verificationIntent": "inspection",
+  "kind": "content",
+  "binding": true,
+  "fields": [
+   "designReference"
+  ],
+  "status": "sample",
+  "notes": "Operative DID data-product provision; binding is conditional on actual contractual invocation, profile applicability, and preserved source conditions. Lists are grouped as coherent required information sets, not multiplied by product or test type. Composite quotation: separate exact source spans are separated by blank lines; intervening material may be omitted. No claim of consecutive full-page prose is made. Span PDF pages: 1,3. Every span matches the freshly opened text PDF after layout-whitespace normalization.",
+  "wordingSHA256": "c5e260f5221a713a6bb5df91cbb7b22a930826c3019e03a2b26494afc2dec821"
+ },
+ {
+  "id": "DZR-F8-0039",
+  "alias": "DI-MGMT-82133A §3; 3.2.17; PDF 1,3",
+  "source": {
+   "docId": "DI-MGMT-82133A",
+   "edition": "A, 29 July 2025",
+   "paragraph": "3; 3.2.17; PDF 1,3",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5796351",
+   "passage": "The RTVM package shall contain the following:\n\n3.2.17. Requirement Allocation: Enter the specific system, subsystem, hardware item, component, Computer Software Configuration Item, Computer Software Component and Computer Software Unit that each requirement has been allocated.",
+   "passageSHA256": "4b44198cd1bcab65b4373fc942f587379c11441e8f70944f40cbc76f9332e0a8"
+  },
+  "wording": "The RTVM database shall record the specific system, subsystem, hardware item, component, Computer Software Configuration Item, Computer Software Component, and Computer Software Unit allocation for each requirement.",
+  "actor": "The RTVM database",
+  "condition": "When DI-MGMT-82133A is invoked by the applicable contract or CDRL for the Requirements Traceability Verification Matrix.",
+  "verificationIntent": "inspection",
+  "kind": "content",
+  "binding": true,
+  "fields": [
+   "requirementAllocations"
+  ],
+  "status": "sample",
+  "notes": "Operative DID data-product provision; binding is conditional on actual contractual invocation, profile applicability, and preserved source conditions. Lists are grouped as coherent required information sets, not multiplied by product or test type. Composite quotation: separate exact source spans are separated by blank lines; intervening material may be omitted. No claim of consecutive full-page prose is made. Span PDF pages: 1,3. Every span matches the freshly opened text PDF after layout-whitespace normalization. This record captures allocation data. The separate system-level requirements shall be allocated to all Configuration Items sentence is an engineering-allocation duty and is not converted into an additional F8 execution obligation.",
+  "wordingSHA256": "9a65ee52ae9e83be11eedcbebe06cc59f3441b28773d5596cef5949f9c4cb6b8"
+ },
+ {
+  "id": "DZR-F8-0040",
+  "alias": "DI-MGMT-82133A §3; 3.2.18; PDF 1,3",
+  "source": {
+   "docId": "DI-MGMT-82133A",
+   "edition": "A, 29 July 2025",
+   "paragraph": "3; 3.2.18; PDF 1,3",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5796351",
+   "passage": "The RTVM package shall contain the following:\n\n3.2.18. Form of End Product: Enter the form and maturity level of the end product used for verification.",
+   "passageSHA256": "f526612c41eaa3336272952539d8debb7bf6ac433a8b234bd3a2c9b6dc1c81e0"
+  },
+  "wording": "The RTVM database shall record the form and maturity level of the end product used for verification.",
+  "actor": "The RTVM database",
+  "condition": "When DI-MGMT-82133A is invoked by the applicable contract or CDRL for the Requirements Traceability Verification Matrix.",
+  "verificationIntent": "inspection",
+  "kind": "content",
+  "binding": true,
+  "fields": [
+   "verificationEndProductForm",
+   "verificationEndProductMaturity"
+  ],
+  "status": "sample",
+  "notes": "Operative DID data-product provision; binding is conditional on actual contractual invocation, profile applicability, and preserved source conditions. Lists are grouped as coherent required information sets, not multiplied by product or test type. Composite quotation: separate exact source spans are separated by blank lines; intervening material may be omitted. No claim of consecutive full-page prose is made. Span PDF pages: 1,3. Every span matches the freshly opened text PDF after layout-whitespace normalization. The source examples are not a closed enum and are not added as fictional rows.",
+  "wordingSHA256": "67171cec3454765ea47afa681f7325684517ed74e77a8a47f60e0715e81f41d1"
+ },
+ {
+  "id": "DZR-F8-0041",
+  "alias": "DI-MGMT-82133A §3; 3.2.19; 3.2.19.1; 3.2.19.2; 3.2.19.3; 3.2.19.4; PDF 1,3",
+  "source": {
+   "docId": "DI-MGMT-82133A",
+   "edition": "A, 29 July 2025",
+   "paragraph": "3; 3.2.19; 3.2.19.1; 3.2.19.2; 3.2.19.3; 3.2.19.4; PDF 1,3",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5796351",
+   "passage": "The RTVM package shall contain the following:\n\n3.2.19. Verification Method: For each requirement, enter the verification method as follows:\n\n3.2.19.1. “Analysis” – An element of verification that uses established technical or mathematical models or simulations, algorithms, charts, graphs, circuit diagrams, or other scientific principles and procedures to provide evidence that stated requirements were met. [Source: MIL-STD-961E with Change 2]\n\n3.2.19.2. “Demonstration” – An element of verification that involves the actual operation of an item to provide evidence that the required functions were accomplished under specific scenarios. The items may be instrumented and performance monitored. [Source: MIL-STD-961E with Change 2]\n\n3.2.19.3. “Inspection” – An element of verification that is generally nondestructive and typically includes the use of sight, hearing, smell, touch, and taste; simple physical manipulation; and mechanical and electrical gauging and measurement. [Source: MIL-STD-961E with Change 2]\n\n3.2.19.4. “Test” – An element of verification in which scientific principles and procedures are applied to determine the properties or functional capabilities of items. [Source: MIL-STD-961E with Change 2]",
+   "passageSHA256": "f46fa8df9bf2217bb2c1a6e2af71a10765c8a181df78a2cf46cc5757949cc78b"
+  },
+  "wording": "The RTVM database shall record each requirement verification method as Analysis, Demonstration, Inspection, or Test using the source-provided meanings.",
+  "actor": "The RTVM database",
+  "condition": "When DI-MGMT-82133A is invoked by the applicable contract or CDRL for the Requirements Traceability Verification Matrix.",
+  "verificationIntent": "inspection",
+  "kind": "content",
+  "binding": true,
+  "fields": [
+   "verificationMethod"
+  ],
+  "status": "sample",
+  "notes": "Operative DID data-product provision; binding is conditional on actual contractual invocation, profile applicability, and preserved source conditions. Lists are grouped as coherent required information sets, not multiplied by product or test type. Composite quotation: separate exact source spans are separated by blank lines; intervening material may be omitted. No claim of consecutive full-page prose is made. Span PDF pages: 1,3,3,3,3,3. Every span matches the freshly opened text PDF after layout-whitespace normalization. One verification-method field requirement, not four records or an order to perform all four methods. The DID literally cites MIL-STD-961E with Change 2 in the definitions; the citation is preserved without substituting a newer standard.",
+  "wordingSHA256": "b9ee4cb2e0c276c6024dc47a85020a3c7ea35c2456c34b87669608f53aac5bd9"
+ },
+ {
+  "id": "DZR-F8-0042",
+  "alias": "DI-MGMT-82133A §3; 3.2.20; PDF 1,3",
+  "source": {
+   "docId": "DI-MGMT-82133A",
+   "edition": "A, 29 July 2025",
+   "paragraph": "3; 3.2.20; PDF 1,3",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5796351",
+   "passage": "The RTVM package shall contain the following:\n\n3.2.20. Verification Document: Enter the document number, title, and date of the verification document that contains the verification method.",
+   "passageSHA256": "aa2c30a6ffdfab1d55dc6a57dbd72be67293568d8e0e549f38447c1b4333c93e"
+  },
+  "wording": "The RTVM database shall record the number, title, and date of the verification document containing the verification method.",
+  "actor": "The RTVM database",
+  "condition": "When DI-MGMT-82133A is invoked by the applicable contract or CDRL for the Requirements Traceability Verification Matrix.",
+  "verificationIntent": "inspection",
+  "kind": "identifier",
+  "binding": true,
+  "fields": [
+   "verificationDocumentNumber",
+   "verificationDocumentTitle",
+   "verificationDocumentDate"
+  ],
+  "status": "sample",
+  "notes": "Operative DID data-product provision; binding is conditional on actual contractual invocation, profile applicability, and preserved source conditions. Lists are grouped as coherent required information sets, not multiplied by product or test type. Composite quotation: separate exact source spans are separated by blank lines; intervening material may be omitted. No claim of consecutive full-page prose is made. Span PDF pages: 1,3. Every span matches the freshly opened text PDF after layout-whitespace normalization.",
+  "wordingSHA256": "2845bf55828ab4516a86f205910c709cc58297f06659278ed577894bb516b83c"
+ },
+ {
+  "id": "DZR-F8-0043",
+  "alias": "DI-MGMT-82133A §3; 3.2.21; PDF 1,4",
+  "source": {
+   "docId": "DI-MGMT-82133A",
+   "edition": "A, 29 July 2025",
+   "paragraph": "3; 3.2.21; PDF 1,4",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5796351",
+   "passage": "The RTVM package shall contain the following:\n\n3.2.21. Verification Document Paragraph: Enter the verification document paragraph number that provides the verification method.",
+   "passageSHA256": "e586e2fec6f4fa444ce6f23bbf240521b89e918b70ed8e23bf913532ada74f98"
+  },
+  "wording": "The RTVM database shall record the verification-document paragraph number providing the verification method.",
+  "actor": "The RTVM database",
+  "condition": "When DI-MGMT-82133A is invoked by the applicable contract or CDRL for the Requirements Traceability Verification Matrix.",
+  "verificationIntent": "inspection",
+  "kind": "identifier",
+  "binding": true,
+  "fields": [
+   "verificationDocumentParagraph"
+  ],
+  "status": "sample",
+  "notes": "Operative DID data-product provision; binding is conditional on actual contractual invocation, profile applicability, and preserved source conditions. Lists are grouped as coherent required information sets, not multiplied by product or test type. Composite quotation: separate exact source spans are separated by blank lines; intervening material may be omitted. No claim of consecutive full-page prose is made. Span PDF pages: 1,4. Every span matches the freshly opened text PDF after layout-whitespace normalization.",
+  "wordingSHA256": "6683ce17900d5d49dc3b19fa2edd34f9f5d7562fd9367eb4efb9c58906e25a5a"
+ },
+ {
+  "id": "DZR-F8-0044",
+  "alias": "DI-MGMT-82133A §3; 3.2.22; PDF 1,4",
+  "source": {
+   "docId": "DI-MGMT-82133A",
+   "edition": "A, 29 July 2025",
+   "paragraph": "3; 3.2.22; PDF 1,4",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5796351",
+   "passage": "The RTVM package shall contain the following:\n\n3.2.22. Verification Procedure: Enter the verification procedure section, and verification procedure step(s) that provides the verification method for each requirement.",
+   "passageSHA256": "56d9200acf34bc84db7011923724ba7d9c95ea421e94e6f85dd9a43241e29889"
+  },
+  "wording": "The RTVM database shall record the verification-procedure section and steps providing the verification method for each requirement.",
+  "actor": "The RTVM database",
+  "condition": "When DI-MGMT-82133A is invoked by the applicable contract or CDRL for the Requirements Traceability Verification Matrix.",
+  "verificationIntent": "inspection",
+  "kind": "content",
+  "binding": true,
+  "fields": [
+   "verificationProcedureSection",
+   "verificationProcedureSteps"
+  ],
+  "status": "sample",
+  "notes": "Operative DID data-product provision; binding is conditional on actual contractual invocation, profile applicability, and preserved source conditions. Lists are grouped as coherent required information sets, not multiplied by product or test type. Composite quotation: separate exact source spans are separated by blank lines; intervening material may be omitted. No claim of consecutive full-page prose is made. Span PDF pages: 1,4. Every span matches the freshly opened text PDF after layout-whitespace normalization.",
+  "wordingSHA256": "25051f4c0b8b3ca73775f7765a705533fc80738e423da466c88519a50654a768"
+ },
+ {
+  "id": "DZR-F8-0045",
+  "alias": "DI-MGMT-82133A §3; 3.2.23; PDF 1,4",
+  "source": {
+   "docId": "DI-MGMT-82133A",
+   "edition": "A, 29 July 2025",
+   "paragraph": "3; 3.2.23; PDF 1,4",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5796351",
+   "passage": "The RTVM package shall contain the following:\n\n3.2.23. Other Tests: Enter the names of other tests conducted prior to verification of the requirement.",
+   "passageSHA256": "2f4e228eb57b770cd5fb09b7cc2839a64ba3391f5a0ae433644f2699738288df"
+  },
+  "wording": "The RTVM database shall record the names of other tests conducted before requirement verification.",
+  "actor": "The RTVM database",
+  "condition": "When DI-MGMT-82133A is invoked by the applicable contract or CDRL for the Requirements Traceability Verification Matrix; for other tests conducted prior to verification of the requirement.",
+  "verificationIntent": "inspection",
+  "kind": "content",
+  "binding": true,
+  "fields": [
+   "otherTests"
+  ],
+  "status": "sample",
+  "notes": "Operative DID data-product provision; binding is conditional on actual contractual invocation, profile applicability, and preserved source conditions. Lists are grouped as coherent required information sets, not multiplied by product or test type. Composite quotation: separate exact source spans are separated by blank lines; intervening material may be omitted. No claim of consecutive full-page prose is made. Span PDF pages: 1,4. Every span matches the freshly opened text PDF after layout-whitespace normalization.",
+  "wordingSHA256": "b0ff12751a1300dd9aa1a2397062cd67445fda2ffa242386d0cd3c849a15ba24"
+ },
+ {
+  "id": "DZR-F8-0046",
+  "alias": "DI-MGMT-82133A §3; 3.2.24; PDF 1,4",
+  "source": {
+   "docId": "DI-MGMT-82133A",
+   "edition": "A, 29 July 2025",
+   "paragraph": "3; 3.2.24; PDF 1,4",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5796351",
+   "passage": "The RTVM package shall contain the following:\n\n3.2.24. Verification Results: Enter the results of the verification for each requirement. Did system under test conform to the requirement? (Yes, No).",
+   "passageSHA256": "49fa86c19bb39c01b8b06178ce10b61451f66b2a006b06a8011c1b240cc0bf59"
+  },
+  "wording": "The RTVM database shall record verification results for each requirement, including Yes or No for whether the system under test conformed to the requirement.",
+  "actor": "The RTVM database",
+  "condition": "When DI-MGMT-82133A is invoked by the applicable contract or CDRL for the Requirements Traceability Verification Matrix.",
+  "verificationIntent": "inspection",
+  "kind": "content",
+  "binding": true,
+  "fields": [
+   "verificationResults",
+   "conformityResult"
+  ],
+  "status": "sample",
+  "notes": "Operative DID data-product provision; binding is conditional on actual contractual invocation, profile applicability, and preserved source conditions. Lists are grouped as coherent required information sets, not multiplied by product or test type. Composite quotation: separate exact source spans are separated by blank lines; intervening material may be omitted. No claim of consecutive full-page prose is made. Span PDF pages: 1,4. Every span matches the freshly opened text PDF after layout-whitespace normalization. The source Yes/No conformity field is distinct from OEM compliance and requirement approval/revision status. No additional unknown or not-tested source enum is invented.",
+  "wordingSHA256": "2d2cfdb8c88ea9d03be1cb41c04d45b70690caafa8259fd17df716daaaa6aeca"
+ },
+ {
+  "id": "DZR-F8-0047",
+  "alias": "DI-MGMT-82133A §3; 3.2.25; PDF 1,4",
+  "source": {
+   "docId": "DI-MGMT-82133A",
+   "edition": "A, 29 July 2025",
+   "paragraph": "3; 3.2.25; PDF 1,4",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5796351",
+   "passage": "The RTVM package shall contain the following:\n\n3.2.25. Corrective Actions: Enter all corrective actions taken and the results of the corrective actions.",
+   "passageSHA256": "85295c7c136337d559b20ec6ff9a5b5fd17972437bbf62f81e9260818df1335b"
+  },
+  "wording": "The RTVM database shall record all corrective actions taken and the results of the corrective actions.",
+  "actor": "The RTVM database",
+  "condition": "When DI-MGMT-82133A is invoked by the applicable contract or CDRL for the Requirements Traceability Verification Matrix; for corrective actions taken.",
+  "verificationIntent": "inspection",
+  "kind": "content",
+  "binding": true,
+  "fields": [
+   "correctiveActions",
+   "correctiveActionResults"
+  ],
+  "status": "sample",
+  "notes": "Operative DID data-product provision; binding is conditional on actual contractual invocation, profile applicability, and preserved source conditions. Lists are grouped as coherent required information sets, not multiplied by product or test type. Composite quotation: separate exact source spans are separated by blank lines; intervening material may be omitted. No claim of consecutive full-page prose is made. Span PDF pages: 1,4. Every span matches the freshly opened text PDF after layout-whitespace normalization.",
+  "wordingSHA256": "fa8a9254ad0dcbafd5cf82d0a3a9f8fbecbda0970cfe8fa962594ced61657d7b"
+ },
+ {
+  "id": "DZR-F8-0048",
+  "alias": "DI-MGMT-82133A §3; 3.2.26; PDF 1,4",
+  "source": {
+   "docId": "DI-MGMT-82133A",
+   "edition": "A, 29 July 2025",
+   "paragraph": "3; 3.2.26; PDF 1,4",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5796351",
+   "passage": "The RTVM package shall contain the following:\n\n3.2.26. Comments: Enter explanatory notes as required.",
+   "passageSHA256": "b7c7985f0d04295d5d639b6c67fc439f19e2d2e80ce540241e732f6816082719"
+  },
+  "wording": "The RTVM database shall contain explanatory comments as required.",
+  "actor": "The RTVM database",
+  "condition": "When DI-MGMT-82133A is invoked by the applicable contract or CDRL for the Requirements Traceability Verification Matrix; as required.",
+  "verificationIntent": "inspection",
+  "kind": "content",
+  "binding": true,
+  "fields": [
+   "comments"
+  ],
+  "status": "sample",
+  "notes": "Operative DID data-product provision; binding is conditional on actual contractual invocation, profile applicability, and preserved source conditions. Lists are grouped as coherent required information sets, not multiplied by product or test type. Composite quotation: separate exact source spans are separated by blank lines; intervening material may be omitted. No claim of consecutive full-page prose is made. Span PDF pages: 1,4. Every span matches the freshly opened text PDF after layout-whitespace normalization.",
+  "wordingSHA256": "938d237cf27fce36480b5eb81a5d4f0a5c3b9da42cdaff4ed1949eb9befebfb6"
+ },
+ {
+  "id": "DZR-F8-0049",
+  "alias": "DI-IPSC-81440A §3; PDF 1",
+  "source": {
+   "docId": "DI-IPSC-81440A",
+   "edition": "A, 15 December 1999; validated by Notice 3, 29 July 2026",
+   "paragraph": "3; PDF 1",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=195405",
+   "passage": "The report shall be in contractor format unless otherwise specified on the Contract Data Requirements List (CDRL)(DD 1423).",
+   "passageSHA256": "ff84ea309c123ff7e5852ec5470af6b3d6a2f52ca1ed81a908b710df6c78bc73"
+  },
+  "wording": "The Software Test Report shall use contractor format unless the CDRL specifies another format.",
+  "actor": "The Software Test Report",
+  "condition": "When DI-IPSC-81440A is invoked by the applicable contract or CDRL for reporting CSCI qualification testing, software-system qualification testing, or other contract-identified software-related testing; unless otherwise specified on the CDRL.",
+  "verificationIntent": "inspection",
+  "kind": "structure",
+  "binding": true,
+  "fields": [
+   "reportFormat"
+  ],
+  "status": "sample",
+  "notes": "Operative DID data-product provision; binding is conditional on actual contractual invocation, profile applicability, and preserved source conditions. Lists are grouped as coherent required information sets, not multiplied by product or test type. One consecutive source span; layout whitespace normalized. The current revision PDF is image-only. Passage transcribed directly from the inspected rendered page; no older-edition indexed text was used. No automated PDF-text matching is claimed. The following CDRL should sentence recommends media/encoding specification; it is not promoted to a mandatory native file extension or encoding.",
+  "wordingSHA256": "4218987be71c6c42ad9aba7221f7293c12b83533cad0b675e40fbf9b1c9fe534"
+ },
+ {
+  "id": "DZR-F8-0050",
+  "alias": "DI-IPSC-81440A §4.a; PDF 2",
+  "source": {
+   "docId": "DI-IPSC-81440A",
+   "edition": "A, 15 December 1999; validated by Notice 3, 29 July 2026",
+   "paragraph": "4.a; PDF 2",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=195405",
+   "passage": "a. Title page or identifier. The document shall include a title page containing, as applicable: document number; volume number; version/revision indicator; security markings or other restrictions on the handling of the document; date; document title; name, abbreviation, and any other identifier for the system, subsystem, or item to which the document applies; contract number; CDRL item number; organization for which the document has been prepared; name and address of the preparing organization; and distribution statement. For data in a database or other alternative form, this information shall be included on external and internal labels or by equivalent identification methods.",
+   "passageSHA256": "1012099e9d90144f1a684a1c757f30656cba922e9aeb4fe3cb0133df6172c424"
+  },
+  "wording": "The Software Test Report shall provide the applicable document, item, contract, CDRL, organization, date, revision, security/handling, and distribution identification metadata on a title page or, for alternative-form data, on external and internal labels or equivalent identification.",
+  "actor": "The Software Test Report",
+  "condition": "When DI-IPSC-81440A is invoked by the applicable contract or CDRL for reporting CSCI qualification testing, software-system qualification testing, or other contract-identified software-related testing; identification items apply as applicable; database or other alternative-form data uses external and internal labels or equivalent identification methods.",
+  "verificationIntent": "inspection",
+  "kind": "identifier",
+  "binding": true,
+  "fields": [
+   "documentIdentity",
+   "itemIdentity",
+   "contractNumber",
+   "cdrlItemNumber",
+   "organizationIdentity",
+   "documentDate",
+   "revision",
+   "securityMarkings",
+   "handlingRestrictions",
+   "distributionStatement"
+  ],
+  "status": "sample",
+  "notes": "Operative DID data-product provision; binding is conditional on actual contractual invocation, profile applicability, and preserved source conditions. Lists are grouped as coherent required information sets, not multiplied by product or test type. One consecutive source span; layout whitespace normalized. The current revision PDF is image-only. Passage transcribed directly from the inspected rendered page; no older-edition indexed text was used. No automated PDF-text matching is claimed. One identification information set with its source-supported alternative presentation, not duplicated per medium.",
+  "wordingSHA256": "278294aec5d5569e320e9ed93d7fdf59899d396344ae40d15f9241b87ef58cf6"
+ },
+ {
+  "id": "DZR-F8-0051",
+  "alias": "DI-IPSC-81440A §4.b; PDF 2",
+  "source": {
+   "docId": "DI-IPSC-81440A",
+   "edition": "A, 15 December 1999; validated by Notice 3, 29 July 2026",
+   "paragraph": "4.b; PDF 2",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=195405",
+   "passage": "b. Table of contents. The document shall contain a table of contents providing the number, title, and page number of each titled paragraph, figure, table, and appendix. For data in a database or other alternative form, this information shall consist of an internal or external table of contents containing pointers to, or instructions for accessing, each paragraph, figure, table, and appendix or their equivalents.",
+   "passageSHA256": "0742a3f92a82bcea071133a74dcfbba7d689bb00fbdf234de08a6082ef5dc06f"
+  },
+  "wording": "The Software Test Report shall provide a table of contents identifying each titled paragraph, figure, table, and appendix by number, title, and page number, or by access pointers/instructions in an internal or external contents table for alternative-form data.",
+  "actor": "The Software Test Report",
+  "condition": "When DI-IPSC-81440A is invoked by the applicable contract or CDRL for reporting CSCI qualification testing, software-system qualification testing, or other contract-identified software-related testing; for database or other alternative-form data, the internal or external contents table uses pointers or access instructions to content or equivalents.",
+  "verificationIntent": "inspection",
+  "kind": "structure",
+  "binding": true,
+  "fields": [
+   "tableOfContents"
+  ],
+  "status": "sample",
+  "notes": "Operative DID data-product provision; binding is conditional on actual contractual invocation, profile applicability, and preserved source conditions. Lists are grouped as coherent required information sets, not multiplied by product or test type. One consecutive source span; layout whitespace normalized. The current revision PDF is image-only. Passage transcribed directly from the inspected rendered page; no older-edition indexed text was used. No automated PDF-text matching is claimed.",
+  "wordingSHA256": "f5dc4233098c64112d472a1f99a63f1891b2f719037f3cfb876a2d550cc56f00"
+ },
+ {
+  "id": "DZR-F8-0052",
+  "alias": "DI-IPSC-81440A §4.c; PDF 2",
+  "source": {
+   "docId": "DI-IPSC-81440A",
+   "edition": "A, 15 December 1999; validated by Notice 3, 29 July 2026",
+   "paragraph": "4.c; PDF 2",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=195405",
+   "passage": "c. Page numbering/labeling. Each page shall contain a unique page number and display the document number, including version, volume, and date, as applicable. For data in a database or other alternative form, files, screens, or other entities shall be assigned names or numbers in such a way that desired data can be indexed and accessed.",
+   "passageSHA256": "38e67d439e36765d5d7b4fcf51372a3fa75fb73150722d19043695783a59e2f0"
+  },
+  "wording": "Software Test Report pages shall carry unique page numbers and applicable document number, version, volume, and date, with indexable and accessible entity names or numbers used for database or other alternative-form data.",
+  "actor": "Software Test Report pages",
+  "condition": "When DI-IPSC-81440A is invoked by the applicable contract or CDRL for reporting CSCI qualification testing, software-system qualification testing, or other contract-identified software-related testing; version, volume, and date apply as applicable; database or other alternative-form data uses named or numbered files, screens, or other entities.",
+  "verificationIntent": "inspection",
+  "kind": "identifier",
+  "binding": true,
+  "fields": [
+   "pageIdentification",
+   "alternativeEntityIdentification"
+  ],
+  "status": "sample",
+  "notes": "Operative DID data-product provision; binding is conditional on actual contractual invocation, profile applicability, and preserved source conditions. Lists are grouped as coherent required information sets, not multiplied by product or test type. One consecutive source span; layout whitespace normalized. The current revision PDF is image-only. Passage transcribed directly from the inspected rendered page; no older-edition indexed text was used. No automated PDF-text matching is claimed.",
+  "wordingSHA256": "b42c872118dbf1c713695feb89a3b772148c97ba40c10a0c32b9c211aef52344"
+ },
+ {
+  "id": "DZR-F8-0053",
+  "alias": "DI-IPSC-81440A §4.d; PDF 2",
+  "source": {
+   "docId": "DI-IPSC-81440A",
+   "edition": "A, 15 December 1999; validated by Notice 3, 29 July 2026",
+   "paragraph": "4.d; PDF 2",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=195405",
+   "passage": "d. Response to tailoring instructions. If a paragraph is tailored out of this DID, the resulting document shall contain the corresponding paragraph number and title, followed by “This paragraph has been tailored out.” For data in a database or other alternative form, this representation need occur only in the table of contents or equivalent.",
+   "passageSHA256": "9a6d3ae932abfc3555634cf6de4e09357d6f67b9ac7e2b67bdb46a7e7c25a1a3"
+  },
+  "wording": "The Software Test Report shall identify each tailored-out paragraph by number and title followed by the exact tailored-out statement specified in section 4.d.",
+  "actor": "The Software Test Report",
+  "condition": "When DI-IPSC-81440A is invoked by the applicable contract or CDRL for reporting CSCI qualification testing, software-system qualification testing, or other contract-identified software-related testing; if a DID paragraph is tailored out; for database or other alternative-form data, the representation need occur only in the table of contents or equivalent.",
+  "verificationIntent": "inspection",
+  "kind": "structure",
+  "binding": true,
+  "fields": [
+   "tailoredOutParagraphs"
+  ],
+  "status": "sample",
+  "notes": "Operative DID data-product provision; binding is conditional on actual contractual invocation, profile applicability, and preserved source conditions. Lists are grouped as coherent required information sets, not multiplied by product or test type. One consecutive source span; layout whitespace normalized. The current revision PDF is image-only. Passage transcribed directly from the inspected rendered page; no older-edition indexed text was used. No automated PDF-text matching is claimed. The required literal notice remains exact in the source passage; normalized wording refers explicitly to section 4.d to avoid a pronoun in the normalized requirement.",
+  "wordingSHA256": "6f5312210b27929d30d4437fff7b2ab592eb322364c8a841f8f0359d897d6f2a"
+ },
+ {
+  "id": "DZR-F8-0054",
+  "alias": "DI-IPSC-81440A §4, content 1; 1.1–1.3 headings; PDF 2,3",
+  "source": {
+   "docId": "DI-IPSC-81440A",
+   "edition": "A, 15 December 1999; validated by Notice 3, 29 July 2026",
+   "paragraph": "4, content 1; 1.1–1.3 headings; PDF 2,3",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=195405",
+   "passage": "1. Scope. This section shall be divided into the following paragraphs.\n\n1.1 Identification.\n\n1.2 System overview.\n\n1.3 Document overview.",
+   "passageSHA256": "56e5f48338dc5d5e2c2507a956591aed2266f9ec015ff63d3ec1bf5b4225e7e8"
+  },
+  "wording": "The Software Test Report Scope section shall contain the Identification, System overview, and Document overview paragraphs.",
+  "actor": "The Software Test Report Scope section",
+  "condition": "When DI-IPSC-81440A is invoked by the applicable contract or CDRL for reporting CSCI qualification testing, software-system qualification testing, or other contract-identified software-related testing.",
+  "verificationIntent": "inspection",
+  "kind": "structure",
+  "binding": true,
+  "fields": [
+   "scopeStructure"
+  ],
+  "status": "sample",
+  "notes": "Operative DID data-product provision; binding is conditional on actual contractual invocation, profile applicability, and preserved source conditions. Lists are grouped as coherent required information sets, not multiplied by product or test type. The current revision PDF is image-only. Passage transcribed directly from the inspected rendered page; no older-edition indexed text was used. No automated PDF-text matching is claimed. Child paragraph names are confirmed by content 1.1–1.3 on PDF page 3; the quote is combined with those headings below. Composite quotation: section-1 parent is on PDF2 and the separate three exact headings are on PDF3; intervening body text is omitted.",
+  "wordingSHA256": "970740d96ff55e5dbd44156e6961fe28e623f859e301f2ed9eb25d5b32eec063"
+ },
+ {
+  "id": "DZR-F8-0055",
+  "alias": "DI-IPSC-81440A §4, content 1.1; PDF 3",
+  "source": {
+   "docId": "DI-IPSC-81440A",
+   "edition": "A, 15 December 1999; validated by Notice 3, 29 July 2026",
+   "paragraph": "4, content 1.1; PDF 3",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=195405",
+   "passage": "1.1 Identification. This paragraph shall contain a full identification of the system and the software to which this document applies, including, as applicable, identification number(s), title(s), abbreviation(s), version number(s), and release number(s).",
+   "passageSHA256": "02300eac8e413b1e6d550c679eecc5867a5b2c2884539fe8c608074062bcac05"
+  },
+  "wording": "The Software Test Report Identification paragraph shall fully identify the applicable system and software, including applicable identification numbers, titles, abbreviations, version numbers, and release numbers.",
+  "actor": "The Software Test Report Identification paragraph",
+  "condition": "When DI-IPSC-81440A is invoked by the applicable contract or CDRL for reporting CSCI qualification testing, software-system qualification testing, or other contract-identified software-related testing; listed identification details apply as applicable.",
+  "verificationIntent": "inspection",
+  "kind": "identifier",
+  "binding": true,
+  "fields": [
+   "systemSoftwareIdentification"
+  ],
+  "status": "sample",
+  "notes": "Operative DID data-product provision; binding is conditional on actual contractual invocation, profile applicability, and preserved source conditions. Lists are grouped as coherent required information sets, not multiplied by product or test type. One consecutive source span; layout whitespace normalized. The current revision PDF is image-only. Passage transcribed directly from the inspected rendered page; no older-edition indexed text was used. No automated PDF-text matching is claimed.",
+  "wordingSHA256": "39f7d7268f42e8f124c4a336cb545712495de313a15aacb9105447c8a59669be"
+ },
+ {
+  "id": "DZR-F8-0056",
+  "alias": "DI-IPSC-81440A §4, content 1.2; PDF 3",
+  "source": {
+   "docId": "DI-IPSC-81440A",
+   "edition": "A, 15 December 1999; validated by Notice 3, 29 July 2026",
+   "paragraph": "4, content 1.2; PDF 3",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=195405",
+   "passage": "1.2 System overview. This paragraph shall briefly state the purpose of the system and the software to which this document applies. It shall describe the general nature of the system and software; summarize the history of system development, operation, and maintenance; identify the project sponsor, acquirer, user, developer, and support agencies; identify current and planned operating sites; and list other relevant documents.",
+   "passageSHA256": "0d9741efbe3658c70335ed710b8aadc4d5f1340d07ddb31af9a6e203f296dd86"
+  },
+  "wording": "The Software Test Report System overview paragraph shall describe system/software purpose and nature, development/operation/maintenance history, sponsor/acquirer/user/developer/support agencies, current and planned operating sites, and relevant documents.",
+  "actor": "The Software Test Report System overview paragraph",
+  "condition": "When DI-IPSC-81440A is invoked by the applicable contract or CDRL for reporting CSCI qualification testing, software-system qualification testing, or other contract-identified software-related testing.",
+  "verificationIntent": "inspection",
+  "kind": "content",
+  "binding": true,
+  "fields": [
+   "systemSoftwareOverview"
+  ],
+  "status": "sample",
+  "notes": "Operative DID data-product provision; binding is conditional on actual contractual invocation, profile applicability, and preserved source conditions. Lists are grouped as coherent required information sets, not multiplied by product or test type. One consecutive source span; layout whitespace normalized. The current revision PDF is image-only. Passage transcribed directly from the inspected rendered page; no older-edition indexed text was used. No automated PDF-text matching is claimed. One coherent system/software context information set. No named program, organization, site, or contractor value is fabricated.",
+  "wordingSHA256": "f4fd47cdde315937811a21049db6f49e032c97694084669fc780a58b3ed7221a"
+ },
+ {
+  "id": "DZR-F8-0057",
+  "alias": "DI-IPSC-81440A §4, content 1.3; PDF 3",
+  "source": {
+   "docId": "DI-IPSC-81440A",
+   "edition": "A, 15 December 1999; validated by Notice 3, 29 July 2026",
+   "paragraph": "4, content 1.3; PDF 3",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=195405",
+   "passage": "1.3 Document overview. This paragraph shall summarize the purpose and contents of this document and shall describe any security or privacy considerations associated with its use.",
+   "passageSHA256": "c8474058bf0c754c0a228f7d488daf0c1e56e2aaed7c59ee8f6fa97a74176fab"
+  },
+  "wording": "The Software Test Report Document overview paragraph shall summarize report purpose and contents and describe associated security or privacy considerations.",
+  "actor": "The Software Test Report Document overview paragraph",
+  "condition": "When DI-IPSC-81440A is invoked by the applicable contract or CDRL for reporting CSCI qualification testing, software-system qualification testing, or other contract-identified software-related testing.",
+  "verificationIntent": "inspection",
+  "kind": "content",
+  "binding": true,
+  "fields": [
+   "documentOverview",
+   "securityPrivacyConsiderations"
+  ],
+  "status": "sample",
+  "notes": "Operative DID data-product provision; binding is conditional on actual contractual invocation, profile applicability, and preserved source conditions. Lists are grouped as coherent required information sets, not multiplied by product or test type. One consecutive source span; layout whitespace normalized. The current revision PDF is image-only. Passage transcribed directly from the inspected rendered page; no older-edition indexed text was used. No automated PDF-text matching is claimed.",
+  "wordingSHA256": "115a566521801db394827f919aa42d9b864c280e4053d963646915d5987f0742"
+ },
+ {
+  "id": "DZR-F8-0058",
+  "alias": "DI-IPSC-81440A §4, content 2; PDF 3",
+  "source": {
+   "docId": "DI-IPSC-81440A",
+   "edition": "A, 15 December 1999; validated by Notice 3, 29 July 2026",
+   "paragraph": "4, content 2; PDF 3",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=195405",
+   "passage": "2. Referenced documents. This section shall list the number, title, revision, and date of all documents referenced in this document. This section shall also identify the source for all documents not available through normal Government stocking activities.",
+   "passageSHA256": "0145cdc8993231ee93327b81f8b43fdd347a62a389886a0a780e9e3bb2d454f4"
+  },
+  "wording": "The Software Test Report Referenced documents section shall list the number, title, revision, and date of every referenced document and identify the source of any document unavailable through normal Government stocking activities.",
+  "actor": "The Software Test Report Referenced documents section",
+  "condition": "When DI-IPSC-81440A is invoked by the applicable contract or CDRL for reporting CSCI qualification testing, software-system qualification testing, or other contract-identified software-related testing; source identification is additionally required for documents not available through normal Government stocking activities.",
+  "verificationIntent": "inspection",
+  "kind": "identifier",
+  "binding": true,
+  "fields": [
+   "referencedDocuments"
+  ],
+  "status": "sample",
+  "notes": "Operative DID data-product provision; binding is conditional on actual contractual invocation, profile applicability, and preserved source conditions. Lists are grouped as coherent required information sets, not multiplied by product or test type. One consecutive source span; layout whitespace normalized. The current revision PDF is image-only. Passage transcribed directly from the inspected rendered page; no older-edition indexed text was used. No automated PDF-text matching is claimed.",
+  "wordingSHA256": "9c9b8d7d2a2e7c2a18d868ab90f29a20b2f37d7ae3922b3d9368c0f03ba668e2"
+ },
+ {
+  "id": "DZR-F8-0059",
+  "alias": "DI-IPSC-81440A §4, content 3; 3.1–3.3 headings; PDF 3",
+  "source": {
+   "docId": "DI-IPSC-81440A",
+   "edition": "A, 15 December 1999; validated by Notice 3, 29 July 2026",
+   "paragraph": "4, content 3; 3.1–3.3 headings; PDF 3",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=195405",
+   "passage": "3. Overview of test results. This section shall be divided into the following paragraphs to provide an overview of test results.\n\n3.1 Overall assessment of the software tested.\n\n3.2 Impact of test environment.\n\n3.3 Recommended improvements.",
+   "passageSHA256": "828ad78d30e4bcda9dcf8cb8ad4259880152390be7fe37ff66a8620fff0f5b8e"
+  },
+  "wording": "The Software Test Report Overview of test results section shall contain Overall assessment of the software tested, Impact of test environment, and Recommended improvements paragraphs.",
+  "actor": "The Software Test Report Overview of test results section",
+  "condition": "When DI-IPSC-81440A is invoked by the applicable contract or CDRL for reporting CSCI qualification testing, software-system qualification testing, or other contract-identified software-related testing.",
+  "verificationIntent": "inspection",
+  "kind": "structure",
+  "binding": true,
+  "fields": [
+   "testOverviewStructure"
+  ],
+  "status": "sample",
+  "notes": "Operative DID data-product provision; binding is conditional on actual contractual invocation, profile applicability, and preserved source conditions. Lists are grouped as coherent required information sets, not multiplied by product or test type. Composite quotation: separate exact source spans are separated by blank lines; intervening material may be omitted. No claim of consecutive full-page prose is made. Span PDF pages: 3,3,3,3. The current revision PDF is image-only. Passage transcribed directly from the inspected rendered page; no older-edition indexed text was used. No automated PDF-text matching is claimed.",
+  "wordingSHA256": "14cb75167960f55e7e6907a7d612013b8f6fb5ab182727350c7b53f3206d0506"
+ },
+ {
+  "id": "DZR-F8-0060",
+  "alias": "DI-IPSC-81440A §4, content 3.1(a); PDF 3",
+  "source": {
+   "docId": "DI-IPSC-81440A",
+   "edition": "A, 15 December 1999; validated by Notice 3, 29 July 2026",
+   "paragraph": "4, content 3.1(a); PDF 3",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=195405",
+   "passage": "3.1 Overall assessment of the software tested. This paragraph shall: a. Provide an overall assessment of the software as demonstrated by the test results in this report",
+   "passageSHA256": "75ee4a430c0f6e60fbcb16a19d12f5daadf2bb036b2ff1d8f0c5a9d9742db91b"
+  },
+  "wording": "The Software Test Report Overall assessment paragraph shall assess the software as demonstrated by the reported test results.",
+  "actor": "The Software Test Report Overall assessment paragraph",
+  "condition": "When DI-IPSC-81440A is invoked by the applicable contract or CDRL for reporting CSCI qualification testing, software-system qualification testing, or other contract-identified software-related testing.",
+  "verificationIntent": "inspection",
+  "kind": "content",
+  "binding": true,
+  "fields": [
+   "overallSoftwareAssessment"
+  ],
+  "status": "sample",
+  "notes": "Operative DID data-product provision; binding is conditional on actual contractual invocation, profile applicability, and preserved source conditions. Lists are grouped as coherent required information sets, not multiplied by product or test type. One consecutive source span; layout whitespace normalized. The current revision PDF is image-only. Passage transcribed directly from the inspected rendered page; no older-edition indexed text was used. No automated PDF-text matching is claimed.",
+  "wordingSHA256": "f683ebdfbbeacea9346f9032a92c48f2f080e5bd04da81f0ff4efc93140a258d"
+ },
+ {
+  "id": "DZR-F8-0061",
+  "alias": "DI-IPSC-81440A §4, content 3.1(b); PDF 3",
+  "source": {
+   "docId": "DI-IPSC-81440A",
+   "edition": "A, 15 December 1999; validated by Notice 3, 29 July 2026",
+   "paragraph": "4, content 3.1(b); PDF 3",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=195405",
+   "passage": "3.1 Overall assessment of the software tested. This paragraph shall:\n\nb. Identify any remaining deficiencies, limitations, or constraints that were detected by the testing performed. Problem/change reports may be used to provide deficiency information.",
+   "passageSHA256": "c89ed7a1960fd6945b96b9efb301cb0db71b44678ad0f397cf52d26fc720d59f"
+  },
+  "wording": "The Software Test Report Overall assessment paragraph shall identify remaining deficiencies, limitations, or constraints detected by the performed testing.",
+  "actor": "The Software Test Report Overall assessment paragraph",
+  "condition": "When DI-IPSC-81440A is invoked by the applicable contract or CDRL for reporting CSCI qualification testing, software-system qualification testing, or other contract-identified software-related testing; for remaining deficiencies, limitations, or constraints detected by testing.",
+  "verificationIntent": "inspection",
+  "kind": "content",
+  "binding": true,
+  "fields": [
+   "remainingDeficiencies"
+  ],
+  "status": "sample",
+  "notes": "Operative DID data-product provision; binding is conditional on actual contractual invocation, profile applicability, and preserved source conditions. Lists are grouped as coherent required information sets, not multiplied by product or test type. Composite quotation: separate exact source spans are separated by blank lines; intervening material may be omitted. No claim of consecutive full-page prose is made. Span PDF pages: 3,3. The current revision PDF is image-only. Passage transcribed directly from the inspected rendered page; no older-edition indexed text was used. No automated PDF-text matching is claimed. Problem/change reports are a permitted information source, not an additional required report for every test.",
+  "wordingSHA256": "0cfe6575a55310540e181c3e97f47b715ae06a98e39cad732ccc67c6b2fbaacb"
+ },
+ {
+  "id": "DZR-F8-0062",
+  "alias": "DI-IPSC-81440A §4, content 3.1(c); PDF 3",
+  "source": {
+   "docId": "DI-IPSC-81440A",
+   "edition": "A, 15 December 1999; validated by Notice 3, 29 July 2026",
+   "paragraph": "4, content 3.1(c); PDF 3",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=195405",
+   "passage": "3.1 Overall assessment of the software tested. This paragraph shall:\n\nc. For each remaining deficiency, limitation, or constraint, describe: 1) Its impact on software and system performance, including identification of requirements not met 2) The impact on software and system design to correct it 3) A recommended solution/approach for correcting it",
+   "passageSHA256": "7c8342cd728ebb315f519c1812a36c1a355eb18d40a3601e1ce982ccece9c38f"
+  },
+  "wording": "The Software Test Report Overall assessment paragraph shall describe each remaining deficiency, limitation, or constraint through performance impact and unmet requirements, corrective design impact, and a recommended corrective solution or approach.",
+  "actor": "The Software Test Report Overall assessment paragraph",
+  "condition": "When DI-IPSC-81440A is invoked by the applicable contract or CDRL for reporting CSCI qualification testing, software-system qualification testing, or other contract-identified software-related testing; for each remaining deficiency, limitation, or constraint.",
+  "verificationIntent": "inspection",
+  "kind": "content",
+  "binding": true,
+  "fields": [
+   "deficiencyPerformanceImpact",
+   "unmetRequirements",
+   "correctiveDesignImpact",
+   "recommendedCorrection"
+  ],
+  "status": "sample",
+  "notes": "Operative DID data-product provision; binding is conditional on actual contractual invocation, profile applicability, and preserved source conditions. Lists are grouped as coherent required information sets, not multiplied by product or test type. Composite quotation: separate exact source spans are separated by blank lines; intervening material may be omitted. No claim of consecutive full-page prose is made. Span PDF pages: 3,3. The current revision PDF is image-only. Passage transcribed directly from the inspected rendered page; no older-edition indexed text was used. No automated PDF-text matching is claimed. One deficiency-description information set. The report describes a recommendation; the source does not order its implementation.",
+  "wordingSHA256": "ec64a5d3234feb012db55fea9a902783ac53cb36718a234aa4abee85da357d49"
+ },
+ {
+  "id": "DZR-F8-0063",
+  "alias": "DI-IPSC-81440A §4, content 3.2; PDF 3",
+  "source": {
+   "docId": "DI-IPSC-81440A",
+   "edition": "A, 15 December 1999; validated by Notice 3, 29 July 2026",
+   "paragraph": "4, content 3.2; PDF 3",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=195405",
+   "passage": "3.2 Impact of test environment. This paragraph shall provide an assessment of the manner in which the test environment may be different from the operational environment and the effect of this difference on the test results.",
+   "passageSHA256": "9056c758df92ed27504b5957aee5e24c56e7dc1a8d192bc926b9e13a4bc97434"
+  },
+  "wording": "The Software Test Report Impact of test environment paragraph shall assess differences between test and operational environments and the effect of the differences on test results.",
+  "actor": "The Software Test Report Impact of test environment paragraph",
+  "condition": "When DI-IPSC-81440A is invoked by the applicable contract or CDRL for reporting CSCI qualification testing, software-system qualification testing, or other contract-identified software-related testing.",
+  "verificationIntent": "inspection",
+  "kind": "content",
+  "binding": true,
+  "fields": [
+   "testEnvironmentDifferences",
+   "testResultEnvironmentImpact"
+  ],
+  "status": "sample",
+  "notes": "Operative DID data-product provision; binding is conditional on actual contractual invocation, profile applicability, and preserved source conditions. Lists are grouped as coherent required information sets, not multiplied by product or test type. One consecutive source span; layout whitespace normalized. The current revision PDF is image-only. Passage transcribed directly from the inspected rendered page; no older-edition indexed text was used. No automated PDF-text matching is claimed.",
+  "wordingSHA256": "084112fe0a73ec78485218d9ebf7790daf1fdb520a375992b93929d06ff2be6f"
+ },
+ {
+  "id": "DZR-F8-0064",
+  "alias": "DI-IPSC-81440A §4, content 3.3; PDF 3",
+  "source": {
+   "docId": "DI-IPSC-81440A",
+   "edition": "A, 15 December 1999; validated by Notice 3, 29 July 2026",
+   "paragraph": "4, content 3.3; PDF 3",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=195405",
+   "passage": "3.3 Recommended improvements. This paragraph shall provide any recommended improvements in the design, operation, or testing of software tested. A discussion of each recommendation and its impact on the software may be provided. If no recommended improvements are provided, this paragraph shall state “None.”",
+   "passageSHA256": "e2119b1054f0a30c83cc49341eb3fb36e6fce86f6ee3e5adec4960391f27cfa3"
+  },
+  "wording": "The Software Test Report Recommended improvements paragraph shall provide recommended design, operation, or testing improvements, or state “None” when no improvements are recommended.",
+  "actor": "The Software Test Report Recommended improvements paragraph",
+  "condition": "When DI-IPSC-81440A is invoked by the applicable contract or CDRL for reporting CSCI qualification testing, software-system qualification testing, or other contract-identified software-related testing; if no recommended improvements are provided, the paragraph states None.",
+  "verificationIntent": "inspection",
+  "kind": "content",
+  "binding": true,
+  "fields": [
+   "recommendedImprovements"
+  ],
+  "status": "sample",
+  "notes": "Operative DID data-product provision; binding is conditional on actual contractual invocation, profile applicability, and preserved source conditions. Lists are grouped as coherent required information sets, not multiplied by product or test type. One consecutive source span; layout whitespace normalized. The current revision PDF is image-only. Passage transcribed directly from the inspected rendered page; no older-edition indexed text was used. No automated PDF-text matching is claimed. Discussion of each recommendation and software impact is permitted, not a mandatory additional field. The literal None statement is preserved.",
+  "wordingSHA256": "79fa5c6467032a4c07dc37fbed862d41ee9201edc875a20e1c0064e123efe4ad"
+ },
+ {
+  "id": "DZR-F8-0065",
+  "alias": "DI-IPSC-81440A §4, content 4; 4.x; PDF 4",
+  "source": {
+   "docId": "DI-IPSC-81440A",
+   "edition": "A, 15 December 1999; validated by Notice 3, 29 July 2026",
+   "paragraph": "4, content 4; 4.x; PDF 4",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=195405",
+   "passage": "4. Detailed test results. This section shall be divided into the following paragraphs to describe the detailed results for each test. Note: The word “test” means a related collection of test cases. 4.x (Project-unique identifier of a test). This paragraph shall identify a test by project-unique identifier and shall be divided into the following subparagraphs to describe the test results.",
+   "passageSHA256": "b037856ddae108389184e435eb1afe5e2b754586550dc5e71cad6235c7c6d892"
+  },
+  "wording": "The Software Test Report Detailed test results section shall organize results by project-unique test identifier with the required result-summary, problem, and deviation subparagraphs.",
+  "actor": "The Software Test Report Detailed test results section",
+  "condition": "When DI-IPSC-81440A is invoked by the applicable contract or CDRL for reporting CSCI qualification testing, software-system qualification testing, or other contract-identified software-related testing; for each test, where test means a related collection of test cases.",
+  "verificationIntent": "inspection",
+  "kind": "structure",
+  "binding": true,
+  "fields": [
+   "testId",
+   "detailedTestResultsStructure"
+  ],
+  "status": "sample",
+  "notes": "Operative DID data-product provision; binding is conditional on actual contractual invocation, profile applicability, and preserved source conditions. Lists are grouped as coherent required information sets, not multiplied by product or test type. One consecutive source span; layout whitespace normalized. The current revision PDF is image-only. Passage transcribed directly from the inspected rendered page; no older-edition indexed text was used. No automated PDF-text matching is claimed. One recurring test-record structure rule, not multiplied into separate requirements per test or product.",
+  "wordingSHA256": "8f3827693a76afd9f7ee74dd8e6f2d6c0abd57ade6141df36cdc9a807e8efd5d"
+ },
+ {
+  "id": "DZR-F8-0066",
+  "alias": "DI-IPSC-81440A §4, content 4.x.1; PDF 4",
+  "source": {
+   "docId": "DI-IPSC-81440A",
+   "edition": "A, 15 December 1999; validated by Notice 3, 29 July 2026",
+   "paragraph": "4, content 4.x.1; PDF 4",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=195405",
+   "passage": "4.x.1 Summary of test results. This paragraph shall summarize the results of the test. The summary shall include, possibly in a table, the completion status of each test case associated with the test (for example, “all results as expected,” “problems encountered,” “deviations required”). When the completion status is not “as expected,” this paragraph shall reference the following paragraphs for details.",
+   "passageSHA256": "ddf5a37bca7fbd1dcceb504b5544478fb5d4aa461873d94a6a0d02719a613a2c"
+  },
+  "wording": "Each Software Test Report test-summary paragraph shall summarize test results and each associated test-case completion status, with references to detailed problem or deviation paragraphs whenever completion is not as expected.",
+  "actor": "Each Software Test Report test-summary paragraph",
+  "condition": "When DI-IPSC-81440A is invoked by the applicable contract or CDRL for reporting CSCI qualification testing, software-system qualification testing, or other contract-identified software-related testing; references to following detail paragraphs apply when completion status is not as expected.",
+  "verificationIntent": "inspection",
+  "kind": "content",
+  "binding": true,
+  "fields": [
+   "testResultsSummary",
+   "testCaseCompletionStatus",
+   "unexpectedCompletionDetailReferences"
+  ],
+  "status": "sample",
+  "notes": "Operative DID data-product provision; binding is conditional on actual contractual invocation, profile applicability, and preserved source conditions. Lists are grouped as coherent required information sets, not multiplied by product or test type. One consecutive source span; layout whitespace normalized. The current revision PDF is image-only. Passage transcribed directly from the inspected rendered page; no older-edition indexed text was used. No automated PDF-text matching is claimed. Completion-status examples are illustrative, not a closed mandatory enum; no fictional rows are created.",
+  "wordingSHA256": "2c845fe6ccd9e0a23caf1ca6b4ccd137d633c3bc9e6d024f77f2aaf9f49a78cc"
+ },
+ {
+  "id": "DZR-F8-0067",
+  "alias": "DI-IPSC-81440A §4, content 4.x.2; 4.x.2.y; PDF 4",
+  "source": {
+   "docId": "DI-IPSC-81440A",
+   "edition": "A, 15 December 1999; validated by Notice 3, 29 July 2026",
+   "paragraph": "4, content 4.x.2; 4.x.2.y; PDF 4",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=195405",
+   "passage": "4.x.2 Problems encountered. This paragraph shall be divided into subparagraphs that identify each test case in which one or more problems occurred. 4.x.2.y (Project-unique identifier of a test case). This paragraph shall identify by project-unique identifier a test case in which one or more problems occurred, and shall provide: a. A brief description of the problem(s) that occurred b. Identification of the test procedure step(s) in which they occurred c. Reference(s) to the associated problem/change report(s) and backup data, as applicable d. The number of times the procedure or step was repeated in attempting to correct the problem(s) and the outcome of each attempt e. Back-up points or test steps where tests were resume for retesting",
+   "passageSHA256": "6595f919ac9ff3be6e35adb2767bc19cbf6553b70b38214d2f8a11af7ea3557e"
+  },
+  "wording": "The Software Test Report Problems encountered paragraph shall organize each affected test case by project-unique identifier with problem descriptions, procedure-step locations, applicable problem/change-report and backup-data references, repeat counts and outcomes, and retest resumption points or steps.",
+  "actor": "The Software Test Report Problems encountered paragraph",
+  "condition": "When DI-IPSC-81440A is invoked by the applicable contract or CDRL for reporting CSCI qualification testing, software-system qualification testing, or other contract-identified software-related testing; for each test case in which one or more problems occurred; associated problem/change-report and backup-data references apply as applicable.",
+  "verificationIntent": "inspection",
+  "kind": "content",
+  "binding": true,
+  "fields": [
+   "problemTestCaseId",
+   "problemDescription",
+   "problemProcedureSteps",
+   "problemReportReferences",
+   "problemBackupData",
+   "repeatCount",
+   "repeatOutcomes",
+   "retestResumePoints"
+  ],
+  "status": "sample",
+  "notes": "Operative DID data-product provision; binding is conditional on actual contractual invocation, profile applicability, and preserved source conditions. Lists are grouped as coherent required information sets, not multiplied by product or test type. One consecutive source span; layout whitespace normalized. The current revision PDF is image-only. Passage transcribed directly from the inspected rendered page; no older-edition indexed text was used. No automated PDF-text matching is claimed. One coherent problem-case record. The visible source says were resume; the passage retains that defect while normalized wording uses retest resumption. No instruction to conduct repeats is inferred.",
+  "wordingSHA256": "621a60e4b301a374108db2ec0cba45d8a0e50e40382c5ee1ebb6f254c8fe0a16"
+ },
+ {
+  "id": "DZR-F8-0068",
+  "alias": "DI-IPSC-81440A §4, content 4.x.3; 4.x.3.y; PDF 4",
+  "source": {
+   "docId": "DI-IPSC-81440A",
+   "edition": "A, 15 December 1999; validated by Notice 3, 29 July 2026",
+   "paragraph": "4, content 4.x.3; 4.x.3.y; PDF 4",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=195405",
+   "passage": "4.x.3 Deviations from test cases/procedures. This paragraph shall be divided into subparagraphs that identify each test case in which deviations from test case/test procedures occurred. 4.x.3.y (Project-unique identifier of a test case). This paragraph shall identify by project-unique identifier a test case in which one or more deviations occurred, and shall provide: a. A description of the deviation(s) (for example, test case run in which the deviation occurred and nature of the deviation, such as substitution of required equipment, procedural steps not followed, schedule deviations). (Red-lined test procedures may be used to show the deviations) b. The rationale for the deviation(s) c. An assessment of the deviations’ impact on the validity of the test case",
+   "passageSHA256": "be23bba86ae835d904401d590d3c4f5340635e08c392aee18befe52e9f16754e"
+  },
+  "wording": "The Software Test Report Deviations paragraph shall organize each affected test case by project-unique identifier with a deviation description, deviation rationale, and assessment of deviation impact on test-case validity.",
+  "actor": "The Software Test Report Deviations paragraph",
+  "condition": "When DI-IPSC-81440A is invoked by the applicable contract or CDRL for reporting CSCI qualification testing, software-system qualification testing, or other contract-identified software-related testing; for each test case in which deviations occurred.",
+  "verificationIntent": "inspection",
+  "kind": "content",
+  "binding": true,
+  "fields": [
+   "deviationTestCaseId",
+   "deviationDescription",
+   "deviationRationale",
+   "deviationValidityImpact"
+  ],
+  "status": "sample",
+  "notes": "Operative DID data-product provision; binding is conditional on actual contractual invocation, profile applicability, and preserved source conditions. Lists are grouped as coherent required information sets, not multiplied by product or test type. One consecutive source span; layout whitespace normalized. The current revision PDF is image-only. Passage transcribed directly from the inspected rendered page; no older-edition indexed text was used. No automated PDF-text matching is claimed. One coherent deviation-case record. Red-lined procedures are a permitted representation, not an additional mandatory attachment. Illustrative deviation types do not become separate required deviations.",
+  "wordingSHA256": "3f242931b1b47474eace0c8d412a33cda9bb4af92f853edcd721e603b1134df4"
+ },
+ {
+  "id": "DZR-F8-0069",
+  "alias": "DI-IPSC-81440A §4, content 5; PDF 5",
+  "source": {
+   "docId": "DI-IPSC-81440A",
+   "edition": "A, 15 December 1999; validated by Notice 3, 29 July 2026",
+   "paragraph": "4, content 5; PDF 5",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=195405",
+   "passage": "5. Test log. This section shall present, possibly in a figure or appendix, a chronological record of the test events covered by this report. This test log shall include: a. The date(s), time(s), and location(s) of the tests performed b. The hardware and software configurations used for each test including, as applicable, part/model/serial number, manufacturer, revision level, and calibration date of all hardware, and version number and name for the software components used c. The date and time of each test-related activity, the identify of the individual(s) who performed the activity, and the identities of witnesses, as applicable",
+   "passageSHA256": "ca4e47a2764f5584bff935cfdbc35976f32add1578656631ebd52febdde97035"
+  },
+  "wording": "The Software Test Report Test log shall chronologically record test dates, times, locations, applicable hardware/software configuration identifiers, activity dates and times, performer identities, and applicable witness identities.",
+  "actor": "The Software Test Report Test log",
+  "condition": "When DI-IPSC-81440A is invoked by the applicable contract or CDRL for reporting CSCI qualification testing, software-system qualification testing, or other contract-identified software-related testing; hardware/software identification details and witness identities apply as applicable.",
+  "verificationIntent": "inspection",
+  "kind": "content",
+  "binding": true,
+  "fields": [
+   "testLog",
+   "testDateTime",
+   "testLocation",
+   "testConfiguration",
+   "activityDateTime",
+   "performerIdentity",
+   "witnessIdentity"
+  ],
+  "status": "sample",
+  "notes": "Operative DID data-product provision; binding is conditional on actual contractual invocation, profile applicability, and preserved source conditions. Lists are grouped as coherent required information sets, not multiplied by product or test type. One consecutive source span; layout whitespace normalized. The current revision PDF is image-only. Passage transcribed directly from the inspected rendered page; no older-edition indexed text was used. No automated PDF-text matching is claimed. A figure or appendix is permitted. The source visibly prints the identify of the individual(s); that defect is retained in the quote while normalized wording uses identities. No particular timestamp encoding, time zone, universal calibration rule, or required real person/contractor value is invented.",
+  "wordingSHA256": "4cef7bf7b6aca736e48437c3e84ee9e7ea42518c5a7d5d5de234db3cf29a2a66"
+ },
+ {
+  "id": "DZR-F8-0070",
+  "alias": "DI-IPSC-81440A §4, content 6; PDF 5",
+  "source": {
+   "docId": "DI-IPSC-81440A",
+   "edition": "A, 15 December 1999; validated by Notice 3, 29 July 2026",
+   "paragraph": "4, content 6; PDF 5",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=195405",
+   "passage": "6. Notes. This section shall contain any general information that aids in understanding this document (e.g., background information, glossary, rationale). This section shall include an alphabetical listing of all acronyms, abbreviations, and their meanings as used in this document and a list of any terms and definitions needed to understand this document.",
+   "passageSHA256": "0ac8c87b2d0b3108569798b87635247677103f2b1c3203e6ee31aaee389b5fb5"
+  },
+  "wording": "The Software Test Report Notes section shall provide general explanatory information, an alphabetical list of used acronyms and abbreviations with meanings, and needed terms and definitions.",
+  "actor": "The Software Test Report Notes section",
+  "condition": "When DI-IPSC-81440A is invoked by the applicable contract or CDRL for reporting CSCI qualification testing, software-system qualification testing, or other contract-identified software-related testing.",
+  "verificationIntent": "inspection",
+  "kind": "content",
+  "binding": true,
+  "fields": [
+   "reportNotes",
+   "acronymsAbbreviations",
+   "termDefinitions"
+  ],
+  "status": "sample",
+  "notes": "Operative DID data-product provision; binding is conditional on actual contractual invocation, profile applicability, and preserved source conditions. Lists are grouped as coherent required information sets, not multiplied by product or test type. One consecutive source span; layout whitespace normalized. The current revision PDF is image-only. Passage transcribed directly from the inspected rendered page; no older-edition indexed text was used. No automated PDF-text matching is claimed.",
+  "wordingSHA256": "7c3b211cb0b917ce84026d8f2242cff129a98a860811f346bdeb36595342fae0"
+ },
+ {
+  "id": "DZR-F8-0071",
+  "alias": "DI-IPSC-81440A §4, content A; PDF 5",
+  "source": {
+   "docId": "DI-IPSC-81440A",
+   "edition": "A, 15 December 1999; validated by Notice 3, 29 July 2026",
+   "paragraph": "4, content A; PDF 5",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=195405",
+   "passage": "A. Appendices. Appendices may be used to provide information published separately for convenience in document maintenance (e.g., charts classified data). As applicable, each appendix shall be referenced in the main body of the document where the data would normally have been provided. Appendices may be bound as separate documents for ease in handling. Appendixes shall be lettered alphabetically (A, B, etc.).",
+   "passageSHA256": "10f71e05b9f03e300091b93cd808a7acd4f732d270c8e24a840ac9cfac7ce8fd"
+  },
+  "wording": "The Software Test Report shall reference each applicable appendix at the corresponding main-body location and label appendices alphabetically.",
+  "actor": "The Software Test Report",
+  "condition": "When DI-IPSC-81440A is invoked by the applicable contract or CDRL for reporting CSCI qualification testing, software-system qualification testing, or other contract-identified software-related testing; when appendices are used and the main-body reference applies.",
+  "verificationIntent": "inspection",
+  "kind": "structure",
+  "binding": true,
+  "fields": [
+   "appendixReferences",
+   "appendixLabels"
+  ],
+  "status": "sample",
+  "notes": "Operative DID data-product provision; binding is conditional on actual contractual invocation, profile applicability, and preserved source conditions. Lists are grouped as coherent required information sets, not multiplied by product or test type. One consecutive source span; layout whitespace normalized. The current revision PDF is image-only. Passage transcribed directly from the inspected rendered page; no older-edition indexed text was used. No automated PDF-text matching is claimed. Optional appendix use is not converted into mandatory creation. The source uses both Appendices and Appendixes; original spelling is retained in the quote.",
+  "wordingSHA256": "48a48d2ee3a9aba6f36ea86bf8f20be4bd5b36cce29e7ff15e781273fd9a24e1"
+ }
+]

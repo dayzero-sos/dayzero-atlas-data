@@ -1,0 +1,2177 @@
+[
+ {
+  "id": "DZR-F6-0001",
+  "alias": "DI-MGMT-81809 section 1; PDF 1",
+  "source": {
+   "docId": "DI-MGMT-81809",
+   "edition": "Base, 26 April 2010; active base and Notice 1 validation of 13 May 2022 listed in ASSIST; notice text uninspected",
+   "paragraph": "1; PDF 1",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5098433",
+   "passage": "The Risk Management Report shall be in contractor’s format.",
+   "passageSHA256": "613b3c0c183671a1e22e19a0685c6f78715854e3ada32129d150ea4b6832da8b"
+  },
+  "wording": "The Risk Management Status Report shall use the contractor format.",
+  "wordingSHA256": "993d9d9c67e36fee55cf77a7bb9ca6ceec2ec0c6b5bc024c0e5e3007d0f6df19",
+  "actor": "The Risk Management Status Report",
+  "condition": "When DI-MGMT-81809 is invoked by the applicable contract, solicitation, or CDRL.",
+  "verificationIntent": "inspection",
+  "kind": "structure",
+  "binding": true,
+  "fields": [
+   "reportFormat"
+  ],
+  "status": "sample",
+  "notes": "Operative DID provision; binding is conditional on actual invocation and stated scope, not an automatic legal obligation. One consecutive source span; layout whitespace normalized. The quoted passage is from the inspected base PDF only. Notice 1 validation metadata is verified in ASSIST; the notice PDF was inaccessible and supplied no passage."
+ },
+ {
+  "id": "DZR-F6-0002",
+  "alias": "DI-MGMT-81809 section 2(a); PDF 1",
+  "source": {
+   "docId": "DI-MGMT-81809",
+   "edition": "Base, 26 April 2010; active base and Notice 1 validation of 13 May 2022 listed in ASSIST; notice text uninspected",
+   "paragraph": "2(a); PDF 1",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5098433",
+   "passage": "The report shall contain a title page identifying the following:\n\na. Contractor’s Name",
+   "passageSHA256": "713706f16e881fc01a8bfe55ac6dd18dd0234e81e4756cba5915f9a3d3c6f658"
+  },
+  "wording": "The Risk Management Status Report title page shall identify the contractor name.",
+  "wordingSHA256": "f5ad7649c28acba48d7d6edeebec738c93ccdfba1f13d1eeff82921bd5e7c353",
+  "actor": "The Risk Management Status Report title page",
+  "condition": "When DI-MGMT-81809 is invoked by the applicable contract, solicitation, or CDRL.",
+  "verificationIntent": "inspection",
+  "kind": "identifier",
+  "binding": true,
+  "fields": [
+   "contractorName"
+  ],
+  "status": "sample",
+  "notes": "Operative DID provision; binding is conditional on actual invocation and stated scope, not an automatic legal obligation. Composite quotation: separate verbatim source spans are separated by blank lines; intervening list items, text, or page furniture is omitted. No consecutive-sentence claim is made. Each span independently matches the freshly inspected PDF. Span PDF pages: 1, 1. The quoted passage is from the inspected base PDF only. Notice 1 validation metadata is verified in ASSIST; the notice PDF was inaccessible and supplied no passage."
+ },
+ {
+  "id": "DZR-F6-0003",
+  "alias": "DI-MGMT-81809 section 2(b); PDF 1",
+  "source": {
+   "docId": "DI-MGMT-81809",
+   "edition": "Base, 26 April 2010; active base and Notice 1 validation of 13 May 2022 listed in ASSIST; notice text uninspected",
+   "paragraph": "2(b); PDF 1",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5098433",
+   "passage": "The report shall contain a title page identifying the following:\n\nb. Contract Number and Dates of Award (including the latest modification)",
+   "passageSHA256": "392c85b9544e378864708affd53be013f2a85b3f63e6d8c325420ddf5773b58b"
+  },
+  "wording": "The Risk Management Status Report title page shall identify the contract number.",
+  "wordingSHA256": "ec6456ce6419adc8b20b30c45f7d326dbab8fa08c87b87773044c2085cf577e9",
+  "actor": "The Risk Management Status Report title page",
+  "condition": "When DI-MGMT-81809 is invoked by the applicable contract, solicitation, or CDRL.",
+  "verificationIntent": "inspection",
+  "kind": "identifier",
+  "binding": true,
+  "fields": [
+   "contractNumber"
+  ],
+  "status": "sample",
+  "notes": "Operative DID provision; binding is conditional on actual invocation and stated scope, not an automatic legal obligation. Composite quotation: separate verbatim source spans are separated by blank lines; intervening list items, text, or page furniture is omitted. No consecutive-sentence claim is made. Each span independently matches the freshly inspected PDF. Span PDF pages: 1, 1. The quoted passage is from the inspected base PDF only. Notice 1 validation metadata is verified in ASSIST; the notice PDF was inaccessible and supplied no passage."
+ },
+ {
+  "id": "DZR-F6-0004",
+  "alias": "DI-MGMT-81809 section 2(b); PDF 1",
+  "source": {
+   "docId": "DI-MGMT-81809",
+   "edition": "Base, 26 April 2010; active base and Notice 1 validation of 13 May 2022 listed in ASSIST; notice text uninspected",
+   "paragraph": "2(b); PDF 1",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5098433",
+   "passage": "The report shall contain a title page identifying the following:\n\nb. Contract Number and Dates of Award (including the latest modification)",
+   "passageSHA256": "392c85b9544e378864708affd53be013f2a85b3f63e6d8c325420ddf5773b58b"
+  },
+  "wording": "The Risk Management Status Report title page shall identify the award dates, including the latest modification.",
+  "wordingSHA256": "c55c1bb480aab8cba8b830b62e409d6cfe67c4253c68b510e9a1be1c13c8c917",
+  "actor": "The Risk Management Status Report title page",
+  "condition": "When DI-MGMT-81809 is invoked by the applicable contract, solicitation, or CDRL.",
+  "verificationIntent": "inspection",
+  "kind": "content",
+  "binding": true,
+  "fields": [
+   "awardDates"
+  ],
+  "status": "sample",
+  "notes": "Operative DID provision; binding is conditional on actual invocation and stated scope, not an automatic legal obligation. Composite quotation: separate verbatim source spans are separated by blank lines; intervening list items, text, or page furniture is omitted. No consecutive-sentence claim is made. Each span independently matches the freshly inspected PDF. Span PDF pages: 1, 1. The quoted passage is from the inspected base PDF only. Notice 1 validation metadata is verified in ASSIST; the notice PDF was inaccessible and supplied no passage."
+ },
+ {
+  "id": "DZR-F6-0005",
+  "alias": "DI-MGMT-81809 section 2(c); PDF 1",
+  "source": {
+   "docId": "DI-MGMT-81809",
+   "edition": "Base, 26 April 2010; active base and Notice 1 validation of 13 May 2022 listed in ASSIST; notice text uninspected",
+   "paragraph": "2(c); PDF 1",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5098433",
+   "passage": "The report shall contain a title page identifying the following:\n\nc. All dates inclusive to the tasks for the reporting period.",
+   "passageSHA256": "9b041546866e093e572d8a2079a2575f23fa342c34d0830ff4e7ad45eddae9d6"
+  },
+  "wording": "The Risk Management Status Report title page shall identify all dates inclusive to the tasks for the reporting period.",
+  "wordingSHA256": "41377f3c3de395a669fe298652e7981c91df9bbd3d692d1f7cf106e2995e1343",
+  "actor": "The Risk Management Status Report title page",
+  "condition": "When DI-MGMT-81809 is invoked by the applicable contract, solicitation, or CDRL.",
+  "verificationIntent": "inspection",
+  "kind": "content",
+  "binding": true,
+  "fields": [
+   "reportingTaskDates"
+  ],
+  "status": "sample",
+  "notes": "Operative DID provision; binding is conditional on actual invocation and stated scope, not an automatic legal obligation. Composite quotation: separate verbatim source spans are separated by blank lines; intervening list items, text, or page furniture is omitted. No consecutive-sentence claim is made. Each span independently matches the freshly inspected PDF. Span PDF pages: 1, 1. The quoted passage is from the inspected base PDF only. Notice 1 validation metadata is verified in ASSIST; the notice PDF was inaccessible and supplied no passage."
+ },
+ {
+  "id": "DZR-F6-0006",
+  "alias": "DI-MGMT-81809 section 2.1; PDF 1",
+  "source": {
+   "docId": "DI-MGMT-81809",
+   "edition": "Base, 26 April 2010; active base and Notice 1 validation of 13 May 2022 listed in ASSIST; notice text uninspected",
+   "paragraph": "2.1; PDF 1",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5098433",
+   "passage": "The report shall contain the contractor’s progress in risk identification, analysis, implementation of mitigation, and tracking.",
+   "passageSHA256": "ef1590b0494b4e0df36765416dba8973cd3df2a1540a340bc268bb7fb6e208d5"
+  },
+  "wording": "The Risk Management Status Report shall contain the contractor progress in risk identification.",
+  "wordingSHA256": "9b3c0fa5f145312371f3723dc04ca53a842983faf9236fb2cb42781d2964ca75",
+  "actor": "The Risk Management Status Report",
+  "condition": "When DI-MGMT-81809 is invoked by the applicable contract, solicitation, or CDRL.",
+  "verificationIntent": "inspection",
+  "kind": "content",
+  "binding": true,
+  "fields": [
+   "riskIdentificationProgress"
+  ],
+  "status": "sample",
+  "notes": "Operative DID provision; binding is conditional on actual invocation and stated scope, not an automatic legal obligation. One consecutive source span; layout whitespace normalized. The quoted passage is from the inspected base PDF only. Notice 1 validation metadata is verified in ASSIST; the notice PDF was inaccessible and supplied no passage."
+ },
+ {
+  "id": "DZR-F6-0007",
+  "alias": "DI-MGMT-81809 section 2.1; PDF 1",
+  "source": {
+   "docId": "DI-MGMT-81809",
+   "edition": "Base, 26 April 2010; active base and Notice 1 validation of 13 May 2022 listed in ASSIST; notice text uninspected",
+   "paragraph": "2.1; PDF 1",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5098433",
+   "passage": "The report shall contain the contractor’s progress in risk identification, analysis, implementation of mitigation, and tracking.",
+   "passageSHA256": "ef1590b0494b4e0df36765416dba8973cd3df2a1540a340bc268bb7fb6e208d5"
+  },
+  "wording": "The Risk Management Status Report shall contain the contractor progress in risk analysis.",
+  "wordingSHA256": "1e3ee7e8fef856a54cb941e48c17965e7c17e7d9fe9eea19975c1908f8c5db7e",
+  "actor": "The Risk Management Status Report",
+  "condition": "When DI-MGMT-81809 is invoked by the applicable contract, solicitation, or CDRL.",
+  "verificationIntent": "inspection",
+  "kind": "content",
+  "binding": true,
+  "fields": [
+   "riskAnalysisProgress"
+  ],
+  "status": "sample",
+  "notes": "Operative DID provision; binding is conditional on actual invocation and stated scope, not an automatic legal obligation. One consecutive source span; layout whitespace normalized. The quoted passage is from the inspected base PDF only. Notice 1 validation metadata is verified in ASSIST; the notice PDF was inaccessible and supplied no passage."
+ },
+ {
+  "id": "DZR-F6-0008",
+  "alias": "DI-MGMT-81809 section 2.1; PDF 1",
+  "source": {
+   "docId": "DI-MGMT-81809",
+   "edition": "Base, 26 April 2010; active base and Notice 1 validation of 13 May 2022 listed in ASSIST; notice text uninspected",
+   "paragraph": "2.1; PDF 1",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5098433",
+   "passage": "The report shall contain the contractor’s progress in risk identification, analysis, implementation of mitigation, and tracking.",
+   "passageSHA256": "ef1590b0494b4e0df36765416dba8973cd3df2a1540a340bc268bb7fb6e208d5"
+  },
+  "wording": "The Risk Management Status Report shall contain the contractor progress in implementation of risk mitigation.",
+  "wordingSHA256": "ba727c4eed6a19778f8d185670224269f22f61737e3ba8eea6d545efe88dbed3",
+  "actor": "The Risk Management Status Report",
+  "condition": "When DI-MGMT-81809 is invoked by the applicable contract, solicitation, or CDRL.",
+  "verificationIntent": "inspection",
+  "kind": "content",
+  "binding": true,
+  "fields": [
+   "mitigationImplementationProgress"
+  ],
+  "status": "sample",
+  "notes": "Operative DID provision; binding is conditional on actual invocation and stated scope, not an automatic legal obligation. One consecutive source span; layout whitespace normalized. The quoted passage is from the inspected base PDF only. Notice 1 validation metadata is verified in ASSIST; the notice PDF was inaccessible and supplied no passage."
+ },
+ {
+  "id": "DZR-F6-0009",
+  "alias": "DI-MGMT-81809 section 2.1; PDF 1",
+  "source": {
+   "docId": "DI-MGMT-81809",
+   "edition": "Base, 26 April 2010; active base and Notice 1 validation of 13 May 2022 listed in ASSIST; notice text uninspected",
+   "paragraph": "2.1; PDF 1",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5098433",
+   "passage": "The report shall contain the contractor’s progress in risk identification, analysis, implementation of mitigation, and tracking.",
+   "passageSHA256": "ef1590b0494b4e0df36765416dba8973cd3df2a1540a340bc268bb7fb6e208d5"
+  },
+  "wording": "The Risk Management Status Report shall contain the contractor progress in risk tracking.",
+  "wordingSHA256": "bc0794e25002eaa214c6b76783bf17293bc2bc87831bc3a4d81901a4e41a3e92",
+  "actor": "The Risk Management Status Report",
+  "condition": "When DI-MGMT-81809 is invoked by the applicable contract, solicitation, or CDRL.",
+  "verificationIntent": "inspection",
+  "kind": "content",
+  "binding": true,
+  "fields": [
+   "riskTrackingProgress"
+  ],
+  "status": "sample",
+  "notes": "Operative DID provision; binding is conditional on actual invocation and stated scope, not an automatic legal obligation. One consecutive source span; layout whitespace normalized. The quoted passage is from the inspected base PDF only. Notice 1 validation metadata is verified in ASSIST; the notice PDF was inaccessible and supplied no passage."
+ },
+ {
+  "id": "DZR-F6-0010",
+  "alias": "DI-MGMT-81809 section 2.2; PDF 1",
+  "source": {
+   "docId": "DI-MGMT-81809",
+   "edition": "Base, 26 April 2010; active base and Notice 1 validation of 13 May 2022 listed in ASSIST; notice text uninspected",
+   "paragraph": "2.2; PDF 1",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5098433",
+   "passage": "The report shall identify efforts made in assessing the current consequence of the identified performance (P), schedule (S), and cost (C) risks on the program, and shall contain a projection of the risk mitigation implementation.",
+   "passageSHA256": "67e4b06150c90bac654329fbb08ea251cd2b17f379fab5c0d4502a70e3408004"
+  },
+  "wording": "The Risk Management Status Report shall identify efforts made to assess the current program consequences of identified performance risks.",
+  "wordingSHA256": "fdf1b7c79f9f5a2a28ad0fdacf49f03212c94371e6ff72142eeefc785cf4b164",
+  "actor": "The Risk Management Status Report",
+  "condition": "When DI-MGMT-81809 is invoked by the applicable contract, solicitation, or CDRL.",
+  "verificationIntent": "inspection",
+  "kind": "content",
+  "binding": true,
+  "fields": [
+   "performanceConsequenceAssessmentEfforts"
+  ],
+  "status": "sample",
+  "notes": "Operative DID provision; binding is conditional on actual invocation and stated scope, not an automatic legal obligation. One consecutive source span; layout whitespace normalized. The quoted passage is from the inspected base PDF only. Notice 1 validation metadata is verified in ASSIST; the notice PDF was inaccessible and supplied no passage."
+ },
+ {
+  "id": "DZR-F6-0011",
+  "alias": "DI-MGMT-81809 section 2.2; PDF 1",
+  "source": {
+   "docId": "DI-MGMT-81809",
+   "edition": "Base, 26 April 2010; active base and Notice 1 validation of 13 May 2022 listed in ASSIST; notice text uninspected",
+   "paragraph": "2.2; PDF 1",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5098433",
+   "passage": "The report shall identify efforts made in assessing the current consequence of the identified performance (P), schedule (S), and cost (C) risks on the program, and shall contain a projection of the risk mitigation implementation.",
+   "passageSHA256": "67e4b06150c90bac654329fbb08ea251cd2b17f379fab5c0d4502a70e3408004"
+  },
+  "wording": "The Risk Management Status Report shall identify efforts made to assess the current program consequences of identified schedule risks.",
+  "wordingSHA256": "39b4d69d6d62340cc94c7c2bbe068faf979f17ef82a7f69ec21d6a54b344a7c6",
+  "actor": "The Risk Management Status Report",
+  "condition": "When DI-MGMT-81809 is invoked by the applicable contract, solicitation, or CDRL.",
+  "verificationIntent": "inspection",
+  "kind": "content",
+  "binding": true,
+  "fields": [
+   "scheduleConsequenceAssessmentEfforts"
+  ],
+  "status": "sample",
+  "notes": "Operative DID provision; binding is conditional on actual invocation and stated scope, not an automatic legal obligation. One consecutive source span; layout whitespace normalized. The quoted passage is from the inspected base PDF only. Notice 1 validation metadata is verified in ASSIST; the notice PDF was inaccessible and supplied no passage."
+ },
+ {
+  "id": "DZR-F6-0012",
+  "alias": "DI-MGMT-81809 section 2.2; PDF 1",
+  "source": {
+   "docId": "DI-MGMT-81809",
+   "edition": "Base, 26 April 2010; active base and Notice 1 validation of 13 May 2022 listed in ASSIST; notice text uninspected",
+   "paragraph": "2.2; PDF 1",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5098433",
+   "passage": "The report shall identify efforts made in assessing the current consequence of the identified performance (P), schedule (S), and cost (C) risks on the program, and shall contain a projection of the risk mitigation implementation.",
+   "passageSHA256": "67e4b06150c90bac654329fbb08ea251cd2b17f379fab5c0d4502a70e3408004"
+  },
+  "wording": "The Risk Management Status Report shall identify efforts made to assess the current program consequences of identified cost risks.",
+  "wordingSHA256": "59887b2f585008890f9a31037566412b0a7303754d282133457d0ad345f92d41",
+  "actor": "The Risk Management Status Report",
+  "condition": "When DI-MGMT-81809 is invoked by the applicable contract, solicitation, or CDRL.",
+  "verificationIntent": "inspection",
+  "kind": "content",
+  "binding": true,
+  "fields": [
+   "costConsequenceAssessmentEfforts"
+  ],
+  "status": "sample",
+  "notes": "Operative DID provision; binding is conditional on actual invocation and stated scope, not an automatic legal obligation. One consecutive source span; layout whitespace normalized. The quoted passage is from the inspected base PDF only. Notice 1 validation metadata is verified in ASSIST; the notice PDF was inaccessible and supplied no passage."
+ },
+ {
+  "id": "DZR-F6-0013",
+  "alias": "DI-MGMT-81809 section 2.2; PDF 1",
+  "source": {
+   "docId": "DI-MGMT-81809",
+   "edition": "Base, 26 April 2010; active base and Notice 1 validation of 13 May 2022 listed in ASSIST; notice text uninspected",
+   "paragraph": "2.2; PDF 1",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5098433",
+   "passage": "The report shall identify efforts made in assessing the current consequence of the identified performance (P), schedule (S), and cost (C) risks on the program, and shall contain a projection of the risk mitigation implementation.",
+   "passageSHA256": "67e4b06150c90bac654329fbb08ea251cd2b17f379fab5c0d4502a70e3408004"
+  },
+  "wording": "The Risk Management Status Report shall contain a projection of risk mitigation implementation.",
+  "wordingSHA256": "3abd9e5810ce49be08fe30427ee29ff5fb1cc7b1a89a68a696dcabc50cdae1c7",
+  "actor": "The Risk Management Status Report",
+  "condition": "When DI-MGMT-81809 is invoked by the applicable contract, solicitation, or CDRL.",
+  "verificationIntent": "inspection",
+  "kind": "content",
+  "binding": true,
+  "fields": [
+   "mitigationImplementationProjection"
+  ],
+  "status": "sample",
+  "notes": "Operative DID provision; binding is conditional on actual invocation and stated scope, not an automatic legal obligation. One consecutive source span; layout whitespace normalized. The quoted passage is from the inspected base PDF only. Notice 1 validation metadata is verified in ASSIST; the notice PDF was inaccessible and supplied no passage."
+ },
+ {
+  "id": "DZR-F6-0014",
+  "alias": "DI-MGMT-81809 section 2.3; PDF 1",
+  "source": {
+   "docId": "DI-MGMT-81809",
+   "edition": "Base, 26 April 2010; active base and Notice 1 validation of 13 May 2022 listed in ASSIST; notice text uninspected",
+   "paragraph": "2.3; PDF 1",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5098433",
+   "passage": "The report shall contain a five (5) by five (5) matrix to identify risks to Performance (P), Schedule (S), and Cost (C).",
+   "passageSHA256": "38b1a755a41d74bab94fce9cfc9d8d3168f9219167a4b6ac012a9b3c9b42319d"
+  },
+  "wording": "The Risk Management Status Report shall contain a five-by-five matrix identifying performance, schedule, and cost risks.",
+  "wordingSHA256": "70b02879fbc72137ed2599653cc9e5ac15b06fd1b56cc17395fe8ca74f5f6dbe",
+  "actor": "The Risk Management Status Report",
+  "condition": "When DI-MGMT-81809 is invoked by the applicable contract, solicitation, or CDRL.",
+  "verificationIntent": "inspection",
+  "kind": "structure",
+  "binding": true,
+  "fields": [
+   "riskMatrix"
+  ],
+  "status": "sample",
+  "notes": "Operative DID provision; binding is conditional on actual invocation and stated scope, not an automatic legal obligation. One consecutive source span; layout whitespace normalized. The quoted passage is from the inspected base PDF only. Notice 1 validation metadata is verified in ASSIST; the notice PDF was inaccessible and supplied no passage."
+ },
+ {
+  "id": "DZR-F6-0015",
+  "alias": "DI-MGMT-81809 section 2.3; PDF 1",
+  "source": {
+   "docId": "DI-MGMT-81809",
+   "edition": "Base, 26 April 2010; active base and Notice 1 validation of 13 May 2022 listed in ASSIST; notice text uninspected",
+   "paragraph": "2.3; PDF 1",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5098433",
+   "passage": "A vertical axis shall indicate the “Likelihood” and the horizontal axis shall indicate the “Consequence” of a root cause occurrence.",
+   "passageSHA256": "2bf516bb10f6b98566a6100763a4d8cbc87c72dc5b99bba624f62cb2a0370b06"
+  },
+  "wording": "The risk matrix vertical axis shall indicate the likelihood of a root-cause occurrence.",
+  "wordingSHA256": "a1995600ed652a9278f4703c2be66b9d334ae0b84eb2790974f8b73cd5605293",
+  "actor": "The risk matrix vertical axis",
+  "condition": "When DI-MGMT-81809 is invoked by the applicable contract, solicitation, or CDRL.",
+  "verificationIntent": "inspection",
+  "kind": "structure",
+  "binding": true,
+  "fields": [
+   "likelihood",
+   "riskMatrix"
+  ],
+  "status": "sample",
+  "notes": "Operative DID provision; binding is conditional on actual invocation and stated scope, not an automatic legal obligation. One consecutive source span; layout whitespace normalized. The quoted passage is from the inspected base PDF only. Notice 1 validation metadata is verified in ASSIST; the notice PDF was inaccessible and supplied no passage."
+ },
+ {
+  "id": "DZR-F6-0016",
+  "alias": "DI-MGMT-81809 section 2.3; PDF 1",
+  "source": {
+   "docId": "DI-MGMT-81809",
+   "edition": "Base, 26 April 2010; active base and Notice 1 validation of 13 May 2022 listed in ASSIST; notice text uninspected",
+   "paragraph": "2.3; PDF 1",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5098433",
+   "passage": "A vertical axis shall indicate the “Likelihood” and the horizontal axis shall indicate the “Consequence” of a root cause occurrence.",
+   "passageSHA256": "2bf516bb10f6b98566a6100763a4d8cbc87c72dc5b99bba624f62cb2a0370b06"
+  },
+  "wording": "The risk matrix horizontal axis shall indicate the consequence of a root-cause occurrence.",
+  "wordingSHA256": "3b7ef6f1220e66aca1a8add2a37c2a4e0e1221024101aa77b645b3ced7d5958e",
+  "actor": "The risk matrix horizontal axis",
+  "condition": "When DI-MGMT-81809 is invoked by the applicable contract, solicitation, or CDRL.",
+  "verificationIntent": "inspection",
+  "kind": "structure",
+  "binding": true,
+  "fields": [
+   "consequence",
+   "riskMatrix"
+  ],
+  "status": "sample",
+  "notes": "Operative DID provision; binding is conditional on actual invocation and stated scope, not an automatic legal obligation. One consecutive source span; layout whitespace normalized. The quoted passage is from the inspected base PDF only. Notice 1 validation metadata is verified in ASSIST; the notice PDF was inaccessible and supplied no passage."
+ },
+ {
+  "id": "DZR-F6-0017",
+  "alias": "DI-MGMT-81809 section 2.3; PDF 1",
+  "source": {
+   "docId": "DI-MGMT-81809",
+   "edition": "Base, 26 April 2010; active base and Notice 1 validation of 13 May 2022 listed in ASSIST; notice text uninspected",
+   "paragraph": "2.3; PDF 1",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5098433",
+   "passage": "The level of risk for each root cause shall be identified as green low, yellow for moderate, or red for high.",
+   "passageSHA256": "2eefd20db2958154c84595f4802ddced5d3bbfa955ddeacdced78bb9e3ae75a2"
+  },
+  "wording": "The Risk Management Status Report shall identify a low root-cause risk level with green.",
+  "wordingSHA256": "b1d33b2cd3864acb34079923a1fb5330872f5c17921f58ca0bda72ac9d5623ea",
+  "actor": "The Risk Management Status Report",
+  "condition": "When DI-MGMT-81809 is invoked by the applicable contract, solicitation, or CDRL; when the root-cause risk level is low.",
+  "verificationIntent": "inspection",
+  "kind": "content",
+  "binding": true,
+  "fields": [
+   "riskLevel",
+   "riskColor"
+  ],
+  "status": "sample",
+  "notes": "Operative DID provision; binding is conditional on actual invocation and stated scope, not an automatic legal obligation. One consecutive source span; layout whitespace normalized. The source supplies the color/level mapping but no numeric matrix-cell cutoffs or product-of-scores formula. The quoted passage is from the inspected base PDF only. Notice 1 validation metadata is verified in ASSIST; the notice PDF was inaccessible and supplied no passage."
+ },
+ {
+  "id": "DZR-F6-0018",
+  "alias": "DI-MGMT-81809 section 2.3; PDF 1",
+  "source": {
+   "docId": "DI-MGMT-81809",
+   "edition": "Base, 26 April 2010; active base and Notice 1 validation of 13 May 2022 listed in ASSIST; notice text uninspected",
+   "paragraph": "2.3; PDF 1",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5098433",
+   "passage": "The level of risk for each root cause shall be identified as green low, yellow for moderate, or red for high.",
+   "passageSHA256": "2eefd20db2958154c84595f4802ddced5d3bbfa955ddeacdced78bb9e3ae75a2"
+  },
+  "wording": "The Risk Management Status Report shall identify a moderate root-cause risk level with yellow.",
+  "wordingSHA256": "70fd324c69fbd467b2dbe5667bd140a7f8da93793507782b5fe4693318fd7418",
+  "actor": "The Risk Management Status Report",
+  "condition": "When DI-MGMT-81809 is invoked by the applicable contract, solicitation, or CDRL; when the root-cause risk level is moderate.",
+  "verificationIntent": "inspection",
+  "kind": "content",
+  "binding": true,
+  "fields": [
+   "riskLevel",
+   "riskColor"
+  ],
+  "status": "sample",
+  "notes": "Operative DID provision; binding is conditional on actual invocation and stated scope, not an automatic legal obligation. One consecutive source span; layout whitespace normalized. The source supplies the color/level mapping but no numeric matrix-cell cutoffs or product-of-scores formula. The quoted passage is from the inspected base PDF only. Notice 1 validation metadata is verified in ASSIST; the notice PDF was inaccessible and supplied no passage."
+ },
+ {
+  "id": "DZR-F6-0019",
+  "alias": "DI-MGMT-81809 section 2.3; PDF 1",
+  "source": {
+   "docId": "DI-MGMT-81809",
+   "edition": "Base, 26 April 2010; active base and Notice 1 validation of 13 May 2022 listed in ASSIST; notice text uninspected",
+   "paragraph": "2.3; PDF 1",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5098433",
+   "passage": "The level of risk for each root cause shall be identified as green low, yellow for moderate, or red for high.",
+   "passageSHA256": "2eefd20db2958154c84595f4802ddced5d3bbfa955ddeacdced78bb9e3ae75a2"
+  },
+  "wording": "The Risk Management Status Report shall identify a high root-cause risk level with red.",
+  "wordingSHA256": "e612ea5bdda5daf47ab5550ec1b7ea3d38458b4339df40ce0b6dcea2ecf9377f",
+  "actor": "The Risk Management Status Report",
+  "condition": "When DI-MGMT-81809 is invoked by the applicable contract, solicitation, or CDRL; when the root-cause risk level is high.",
+  "verificationIntent": "inspection",
+  "kind": "content",
+  "binding": true,
+  "fields": [
+   "riskLevel",
+   "riskColor"
+  ],
+  "status": "sample",
+  "notes": "Operative DID provision; binding is conditional on actual invocation and stated scope, not an automatic legal obligation. One consecutive source span; layout whitespace normalized. The source supplies the color/level mapping but no numeric matrix-cell cutoffs or product-of-scores formula. The quoted passage is from the inspected base PDF only. Notice 1 validation metadata is verified in ASSIST; the notice PDF was inaccessible and supplied no passage."
+ },
+ {
+  "id": "DZR-F6-0020",
+  "alias": "DI-MGMT-81809 section 2.4; PDF 1",
+  "source": {
+   "docId": "DI-MGMT-81809",
+   "edition": "Base, 26 April 2010; active base and Notice 1 validation of 13 May 2022 listed in ASSIST; notice text uninspected",
+   "paragraph": "2.4; PDF 1",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5098433",
+   "passage": "The report shall contain a narrative briefly describing the risk, title, type (P, S, or C), root cause, current mitigations, and planned mitigations efforts identified , along with critical dates (risk reduction milestones).",
+   "passageSHA256": "5268b7df41c4859fcbce0f5c08051d051044faf3378ed3699b30dca07b1134b1"
+  },
+  "wording": "The Risk Management Status Report shall contain a narrative briefly describing the risk.",
+  "wordingSHA256": "a0e603f785bd149c065e02f93683a5b071cfe0e26c9642798d7b7924689f04c0",
+  "actor": "The Risk Management Status Report",
+  "condition": "When DI-MGMT-81809 is invoked by the applicable contract, solicitation, or CDRL.",
+  "verificationIntent": "inspection",
+  "kind": "content",
+  "binding": true,
+  "fields": [
+   "riskDescription"
+  ],
+  "status": "sample",
+  "notes": "Operative DID provision; binding is conditional on actual invocation and stated scope, not an automatic legal obligation. One consecutive source span; layout whitespace normalized. The source spacing before the comma in identified , is retained; no text correction is made in the passage. The quoted passage is from the inspected base PDF only. Notice 1 validation metadata is verified in ASSIST; the notice PDF was inaccessible and supplied no passage."
+ },
+ {
+  "id": "DZR-F6-0021",
+  "alias": "DI-MGMT-81809 section 2.4; PDF 1",
+  "source": {
+   "docId": "DI-MGMT-81809",
+   "edition": "Base, 26 April 2010; active base and Notice 1 validation of 13 May 2022 listed in ASSIST; notice text uninspected",
+   "paragraph": "2.4; PDF 1",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5098433",
+   "passage": "The report shall contain a narrative briefly describing the risk, title, type (P, S, or C), root cause, current mitigations, and planned mitigations efforts identified , along with critical dates (risk reduction milestones).",
+   "passageSHA256": "5268b7df41c4859fcbce0f5c08051d051044faf3378ed3699b30dca07b1134b1"
+  },
+  "wording": "The Risk Management Status Report shall contain a narrative briefly describing the risk title.",
+  "wordingSHA256": "1b393227879e924de97ff267f9d2b0893c322247a5a667d6ad5f38515f3273b3",
+  "actor": "The Risk Management Status Report",
+  "condition": "When DI-MGMT-81809 is invoked by the applicable contract, solicitation, or CDRL.",
+  "verificationIntent": "inspection",
+  "kind": "content",
+  "binding": true,
+  "fields": [
+   "riskTitle"
+  ],
+  "status": "sample",
+  "notes": "Operative DID provision; binding is conditional on actual invocation and stated scope, not an automatic legal obligation. One consecutive source span; layout whitespace normalized. The source spacing before the comma in identified , is retained; no text correction is made in the passage. The quoted passage is from the inspected base PDF only. Notice 1 validation metadata is verified in ASSIST; the notice PDF was inaccessible and supplied no passage."
+ },
+ {
+  "id": "DZR-F6-0022",
+  "alias": "DI-MGMT-81809 section 2.4; PDF 1",
+  "source": {
+   "docId": "DI-MGMT-81809",
+   "edition": "Base, 26 April 2010; active base and Notice 1 validation of 13 May 2022 listed in ASSIST; notice text uninspected",
+   "paragraph": "2.4; PDF 1",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5098433",
+   "passage": "The report shall contain a narrative briefly describing the risk, title, type (P, S, or C), root cause, current mitigations, and planned mitigations efforts identified , along with critical dates (risk reduction milestones).",
+   "passageSHA256": "5268b7df41c4859fcbce0f5c08051d051044faf3378ed3699b30dca07b1134b1"
+  },
+  "wording": "The Risk Management Status Report shall contain a narrative briefly describing the risk type as performance, schedule, or cost.",
+  "wordingSHA256": "01959e14724445337d63f991c99aabf86ad7743f3cd7200edf00a02375cfb285",
+  "actor": "The Risk Management Status Report",
+  "condition": "When DI-MGMT-81809 is invoked by the applicable contract, solicitation, or CDRL.",
+  "verificationIntent": "inspection",
+  "kind": "content",
+  "binding": true,
+  "fields": [
+   "riskType"
+  ],
+  "status": "sample",
+  "notes": "Operative DID provision; binding is conditional on actual invocation and stated scope, not an automatic legal obligation. One consecutive source span; layout whitespace normalized. The source spacing before the comma in identified , is retained; no text correction is made in the passage. The quoted passage is from the inspected base PDF only. Notice 1 validation metadata is verified in ASSIST; the notice PDF was inaccessible and supplied no passage."
+ },
+ {
+  "id": "DZR-F6-0023",
+  "alias": "DI-MGMT-81809 section 2.4; PDF 1",
+  "source": {
+   "docId": "DI-MGMT-81809",
+   "edition": "Base, 26 April 2010; active base and Notice 1 validation of 13 May 2022 listed in ASSIST; notice text uninspected",
+   "paragraph": "2.4; PDF 1",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5098433",
+   "passage": "The report shall contain a narrative briefly describing the risk, title, type (P, S, or C), root cause, current mitigations, and planned mitigations efforts identified , along with critical dates (risk reduction milestones).",
+   "passageSHA256": "5268b7df41c4859fcbce0f5c08051d051044faf3378ed3699b30dca07b1134b1"
+  },
+  "wording": "The Risk Management Status Report shall contain a narrative briefly describing the root cause.",
+  "wordingSHA256": "b08305038efe158630f59b2942d31b00db786dae31dffd5670399698a2b1cc6f",
+  "actor": "The Risk Management Status Report",
+  "condition": "When DI-MGMT-81809 is invoked by the applicable contract, solicitation, or CDRL.",
+  "verificationIntent": "inspection",
+  "kind": "content",
+  "binding": true,
+  "fields": [
+   "rootCause"
+  ],
+  "status": "sample",
+  "notes": "Operative DID provision; binding is conditional on actual invocation and stated scope, not an automatic legal obligation. One consecutive source span; layout whitespace normalized. The source spacing before the comma in identified , is retained; no text correction is made in the passage. The quoted passage is from the inspected base PDF only. Notice 1 validation metadata is verified in ASSIST; the notice PDF was inaccessible and supplied no passage."
+ },
+ {
+  "id": "DZR-F6-0024",
+  "alias": "DI-MGMT-81809 section 2.4; PDF 1",
+  "source": {
+   "docId": "DI-MGMT-81809",
+   "edition": "Base, 26 April 2010; active base and Notice 1 validation of 13 May 2022 listed in ASSIST; notice text uninspected",
+   "paragraph": "2.4; PDF 1",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5098433",
+   "passage": "The report shall contain a narrative briefly describing the risk, title, type (P, S, or C), root cause, current mitigations, and planned mitigations efforts identified , along with critical dates (risk reduction milestones).",
+   "passageSHA256": "5268b7df41c4859fcbce0f5c08051d051044faf3378ed3699b30dca07b1134b1"
+  },
+  "wording": "The Risk Management Status Report shall contain a narrative briefly describing current mitigations.",
+  "wordingSHA256": "86026b27288524c61ad47d30f4f533a81995f18d029e032074237c73a40d12bf",
+  "actor": "The Risk Management Status Report",
+  "condition": "When DI-MGMT-81809 is invoked by the applicable contract, solicitation, or CDRL.",
+  "verificationIntent": "inspection",
+  "kind": "content",
+  "binding": true,
+  "fields": [
+   "currentMitigations"
+  ],
+  "status": "sample",
+  "notes": "Operative DID provision; binding is conditional on actual invocation and stated scope, not an automatic legal obligation. One consecutive source span; layout whitespace normalized. The source spacing before the comma in identified , is retained; no text correction is made in the passage. The quoted passage is from the inspected base PDF only. Notice 1 validation metadata is verified in ASSIST; the notice PDF was inaccessible and supplied no passage."
+ },
+ {
+  "id": "DZR-F6-0025",
+  "alias": "DI-MGMT-81809 section 2.4; PDF 1",
+  "source": {
+   "docId": "DI-MGMT-81809",
+   "edition": "Base, 26 April 2010; active base and Notice 1 validation of 13 May 2022 listed in ASSIST; notice text uninspected",
+   "paragraph": "2.4; PDF 1",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5098433",
+   "passage": "The report shall contain a narrative briefly describing the risk, title, type (P, S, or C), root cause, current mitigations, and planned mitigations efforts identified , along with critical dates (risk reduction milestones).",
+   "passageSHA256": "5268b7df41c4859fcbce0f5c08051d051044faf3378ed3699b30dca07b1134b1"
+  },
+  "wording": "The Risk Management Status Report shall contain a narrative briefly describing identified planned mitigation efforts.",
+  "wordingSHA256": "07f9e48aa0d9a71c0add6742e073555405a2931abb7debd37582733c8296fb84",
+  "actor": "The Risk Management Status Report",
+  "condition": "When DI-MGMT-81809 is invoked by the applicable contract, solicitation, or CDRL.",
+  "verificationIntent": "inspection",
+  "kind": "content",
+  "binding": true,
+  "fields": [
+   "plannedMitigations"
+  ],
+  "status": "sample",
+  "notes": "Operative DID provision; binding is conditional on actual invocation and stated scope, not an automatic legal obligation. One consecutive source span; layout whitespace normalized. The source spacing before the comma in identified , is retained; no text correction is made in the passage. The quoted passage is from the inspected base PDF only. Notice 1 validation metadata is verified in ASSIST; the notice PDF was inaccessible and supplied no passage."
+ },
+ {
+  "id": "DZR-F6-0026",
+  "alias": "DI-MGMT-81809 section 2.4; PDF 1",
+  "source": {
+   "docId": "DI-MGMT-81809",
+   "edition": "Base, 26 April 2010; active base and Notice 1 validation of 13 May 2022 listed in ASSIST; notice text uninspected",
+   "paragraph": "2.4; PDF 1",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5098433",
+   "passage": "The report shall contain a narrative briefly describing the risk, title, type (P, S, or C), root cause, current mitigations, and planned mitigations efforts identified , along with critical dates (risk reduction milestones).",
+   "passageSHA256": "5268b7df41c4859fcbce0f5c08051d051044faf3378ed3699b30dca07b1134b1"
+  },
+  "wording": "The Risk Management Status Report shall contain a narrative briefly describing critical risk-reduction milestone dates.",
+  "wordingSHA256": "fb68d1c4a83e4641adab461fb337d1e53eb115c254984e8c024d1e7b5a75b4f5",
+  "actor": "The Risk Management Status Report",
+  "condition": "When DI-MGMT-81809 is invoked by the applicable contract, solicitation, or CDRL.",
+  "verificationIntent": "inspection",
+  "kind": "content",
+  "binding": true,
+  "fields": [
+   "riskReductionMilestoneDates"
+  ],
+  "status": "sample",
+  "notes": "Operative DID provision; binding is conditional on actual invocation and stated scope, not an automatic legal obligation. One consecutive source span; layout whitespace normalized. The source spacing before the comma in identified , is retained; no text correction is made in the passage. The quoted passage is from the inspected base PDF only. Notice 1 validation metadata is verified in ASSIST; the notice PDF was inaccessible and supplied no passage."
+ },
+ {
+  "id": "DZR-F6-0027",
+  "alias": "DI-MGMT-81809 section 3; PDF 2",
+  "source": {
+   "docId": "DI-MGMT-81809",
+   "edition": "Base, 26 April 2010; active base and Notice 1 validation of 13 May 2022 listed in ASSIST; notice text uninspected",
+   "paragraph": "3; PDF 2",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5098433",
+   "passage": "The report shall be presented in electronic media, MS Word version 2003-2007.",
+   "passageSHA256": "d6562c12f5fd3b188c6b270f8de62a292462b416058e3d4002fc5a0bed92863e"
+  },
+  "wording": "The Risk Management Status Report shall be presented electronically in MS Word version 2003–2007.",
+  "wordingSHA256": "f6caf66f55589277774f79b4fe417f8e1c89cf45060330c0919a3eacadb3f400",
+  "actor": "The Risk Management Status Report",
+  "condition": "When DI-MGMT-81809 is invoked by the applicable contract, solicitation, or CDRL.",
+  "verificationIntent": "inspection",
+  "kind": "delivery",
+  "binding": true,
+  "fields": [
+   "deliveryFormat"
+  ],
+  "status": "sample",
+  "notes": "Operative DID provision; binding is conditional on actual invocation and stated scope, not an automatic legal obligation. One consecutive source span; layout whitespace normalized. The still-current base DID explicitly names this legacy media/version range; no substitution with a newer Word format or JSON is made. The quoted passage is from the inspected base PDF only. Notice 1 validation metadata is verified in ASSIST; the notice PDF was inaccessible and supplied no passage."
+ },
+ {
+  "id": "DZR-F6-0028",
+  "alias": "DI-MGMT-82255A section 2; PDF 1",
+  "source": {
+   "docId": "DI-MGMT-82255A",
+   "edition": "A, 3 February 2023",
+   "paragraph": "2; PDF 1",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5781165",
+   "passage": "Government directed electronic format shall be used to the fullest extent possible; however, if none identified, the contractor’s electronic format, Microsoft Excel® version .xlsx, is acceptable.",
+   "passageSHA256": "335eb047aa97df42b9e976b31f96bf79551dcee5660f224d2b7618ddfb2324d1"
+  },
+  "wording": "The Supply Chain Risk Register shall use the Government-directed electronic format to the fullest extent possible.",
+  "wordingSHA256": "bd4275d3ba2052f01624ef6b34f2b7642e563a9d015130199471aa3f07777256",
+  "actor": "The Supply Chain Risk Register",
+  "condition": "When DI-MGMT-82255A is invoked by the applicable contract, solicitation, or CDRL for supply-chain risks associated with the prime contractor, suppliers, or subcontractors and the products or services to be provided; this specialized branch is not a generic issue/opportunity-register mandate; when a Government-directed format is identified; if no Government-directed format is identified, the contractor electronic Microsoft Excel .xlsx format is acceptable.",
+  "verificationIntent": "inspection",
+  "kind": "delivery",
+  "binding": true,
+  "fields": [
+   "deliveryFormat"
+  ],
+  "status": "sample",
+  "notes": "Operative DID provision; binding is conditional on actual invocation and stated scope, not an automatic legal obligation. One consecutive source span; layout whitespace normalized. The XLSX alternative is a permitted fallback, not a universal override of Government-directed format."
+ },
+ {
+  "id": "DZR-F6-0029",
+  "alias": "DI-MGMT-82255A section 3.1(a); PDF 1",
+  "source": {
+   "docId": "DI-MGMT-82255A",
+   "edition": "A, 3 February 2023",
+   "paragraph": "3.1(a); PDF 1",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5781165",
+   "passage": "The contract information section shall identify the following:\n\na. Contractor’s name;",
+   "passageSHA256": "e1cf13966e00e342dc96c4c053535573b10480d8122688ceeeb417845f097b62"
+  },
+  "wording": "The Supply Chain Risk Register contract-information section shall identify the contractor name.",
+  "wordingSHA256": "c1d2703609d67564fc716d45eaabbca28a6e1cd71517c9630b8f50311fd8e1f9",
+  "actor": "The Supply Chain Risk Register contract-information section",
+  "condition": "When DI-MGMT-82255A is invoked by the applicable contract, solicitation, or CDRL for supply-chain risks associated with the prime contractor, suppliers, or subcontractors and the products or services to be provided; this specialized branch is not a generic issue/opportunity-register mandate.",
+  "verificationIntent": "inspection",
+  "kind": "identifier",
+  "binding": true,
+  "fields": [
+   "contractorName"
+  ],
+  "status": "sample",
+  "notes": "Operative DID provision; binding is conditional on actual invocation and stated scope, not an automatic legal obligation. Composite quotation: separate verbatim source spans are separated by blank lines; intervening list items, text, or page furniture is omitted. No consecutive-sentence claim is made. Each span independently matches the freshly inspected PDF. Span PDF pages: 1, 1."
+ },
+ {
+  "id": "DZR-F6-0030",
+  "alias": "DI-MGMT-82255A section 3.1(b); PDF 1",
+  "source": {
+   "docId": "DI-MGMT-82255A",
+   "edition": "A, 3 February 2023",
+   "paragraph": "3.1(b); PDF 1",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5781165",
+   "passage": "The contract information section shall identify the following:\n\nb. Contract number and date of award (including the latest modification);",
+   "passageSHA256": "f5e70ccccaafe864be82b3e0a93d044216e9ce37988006859079784e2ae0efa2"
+  },
+  "wording": "The Supply Chain Risk Register contract-information section shall identify the contract number.",
+  "wordingSHA256": "26c675a5bc1a55545d1272aa77f138076bd21c52c1478abb73e647190f75c1c4",
+  "actor": "The Supply Chain Risk Register contract-information section",
+  "condition": "When DI-MGMT-82255A is invoked by the applicable contract, solicitation, or CDRL for supply-chain risks associated with the prime contractor, suppliers, or subcontractors and the products or services to be provided; this specialized branch is not a generic issue/opportunity-register mandate.",
+  "verificationIntent": "inspection",
+  "kind": "identifier",
+  "binding": true,
+  "fields": [
+   "contractNumber"
+  ],
+  "status": "sample",
+  "notes": "Operative DID provision; binding is conditional on actual invocation and stated scope, not an automatic legal obligation. Composite quotation: separate verbatim source spans are separated by blank lines; intervening list items, text, or page furniture is omitted. No consecutive-sentence claim is made. Each span independently matches the freshly inspected PDF. Span PDF pages: 1, 1."
+ },
+ {
+  "id": "DZR-F6-0031",
+  "alias": "DI-MGMT-82255A section 3.1(b); PDF 1",
+  "source": {
+   "docId": "DI-MGMT-82255A",
+   "edition": "A, 3 February 2023",
+   "paragraph": "3.1(b); PDF 1",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5781165",
+   "passage": "The contract information section shall identify the following:\n\nb. Contract number and date of award (including the latest modification);",
+   "passageSHA256": "f5e70ccccaafe864be82b3e0a93d044216e9ce37988006859079784e2ae0efa2"
+  },
+  "wording": "The Supply Chain Risk Register contract-information section shall identify the award date, including the latest modification.",
+  "wordingSHA256": "dfd9e184484afa586960c9085081960189f9760dac4102fa937d5eccebc2c813",
+  "actor": "The Supply Chain Risk Register contract-information section",
+  "condition": "When DI-MGMT-82255A is invoked by the applicable contract, solicitation, or CDRL for supply-chain risks associated with the prime contractor, suppliers, or subcontractors and the products or services to be provided; this specialized branch is not a generic issue/opportunity-register mandate.",
+  "verificationIntent": "inspection",
+  "kind": "content",
+  "binding": true,
+  "fields": [
+   "awardDate"
+  ],
+  "status": "sample",
+  "notes": "Operative DID provision; binding is conditional on actual invocation and stated scope, not an automatic legal obligation. Composite quotation: separate verbatim source spans are separated by blank lines; intervening list items, text, or page furniture is omitted. No consecutive-sentence claim is made. Each span independently matches the freshly inspected PDF. Span PDF pages: 1, 1."
+ },
+ {
+  "id": "DZR-F6-0032",
+  "alias": "DI-MGMT-82255A section 3.1(c); PDF 1",
+  "source": {
+   "docId": "DI-MGMT-82255A",
+   "edition": "A, 3 February 2023",
+   "paragraph": "3.1(c); PDF 1",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5781165",
+   "passage": "The contract information section shall identify the following:\n\nc. Procurement Instrument Identification Number (PIIN);",
+   "passageSHA256": "b623aff24ea392ae200a9fb6439c741b1b4deac55d4259dc3d36ff477613a945"
+  },
+  "wording": "The Supply Chain Risk Register contract-information section shall identify the Procurement Instrument Identification Number.",
+  "wordingSHA256": "e0ee4a7a863c3049fb478bd952118753a89973cf1f15db6d908274a4629dd762",
+  "actor": "The Supply Chain Risk Register contract-information section",
+  "condition": "When DI-MGMT-82255A is invoked by the applicable contract, solicitation, or CDRL for supply-chain risks associated with the prime contractor, suppliers, or subcontractors and the products or services to be provided; this specialized branch is not a generic issue/opportunity-register mandate.",
+  "verificationIntent": "inspection",
+  "kind": "identifier",
+  "binding": true,
+  "fields": [
+   "piin"
+  ],
+  "status": "sample",
+  "notes": "Operative DID provision; binding is conditional on actual invocation and stated scope, not an automatic legal obligation. Composite quotation: separate verbatim source spans are separated by blank lines; intervening list items, text, or page furniture is omitted. No consecutive-sentence claim is made. Each span independently matches the freshly inspected PDF. Span PDF pages: 1, 1."
+ },
+ {
+  "id": "DZR-F6-0033",
+  "alias": "DI-MGMT-82255A section 3.1(d); PDF 1",
+  "source": {
+   "docId": "DI-MGMT-82255A",
+   "edition": "A, 3 February 2023",
+   "paragraph": "3.1(d); PDF 1",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5781165",
+   "passage": "The contract information section shall identify the following:\n\nd. Supplemental Procurement Instrument Identification Number (SPIIN);",
+   "passageSHA256": "a557c5ac658ef10cfbc24e1acf0e5bfba9655abe73d91ae0c74ad0fc218c04b3"
+  },
+  "wording": "The Supply Chain Risk Register contract-information section shall identify the Supplemental Procurement Instrument Identification Number.",
+  "wordingSHA256": "153046639a2a5a9819a1adc0382794ea5ab07cd55d4f08bc06da554b64acf630",
+  "actor": "The Supply Chain Risk Register contract-information section",
+  "condition": "When DI-MGMT-82255A is invoked by the applicable contract, solicitation, or CDRL for supply-chain risks associated with the prime contractor, suppliers, or subcontractors and the products or services to be provided; this specialized branch is not a generic issue/opportunity-register mandate.",
+  "verificationIntent": "inspection",
+  "kind": "identifier",
+  "binding": true,
+  "fields": [
+   "spiin"
+  ],
+  "status": "sample",
+  "notes": "Operative DID provision; binding is conditional on actual invocation and stated scope, not an automatic legal obligation. Composite quotation: separate verbatim source spans are separated by blank lines; intervening list items, text, or page furniture is omitted. No consecutive-sentence claim is made. Each span independently matches the freshly inspected PDF. Span PDF pages: 1, 1."
+ },
+ {
+  "id": "DZR-F6-0034",
+  "alias": "DI-MGMT-82255A section 3.1(e); PDF 1",
+  "source": {
+   "docId": "DI-MGMT-82255A",
+   "edition": "A, 3 February 2023",
+   "paragraph": "3.1(e); PDF 1",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5781165",
+   "passage": "The contract information section shall identify the following:\n\ne. Delivery order number/Task order number;",
+   "passageSHA256": "619ad554437866e6de7ee785bf8d3c2a8cf940e0dbd691a25df3b5309a0b3634"
+  },
+  "wording": "The Supply Chain Risk Register contract-information section shall identify the delivery-order or task-order number.",
+  "wordingSHA256": "c6a207153fdd194c8d9940f43128d8f287390c6519946a0a54c7c9a1b79ae44f",
+  "actor": "The Supply Chain Risk Register contract-information section",
+  "condition": "When DI-MGMT-82255A is invoked by the applicable contract, solicitation, or CDRL for supply-chain risks associated with the prime contractor, suppliers, or subcontractors and the products or services to be provided; this specialized branch is not a generic issue/opportunity-register mandate.",
+  "verificationIntent": "inspection",
+  "kind": "identifier",
+  "binding": true,
+  "fields": [
+   "orderNumber"
+  ],
+  "status": "sample",
+  "notes": "Operative DID provision; binding is conditional on actual invocation and stated scope, not an automatic legal obligation. Composite quotation: separate verbatim source spans are separated by blank lines; intervening list items, text, or page furniture is omitted. No consecutive-sentence claim is made. Each span independently matches the freshly inspected PDF. Span PDF pages: 1, 1."
+ },
+ {
+  "id": "DZR-F6-0035",
+  "alias": "DI-MGMT-82255A section 3.1(f); PDF 1",
+  "source": {
+   "docId": "DI-MGMT-82255A",
+   "edition": "A, 3 February 2023",
+   "paragraph": "3.1(f); PDF 1",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5781165",
+   "passage": "The contract information section shall identify the following:\n\nf. Contract Line Item Number (CLIN);",
+   "passageSHA256": "f44fe27621701ede69aa66277a1358f6dd13862c70133b6a89f3745b0e71691d"
+  },
+  "wording": "The Supply Chain Risk Register contract-information section shall identify the Contract Line Item Number.",
+  "wordingSHA256": "ed6273adbd91cb835392dfc3dfc86c85d616d8199b81febf264adbd40fa14613",
+  "actor": "The Supply Chain Risk Register contract-information section",
+  "condition": "When DI-MGMT-82255A is invoked by the applicable contract, solicitation, or CDRL for supply-chain risks associated with the prime contractor, suppliers, or subcontractors and the products or services to be provided; this specialized branch is not a generic issue/opportunity-register mandate.",
+  "verificationIntent": "inspection",
+  "kind": "identifier",
+  "binding": true,
+  "fields": [
+   "clin"
+  ],
+  "status": "sample",
+  "notes": "Operative DID provision; binding is conditional on actual invocation and stated scope, not an automatic legal obligation. Composite quotation: separate verbatim source spans are separated by blank lines; intervening list items, text, or page furniture is omitted. No consecutive-sentence claim is made. Each span independently matches the freshly inspected PDF. Span PDF pages: 1, 1."
+ },
+ {
+  "id": "DZR-F6-0036",
+  "alias": "DI-MGMT-82255A section 3.1(g); PDF 1",
+  "source": {
+   "docId": "DI-MGMT-82255A",
+   "edition": "A, 3 February 2023",
+   "paragraph": "3.1(g); PDF 1",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5781165",
+   "passage": "The contract information section shall identify the following:\n\ng. Date of reporting period;",
+   "passageSHA256": "13814ca95e6b3dce1ac7497909d7c39ef0e4563a0204aae899b6897fd3942c7d"
+  },
+  "wording": "The Supply Chain Risk Register contract-information section shall identify the date of the reporting period.",
+  "wordingSHA256": "d64f12ac5c9999aa91800094cdba512ca9bbd079621bd2fae98b40f4e6da97e7",
+  "actor": "The Supply Chain Risk Register contract-information section",
+  "condition": "When DI-MGMT-82255A is invoked by the applicable contract, solicitation, or CDRL for supply-chain risks associated with the prime contractor, suppliers, or subcontractors and the products or services to be provided; this specialized branch is not a generic issue/opportunity-register mandate.",
+  "verificationIntent": "inspection",
+  "kind": "content",
+  "binding": true,
+  "fields": [
+   "reportingPeriodDate"
+  ],
+  "status": "sample",
+  "notes": "Operative DID provision; binding is conditional on actual invocation and stated scope, not an automatic legal obligation. Composite quotation: separate verbatim source spans are separated by blank lines; intervening list items, text, or page furniture is omitted. No consecutive-sentence claim is made. Each span independently matches the freshly inspected PDF. Span PDF pages: 1, 1."
+ },
+ {
+  "id": "DZR-F6-0037",
+  "alias": "DI-MGMT-82255A section 3.1(h); PDF 1",
+  "source": {
+   "docId": "DI-MGMT-82255A",
+   "edition": "A, 3 February 2023",
+   "paragraph": "3.1(h); PDF 1",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5781165",
+   "passage": "The contract information section shall identify the following:\n\nh. Security classification;",
+   "passageSHA256": "016d688831831c86c2242bbc6889d2fca44c2a6a7369b1b161d626d51088bb74"
+  },
+  "wording": "The Supply Chain Risk Register contract-information section shall identify the security classification.",
+  "wordingSHA256": "7c7d581056c0adeacf806c44f5aed2d21737b52f735f1f1763608c180e04f38b",
+  "actor": "The Supply Chain Risk Register contract-information section",
+  "condition": "When DI-MGMT-82255A is invoked by the applicable contract, solicitation, or CDRL for supply-chain risks associated with the prime contractor, suppliers, or subcontractors and the products or services to be provided; this specialized branch is not a generic issue/opportunity-register mandate.",
+  "verificationIntent": "inspection",
+  "kind": "marking",
+  "binding": true,
+  "fields": [
+   "securityClassification"
+  ],
+  "status": "sample",
+  "notes": "Operative DID provision; binding is conditional on actual invocation and stated scope, not an automatic legal obligation. Composite quotation: separate verbatim source spans are separated by blank lines; intervening list items, text, or page furniture is omitted. No consecutive-sentence claim is made. Each span independently matches the freshly inspected PDF. Span PDF pages: 1, 1."
+ },
+ {
+  "id": "DZR-F6-0038",
+  "alias": "DI-MGMT-82255A section 3.1(i); PDF 1",
+  "source": {
+   "docId": "DI-MGMT-82255A",
+   "edition": "A, 3 February 2023",
+   "paragraph": "3.1(i); PDF 1",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5781165",
+   "passage": "The contract information section shall identify the following:\n\ni. USD(R&E) Critical Technology List (if applicable);",
+   "passageSHA256": "31696a5664147d9eb134d2ab73b6343b6b5f2779fb88eae53b726b179ccc8d35"
+  },
+  "wording": "The Supply Chain Risk Register contract-information section shall identify the USD(R&E) Critical Technology List.",
+  "wordingSHA256": "2aa25781c058a723b558344d8c7882716036068f08d5c954f5fa9add63e7aaa5",
+  "actor": "The Supply Chain Risk Register contract-information section",
+  "condition": "When DI-MGMT-82255A is invoked by the applicable contract, solicitation, or CDRL for supply-chain risks associated with the prime contractor, suppliers, or subcontractors and the products or services to be provided; this specialized branch is not a generic issue/opportunity-register mandate; when applicable.",
+  "verificationIntent": "inspection",
+  "kind": "content",
+  "binding": true,
+  "fields": [
+   "criticalTechnologyList"
+  ],
+  "status": "sample",
+  "notes": "Operative DID provision; binding is conditional on actual invocation and stated scope, not an automatic legal obligation. Composite quotation: separate verbatim source spans are separated by blank lines; intervening list items, text, or page furniture is omitted. No consecutive-sentence claim is made. Each span independently matches the freshly inspected PDF. Span PDF pages: 1, 1."
+ },
+ {
+  "id": "DZR-F6-0039",
+  "alias": "DI-MGMT-82255A section 3.1(j); PDF 1",
+  "source": {
+   "docId": "DI-MGMT-82255A",
+   "edition": "A, 3 February 2023",
+   "paragraph": "3.1(j); PDF 1",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5781165",
+   "passage": "The contract information section shall identify the following:\n\nj. Distribution statement; and",
+   "passageSHA256": "b60ec703617b536c4d74c43e434fb2b29d65349b452420767a8a72089b0d36d0"
+  },
+  "wording": "The Supply Chain Risk Register contract-information section shall identify the distribution statement.",
+  "wordingSHA256": "df64835946cba3325932178a2d3d645f7aadf2debec13aa19baeef3bb28b39d0",
+  "actor": "The Supply Chain Risk Register contract-information section",
+  "condition": "When DI-MGMT-82255A is invoked by the applicable contract, solicitation, or CDRL for supply-chain risks associated with the prime contractor, suppliers, or subcontractors and the products or services to be provided; this specialized branch is not a generic issue/opportunity-register mandate.",
+  "verificationIntent": "inspection",
+  "kind": "marking",
+  "binding": true,
+  "fields": [
+   "distributionStatement"
+  ],
+  "status": "sample",
+  "notes": "Operative DID provision; binding is conditional on actual invocation and stated scope, not an automatic legal obligation. Composite quotation: separate verbatim source spans are separated by blank lines; intervening list items, text, or page furniture is omitted. No consecutive-sentence claim is made. Each span independently matches the freshly inspected PDF. Span PDF pages: 1, 1."
+ },
+ {
+  "id": "DZR-F6-0040",
+  "alias": "DI-MGMT-82255A section 3.1(k); PDF 1,2",
+  "source": {
+   "docId": "DI-MGMT-82255A",
+   "edition": "A, 3 February 2023",
+   "paragraph": "3.1(k); PDF 1,2",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5781165",
+   "passage": "The contract information section shall identify the following:\n\nk. Destruction notice.",
+   "passageSHA256": "f29d87b5de06c7d29fe57c2f108dbe2e0a2debfa6ed48db55e9eb03a1e93b8b9"
+  },
+  "wording": "The Supply Chain Risk Register contract-information section shall identify the destruction notice.",
+  "wordingSHA256": "43fce069a85ee86c02b4950af9e0f0bce86fb0fff6ff4981b7dfcda5a1fbe7ac",
+  "actor": "The Supply Chain Risk Register contract-information section",
+  "condition": "When DI-MGMT-82255A is invoked by the applicable contract, solicitation, or CDRL for supply-chain risks associated with the prime contractor, suppliers, or subcontractors and the products or services to be provided; this specialized branch is not a generic issue/opportunity-register mandate.",
+  "verificationIntent": "inspection",
+  "kind": "marking",
+  "binding": true,
+  "fields": [
+   "destructionNotice"
+  ],
+  "status": "sample",
+  "notes": "Operative DID provision; binding is conditional on actual invocation and stated scope, not an automatic legal obligation. Composite quotation: separate verbatim source spans are separated by blank lines; intervening list items, text, or page furniture is omitted. No consecutive-sentence claim is made. Each span independently matches the freshly inspected PDF. Span PDF pages: 1, 2."
+ },
+ {
+  "id": "DZR-F6-0041",
+  "alias": "DI-MGMT-82255A section 3.1(l); PDF 1,2",
+  "source": {
+   "docId": "DI-MGMT-82255A",
+   "edition": "A, 3 February 2023",
+   "paragraph": "3.1(l); PDF 1,2",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5781165",
+   "passage": "The contract information section shall identify the following:\n\nl. Cybersecurity Maturity Model Certification (CMMC) certification level (Note: DoDI 5000.90 3.4.a)",
+   "passageSHA256": "2ebe59c14b55403847ad1b2f460fde3225d13552ad43edfe577b042f60e36002"
+  },
+  "wording": "The Supply Chain Risk Register contract-information section shall identify the Cybersecurity Maturity Model Certification certification level.",
+  "wordingSHA256": "4e980b7ce5795466e0a7b21dcd7fdd923f333b05f732fb402399e6384e9f7197",
+  "actor": "The Supply Chain Risk Register contract-information section",
+  "condition": "When DI-MGMT-82255A is invoked by the applicable contract, solicitation, or CDRL for supply-chain risks associated with the prime contractor, suppliers, or subcontractors and the products or services to be provided; this specialized branch is not a generic issue/opportunity-register mandate.",
+  "verificationIntent": "inspection",
+  "kind": "content",
+  "binding": true,
+  "fields": [
+   "cmmcLevel"
+  ],
+  "status": "sample",
+  "notes": "Operative DID provision; binding is conditional on actual invocation and stated scope, not an automatic legal obligation. Composite quotation: separate verbatim source spans are separated by blank lines; intervening list items, text, or page furniture is omitted. No consecutive-sentence claim is made. Each span independently matches the freshly inspected PDF. Span PDF pages: 1, 2. This extracts a register field, not a new obligation to obtain a particular certification or classification."
+ },
+ {
+  "id": "DZR-F6-0042",
+  "alias": "DI-MGMT-82255A section 3; 3.2; PDF 1,2",
+  "source": {
+   "docId": "DI-MGMT-82255A",
+   "edition": "A, 3 February 2023",
+   "paragraph": "3; 3.2; PDF 1,2",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5781165",
+   "passage": "The Supply Chain Risk Register shall include the following:\n\nList of all supply chain risks, segregated into proscribed risk categories of identified and potential supply chain risks, which shall include the following information:",
+   "passageSHA256": "c1393375d91081eea3e7151139620b3b1a46e48ea76754d880c2bf69a5a682fc"
+  },
+  "wording": "The Supply Chain Risk Register shall list all identified and potential supply-chain risks.",
+  "wordingSHA256": "d4662686438a8fde5217c7a5a39c158c05fee417bd2b237b0d8c3dc9196b3908",
+  "actor": "The Supply Chain Risk Register",
+  "condition": "When DI-MGMT-82255A is invoked by the applicable contract, solicitation, or CDRL for supply-chain risks associated with the prime contractor, suppliers, or subcontractors and the products or services to be provided; this specialized branch is not a generic issue/opportunity-register mandate.",
+  "verificationIntent": "inspection",
+  "kind": "content",
+  "binding": true,
+  "fields": [
+   "riskEntries"
+  ],
+  "status": "sample",
+  "notes": "Operative DID provision; binding is conditional on actual invocation and stated scope, not an automatic legal obligation. Composite quotation: separate verbatim source spans are separated by blank lines; intervening list items, text, or page furniture is omitted. No consecutive-sentence claim is made. Each span independently matches the freshly inspected PDF. Span PDF pages: 1, 2. All is confined to the invoked supply-chain scope, not every enterprise/program risk or all issues and opportunities."
+ },
+ {
+  "id": "DZR-F6-0043",
+  "alias": "DI-MGMT-82255A section 3.2; PDF 2",
+  "source": {
+   "docId": "DI-MGMT-82255A",
+   "edition": "A, 3 February 2023",
+   "paragraph": "3.2; PDF 2",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5781165",
+   "passage": "List of all supply chain risks, segregated into proscribed risk categories of identified and potential supply chain risks, which shall include the following information:",
+   "passageSHA256": "c5a97327953aecdafd028080024c48c2c4a2fd3a0f02fff1dcd419f2fdbc1847"
+  },
+  "wording": "The Supply Chain Risk Register risk list shall be segregated into the prescribed risk categories.",
+  "wordingSHA256": "65218f0a95dcc7dff5b644aa160a0174118292332f6568dfc7bf54e2aee7c11c",
+  "actor": "The Supply Chain Risk Register risk list",
+  "condition": "When DI-MGMT-82255A is invoked by the applicable contract, solicitation, or CDRL for supply-chain risks associated with the prime contractor, suppliers, or subcontractors and the products or services to be provided; this specialized branch is not a generic issue/opportunity-register mandate.",
+  "verificationIntent": "inspection",
+  "kind": "structure",
+  "binding": true,
+  "fields": [
+   "riskCategory"
+  ],
+  "status": "sample",
+  "notes": "Operative DID provision; binding is conditional on actual invocation and stated scope, not an automatic legal obligation. One consecutive source span; layout whitespace normalized. The source uses proscribed. The normalized wording uses prescribed to express the listed categories without altering the verbatim passage."
+ },
+ {
+  "id": "DZR-F6-0044",
+  "alias": "DI-MGMT-82255A section 3.2(a); PDF 2",
+  "source": {
+   "docId": "DI-MGMT-82255A",
+   "edition": "A, 3 February 2023",
+   "paragraph": "3.2(a); PDF 2",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5781165",
+   "passage": "List of all supply chain risks, segregated into proscribed risk categories of identified and potential supply chain risks, which shall include the following information:\n\na. Unique Risk Identifier",
+   "passageSHA256": "97eb0351aa5db73f01e1943c049e5c69e6e0d8ccd83a27b0d8322583fa8b6d0c"
+  },
+  "wording": "Each Supply Chain Risk Register risk entry shall include a unique risk identifier.",
+  "wordingSHA256": "3013b0f14520c7295d5abbeaa6c9c3024fe9e047496fb7bd7cc3f8de70c68b2a",
+  "actor": "Each Supply Chain Risk Register risk entry",
+  "condition": "When DI-MGMT-82255A is invoked by the applicable contract, solicitation, or CDRL for supply-chain risks associated with the prime contractor, suppliers, or subcontractors and the products or services to be provided; this specialized branch is not a generic issue/opportunity-register mandate.",
+  "verificationIntent": "inspection",
+  "kind": "identifier",
+  "binding": true,
+  "fields": [
+   "riskId"
+  ],
+  "status": "sample",
+  "notes": "Operative DID provision; binding is conditional on actual invocation and stated scope, not an automatic legal obligation. Composite quotation: separate verbatim source spans are separated by blank lines; intervening list items, text, or page furniture is omitted. No consecutive-sentence claim is made. Each span independently matches the freshly inspected PDF. Span PDF pages: 2, 2. The list-item quotation stops before a source illustration; no illustrative value or action is promoted to a requirement."
+ },
+ {
+  "id": "DZR-F6-0045",
+  "alias": "DI-MGMT-82255A section 3.2(b); PDF 2",
+  "source": {
+   "docId": "DI-MGMT-82255A",
+   "edition": "A, 3 February 2023",
+   "paragraph": "3.2(b); PDF 2",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5781165",
+   "passage": "List of all supply chain risks, segregated into proscribed risk categories of identified and potential supply chain risks, which shall include the following information:\n\nb. Risk category (i.e., Foreign Ownership, Control or Influence (FOCI), Political and Regulatory, Economic, Environmental, Product Quality and Design, Manufacturing and Supply, Transportation and Distribution, Financial, Compliance, Technology and Cybersecurity, Human Capital, or Infrastructure);",
+   "passageSHA256": "ede582f0754d409c981f7b2b6d69a66a40a0344e27946169847bbdf19a07c3d9"
+  },
+  "wording": "Each Supply Chain Risk Register risk entry shall include the applicable risk category from Foreign Ownership, Control or Influence; Political and Regulatory; Economic; Environmental; Product Quality and Design; Manufacturing and Supply; Transportation and Distribution; Financial; Compliance; Technology and Cybersecurity; Human Capital; or Infrastructure.",
+  "wordingSHA256": "91f65f60ad5ca729ac63436aabf5419dc56d78dfb6810e018a2e4f17fe27dff6",
+  "actor": "Each Supply Chain Risk Register risk entry",
+  "condition": "When DI-MGMT-82255A is invoked by the applicable contract, solicitation, or CDRL for supply-chain risks associated with the prime contractor, suppliers, or subcontractors and the products or services to be provided; this specialized branch is not a generic issue/opportunity-register mandate.",
+  "verificationIntent": "inspection",
+  "kind": "content",
+  "binding": true,
+  "fields": [
+   "riskCategory"
+  ],
+  "status": "sample",
+  "notes": "Operative DID provision; binding is conditional on actual invocation and stated scope, not an automatic legal obligation. Composite quotation: separate verbatim source spans are separated by blank lines; intervening list items, text, or page furniture is omitted. No consecutive-sentence claim is made. Each span independently matches the freshly inspected PDF. Span PDF pages: 2, 2."
+ },
+ {
+  "id": "DZR-F6-0046",
+  "alias": "DI-MGMT-82255A section 3.2(c); PDF 2",
+  "source": {
+   "docId": "DI-MGMT-82255A",
+   "edition": "A, 3 February 2023",
+   "paragraph": "3.2(c); PDF 2",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5781165",
+   "passage": "List of all supply chain risks, segregated into proscribed risk categories of identified and potential supply chain risks, which shall include the following information:\n\nc. Risk owner;",
+   "passageSHA256": "bcf03177a57d93b8f82b307290b8d059c7762b8e44f350e249b59f0c2f0dd671"
+  },
+  "wording": "Each Supply Chain Risk Register risk entry shall include the risk owner.",
+  "wordingSHA256": "809a2321b6c083aa4247ba54a01cc4504ff5729b336e63834891803e6ab091d8",
+  "actor": "Each Supply Chain Risk Register risk entry",
+  "condition": "When DI-MGMT-82255A is invoked by the applicable contract, solicitation, or CDRL for supply-chain risks associated with the prime contractor, suppliers, or subcontractors and the products or services to be provided; this specialized branch is not a generic issue/opportunity-register mandate.",
+  "verificationIntent": "inspection",
+  "kind": "content",
+  "binding": true,
+  "fields": [
+   "riskOwner"
+  ],
+  "status": "sample",
+  "notes": "Operative DID provision; binding is conditional on actual invocation and stated scope, not an automatic legal obligation. Composite quotation: separate verbatim source spans are separated by blank lines; intervening list items, text, or page furniture is omitted. No consecutive-sentence claim is made. Each span independently matches the freshly inspected PDF. Span PDF pages: 2, 2."
+ },
+ {
+  "id": "DZR-F6-0047",
+  "alias": "DI-MGMT-82255A section 3.2(d); PDF 2",
+  "source": {
+   "docId": "DI-MGMT-82255A",
+   "edition": "A, 3 February 2023",
+   "paragraph": "3.2(d); PDF 2",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5781165",
+   "passage": "List of all supply chain risks, segregated into proscribed risk categories of identified and potential supply chain risks, which shall include the following information:\n\nd. Weapon system;",
+   "passageSHA256": "9b1f3e95c36ac9058bb30d0af7ccac49c6bd979ae604cf763d6546fb2ea74bff"
+  },
+  "wording": "Each Supply Chain Risk Register risk entry shall include the weapon system.",
+  "wordingSHA256": "f2f41d141b5ad0b109440ecaf443f70fce57f3a24d931f0b810cda4ed255bf21",
+  "actor": "Each Supply Chain Risk Register risk entry",
+  "condition": "When DI-MGMT-82255A is invoked by the applicable contract, solicitation, or CDRL for supply-chain risks associated with the prime contractor, suppliers, or subcontractors and the products or services to be provided; this specialized branch is not a generic issue/opportunity-register mandate.",
+  "verificationIntent": "inspection",
+  "kind": "identifier",
+  "binding": true,
+  "fields": [
+   "weaponSystem"
+  ],
+  "status": "sample",
+  "notes": "Operative DID provision; binding is conditional on actual invocation and stated scope, not an automatic legal obligation. Composite quotation: separate verbatim source spans are separated by blank lines; intervening list items, text, or page furniture is omitted. No consecutive-sentence claim is made. Each span independently matches the freshly inspected PDF. Span PDF pages: 2, 2."
+ },
+ {
+  "id": "DZR-F6-0048",
+  "alias": "DI-MGMT-82255A section 3.2(e); PDF 2",
+  "source": {
+   "docId": "DI-MGMT-82255A",
+   "edition": "A, 3 February 2023",
+   "paragraph": "3.2(e); PDF 2",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5781165",
+   "passage": "List of all supply chain risks, segregated into proscribed risk categories of identified and potential supply chain risks, which shall include the following information:\n\ne. National Item Identification Number (NIIN);",
+   "passageSHA256": "04c9c51bb42dc0dac4af4d0ac1546bab75c2ca2690d9dd72555f3f3c4e55b461"
+  },
+  "wording": "Each Supply Chain Risk Register risk entry shall include the National Item Identification Number.",
+  "wordingSHA256": "3146110f05b0f9483c65bf679a268099889af5cc2d3a770e1793baff9826b643",
+  "actor": "Each Supply Chain Risk Register risk entry",
+  "condition": "When DI-MGMT-82255A is invoked by the applicable contract, solicitation, or CDRL for supply-chain risks associated with the prime contractor, suppliers, or subcontractors and the products or services to be provided; this specialized branch is not a generic issue/opportunity-register mandate.",
+  "verificationIntent": "inspection",
+  "kind": "identifier",
+  "binding": true,
+  "fields": [
+   "niin"
+  ],
+  "status": "sample",
+  "notes": "Operative DID provision; binding is conditional on actual invocation and stated scope, not an automatic legal obligation. Composite quotation: separate verbatim source spans are separated by blank lines; intervening list items, text, or page furniture is omitted. No consecutive-sentence claim is made. Each span independently matches the freshly inspected PDF. Span PDF pages: 2, 2."
+ },
+ {
+  "id": "DZR-F6-0049",
+  "alias": "DI-MGMT-82255A section 3.2(f); PDF 2",
+  "source": {
+   "docId": "DI-MGMT-82255A",
+   "edition": "A, 3 February 2023",
+   "paragraph": "3.2(f); PDF 2",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5781165",
+   "passage": "List of all supply chain risks, segregated into proscribed risk categories of identified and potential supply chain risks, which shall include the following information:\n\nf. Vendor Part Number;",
+   "passageSHA256": "5c51927b724c434252deb77529035b06c2eafbaf4ac4d1063387513673c8a633"
+  },
+  "wording": "Each Supply Chain Risk Register risk entry shall include the vendor part number.",
+  "wordingSHA256": "1bc4e1ccc48736f176740c2c0c6b6ba346b7563fbcc33afd7c85bea0cad4d266",
+  "actor": "Each Supply Chain Risk Register risk entry",
+  "condition": "When DI-MGMT-82255A is invoked by the applicable contract, solicitation, or CDRL for supply-chain risks associated with the prime contractor, suppliers, or subcontractors and the products or services to be provided; this specialized branch is not a generic issue/opportunity-register mandate.",
+  "verificationIntent": "inspection",
+  "kind": "identifier",
+  "binding": true,
+  "fields": [
+   "vendorPartNumber"
+  ],
+  "status": "sample",
+  "notes": "Operative DID provision; binding is conditional on actual invocation and stated scope, not an automatic legal obligation. Composite quotation: separate verbatim source spans are separated by blank lines; intervening list items, text, or page furniture is omitted. No consecutive-sentence claim is made. Each span independently matches the freshly inspected PDF. Span PDF pages: 2, 2."
+ },
+ {
+  "id": "DZR-F6-0050",
+  "alias": "DI-MGMT-82255A section 3.2(g); PDF 2",
+  "source": {
+   "docId": "DI-MGMT-82255A",
+   "edition": "A, 3 February 2023",
+   "paragraph": "3.2(g); PDF 2",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5781165",
+   "passage": "List of all supply chain risks, segregated into proscribed risk categories of identified and potential supply chain risks, which shall include the following information:\n\ng. Brief description of each supply chain risk;",
+   "passageSHA256": "2daf00e86a378dae8d34c889d5d8ccba68587d6db4300add1a007231673c3c25"
+  },
+  "wording": "Each Supply Chain Risk Register risk entry shall include a brief description of the supply-chain risk.",
+  "wordingSHA256": "700f9894a94cab0d77c5cbe0cc7272563b823101af42a1738be455a0d38fddc5",
+  "actor": "Each Supply Chain Risk Register risk entry",
+  "condition": "When DI-MGMT-82255A is invoked by the applicable contract, solicitation, or CDRL for supply-chain risks associated with the prime contractor, suppliers, or subcontractors and the products or services to be provided; this specialized branch is not a generic issue/opportunity-register mandate.",
+  "verificationIntent": "inspection",
+  "kind": "content",
+  "binding": true,
+  "fields": [
+   "riskDescription"
+  ],
+  "status": "sample",
+  "notes": "Operative DID provision; binding is conditional on actual invocation and stated scope, not an automatic legal obligation. Composite quotation: separate verbatim source spans are separated by blank lines; intervening list items, text, or page furniture is omitted. No consecutive-sentence claim is made. Each span independently matches the freshly inspected PDF. Span PDF pages: 2, 2."
+ },
+ {
+  "id": "DZR-F6-0051",
+  "alias": "DI-MGMT-82255A section 3.2(h); PDF 2",
+  "source": {
+   "docId": "DI-MGMT-82255A",
+   "edition": "A, 3 February 2023",
+   "paragraph": "3.2(h); PDF 2",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5781165",
+   "passage": "List of all supply chain risks, segregated into proscribed risk categories of identified and potential supply chain risks, which shall include the following information:\n\nh. Location or risk event;",
+   "passageSHA256": "6892a1cf31d0db6f9f42504436505f32934fb4f6713d1fc5126569faf21cfc93"
+  },
+  "wording": "Each Supply Chain Risk Register risk entry shall include the location or risk event.",
+  "wordingSHA256": "d3a3d70d6a3d2b22e51e2b00ab1f47ca80b4a264af2e9fededc9caba68905465",
+  "actor": "Each Supply Chain Risk Register risk entry",
+  "condition": "When DI-MGMT-82255A is invoked by the applicable contract, solicitation, or CDRL for supply-chain risks associated with the prime contractor, suppliers, or subcontractors and the products or services to be provided; this specialized branch is not a generic issue/opportunity-register mandate.",
+  "verificationIntent": "inspection",
+  "kind": "content",
+  "binding": true,
+  "fields": [
+   "locationOrRiskEvent"
+  ],
+  "status": "sample",
+  "notes": "Operative DID provision; binding is conditional on actual invocation and stated scope, not an automatic legal obligation. Composite quotation: separate verbatim source spans are separated by blank lines; intervening list items, text, or page furniture is omitted. No consecutive-sentence claim is made. Each span independently matches the freshly inspected PDF. Span PDF pages: 2, 2."
+ },
+ {
+  "id": "DZR-F6-0052",
+  "alias": "DI-MGMT-82255A section 3.2(i); PDF 2",
+  "source": {
+   "docId": "DI-MGMT-82255A",
+   "edition": "A, 3 February 2023",
+   "paragraph": "3.2(i); PDF 2",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5781165",
+   "passage": "List of all supply chain risks, segregated into proscribed risk categories of identified and potential supply chain risks, which shall include the following information:\n\ni. Triggering event or root cause(s);",
+   "passageSHA256": "e0de17caa946ea3e399b78587876a975b7b03fc94146a359c638cf61a959308b"
+  },
+  "wording": "Each Supply Chain Risk Register risk entry shall include the triggering event or root causes.",
+  "wordingSHA256": "ccf9a7e7f3eb66ca46a0b2d1d116a362276559b4fc0d9ad3815298a8ee0b730b",
+  "actor": "Each Supply Chain Risk Register risk entry",
+  "condition": "When DI-MGMT-82255A is invoked by the applicable contract, solicitation, or CDRL for supply-chain risks associated with the prime contractor, suppliers, or subcontractors and the products or services to be provided; this specialized branch is not a generic issue/opportunity-register mandate.",
+  "verificationIntent": "inspection",
+  "kind": "content",
+  "binding": true,
+  "fields": [
+   "triggerOrRootCauses"
+  ],
+  "status": "sample",
+  "notes": "Operative DID provision; binding is conditional on actual invocation and stated scope, not an automatic legal obligation. Composite quotation: separate verbatim source spans are separated by blank lines; intervening list items, text, or page furniture is omitted. No consecutive-sentence claim is made. Each span independently matches the freshly inspected PDF. Span PDF pages: 2, 2."
+ },
+ {
+  "id": "DZR-F6-0053",
+  "alias": "DI-MGMT-82255A section 3.2(j); PDF 2",
+  "source": {
+   "docId": "DI-MGMT-82255A",
+   "edition": "A, 3 February 2023",
+   "paragraph": "3.2(j); PDF 2",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5781165",
+   "passage": "List of all supply chain risks, segregated into proscribed risk categories of identified and potential supply chain risks, which shall include the following information:\n\nj. Initial risk assessment;",
+   "passageSHA256": "378bd2944dc3f0c512022af2be9ff22f682d99e5db254f9f98c07df1cfe41dee"
+  },
+  "wording": "Each Supply Chain Risk Register risk entry shall include the initial risk assessment.",
+  "wordingSHA256": "5aa50fb6cceb1b1bbad37fdcdce4019019f45a955a51f5984c939d269b8140d0",
+  "actor": "Each Supply Chain Risk Register risk entry",
+  "condition": "When DI-MGMT-82255A is invoked by the applicable contract, solicitation, or CDRL for supply-chain risks associated with the prime contractor, suppliers, or subcontractors and the products or services to be provided; this specialized branch is not a generic issue/opportunity-register mandate.",
+  "verificationIntent": "inspection",
+  "kind": "content",
+  "binding": true,
+  "fields": [
+   "initialRiskAssessment"
+  ],
+  "status": "sample",
+  "notes": "Operative DID provision; binding is conditional on actual invocation and stated scope, not an automatic legal obligation. Composite quotation: separate verbatim source spans are separated by blank lines; intervening list items, text, or page furniture is omitted. No consecutive-sentence claim is made. Each span independently matches the freshly inspected PDF. Span PDF pages: 2, 2."
+ },
+ {
+  "id": "DZR-F6-0054",
+  "alias": "DI-MGMT-82255A section 3.2(k); PDF 2",
+  "source": {
+   "docId": "DI-MGMT-82255A",
+   "edition": "A, 3 February 2023",
+   "paragraph": "3.2(k); PDF 2",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5781165",
+   "passage": "List of all supply chain risks, segregated into proscribed risk categories of identified and potential supply chain risks, which shall include the following information:\n\nk. Risk tolerance level (risk appetite) determined by Program Manager",
+   "passageSHA256": "167078f3a29a83b4ad54fad7a8d44c464ba91d8fbb6d4e7cc221ace50aa17c37"
+  },
+  "wording": "Each Supply Chain Risk Register risk entry shall include the risk tolerance level determined by the Program Manager.",
+  "wordingSHA256": "dad48e2f3409d03960fdf80706a883de5911dd9ebca08a3d40580524d8d78dfa",
+  "actor": "Each Supply Chain Risk Register risk entry",
+  "condition": "When DI-MGMT-82255A is invoked by the applicable contract, solicitation, or CDRL for supply-chain risks associated with the prime contractor, suppliers, or subcontractors and the products or services to be provided; this specialized branch is not a generic issue/opportunity-register mandate.",
+  "verificationIntent": "inspection",
+  "kind": "content",
+  "binding": true,
+  "fields": [
+   "riskToleranceLevel"
+  ],
+  "status": "sample",
+  "notes": "Operative DID provision; binding is conditional on actual invocation and stated scope, not an automatic legal obligation. Composite quotation: separate verbatim source spans are separated by blank lines; intervening list items, text, or page furniture is omitted. No consecutive-sentence claim is made. Each span independently matches the freshly inspected PDF. Span PDF pages: 2, 2."
+ },
+ {
+  "id": "DZR-F6-0055",
+  "alias": "DI-MGMT-82255A section 3.2(l); PDF 2",
+  "source": {
+   "docId": "DI-MGMT-82255A",
+   "edition": "A, 3 February 2023",
+   "paragraph": "3.2(l); PDF 2",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5781165",
+   "passage": "List of all supply chain risks, segregated into proscribed risk categories of identified and potential supply chain risks, which shall include the following information:\n\nl. Residual risk levels (acceptable level of risk);",
+   "passageSHA256": "33c754efed29fb5ee0e3a3279512f15bfc18515d80513c19878fcac244d5927c"
+  },
+  "wording": "Each Supply Chain Risk Register risk entry shall include the residual risk levels representing acceptable risk.",
+  "wordingSHA256": "211e7fe4d65c780243ca99124cc68d530050e5f9cf0cd7c9542cc3c0e2bad7b7",
+  "actor": "Each Supply Chain Risk Register risk entry",
+  "condition": "When DI-MGMT-82255A is invoked by the applicable contract, solicitation, or CDRL for supply-chain risks associated with the prime contractor, suppliers, or subcontractors and the products or services to be provided; this specialized branch is not a generic issue/opportunity-register mandate.",
+  "verificationIntent": "inspection",
+  "kind": "content",
+  "binding": true,
+  "fields": [
+   "residualRiskLevels"
+  ],
+  "status": "sample",
+  "notes": "Operative DID provision; binding is conditional on actual invocation and stated scope, not an automatic legal obligation. Composite quotation: separate verbatim source spans are separated by blank lines; intervening list items, text, or page furniture is omitted. No consecutive-sentence claim is made. Each span independently matches the freshly inspected PDF. Span PDF pages: 2, 2."
+ },
+ {
+  "id": "DZR-F6-0056",
+  "alias": "DI-MGMT-82255A section 3.2(m); PDF 2",
+  "source": {
+   "docId": "DI-MGMT-82255A",
+   "edition": "A, 3 February 2023",
+   "paragraph": "3.2(m); PDF 2",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5781165",
+   "passage": "List of all supply chain risks, segregated into proscribed risk categories of identified and potential supply chain risks, which shall include the following information:\n\nm. Likelihood of occurrence;",
+   "passageSHA256": "5b8c842b7b0d95fe457e19d2d7ad724ccd7a31a743055e00b6893fbdab69186c"
+  },
+  "wording": "Each Supply Chain Risk Register risk entry shall include the likelihood of occurrence.",
+  "wordingSHA256": "c891a05e85a940b9b02888e91866f1a0a2ab3fffb0efa66e988b5a1c13ae8dae",
+  "actor": "Each Supply Chain Risk Register risk entry",
+  "condition": "When DI-MGMT-82255A is invoked by the applicable contract, solicitation, or CDRL for supply-chain risks associated with the prime contractor, suppliers, or subcontractors and the products or services to be provided; this specialized branch is not a generic issue/opportunity-register mandate.",
+  "verificationIntent": "inspection",
+  "kind": "content",
+  "binding": true,
+  "fields": [
+   "likelihood"
+  ],
+  "status": "sample",
+  "notes": "Operative DID provision; binding is conditional on actual invocation and stated scope, not an automatic legal obligation. Composite quotation: separate verbatim source spans are separated by blank lines; intervening list items, text, or page furniture is omitted. No consecutive-sentence claim is made. Each span independently matches the freshly inspected PDF. Span PDF pages: 2, 2."
+ },
+ {
+  "id": "DZR-F6-0057",
+  "alias": "DI-MGMT-82255A section 3.2(n); PDF 2",
+  "source": {
+   "docId": "DI-MGMT-82255A",
+   "edition": "A, 3 February 2023",
+   "paragraph": "3.2(n); PDF 2",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5781165",
+   "passage": "List of all supply chain risks, segregated into proscribed risk categories of identified and potential supply chain risks, which shall include the following information:\n\nn. Potential impact and consequence. Refer to Section 3.3 Risk Reporting Matrix;",
+   "passageSHA256": "f5e0d2bca1a79d48db1c713b05a512f9d3b03cb8598d79f912f18b7ae6fb602d"
+  },
+  "wording": "Each Supply Chain Risk Register risk entry shall include the potential impact and consequence referenced to the Risk Reporting Matrix.",
+  "wordingSHA256": "bdcadb849820e4c49ba1793aabaddf61d0890e6dd62eb3286bac89ccbcc40ebc",
+  "actor": "Each Supply Chain Risk Register risk entry",
+  "condition": "When DI-MGMT-82255A is invoked by the applicable contract, solicitation, or CDRL for supply-chain risks associated with the prime contractor, suppliers, or subcontractors and the products or services to be provided; this specialized branch is not a generic issue/opportunity-register mandate.",
+  "verificationIntent": "inspection",
+  "kind": "content",
+  "binding": true,
+  "fields": [
+   "impactAndConsequence"
+  ],
+  "status": "sample",
+  "notes": "Operative DID provision; binding is conditional on actual invocation and stated scope, not an automatic legal obligation. Composite quotation: separate verbatim source spans are separated by blank lines; intervening list items, text, or page furniture is omitted. No consecutive-sentence claim is made. Each span independently matches the freshly inspected PDF. Span PDF pages: 2, 2."
+ },
+ {
+  "id": "DZR-F6-0058",
+  "alias": "DI-MGMT-82255A section 3.2(o); PDF 2",
+  "source": {
+   "docId": "DI-MGMT-82255A",
+   "edition": "A, 3 February 2023",
+   "paragraph": "3.2(o); PDF 2",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5781165",
+   "passage": "List of all supply chain risks, segregated into proscribed risk categories of identified and potential supply chain risks, which shall include the following information:\n\no. Risk handling response",
+   "passageSHA256": "d3712f1576e918f3bd39223c6fc459617b0fe792d5214c66141df5fd76a297b0"
+  },
+  "wording": "Each Supply Chain Risk Register risk entry shall include the risk handling response.",
+  "wordingSHA256": "ede6f2fdeb33e31f0427751cea9f1d62b669eaea224032d34e54da30e50a662d",
+  "actor": "Each Supply Chain Risk Register risk entry",
+  "condition": "When DI-MGMT-82255A is invoked by the applicable contract, solicitation, or CDRL for supply-chain risks associated with the prime contractor, suppliers, or subcontractors and the products or services to be provided; this specialized branch is not a generic issue/opportunity-register mandate.",
+  "verificationIntent": "inspection",
+  "kind": "content",
+  "binding": true,
+  "fields": [
+   "riskHandlingResponse"
+  ],
+  "status": "sample",
+  "notes": "Operative DID provision; binding is conditional on actual invocation and stated scope, not an automatic legal obligation. Composite quotation: separate verbatim source spans are separated by blank lines; intervening list items, text, or page furniture is omitted. No consecutive-sentence claim is made. Each span independently matches the freshly inspected PDF. Span PDF pages: 2, 2. The list-item quotation stops before a source illustration; no illustrative value or action is promoted to a requirement."
+ },
+ {
+  "id": "DZR-F6-0059",
+  "alias": "DI-MGMT-82255A section 3.2(p); PDF 2",
+  "source": {
+   "docId": "DI-MGMT-82255A",
+   "edition": "A, 3 February 2023",
+   "paragraph": "3.2(p); PDF 2",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5781165",
+   "passage": "List of all supply chain risks, segregated into proscribed risk categories of identified and potential supply chain risks, which shall include the following information:\n\np. Estimated start and completion dates for risk handling plan.",
+   "passageSHA256": "9fdeaf2cb544e3beb27cc32be15866ca23282ab90bca84e07a405f815dd22c87"
+  },
+  "wording": "Each Supply Chain Risk Register risk entry shall include the estimated start date for the risk handling plan.",
+  "wordingSHA256": "d3852705f9630bd747f147a93b5c757c29d54b2e7def5eb4b674fbcc3ad2132a",
+  "actor": "Each Supply Chain Risk Register risk entry",
+  "condition": "When DI-MGMT-82255A is invoked by the applicable contract, solicitation, or CDRL for supply-chain risks associated with the prime contractor, suppliers, or subcontractors and the products or services to be provided; this specialized branch is not a generic issue/opportunity-register mandate.",
+  "verificationIntent": "inspection",
+  "kind": "content",
+  "binding": true,
+  "fields": [
+   "handlingPlanEstimatedStart"
+  ],
+  "status": "sample",
+  "notes": "Operative DID provision; binding is conditional on actual invocation and stated scope, not an automatic legal obligation. Composite quotation: separate verbatim source spans are separated by blank lines; intervening list items, text, or page furniture is omitted. No consecutive-sentence claim is made. Each span independently matches the freshly inspected PDF. Span PDF pages: 2, 2."
+ },
+ {
+  "id": "DZR-F6-0060",
+  "alias": "DI-MGMT-82255A section 3.2(p); PDF 2",
+  "source": {
+   "docId": "DI-MGMT-82255A",
+   "edition": "A, 3 February 2023",
+   "paragraph": "3.2(p); PDF 2",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5781165",
+   "passage": "List of all supply chain risks, segregated into proscribed risk categories of identified and potential supply chain risks, which shall include the following information:\n\np. Estimated start and completion dates for risk handling plan.",
+   "passageSHA256": "9fdeaf2cb544e3beb27cc32be15866ca23282ab90bca84e07a405f815dd22c87"
+  },
+  "wording": "Each Supply Chain Risk Register risk entry shall include the estimated completion date for the risk handling plan.",
+  "wordingSHA256": "5f2d25643ce526cb039ec15e15e4c5dbcebb210ff1e236024bbd45ed7b71ca96",
+  "actor": "Each Supply Chain Risk Register risk entry",
+  "condition": "When DI-MGMT-82255A is invoked by the applicable contract, solicitation, or CDRL for supply-chain risks associated with the prime contractor, suppliers, or subcontractors and the products or services to be provided; this specialized branch is not a generic issue/opportunity-register mandate.",
+  "verificationIntent": "inspection",
+  "kind": "content",
+  "binding": true,
+  "fields": [
+   "handlingPlanEstimatedCompletion"
+  ],
+  "status": "sample",
+  "notes": "Operative DID provision; binding is conditional on actual invocation and stated scope, not an automatic legal obligation. Composite quotation: separate verbatim source spans are separated by blank lines; intervening list items, text, or page furniture is omitted. No consecutive-sentence claim is made. Each span independently matches the freshly inspected PDF. Span PDF pages: 2, 2."
+ },
+ {
+  "id": "DZR-F6-0061",
+  "alias": "DI-MGMT-82255A section Risk Reporting Matrix (cross-referenced as 3.3), a; PDF 2",
+  "source": {
+   "docId": "DI-MGMT-82255A",
+   "edition": "A, 3 February 2023",
+   "paragraph": "Risk Reporting Matrix (cross-referenced as 3.3), a; PDF 2",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5781165",
+   "passage": "The risk likelihood rating levels and probability of occurrence shall be as follows:\n\n1 - Not likely (>1% to ≤ 20%);",
+   "passageSHA256": "807225f315cf13763bebc84d6705ba3efee1c573796bba9da5bb4bfbf6eef8a5"
+  },
+  "wording": "The Supply Chain Risk Register likelihood scale shall define level 1 as “Not likely” for occurrence probability greater than 1 percent and less than or equal to 20 percent.",
+  "wordingSHA256": "3c350c2447761f1cc6718e9a11a0316b00ad1e371b10f7d67011a6dfced1790d",
+  "actor": "The Supply Chain Risk Register likelihood scale",
+  "condition": "When DI-MGMT-82255A is invoked by the applicable contract, solicitation, or CDRL for supply-chain risks associated with the prime contractor, suppliers, or subcontractors and the products or services to be provided; this specialized branch is not a generic issue/opportunity-register mandate.",
+  "verificationIntent": "inspection",
+  "kind": "content",
+  "binding": true,
+  "fields": [
+   "likelihoodLevel",
+   "occurrenceProbability"
+  ],
+  "status": "sample",
+  "notes": "Operative DID provision; binding is conditional on actual invocation and stated scope, not an automatic legal obligation. Composite quotation: separate verbatim source spans are separated by blank lines; intervening list items, text, or page furniture is omitted. No consecutive-sentence claim is made. Each span independently matches the freshly inspected PDF. Span PDF pages: 2, 2. The printed source omits the 3.3 heading number but 3.2(n) explicitly cross-references 3.3. Source endpoints are preserved: ≤1% and >99% are not assigned by this DID; no boundary repair or 0–100% extrapolation is made."
+ },
+ {
+  "id": "DZR-F6-0062",
+  "alias": "DI-MGMT-82255A section Risk Reporting Matrix (cross-referenced as 3.3), a; PDF 2",
+  "source": {
+   "docId": "DI-MGMT-82255A",
+   "edition": "A, 3 February 2023",
+   "paragraph": "Risk Reporting Matrix (cross-referenced as 3.3), a; PDF 2",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5781165",
+   "passage": "The risk likelihood rating levels and probability of occurrence shall be as follows:\n\n2 - Low likelihood (>20% to ≤ 40%);",
+   "passageSHA256": "77712e6652f73e6408bb3dd418a62614acce3e3ca02938fd12b542ec9df281f5"
+  },
+  "wording": "The Supply Chain Risk Register likelihood scale shall define level 2 as “Low likelihood” for occurrence probability greater than 20 percent and less than or equal to 40 percent.",
+  "wordingSHA256": "9e67debf198415e580308475ab5d3c34894647c9ddc9fc2d161a0e42f16ac37e",
+  "actor": "The Supply Chain Risk Register likelihood scale",
+  "condition": "When DI-MGMT-82255A is invoked by the applicable contract, solicitation, or CDRL for supply-chain risks associated with the prime contractor, suppliers, or subcontractors and the products or services to be provided; this specialized branch is not a generic issue/opportunity-register mandate.",
+  "verificationIntent": "inspection",
+  "kind": "content",
+  "binding": true,
+  "fields": [
+   "likelihoodLevel",
+   "occurrenceProbability"
+  ],
+  "status": "sample",
+  "notes": "Operative DID provision; binding is conditional on actual invocation and stated scope, not an automatic legal obligation. Composite quotation: separate verbatim source spans are separated by blank lines; intervening list items, text, or page furniture is omitted. No consecutive-sentence claim is made. Each span independently matches the freshly inspected PDF. Span PDF pages: 2, 2. The printed source omits the 3.3 heading number but 3.2(n) explicitly cross-references 3.3. Source endpoints are preserved: ≤1% and >99% are not assigned by this DID; no boundary repair or 0–100% extrapolation is made."
+ },
+ {
+  "id": "DZR-F6-0063",
+  "alias": "DI-MGMT-82255A section Risk Reporting Matrix (cross-referenced as 3.3), a; PDF 2",
+  "source": {
+   "docId": "DI-MGMT-82255A",
+   "edition": "A, 3 February 2023",
+   "paragraph": "Risk Reporting Matrix (cross-referenced as 3.3), a; PDF 2",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5781165",
+   "passage": "The risk likelihood rating levels and probability of occurrence shall be as follows:\n\n3 - Likely (>40% to ≤ 60%);",
+   "passageSHA256": "d3959e98df9774f4be7948eaff966c4aed1255e2c56753854b2712a7f0aad837"
+  },
+  "wording": "The Supply Chain Risk Register likelihood scale shall define level 3 as “Likely” for occurrence probability greater than 40 percent and less than or equal to 60 percent.",
+  "wordingSHA256": "9701ca28a1f758cf4288c276b4e518053a3f5d3c08b5431279a4c86ca18984e7",
+  "actor": "The Supply Chain Risk Register likelihood scale",
+  "condition": "When DI-MGMT-82255A is invoked by the applicable contract, solicitation, or CDRL for supply-chain risks associated with the prime contractor, suppliers, or subcontractors and the products or services to be provided; this specialized branch is not a generic issue/opportunity-register mandate.",
+  "verificationIntent": "inspection",
+  "kind": "content",
+  "binding": true,
+  "fields": [
+   "likelihoodLevel",
+   "occurrenceProbability"
+  ],
+  "status": "sample",
+  "notes": "Operative DID provision; binding is conditional on actual invocation and stated scope, not an automatic legal obligation. Composite quotation: separate verbatim source spans are separated by blank lines; intervening list items, text, or page furniture is omitted. No consecutive-sentence claim is made. Each span independently matches the freshly inspected PDF. Span PDF pages: 2, 2. The printed source omits the 3.3 heading number but 3.2(n) explicitly cross-references 3.3. Source endpoints are preserved: ≤1% and >99% are not assigned by this DID; no boundary repair or 0–100% extrapolation is made."
+ },
+ {
+  "id": "DZR-F6-0064",
+  "alias": "DI-MGMT-82255A section Risk Reporting Matrix (cross-referenced as 3.3), a; PDF 2",
+  "source": {
+   "docId": "DI-MGMT-82255A",
+   "edition": "A, 3 February 2023",
+   "paragraph": "Risk Reporting Matrix (cross-referenced as 3.3), a; PDF 2",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5781165",
+   "passage": "The risk likelihood rating levels and probability of occurrence shall be as follows:\n\n4 - High likelihood (>60% to ≤80%);",
+   "passageSHA256": "e46a753c0f9e7e8afe0276c0c3e16088ed4efe0d14dc5afadbdab4c9c0a67739"
+  },
+  "wording": "The Supply Chain Risk Register likelihood scale shall define level 4 as “High likelihood” for occurrence probability greater than 60 percent and less than or equal to 80 percent.",
+  "wordingSHA256": "135c4020f64608d04e6be3b29309940aeebcdf616accd43c41de80c5a3f73c18",
+  "actor": "The Supply Chain Risk Register likelihood scale",
+  "condition": "When DI-MGMT-82255A is invoked by the applicable contract, solicitation, or CDRL for supply-chain risks associated with the prime contractor, suppliers, or subcontractors and the products or services to be provided; this specialized branch is not a generic issue/opportunity-register mandate.",
+  "verificationIntent": "inspection",
+  "kind": "content",
+  "binding": true,
+  "fields": [
+   "likelihoodLevel",
+   "occurrenceProbability"
+  ],
+  "status": "sample",
+  "notes": "Operative DID provision; binding is conditional on actual invocation and stated scope, not an automatic legal obligation. Composite quotation: separate verbatim source spans are separated by blank lines; intervening list items, text, or page furniture is omitted. No consecutive-sentence claim is made. Each span independently matches the freshly inspected PDF. Span PDF pages: 2, 2. The printed source omits the 3.3 heading number but 3.2(n) explicitly cross-references 3.3. Source endpoints are preserved: ≤1% and >99% are not assigned by this DID; no boundary repair or 0–100% extrapolation is made."
+ },
+ {
+  "id": "DZR-F6-0065",
+  "alias": "DI-MGMT-82255A section Risk Reporting Matrix (cross-referenced as 3.3), a; PDF 2,3",
+  "source": {
+   "docId": "DI-MGMT-82255A",
+   "edition": "A, 3 February 2023",
+   "paragraph": "Risk Reporting Matrix (cross-referenced as 3.3), a; PDF 2,3",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5781165",
+   "passage": "The risk likelihood rating levels and probability of occurrence shall be as follows:\n\n5 - Near certainty (>80% to ≤ 99%).",
+   "passageSHA256": "b5b60f24008cb6896463db059724e7d41e446bdc7fa92544f8d293030dce2667"
+  },
+  "wording": "The Supply Chain Risk Register likelihood scale shall define level 5 as “Near certainty” for occurrence probability greater than 80 percent and less than or equal to 99 percent.",
+  "wordingSHA256": "a47b457b9871dc745d5892beced6364aa2601b830ca5edb741684c3bf9f84c86",
+  "actor": "The Supply Chain Risk Register likelihood scale",
+  "condition": "When DI-MGMT-82255A is invoked by the applicable contract, solicitation, or CDRL for supply-chain risks associated with the prime contractor, suppliers, or subcontractors and the products or services to be provided; this specialized branch is not a generic issue/opportunity-register mandate.",
+  "verificationIntent": "inspection",
+  "kind": "content",
+  "binding": true,
+  "fields": [
+   "likelihoodLevel",
+   "occurrenceProbability"
+  ],
+  "status": "sample",
+  "notes": "Operative DID provision; binding is conditional on actual invocation and stated scope, not an automatic legal obligation. Composite quotation: separate verbatim source spans are separated by blank lines; intervening list items, text, or page furniture is omitted. No consecutive-sentence claim is made. Each span independently matches the freshly inspected PDF. Span PDF pages: 2, 3. The printed source omits the 3.3 heading number but 3.2(n) explicitly cross-references 3.3. Source endpoints are preserved: ≤1% and >99% are not assigned by this DID; no boundary repair or 0–100% extrapolation is made."
+ },
+ {
+  "id": "DZR-F6-0066",
+  "alias": "DI-MGMT-82255A section Risk Reporting Matrix (cross-referenced as 3.3), b; PDF 3",
+  "source": {
+   "docId": "DI-MGMT-82255A",
+   "edition": "A, 3 February 2023",
+   "paragraph": "Risk Reporting Matrix (cross-referenced as 3.3), b; PDF 3",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5781165",
+   "passage": "The risk consequence levels shall be as follows:\n\n1 - Minimal impact;",
+   "passageSHA256": "61655b0e0f0e352c274230a4167ed20d935196df311edc014402adf8f8445c36"
+  },
+  "wording": "The Supply Chain Risk Register consequence scale shall define level 1 as “Minimal impact”.",
+  "wordingSHA256": "3a1f9b88b0d94a2300b87c0c6614beb858d2e06afcf725f583d275aa15b10cf3",
+  "actor": "The Supply Chain Risk Register consequence scale",
+  "condition": "When DI-MGMT-82255A is invoked by the applicable contract, solicitation, or CDRL for supply-chain risks associated with the prime contractor, suppliers, or subcontractors and the products or services to be provided; this specialized branch is not a generic issue/opportunity-register mandate.",
+  "verificationIntent": "inspection",
+  "kind": "content",
+  "binding": true,
+  "fields": [
+   "consequenceLevel",
+   "consequenceLabel"
+  ],
+  "status": "sample",
+  "notes": "Operative DID provision; binding is conditional on actual invocation and stated scope, not an automatic legal obligation. Composite quotation: separate verbatim source spans are separated by blank lines; intervening list items, text, or page furniture is omitted. No consecutive-sentence claim is made. Each span independently matches the freshly inspected PDF. Span PDF pages: 3, 3. The source supplies qualitative labels; no invented dollar, schedule, or performance thresholds are added."
+ },
+ {
+  "id": "DZR-F6-0067",
+  "alias": "DI-MGMT-82255A section Risk Reporting Matrix (cross-referenced as 3.3), b; PDF 3",
+  "source": {
+   "docId": "DI-MGMT-82255A",
+   "edition": "A, 3 February 2023",
+   "paragraph": "Risk Reporting Matrix (cross-referenced as 3.3), b; PDF 3",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5781165",
+   "passage": "The risk consequence levels shall be as follows:\n\n2 - Minor impact;",
+   "passageSHA256": "fa68a8e65c1d9a7c98c96db83e974b5a93e0af9a0585bbb079e09354d9e485b0"
+  },
+  "wording": "The Supply Chain Risk Register consequence scale shall define level 2 as “Minor impact”.",
+  "wordingSHA256": "2ec375bed3ebba2b75c0aa107845825667c01edad94b03c33be756ffd5a2ebec",
+  "actor": "The Supply Chain Risk Register consequence scale",
+  "condition": "When DI-MGMT-82255A is invoked by the applicable contract, solicitation, or CDRL for supply-chain risks associated with the prime contractor, suppliers, or subcontractors and the products or services to be provided; this specialized branch is not a generic issue/opportunity-register mandate.",
+  "verificationIntent": "inspection",
+  "kind": "content",
+  "binding": true,
+  "fields": [
+   "consequenceLevel",
+   "consequenceLabel"
+  ],
+  "status": "sample",
+  "notes": "Operative DID provision; binding is conditional on actual invocation and stated scope, not an automatic legal obligation. Composite quotation: separate verbatim source spans are separated by blank lines; intervening list items, text, or page furniture is omitted. No consecutive-sentence claim is made. Each span independently matches the freshly inspected PDF. Span PDF pages: 3, 3. The source supplies qualitative labels; no invented dollar, schedule, or performance thresholds are added."
+ },
+ {
+  "id": "DZR-F6-0068",
+  "alias": "DI-MGMT-82255A section Risk Reporting Matrix (cross-referenced as 3.3), b; PDF 3",
+  "source": {
+   "docId": "DI-MGMT-82255A",
+   "edition": "A, 3 February 2023",
+   "paragraph": "Risk Reporting Matrix (cross-referenced as 3.3), b; PDF 3",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5781165",
+   "passage": "The risk consequence levels shall be as follows:\n\n3 - Moderate impact;",
+   "passageSHA256": "021a6ce58b8a5d9575e9f8e6bc280b248d8d79525b173a28ac4e8b3f618b8473"
+  },
+  "wording": "The Supply Chain Risk Register consequence scale shall define level 3 as “Moderate impact”.",
+  "wordingSHA256": "abb8f4d61f07e4dfacbb4dd033954cb0064b43056e87ad467782520ae92aad6b",
+  "actor": "The Supply Chain Risk Register consequence scale",
+  "condition": "When DI-MGMT-82255A is invoked by the applicable contract, solicitation, or CDRL for supply-chain risks associated with the prime contractor, suppliers, or subcontractors and the products or services to be provided; this specialized branch is not a generic issue/opportunity-register mandate.",
+  "verificationIntent": "inspection",
+  "kind": "content",
+  "binding": true,
+  "fields": [
+   "consequenceLevel",
+   "consequenceLabel"
+  ],
+  "status": "sample",
+  "notes": "Operative DID provision; binding is conditional on actual invocation and stated scope, not an automatic legal obligation. Composite quotation: separate verbatim source spans are separated by blank lines; intervening list items, text, or page furniture is omitted. No consecutive-sentence claim is made. Each span independently matches the freshly inspected PDF. Span PDF pages: 3, 3. The source supplies qualitative labels; no invented dollar, schedule, or performance thresholds are added."
+ },
+ {
+  "id": "DZR-F6-0069",
+  "alias": "DI-MGMT-82255A section Risk Reporting Matrix (cross-referenced as 3.3), b; PDF 3",
+  "source": {
+   "docId": "DI-MGMT-82255A",
+   "edition": "A, 3 February 2023",
+   "paragraph": "Risk Reporting Matrix (cross-referenced as 3.3), b; PDF 3",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5781165",
+   "passage": "The risk consequence levels shall be as follows:\n\n4 - Significant impact; and",
+   "passageSHA256": "63c92c22f347431bf7aa86b4612006a4ce7b125441819622977e7fba99be4de3"
+  },
+  "wording": "The Supply Chain Risk Register consequence scale shall define level 4 as “Significant impact”.",
+  "wordingSHA256": "128aec205ff9b55e56ad906763fb301226854462710d385bbce1b00f28abaa23",
+  "actor": "The Supply Chain Risk Register consequence scale",
+  "condition": "When DI-MGMT-82255A is invoked by the applicable contract, solicitation, or CDRL for supply-chain risks associated with the prime contractor, suppliers, or subcontractors and the products or services to be provided; this specialized branch is not a generic issue/opportunity-register mandate.",
+  "verificationIntent": "inspection",
+  "kind": "content",
+  "binding": true,
+  "fields": [
+   "consequenceLevel",
+   "consequenceLabel"
+  ],
+  "status": "sample",
+  "notes": "Operative DID provision; binding is conditional on actual invocation and stated scope, not an automatic legal obligation. Composite quotation: separate verbatim source spans are separated by blank lines; intervening list items, text, or page furniture is omitted. No consecutive-sentence claim is made. Each span independently matches the freshly inspected PDF. Span PDF pages: 3, 3. The source supplies qualitative labels; no invented dollar, schedule, or performance thresholds are added."
+ },
+ {
+  "id": "DZR-F6-0070",
+  "alias": "DI-MGMT-82255A section Risk Reporting Matrix (cross-referenced as 3.3), b; PDF 3",
+  "source": {
+   "docId": "DI-MGMT-82255A",
+   "edition": "A, 3 February 2023",
+   "paragraph": "Risk Reporting Matrix (cross-referenced as 3.3), b; PDF 3",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5781165",
+   "passage": "The risk consequence levels shall be as follows:\n\n5 - Critical impact.",
+   "passageSHA256": "d95c889c0866ee47fc2675af5a54baaf1439c5a6df641bde4f839cc952988f08"
+  },
+  "wording": "The Supply Chain Risk Register consequence scale shall define level 5 as “Critical impact”.",
+  "wordingSHA256": "66bdfa91d5c70becefe3c892b32002e75abf2634151a00791216f9a3f8cf3327",
+  "actor": "The Supply Chain Risk Register consequence scale",
+  "condition": "When DI-MGMT-82255A is invoked by the applicable contract, solicitation, or CDRL for supply-chain risks associated with the prime contractor, suppliers, or subcontractors and the products or services to be provided; this specialized branch is not a generic issue/opportunity-register mandate.",
+  "verificationIntent": "inspection",
+  "kind": "content",
+  "binding": true,
+  "fields": [
+   "consequenceLevel",
+   "consequenceLabel"
+  ],
+  "status": "sample",
+  "notes": "Operative DID provision; binding is conditional on actual invocation and stated scope, not an automatic legal obligation. Composite quotation: separate verbatim source spans are separated by blank lines; intervening list items, text, or page furniture is omitted. No consecutive-sentence claim is made. Each span independently matches the freshly inspected PDF. Span PDF pages: 3, 3. The source supplies qualitative labels; no invented dollar, schedule, or performance thresholds are added."
+ },
+ {
+  "id": "DZR-F6-0071",
+  "alias": "DI-MGMT-82255A section 3; 3.4(a); PDF 1,3",
+  "source": {
+   "docId": "DI-MGMT-82255A",
+   "edition": "A, 3 February 2023",
+   "paragraph": "3; 3.4(a); PDF 1,3",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5781165",
+   "passage": "The Supply Chain Risk Register shall include the following:\n\n3.4 Status Reporting. a. Provide the current status on each risk in the Supply Chain Risk Register.",
+   "passageSHA256": "ee800db69eef4a7e102a8e904796645728829618473cabc7614b1a6a44462801"
+  },
+  "wording": "Each Supply Chain Risk Register risk entry shall provide the current risk status.",
+  "wordingSHA256": "2c2c9202b653c5ed07bf6e7fb655749f104292bcb70e3a294c811d2f2563622a",
+  "actor": "Each Supply Chain Risk Register risk entry",
+  "condition": "When DI-MGMT-82255A is invoked by the applicable contract, solicitation, or CDRL for supply-chain risks associated with the prime contractor, suppliers, or subcontractors and the products or services to be provided; this specialized branch is not a generic issue/opportunity-register mandate.",
+  "verificationIntent": "inspection",
+  "kind": "currency",
+  "binding": true,
+  "fields": [
+   "currentStatus"
+  ],
+  "status": "sample",
+  "notes": "Operative DID provision; binding is conditional on actual invocation and stated scope, not an automatic legal obligation. Composite quotation: separate verbatim source spans are separated by blank lines; intervening list items, text, or page furniture is omitted. No consecutive-sentence claim is made. Each span independently matches the freshly inspected PDF. Span PDF pages: 1, 3. The imperative subsection is governed by the section3 parent shall include; both exact spans are quoted. The source runs the 3.4 heading directly after the preceding consequence entry."
+ },
+ {
+  "id": "DZR-F6-0072",
+  "alias": "DI-MGMT-82256A section 3.4f(4); PDF 3",
+  "source": {
+   "docId": "DI-MGMT-82256A",
+   "edition": "A, 3 February 2023",
+   "paragraph": "3.4f(4); PDF 3",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5781166",
+   "passage": "f. Supply Chain Risk Assessment. This section shall include:\n\n(4) Process to focus attention on critical risks and document in the Supply Chain Risk Register; and",
+   "passageSHA256": "1f686ca459d228b721914c34c72a2c4ee4b50b0a4bb04d49e89818540c4eaed3"
+  },
+  "wording": "The SCRM Plan risk-assessment section shall include a process to document critical supply-chain risks in the Supply Chain Risk Register.",
+  "wordingSHA256": "7e9785d49b0fa6f16e311d61d49b51626b2ae3c401d37ef5b34a887cd2f2689f",
+  "actor": "The SCRM Plan risk-assessment section",
+  "condition": "When DI-MGMT-82256A is invoked by the applicable contract, solicitation, or CDRL for supply-chain risks associated with the prime contractor, suppliers, or subcontractors and the products or services to be provided; this specialized branch is not a generic issue/opportunity-register mandate; the requirement governs the SCRM Plan section describing the register/reporting process or content, not an independent universal register delivery obligation.",
+  "verificationIntent": "inspection",
+  "kind": "content",
+  "binding": true,
+  "fields": [
+   "criticalRiskDocumentationProcess"
+  ],
+  "status": "sample",
+  "notes": "Operative DID provision; binding is conditional on actual invocation and stated scope, not an automatic legal obligation. Composite quotation: separate verbatim source spans are separated by blank lines; intervening list items, text, or page furniture is omitted. No consecutive-sentence claim is made. Each span independently matches the freshly inspected PDF. Span PDF pages: 3, 3. The obligation is to include the specified process in the plan; the register is not limited to critical risks only."
+ },
+ {
+  "id": "DZR-F6-0073",
+  "alias": "DI-MGMT-82256A section 3.4f(5); PDF 3",
+  "source": {
+   "docId": "DI-MGMT-82256A",
+   "edition": "A, 3 February 2023",
+   "paragraph": "3.4f(5); PDF 3",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5781166",
+   "passage": "f. Supply Chain Risk Assessment. This section shall include:\n\n(5) Process to report the Supply Chain Risk Register to the Government Product Support Manager or Program Manager on a quarterly basis.",
+   "passageSHA256": "ca05f8c18f09119c93c77d4a8ead52675b3167869a1e8c8a389632beb16f7848"
+  },
+  "wording": "The SCRM Plan risk-assessment section shall include a process to report the Supply Chain Risk Register quarterly to the Government Product Support Manager or Program Manager.",
+  "wordingSHA256": "1068efed70e45b02448e9d972d2190b8a3a65a5751f54dc430ad0926344f77fa",
+  "actor": "The SCRM Plan risk-assessment section",
+  "condition": "When DI-MGMT-82256A is invoked by the applicable contract, solicitation, or CDRL for supply-chain risks associated with the prime contractor, suppliers, or subcontractors and the products or services to be provided; this specialized branch is not a generic issue/opportunity-register mandate; the requirement governs the SCRM Plan section describing the register/reporting process or content, not an independent universal register delivery obligation.",
+  "verificationIntent": "inspection",
+  "kind": "delivery",
+  "binding": true,
+  "fields": [
+   "registerReportingProcess"
+  ],
+  "status": "sample",
+  "notes": "Operative DID provision; binding is conditional on actual invocation and stated scope, not an automatic legal obligation. Composite quotation: separate verbatim source spans are separated by blank lines; intervening list items, text, or page furniture is omitted. No consecutive-sentence claim is made. Each span independently matches the freshly inspected PDF. Span PDF pages: 3, 3. Quarterly modifies the reporting process required in the invoked SCRM Plan. It is not a standalone direct quarterly cadence for generic F6 registers."
+ },
+ {
+  "id": "DZR-F6-0074",
+  "alias": "DI-MGMT-82256A section 3.4g(1)(a); PDF 3",
+  "source": {
+   "docId": "DI-MGMT-82256A",
+   "edition": "A, 3 February 2023",
+   "paragraph": "3.4g(1)(a); PDF 3",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5781166",
+   "passage": "g. Supply Chain Risk Handling. This section shall include:\n\n(1) Supply chain risk handling plans to combat identified and potential supply chain risks. It shall include:\n\n(a) A descriptive title for each supply chain risk;",
+   "passageSHA256": "89ddff63d30187ef63982c845cd10c5e2e3d43dc19c70c8753a605facbe29479"
+  },
+  "wording": "The SCRM Plan supply-chain risk-handling content shall include a descriptive title for each supply-chain risk.",
+  "wordingSHA256": "07c9b68c05def4bcd040cabb29df32d0e6e15a5a6e11232a454bb6de1cc8c0a1",
+  "actor": "The SCRM Plan supply-chain risk-handling content",
+  "condition": "When DI-MGMT-82256A is invoked by the applicable contract, solicitation, or CDRL for supply-chain risks associated with the prime contractor, suppliers, or subcontractors and the products or services to be provided; this specialized branch is not a generic issue/opportunity-register mandate; the requirement governs the SCRM Plan section describing the register/reporting process or content, not an independent universal register delivery obligation.",
+  "verificationIntent": "inspection",
+  "kind": "content",
+  "binding": true,
+  "fields": [
+   "riskTitle"
+  ],
+  "status": "sample",
+  "notes": "Operative DID provision; binding is conditional on actual invocation and stated scope, not an automatic legal obligation. Composite quotation: separate verbatim source spans are separated by blank lines; intervening list items, text, or page furniture is omitted. No consecutive-sentence claim is made. Each span independently matches the freshly inspected PDF. Span PDF pages: 3, 3, 3. Retained narrowly because the source handling content explicitly references the Supply Chain Risk Register. This remains a plan-content obligation, not a universal F6 column mandate."
+ },
+ {
+  "id": "DZR-F6-0075",
+  "alias": "DI-MGMT-82256A section 3.4g(1)(b); PDF 3",
+  "source": {
+   "docId": "DI-MGMT-82256A",
+   "edition": "A, 3 February 2023",
+   "paragraph": "3.4g(1)(b); PDF 3",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5781166",
+   "passage": "g. Supply Chain Risk Handling. This section shall include:\n\n(1) Supply chain risk handling plans to combat identified and potential supply chain risks. It shall include:\n\n(b) Root cause or trigger of each risk;",
+   "passageSHA256": "2e0d6beaf41f5a27ffcbb19ca3a08181a5c6ac340597f59dba06eaf96bda53a7"
+  },
+  "wording": "The SCRM Plan supply-chain risk-handling content shall include the root cause or trigger of each supply-chain risk.",
+  "wordingSHA256": "52a4c6a67a59b8277c93f2310ce95f4a315e81d6ec09d8d9b076e2a3098e1636",
+  "actor": "The SCRM Plan supply-chain risk-handling content",
+  "condition": "When DI-MGMT-82256A is invoked by the applicable contract, solicitation, or CDRL for supply-chain risks associated with the prime contractor, suppliers, or subcontractors and the products or services to be provided; this specialized branch is not a generic issue/opportunity-register mandate; the requirement governs the SCRM Plan section describing the register/reporting process or content, not an independent universal register delivery obligation.",
+  "verificationIntent": "inspection",
+  "kind": "content",
+  "binding": true,
+  "fields": [
+   "triggerOrRootCauses"
+  ],
+  "status": "sample",
+  "notes": "Operative DID provision; binding is conditional on actual invocation and stated scope, not an automatic legal obligation. Composite quotation: separate verbatim source spans are separated by blank lines; intervening list items, text, or page furniture is omitted. No consecutive-sentence claim is made. Each span independently matches the freshly inspected PDF. Span PDF pages: 3, 3, 3. Retained narrowly because the source handling content explicitly references the Supply Chain Risk Register. This remains a plan-content obligation, not a universal F6 column mandate."
+ },
+ {
+  "id": "DZR-F6-0076",
+  "alias": "DI-MGMT-82256A section 3.4g(1)(c); PDF 3",
+  "source": {
+   "docId": "DI-MGMT-82256A",
+   "edition": "A, 3 February 2023",
+   "paragraph": "3.4g(1)(c); PDF 3",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5781166",
+   "passage": "g. Supply Chain Risk Handling. This section shall include:\n\n(1) Supply chain risk handling plans to combat identified and potential supply chain risks. It shall include:\n\n(c) Possible risk handling plan to alleviate each risk; and",
+   "passageSHA256": "827f334473cbd52b3e225cf75ef251ffe424b6b15ead2c50551fe1fca56fddb4"
+  },
+  "wording": "The SCRM Plan supply-chain risk-handling content shall include a possible risk handling plan to alleviate each supply-chain risk.",
+  "wordingSHA256": "3677f5a154df7653ad66d6fff5fc59d007c0bd3d6beb8ab11f2d84004ca26a10",
+  "actor": "The SCRM Plan supply-chain risk-handling content",
+  "condition": "When DI-MGMT-82256A is invoked by the applicable contract, solicitation, or CDRL for supply-chain risks associated with the prime contractor, suppliers, or subcontractors and the products or services to be provided; this specialized branch is not a generic issue/opportunity-register mandate; the requirement governs the SCRM Plan section describing the register/reporting process or content, not an independent universal register delivery obligation.",
+  "verificationIntent": "inspection",
+  "kind": "content",
+  "binding": true,
+  "fields": [
+   "riskHandlingPlan"
+  ],
+  "status": "sample",
+  "notes": "Operative DID provision; binding is conditional on actual invocation and stated scope, not an automatic legal obligation. Composite quotation: separate verbatim source spans are separated by blank lines; intervening list items, text, or page furniture is omitted. No consecutive-sentence claim is made. Each span independently matches the freshly inspected PDF. Span PDF pages: 3, 3, 3. Retained narrowly because the source handling content explicitly references the Supply Chain Risk Register. This remains a plan-content obligation, not a universal F6 column mandate."
+ },
+ {
+  "id": "DZR-F6-0077",
+  "alias": "DI-MGMT-82256A section 3.4g(1)(d); PDF 3",
+  "source": {
+   "docId": "DI-MGMT-82256A",
+   "edition": "A, 3 February 2023",
+   "paragraph": "3.4g(1)(d); PDF 3",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5781166",
+   "passage": "g. Supply Chain Risk Handling. This section shall include:\n\n(1) Supply chain risk handling plans to combat identified and potential supply chain risks. It shall include:\n\n(d) Description of events and activities intended to accept, avoid, mitigate, or transfer the risk, success criteria for each planned event, and residual risk rating (acceptable level of risk). Reference DI- MGMT-82255A Supply Chain Risk Register.",
+   "passageSHA256": "75a4682f129660a5f1445a0aced8cddc08f6c75b61e81d99317e95f6ff347c05"
+  },
+  "wording": "The SCRM Plan supply-chain risk-handling content shall include a description of events and activities intended to accept, avoid, mitigate, or transfer the supply-chain risk.",
+  "wordingSHA256": "532f73a2c6864fed0f7778378dcbbb7c0f00d585bad81d65033a6560a05a9b2b",
+  "actor": "The SCRM Plan supply-chain risk-handling content",
+  "condition": "When DI-MGMT-82256A is invoked by the applicable contract, solicitation, or CDRL for supply-chain risks associated with the prime contractor, suppliers, or subcontractors and the products or services to be provided; this specialized branch is not a generic issue/opportunity-register mandate; the requirement governs the SCRM Plan section describing the register/reporting process or content, not an independent universal register delivery obligation.",
+  "verificationIntent": "inspection",
+  "kind": "content",
+  "binding": true,
+  "fields": [
+   "handlingEventsAndActivities"
+  ],
+  "status": "sample",
+  "notes": "Operative DID provision; binding is conditional on actual invocation and stated scope, not an automatic legal obligation. Composite quotation: separate verbatim source spans are separated by blank lines; intervening list items, text, or page furniture is omitted. No consecutive-sentence claim is made. Each span independently matches the freshly inspected PDF. Span PDF pages: 3, 3, 3. Retained narrowly because the source handling content explicitly references the Supply Chain Risk Register. This remains a plan-content obligation, not a universal F6 column mandate."
+ },
+ {
+  "id": "DZR-F6-0078",
+  "alias": "DI-MGMT-82256A section 3.4g(1)(d); PDF 3",
+  "source": {
+   "docId": "DI-MGMT-82256A",
+   "edition": "A, 3 February 2023",
+   "paragraph": "3.4g(1)(d); PDF 3",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5781166",
+   "passage": "g. Supply Chain Risk Handling. This section shall include:\n\n(1) Supply chain risk handling plans to combat identified and potential supply chain risks. It shall include:\n\n(d) Description of events and activities intended to accept, avoid, mitigate, or transfer the risk, success criteria for each planned event, and residual risk rating (acceptable level of risk). Reference DI- MGMT-82255A Supply Chain Risk Register.",
+   "passageSHA256": "75a4682f129660a5f1445a0aced8cddc08f6c75b61e81d99317e95f6ff347c05"
+  },
+  "wording": "The SCRM Plan supply-chain risk-handling content shall include success criteria for each planned risk-handling event.",
+  "wordingSHA256": "f169317eac1dd5d7ae4f9f8154a77dc4fe20ebca93458870a664c20cfefb8f10",
+  "actor": "The SCRM Plan supply-chain risk-handling content",
+  "condition": "When DI-MGMT-82256A is invoked by the applicable contract, solicitation, or CDRL for supply-chain risks associated with the prime contractor, suppliers, or subcontractors and the products or services to be provided; this specialized branch is not a generic issue/opportunity-register mandate; the requirement governs the SCRM Plan section describing the register/reporting process or content, not an independent universal register delivery obligation.",
+  "verificationIntent": "inspection",
+  "kind": "content",
+  "binding": true,
+  "fields": [
+   "handlingEventSuccessCriteria"
+  ],
+  "status": "sample",
+  "notes": "Operative DID provision; binding is conditional on actual invocation and stated scope, not an automatic legal obligation. Composite quotation: separate verbatim source spans are separated by blank lines; intervening list items, text, or page furniture is omitted. No consecutive-sentence claim is made. Each span independently matches the freshly inspected PDF. Span PDF pages: 3, 3, 3. Retained narrowly because the source handling content explicitly references the Supply Chain Risk Register. This remains a plan-content obligation, not a universal F6 column mandate."
+ },
+ {
+  "id": "DZR-F6-0079",
+  "alias": "DI-MGMT-82256A section 3.4g(1)(d); PDF 3",
+  "source": {
+   "docId": "DI-MGMT-82256A",
+   "edition": "A, 3 February 2023",
+   "paragraph": "3.4g(1)(d); PDF 3",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5781166",
+   "passage": "g. Supply Chain Risk Handling. This section shall include:\n\n(1) Supply chain risk handling plans to combat identified and potential supply chain risks. It shall include:\n\n(d) Description of events and activities intended to accept, avoid, mitigate, or transfer the risk, success criteria for each planned event, and residual risk rating (acceptable level of risk). Reference DI- MGMT-82255A Supply Chain Risk Register.",
+   "passageSHA256": "75a4682f129660a5f1445a0aced8cddc08f6c75b61e81d99317e95f6ff347c05"
+  },
+  "wording": "The SCRM Plan supply-chain risk-handling content shall include the residual risk rating representing acceptable risk.",
+  "wordingSHA256": "42e7eeffe9b53b438f91a592a88cd15ec68a1482dfac800890551faea6f79179",
+  "actor": "The SCRM Plan supply-chain risk-handling content",
+  "condition": "When DI-MGMT-82256A is invoked by the applicable contract, solicitation, or CDRL for supply-chain risks associated with the prime contractor, suppliers, or subcontractors and the products or services to be provided; this specialized branch is not a generic issue/opportunity-register mandate; the requirement governs the SCRM Plan section describing the register/reporting process or content, not an independent universal register delivery obligation.",
+  "verificationIntent": "inspection",
+  "kind": "content",
+  "binding": true,
+  "fields": [
+   "residualRiskRating"
+  ],
+  "status": "sample",
+  "notes": "Operative DID provision; binding is conditional on actual invocation and stated scope, not an automatic legal obligation. Composite quotation: separate verbatim source spans are separated by blank lines; intervening list items, text, or page furniture is omitted. No consecutive-sentence claim is made. Each span independently matches the freshly inspected PDF. Span PDF pages: 3, 3, 3. Retained narrowly because the source handling content explicitly references the Supply Chain Risk Register. This remains a plan-content obligation, not a universal F6 column mandate."
+ },
+ {
+  "id": "DZR-F6-0080",
+  "alias": "DI-MGMT-82256A section 3.4g(3); PDF 3,4",
+  "source": {
+   "docId": "DI-MGMT-82256A",
+   "edition": "A, 3 February 2023",
+   "paragraph": "3.4g(3); PDF 3,4",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5781166",
+   "passage": "g. Supply Chain Risk Handling. This section shall include:\n\n(3) Process to capture risks and associated details, relative to the products and services to be provided, in a risk register.",
+   "passageSHA256": "fdd0a2c3407c1f05cfc023817e1ea3c26c78bf7757cd276cd51a08b621fcd9c1"
+  },
+  "wording": "The SCRM Plan risk-handling section shall include a process to capture risks and associated details for the products and services to be provided in a risk register.",
+  "wordingSHA256": "a48115baa9a5e59cf5fbd300dfa12758795d8a2887fd292588220679379fdcf8",
+  "actor": "The SCRM Plan risk-handling section",
+  "condition": "When DI-MGMT-82256A is invoked by the applicable contract, solicitation, or CDRL for supply-chain risks associated with the prime contractor, suppliers, or subcontractors and the products or services to be provided; this specialized branch is not a generic issue/opportunity-register mandate; the requirement governs the SCRM Plan section describing the register/reporting process or content, not an independent universal register delivery obligation.",
+  "verificationIntent": "inspection",
+  "kind": "content",
+  "binding": true,
+  "fields": [
+   "riskCaptureProcess"
+  ],
+  "status": "sample",
+  "notes": "Operative DID provision; binding is conditional on actual invocation and stated scope, not an automatic legal obligation. Composite quotation: separate verbatim source spans are separated by blank lines; intervening list items, text, or page furniture is omitted. No consecutive-sentence claim is made. Each span independently matches the freshly inspected PDF. Span PDF pages: 3, 4."
+ },
+ {
+  "id": "DZR-F6-0081",
+  "alias": "DI-MGMT-82256A section 3.4h(2); PDF 4",
+  "source": {
+   "docId": "DI-MGMT-82256A",
+   "edition": "A, 3 February 2023",
+   "paragraph": "3.4h(2); PDF 4",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5781166",
+   "passage": "h. Supply Chain Risk Monitoring. This section shall include:\n\n(2) Process for reporting risk monitoring information to the Government Product Support Manager or Program Manager quarterly; and",
+   "passageSHA256": "98d401e3fee34d3e0265f9e0f812d0115a6498155153b0555e3b733c1d3abf6c"
+  },
+  "wording": "The SCRM Plan risk-monitoring section shall include a process for reporting risk-monitoring information quarterly to the Government Product Support Manager or Program Manager.",
+  "wordingSHA256": "23fb89abfdfa470b85c68e417c439a12bf761fc28a3c99b5f3decfc40423c6c7",
+  "actor": "The SCRM Plan risk-monitoring section",
+  "condition": "When DI-MGMT-82256A is invoked by the applicable contract, solicitation, or CDRL for supply-chain risks associated with the prime contractor, suppliers, or subcontractors and the products or services to be provided; this specialized branch is not a generic issue/opportunity-register mandate; the requirement governs the SCRM Plan section describing the register/reporting process or content, not an independent universal register delivery obligation.",
+  "verificationIntent": "inspection",
+  "kind": "delivery",
+  "binding": true,
+  "fields": [
+   "riskMonitoringReportingProcess"
+  ],
+  "status": "sample",
+  "notes": "Operative DID provision; binding is conditional on actual invocation and stated scope, not an automatic legal obligation. Composite quotation: separate verbatim source spans are separated by blank lines; intervening list items, text, or page furniture is omitted. No consecutive-sentence claim is made. Each span independently matches the freshly inspected PDF. Span PDF pages: 4, 4. Plan process content only; no unconditional generic-register submission cadence is inferred."
+ },
+ {
+  "id": "DZR-F6-0082",
+  "alias": "DI-MGMT-82256A section 3.4h(3); PDF 4",
+  "source": {
+   "docId": "DI-MGMT-82256A",
+   "edition": "A, 3 February 2023",
+   "paragraph": "3.4h(3); PDF 4",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5781166",
+   "passage": "h. Supply Chain Risk Monitoring. This section shall include:\n\n(3) The Supply Chain Risk Register will include a unique risk identifier, risk category and description, risk rating, risk handling response, responsible POC, expiration date, and current status. Reference DI-MGMT-82255A Supply Chain Risk Register.",
+   "passageSHA256": "ff856de18169ad4a849427683747859bbec664d8b3b765286763f0f12e7c9ff0"
+  },
+  "wording": "The SCRM Plan risk-monitoring section shall specify inclusion of a unique risk identifier in the Supply Chain Risk Register.",
+  "wordingSHA256": "85729e99fac21ca3b32bd20401b4edc25ed522302b89720e3d1d0d8b2eb67602",
+  "actor": "The SCRM Plan risk-monitoring section",
+  "condition": "When DI-MGMT-82256A is invoked by the applicable contract, solicitation, or CDRL for supply-chain risks associated with the prime contractor, suppliers, or subcontractors and the products or services to be provided; this specialized branch is not a generic issue/opportunity-register mandate; the requirement governs the SCRM Plan section describing the register/reporting process or content, not an independent universal register delivery obligation.",
+  "verificationIntent": "inspection",
+  "kind": "content",
+  "binding": true,
+  "fields": [
+   "riskId"
+  ],
+  "status": "sample",
+  "notes": "Operative DID provision; binding is conditional on actual invocation and stated scope, not an automatic legal obligation. Composite quotation: separate verbatim source spans are separated by blank lines; intervening list items, text, or page furniture is omitted. No consecutive-sentence claim is made. Each span independently matches the freshly inspected PDF. Span PDF pages: 4, 4. The direct register sentence says will include under the section shall include parent. The normalized actor remains the plan section; this is not represented as a direct independent register shall."
+ },
+ {
+  "id": "DZR-F6-0083",
+  "alias": "DI-MGMT-82256A section 3.4h(3); PDF 4",
+  "source": {
+   "docId": "DI-MGMT-82256A",
+   "edition": "A, 3 February 2023",
+   "paragraph": "3.4h(3); PDF 4",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5781166",
+   "passage": "h. Supply Chain Risk Monitoring. This section shall include:\n\n(3) The Supply Chain Risk Register will include a unique risk identifier, risk category and description, risk rating, risk handling response, responsible POC, expiration date, and current status. Reference DI-MGMT-82255A Supply Chain Risk Register.",
+   "passageSHA256": "ff856de18169ad4a849427683747859bbec664d8b3b765286763f0f12e7c9ff0"
+  },
+  "wording": "The SCRM Plan risk-monitoring section shall specify inclusion of the risk category in the Supply Chain Risk Register.",
+  "wordingSHA256": "3d5d32d2eb02ad1db35f364f558d774a1956a1e74641139a36afe3fbe95826b9",
+  "actor": "The SCRM Plan risk-monitoring section",
+  "condition": "When DI-MGMT-82256A is invoked by the applicable contract, solicitation, or CDRL for supply-chain risks associated with the prime contractor, suppliers, or subcontractors and the products or services to be provided; this specialized branch is not a generic issue/opportunity-register mandate; the requirement governs the SCRM Plan section describing the register/reporting process or content, not an independent universal register delivery obligation.",
+  "verificationIntent": "inspection",
+  "kind": "content",
+  "binding": true,
+  "fields": [
+   "riskCategory"
+  ],
+  "status": "sample",
+  "notes": "Operative DID provision; binding is conditional on actual invocation and stated scope, not an automatic legal obligation. Composite quotation: separate verbatim source spans are separated by blank lines; intervening list items, text, or page furniture is omitted. No consecutive-sentence claim is made. Each span independently matches the freshly inspected PDF. Span PDF pages: 4, 4. The direct register sentence says will include under the section shall include parent. The normalized actor remains the plan section; this is not represented as a direct independent register shall."
+ },
+ {
+  "id": "DZR-F6-0084",
+  "alias": "DI-MGMT-82256A section 3.4h(3); PDF 4",
+  "source": {
+   "docId": "DI-MGMT-82256A",
+   "edition": "A, 3 February 2023",
+   "paragraph": "3.4h(3); PDF 4",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5781166",
+   "passage": "h. Supply Chain Risk Monitoring. This section shall include:\n\n(3) The Supply Chain Risk Register will include a unique risk identifier, risk category and description, risk rating, risk handling response, responsible POC, expiration date, and current status. Reference DI-MGMT-82255A Supply Chain Risk Register.",
+   "passageSHA256": "ff856de18169ad4a849427683747859bbec664d8b3b765286763f0f12e7c9ff0"
+  },
+  "wording": "The SCRM Plan risk-monitoring section shall specify inclusion of the risk description in the Supply Chain Risk Register.",
+  "wordingSHA256": "abfd9bf491ee66c5b63a5aa271c3360ead2a3ac292a94ad99f09f85ae327a532",
+  "actor": "The SCRM Plan risk-monitoring section",
+  "condition": "When DI-MGMT-82256A is invoked by the applicable contract, solicitation, or CDRL for supply-chain risks associated with the prime contractor, suppliers, or subcontractors and the products or services to be provided; this specialized branch is not a generic issue/opportunity-register mandate; the requirement governs the SCRM Plan section describing the register/reporting process or content, not an independent universal register delivery obligation.",
+  "verificationIntent": "inspection",
+  "kind": "content",
+  "binding": true,
+  "fields": [
+   "riskDescription"
+  ],
+  "status": "sample",
+  "notes": "Operative DID provision; binding is conditional on actual invocation and stated scope, not an automatic legal obligation. Composite quotation: separate verbatim source spans are separated by blank lines; intervening list items, text, or page furniture is omitted. No consecutive-sentence claim is made. Each span independently matches the freshly inspected PDF. Span PDF pages: 4, 4. The direct register sentence says will include under the section shall include parent. The normalized actor remains the plan section; this is not represented as a direct independent register shall."
+ },
+ {
+  "id": "DZR-F6-0085",
+  "alias": "DI-MGMT-82256A section 3.4h(3); PDF 4",
+  "source": {
+   "docId": "DI-MGMT-82256A",
+   "edition": "A, 3 February 2023",
+   "paragraph": "3.4h(3); PDF 4",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5781166",
+   "passage": "h. Supply Chain Risk Monitoring. This section shall include:\n\n(3) The Supply Chain Risk Register will include a unique risk identifier, risk category and description, risk rating, risk handling response, responsible POC, expiration date, and current status. Reference DI-MGMT-82255A Supply Chain Risk Register.",
+   "passageSHA256": "ff856de18169ad4a849427683747859bbec664d8b3b765286763f0f12e7c9ff0"
+  },
+  "wording": "The SCRM Plan risk-monitoring section shall specify inclusion of the risk rating in the Supply Chain Risk Register.",
+  "wordingSHA256": "eb4076112a6355f5256e64df0ed8b532975b0132d886ea406d95491194e9472a",
+  "actor": "The SCRM Plan risk-monitoring section",
+  "condition": "When DI-MGMT-82256A is invoked by the applicable contract, solicitation, or CDRL for supply-chain risks associated with the prime contractor, suppliers, or subcontractors and the products or services to be provided; this specialized branch is not a generic issue/opportunity-register mandate; the requirement governs the SCRM Plan section describing the register/reporting process or content, not an independent universal register delivery obligation.",
+  "verificationIntent": "inspection",
+  "kind": "content",
+  "binding": true,
+  "fields": [
+   "riskRating"
+  ],
+  "status": "sample",
+  "notes": "Operative DID provision; binding is conditional on actual invocation and stated scope, not an automatic legal obligation. Composite quotation: separate verbatim source spans are separated by blank lines; intervening list items, text, or page furniture is omitted. No consecutive-sentence claim is made. Each span independently matches the freshly inspected PDF. Span PDF pages: 4, 4. The direct register sentence says will include under the section shall include parent. The normalized actor remains the plan section; this is not represented as a direct independent register shall."
+ },
+ {
+  "id": "DZR-F6-0086",
+  "alias": "DI-MGMT-82256A section 3.4h(3); PDF 4",
+  "source": {
+   "docId": "DI-MGMT-82256A",
+   "edition": "A, 3 February 2023",
+   "paragraph": "3.4h(3); PDF 4",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5781166",
+   "passage": "h. Supply Chain Risk Monitoring. This section shall include:\n\n(3) The Supply Chain Risk Register will include a unique risk identifier, risk category and description, risk rating, risk handling response, responsible POC, expiration date, and current status. Reference DI-MGMT-82255A Supply Chain Risk Register.",
+   "passageSHA256": "ff856de18169ad4a849427683747859bbec664d8b3b765286763f0f12e7c9ff0"
+  },
+  "wording": "The SCRM Plan risk-monitoring section shall specify inclusion of the risk handling response in the Supply Chain Risk Register.",
+  "wordingSHA256": "0a4d138e067778fd1f83852f6e06a662270745584e4ffcf00604f764dc15942c",
+  "actor": "The SCRM Plan risk-monitoring section",
+  "condition": "When DI-MGMT-82256A is invoked by the applicable contract, solicitation, or CDRL for supply-chain risks associated with the prime contractor, suppliers, or subcontractors and the products or services to be provided; this specialized branch is not a generic issue/opportunity-register mandate; the requirement governs the SCRM Plan section describing the register/reporting process or content, not an independent universal register delivery obligation.",
+  "verificationIntent": "inspection",
+  "kind": "content",
+  "binding": true,
+  "fields": [
+   "riskHandlingResponse"
+  ],
+  "status": "sample",
+  "notes": "Operative DID provision; binding is conditional on actual invocation and stated scope, not an automatic legal obligation. Composite quotation: separate verbatim source spans are separated by blank lines; intervening list items, text, or page furniture is omitted. No consecutive-sentence claim is made. Each span independently matches the freshly inspected PDF. Span PDF pages: 4, 4. The direct register sentence says will include under the section shall include parent. The normalized actor remains the plan section; this is not represented as a direct independent register shall."
+ },
+ {
+  "id": "DZR-F6-0087",
+  "alias": "DI-MGMT-82256A section 3.4h(3); PDF 4",
+  "source": {
+   "docId": "DI-MGMT-82256A",
+   "edition": "A, 3 February 2023",
+   "paragraph": "3.4h(3); PDF 4",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5781166",
+   "passage": "h. Supply Chain Risk Monitoring. This section shall include:\n\n(3) The Supply Chain Risk Register will include a unique risk identifier, risk category and description, risk rating, risk handling response, responsible POC, expiration date, and current status. Reference DI-MGMT-82255A Supply Chain Risk Register.",
+   "passageSHA256": "ff856de18169ad4a849427683747859bbec664d8b3b765286763f0f12e7c9ff0"
+  },
+  "wording": "The SCRM Plan risk-monitoring section shall specify inclusion of the responsible point of contact in the Supply Chain Risk Register.",
+  "wordingSHA256": "44e906dfcfd51b29659c79de230bbff1869bfa5dd4f3632ab83ec18ac75cff8b",
+  "actor": "The SCRM Plan risk-monitoring section",
+  "condition": "When DI-MGMT-82256A is invoked by the applicable contract, solicitation, or CDRL for supply-chain risks associated with the prime contractor, suppliers, or subcontractors and the products or services to be provided; this specialized branch is not a generic issue/opportunity-register mandate; the requirement governs the SCRM Plan section describing the register/reporting process or content, not an independent universal register delivery obligation.",
+  "verificationIntent": "inspection",
+  "kind": "content",
+  "binding": true,
+  "fields": [
+   "responsiblePointOfContact"
+  ],
+  "status": "sample",
+  "notes": "Operative DID provision; binding is conditional on actual invocation and stated scope, not an automatic legal obligation. Composite quotation: separate verbatim source spans are separated by blank lines; intervening list items, text, or page furniture is omitted. No consecutive-sentence claim is made. Each span independently matches the freshly inspected PDF. Span PDF pages: 4, 4. The direct register sentence says will include under the section shall include parent. The normalized actor remains the plan section; this is not represented as a direct independent register shall."
+ },
+ {
+  "id": "DZR-F6-0088",
+  "alias": "DI-MGMT-82256A section 3.4h(3); PDF 4",
+  "source": {
+   "docId": "DI-MGMT-82256A",
+   "edition": "A, 3 February 2023",
+   "paragraph": "3.4h(3); PDF 4",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5781166",
+   "passage": "h. Supply Chain Risk Monitoring. This section shall include:\n\n(3) The Supply Chain Risk Register will include a unique risk identifier, risk category and description, risk rating, risk handling response, responsible POC, expiration date, and current status. Reference DI-MGMT-82255A Supply Chain Risk Register.",
+   "passageSHA256": "ff856de18169ad4a849427683747859bbec664d8b3b765286763f0f12e7c9ff0"
+  },
+  "wording": "The SCRM Plan risk-monitoring section shall specify inclusion of the expiration date in the Supply Chain Risk Register.",
+  "wordingSHA256": "8a0a0d3d92ac5d46e1568364e6a8cef914187efe91a4aec25a2dc4110b0ce418",
+  "actor": "The SCRM Plan risk-monitoring section",
+  "condition": "When DI-MGMT-82256A is invoked by the applicable contract, solicitation, or CDRL for supply-chain risks associated with the prime contractor, suppliers, or subcontractors and the products or services to be provided; this specialized branch is not a generic issue/opportunity-register mandate; the requirement governs the SCRM Plan section describing the register/reporting process or content, not an independent universal register delivery obligation.",
+  "verificationIntent": "inspection",
+  "kind": "content",
+  "binding": true,
+  "fields": [
+   "expirationDate"
+  ],
+  "status": "sample",
+  "notes": "Operative DID provision; binding is conditional on actual invocation and stated scope, not an automatic legal obligation. Composite quotation: separate verbatim source spans are separated by blank lines; intervening list items, text, or page furniture is omitted. No consecutive-sentence claim is made. Each span independently matches the freshly inspected PDF. Span PDF pages: 4, 4. The direct register sentence says will include under the section shall include parent. The normalized actor remains the plan section; this is not represented as a direct independent register shall."
+ },
+ {
+  "id": "DZR-F6-0089",
+  "alias": "DI-MGMT-82256A section 3.4h(3); PDF 4",
+  "source": {
+   "docId": "DI-MGMT-82256A",
+   "edition": "A, 3 February 2023",
+   "paragraph": "3.4h(3); PDF 4",
+   "url": "https://quicksearch.dla.mil/WMX/Default.aspx?token=5781166",
+   "passage": "h. Supply Chain Risk Monitoring. This section shall include:\n\n(3) The Supply Chain Risk Register will include a unique risk identifier, risk category and description, risk rating, risk handling response, responsible POC, expiration date, and current status. Reference DI-MGMT-82255A Supply Chain Risk Register.",
+   "passageSHA256": "ff856de18169ad4a849427683747859bbec664d8b3b765286763f0f12e7c9ff0"
+  },
+  "wording": "The SCRM Plan risk-monitoring section shall specify inclusion of the current risk status in the Supply Chain Risk Register.",
+  "wordingSHA256": "04046508ee08dbadcd8026a91488d685cdc72c270f7214104016ea2f25086bc8",
+  "actor": "The SCRM Plan risk-monitoring section",
+  "condition": "When DI-MGMT-82256A is invoked by the applicable contract, solicitation, or CDRL for supply-chain risks associated with the prime contractor, suppliers, or subcontractors and the products or services to be provided; this specialized branch is not a generic issue/opportunity-register mandate; the requirement governs the SCRM Plan section describing the register/reporting process or content, not an independent universal register delivery obligation.",
+  "verificationIntent": "inspection",
+  "kind": "content",
+  "binding": true,
+  "fields": [
+   "currentStatus"
+  ],
+  "status": "sample",
+  "notes": "Operative DID provision; binding is conditional on actual invocation and stated scope, not an automatic legal obligation. Composite quotation: separate verbatim source spans are separated by blank lines; intervening list items, text, or page furniture is omitted. No consecutive-sentence claim is made. Each span independently matches the freshly inspected PDF. Span PDF pages: 4, 4. The direct register sentence says will include under the section shall include parent. The normalized actor remains the plan section; this is not represented as a direct independent register shall."
+ },
+ {
+  "id": "DZR-F6-0090",
+  "alias": "DoD-RIO-Guide-2023 section 3, Opportunity Management; printed p. 37 (PDF p. 45)",
+  "source": {
+   "docId": "DoD-RIO-Guide-2023",
+   "edition": "September 2023, incorporating Change 2.2 as of December 2023",
+   "paragraph": "3, Opportunity Management; printed p. 37 (PDF p. 45)",
+   "url": "https://www.cto.mil/wp-content/uploads/2024/05/RIO-2023-2-2.pdf",
+   "passage": "Opportunities must be traceable through the thread of the mission context.",
+   "passageSHA256": "7717a8641c46b9178123bbd172e244908e956ed8c70da7b12def1d09b31b165f"
+  },
+  "wording": "The opportunity record shall provide traceability through the thread of the mission context.",
+  "wordingSHA256": "d40e4ab97acc7f862f80ab00e192709254d0b22657a1f2cacee7e807740c4734",
+  "actor": "The opportunity record",
+  "condition": "When an opportunity is represented in the RIO register; catalogued guidance only.",
+  "verificationIntent": "inspection",
+  "kind": "guidance",
+  "binding": false,
+  "fields": [
+   "missionContextReference"
+  ],
+  "status": "sample",
+  "notes": "Section 1.2 states that the document serves solely as guidance, not a mandatory checklist. Source opportunities are expressed as records for the F6 data-product scope. No native property name, identifier format, or mandatory trace-column encoding is specified. Excluded from baseline inputs and from independent rejection gates."
+ }
+]
