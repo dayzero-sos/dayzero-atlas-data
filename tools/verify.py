@@ -1,13 +1,18 @@
 #!/usr/bin/env python3
-"""Recompute every hash and the release manifest; fail on any mismatch or any personal/employer identifier."""
+"""Recompute every hash and the release manifest; fail on any mismatch, any invalid v1.1 optional field, or any personal/employer identifier. Reads v1 and v1.1 records alike."""
 import json,hashlib,unicodedata,re,sys,glob,os
 R=os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 def norm(s): return re.sub(r'\s+',' ',unicodedata.normalize('NFC',s or '')).strip()
 def sha(s): return hashlib.sha256(norm(s).encode()).hexdigest()
+PARTY={'acquirer','prime','supplier','shared-interface'}; RIGHTS={'unlimited','government-purpose','limited','restricted','sbir','proprietary'}; TAILOR={'applies','tailored','waiver','not-applicable','needs-review'}
 bad=0; rows=[]; ids=set()
 for f in sorted(glob.glob(R+'/records/F*.json')):
     for r in json.load(open(f,encoding='utf-8')):
         if r['id'] in ids: print('dup',r['id']); bad+=1
+        # v1.1 optional fields: valid when present, never required, never in the manifest rows
+        if 'party' in r and r['party'] not in PARTY: print('party',r['id'],r['party']); bad+=1
+        if 'rights' in r and r['rights'] not in RIGHTS: print('rights',r['id'],r['rights']); bad+=1
+        if 'tailoring' in r and (not isinstance(r['tailoring'],dict) or r['tailoring'].get('decision') not in TAILOR): print('tailoring',r['id']); bad+=1
         ids.add(r['id'])
         if sha(r['source']['passage'])!=r['source']['passageSHA256']: print('passage hash',r['id']); bad+=1
         if sha(r['wording'])!=r['wordingSHA256']: print('wording hash',r['id']); bad+=1
